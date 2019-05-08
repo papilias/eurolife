@@ -81,31 +81,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Web.Webpages">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Deployment">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Razor">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Helpers">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\PublishProfiles\Habitat.pubxml" />
-    <Content Include="Views\Sublayouts\PageHeader.cshtml" />
-    <Content Include="Views\Sublayouts\Section.cshtml" />
-    <Content Include="Views\Sublayouts\OneColumn.cshtml" />
+    <Content Include="Views\Common\Sublayouts\PageHeader.cshtml" />
+    <Content Include="Views\Common\Sublayouts\Section.cshtml" />
+    <Content Include="Views\Common\Sublayouts\OneColumn.cshtml" />
+    <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\PublishProfiles\Habitat.pubxml.user" />
     <None Include="Views\web.config" />
     <Content Include="App_Config\Environment\Project\Common.Dev.config" />
     <Content Include="App_Config\Include\Project\Common.Website.config" />
