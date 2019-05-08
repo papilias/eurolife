@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{86BFDC11-94DF-4B61-B8E7-A53B22C415BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{13EFB230-3319-4049-9292-332575790905}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{88C2E3C4-7488-4E86-AF4B-E40C82A67BC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{ED7B763F-584F-4BA8-B3C1-FE94BE51388C}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js.test = gulpfile.js.test
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Eurolife", "Eurolife", "{79AA2A0A-9037-4FB5-A88B-84251CABAC6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{8755EA71-79DF-464F-A9C4-513A09A86DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.DependencyInjection", "src\Foundation\DependencyInjection\code\Wedia.Foundation.DependencyInjection.csproj", "{64188ACE-CC0B-4546-A5B0-2422931E3E05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{DF33CD57-2C39-4FF7-8650-887237DD4577}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.Serialization", "src\Foundation\Serialization\code\Wedia.Foundation.Serialization.csproj", "{D9AF84B9-37B6-41CD-B832-6C367D1A949A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Common.Website", "src\Project\Common\code\Wedia.Common.Website.csproj", "{9A04B78A-2E9C-4F84-8549-9B44697A8A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Eurolife.Website", "src\Project\Eurolife\code\Wedia.Eurolife.Website.csproj", "{1B2156E2-AD21-4034-9109-BA63C417FA98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64188ACE-CC0B-4546-A5B0-2422931E3E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64188ACE-CC0B-4546-A5B0-2422931E3E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64188ACE-CC0B-4546-A5B0-2422931E3E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64188ACE-CC0B-4546-A5B0-2422931E3E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9AF84B9-37B6-41CD-B832-6C367D1A949A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9AF84B9-37B6-41CD-B832-6C367D1A949A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9AF84B9-37B6-41CD-B832-6C367D1A949A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9AF84B9-37B6-41CD-B832-6C367D1A949A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A04B78A-2E9C-4F84-8549-9B44697A8A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A04B78A-2E9C-4F84-8549-9B44697A8A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A04B78A-2E9C-4F84-8549-9B44697A8A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A04B78A-2E9C-4F84-8549-9B44697A8A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2156E2-AD21-4034-9109-BA63C417FA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2156E2-AD21-4034-9109-BA63C417FA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2156E2-AD21-4034-9109-BA63C417FA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2156E2-AD21-4034-9109-BA63C417FA98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88C2E3C4-7488-4E86-AF4B-E40C82A67BC7} = {13EFB230-3319-4049-9292-332575790905}
+		{79AA2A0A-9037-4FB5-A88B-84251CABAC6A} = {13EFB230-3319-4049-9292-332575790905}
+		{8755EA71-79DF-464F-A9C4-513A09A86DE9} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
+		{64188ACE-CC0B-4546-A5B0-2422931E3E05} = {8755EA71-79DF-464F-A9C4-513A09A86DE9}
+		{DF33CD57-2C39-4FF7-8650-887237DD4577} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
+		{D9AF84B9-37B6-41CD-B832-6C367D1A949A} = {DF33CD57-2C39-4FF7-8650-887237DD4577}
+		{9A04B78A-2E9C-4F84-8549-9B44697A8A16} = {88C2E3C4-7488-4E86-AF4B-E40C82A67BC7}
+		{1B2156E2-AD21-4034-9109-BA63C417FA98} = {79AA2A0A-9037-4FB5-A88B-84251CABAC6A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
