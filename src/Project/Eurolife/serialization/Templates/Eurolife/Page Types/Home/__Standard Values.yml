@@ -1,0 +1,37 @@
+﻿---
+ID: "e504421e-1496-487b-aad4-db5dff54f667"
+Parent: "703c5d3c-bcf5-47c7-b645-1da6028f6701"
+Template: "703c5d3c-bcf5-47c7-b645-1da6028f6701"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Home/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
+        <r
+          id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
+          ph="page-layout"
+          uid="{1F5E7B85-335B-44E7-96D1-45D9A3929C78}" />
+        <r
+          id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+          ph="page-layout"
+          uid="{C773E9BD-5A10-468C-9467-20E287A0FCE6}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190508T112653Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
