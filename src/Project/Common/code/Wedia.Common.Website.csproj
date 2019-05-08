@@ -97,6 +97,8 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Habitat.pubxml" />
     <Content Include="Views\Sublayouts\PageHeader.cshtml" />
+    <Content Include="Views\Sublayouts\Section.cshtml" />
+    <Content Include="Views\Sublayouts\OneColumn.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
