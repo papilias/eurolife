@@ -5,6 +5,10 @@ Template: "703c5d3c-bcf5-47c7-b645-1da6028f6701"
 Path: /sitecore/templates/Project/Eurolife/Page Types/Home/__Standard Values
 DB: master
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{5B62E4D9-7AED-47C0-AAD1-CEB525263407}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout

@@ -2,7 +2,7 @@
 ID: "364b0b6e-b331-43f7-a1a2-761d44053ba6"
 Parent: "8e0f7fc4-5c95-4537-a23f-d614abf6979e"
 Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
-Path: /sitecore/layout/Renderings/Project/Common/Page Header
+Path: /sitecore/layout/Renderings/Project/Common/PageHeader
 DB: master
 SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
