@@ -1,0 +1,18 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Wedia.Feature.PageContent
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+
+@model RenderingModel
+@{
+
+    if (!Sitecore.Context.PageMode.IsExperienceEditor && !Html.Sitecore().HasValue(Templates.HasPageContent.Fields.Body.ToString()))
+    {
+        return;
+    }
+
+}
+
+<div>
+    @Html.Sitecore().Field(Templates.HasPageContent.Fields.Body)
+</div>

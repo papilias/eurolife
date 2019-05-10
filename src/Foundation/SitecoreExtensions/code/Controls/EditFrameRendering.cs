@@ -1,11 +1,11 @@
-﻿namespace Wedia.Foundation.SitecoreExtensions.Controls
-{
-  using System;
-  using System.IO;
-  using System.Web.UI;
-  using Sitecore.Web.UI.WebControls;
-  using Wedia.Foundation.SitecoreExtensions.Extensions;
+﻿using System;
+using System.IO;
+using System.Web.UI;
+using Sitecore.Web.UI.WebControls;
+using Wedia.Foundation.SitecoreExtensions.Extensions;
 
+namespace Wedia.Foundation.SitecoreExtensions.Controls
+{
   /// <summary>
   ///   Edit frame class.
   /// </summary>

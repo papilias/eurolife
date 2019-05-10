@@ -1,21 +1,19 @@
-﻿@using Sitecore.Mvc
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
 @using Sitecore.Mvc.Analytics.Extensions
-@using Sitecore.Mvc.Presentation
-@model RenderingModel
+
 @{
-  Layout = null;
+    Layout = null;
 }
 <!DOCTYPE html>
 <html lang="@Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName">
 <head>
-  <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
+    <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
 
-  @Html.Sitecore().VisitorIdentification()
+    @Html.Sitecore().VisitorIdentification()
 </head>
-  <body>
-      <main role="main">
-          PAOKARA
-          @Html.Sitecore().Placeholder("page-layout")
-      </main>
-  </body>
+<body>
+    <main role="main">
+        @Html.Sitecore().Placeholder("page-layout")
+    </main>
+</body>
 </html>

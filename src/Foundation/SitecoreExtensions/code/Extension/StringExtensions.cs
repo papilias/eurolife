@@ -1,7 +1,7 @@
-﻿namespace Wedia.Foundation.SitecoreExtensions.Extensions
-{
-  using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
+namespace Wedia.Foundation.SitecoreExtensions.Extensions
+{
   public static class StringExtensions
   {
     public static string Humanize(this string input)

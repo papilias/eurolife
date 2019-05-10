@@ -1,0 +1,34 @@
+﻿@using Wedia.Feature.PageContent
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{ 
+    var desktopImage = string.Empty;
+    var mobileImage =  string.Empty;
+
+
+    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.DesktopImage.ToString()))
+    {
+        desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage);
+    }
+
+
+    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.MobileImage.ToString()))
+    {
+        mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage);
+    }
+}
+
+@if (string.IsNullOrEmpty(desktopImage) || string.IsNullOrEmpty(mobileImage))
+{
+    <header>
+        <img src="@desktopImage" />
+        @Html.Sitecore().Placeholder("page-header")
+    </header>
+} else
+{
+    <header>
+        @Html.Sitecore().Placeholder("page-header")
+    </header>
+}
+

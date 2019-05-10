@@ -1,8 +1,8 @@
-﻿namespace Wedia.Foundation.SitecoreExtensions.Extensions
-{
-  using System.Web;
-  using Sitecore.Diagnostics;
+﻿using System.Web;
+using Sitecore.Diagnostics;
 
+namespace Wedia.Foundation.SitecoreExtensions.Extensions
+{
   public static class SessionExtensions
   {
     public static object GetAndRemove(this HttpSessionStateBase session, string key)

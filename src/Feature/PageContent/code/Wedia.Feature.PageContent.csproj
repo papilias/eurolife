@@ -81,7 +81,10 @@
     <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
     <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
-    <Content Include="Views\PageImage.cshtml" />
+    <Content Include="Views\PageContent\PageImageHeader.cshtml" />
+    <Content Include="Views\PageContent\PageHeaderTitle.cshtml" />
+    <Content Include="Views\PageContent\PageContentBody.cshtml" />
+    <Content Include="Views\PageContent\PageTeaser.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -97,9 +100,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>

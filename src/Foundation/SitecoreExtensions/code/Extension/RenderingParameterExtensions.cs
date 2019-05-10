@@ -1,10 +1,10 @@
-﻿namespace Wedia.Foundation.SitecoreExtensions.Extensions
-{
-  using System.Collections.Generic;
-  using Newtonsoft.Json;
-  using Newtonsoft.Json.Linq;
-  using Sitecore.Mvc.Presentation;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Sitecore.Mvc.Presentation;
 
+namespace Wedia.Foundation.SitecoreExtensions.Extensions
+{
   public static class RenderingParameterExtensions
   {
     public static string ToJson(this RenderingParameters renderingParameters)

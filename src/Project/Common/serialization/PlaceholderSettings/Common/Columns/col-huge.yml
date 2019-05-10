@@ -8,6 +8,10 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: "col-huge"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
 Languages:
 - Language: en
   Versions:

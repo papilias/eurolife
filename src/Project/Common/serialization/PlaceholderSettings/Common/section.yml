@@ -1,19 +1,17 @@
 ﻿---
-ID: "923ba857-dabc-45c9-9d89-706fe6b989f9"
+ID: "715cd0ce-beff-4f7b-83cd-39bbad05d382"
 Parent: "691d6aff-4d02-48c5-b03d-107d2b35c821"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: "/sitecore/layout/Placeholder Settings/Project/Common/page-header"
+Path: /sitecore/layout/Placeholder Settings/Project/Common/section
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: "page-header"
+  Value: section
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value: |
-    {0C50FD78-8252-4FC9-B779-8222677467FA}
-    {00C6C1FB-EB91-43A5-84EF-1F8B207496CC}
+  Value: "{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
 Languages:
 - Language: en
   Versions:
@@ -21,4 +19,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190508T131848Z
+      Value: 20190510T100315Z

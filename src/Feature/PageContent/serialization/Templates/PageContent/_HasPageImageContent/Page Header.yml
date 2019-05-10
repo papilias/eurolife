@@ -1,8 +1,8 @@
 ﻿---
-ID: "b7dcc304-a3d4-4426-b9ee-e1b9a09eccfe"
-Parent: "3b666dc0-03ad-4250-8943-97318aa3b0a6"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/Project/Common/Teasers
+ID: "3e243f30-b85c-466f-a3e0-2bc4a7ec8b2b"
+Parent: "ae8b3fd1-cd52-49c5-9cfd-fde8b7d58751"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/PageContent/_HasPageImageContent/Page Header
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190509T081844Z
+      Value: 20190509T125443Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
