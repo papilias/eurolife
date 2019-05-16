@@ -1,0 +1,35 @@
+﻿---
+ID: "8915728c-2732-4560-afdf-ab04cc7cd053"
+Parent: "c0b6fe49-5530-4c1b-a78e-d18d8386b395"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Eurolife/Page Types/About Us/About Us With Info Content
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: ApplicationsV2/16x16/information2.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {68DC8ED7-3248-4897-B179-7516EA3ED3C3}
+    {A41837DB-BE80-49DD-9340-D1336CB1F17F}
+    {8511B505-DBBF-4FE1-9CD2-02B19AC125DC}
+    {AE8B3FD1-CD52-49C5-9CFD-FDE8B7D58751}
+    {E5F4F03B-3264-4FB8-ACB9-1A24E024C9BA}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{D7222197-7A71-4D99-8570-64523FFF6324}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190516T132418Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

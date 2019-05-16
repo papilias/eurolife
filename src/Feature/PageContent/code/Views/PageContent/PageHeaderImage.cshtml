@@ -1,0 +1,35 @@
+﻿@using Wedia.Feature.PageContent
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    //These contains only the url not the experience editor field
+    var desktopImage = string.Empty;
+    var mobileImage = string.Empty;
+
+
+    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.DesktopImage.ToString()))
+    {
+        desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage);
+    }
+
+
+    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.MobileImage.ToString()))
+    {
+        mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage);
+    }
+}
+
+<header>
+    @if (Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        @Model.Item.Field(Templates.HasPageImageContent.Fields.DesktopImage)
+
+    }
+    @if (Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        @Model.Item.Field(Templates.HasPageImageContent.Fields.MobileImage)
+    }
+
+    @Html.Sitecore().Placeholder("page-header")
+</header>

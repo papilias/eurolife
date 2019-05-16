@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		gulp-config.js = gulp-config.js
 		gulpfile.js = gulpfile.js
 		nuget.config = nuget.config
+		publishsettings.targets = publishsettings.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Eurolife", "Eurolife", "{79AA2A0A-9037-4FB5-A88B-84251CABAC6A}"
@@ -47,6 +48,28 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PageContent", "PageContent", "{C51AF286-117A-42A3-8179-A9771B5D385D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.PageContent", "src\Feature\PageContent\code\Wedia.Feature.PageContent.csproj", "{E5DA506C-A085-4F0A-9201-F83C763D06CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.Dictionary", "src\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj", "{71DE993F-50E5-4300-A003-F07F877830CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dictionary", "Dictionary", "{8CB11047-2FA2-497A-88B2-94FFDF2A320C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.Dictionary.Tests", "src\Foundation\Dictionary\tests\Wedia.Foundation.Dictionary.Tests.csproj", "{DAFBC422-E779-4E8A-8522-2C3C8081D7D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{0834D635-F58B-4A4B-9BEB-E14BC1E4F621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.Testing", "src\Foundation\Testing\tests\Wedia.Foundation.Testing.csproj", "{7CC3D72B-4518-4B78-BE48-630A263C0F5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Indexing", "Indexing", "{441D03D1-40DB-4F94-89D5-83A114905234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.Indexing", "src\Foundation\Indexing\code\Wedia.Foundation.Indexing.csproj", "{AC7CFC4C-25CE-46D5-94AB-B2698BD39F7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Person", "Person", "{FBBB8E73-FCFE-481B-B260-2236470E8512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Person", "src\Feature\Person\code\Wedia.Feature.Person.csproj", "{C8B44DD5-A34F-4F10-A6DC-F36DFAA27CE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metadata", "Metadata", "{16F3B321-D6BB-422B-9FF0-79FA93E3052D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Metadata", "src\Feature\Metadata\code\Wedia.Feature.Metadata.csproj", "{4B941E17-883C-4C5A-81F9-0886F91BC1DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +109,30 @@ Global
 		{E5DA506C-A085-4F0A-9201-F83C763D06CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5DA506C-A085-4F0A-9201-F83C763D06CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5DA506C-A085-4F0A-9201-F83C763D06CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71DE993F-50E5-4300-A003-F07F877830CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DE993F-50E5-4300-A003-F07F877830CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DE993F-50E5-4300-A003-F07F877830CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DE993F-50E5-4300-A003-F07F877830CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFBC422-E779-4E8A-8522-2C3C8081D7D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFBC422-E779-4E8A-8522-2C3C8081D7D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFBC422-E779-4E8A-8522-2C3C8081D7D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFBC422-E779-4E8A-8522-2C3C8081D7D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC3D72B-4518-4B78-BE48-630A263C0F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC3D72B-4518-4B78-BE48-630A263C0F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC3D72B-4518-4B78-BE48-630A263C0F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC3D72B-4518-4B78-BE48-630A263C0F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC7CFC4C-25CE-46D5-94AB-B2698BD39F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7CFC4C-25CE-46D5-94AB-B2698BD39F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7CFC4C-25CE-46D5-94AB-B2698BD39F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7CFC4C-25CE-46D5-94AB-B2698BD39F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B44DD5-A34F-4F10-A6DC-F36DFAA27CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B44DD5-A34F-4F10-A6DC-F36DFAA27CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B44DD5-A34F-4F10-A6DC-F36DFAA27CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B44DD5-A34F-4F10-A6DC-F36DFAA27CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B941E17-883C-4C5A-81F9-0886F91BC1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B941E17-883C-4C5A-81F9-0886F91BC1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B941E17-883C-4C5A-81F9-0886F91BC1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B941E17-883C-4C5A-81F9-0886F91BC1DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,9 +154,20 @@ Global
 		{08C1BFA2-583C-4102-A545-8C0E97BAE265} = {248E0790-4E03-4124-A44D-F993D5937BC0}
 		{C51AF286-117A-42A3-8179-A9771B5D385D} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 		{E5DA506C-A085-4F0A-9201-F83C763D06CB} = {C51AF286-117A-42A3-8179-A9771B5D385D}
+		{71DE993F-50E5-4300-A003-F07F877830CD} = {8CB11047-2FA2-497A-88B2-94FFDF2A320C}
+		{8CB11047-2FA2-497A-88B2-94FFDF2A320C} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
+		{DAFBC422-E779-4E8A-8522-2C3C8081D7D1} = {8CB11047-2FA2-497A-88B2-94FFDF2A320C}
+		{0834D635-F58B-4A4B-9BEB-E14BC1E4F621} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
+		{7CC3D72B-4518-4B78-BE48-630A263C0F5B} = {0834D635-F58B-4A4B-9BEB-E14BC1E4F621}
+		{441D03D1-40DB-4F94-89D5-83A114905234} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
+		{AC7CFC4C-25CE-46D5-94AB-B2698BD39F7B} = {441D03D1-40DB-4F94-89D5-83A114905234}
+		{FBBB8E73-FCFE-481B-B260-2236470E8512} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{C8B44DD5-A34F-4F10-A6DC-F36DFAA27CE7} = {FBBB8E73-FCFE-481B-B260-2236470E8512}
+		{16F3B321-D6BB-422B-9FF0-79FA93E3052D} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{4B941E17-883C-4C5A-81F9-0886F91BC1DC} = {16F3B321-D6BB-422B-9FF0-79FA93E3052D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
 	EndGlobalSection
 EndGlobal

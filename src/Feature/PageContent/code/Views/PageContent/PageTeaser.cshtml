@@ -1,9 +1,15 @@
-﻿@using Sitecore.Mvc
-@using Sitecore.Mvc.Presentation
-@model RenderingModel
-@{
+﻿@using Wedia.Feature.PageContent
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Dictionary.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
 
-}
-<div>
+@*@if(!Model?.Item?.DescendsFrom(Templates.HasPageContent.ID) ?? true)
+{
+        return;    
+}*@ 
 
-</div>
+@Html.Sitecore().Field(Templates.HasPageContent.Fields.Title, Model.Item)
+@Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary, Model.Item)
+<a href="@Model.Item.Url()">
+    @Html.Sitecore().Dictionary("/PageContent/Page Teaser/Read more", "Read more")
+</a>

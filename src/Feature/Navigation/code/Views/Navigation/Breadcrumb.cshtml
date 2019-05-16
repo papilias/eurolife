@@ -8,3 +8,38 @@
         <a href="@item.Item.Url()">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item) </a>
     </li>
 }
+
+    @*<script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+        "@id": "https://www.moveitmag.gr/movie-category/home-cinema",
+        "name": "Home",
+        "@type": "Thing"
+        }
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+        "@id": "https://www.eurolife.gr/bla",
+        "name": "Προιοντα",
+        "@type": "Thing"
+        }
+        },
+        {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+        "@id": "https://www.eurolife.gr/bla",
+        "name": "Ιδιώτες",
+        "@type": "Thing"
+        }
+        }]
+        }
+    </script>*@

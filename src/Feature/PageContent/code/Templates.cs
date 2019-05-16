@@ -29,8 +29,28 @@ namespace Wedia.Feature.PageContent
                 public const string Title_FieldName = "Title";
                 public static readonly ID Summary = new ID("{9580E8D5-430E-4746-B4C1-6B71C56DF42E}");
                 public const string Summary_FieldName = "Summary";
-                public static readonly ID Body = new ID("{13EF1BFF-97DC-4156-854F-B9E5C29E1254}");
+            }
+        }
+
+        public struct HasPageBodyContent
+        {
+            public static readonly ID ID = new ID("{A41837DB-BE80-49DD-9340-D1336CB1F17F}");
+
+            public struct Fields
+            {
+                public static readonly ID Body = new ID("{5C95201B-69ED-40AE-ABDA-9EB83141D8E9}");
                 public const string Body_FieldName = "Body";
+            }
+        }
+
+        public struct HasPageInfoContent
+        {
+            public static readonly ID ID = new ID("{8511B505-DBBF-4FE1-9CD2-02B19AC125DC}");
+
+            public struct Fields
+            {
+                public static readonly ID InfoContent = new ID("{BEC0DFB9-56A3-42B7-A619-E387F2C5B4B2}");
+                public const string InfoContent_FieldName = "InfoContent";
             }
         }
     }

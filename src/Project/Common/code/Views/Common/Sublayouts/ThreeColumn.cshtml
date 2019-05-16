@@ -1,0 +1,18 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+
+<div class="row class">
+    <div class="first column">
+        @Html.Sitecore().DynamicPlaceholder("col-one")
+    </div>
+    <div class="second column">
+        @Html.Sitecore().DynamicPlaceholder("col-two")
+    </div>
+    <div class="third column">
+        @Html.Sitecore().DynamicPlaceholder("col-three")
+    </div>
+</div>

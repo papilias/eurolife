@@ -6,7 +6,7 @@
 @model RenderingModel
 @{
 
-    if (!Sitecore.Context.PageMode.IsExperienceEditor && !Html.Sitecore().HasValue(Templates.HasPageContent.Fields.Body.ToString()))
+    if (!Sitecore.Context.PageMode.IsExperienceEditor && !Html.Sitecore().HasValue(Templates.HasPageBodyContent.Fields.Body.ToString()))
     {
         return;
     }
@@ -14,5 +14,5 @@
 }
 
 <div>
-    @Html.Sitecore().Field(Templates.HasPageContent.Fields.Body)
+    @Html.Sitecore().Field(Templates.HasPageBodyContent.Fields.Body)
 </div>

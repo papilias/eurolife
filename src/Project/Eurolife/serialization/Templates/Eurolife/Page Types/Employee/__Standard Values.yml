@@ -1,0 +1,66 @@
+﻿---
+ID: "b2121647-772e-459a-a5c3-7982ec898cce"
+Parent: "ce1d7e61-0867-4d85-8661-ebea1d8b48ea"
+Template: "ce1d7e61-0867-4d85-8661-ebea1d8b48ea"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Employee/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
+        <r
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="head"
+          uid="{0D58F688-893F-48C0-AFA1-A88AD541D10D}" />
+        <r
+          id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+          ph="page-layout"
+          uid="{05547804-6B3B-42FE-BCDE-74F5B56790EB}" />
+        <r
+          id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+          ph="page-header"
+          uid="{A0801EE2-7849-4071-8F1F-246455850AB5}" />
+        <r
+          id="{FFE84079-A9DA-410E-A281-0ED31C52FE96}"
+          ph="page-header"
+          uid="{2DB5D041-D147-4E39-9B74-0BF1132C4E08}" />
+        <r
+          id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
+          ph="page-layout"
+          uid="{9CEEA15D-9898-497E-9AF2-25D6DB403461}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190513T093453Z
+    - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+      Hint: IncludeInSearchResults
+      Type: Checkbox
+      Value: 1
+    - ID: "902ad41a-7a0a-43fc-9080-0a858d455597"
+      Hint: PersonTitle
+      Value: $name
+    - ID: "a212c93a-7c83-4fed-bc5a-5b035baeff50"
+      Hint: PersonDekstopImage
+      Value: |
+        <image mediapath="" alt="248-512" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{A6075585-F449-475E-8804-8F092F59F22D}" />
+    - ID: "d1a816f7-bf40-40ad-a0db-d26c6a69dc38"
+      Hint: PersonMobileImage
+      Value: 
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: $name

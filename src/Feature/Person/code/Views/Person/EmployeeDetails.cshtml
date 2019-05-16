@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Wedia.Feature.Person
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+
+@model RenderingModel
+@{
+    if (!Model?.Item?.DescendsFrom(Templates.Person.ID) ?? true)
+    {
+        return;
+    }
+}
+
+@Model.Item.Field(Templates.Person.Fields.Body)
+

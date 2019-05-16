@@ -1,0 +1,28 @@
+﻿@using Sitecore.Mvc
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Person
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+
+}
+
+<h1>
+    @Html.Sitecore().Field(Templates.Person.Fields.Title)
+</h1>
+
+@if (Html.Sitecore().HasValue(Templates.Person.Fields.Position.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    <div>
+        @Html.Sitecore().Field(Templates.Person.Fields.Position)
+    </div>
+}
+
+@if (Html.Sitecore().HasValue(Templates.Person.Fields.DesktopImage.ToString()))
+{
+    @Html.Sitecore().ImageField(Templates.Person.Fields.DesktopImage)
+}
+
+@if (Html.Sitecore().HasValue(Templates.Person.Fields.MobileImage.ToString()))
+{
+    @Html.Sitecore().ImageField(Templates.Person.Fields.MobileImage)
+}
