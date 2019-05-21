@@ -8,6 +8,9 @@ SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
   Value: /Views/Common/Sublayouts/OneColumn.cshtml
+- ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
+  Hint: Parameters Template
+  Value: "{6D34A11B-5B75-46BC-8D04-98F2E192A5B1}"
 Languages:
 - Language: en
   Versions:
