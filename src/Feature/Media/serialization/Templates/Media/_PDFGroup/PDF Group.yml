@@ -2,7 +2,7 @@
 ID: "07e2d6d3-04bf-488d-b5b9-3e2021bd9493"
 Parent: "2598adf9-8f12-4651-abfb-435b1153a62a"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Media/_HasPDFs/PDFs
+Path: /sitecore/templates/Feature/Media/_PDFGroup/PDF Group
 DB: master
 Languages:
 - Language: en

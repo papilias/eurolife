@@ -1,0 +1,26 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Feature.Media
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    if (!Model?.Item?.DescendsFrom(Templates.PDFGroup.ID) ?? true)
+    {
+        return;
+    }
+
+}
+
+<span>@Html.Sitecore().Dictionary("/Media/PDF Toolkit Accordion/Tab Name", "Documentation")</span>
+
+<div class="tab content">
+    @foreach (var item in Model.Item.GetMultiListValueItems(Templates.PDFGroup.Fields.Files))
+    {
+        using (Html.BeginEditFrame(item.ID.ToString(), ""))
+        {
+            <a href="@item.ImageUrl(Templates.PDF.Fields.File)" download="true">
+                @item.Field(Templates.PDF.Fields.Title)
+            </a>
+        }
+    }
+</div>
+

@@ -2,7 +2,7 @@
 ID: "2598adf9-8f12-4651-abfb-435b1153a62a"
 Parent: "798bae6b-3c8b-465c-b129-2ae086d1c321"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Media/_HasPDFs
+Path: /sitecore/templates/Feature/Media/_PDFGroup
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

@@ -82,7 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
-    <Content Include="Views\Media\MediaPDFToolkitAccordion.cshtml" />
+    <Content Include="Views\Media\PDFToolkitAccordion.cshtml" />
+    <Content Include="Views\Media\PDFGroupedList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +105,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
+      <Project>{71de993f-50e5-4300-a003-f07f877830cd}</Project>
+      <Name>Wedia.Foundation.Dictionary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>

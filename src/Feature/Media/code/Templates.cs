@@ -21,12 +21,14 @@ namespace Wedia.Feature.Media
             }
         }
 
-        public struct HasPDFs
+        public struct PDFGroup
         {
             public static readonly ID ID = new ID("{2598ADF9-8F12-4651-ABFB-435B1153A62A}");
 
             public struct Fields
             {
+                public static readonly ID Title = new ID("{FF6FC789-F1F2-495E-8A94-EFCBC528E1C6}");
+                public const string Title_FieldName = "PDFGroupTitle";
                 public static readonly ID Files = new ID("{92184EE7-4EE4-466B-85BC-AD334BB2BEEE}");
                 public const string Files_FieldName = "PDFFiles";
             }
