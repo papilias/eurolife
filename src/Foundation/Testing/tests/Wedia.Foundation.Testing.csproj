@@ -59,6 +59,9 @@
     <PackageReference Include="NSubstitute" Version="3.1.0" />
     <PackageReference Include="Sitecore.FakeDb" Version="1.7.2" />
     <PackageReference Include="Sitecore.FakeDb.AutoFixture" Version="1.7.2" />
+    <PackageReference Include="Sitecore.FakeDb.NSubstitute">
+      <Version>1.7.2</Version>
+    </PackageReference>
     <PackageReference Include="System.Collections" Version="4.0.11" />
     <PackageReference Include="System.Collections.Concurrent" Version="4.0.12" />
     <PackageReference Include="System.ComponentModel" Version="4.0.1" />
