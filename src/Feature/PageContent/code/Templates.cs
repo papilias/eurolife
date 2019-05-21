@@ -53,5 +53,15 @@ namespace Wedia.Feature.PageContent
                 public const string InfoContent_FieldName = "InfoContent";
             }
         }
+
+        public struct HasPageCTA
+        {
+            public static readonly ID ID = new ID("{3E46454B-80FF-4B1C-AA72-B73CED6902BE}");
+
+            public struct Fields
+            {
+                public static readonly ID CTA = new ID("{59B7D0BE-39F3-4F45-B645-BDE65FA07015}");
+            }
+        }
     }
 }

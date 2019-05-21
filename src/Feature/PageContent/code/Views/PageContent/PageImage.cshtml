@@ -21,12 +21,12 @@
 }
 
 <div>
-    @if (Sitecore.Context.PageMode.IsExperienceEditor)
+    @if (Sitecore.Context.PageMode.IsExperienceEditor || desktopImage != null)
     {
         @Model.Item.Field(Templates.HasPageImageContent.Fields.DesktopImage)
 
     }
-    @if (Sitecore.Context.PageMode.IsExperienceEditor)
+    @if (Sitecore.Context.PageMode.IsExperienceEditor || mobileImage != null)
     {
         @Model.Item.Field(Templates.HasPageImageContent.Fields.MobileImage)
     }

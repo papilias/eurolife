@@ -24,3 +24,8 @@
         @Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary)
     </div>
 }
+
+@if (Html.Sitecore().HasValue(Templates.HasPageCTA.Fields.CTA.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+    @Html.Sitecore().Field(Templates.HasPageCTA.Fields.CTA)
+}
