@@ -3,11 +3,13 @@
 @using Wedia.Foundation.Dictionary.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@if(!Model?.Item?.DescendsFrom(Templates.HasPageContent.ID) ?? true)
+@if (!Model?.Item?.DescendsFrom(Templates.HasPageImageContent.ID) ?? true)
 {
-        return;    
+    return;
 }
 
+@Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.DesktopImage)
+@Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.MobileImage)
 @Html.Sitecore().Field(Templates.HasPageContent.Fields.Title, Model.Item)
 @Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary, Model.Item)
 <a href="@Model.Item.Url()">

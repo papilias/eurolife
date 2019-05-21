@@ -92,6 +92,7 @@
     <Content Include="Views\PageContent\PageTeaser.cshtml" />
     <Content Include="Views\PageContent\PageHeaderImage.cshtml" />
     <Content Include="Views\PageContent\PageInfoContent.cshtml" />
+    <Content Include="Views\PageContent\PageImageTeaser.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
