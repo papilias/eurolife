@@ -14,7 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{ED7B763F-584F-4BA8-B3C1-FE94BE51388C}"
 	ProjectSection(SolutionItems) = preProject
 		gulp-config.js = gulp-config.js
-		gulpfile.js = gulpfile.js
+		gulpfile.js.bck = gulpfile.js.bck
 		nuget.config = nuget.config
 		publishsettings.targets = publishsettings.targets
 	EndProjectSection
@@ -70,6 +70,36 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metadata", "Metadata", "{16F3B321-D6BB-422B-9FF0-79FA93E3052D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Metadata", "src\Feature\Metadata\code\Wedia.Feature.Metadata.csproj", "{4B941E17-883C-4C5A-81F9-0886F91BC1DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Storyboard", "Storyboard", "{A290EA67-8658-446A-8B32-F7870D50208F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Storyboard", "src\Feature\Storyboard\code\Wedia.Feature.Storyboard.csproj", "{59DE14AE-624A-47B7-BD7A-FC50593BF95D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LocalDatasource", "LocalDatasource", "{E767CA1E-FE2E-4283-920E-004453BC9FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.LocalDatasource", "src\Foundation\LocalDatasource\code\Wedia.Foundation.LocalDatasource.csproj", "{60406B55-9D42-4A1A-9942-953F1CFD8468}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{94640FAA-4334-4CC8-82C8-D94788C23127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Product", "src\Feature\Product\code\Wedia.Feature.Product.csproj", "{219369DB-B27B-4235-87BE-6C7407737B36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Highlight", "Highlight", "{CCC81897-58BB-4F86-96BC-62FA41FACE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Highlight", "src\Feature\Highlight\code\Wedia.Feature.Highlight.csproj", "{1BFFBDFA-3B08-4301-8A5E-AA01AFE59FA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FieldEditor", "FieldEditor", "{F37B7141-EF9A-473D-8418-1696A1FC084D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.FieldEditor", "src\Foundation\FieldEditor\code\Wedia.Foundation.FieldEditor.csproj", "{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FAQ", "FAQ", "{BB379F31-8003-44B1-9A4C-4DBD2F605038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.FAQ", "src\Feature\faq\code\Wedia.Feature.FAQ.csproj", "{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{1E329FE4-C8A0-4109-B020-E4CEBBCE3C63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Media", "src\Feature\Media\code\Wedia.Feature.Media.csproj", "{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{D7B61F3C-617E-4E59-BA9A-6EB4D5B09645}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -133,6 +163,34 @@ Global
 		{4B941E17-883C-4C5A-81F9-0886F91BC1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B941E17-883C-4C5A-81F9-0886F91BC1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B941E17-883C-4C5A-81F9-0886F91BC1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DE14AE-624A-47B7-BD7A-FC50593BF95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DE14AE-624A-47B7-BD7A-FC50593BF95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DE14AE-624A-47B7-BD7A-FC50593BF95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DE14AE-624A-47B7-BD7A-FC50593BF95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60406B55-9D42-4A1A-9942-953F1CFD8468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60406B55-9D42-4A1A-9942-953F1CFD8468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60406B55-9D42-4A1A-9942-953F1CFD8468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60406B55-9D42-4A1A-9942-953F1CFD8468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219369DB-B27B-4235-87BE-6C7407737B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219369DB-B27B-4235-87BE-6C7407737B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219369DB-B27B-4235-87BE-6C7407737B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219369DB-B27B-4235-87BE-6C7407737B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFFBDFA-3B08-4301-8A5E-AA01AFE59FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFFBDFA-3B08-4301-8A5E-AA01AFE59FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFFBDFA-3B08-4301-8A5E-AA01AFE59FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFFBDFA-3B08-4301-8A5E-AA01AFE59FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +223,21 @@ Global
 		{C8B44DD5-A34F-4F10-A6DC-F36DFAA27CE7} = {FBBB8E73-FCFE-481B-B260-2236470E8512}
 		{16F3B321-D6BB-422B-9FF0-79FA93E3052D} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 		{4B941E17-883C-4C5A-81F9-0886F91BC1DC} = {16F3B321-D6BB-422B-9FF0-79FA93E3052D}
+		{A290EA67-8658-446A-8B32-F7870D50208F} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{59DE14AE-624A-47B7-BD7A-FC50593BF95D} = {A290EA67-8658-446A-8B32-F7870D50208F}
+		{E767CA1E-FE2E-4283-920E-004453BC9FBE} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
+		{60406B55-9D42-4A1A-9942-953F1CFD8468} = {E767CA1E-FE2E-4283-920E-004453BC9FBE}
+		{94640FAA-4334-4CC8-82C8-D94788C23127} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{219369DB-B27B-4235-87BE-6C7407737B36} = {94640FAA-4334-4CC8-82C8-D94788C23127}
+		{CCC81897-58BB-4F86-96BC-62FA41FACE6B} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{1BFFBDFA-3B08-4301-8A5E-AA01AFE59FA0} = {CCC81897-58BB-4F86-96BC-62FA41FACE6B}
+		{F37B7141-EF9A-473D-8418-1696A1FC084D} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
+		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B} = {F37B7141-EF9A-473D-8418-1696A1FC084D}
+		{BB379F31-8003-44B1-9A4C-4DBD2F605038} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79} = {BB379F31-8003-44B1-9A4C-4DBD2F605038}
+		{1E329FE4-C8A0-4109-B020-E4CEBBCE3C63} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2} = {1E329FE4-C8A0-4109-B020-E4CEBBCE3C63}
+		{D7B61F3C-617E-4E59-BA9A-6EB4D5B09645} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
