@@ -1,0 +1,34 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Highlight
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    if (!Model?.Item?.DescendsFrom(Templates.HasHighlights.ID) ?? true)
+    {
+        return;
+    }
+
+}
+
+<div>
+    @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+    {
+    <h2>@Html.Sitecore().Field(Templates.HasHighlights.Fields.Title)</h2>
+    <p>@Html.Sitecore().Field(Templates.HasHighlights.Fields.Summary)</p>
+    <ul>
+
+        @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HasHighlights.Fields.Highlights))
+        {
+            using (Html.BeginEditFrame(item.ID.ToString(), ""))
+            {
+
+                <li class="@(item?.TargetItem(Templates.Highlight.Fields.Icon)?[Templates.Icon.Fields.CssClass])">
+                    @Html.Sitecore().Field(Templates.Highlight.Fields.Title, item)
+                    @Html.Sitecore().Field(Templates.Highlight.Fields.Summary, item)
+                </li>
+            }
+        }
+        </ul>
+    }
+
+</div>
+
