@@ -1,0 +1,18 @@
+﻿---
+ID: "008f1cdd-e9f9-4ca0-a505-cbd711d2a92f"
+Parent: "9b434822-cf7c-47a1-8ac8-a446cb6f62bb"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Product/_ProductPanelAttribute/Program Panel Attributes/ProgramPanelAttributeCategory
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: TreelistEx
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190522T075017Z

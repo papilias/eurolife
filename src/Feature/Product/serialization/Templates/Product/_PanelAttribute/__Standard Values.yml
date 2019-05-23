@@ -1,0 +1,21 @@
+﻿---
+ID: "09b9c13b-ec82-4ded-bb04-f4c8f9964b62"
+Parent: "590d30bf-91e3-43c1-83bc-557afdb27024"
+Template: "590d30bf-91e3-43c1-83bc-557afdb27024"
+Path: /sitecore/templates/Feature/Product/_PanelAttribute/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190522T075609Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "a48e1e3f-4e17-4302-9d7e-e97e5cb540c3"
+      Hint: PanelAttributeTitle
+      Value: $name

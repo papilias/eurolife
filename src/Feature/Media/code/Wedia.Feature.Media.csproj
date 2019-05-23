@@ -82,12 +82,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
-    <Content Include="Views\Media\PDFToolkitAccordion.cshtml" />
-    <Content Include="Views\Media\PDFGroupedList.cshtml" />
+    <Content Include="Views\MediaFeature\PDFToolkitAccordion.cshtml" />
+    <Content Include="Views\MediaFeature\PDFGroupedList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\MediaFeatureController.cs" />
+    <Compile Include="Models\MediaSelectorElement.cs" />
+    <Compile Include="Models\PDFGroup.cs" />
+    <Compile Include="Models\PdfGroupDto.cs" />
+    <Compile Include="Models\PDFGroups.cs" />
+    <Compile Include="Repositories\IMediaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\MediaRepository.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,11 +107,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Wedia.Foundation.DependencyInjection.csproj">
+      <Project>{64188ace-cc0b-4546-a5b0-2422931e3e05}</Project>
+      <Name>Wedia.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
       <Project>{71de993f-50e5-4300-a003-f07f877830cd}</Project>
       <Name>Wedia.Foundation.Dictionary</Name>

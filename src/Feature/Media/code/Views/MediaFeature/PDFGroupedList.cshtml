@@ -1,0 +1,53 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Media.Models
+@using Wedia.Feature.Media
+@using Sitecore.Mvc.Presentation
+@model PDFGroups
+@{
+    var groups = new PDFGroups();
+    var activeSubgroup = new PDFGroup();
+}
+
+@foreach (var parentCategories in Model.Groups)
+{
+    {
+        if (parentCategories.IsActive)
+        {
+            groups = parentCategories.SubGroups;
+        }
+    }
+<div>
+    <a href="@($" {RenderingContext.Current.ContextItem.Url()}?group={parentCategories.Item.ID}")">
+        @(parentCategories.IsActive ? "i am active" : "")
+        @parentCategories.Item.Field(Templates.PDFGroup.Fields.Title)
+    </a>
+</div>
+}
+
+@if (groups.Groups !=null && groups.Groups.Any())
+{
+    foreach (var subGroup in groups.Groups)
+    {
+        if (subGroup.IsActive)
+        {
+            activeSubgroup = subGroup;
+        }
+        <div>
+            <a href="@($" {RenderingContext.Current.ContextItem.Url()}?group={subGroup.Item.ID}")">
+                @(subGroup.IsActive ? "i am active" : "")
+                @subGroup.Item.Field(Templates.PDFGroup.Fields.Title)
+            </a>
+        </div>
+    }
+}
+
+@if (activeSubgroup.PDFs != null && activeSubgroup.PDFs.Any())
+{
+    foreach(var pdf in activeSubgroup.PDFs)
+    {
+        <a href="@pdf.ImageUrl(Templates.PDF.Fields.File)" download="true">
+            @pdf.Field(Templates.PDF.Fields.Title)
+        </a>
+    }
+}
+
