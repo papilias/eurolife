@@ -88,7 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MediaFeatureController.cs" />
-    <Compile Include="Models\MediaSelectorElement.cs" />
     <Compile Include="Models\PDFGroup.cs" />
     <Compile Include="Models\PdfGroupDto.cs" />
     <Compile Include="Models\PDFGroups.cs" />
