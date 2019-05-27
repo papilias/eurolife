@@ -23,12 +23,12 @@
 <header>
     @if (Sitecore.Context.PageMode.IsExperienceEditor)
     {
-        @Model.Item.Field(Templates.HasPageImageContent.Fields.DesktopImage)
+        @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.DesktopImage)
 
     }
     @if (Sitecore.Context.PageMode.IsExperienceEditor)
     {
-        @Model.Item.Field(Templates.HasPageImageContent.Fields.MobileImage)
+        @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.MobileImage)
     }
 
     @Html.Sitecore().Placeholder("page-header")

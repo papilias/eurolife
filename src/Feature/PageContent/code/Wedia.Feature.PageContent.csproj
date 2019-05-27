@@ -93,6 +93,7 @@
     <Content Include="Views\PageContent\PageHeaderImage.cshtml" />
     <Content Include="Views\PageContent\PageInfoContent.cshtml" />
     <Content Include="Views\PageContent\PageImageTeaser.cshtml" />
+    <Content Include="Views\PageContent\PageExtraInfoItem.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +112,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Alerts\code\Wedia.Foundation.Alerts.csproj">
+      <Project>{85863230-7954-48f3-b895-35c3f4b4c2f3}</Project>
+      <Name>Wedia.Foundation.Alerts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
       <Project>{71de993f-50e5-4300-a003-f07f877830cd}</Project>
       <Name>Wedia.Foundation.Dictionary</Name>
