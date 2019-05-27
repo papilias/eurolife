@@ -11,7 +11,9 @@ SharedFields:
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value: "{D1009CC0-A073-4EA5-99FD-389C097F0B4E}"
+  Value: |
+    {D1009CC0-A073-4EA5-99FD-389C097F0B4E}
+    {78DA17BB-A03F-455A-9319-8E68171EA944}
 Languages:
 - Language: en
   Versions:

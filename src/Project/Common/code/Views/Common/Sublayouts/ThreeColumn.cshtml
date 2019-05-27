@@ -1,18 +1,14 @@
-﻿@using Sitecore.Mvc
-@using Sitecore.Mvc.Presentation
-@model RenderingModel
-@{
-
-}
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
 
 <div class="row class">
     <div class="first column">
-        @Html.Sitecore().DynamicPlaceholder("col-one")
+        @Html.Sitecore().DynamicPlaceholder("col-one", Model.Rendering.GetUseStaticPlaceholderNames())
     </div>
     <div class="second column">
-        @Html.Sitecore().DynamicPlaceholder("col-two")
+        @Html.Sitecore().DynamicPlaceholder("col-two", Model.Rendering.GetUseStaticPlaceholderNames())
     </div>
     <div class="third column">
-        @Html.Sitecore().DynamicPlaceholder("col-three")
+        @Html.Sitecore().DynamicPlaceholder("col-three", Model.Rendering.GetUseStaticPlaceholderNames())
     </div>
 </div>

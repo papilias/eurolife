@@ -183,7 +183,7 @@ gulp.task("Publish-All-Projects", gulp.series(
     "Build-Solution",
     "Publish-Foundation-Projects",
     "Publish-Feature-Projects",
-    "Publish-Project-Projects",
+    "Publish-Project-Projects"
 ));
 
 gulp.task("Apply-Xml-Transform",

@@ -2,7 +2,7 @@
 ID: "715cd0ce-beff-4f7b-83cd-39bbad05d382"
 Parent: "691d6aff-4d02-48c5-b03d-107d2b35c821"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Project/Common/section
+Path: /sitecore/layout/Placeholder Settings/Project/Common/Section
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
