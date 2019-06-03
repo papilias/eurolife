@@ -1,6 +1,6 @@
 ﻿---
-ID: "385d4a83-24f7-4330-8aae-b86882a48b76"
-Parent: "a1584f6e-ea1c-4f98-aa24-6a392437a714"
+ID: "2fffa17c-3798-4721-9d3f-032b2e1dd2d8"
+Parent: "94fcf2f1-3cca-4d44-87fc-4400397c7aae"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: /sitecore/templates/Feature/Teasers/_TeaserContent/Content
 DB: master
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190509T093044Z
+      Value: 20190509T092850Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

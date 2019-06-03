@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Wedia.Feature.PageContent</RootNamespace>
     <AssemblyName>Wedia.Feature.PageContent</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,11 +44,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <Version>5.2.4</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.4" />
+    <PackageReference Include="Microsoft.AspNet.WebApi">
+      <Version>5.2.6</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
-    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.8" />
     <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0.0" />
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Sitecore.Kernel">
       <Version>12.0.0</Version>
     </PackageReference>
@@ -66,10 +75,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
@@ -81,13 +86,18 @@
     <Content Include="App_Config\Include\Feature\Feature.PageContent.config" />
     <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
-    <Content Include="Views\PageContent\PageImageHeader.cshtml" />
+    <Content Include="Views\PageContent\PageImage.cshtml" />
     <Content Include="Views\PageContent\PageHeaderTitle.cshtml" />
     <Content Include="Views\PageContent\PageContentBody.cshtml" />
     <Content Include="Views\PageContent\PageTeaser.cshtml" />
+    <Content Include="Views\PageContent\PageHeaderImage.cshtml" />
+    <Content Include="Views\PageContent\PageInfoContent.cshtml" />
+    <Content Include="Views\PageContent\PageImageTeaser.cshtml" />
+    <Content Include="Views\PageContent\PageExtraInfoItem.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Indexing\PageContentIndexingProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
@@ -102,6 +112,18 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Alerts\code\Wedia.Foundation.Alerts.csproj">
+      <Project>{85863230-7954-48f3-b895-35c3f4b4c2f3}</Project>
+      <Name>Wedia.Foundation.Alerts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
+      <Project>{71de993f-50e5-4300-a003-f07f877830cd}</Project>
+      <Name>Wedia.Foundation.Dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Indexing\code\Wedia.Foundation.Indexing.csproj">
+      <Project>{ac7cfc4c-25ce-46d5-94ab-b2698bd39f7b}</Project>
+      <Name>Wedia.Foundation.Indexing</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>

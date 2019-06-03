@@ -1,0 +1,35 @@
+﻿@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Highlight
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    if (!Model?.Item?.DescendsFrom(Templates.HighlightsGroup.ID) ?? true)
+    {
+        @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HighlightsGroup.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+        return;
+    }
+
+}
+
+<section class="center--1100 center highlights">
+    @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+    {
+        <h2>@Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Title)</h2>
+        <p>@Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Summary)</p>
+    
+
+        foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
+        {
+            <div class="teaser teaser--highlight">
+                <div class="teaser-icon @(item?.TargetItem(Templates.Highlight.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
+                <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.Highlight.Fields.Title, item)</h2>
+                <div class="teaser-highlight__text">
+                    @Html.Sitecore().Field(Templates.Highlight.Fields.Summary, item)
+                </div>
+            </div>
+         }
+    }
+</section>
+
+

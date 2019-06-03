@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #BREADCRUMBS
+\*------------------------------------*/
+/* ==================================================
+   Mixins
+   ================================================== */
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: 15px;
+  list-style-type: none;
+  opacity: 0.6; }
+  .breadcrumbs li:not(:last-child):after {
+    content: "/";
+    margin-left: 15px;
+    color: #383b38; }
+  .breadcrumbs li:last-child {
+    font-weight: 800;
+    opacity: 1; }
+
+.breadcrumbs a, .breadcrumbs span {
+  font-size: 15px;
+  color: #383b38; }

@@ -1,0 +1,17 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@using Wedia.Feature.PageContent
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+
+@model RenderingModel
+@{
+    if (!Model?.Item?.DescendsFrom(Templates.HasPageInfoContent.ID) ?? true)
+    {
+        return;
+    }
+
+}
+
+<div>
+    @Model.Item.Field(Templates.HasPageInfoContent.Fields.InfoContent)
+</div>

@@ -1,0 +1,78 @@
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.logo{
+  color: $color-base;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.nav-main{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top:25px;
+  padding-bottom:20px;
+
+}
+
+.nav-main__list{
+  li{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}
+
+
+.nav-product{
+  a {
+    color: #fff;
+  }
+
+  &--health{
+    background-color:$color-health;
+  }
+  &--life{
+    background-color:$color-life-insurance;
+  }
+  &--motor{
+    background-color:$color-motor;
+  }
+  &--home{
+    background-color:$color-home;
+  }
+}
+
+.nav-product__wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-product__list{
+  li{
+    display: inline-block;
+    margin-right: 35px;
+  }
+  a{
+    display: block;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height:1;
+  }
+}
+
+.link-register{
+  font-size: 14px;
+  padding:17px 0;
+  line-height:1.2;
+}

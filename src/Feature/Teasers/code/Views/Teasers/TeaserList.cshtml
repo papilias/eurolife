@@ -1,0 +1,17 @@
+﻿@using Wedia.Feature.Teasers
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Wedia.Feature.Teasers.Models.DynamicTeaserModel
+@{ 
+    var elements = Model.Items.ToList();
+}
+<div class="place your wrapper class here">
+    @Html.Sitecore().Field(Templates.DynamicTeaser.Fields.Title)
+
+    @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+    {
+        for (var i = 0; i < elements.Count; i++)
+        {
+            @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}");
+        }
+    }
+</div>

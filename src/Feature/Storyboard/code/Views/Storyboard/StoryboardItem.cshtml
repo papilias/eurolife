@@ -1,0 +1,11 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Storyboard
+@model Sitecore.Data.Items.Item
+
+<li>
+    @Html.Sitecore().Field(Templates.StoryboardItem.Fields.Year, Model)
+    @Html.Sitecore().Field(Templates.StoryboardItem.Fields.Content, Model)
+</li>
+
+
+

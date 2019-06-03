@@ -2,9 +2,47 @@
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @model Wedia.Feature.Navigation.Models.NavigationItems
 
-@foreach(var item in Model.NavItems)
-{
-    <li class="@(item.IsActive ? "active" : string.Empty)">
-        <a href="@item.Item.Url()">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item) </a>
-    </li>
-}
+<ul class="breadcrumbs center center--1700 m-t-48">
+    @foreach (var item in Model.NavItems)
+    {
+        <li>
+            <a href="@item.Item.Url()">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item) </a>
+        </li>
+    }
+</ul>
+
+
+    @*<script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+        "@id": "https://www.moveitmag.gr/movie-category/home-cinema",
+        "name": "Home",
+        "@type": "Thing"
+        }
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+        "@id": "https://www.eurolife.gr/bla",
+        "name": "Προιοντα",
+        "@type": "Thing"
+        }
+        },
+        {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+        "@id": "https://www.eurolife.gr/bla",
+        "name": "Ιδιώτες",
+        "@type": "Thing"
+        }
+        }]
+        }
+    </script>*@

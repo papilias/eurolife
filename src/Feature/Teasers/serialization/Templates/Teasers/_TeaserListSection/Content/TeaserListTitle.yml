@@ -1,0 +1,18 @@
+﻿---
+ID: "22eccb02-8157-4d84-a69f-b698437ce8b4"
+Parent: "69e77023-e58a-4d36-a17c-02ad5b6d9340"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Teasers/_TeaserListSection/Content/TeaserListTitle
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190524T091816Z

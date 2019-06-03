@@ -1,0 +1,23 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Feature.FAQ
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    if (!Model?.Item?.DescendsFrom(Templates.FaqGroup.ID) ?? true)
+    {
+        return;
+    }
+
+}
+
+<span>@Html.Sitecore().Dictionary("/FAQ/Toolkit Accordion/Tab Name", "FAQ")</span>
+
+<div class="tab content">
+    @foreach (var item in Model.Item.GetMultiListValueItems(Templates.FaqGroup.Fields.GroupMember))
+    {
+            
+        @Html.Sitecore().Field(Templates.Faq.Fields.Question, item)
+        @Html.Sitecore().Field(Templates.Faq.Fields.Answer, item)
+            
+     }
+</div>

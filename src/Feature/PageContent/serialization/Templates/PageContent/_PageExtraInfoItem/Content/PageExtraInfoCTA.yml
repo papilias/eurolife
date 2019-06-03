@@ -1,0 +1,21 @@
+﻿---
+ID: "d909e90c-af85-45e2-aed2-93ea01ad6c89"
+Parent: "72b9d62c-8c71-4eb0-beec-f458ea786c90"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/PageContent/_PageExtraInfoItem/Content/PageExtraInfoCTA
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: General Link
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190523T130035Z

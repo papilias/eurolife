@@ -1,0 +1,102 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Panels.Models
+@using Wedia.Feature.Panels
+@using Sitecore.Data.Items
+@using Newtonsoft.Json
+@model Panel
+
+<app-panel :panel="@JsonConvert.SerializeObject(Model)"></app-panel>
+
+@*<section class="center center--1100 programs">
+    <h1 class="h4 m-b-16 t-c">
+        @Model.Title
+    </h1>
+
+    <p class="m-b-48 t-c center center--650">
+        @Model.Summary
+    </p>
+
+    @Html.Partial("../Panels/PanelFilters", Model.Filters)
+
+    @foreach (var category in Model.Categories.Select((value, i) => new { i, value }))
+    {
+        if (category.i > 0)
+        {
+            @:<div class="program-expander">
+        }
+
+
+                if (!category.value.IsMain)
+                {
+                    <div class="program-heading">
+                        <h2>
+                            @category.value.Title
+                        </h2>
+                    </div>
+                }
+
+                <div class="program-grid @( (!category.value.IsMain) ? "program-grid--subsection" : "program-attributes" )">
+                    <div class="grid-table-column program-attributes">
+                        <div class="grid-table-cell"></div>
+                        @foreach (var row in category.value.Rows)
+                        {
+                            <div class="grid-table-cell">
+                                @row.Title
+                            </div>
+                        }
+                    </div>
+
+                    <div class="grid-table-window">
+                        <div class="grid-table js-grid-table" id="programs-table" style="--programCount:@Model.Items.Count()">
+                            @foreach (var itemValue in Model.Items)
+                            {
+                                <div class="grid-table-column grid-slide program program--visible" data-characteristics='["open-network","seat-ab",guarantee","discount"]'>
+
+                                    @if (category.value.IsMain)
+                                    {
+                                        <div class="grid-table-cell grid-table-cell--heading">
+                                            @itemValue.Title
+                                        </div>
+                                    }
+
+
+                                    @foreach (var row in category.value.Rows)
+                                    {
+                                        var item = itemValue.Rows.SingleOrDefault(i => i.ParentID == row.ID);
+
+                                        if (item == null)
+                                        {
+                                            continue;
+                                        }
+
+                                        if (string.IsNullOrWhiteSpace(item.Value))
+                                        {
+                                            <div class="grid-table-cell @(item.IsChecked ? "service-provided" : "service-not-provided" )"></div>
+                                        }
+                                        else
+                                        {
+                                            <div class="grid-table-cell">
+                                                @item.Value
+                                            </div>
+                                        }
+                                    }
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+
+        if (category.i > 0)
+        {
+            @:</div>
+        }
+    }
+
+
+    @Html.Partial("../Panels/PanelControls")
+</section>*@
+
+
+

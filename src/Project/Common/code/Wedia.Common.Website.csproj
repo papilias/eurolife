@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Wedia.Common.Website</RootNamespace>
     <AssemblyName>Wedia.Common.Website</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
@@ -23,6 +24,8 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,11 +46,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <Version>5.2.4</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.4" />
+    <PackageReference Include="Microsoft.AspNet.WebApi">
+      <Version>5.2.6</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
-    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="1.0.8" />
     <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0.0" />
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Sitecore.Analytics">
       <Version>12.0.0</Version>
     </PackageReference>
@@ -69,10 +80,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
@@ -81,10 +88,127 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\js\app.js" />
+    <None Include="assets\js\components\PanelColumn.vue" />
+    <Content Include="assets\js\components\PanelFilter.vue" />
+    <None Include="assets\js\components\PanelGrid.vue" />
+    <None Include="assets\js\components\PanelFilters.vue" />
+    <Content Include="assets\js\EventBus.js" />
+    <Content Include="css\anchorlist.css" />
+    <Content Include="css\breadcrumb.css" />
+    <Content Include="css\hero.css" />
+    <Content Include="css\product.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\converted\Ubuntu-LightItalic\preview.html" />
+    <Content Include="fonts\converted\Ubuntu-LightItalic\styles.css" />
+    <Content Include="fonts\converted\Ubuntu-MediumItalic\preview.html" />
+    <Content Include="fonts\converted\Ubuntu-MediumItalic\styles.css" />
+    <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.svg" />
+    <Content Include="fonts\converted\Ubuntu-Medium\preview.html" />
+    <Content Include="fonts\converted\Ubuntu-Medium\styles.css" />
+    <Content Include="fonts\converted\Ubuntu-Regular\preview.html" />
+    <Content Include="fonts\converted\Ubuntu-Regular\styles.css" />
+    <Content Include="fonts\Ubuntu-Bold.svg" />
+    <Content Include="fonts\Ubuntu-BoldItalic.svg" />
+    <Content Include="fonts\Ubuntu-Italic.svg" />
+    <Content Include="fonts\Ubuntu-Light.svg" />
+    <Content Include="fonts\Ubuntu-LightItalic.svg" />
+    <Content Include="fonts\Ubuntu-Medium.svg" />
+    <Content Include="fonts\Ubuntu-MediumItalic.svg" />
+    <Content Include="fonts\Ubuntu-Regular.svg" />
+    <Content Include="icons\info.svg" />
+    <Content Include="images\demo1.png" />
+    <Content Include="images\eurolife-product.jpg" />
+    <Content Include="images\facebook.svg" />
+    <Content Include="images\icons\check-blue.svg" />
+    <Content Include="images\icons\check-green.svg" />
+    <Content Include="images\icons\down.svg" />
+    <Content Include="images\icons\health\microscope.svg" />
+    <Content Include="images\icons\health\program.svg" />
+    <Content Include="images\icons\health\stithoscope.svg" />
+    <Content Include="images\icons\home\Combined Shape 2.svg" />
+    <Content Include="images\icons\home\Combined Shape.svg" />
+    <Content Include="images\icons\home\Group 20.svg" />
+    <Content Include="images\icons\left.svg" />
+    <Content Include="images\icons\Life\Combined Shape Copy 3.svg" />
+    <Content Include="images\icons\Life\Combined Shape.svg" />
+    <Content Include="images\icons\Life\Fill 10.svg" />
+    <Content Include="images\icons\motor\Combined Shape.svg" />
+    <Content Include="images\icons\motor\Group 20.svg" />
+    <Content Include="images\icons\right.svg" />
+    <Content Include="images\twitter.svg" />
+    <Content Include="images\wedia-logo.svg" />
+    <Content Include="images\youtube.svg" />
+    <Content Include="js\app.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\vendor\jquery-3.4.1.slim.min.js" />
+    <Content Include="js\vendor\slick.min.js" />
     <Content Include="Views\Common\Sublayouts\PageHeader.cshtml" />
     <Content Include="Views\Common\Sublayouts\Section.cshtml" />
     <Content Include="Views\Common\Sublayouts\OneColumn.cshtml" />
+    <Content Include="images\icons\health\.DS_Store" />
+    <Content Include="images\icons\home\.DS_Store" />
+    <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.eot" />
+    <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.ttf" />
+    <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.woff" />
+    <Content Include="fonts\original\Ubuntu-Bold.ttf" />
+    <Content Include="fonts\original\Ubuntu-BoldItalic.ttf" />
+    <Content Include="fonts\original\Ubuntu-Italic.ttf" />
+    <Content Include="fonts\original\Ubuntu-Light.ttf" />
+    <Content Include="fonts\original\Ubuntu-LightItalic.ttf" />
+    <Content Include="fonts\original\Ubuntu-Medium.ttf" />
+    <Content Include="fonts\original\Ubuntu-MediumItalic.ttf" />
+    <Content Include="fonts\original\Ubuntu-Regular.ttf" />
+    <Content Include="fonts\Ubuntu-Bold.eot" />
+    <Content Include="fonts\Ubuntu-Bold.ttf" />
+    <Content Include="fonts\Ubuntu-Bold.woff" />
+    <Content Include="fonts\Ubuntu-BoldItalic.eot" />
+    <Content Include="fonts\Ubuntu-BoldItalic.ttf" />
+    <Content Include="fonts\Ubuntu-BoldItalic.woff" />
+    <Content Include="fonts\Ubuntu-Italic.eot" />
+    <Content Include="fonts\Ubuntu-Italic.ttf" />
+    <Content Include="fonts\Ubuntu-Italic.woff" />
+    <Content Include="fonts\Ubuntu-Light.eot" />
+    <Content Include="fonts\Ubuntu-Light.ttf" />
+    <Content Include="fonts\Ubuntu-Light.woff" />
+    <Content Include="fonts\Ubuntu-LightItalic.eot" />
+    <Content Include="fonts\Ubuntu-LightItalic.ttf" />
+    <Content Include="fonts\Ubuntu-LightItalic.woff" />
+    <Content Include="fonts\Ubuntu-Medium.eot" />
+    <Content Include="fonts\Ubuntu-Medium.ttf" />
+    <Content Include="fonts\Ubuntu-Medium.woff" />
+    <Content Include="fonts\Ubuntu-MediumItalic.eot" />
+    <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
+    <Content Include="fonts\Ubuntu-MediumItalic.woff" />
+    <Content Include="fonts\Ubuntu-Regular.eot" />
+    <Content Include="fonts\Ubuntu-Regular.ttf" />
+    <Content Include="fonts\Ubuntu-Regular.woff" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="webpack.mix.js" />
+    <Content Include="assets\js\components\Panel.vue" />
+    <None Include="assets\js\components\PanelItem.vue" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
+    <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
+    <Content Include="assets\styles\componentscss\anchorlist.scss" />
+    <Content Include="assets\styles\componentscss\breadcrumb.scss" />
+    <Content Include="assets\styles\componentscss\hero.scss" />
+    <Content Include="assets\styles\componentscss\product.scss" />
+    <Content Include="assets\styles\scss\base-components\_accordion.scss" />
+    <Content Include="assets\styles\scss\base-components\_intro.scss" />
+    <Content Include="assets\styles\scss\base-components\_slick.scss" />
+    <Content Include="assets\styles\scss\base-components\_sticky.scss" />
+    <Content Include="assets\styles\scss\base-components\_zigzag.scss" />
+    <Content Include="assets\styles\scss\base\_base.scss" />
+    <Content Include="assets\styles\scss\base\_headings.scss" />
+    <Content Include="assets\styles\scss\base\_inputs.scss" />
+    <Content Include="assets\styles\scss\base\_mixins.scss" />
+    <Content Include="assets\styles\scss\base\_utility.scss" />
+    <Content Include="assets\styles\scss\base\_variables.scss" />
+    <Content Include="assets\styles\scss\layout\_footer.scss" />
+    <Content Include="assets\styles\scss\layout\_header.scss" />
+    <Content Include="assets\styles\scss\style.scss" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,12 +226,22 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
+      <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
+      <Name>Wedia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
