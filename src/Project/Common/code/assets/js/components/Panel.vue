@@ -12,13 +12,13 @@
 
         <template v-for="category in panel.categories">
  
-            <div v-if="!category.isMain" class="program-expander">
+            <div v-if="!category.isMain" class="program-expander" :key="`category-${category.id}`">
                 <div class="program-heading">
                     <h2>
                         {{ category.title }}
                     </h2>
                 </div>
-                <panel-grid :key="`category-${category.id}`" :category="category" :items="panel.items"></panel-grid>
+                <panel-grid :category="category" :items="panel.items"></panel-grid>
             </div>
 
             <panel-grid  v-else :key="`category-${category.id}`" :category="category" :items="panel.items" ></panel-grid>
@@ -44,7 +44,7 @@
         }),
         computed: {
             hasFilters() {
-                return this.panel.filters && this.panel.filters.length > 0
+                return this.panel.filters.items && this.panel.filters.items.length > 0
             }
         },
         components: {

@@ -6,8 +6,6 @@ namespace Wedia.Feature.Panels.Models
 {
     public class Panel
     {
-        //[JsonProperty("item")]
-        //public Item Item { get; set; }
         [JsonProperty("title")]
         public string Title { get; set; }
         [JsonProperty("summary")]
@@ -17,6 +15,6 @@ namespace Wedia.Feature.Panels.Models
         [JsonProperty("categories")]
         public IEnumerable<PanelCategory> Categories { get; set; }
         [JsonProperty("filters")]
-        public IEnumerable<PanelRow> Filters { get; set; }
+        public Filters Filters { get; set; }
     }
 }

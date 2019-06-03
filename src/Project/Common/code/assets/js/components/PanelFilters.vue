@@ -1,6 +1,6 @@
 ﻿<template>
     <div class="filter">
-        <span class="filter__trigger" @click="show = true">FILTER RESULTS</span>
+        <span class="filter__trigger" @click="show = true">{{ filters.title }}</span>
         <div class="filter__results filter__results--active" v-show="show">
 
             <div class="filter__results__column" v-for="(filter,i) in propedFilters" :key="`proped-filter-${i}`">
@@ -17,8 +17,8 @@
             </div>
 
             <div class="filter__actions">
-                <span class="filter__apply js-apply-filters" @click="show = false">Cancel</span>
-                <span class="filter__apply js-apply-filters" @click="apply">Apply</span>
+                <span class="filter__apply js-apply-filters" @click="show = false">{{ filters.cancelButton }}</span>
+                <span class="filter__apply js-apply-filters" @click="apply">{{ filters.applyButton }}</span>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
     export default {
         props: {
             filters: {
-                type: Array,
+                type: Object,
                 require: false
             }
         },
@@ -42,19 +42,23 @@
             selectedFilters: []
         }),
         methods: {
+            makeFilters() {
+                if (!this.filters.items)
+                    return;
+
+                this.filters.items.forEach(filter => {
+                    if (!filter.isCheckbox)
+                        this.propedFilters.push(filter);
+                    else
+                        this.unPropedFilters.push(filter);
+                });
+            },
             apply() {
                 EventBus.$emit("applyFilters", this.selectedFilters);
             }
         },
         mounted() {
-
-            this.filters.forEach(filter => {
-                if (!filter.isCheckbox)
-                    this.propedFilters.push(filter);
-                else
-                    this.unPropedFilters.push(filter);
-            });
-
+            this.makeFilters();            
         },
         components: {
             PanelFilter

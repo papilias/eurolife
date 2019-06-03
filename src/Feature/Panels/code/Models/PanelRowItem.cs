@@ -11,8 +11,6 @@ namespace Wedia.Feature.Panels.Models
         public ID ParentID { get; set; }
         [JsonProperty("value")]
         public string Value { get; set; }
-        [JsonProperty("convertedName")]
-        public string ConvertedName { get; set; }
         [JsonProperty("isChecked")]
         public bool IsChecked { get; set; }
     }

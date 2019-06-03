@@ -7,7 +7,7 @@
         </div>
 
         <div class="grid-table-window">
-            <div class="grid-table js-grid-table" :style="`--programCount:${items.length};`">
+            <div class="grid-table js-grid-table" id="programs-table" :style="`--programCount:${items.length};`">
                 <template v-for="item in items">
                     <panel-column :key="`panel-row-item${item.id}`" :category="category" :item="item"></panel-column>
                 </template>

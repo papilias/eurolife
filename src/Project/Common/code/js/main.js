@@ -84,12 +84,10 @@
     const leftButton = document.querySelector(".js-program-left");
     const rightButton = document.querySelector(".js-program-right");
     var order = 1;
-    var programNumber = document.getElementById("programs-table").childElementCount;
+
     if (leftButton != null && rightButton != null) {
 
         for (const carousel of carousels) {
-
-            carousel.style.setProperty('--programCount', programNumber);
 
             rightButton.addEventListener('click', _ => {
                 carousel.style.setProperty('--transform', order * (-274 - 32) + "px");
