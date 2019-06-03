@@ -146,8 +146,6 @@
     <Content Include="Views\Common\Sublayouts\PageHeader.cshtml" />
     <Content Include="Views\Common\Sublayouts\Section.cshtml" />
     <Content Include="Views\Common\Sublayouts\OneColumn.cshtml" />
-    <Content Include="images\icons\health\.DS_Store" />
-    <Content Include="images\icons\home\.DS_Store" />
     <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.eot" />
     <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.ttf" />
     <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.woff" />
@@ -183,7 +181,6 @@
     <Content Include="fonts\Ubuntu-Regular.eot" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
     <Content Include="fonts\Ubuntu-Regular.woff" />
-    <Content Include="images\Thumbs.db" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="webpack.mix.js" />
