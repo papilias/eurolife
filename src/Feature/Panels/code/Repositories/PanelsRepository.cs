@@ -67,7 +67,6 @@ namespace Wedia.Feature.Panels.Repositories
                 ID = item.ID,
                 ParentID = item.ParentID,
                 Value = item.Fields[Templates.PanelRowItemValue.Fields.Value].Value,
-                ConvertedName = item.Name.Replace(" ", "_"),
                 IsChecked = item.Fields[Templates.PanelRowItemValue.Fields.Check].IsChecked()
             };
         }

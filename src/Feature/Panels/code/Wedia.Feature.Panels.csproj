@@ -97,13 +97,13 @@
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Panels\ProductPanel.cshtml" />
     <Content Include="Views\Panels\PanelControls.cshtml" />
-    <Content Include="Views\Panels\PanelFilters.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\IPanelsBuilder.cs" />
     <Compile Include="Builders\PanelsBuilder.cs" />
     <Compile Include="Controllers\PanelsController.cs" />
+    <Compile Include="Models\Filters.cs" />
     <Compile Include="Models\Panel.cs" />
     <Compile Include="Models\PanelCategory.cs" />
     <Compile Include="Models\PanelItem.cs" />
