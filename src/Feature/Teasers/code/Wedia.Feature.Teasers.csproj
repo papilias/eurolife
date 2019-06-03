@@ -87,6 +87,8 @@
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Teasers\TeaserList.cshtml" />
     <Content Include="Views\Teasers\SimpleTeaserWithImage.cshtml" />
+    <Content Include="Views\Teasers\TeaserWithSideImageAndCTA.cshtml" />
+    <Content Include="Views\Teasers\CenteredTeaserWithCTA.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

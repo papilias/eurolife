@@ -1,0 +1,50 @@
+/*------------------------------------*\
+  #NACHORLIST
+\*------------------------------------*/
+/* ==================================================
+   Mixins
+   ================================================== */
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+.anchorlist {
+  padding-bottom: 23px; }
+  .anchorlist li {
+    list-style-type: none;
+    display: inline-block; }
+  .anchorlist a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0; }
+
+.theme-health .achorlist__active {
+  color: #ff303d;
+  background-color: #fdeaeb; }
+
+.theme-motor .achorlist__active {
+  color: #00945f;
+  background-color: #ecf4ef; }
+
+.theme-home .achorlist__active {
+  color: #ffb100;
+  background-color: #fdf7e5; }
+
+.theme-life .achorlist__active {
+  color: #455196;
+  background-color: #ecedf4; }
+
+/*if anchor list is sticky*/
+.sticky-pending .anchorlist {
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  -o-transition: transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+  will-change: transform; }
+
+@media (min-width: 1700px) {
+  .sticky-second .anchorlist {
+    -webkit-transform: translate(-240px, 0px);
+    -ms-transform: translate(-240px, 0px);
+    transform: translate(-240px, 0px); } }

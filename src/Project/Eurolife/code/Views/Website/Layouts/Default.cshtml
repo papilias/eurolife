@@ -1,4 +1,6 @@
 ﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Assets.Services
+@using Wedia.Foundation.Assets.Models
 @using Sitecore.Mvc.Analytics.Extensions
 
 @{
@@ -12,11 +14,24 @@
         @Html.Sitecore().Placeholder("head")
     }
 
+    @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
+    @RenderAssetsService.Current.RenderStyles()
+
     @Html.Sitecore().VisitorIdentification()
 </head>
-<body>
-    <main role="main">
+<body class="theme-health">
+    <header role="banner">
+        @Html.Sitecore().Placeholder("page-header")
+    </header>
+
+    <main id="app" role="main">
         @Html.Sitecore().Placeholder("page-layout")
     </main>
+
+    <footer>
+        @Html.Sitecore().Placeholder("footer")
+    </footer>
+
+    @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
 </body>
 </html>

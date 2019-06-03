@@ -110,6 +110,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Assets\code\Wedia.Foundation.Assets.csproj">
+      <Project>{7d53dc46-bd1e-46cf-a28a-c119026de011}</Project>
+      <Name>Wedia.Foundation.Assets</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>

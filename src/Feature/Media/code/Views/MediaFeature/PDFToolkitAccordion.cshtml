@@ -10,7 +10,9 @@
 
 }
 
-<span>@Html.Sitecore().Dictionary("/Media/PDF Toolkit Accordion/Tab Name", "Documentation")</span>
+@*<span>@Html.Sitecore().Dictionary("/Media/PDF Toolkit Accordion/Tab Name", "Documentation")</span>*@
+
+@Html.Sitecore().Field(Templates.PDFGroup.Fields.Title)
 
 <div class="tab content">
     @foreach (var item in Model.Item.GetMultiListValueItems(Templates.PDFGroup.Fields.Files))

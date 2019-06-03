@@ -20,7 +20,7 @@
     }
 }
 
-<header>
+
     @if (Sitecore.Context.PageMode.IsExperienceEditor)
     {
         @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.DesktopImage)
@@ -32,4 +32,3 @@
     }
 
     @Html.Sitecore().Placeholder("page-header")
-</header>

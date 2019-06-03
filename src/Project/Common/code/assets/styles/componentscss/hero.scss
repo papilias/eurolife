@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #HERO
+\*------------------------------------*/
+
+@import "../scss/base/mixins.scss";
+@import "../scss/base/variables.scss";
+
+.hero{
+
+  padding-right: 60px;
+
+  @include breakpoint(1700) {
+    margin-right: calc( (100vw - 1700px ) / 2);
+  }
+
+  img{
+    width:100%;
+    border-radius: 0 0 170px 0;
+  }
+}
+
+
+

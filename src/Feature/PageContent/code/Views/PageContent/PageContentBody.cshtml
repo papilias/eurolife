@@ -1,17 +1,22 @@
-﻿@using Sitecore.Mvc
-@using Sitecore.Mvc.Presentation
-@using Wedia.Feature.PageContent
+﻿@using Wedia.Feature.PageContent
+@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
-@model RenderingModel
+
+@model Sitecore.Mvc.Presentation.RenderingModel
 @{
 
     if (!Sitecore.Context.PageMode.IsExperienceEditor && !Html.Sitecore().HasValue(Templates.HasPageBodyContent.Fields.Body.ToString()))
     {
+        @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageBodyContent.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
         return;
     }
 
 }
 
-<div>
+<section class="product-moto center center--1100">
     @Html.Sitecore().Field(Templates.HasPageBodyContent.Fields.Body)
-</div>
+</section>
+
+
+

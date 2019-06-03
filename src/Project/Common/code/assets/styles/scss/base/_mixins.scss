@@ -1,0 +1,57 @@
+/* ==================================================
+   Mixins
+   ================================================== */
+
+   @mixin background($from, $to) {
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-linear-gradient(top, $from 0%, $to 100%); 
+    background: linear-gradient(to bottom, $from 0%, $to 100%); 
+  }
+
+  
+  @mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+   
+    #{$property}: $value;
+  }
+  
+  @mixin font-size($size) {
+    font-size: $size + px;
+    font-size: ($size / 10) + rem;
+  }
+  
+  @mixin breakpoint($point) {
+    @if $point == 1700 {
+      @media (min-width: 1700px) { @content ; }
+    }
+
+    @if $point == 1400 {
+      @media (min-width: 1400px) { @content ; }
+    }
+    
+    @else if $point == 1140 {
+      @media (min-width: 1140px) { @content ; }
+    }
+    
+    @else if $point == 700 {
+      @media (min-width: 700px) { @content ; }
+    }
+    
+     @else if $point == 540 {
+       @media (min-width: 540px) { @content ; }
+    }
+    
+     @else if $point == xsmall {
+       @media (min-width: 321px)  { @content ; }
+    }
+  }
+
+
+@mixin breakpoint-rev($point) {
+
+  @if $point == 1140 {
+    @media (max-width: 1140px) { @content ; }
+  }
+}

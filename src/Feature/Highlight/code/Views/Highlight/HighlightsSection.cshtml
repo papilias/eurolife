@@ -1,34 +1,35 @@
-﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+﻿@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
 @using Wedia.Feature.Highlight
 @model Sitecore.Mvc.Presentation.RenderingModel
 @{
-    if (!Model?.Item?.DescendsFrom(Templates.HasHighlights.ID) ?? true)
+    if (!Model?.Item?.DescendsFrom(Templates.HighlightsGroup.ID) ?? true)
     {
+        @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HighlightsGroup.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
         return;
     }
 
 }
 
-<div>
+<section class="center--1100 center highlights">
     @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
     {
-    <h2>@Html.Sitecore().Field(Templates.HasHighlights.Fields.Title)</h2>
-    <p>@Html.Sitecore().Field(Templates.HasHighlights.Fields.Summary)</p>
-    <ul>
+        <h2>@Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Title)</h2>
+        <p>@Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Summary)</p>
+    
 
-        @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HasHighlights.Fields.Highlights))
+        foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
         {
-            using (Html.BeginEditFrame(item.ID.ToString(), ""))
-            {
-
-                <li class="@(item?.TargetItem(Templates.Highlight.Fields.Icon)?[Templates.Icon.Fields.CssClass])">
-                    @Html.Sitecore().Field(Templates.Highlight.Fields.Title, item)
+            <div class="teaser teaser--highlight">
+                <div class="teaser-icon @(item?.TargetItem(Templates.Highlight.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
+                <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.Highlight.Fields.Title, item)</h2>
+                <div class="teaser-highlight__text">
                     @Html.Sitecore().Field(Templates.Highlight.Fields.Summary, item)
-                </li>
-            }
-        }
-        </ul>
+                </div>
+            </div>
+         }
     }
+</section>
 
-</div>
 

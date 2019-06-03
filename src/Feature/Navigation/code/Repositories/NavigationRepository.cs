@@ -16,6 +16,18 @@ namespace Wedia.Feature.Navigation.Repositories
     {
         public Item ContextItem => RenderingContext.Current?.ContextItem ?? Context.Item;
 
+        public Item NavigationRoot { get; }
+
+        public NavigationRepository()
+        {
+            NavigationRoot = GetNavigationRoot(ContextItem);
+
+            if (NavigationRoot == null)
+            {
+                throw new InvalidOperationException($"Cannot determine navigation root from '{ContextItem.Paths.FullPath}'");
+            }
+        }
+
         public NavigationItems GetBreadcrumb()
         {
             var items = new NavigationItems
@@ -25,10 +37,26 @@ namespace Wedia.Feature.Navigation.Repositories
 
             for (var i = 0; i < items.NavItems.Count - 1; i++)
             {
+                items.NavItems[i].Level = i;
                 items.NavItems[i].IsActive = i == items.NavItems.Count - 1;
             }
 
             return items;
+        }
+
+        public NavigationItems GetLinkMenuItems(Item menuRoot)
+        {
+            if (menuRoot == null)
+            {
+                throw new ArgumentNullException(nameof(menuRoot));
+            }
+
+            return GetChildNavigationItems(menuRoot, 0, 0);
+        }
+
+        private Item GetNavigationRoot(Item contextItem)
+        {
+            return contextItem.GetAncestorOrSelfOfTemplate(Templates.NavigationRoot.ID) ?? Context.Site.GetContextItem(Templates.NavigationRoot.ID);
         }
 
         private IEnumerable<NavigationItem> GetNavigationHierarcy(bool forceShowInMenu = false)
@@ -55,19 +83,40 @@ namespace Wedia.Feature.Navigation.Repositories
 
         private NavigationItem CreateNavigationItem(Item item, int level, int maxLevel = -1)
         {
-            var targetITem = item;
+            var targetITem = item.DescendsFrom(Templates.Link.ID) ? item.TargetItem(Templates.Link.Fields.Link) : item;
 
             return new NavigationItem
             {
                 Item = item,
-                Url = item.Url(),
-                IsActive = IsItemActive(targetITem)
+                Url = item.DescendsFrom(Templates.Link.ID) ? item.LinkFieldUrl(Templates.Link.Fields.Link) : item.Url(),
+                Target = item.DescendsFrom(Templates.Link.ID) ? item.LinkFieldTarget(Templates.Link.Fields.Link) : "",
+                IsActive = IsItemActive(targetITem ?? item)
             };
         }
 
         private bool IsItemActive(Item item)
         {
-            return ContextItem.ID == item.ID;
+            return ContextItem.ID == item.ID || ContextItem.Axes.GetAncestors().Any(a => a.ID == item.ID);
         }
+
+        private NavigationItems GetChildNavigationItems(Item parentItem, int level, int maxLevel)
+        {
+            if (level > maxLevel || !parentItem.HasChildren)
+            {
+                return null;
+            }
+
+            var childItems = parentItem
+                .Children
+                .Where(item => IncludeInNavigation(item))
+                .Select(i => CreateNavigationItem(i, level, maxLevel));
+
+            return new NavigationItems
+            {
+                NavItems = childItems.ToList()
+            };
+
+        }
+
     }
 }

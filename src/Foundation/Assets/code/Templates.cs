@@ -10,8 +10,8 @@ namespace Wedia.Foundation.Assets
 
             public struct Fields
             {
-                public static readonly ID ScriptFiles = new ID("{BAE63BA4-2087-4625-B625-EEA9BCD46075}");
-                public static readonly ID StylingFiles = new ID("{4867D192-326A-4AA4-81EF-EA430E224AFF}");
+                public static readonly ID ScriptFiles = new ID("{D7E7D647-0D97-4DF7-A1AE-01253761A71B}");
+                public static readonly ID StylingFiles = new ID("{BAE63BA4-2087-4625-B625-EEA9BCD46075}");
                 public static readonly ID InlineScript = new ID("{3C4EFD07-B7A6-459D-977A-10EFC2754BA5}");
                 public static readonly ID InlineStyling = new ID("{D8979EC1-D460-488F-8D44-CA5F2F489E47}");
             }

@@ -80,6 +80,7 @@
     <Content Include="App_Config\Include\Feature\Feature.Navigation.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Navigation\Breadcrumb.cshtml" />
+    <Content Include="Views\Navigation\LinkMenu.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,9 +104,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Alerts\code\Wedia.Foundation.Alerts.csproj">
+      <Project>{85863230-7954-48F3-B895-35C3F4B4C2F3}</Project>
+      <Name>Wedia.Foundation.Alerts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Wedia.Foundation.DependencyInjection.csproj">
       <Project>{64188ACE-CC0B-4546-A5B0-2422931E3E05}</Project>
       <Name>Wedia.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
+      <Project>{71DE993F-50E5-4300-A003-F07F877830CD}</Project>
+      <Name>Wedia.Foundation.Dictionary</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>

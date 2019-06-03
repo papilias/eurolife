@@ -30,7 +30,7 @@ namespace Wedia.Feature.Highlight
             }
         }
 
-        public struct HasHighlights
+        public struct HighlightsGroup
         {
             public static readonly ID ID = new ID("{CDF57686-EE85-435E-8F0B-BEBAC61CCECE}");
 

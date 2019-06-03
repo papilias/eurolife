@@ -19,15 +19,14 @@
         mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage);
     }
 }
-
-<div>
+<section class="hero m-t-48 m-b-24">
     @if (Sitecore.Context.PageMode.IsExperienceEditor || desktopImage != null)
     {
         @Model.Item.Field(Templates.HasPageImageContent.Fields.DesktopImage)
 
     }
-    @if (Sitecore.Context.PageMode.IsExperienceEditor || mobileImage != null)
+    @*@if (Sitecore.Context.PageMode.IsExperienceEditor || mobileImage != null)
     {
         @Model.Item.Field(Templates.HasPageImageContent.Fields.MobileImage)
-    }
-</div>
+    }*@
+</section>
