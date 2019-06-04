@@ -1,28 +1,40 @@
 ﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
-@using Wedia.Foundation.Dictionary.Extensions
 @using Wedia.Feature.Media
+@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
+@using Wedia.Foundation.Dictionary.Extensions
+
 @model Sitecore.Mvc.Presentation.RenderingModel
 @{
     if (!Model?.Item?.DescendsFrom(Templates.PDFGroup.ID) ?? true)
     {
+        @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.PDFGroup.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
         return;
     }
-
 }
 
-@*<span>@Html.Sitecore().Dictionary("/Media/PDF Toolkit Accordion/Tab Name", "Documentation")</span>*@
-
-@Html.Sitecore().Field(Templates.PDFGroup.Fields.Title)
-
-<div class="tab content">
-    @foreach (var item in Model.Item.GetMultiListValueItems(Templates.PDFGroup.Fields.Files))
-    {
-        using (Html.BeginEditFrame(item.ID.ToString(), ""))
-        {
-            <a href="@item.ImageUrl(Templates.PDF.Fields.File)" download="true">
-                @item.Field(Templates.PDF.Fields.Title)
-            </a>
-        }
-    }
-</div>
+<li>
+    <input type="checkbox" name="panel" id="panel-00" checked>
+    <label for="panel-00">
+        @Html.Sitecore().Field(Templates.PDFGroup.Fields.Title)
+        <span class="accordion__state"></span>
+    </label>
+    <div class="accordion__content">
+        <div class="grid-3 m-b-24">
+            @foreach (var item in Model.Item.GetMultiListValueItems(Templates.PDFGroup.Fields.Files))
+            {
+                using (Html.BeginEditFrame(item.ID.ToString(), ""))
+                {
+                <a href="@item.ImageUrl(Templates.PDF.Fields.File)" class="file-item" download="true">
+                    <div class="file-item__title">@item.Field(Templates.PDF.Fields.Title)</div>
+                    <div class="file-item__desc">
+                        @Html.Sitecore().Dictionary("/Media/PDF Toolkit Accordion/PDF Label", "PDF")
+                        @item.FileSize(Templates.PDF.Fields.File)
+                    </div>
+                </a>
+                }
+            }
+        </div>
+    </div>
+</li>
 

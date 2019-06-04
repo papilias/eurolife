@@ -13,17 +13,37 @@
     return;
 }
 
-@if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.DesktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
-{
-    @Html.Sitecore().ImageField(Templates.TeaserContent.Fields.DesktopImage)
-}
+<div class="zigzag__item m-b-96 relator">
+    @if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.DesktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        <div class="zigzag__image">
+            @Html.Sitecore().ImageField(Templates.TeaserContent.Fields.DesktopImage)
+        </div>
 
-@if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.MobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
-{
-    @Html.Sitecore().ImageField(Templates.TeaserContent.Fields.MobileImage)
-}
 
-@Html.Sitecore().Field(Templates.TeaserHeadline.Fields.Title)
-@Html.Sitecore().Field(Templates.TeaserContent.Fields.Summary)
+    }
 
-@Html.Sitecore().Field(Templates.TeaserContent.Fields.Link)
+    @if (Model.Item.FieldHasValue(Templates.TeaserContent.Fields.MobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        <div class="zigzag__image">
+            @Html.Sitecore().ImageField(Templates.TeaserContent.Fields.MobileImage)
+        </div>
+    }
+
+    <div class="zigzag__info">
+        <h2 class="h2 color-base m-b-16">@Html.Sitecore().Field(Templates.TeaserHeadline.Fields.Title)</h2>
+        <div class="zigzag__text m-b-32">
+            @Html.Sitecore().Field(Templates.TeaserContent.Fields.Summary)
+        </div>
+        <div class="m-t-32">
+            @Html.Sitecore().Field(Templates.TeaserContent.Fields.Link, new { @class= "btn btn--default btn--dark" })
+        </div>
+    </div>
+</div>
+
+
+
+    
+    
+
+    

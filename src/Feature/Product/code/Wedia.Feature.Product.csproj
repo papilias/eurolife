@@ -105,6 +105,8 @@
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Product\Toolkit.cshtml" />
     <Content Include="Views\Product\ProductProgramsCoverages.cshtml" />
+    <Content Include="Views\Product\ToolkitContactTransfer.cshtml" />
+    <Content Include="Views\Product\ToolkitHowItWorks.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
