@@ -42,18 +42,12 @@ namespace Wedia.Feature.Teasers
                 public static readonly ID Content = new ID("{4C371D3E-7CB4-48FB-86E9-745CC92B1F92}");
                 public static readonly ID Link = new ID("{F749E224-0A8C-4448-9B12-F4451CAA7E09}");
                 public static readonly ID Label = new ID("{12F214C9-16EE-4CF1-9220-7D1C8FEFC9A1}");
-            }
-
+            }  
 
             public struct Dimensions
-            {
-                public static readonly int LandingBannerWidth = 1382;
-                public static readonly int LandingBannerHeight = 516;
-                public static readonly int LandingBannerResponsiveWidth = 702;
-                public static readonly int LandingBannerResponsiveHeight = 958;
+            {                  
                 public static readonly int ColoredImageWidth = 720;
                 public static readonly int ColoredImageHeight = 520;
-
             }
         }
     }
