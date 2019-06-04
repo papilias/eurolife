@@ -185,6 +185,12 @@ namespace Wedia.Foundation.SitecoreExtensions.Extensions
             }
         }
 
+        public static string LinkFieldDescription(this Item item, ID fieldID)
+        {
+            XmlField field = item.Fields[fieldID];
+            return field?.GetAttribute("description");
+        }
+
         public static bool HasLayout(this Item item)
         {
             return item?.Visualization?.Layout != null;
