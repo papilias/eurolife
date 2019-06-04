@@ -2,7 +2,7 @@
   #FOOTER
 \*------------------------------------*/
 
-.zigzag{
+.zigzag--light{
 
 }
 
@@ -41,4 +41,59 @@
   left: 0;
   width:100%;
   height: 100%;
+}
+
+
+/*light version with colors*/
+
+.zigzag__image--light{
+  flex-basis: 41%;
+
+  img{
+    width:100%;
+  }
+}
+
+.zigzag__info--light{
+  display: flex;
+  flex-basis: 45%;
+  margin: 0 7%;
+  flex-direction: column;
+  justify-content: center;
+}
+.zigzag__text--light{
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@include breakpoint-rev(1140){
+  .zigzag--light{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .zigzag__item{
+      flex-basis: 48%;
+      display: block;
+    }
+  }
+  .zigzag__image--light {
+    flex-basis: 100%;
+    margin-bottom: 24px;
+  }
+  .zigzag__info--light {
+    flex-basis: 100%;
+    padding-bottom:24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+
+@include breakpoint-rev(700) {
+  .zigzag--light{
+    .zigzag__item{
+      flex-basis: 100%;
+      display: block;
+    }
+  }
 }
