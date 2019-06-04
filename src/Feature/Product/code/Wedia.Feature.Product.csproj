@@ -101,7 +101,6 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Product.config" />
     <Content Include="App_Config\Include\Feature\Feature.Product.Serialization.config" />
-    <Content Include="Properties\PublishProfiles\Standalone.pubxml.user" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Product\Toolkit.cshtml" />
     <Content Include="Views\Product\ProductProgramsCoverages.cshtml" />
