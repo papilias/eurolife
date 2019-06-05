@@ -12,6 +12,9 @@ SharedFields:
   Hint: __Base template
   Type: tree list
   Value: "{D31E08E4-E1C4-4F46-A6AC-FA160D92A860}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
 Languages:
 - Language: en
   Versions:
