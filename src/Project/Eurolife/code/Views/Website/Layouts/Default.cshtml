@@ -30,6 +30,9 @@
         @Html.Sitecore().Placeholder("footer")
     </footer>
 
-    @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+    @if (!Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+        @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+    }
 </body>
 </html>

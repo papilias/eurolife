@@ -56,8 +56,7 @@ namespace Wedia.Foundation.SitecoreExtensions.Extensions
 
             return hashedUrl;
         }
-
-
+        
         public static Item TargetItem(this Item item, ID linkFieldId)
         {
             if (item == null)
@@ -75,6 +74,33 @@ namespace Wedia.Foundation.SitecoreExtensions.Extensions
         {
             var targetItem = item.TargetItem(mediaFieldId);
             return targetItem == null ? string.Empty : (MediaManager.GetMediaUrl(targetItem) ?? string.Empty);
+        }
+
+        public static string FileSize(this Item item, ID FileFieldId)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+
+            var fileField = (FileField)item.Fields[FileFieldId];
+            var targetItem = fileField.MediaItem;
+
+            var media = MediaManager.GetMedia(targetItem);
+            var mediaSize = media.MediaData.MediaItem.Size;
+
+            string[] sizes = { "B", "KB", "MB", "GB", "TB" };
+            double len = (double)mediaSize;
+            int order = 0;
+            while (len >= 1024 && order < sizes.Length - 1)
+            {
+                order++;
+                len = len / 1024;
+            }
+
+            // Adjust the format string to your preferences. For example "{0:0.#}{1}" would
+            // show a single decimal place, and no space.
+            return string.Format("{0:0.##} {1}", len, sizes[order]);
         }
 
 

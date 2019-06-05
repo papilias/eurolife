@@ -15,6 +15,7 @@ namespace Wedia.Feature.Teasers
             public struct Fields
             {
                 public static readonly ID Title = new ID("{8916FA5F-C81E-498B-B38C-78EF0EF2B199}");
+                public static readonly ID Summary = new ID("{5F1F4453-9A9B-43B0-97D4-7E67B0DF8FF9}");
                 public static readonly ID Active = new ID("{2B28DCCA-4258-4F5D-A795-B475333909CB}");
                 public static readonly ID Count = new ID("{C1B4B643-02C7-4362-B316-465478198FF6}");
             }

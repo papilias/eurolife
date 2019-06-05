@@ -106,8 +106,14 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Alerts\code\Wedia.Foundation.Alerts.csproj">
+      <Project>{85863230-7954-48f3-b895-35c3f4b4c2f3}</Project>
+      <Name>Wedia.Foundation.Alerts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Wedia.Foundation.DependencyInjection.csproj">
       <Project>{64188ace-cc0b-4546-a5b0-2422931e3e05}</Project>
       <Name>Wedia.Foundation.DependencyInjection</Name>

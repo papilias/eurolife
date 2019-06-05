@@ -1,8 +1,8 @@
 ﻿---
-ID: "4791fadd-9bb5-4efd-b542-4d2f8bb634e4"
-Parent: "c6efb3d5-dbad-4645-a85a-ffe58b871821"
+ID: "5f1f4453-9a9b-43b0-97d4-7e67b0df8ff9"
+Parent: "3ec17b4e-dddc-4d23-81a4-75397282b064"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Product/_HasProductToolkit/Toolkit/ToolkitSubhead
+Path: /sitecore/templates/Feature/Teasers/_DynamicTeaser/Content/DynamicTeaserSummary
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
@@ -10,7 +10,7 @@ SharedFields:
   Value: "Multi-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 300
 Languages:
 - Language: en
   Versions:
@@ -18,4 +18,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190521T093829Z
+      Value: 20190603T131147Z
