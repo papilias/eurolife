@@ -26,14 +26,13 @@
         @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
         {
             <div class="teaser teaser--highlight">
-                <div class="teaser-icon @(item?.TargetItem(Templates.Highlight.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
-                <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.Highlight.Fields.Title, item)</h2>
+                <div class="teaser-icon @(item?.TargetItem(Templates.HighlightIcon.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
+                <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
                 <div class="teaser-highlight__text">
-                    @Html.Sitecore().Field(Templates.Highlight.Fields.Summary, item)
+                    @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary, item)
                 </div>
             </div>
         }
 
-    </section>
-
+    </section> 
 }
