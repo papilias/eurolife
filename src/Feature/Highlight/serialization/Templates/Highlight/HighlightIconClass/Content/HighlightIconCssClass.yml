@@ -2,7 +2,7 @@
 ID: "7c0c7238-1f7c-43e6-8c16-d076f5dcde11"
 Parent: "5bc27466-1d6c-4d54-ac77-cc5a77ce0824"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Highlight/HighlightIcon/Content/HighlightIconCssClass
+Path: /sitecore/templates/Feature/Highlight/HighlightIconClass/Content/HighlightIconCssClass
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

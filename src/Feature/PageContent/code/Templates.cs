@@ -70,16 +70,5 @@ namespace Wedia.Feature.PageContent
                 public static readonly ID CTA = new ID("{59B7D0BE-39F3-4F45-B645-BDE65FA07015}");
             }
         }
-
-        public struct PageExtraInfoItem
-        {
-            public static readonly ID ID = new ID("{A73C3CCA-3F04-49C1-A52E-EE4BCE069A77}");
-
-            public struct Fields
-            {
-                public static readonly ID Summary = new ID("{10F40DA7-E0EA-4499-9779-03D54552CD85}");
-                public static readonly ID CTA = new ID("{D909E90C-AF85-45E2-AED2-93EA01AD6C89}");
-            }
-        }
     }
 }
