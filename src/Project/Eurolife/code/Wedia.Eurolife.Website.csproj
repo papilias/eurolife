@@ -118,6 +118,10 @@
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Theming\code\Wedia.Foundation.Theming.csproj">
+      <Project>{19d479ad-ff86-4eda-a045-6d7f080814dc}</Project>
+      <Name>Wedia.Foundation.Theming</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

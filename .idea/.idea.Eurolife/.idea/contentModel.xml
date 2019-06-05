@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\projects\Eurolife" t="IncludeFlat">
+      <e p=".editorconfig" t="Include" />
+      <e p="Configuration" t="Include" />
+      <e p="Eurolife.sln" t="IncludeFlat" />
+      <e p="Feature" t="Include">
+        <e p="FAQ" t="Include" />
+        <e p="Highlight" t="Include" />
+        <e p="Identity" t="Include" />
+        <e p="Media" t="Include" />
+        <e p="Metadata" t="Include" />
+        <e p="Navigation" t="Include" />
+        <e p="PageContent" t="Include" />
+        <e p="Panels" t="Include" />
+        <e p="Person" t="Include" />
+        <e p="Product" t="Include" />
+        <e p="Storyboard" t="Include" />
+        <e p="Teasers" t="Include" />
+      </e>
+      <e p="Foundation" t="Include">
+        <e p="Alerts" t="Include" />
+        <e p="Assets" t="Include" />
+        <e p="DependencyInjection" t="Include" />
+        <e p="Dictionary" t="Include" />
+        <e p="FieldEditor" t="Include" />
+        <e p="Indexing" t="Include" />
+        <e p="LocalDatasource" t="Include" />
+        <e p="Multisite" t="Include" />
+        <e p="Serialization" t="Include" />
+        <e p="SitecoreExtensions" t="Include" />
+        <e p="Testing" t="Include" />
+        <e p="Theming" t="Include" />
+      </e>
+      <e p="gulp-config.js" t="Include" />
+      <e p="gulpfile.bck" t="Include" />
+      <e p="nuget.config" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Project" t="Include">
+        <e p="Common" t="Include" />
+        <e p="Eurolife" t="Include" />
+      </e>
+      <e p="publishsettings.targets" t="Include" />
+      <e p="src\Feature\FAQ\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.FAQ.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="FAQ" t="Include">
+            <e p="FAQToolkitAccordion.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.FAQ.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Highlight\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Highlight.config" t="Include" />
+              <e p="Feature.Highlight.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Highlight" t="Include">
+            <e p="HighlightsSection.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Highlight.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Identity\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Identity.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Views" t="Include">
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Identity.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Media\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Media.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="MediaFeatureController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="PDFGroup.cs" t="Include" />
+          <e p="PdfGroupDto.cs" t="Include" />
+          <e p="PDFGroups.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IMediaRepository.cs" t="Include" />
+          <e p="MediaRepository.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="MediaFeature" t="Include">
+            <e p="PDFGroupedList.cshtml" t="Include" />
+            <e p="PDFToolkitAccordion.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Media.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Metadata\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Metadata.config" t="Include" />
+              <e p="Feature.Metadata.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="MetadataController.cs" t="Include" />
+        </e>
+        <e p="Infrastructure" t="Include">
+          <e p="Pipelines" t="Include">
+            <e p="GetPageMetadata" t="Include">
+              <e p="CombineTitle.cs" t="Include" />
+              <e p="GetPageMetadataArgs.cs" t="Include" />
+              <e p="SetFromContext.cs" t="Include" />
+              <e p="SetFromPage.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="IMetadata.cs" t="Include" />
+          <e p="MetadataViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="MetadataRepository.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Metadata" t="Include">
+            <e p="PageMetadata.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Metadata.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Navigation\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Navigation.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="NavigationController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="NavigationItem.cs" t="Include" />
+          <e p="NavigationItems.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="INavigationRepository.cs" t="Include" />
+          <e p="NavigationRepository.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Navigation" t="Include">
+            <e p="Breadcrumb.cshtml" t="Include" />
+            <e p="LinkMenu.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Navigation.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\PageContent\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.PageContent.config" t="Include" />
+              <e p="Feature.PageContent.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Indexing" t="Include">
+          <e p="PageContentIndexingProvider.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="PageContent" t="Include">
+            <e p="LandingHeaderImage.cshtml" t="Include" />
+            <e p="PageContentBody.cshtml" t="Include" />
+            <e p="PageExtraInfoItem.cshtml" t="Include" />
+            <e p="PageHeaderTitle.cshtml" t="Include" />
+            <e p="PageImage.cshtml" t="Include" />
+            <e p="PageImageTeaser.cshtml" t="Include" />
+            <e p="PageInfoContent.cshtml" t="Include" />
+            <e p="PageTeaser.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.PageContent.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Panels\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.PageContent.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Builders" t="Include">
+          <e p="IPanelsBuilder.cs" t="Include" />
+          <e p="PanelsBuilder.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="PanelsController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Filters.cs" t="Include" />
+          <e p="Panel.cs" t="Include" />
+          <e p="PanelCategory.cs" t="Include" />
+          <e p="PanelItem.cs" t="Include" />
+          <e p="PanelRow.cs" t="Include" />
+          <e p="PanelRowItem.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IPanelsRepository.cs" t="Include" />
+          <e p="PanelsRepository.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Panels" t="Include">
+            <e p="PanelControls.cshtml" t="Include" />
+            <e p="ProductPanel.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Panels.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Person\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Person.config" t="Include" />
+              <e p="Feature.Person.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="PersonController.cs" t="Include" />
+        </e>
+        <e p="Indexing" t="Include">
+          <e p="PersonIndexingProvider.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="PagingSettings.cs" t="Include" />
+          <e p="PersonQuery.cs" t="Include" />
+          <e p="ResultsViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IPersonRepository.cs" t="Include" />
+          <e p="PersonRepository.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Person" t="Include">
+            <e p="EmployeeDetails.cshtml" t="Include" />
+            <e p="EmployeeHeader.cshtml" t="Include" />
+            <e p="EmployeesCarousel.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Person.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Product\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Product.config" t="Include" />
+              <e p="Feature.Product.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Product" t="Include">
+            <e p="ProductProgramsCoverages.cshtml" t="Include" />
+            <e p="Toolkit.cshtml" t="Include" />
+            <e p="ToolkitContactTransfer.cshtml" t="Include" />
+            <e p="ToolkitHowItWorks.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Product.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Storyboard\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Storyboard.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="StoryboardController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IStoryboardRepository.cs" t="Include" />
+          <e p="StoryboardRepository.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Storyboard" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="StoryboardItem.cshtml" t="Include" />
+            <e p="StoryboardItemWithImage.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Storyboard.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Feature\Teasers\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Feature" t="Include">
+              <e p="Feature.Teasers.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="TeasersController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="DynamicTeaserItem.cs" t="Include" />
+          <e p="DynamicTeaserModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Teasers" t="Include">
+            <e p="CenteredTeaserWithCTA.cshtml" t="Include" />
+            <e p="ColoredTeaserImageCTA.cshtml" t="Include" />
+            <e p="SimpleTeaserWithImage.cshtml" t="Include" />
+            <e p="Teaser Sticker.cshtml" t="Include" />
+            <e p="TeaserList.cshtml" t="Include" />
+            <e p="TeaserWithSideImageAndCTA.cshtml" t="Include" />
+            <e p="ThreeColumnsTeaser.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Feature.Teasers.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Alerts\code" t="IncludeRecursive">
+        <e p="AlertTexts.cs" t="Include" />
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.Alerts.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Constants.cs" t="Include" />
+        <e p="Exceptions" t="Include">
+          <e p="InvalidDataSourceItemException.cs" t="Include" />
+        </e>
+        <e p="Extensions" t="Include">
+          <e p="AlertControllerExtensions.cs" t="Include" />
+          <e p="AlertHtmlHelpers.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="InfoMessage.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Pipelines" t="Include">
+          <e p="MvcException" t="Include">
+            <e p="InvalidDatasourceItemExceptionProcessor.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Views" t="Include">
+          <e p="Alerts" t="Include">
+            <e p="InfoMessage.cshtml" t="Include" />
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Alerts.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Assets\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.Assets.config" t="Include" />
+              <e p="Foundation.Assets.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="Asset.cs" t="Include" />
+          <e p="AssetContentType.cs" t="Include" />
+          <e p="AssetRequirementCache.cs" t="Include" />
+          <e p="AssetRequirementList.cs" t="Include" />
+          <e p="AssetType.cs" t="Include" />
+          <e p="ScriptLocation.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Pipelines" t="Include">
+          <e p="GetPageRendering" t="Include">
+            <e p="AddAssets.cs" t="Include" />
+            <e p="AddPageAssets.cs" t="Include" />
+            <e p="AddRenderingAssets.cs" t="Include" />
+            <e p="AddThemeAssets.cs" t="Include" />
+            <e p="ClearAssets.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="AssetRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CreateBundleService.cs" t="Include" />
+          <e p="RenderAssetsService.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Assets.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\DependencyInjection\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.DependencyInjection.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Infrastructure" t="Include">
+          <e p="MvcControllerServicesConfigurator.cs" t="Include" />
+        </e>
+        <e p="Lifetime.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="ServiceAttribute.cs" t="Include" />
+        <e p="ServiceCollectionExtensions.cs" t="Include" />
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.DependencyInjection.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Dictionary\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.Dictionary.config" t="Include" />
+              <e p="Foundation.Dictionary.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Extensions" t="Include">
+          <e p="SitecoreExtensions.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Dictionary.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="DictionaryPhraseRepository.cs" t="Include" />
+          <e p="DictionaryRepository.cs" t="Include" />
+          <e p="IDictionaryPhraseRepository.cs" t="Include" />
+          <e p="IDictionaryRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CreateDictionaryEntryService.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Dictionary.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Dictionary\tests" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Sitecore.FakeDb.config" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="DictionaryPhraseRepositoryCacheTests.cs" t="Include" />
+          <e p="DictionaryPhraseRepositoryTests.cs" t="Include" />
+          <e p="DictionaryRepositoryTests.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CreateDictionaryEntryServiceTests.cs" t="Include" />
+        </e>
+        <e p="Wedia.Foundation.Dictionary.Tests.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\FieldEditor\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.FieldEditor.config" t="Include" />
+              <e p="Foundation.FieldEditor.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Infrastructure" t="Include">
+          <e p="EditAllFieldsCommand.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="GetFieldsToEditService.cs" t="Include" />
+          <e p="IGetFieldsToEditService.cs" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.FieldEditor.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Indexing\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.Indexing.config" t="Include" />
+              <e p="Foundation.Indexing.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Constants.cs" t="Include" />
+        <e p="Infrastructure" t="Include">
+          <e p="Fields" t="Include">
+            <e p="HasPresentationComputedField.cs" t="Include" />
+            <e p="HasSearchResultFormatterComputedField.cs" t="Include" />
+            <e p="SearchResultFormatterComputedField.cs" t="Include" />
+          </e>
+          <e p="Providers" t="Include">
+            <e p="FallbackIndexingProvider.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="IndexedItem.cs" t="Include" />
+          <e p="IQuery.cs" t="Include" />
+          <e p="IQueryFacet.cs" t="Include" />
+          <e p="IQueryFacetProvider.cs" t="Include" />
+          <e p="IQueryPredicateProvider.cs" t="Include" />
+          <e p="IQueryRoot.cs" t="Include" />
+          <e p="ISearchResult.cs" t="Include" />
+          <e p="ISearchResultFacet.cs" t="Include" />
+          <e p="ISearchResultFacetValue.cs" t="Include" />
+          <e p="ISearchResultFormatter.cs" t="Include" />
+          <e p="ISearchResults.cs" t="Include" />
+          <e p="ISearchSettings.cs" t="Include" />
+          <e p="SearchResult.cs" t="Include" />
+          <e p="SearchResultFacet.cs" t="Include" />
+          <e p="SearchResultFacetValue.cs" t="Include" />
+          <e p="SearchResultFactory.cs" t="Include" />
+          <e p="SearchResults.cs" t="Include" />
+          <e p="SearchSettingsBase.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IndexingProviderRepository.cs" t="Include" />
+          <e p="ISearchServiceRepository.cs" t="Include" />
+          <e p="SearchResultsRepository.cs" t="Include" />
+          <e p="SearchServiceRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="FormatBooleanFacetService.cs" t="Include" />
+          <e p="GetFreeTextPredicateService.cs" t="Include" />
+          <e p="SearchIndexResolver.cs" t="Include" />
+          <e p="SearchService.cs" t="Include" />
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Indexing.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\LocalDatasource\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.LocalDatasource.config" t="Include" />
+              <e p="Foundation.LocalDatasource.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Extensions" t="Include">
+          <e p="ItemExtensions.cs" t="Include" />
+        </e>
+        <e p="Infrastructure" t="Include">
+          <e p="Events" t="Include">
+            <e p="UpdateLocalDatasourceReferences.cs" t="Include" />
+          </e>
+          <e p="Indexing" t="Include">
+            <e p="LocalDatasourceContentField.cs" t="Include" />
+            <e p="LocalDatasourceIndexContentProvider.cs" t="Include" />
+          </e>
+          <e p="Pipelines" t="Include">
+            <e p="GetLocalDatasourceDependencies.cs" t="Include" />
+            <e p="GetLocalDatasourceLocation.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="ChangeLocalDatasourceReferencesService.cs" t="Include" />
+          <e p="ItemReferenceReplacer.cs" t="Include" />
+        </e>
+        <e p="Settings.cs" t="Include" />
+        <e p="Templates.cs" t="Include" />
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.LocalDatasource.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Multisite\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.Multisite.config" t="Include" />
+              <e p="Foundation.Multisite.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Commands" t="Include">
+          <e p="CreateRenderingSettings.cs" t="Include" />
+          <e p="OpenExperienceEditor.cs" t="Include" />
+        </e>
+        <e p="Dialogs" t="Include">
+          <e p="DatasourceSettingsPage.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Pipelines" t="Include">
+          <e p="GetDatasourceLocationAndTemplateFromSite.cs" t="Include" />
+          <e p="ResolveContentLanguage.cs" t="Include" />
+        </e>
+        <e p="Placeholders" t="Include">
+          <e p="SiteSpecificPlaceholderCache.cs" t="Include" />
+          <e p="SiteSpecificPlaceholderCacheManager.cs" t="Include" />
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Providers" t="Include">
+          <e p="DatasourceConfigurationService.cs" t="Include" />
+          <e p="DatasourceProvider.cs" t="Include" />
+          <e p="IDatasourceProvider.cs" t="Include" />
+          <e p="ISiteDefinitionsProvider.cs" t="Include" />
+          <e p="ISiteSettingsProvider.cs" t="Include" />
+          <e p="SiteDefinitionsProvider.cs" t="Include" />
+          <e p="SiteSettingsProvider.cs" t="Include" />
+        </e>
+        <e p="ServicesConfigurator.cs" t="Include" />
+        <e p="SiteContext.cs" t="Include" />
+        <e p="sitecore" t="Include">
+          <e p="shell" t="Include">
+            <e p="Applications" t="Include">
+              <e p="Dialogs" t="Include">
+                <e p="Multisite" t="Include">
+                  <e p="DatasourceSettings.xml" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="SiteDefinition.cs" t="Include" />
+        <e p="Templates.cs" t="Include" />
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Multisite.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Serialization\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.Serialization.config" t="Include" />
+              <e p="Foundation.Serialization.Settings.config" t="Include" />
+            </e>
+            <e p="Rainbow.config" t="Include" />
+            <e p="Unicorn" t="Include">
+              <e p="Unicorn.AutoPublish.config" t="Include" />
+              <e p="Unicorn.config" t="Include" />
+              <e p="Unicorn.Configs.Default.example" t="Include" />
+              <e p="Unicorn.Configs.Default.Roles.config.example" t="Include" />
+              <e p="Unicorn.Configs.Default.Users.config.example" t="Include" />
+              <e p="Unicorn.Configs.Dependency.config.example" t="Include" />
+              <e p="Unicorn.Configs.NewItemsOnly.example" t="Include" />
+              <e p="Unicorn.CustomSerializationFolder.config.example" t="Include" />
+              <e p="Unicorn.DataProvider.config" t="Include" />
+              <e p="Unicorn.Dilithium.config.example" t="Include" />
+              <e p="Unicorn.PowerShell.config" t="Include" />
+              <e p="Unicorn.Remote.config.disabled" t="Include" />
+              <e p="Unicorn.Roles.config" t="Include" />
+              <e p="Unicorn.Roles.DataProvider.config" t="Include" />
+              <e p="Unicorn.UI.config" t="Include" />
+              <e p="Unicorn.UI.DeployedContentEditorWarnings.config.disabled" t="Include" />
+              <e p="Unicorn.UI.IdentityServer.config" t="Include" />
+              <e p="Unicorn.UI.IdentityServer.config.disabled" t="Include" />
+              <e p="Unicorn.Users.config" t="Include" />
+              <e p="Unicorn.Users.DataProvider.config" t="Include" />
+              <e p="Unicorn.zSharedSecret.config.example" t="Include" />
+            </e>
+            <e p="Unicorn.Helix.config" t="Include" />
+            <e p="Unicorn.SharedSecret.config" t="Include" />
+            <e p="Unicorn.UI.DisableWarnings.config" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="ProductInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Serialization.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\SitecoreExtensions\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.SitecoreExtensions.config" t="Include" />
+              <e p="Foundation.SitecoreExtensions.PerformanceTweaks.config" t="Include" />
+              <e p="Foundation.SitecoreExtensions.Serialization.config" t="Include" />
+            </e>
+          </e>
+          <e p="layers.config.xdt" t="Include" />
+        </e>
+        <e p="Attributes" t="Include">
+          <e p="SkipAnalyticsTrackingAttribute.cs" t="Include" />
+          <e p="ValidateRenderingIdAttribute.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Constants.cs" t="Include" />
+        <e p="Controls" t="Include">
+          <e p="EditFrameRendering.cs" t="Include" />
+        </e>
+        <e p="Extension" t="Include">
+          <e p="FieldExtensions.cs" t="Include" />
+          <e p="HTMLHelperExtensions.cs" t="Include" />
+          <e p="ItemExtensions.cs" t="Include" />
+          <e p="RenderingExtensions.cs" t="Include" />
+          <e p="RenderingParameterExtensions.cs" t="Include" />
+          <e p="SessionExtensions.cs" t="Include" />
+          <e p="SiteExtensions.cs" t="Include" />
+          <e p="StringExtensions.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IRenderingPropertiesRepository.cs" t="Include" />
+          <e p="RenderingPropertiesRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="FieldRendererService.cs" t="Include" />
+          <e p="ITrackerService.cs" t="Include" />
+          <e p="TrackerService.cs" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.SitecoreExtensions.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Testing\tests" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Sitecore.FakeDb.config" t="Include" />
+          </e>
+        </e>
+        <e p="Attributes" t="Include">
+          <e p="AutoDbDataAttribute.cs" t="Include" />
+          <e p="CoreDbAttribute.cs" t="Include" />
+          <e p="RegisterViewAttribute.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Builders" t="Include">
+          <e p="AttributeRelay.cs" t="Include" />
+          <e p="CoreDbCustomization.cs" t="Include" />
+          <e p="HtmlHelperBuilder.cs" t="Include" />
+          <e p="HttpContextBuilder.cs" t="Include" />
+          <e p="RegisterViewToEngineBuilder.cs" t="Include" />
+        </e>
+        <e p="Commands" t="Include">
+          <e p="AddContentDbItemsCommand.cs" t="Include" />
+          <e p="GenericCommand.cs" t="Include" />
+        </e>
+        <e p="HttpContextMockFactory.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="ProductInfo.cs" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Testing.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Foundation\Theming\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Include" t="Include">
+            <e p="Foundation" t="Include">
+              <e p="Foundation.Theming.config" t="Include" />
+              <e p="Foundation.Theming.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Constants.cs" t="Include" />
+        <e p="Extensions" t="Include">
+          <e p="CarouselOptions.cs" t="Include" />
+          <e p="Controls" t="Include">
+            <e p="BackgroundRendering.cs" t="Include" />
+          </e>
+          <e p="RenderingExtensions.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Templates.cs" t="Include" />
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Foundation.Theming.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Project\Common\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Environment" t="Include">
+            <e p="Project" t="Include">
+              <e p="Common.Dev.config" t="Include" />
+            </e>
+          </e>
+          <e p="Include" t="Include">
+            <e p="Project" t="Include">
+              <e p="Common.Website.config" t="Include" />
+              <e p="Common.Website.Serialization.config" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Assets" t="Include">
+          <e p="js" t="Include">
+            <e p="app.js" t="Include" />
+            <e p="components" t="Include">
+              <e p="Panel.vue" t="Include" />
+              <e p="PanelColumn.vue" t="Include" />
+              <e p="PanelFilter.vue" t="Include" />
+              <e p="PanelFilters.vue" t="Include" />
+              <e p="PanelGrid.vue" t="Include" />
+              <e p="PanelItem.vue" t="Include" />
+            </e>
+            <e p="EventBus.js" t="Include" />
+          </e>
+          <e p="styles" t="Include">
+            <e p="componentscss" t="Include">
+              <e p="anchorlist.scss" t="Include" />
+              <e p="breadcrumb.scss" t="Include" />
+              <e p="hero.scss" t="Include" />
+              <e p="product.scss" t="Include" />
+            </e>
+            <e p="scss" t="Include">
+              <e p="base" t="Include">
+                <e p="_base.scss" t="Include" />
+                <e p="_headings.scss" t="Include" />
+                <e p="_inputs.scss" t="Include" />
+                <e p="_mixins.scss" t="Include" />
+                <e p="_utility.scss" t="Include" />
+                <e p="_variables.scss" t="Include" />
+              </e>
+              <e p="base-components" t="Include">
+                <e p="_accordion.scss" t="Include" />
+                <e p="_figures.scss" t="Include" />
+                <e p="_intro.scss" t="Include" />
+                <e p="_leadership.scss" t="Include" />
+                <e p="_slick.scss" t="Include" />
+                <e p="_sticky.scss" t="Include" />
+                <e p="_teaser.scss" t="Include" />
+                <e p="_timeline.scss" t="Include" />
+                <e p="_triplettes.scss" t="Include" />
+                <e p="_zigzag.scss" t="Include" />
+              </e>
+              <e p="layout" t="Include">
+                <e p="_footer.scss" t="Include" />
+                <e p="_header.scss" t="Include" />
+              </e>
+              <e p="style.scss" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="css" t="Include">
+          <e p="anchorlist.css" t="Include" />
+          <e p="breadcrumb.css" t="Include" />
+          <e p="hero.css" t="Include" />
+          <e p="product.css" t="Include" />
+          <e p="style.css" t="Include" />
+        </e>
+        <e p="fonts" t="Include">
+          <e p="converted" t="Include">
+            <e p="Ubuntu-LightItalic" t="Include">
+              <e p="preview.html" t="Include" />
+              <e p="styles.css" t="Include" />
+            </e>
+            <e p="Ubuntu-Medium" t="Include">
+              <e p="preview.html" t="Include" />
+              <e p="styles.css" t="Include" />
+            </e>
+            <e p="Ubuntu-MediumItalic" t="Include">
+              <e p="preview.html" t="Include" />
+              <e p="styles.css" t="Include" />
+              <e p="Ubuntu-MediumItalic.eot" t="Include" />
+              <e p="Ubuntu-MediumItalic.svg" t="Include" />
+              <e p="Ubuntu-MediumItalic.ttf" t="Include" />
+              <e p="Ubuntu-MediumItalic.woff" t="Include" />
+            </e>
+            <e p="Ubuntu-Regular" t="Include">
+              <e p="preview.html" t="Include" />
+              <e p="styles.css" t="Include" />
+            </e>
+          </e>
+          <e p="original" t="Include">
+            <e p="Ubuntu-Bold.ttf" t="Include" />
+            <e p="Ubuntu-BoldItalic.ttf" t="Include" />
+            <e p="Ubuntu-Italic.ttf" t="Include" />
+            <e p="Ubuntu-Light.ttf" t="Include" />
+            <e p="Ubuntu-LightItalic.ttf" t="Include" />
+            <e p="Ubuntu-Medium.ttf" t="Include" />
+            <e p="Ubuntu-MediumItalic.ttf" t="Include" />
+            <e p="Ubuntu-Regular.ttf" t="Include" />
+          </e>
+          <e p="Ubuntu-Bold.eot" t="Include" />
+          <e p="Ubuntu-Bold.svg" t="Include" />
+          <e p="Ubuntu-Bold.ttf" t="Include" />
+          <e p="Ubuntu-Bold.woff" t="Include" />
+          <e p="Ubuntu-BoldItalic.eot" t="Include" />
+          <e p="Ubuntu-BoldItalic.svg" t="Include" />
+          <e p="Ubuntu-BoldItalic.ttf" t="Include" />
+          <e p="Ubuntu-BoldItalic.woff" t="Include" />
+          <e p="Ubuntu-Italic.eot" t="Include" />
+          <e p="Ubuntu-Italic.svg" t="Include" />
+          <e p="Ubuntu-Italic.ttf" t="Include" />
+          <e p="Ubuntu-Italic.woff" t="Include" />
+          <e p="Ubuntu-Light.eot" t="Include" />
+          <e p="Ubuntu-Light.svg" t="Include" />
+          <e p="Ubuntu-Light.ttf" t="Include" />
+          <e p="Ubuntu-Light.woff" t="Include" />
+          <e p="Ubuntu-LightItalic.eot" t="Include" />
+          <e p="Ubuntu-LightItalic.svg" t="Include" />
+          <e p="Ubuntu-LightItalic.ttf" t="Include" />
+          <e p="Ubuntu-LightItalic.woff" t="Include" />
+          <e p="Ubuntu-Medium.eot" t="Include" />
+          <e p="Ubuntu-Medium.svg" t="Include" />
+          <e p="Ubuntu-Medium.ttf" t="Include" />
+          <e p="Ubuntu-Medium.woff" t="Include" />
+          <e p="Ubuntu-MediumItalic.eot" t="Include" />
+          <e p="Ubuntu-MediumItalic.svg" t="Include" />
+          <e p="Ubuntu-MediumItalic.ttf" t="Include" />
+          <e p="Ubuntu-MediumItalic.woff" t="Include" />
+          <e p="Ubuntu-Regular.eot" t="Include" />
+          <e p="Ubuntu-Regular.svg" t="Include" />
+          <e p="Ubuntu-Regular.ttf" t="Include" />
+          <e p="Ubuntu-Regular.woff" t="Include" />
+        </e>
+        <e p="icons" t="Include">
+          <e p="info.svg" t="Include" />
+        </e>
+        <e p="images" t="Include">
+          <e p="arrow-right (1).svg" t="Include" />
+          <e p="arrow-right.svg" t="Include" />
+          <e p="demo1.png" t="Include" />
+          <e p="eurolife-product-mobile.jpg" t="Include" />
+          <e p="eurolife-product.jpg" t="Include" />
+          <e p="facebook.svg" t="Include" />
+          <e p="iconfinder_Arrow_backward.svgz" t="Include" />
+          <e p="iconfinder_Arrow_backward_1063879.svg" t="Include" />
+          <e p="iconfinder_Arrow_Forward_1063879.svg" t="Include" />
+          <e p="icons" t="Include">
+            <e p="check-blue.svg" t="Include" />
+            <e p="check-green.svg" t="Include" />
+            <e p="down.svg" t="Include" />
+            <e p="health" t="Include">
+              <e p="microscope.svg" t="Include" />
+              <e p="program.svg" t="Include" />
+              <e p="stithoscope.svg" t="Include" />
+            </e>
+            <e p="home" t="Include">
+              <e p="Combined Shape 2.svg" t="Include" />
+              <e p="Combined Shape.svg" t="Include" />
+              <e p="Group 20.svg" t="Include" />
+            </e>
+            <e p="left.svg" t="Include" />
+            <e p="Life" t="Include">
+              <e p="Combined Shape Copy 3.svg" t="Include" />
+              <e p="Combined Shape.svg" t="Include" />
+              <e p="Fill 10.svg" t="Include" />
+            </e>
+            <e p="motor" t="Include">
+              <e p="Combined Shape.svg" t="Include" />
+              <e p="Group 20.svg" t="Include" />
+            </e>
+            <e p="right.svg" t="Include" />
+          </e>
+          <e p="leading-team-1.jpg" t="Include" />
+          <e p="leading-team-2.jpg" t="Include" />
+          <e p="leading-team-3.jpg" t="Include" />
+          <e p="leading-team-4.jpg" t="Include" />
+          <e p="leading-team-5.jpg" t="Include" />
+          <e p="quote-big.svg" t="Include" />
+          <e p="teaser-demo.jpg" t="Include" />
+          <e p="Thumbs.db" t="Include" />
+          <e p="twitter.svg" t="Include" />
+          <e p="wedia-logo.svg" t="Include" />
+          <e p="youtube.svg" t="Include" />
+        </e>
+        <e p="js" t="Include">
+          <e p="app.js" t="Include" />
+          <e p="main.js" t="Include" />
+          <e p="vendor" t="Include">
+            <e p="jquery-3.4.1.slim.min.js" t="Include" />
+            <e p="slick.min.js" t="Include" />
+          </e>
+        </e>
+        <e p="node_modules" t="ExcludeRecursive">
+          <e p="@types" t="IncludeRecursive">
+            <e p="Events" t="IncludeRecursive" />
+            <e p="minimatch" t="IncludeRecursive" />
+            <e p="node" t="IncludeRecursive" />
+          </e>
+          <e p="cross-env" t="IncludeRecursive" />
+          <e p="laravel-mix" t="IncludeRecursive" />
+          <e p="vue" t="IncludeRecursive" />
+          <e p="vue-fragment" t="IncludeRecursive" />
+          <e p="vue-template-compiler" t="IncludeRecursive" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="package-lock.json" t="Include" />
+        <e p="package.json" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Eurolife.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Views" t="Include">
+          <e p="Common" t="Include">
+            <e p="Sublayouts" t="Include">
+              <e p="OneColumn.cshtml" t="Include" />
+              <e p="PageHeader.cshtml" t="Include" />
+              <e p="Section.cshtml" t="Include" />
+              <e p="ThreeColumn.cshtml" t="Include" />
+            </e>
+          </e>
+          <e p="web.config" t="Include" />
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="webpack.mix.js" t="Include" />
+        <e p="Wedia.Common.Website.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="src\Project\Eurolife\code" t="IncludeRecursive">
+        <e p="App_Config" t="Include">
+          <e p="Environment" t="Include">
+            <e p="Project" t="Include">
+              <e p="Eurolife.Dev.config" t="Include" />
+            </e>
+          </e>
+          <e p="Include" t="Include">
+            <e p="Project" t="Include">
+              <e p="Eurolife.Website.config" t="Include" />
+              <e p="Eurolife.Website.Serialization.config" t="Include" />
+            </e>
+          </e>
+          <e p="layers.config.xdt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Standalone.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Views" t="Include">
+          <e p="web.config" t="Include" />
+          <e p="Website" t="Include">
+            <e p="Layouts" t="Include">
+              <e p="Default.cshtml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+        <e p="Wedia.Eurolife.Website.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+    <e p="C:\Users\wedia-dev\.nuget\packages\xunit.runner.visualstudio\2.3.1\build\_common\xunit.abstractions.dll" t="Include" />
+    <e p="C:\Users\wedia-dev\.nuget\packages\xunit.runner.visualstudio\2.3.1\build\_common\xunit.runner.reporters.net452.dll" t="Include" />
+    <e p="C:\Users\wedia-dev\.nuget\packages\xunit.runner.visualstudio\2.3.1\build\_common\xunit.runner.utility.net452.dll" t="Include" />
+    <e p="C:\Users\wedia-dev\.nuget\packages\xunit.runner.visualstudio\2.3.1\build\_common\xunit.runner.visualstudio.testadapter.dll" t="Include" />
+    <e p="C:\Users\wedia-dev\.Rider2018.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\wedia-dev\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wedia-dev\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Eurolife.1429739379.00" t="ExcludeRecursive" />
+  </component>
+</project>

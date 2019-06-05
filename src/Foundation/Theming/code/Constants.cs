@@ -25,5 +25,10 @@
       public static string Autoplay => "Autoplay";
       public static string ShowNavigation => "ShowNavigation";
     }
+
+    public struct ThemeClasses
+    {
+        public static string Color => "theme-default";
+    }
   }
 }

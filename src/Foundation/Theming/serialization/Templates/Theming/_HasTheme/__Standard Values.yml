@@ -2,7 +2,7 @@
 ID: "fb660f3b-c0b3-4f3f-986a-b732d648d634"
 Parent: "8c150565-3782-4332-9878-176440496aea"
 Template: "8c150565-3782-4332-9878-176440496aea"
-Path: /sitecore/templates/Foundation/Assets/_HasTheme/__Standard Values
+Path: /sitecore/templates/Foundation/Theming/_HasTheme/__Standard Values
 DB: master
 Languages:
 - Language: en

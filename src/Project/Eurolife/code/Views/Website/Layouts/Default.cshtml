@@ -1,8 +1,7 @@
-﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
-@using Wedia.Foundation.Assets.Services
+﻿@using Wedia.Foundation.Assets.Services
 @using Wedia.Foundation.Assets.Models
 @using Sitecore.Mvc.Analytics.Extensions
-
+@using Wedia.Foundation.Theming.Extensions
 @{
     Layout = null;
 }
@@ -19,7 +18,7 @@
 
     @Html.Sitecore().VisitorIdentification()
 </head>
-<body class="theme-health">
+<body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor() ">
     @Html.Sitecore().Placeholder("page-top")
     
     <main id="app" role="main">
