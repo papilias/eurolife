@@ -27,7 +27,7 @@ namespace Wedia.Feature.Teasers.Models
         public DynamicTeaserItem(Item headline) : this()
         {
             Item = headline;
-            Title = headline[Templates.TeaserHeadline.Fields.Title];
+            Title = headline[Templates.HasTeaserHeadline.Fields.Title];
         }
     }
 }

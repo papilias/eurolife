@@ -89,6 +89,8 @@
     <Content Include="Views\Teasers\SimpleTeaserWithImage.cshtml" />
     <Content Include="Views\Teasers\TeaserWithSideImageAndCTA.cshtml" />
     <Content Include="Views\Teasers\CenteredTeaserWithCTA.cshtml" />
+    <Content Include="Views\Teasers\ThreeColumnsTeaser.cshtml" />
+    <Content Include="Views\Teasers\Teaser Sticker.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,6 @@ using Wedia.Feature.Teasers.Models;
 using Wedia.Foundation.Alerts;
 using Wedia.Foundation.Alerts.Extensions;
 using Wedia.Foundation.Alerts.Models;
-using Wedia.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.Mvc.Presentation;
 using Sitecore;
 
@@ -28,5 +27,6 @@ namespace Wedia.Feature.Teasers.Controllers
         }
 
         public ActionResult TeaserList() => GetDynamicContent("TeaserList");
+        public ActionResult ThreeColumnsTeaser() => GetDynamicContent("ThreeColumnsTeaser");
     }
 }

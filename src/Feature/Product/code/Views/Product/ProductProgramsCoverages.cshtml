@@ -17,12 +17,12 @@
         <div class="invisible anchor-200" id="coverage"></div>
         <h1 class="h3 coverage__title m-b-48">@Html.Sitecore().Field(Templates.ProgramCoverages.Fields.Title)</h1>
 
-        <div class="coverage__column">
+        <div class="coverage__column coverage__yes">
             <div class="h5">@Html.Sitecore().Dictionary("/Product/Products Program Coverages/It Covers", "It Covers")</div>
             @Html.Sitecore().Field(Templates.ProgramCoverages.Fields.ItCovers)
         </div>
 
-        <div class="coverage__column">
+        <div class="coverage__column coverage__no">
             <div class="h5">@Html.Sitecore().Dictionary("/Product/Products Program Coverages/It Not Covers", "It Not Covers")</div>
             @Html.Sitecore().Field(Templates.ProgramCoverages.Fields.ItNotCovers)
         </div>

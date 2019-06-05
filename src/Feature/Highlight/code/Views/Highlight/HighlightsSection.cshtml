@@ -12,14 +12,18 @@
 
 }
 
-<section class="center--1100 center highlights">
-    @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
-    {
-        <h2>@Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Title)</h2>
-        <p>@Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Summary)</p>
-    
+@using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+{
+    <section class="product-moto center center--1100">
+        <h1 class="h2 m-b-24 color-health">@Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Title)</h1>
+        <p>
+            @Html.Sitecore().Field(Templates.HighlightsGroup.Fields.Summary)
+        </p>
+    </section>
 
-        foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
+    <section class="highlights center--1100 center">
+
+        @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
         {
             <div class="teaser teaser--highlight">
                 <div class="teaser-icon @(item?.TargetItem(Templates.Highlight.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
@@ -28,8 +32,8 @@
                     @Html.Sitecore().Field(Templates.Highlight.Fields.Summary, item)
                 </div>
             </div>
-         }
-    }
-</section>
+        }
 
+    </section>
 
+}

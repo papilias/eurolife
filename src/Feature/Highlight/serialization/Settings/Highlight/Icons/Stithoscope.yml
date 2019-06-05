@@ -2,7 +2,7 @@
 ID: "d9368e0c-c8dd-48b1-9c40-189b4970f6b5"
 Parent: "24b66050-5511-4a13-adc7-b55b7a332019"
 Template: "7fd34a8d-cd3e-4720-9d5a-1df02a5e12ce"
-Path: /sitecore/system/Settings/Feature/Highlight/Icons/HighlightIcon 2
+Path: /sitecore/system/Settings/Feature/Highlight/Icons/Stithoscope
 DB: master
 Languages:
 - Language: en
@@ -17,5 +17,5 @@ Languages:
       Value: |
         sitecore\admin
     - ID: "7c0c7238-1f7c-43e6-8c16-d076f5dcde11"
-      Hint: HighlightIconClass
-      Value: "class-here-2"
+      Hint: HighlightIconCssClass
+      Value: "teaser-icon__stithoscope"

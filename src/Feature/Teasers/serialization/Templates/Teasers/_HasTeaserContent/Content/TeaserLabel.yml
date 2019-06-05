@@ -1,13 +1,16 @@
 ﻿---
-ID: "8916fa5f-c81e-498b-b38c-78ef0ef2b199"
-Parent: "3ec17b4e-dddc-4d23-81a4-75397282b064"
+ID: "12f214c9-16ee-4cf1-9220-7d1c8fefc9a1"
+Parent: "2fffa17c-3798-4721-9d3f-032b2e1dd2d8"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Teasers/_DynamicTeaser/Content/DynamicTeaserTitle
+Path: /sitecore/templates/Feature/Teasers/_HasTeaserContent/Content/TeaserLabel
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
 Languages:
 - Language: en
   Versions:
@@ -15,4 +18,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190524T110751Z
+      Value: 20190524T075516Z

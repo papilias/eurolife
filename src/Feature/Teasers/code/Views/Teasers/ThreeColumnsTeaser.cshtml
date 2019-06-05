@@ -1,0 +1,22 @@
+﻿@using Wedia.Feature.Teasers
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Wedia.Feature.Teasers.Models.DynamicTeaserModel
+@{
+    var elements = Model.Items.ToList();
+}
+
+<section class="m-t-96 m-b-96">
+    <h1 class="h4 t-c m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
+    <div class="m-b-48 center--650 center t-c">
+        @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
+    </div>
+    @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+    {
+        <div class="center center--1100 triplette">
+            @for (var i = 0; i < elements.Count; i++)
+            {
+                @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
+            }
+        </div>
+    }
+</section>
