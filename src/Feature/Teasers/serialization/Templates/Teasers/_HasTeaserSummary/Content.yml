@@ -1,8 +1,8 @@
 ﻿---
-ID: "dfe89238-a3da-4065-8442-8e28ae7e1117"
-Parent: "248fd29e-e583-4a75-8ceb-0a8508d82ebc"
+ID: "3d5fa4a9-a552-45cf-b47b-e2ac07d9d816"
+Parent: "85bb73d4-978f-4b24-afc4-243058868d0c"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Teasers/_TeaserHeadline/Content
+Path: /sitecore/templates/Feature/Teasers/_HasTeaserSummary/Content
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190509T084444Z
+      Value: 20190604T124235Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

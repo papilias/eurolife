@@ -4,17 +4,17 @@
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.TeaserContent.ID) ?? true)
+@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserContent.ID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.TeaserContent.ID),
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserContent.ID),
         AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
         Model.Item?.ID,
         Model.Rendering.Item?.ID)
     return;
 }
 
-@Html.Sitecore().Field(Templates.TeaserHeadline.Fields.Title)
-@Html.Sitecore().Field(Templates.TeaserContent.Fields.Content)
-@Html.Sitecore().Field(Templates.TeaserContent.Fields.Summary)
+@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)
+@Html.Sitecore().Field(Templates.HasTeaserContent.Fields.Content)
+@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
 
-@Html.Sitecore().Field(Templates.TeaserContent.Fields.Link)
+@Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA)

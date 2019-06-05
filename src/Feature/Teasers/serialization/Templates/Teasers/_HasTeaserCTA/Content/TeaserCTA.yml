@@ -2,7 +2,7 @@
 ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
 Parent: "fc015e14-4f90-470b-944a-889ecb07b9d7"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Teasers/_TeaserCTA/Content/TeaserCTA
+Path: /sitecore/templates/Feature/Teasers/_HasTeaserCTA/Content/TeaserCTA
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

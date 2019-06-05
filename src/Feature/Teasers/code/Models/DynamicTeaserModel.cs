@@ -41,7 +41,7 @@ namespace Wedia.Feature.Teasers.Models
 
         private DynamicTeaserItem[]  CreateDynamicTeaserItems()
         {
-            var childItems = Item.Children.Where(i => i.DescendsFrom(Templates.TeaserHeadline.ID)).ToArray();
+            var childItems = Item.Children.Where(i => i.DescendsFrom(Templates.HasTeaserHeadline.ID)).ToArray();
             DynamicTeaserItem[] returnItems = { };
 
             if (childItems.Any())

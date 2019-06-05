@@ -2,7 +2,7 @@
 ID: "92fa46ff-9b3e-43b6-bb0a-47baf8c2c304"
 Parent: "24b66050-5511-4a13-adc7-b55b7a332019"
 Template: "7fd34a8d-cd3e-4720-9d5a-1df02a5e12ce"
-Path: /sitecore/system/Settings/Feature/Highlight/Icons/HighlightIcon
+Path: /sitecore/system/Settings/Feature/Highlight/Icons/Microscope
 DB: master
 Languages:
 - Language: en
@@ -17,5 +17,5 @@ Languages:
       Value: |
         sitecore\admin
     - ID: "7c0c7238-1f7c-43e6-8c16-d076f5dcde11"
-      Hint: HighlightIconClass
-      Value: "class-here"
+      Hint: HighlightIconCssClass
+      Value: "teaser-icon__microscope"
