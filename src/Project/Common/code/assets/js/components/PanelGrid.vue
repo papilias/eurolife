@@ -33,7 +33,7 @@
         },
         computed: {
             panelGridClass() {
-                return !this.category.isMain ? "program-grid--subsection" : null;
+                return !this.category.isMain ? "program-grid--subsection" : "";
             }
         },
         components: {
