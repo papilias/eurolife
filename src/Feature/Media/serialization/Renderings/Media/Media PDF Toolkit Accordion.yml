@@ -16,3 +16,7 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190521T073558Z
+    - ID: "77593ad2-0761-4d3e-8e17-82a304029640"
+      Hint: Supports Local Datasource
+      Type: Checkbox
+      Value: 1

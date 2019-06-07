@@ -1,8 +1,8 @@
 ﻿---
-ID: "fb660f3b-c0b3-4f3f-986a-b732d648d634"
-Parent: "8c150565-3782-4332-9878-176440496aea"
-Template: "8c150565-3782-4332-9878-176440496aea"
-Path: /sitecore/templates/Foundation/Assets/_HasTheme/__Standard Values
+ID: "9745d393-5553-4a6f-b6b7-d27a03365dda"
+Parent: "c3e1dd1e-33b6-4a5c-89ca-1f2ed6f9d8f1"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Highlight/_HighlightsAccordionsGroup/Groups
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190524T145631Z
+      Value: 20190606T105909Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -5,6 +5,16 @@
 @using Newtonsoft.Json
 @model Panel
 
-<app-panel :panel="@JsonConvert.SerializeObject(Model)"></app-panel>
+<section class="center center--1100 programs">
+  <h1 class="h4 m-b-16 t-c">
+    @Model.Title
+  </h1>
 
-@Html.Partial("./PanelControls");
+  <p class="m-b-48 t-c center center--650">
+    @Model.Summary
+  </p>
+
+  <app-panel :panel="@JsonConvert.SerializeObject(Model)"></app-panel>
+
+  @Html.Partial("./PanelControls");
+</section>

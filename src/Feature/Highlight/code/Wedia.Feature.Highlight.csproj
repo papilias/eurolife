@@ -85,6 +85,10 @@
     <Content Include="App_Config\Include\Feature\Feature.Highlight.Serialization.config" />
     <Content Include="Views\Highlight\HighlightsSection.cshtml" />
     <Content Include="Views\Highlight\HighlightsSectionCTA.cshtml" />
+    <Content Include="Views\Highlight\HighlightsAccordion.cshtml" />
+    <Content Include="Views\Highlight\HighlightsAccordionsGroup.cshtml" />
+    <Content Include="Views\Highlight\HighlightsAccordionItems.cshtml" />
+    <Content Include="Views\Highlight\HighlightsAccordionHeader.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -38,6 +38,6 @@ namespace Wedia.Foundation.Assets
             {
                 public static readonly ID Theme = new ID("{EB2AF3CA-2892-4044-B791-394344AB8456}");
             }
-        }
+        }        
     }
 }

@@ -10,13 +10,13 @@
     <div class="m-b-48 center--650 center t-c">
         @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
     </div>
-    @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
-    {
-        <div class="center center--1100 triplette">
-            @for (var i = 0; i < elements.Count; i++)
-            {
-                @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
-            }
-        </div>
-    }
+
+    <div class="center center--1100 triplette @Html.PlaceholderStyle()" >
+        @for (var i = 0; i < elements.Count; i++)
+        {
+   
+            @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
+           
+        }
+    </div>
 </section>

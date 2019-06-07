@@ -1768,3 +1768,28 @@ a.footer__subscription {
   font-weight: 800;
   font-size: 16px;
   text-align: right; }
+
+.placeholderClass > div {
+  min-height:200px; 
+  min-width:100px; 
+  border:1px dotted black; 
+  background-color: hotpink; 
+  padding-bottom:15px;
+}
+
+#panels-wrapper {
+  overflow: hidden;
+}
+
+.slide-leave-active,
+.slide-enter-active {
+  transition: 1s;
+}
+
+.slide-enter {
+  transform: translate(100%, 0);
+}
+
+.slide-leave-to {
+  transform: translate(-100%, 0);
+}

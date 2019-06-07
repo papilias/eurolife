@@ -90,6 +90,7 @@
   <ItemGroup>
     <Content Include="assets\js\app.js" />
     <None Include="assets\js\components\PanelColumn.vue" />
+    <None Include="assets\js\components\CoveragesAccordion.vue" />
     <Content Include="assets\js\components\PanelFilter.vue" />
     <None Include="assets\js\components\PanelGrid.vue" />
     <None Include="assets\js\components\PanelFilters.vue" />
@@ -197,6 +198,7 @@
     <Content Include="package.json" />
     <Content Include="webpack.mix.js" />
     <Content Include="assets\js\components\Panel.vue" />
+    <Content Include="assets\js\components\PanelGroup.vue" />
     <None Include="assets\js\components\PanelItem.vue" />
     <Content Include="assets\styles\scss\base-components\_figures.scss" />
     <Content Include="assets\styles\scss\base-components\_leadership.scss" />

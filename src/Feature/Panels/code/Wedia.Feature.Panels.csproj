@@ -97,6 +97,7 @@
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Panels\ProductPanel.cshtml" />
     <Content Include="Views\Panels\PanelControls.cshtml" />
+    <Content Include="Views\Panels\ProductPanelsGroup.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +110,7 @@
     <Compile Include="Models\PanelItem.cs" />
     <Compile Include="Models\PanelRow.cs" />
     <Compile Include="Models\PanelRowItem.cs" />
+    <Compile Include="Models\PanelsGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IPanelsRepository.cs" />
     <Compile Include="Repositories\PanelsRepository.cs" />

@@ -2,7 +2,7 @@
 ID: "a107d95f-682e-4aa2-b3c3-e767855abdb7"
 Parent: "d68b189b-2ea5-4e7c-88ab-db830987ec6e"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/system/Settings/Foundation/Theming/Background Types
+Path: /sitecore/system/Settings/Foundation/Theming/Theme Color
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

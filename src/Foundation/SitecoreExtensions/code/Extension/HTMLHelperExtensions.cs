@@ -122,5 +122,18 @@
       var modelErrors = modelState?.Errors;
       return modelErrors?.Count > 0;
     }
+
+    public static string PlaceholderStyle(this HtmlHelper htmlHelper)
+    {
+      string placeholderClass = "";
+
+      if (!Sitecore.Context.PageMode.IsNormal && Sitecore.Context.PageMode.IsExperienceEditor)
+      {
+        placeholderClass = "placeholderClass";
+      }
+
+      return placeholderClass;
+    }
   }
+
 }
