@@ -26,6 +26,11 @@
       public static string ShowNavigation => "ShowNavigation";
     }
 
+    public struct FontColorLayoutParameters
+    {
+      public static string FontColor => "FontColor";
+    }
+
     public struct ThemeClasses
     {
         public static string Color => "theme-default";

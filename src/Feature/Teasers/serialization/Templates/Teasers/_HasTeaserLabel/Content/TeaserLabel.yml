@@ -1,8 +1,8 @@
 ﻿---
 ID: "12f214c9-16ee-4cf1-9220-7d1c8fefc9a1"
-Parent: "2fffa17c-3798-4721-9d3f-032b2e1dd2d8"
+Parent: "90b30073-395a-418f-8878-4f44b540650f"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Teasers/_HasTeaserContent/Content/TeaserLabel
+Path: /sitecore/templates/Feature/Teasers/_HasTeaserLabel/Content/TeaserLabel
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

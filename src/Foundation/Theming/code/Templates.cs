@@ -14,7 +14,6 @@ namespace Wedia.Foundation.Theming
       }
     }
 
-
     public struct ThemeClasses
     {
         public static readonly ID ID = new ID("{425DACE5-10B7-48E4-8237-6E77A6C601CD}");

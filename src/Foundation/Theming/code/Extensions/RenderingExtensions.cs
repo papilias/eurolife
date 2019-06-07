@@ -28,6 +28,17 @@ namespace Wedia.Foundation.Theming.Extensions
       return item?[Templates.Style.Fields.Class] ?? "";
     }
 
+    public static string GetFontColorClass([NotNull] this Rendering rendering)
+    {
+      var id = MainUtil.GetID(rendering.Parameters[Constants.FontColorLayoutParameters.FontColor] ?? "", null);
+
+      if (ID.IsNullOrEmpty(id))
+        return "";
+
+      var item = rendering.RenderingItem.Database.GetItem(id);
+      return item?[Templates.Style.Fields.Class] ?? "";
+    }
+
     public static bool IsFixedHeight([NotNull] this Rendering rendering)
     {
       var isFixed = MainUtil.GetBool(rendering.Parameters[Constants.IsFixedHeightLayoutParameters.FixedHeight] ?? "", false);
@@ -52,6 +63,11 @@ namespace Wedia.Foundation.Theming.Extensions
     public static BackgroundRendering RenderBackground([NotNull] this Rendering rendering, HtmlHelper helper)
     {
       return new BackgroundRendering(helper.ViewContext.Writer, rendering.GetBackgroundClass());
+    }
+
+    public static FontColorRendering RenderFontColor([NotNull] this Rendering rendering, HtmlHelper helper)
+    {
+      return new FontColorRendering(helper.ViewContext.Writer, rendering.GetFontColorClass());
     }
   }
 }

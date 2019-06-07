@@ -1,0 +1,21 @@
+﻿---
+ID: "1e54c33f-e0dc-49a5-a3a8-056bb23d18c0"
+Parent: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Basic Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {B8B6F714-6702-463A-A7B7-5B3ABBBAFB31}
+    {A357360C-A1FD-4439-A5AB-4D131D300F95}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190607T092730Z

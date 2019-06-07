@@ -91,7 +91,9 @@
     <Content Include="Views\Teasers\CenteredTeaserWithCTA.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserImageCTA.cshtml" />
     <Content Include="Views\Teasers\ThreeColumnsTeaser.cshtml" />
-    <Content Include="Views\Teasers\Teaser Sticker.cshtml" />
+    <Content Include="Views\Teasers\TeaserSticker.cshtml" />
+    <Content Include="Views\Teasers\TeaserNumbers.cshtml" />
+    <Content Include="Views\Teasers\LightTeaserContent.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +121,10 @@
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Theming\code\Wedia.Foundation.Theming.csproj">
+      <Project>{19d479ad-ff86-4eda-a045-6d7f080814dc}</Project>
+      <Name>Wedia.Foundation.Theming</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

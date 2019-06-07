@@ -101,6 +101,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Extensions\CarouselOptions.cs" />
     <Compile Include="Extensions\Controls\BackgroundRendering.cs" />
+    <Compile Include="Extensions\Controls\FontColorRendering.cs" />
     <Compile Include="Extensions\RenderingExtensions.cs" />
     <Compile Include="Extensions\SiteExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

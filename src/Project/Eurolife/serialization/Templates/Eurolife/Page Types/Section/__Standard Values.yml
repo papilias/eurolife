@@ -11,6 +11,7 @@ SharedFields:
   Value: |
     {8915728C-2732-4560-AFDF-AB04CC7CD053}
     {0C0937BF-A95F-442C-82FD-4AFDDFE838A3}
+    {B8B6F714-6702-463A-A7B7-5B3ABBBAFB31}
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -23,6 +24,10 @@ SharedFields:
           id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
           ph="head"
           uid="{13B67209-6EE2-4040-9C0F-C9255C1FEB89}" />
+        <r
+          id="{933BD912-6B98-461D-A66C-550915E30F03}"
+          ph="page-layout"
+          uid="{87235964-4703-4C6F-8CD8-E3B4ED6FA48D}" />
         <r
           id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
           ph="page-layout"
