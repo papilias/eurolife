@@ -4,7 +4,6 @@ Parent: "1f63252d-ff78-49ed-8106-1372d4d38c21"
 Template: "3c8bd8a1-280b-4278-bb8b-21fa3b87af0f"
 Path: /sitecore/system/Settings/Html Editor Profiles/Rich Text Complete/Toolbar 1/Paragraph
 DB: core
-BranchID: "b9ed3ccb-9ec5-4c8c-825b-3dbc2eb0e676"
 SharedFields:
 - ID: "7cf6da87-047d-447d-99e9-d1e355330db3"
   Hint: Click

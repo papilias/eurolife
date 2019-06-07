@@ -4,7 +4,6 @@ Parent: "ff8199a5-0fd5-4124-b480-8aa3f96dd188"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
 Path: /sitecore/system/Settings/Html Editor Profiles/Rich Text Complete/Zoom
 DB: core
-BranchID: "30235f43-6242-4107-87ab-5267e34edf0c"
 Languages:
 - Language: da
   Fields:

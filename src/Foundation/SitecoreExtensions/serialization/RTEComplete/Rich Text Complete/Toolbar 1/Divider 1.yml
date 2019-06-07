@@ -4,7 +4,6 @@ Parent: "1f63252d-ff78-49ed-8106-1372d4d38c21"
 Template: "7bef6918-eff5-48db-937f-914bd2eeb15d"
 Path: /sitecore/system/Settings/Html Editor Profiles/Rich Text Complete/Toolbar 1/Divider 1
 DB: core
-BranchID: "d50bce33-8eda-48d1-babd-c0a894a69753"
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
