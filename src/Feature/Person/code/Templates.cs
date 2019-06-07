@@ -24,6 +24,7 @@ namespace Wedia.Feature.Person
                 public const string MobileImage_FieldName = "PersonMobileImage";
                 public static readonly ID Body = new ID("{3A28C78D-3C5E-4D7B-837B-9F511FB70D80}");
                 public const string Body_FieldName = "PersonBody";
+                public static readonly ID Quote = new ID("{47E95858-EFCC-4862-8A26-3905105ECE5B}");
             }
         }
     }

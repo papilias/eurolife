@@ -1,8 +1,8 @@
 ﻿---
-ID: "10f40da7-e0ea-4499-9779-03d54552cd85"
-Parent: "72b9d62c-8c71-4eb0-beec-f458ea786c90"
+ID: "47e95858-efcc-4862-8a26-3905105ece5b"
+Parent: "521fe453-bcce-48f7-97d0-71da1e2a7614"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/PageContent/_PageExtraInfoItem/Content/PageExtraInfoSummary
+Path: /sitecore/templates/Feature/Person/_Person/Details/PersonQuote
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
@@ -10,7 +10,7 @@ SharedFields:
   Value: "Multi-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 600
 Languages:
 - Language: en
   Versions:
@@ -18,4 +18,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190523T130034Z
+      Value: 20190605T111850Z
