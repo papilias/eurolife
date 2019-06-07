@@ -24,10 +24,6 @@ SharedFields:
           ph="head"
           uid="{13B67209-6EE2-4040-9C0F-C9255C1FEB89}" />
         <r
-          id="{933BD912-6B98-461D-A66C-550915E30F03}"
-          ph="page-layout"
-          uid="{4069C05D-0DDC-4641-A503-DFB4AEC620DA}" />
-        <r
           id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
           ph="page-layout"
           uid="{9015BC53-2AE3-455A-A1DD-879A04CC5E07}" />

@@ -3,35 +3,37 @@
 @using Sitecore.Mvc.Analytics.Extensions
 @using Wedia.Foundation.Theming.Extensions
 @{
-    Layout = null;
+  Layout = null;
 }
 <!DOCTYPE html>
 <html lang="@Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName">
 <head>
-    @if (!Sitecore.Context.PageMode.IsExperienceEditor)
-    {
-        @Html.Sitecore().Placeholder("head")
-    }
+  @if (!Sitecore.Context.PageMode.IsExperienceEditor)
+  {
+    @Html.Sitecore().Placeholder("head")
+  }
 
-    @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
-    @RenderAssetsService.Current.RenderStyles()
+  @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
+  @RenderAssetsService.Current.RenderStyles()
 
-    @Html.Sitecore().VisitorIdentification()
+  @Html.Sitecore().VisitorIdentification()
 </head>
 <body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor() ">
+  <header role="banner">
     @Html.Sitecore().Placeholder("page-top")
-    
-    <main id="app" role="main">
-        @Html.Sitecore().Placeholder("page-layout")
-    </main>
+  </header>
 
-    <footer>
-        @Html.Sitecore().Placeholder("footer")
-    </footer>
+  <main id="app" role="main">
+    @Html.Sitecore().Placeholder("page-layout")
+  </main>
 
-    @if (!Sitecore.Context.PageMode.IsExperienceEditor)
-    {
-        @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
-    }
+  <footer>
+    @Html.Sitecore().Placeholder("footer")
+  </footer>
+
+  @if (!Sitecore.Context.PageMode.IsExperienceEditor)
+  {
+    @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+  }
 </body>
 </html>
