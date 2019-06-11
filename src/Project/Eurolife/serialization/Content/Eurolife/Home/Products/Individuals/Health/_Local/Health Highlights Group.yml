@@ -1,0 +1,21 @@
+﻿---
+ID: "f744b3b3-338f-4aba-b2ce-4aa9abbfc7e1"
+Parent: "e01df085-048e-488f-ac24-ed840550649a"
+Template: "7753c4b8-ffb7-4ef8-8f62-85a28ae89e2c"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Health/_Local/Health Highlights Group
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d27e9b7-91d4-4a39-adcd-f103cb5ebede"
+      Hint: Highlights
+      Type: TreelistEx
+      Value: |
+        {1C5F21B6-0FE7-435D-BB6E-951C29AD3E2F}
+        {F935B0F4-8FFC-4C91-9A0B-BD4FD57F50F9}
+        {91F86BA1-0F89-4D73-A96F-636BB68DEEB8}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190527T133600Z

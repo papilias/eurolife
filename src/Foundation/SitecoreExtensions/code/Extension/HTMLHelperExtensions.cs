@@ -1,18 +1,18 @@
-﻿namespace Wedia.Foundation.SitecoreExtensions.Extensions
-{
-  using System;
-  using System.Linq.Expressions;
-  using System.Web;
-  using System.Web.Mvc;
-  using System.Web.Mvc.Html;
-  using Sitecore.Data;
-  using Sitecore.Data.Items;
-  using Sitecore.Diagnostics;
-  using Wedia.Foundation.SitecoreExtensions.Attributes;
-  using Wedia.Foundation.SitecoreExtensions.Controls;
-  using Sitecore.Mvc;
-  using Sitecore.Mvc.Helpers;
+﻿using System;
+using System.Linq.Expressions;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.Mvc.Html;
+using Sitecore.Data;
+using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
+using Wedia.Foundation.SitecoreExtensions.Attributes;
+using Wedia.Foundation.SitecoreExtensions.Controls;
+using Sitecore.Mvc;
+using Sitecore.Mvc.Helpers;
 
+namespace Wedia.Foundation.SitecoreExtensions.Extensions
+{
   public static class HtmlHelperExtensions
   {
     public static HtmlString ImageField(this SitecoreHelper helper, ID fieldID, int mh = 0, int mw = 0, string cssClass = null, bool disableWebEditing = false)

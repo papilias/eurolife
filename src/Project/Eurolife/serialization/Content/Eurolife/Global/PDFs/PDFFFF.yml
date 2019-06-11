@@ -1,0 +1,31 @@
+﻿---
+ID: "2b87c416-f4c9-4942-b109-f0952dee07e3"
+Parent: "09475790-230a-4164-89f1-a782a81498de"
+Template: "906a3de5-2dd5-43ec-82e1-87d97d7c336c"
+Path: /sitecore/content/Eurolife/Global/PDFs/PDFFFF
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "20faf759-601d-41e5-b2ce-cb23be133c32"
+      Hint: MediaDescription
+      Value: Test
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190520T140335Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8e77d56c-9ad2-4b70-bc1f-beb99de004e9"
+      Hint: MediaTitle
+      Value: Test
+    - ID: "bf50c27a-312f-408d-a49b-2e34d6a1e715"
+      Hint: PDFFile
+      Value: |
+        <file mediaid="{0B427F84-7AA3-46D6-8077-3B6761D28822}" src="-/media/0B427F847AA346D680773B6761D28822.ashx" />
+    - ID: "cf3c5c5e-4761-4c40-a7f3-9d4b41884d39"
+      Hint: PDFTitle
+      Value: PDF File 2

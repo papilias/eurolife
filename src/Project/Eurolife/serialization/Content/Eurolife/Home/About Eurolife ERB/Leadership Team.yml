@@ -1,0 +1,44 @@
+﻿---
+ID: "16351d16-de59-4f85-b750-07e16e068026"
+Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
+Template: "9c9a7dda-cf32-4681-be2a-29662453aebc"
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Leadership Team
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{5AB25EA0-75B4-47FA-BD27-6B09E082F8B2}"
+              p:before="*"
+              s:id="{3F152F68-ECD9-42D8-B73F-A5E16DF5D827}"
+              s:ph="/page-layout/section-{F24E8C87-C239-43FC-8265-0DB3CCC2B2F8}-0/col-huge-{B5B4A1F5-0BF6-4FC8-88A1-C0BD54020ADA}-0" />
+            <r
+              uid="{B5B4A1F5-0BF6-4FC8-88A1-C0BD54020ADA}"
+              p:after="r[@uid='{5AB25EA0-75B4-47FA-BD27-6B09E082F8B2}']"
+              s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
+              s:ph="/page-layout/section-{F24E8C87-C239-43FC-8265-0DB3CCC2B2F8}-0" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190513T113408Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: LeadershipTeam
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: LeadershipTeam

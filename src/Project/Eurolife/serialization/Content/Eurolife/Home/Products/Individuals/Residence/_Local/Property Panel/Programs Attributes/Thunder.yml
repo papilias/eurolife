@@ -1,0 +1,21 @@
+﻿---
+ID: "9a7cae0d-e1ac-4377-8876-bc00a90dc87c"
+Parent: "d1f61843-17aa-4054-aa97-d0b871bd49bd"
+Template: "8ebcbc5c-1d20-4406-8144-82afb185e659"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Residence/_Local/Property Panel/Programs Attributes/Thunder
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1543892b-a690-4e90-a05f-c496fee76c18"
+      Hint: PanelsIsCheckbox
+      Type: Checkbox
+      Value: 1
+    - ID: "1ef9b331-607c-48d3-bc12-c8b2d7ca1e40"
+      Hint: PanelRowTitle
+      Value: Πυρκαγιά & Κεραυνός
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T112016Z

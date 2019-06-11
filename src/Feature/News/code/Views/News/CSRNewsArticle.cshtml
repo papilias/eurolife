@@ -1,0 +1,37 @@
+﻿@using Wedia.Feature.News
+@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+  if (!Model?.Item?.DescendsFrom(Templates.NewsArticle.ID) ?? true)
+  {
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.NewsArticle.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+    return;
+  }
+
+  var previousArticle = Model.Item.Axes.GetPreviousSibling();
+  var nextArticle = Model.Item.Axes.GetNextSibling();
+}
+
+<article class="light m-t-112 m-b-112 center center--920 text-main">
+  @Html.Sitecore().Field(Templates.NewsArticle.Fields.Body, Model.Item)
+</article>
+
+
+
+@if (previousArticle != null)
+{
+  <div>
+    Previous
+  </div>
+}
+
+@if (nextArticle != null)
+{
+  <div>
+    Next
+  </div>
+}
+
+

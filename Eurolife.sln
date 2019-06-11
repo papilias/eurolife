@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		gulp-config.js = gulp-config.js
-		gulpfile.js.bck = gulpfile.js.bck
+		gulpfile.js = gulpfile.js
 		nuget.config = nuget.config
 		publishsettings.targets = publishsettings.targets
 	EndProjectSection
@@ -94,8 +94,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Foundation.FieldEdito
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FAQ", "FAQ", "{BB379F31-8003-44B1-9A4C-4DBD2F605038}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.FAQ", "src\Feature\faq\code\Wedia.Feature.FAQ.csproj", "{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{1E329FE4-C8A0-4109-B020-E4CEBBCE3C63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Media", "src\Feature\Media\code\Wedia.Feature.Media.csproj", "{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}"
@@ -126,7 +124,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Panels", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News", "News", "{A187CBD7-535E-455F-8A79-E1EE9C9B430F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Newsroom", "src\Feature\Newsroom\code\Wedia.Feature.Newsroom.csproj", "{747FBF5E-7F65-42C9-877D-5682A068867F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.FAQ", "src\Feature\FAQ\code\Wedia.Feature.FAQ.csproj", "{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.News", "src\Feature\News\code\Wedia.Feature.News.csproj", "{747FBF5E-7F65-42C9-877D-5682A068867F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -210,10 +210,6 @@ Global
 		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -242,6 +238,10 @@ Global
 		{9B2C82B0-C1AF-4DFA-B7EB-66F0DADE356A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B2C82B0-C1AF-4DFA-B7EB-66F0DADE356A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B2C82B0-C1AF-4DFA-B7EB-66F0DADE356A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79}.Release|Any CPU.Build.0 = Release|Any CPU
 		{747FBF5E-7F65-42C9-877D-5682A068867F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{747FBF5E-7F65-42C9-877D-5682A068867F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{747FBF5E-7F65-42C9-877D-5682A068867F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -289,7 +289,6 @@ Global
 		{F37B7141-EF9A-473D-8418-1696A1FC084D} = {501B0EBE-BFD6-47D3-AEA4-26E3E9421A2F}
 		{39F73ED5-C658-40D1-994F-FAFF6FE8BF6B} = {F37B7141-EF9A-473D-8418-1696A1FC084D}
 		{BB379F31-8003-44B1-9A4C-4DBD2F605038} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
-		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79} = {BB379F31-8003-44B1-9A4C-4DBD2F605038}
 		{1E329FE4-C8A0-4109-B020-E4CEBBCE3C63} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 		{7C5F64D7-A0C1-4E9C-B0E9-5FFF2EBE33E2} = {1E329FE4-C8A0-4109-B020-E4CEBBCE3C63}
 		{D7B61F3C-617E-4E59-BA9A-6EB4D5B09645} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
@@ -305,10 +304,11 @@ Global
 		{A8F595EF-012D-4E0D-A550-1BA782724941} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 		{9B2C82B0-C1AF-4DFA-B7EB-66F0DADE356A} = {A8F595EF-012D-4E0D-A550-1BA782724941}
 		{A187CBD7-535E-455F-8A79-E1EE9C9B430F} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{DF686C5B-16A1-4705-BAF0-82F07D6F7A79} = {BB379F31-8003-44B1-9A4C-4DBD2F605038}
 		{747FBF5E-7F65-42C9-877D-5682A068867F} = {A187CBD7-535E-455F-8A79-E1EE9C9B430F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

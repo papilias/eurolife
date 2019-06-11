@@ -1,0 +1,14 @@
+﻿---
+ID: "96afb584-b188-44b2-948a-2d29f33ecfd1"
+Parent: "1ad270cf-7ede-46b5-b9ab-3ab4d043f299"
+Template: "95ac48d1-5e09-47b1-9260-38d92e6fca60"
+Path: /sitecore/content/Eurolife/Global/Media
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190610T105412Z

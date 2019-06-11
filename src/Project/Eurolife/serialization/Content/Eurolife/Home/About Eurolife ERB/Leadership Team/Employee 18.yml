@@ -1,0 +1,28 @@
+﻿---
+ID: "9b4e6ef6-fd1b-4d65-a51e-8128c6249e7f"
+Parent: "16351d16-de59-4f85-b750-07e16e068026"
+Template: "ce1d7e61-0867-4d85-8661-ebea1d8b48ea"
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Leadership Team/Employee 18
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190514T092410Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "902ad41a-7a0a-43fc-9080-0a858d455597"
+      Hint: PersonTitle
+      Value: Employee 18
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Employee 18

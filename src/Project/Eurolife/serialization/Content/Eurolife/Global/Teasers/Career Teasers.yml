@@ -1,0 +1,14 @@
+﻿---
+ID: "bea2d734-f8d0-461d-97ee-90f1df5c8236"
+Parent: "2bb88d51-eae0-4aa1-ac42-d14ab7f3d866"
+Template: "aacf7182-8b54-4b5c-8957-aa1369d879c9"
+Path: /sitecore/content/Eurolife/Global/Teasers/Career Teasers
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190524T110455Z

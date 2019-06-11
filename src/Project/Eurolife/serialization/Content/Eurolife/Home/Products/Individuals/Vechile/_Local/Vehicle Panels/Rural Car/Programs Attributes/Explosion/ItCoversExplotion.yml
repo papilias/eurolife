@@ -1,0 +1,22 @@
+﻿---
+ID: "062f436e-6ddf-46e2-8f17-4a737bf2542f"
+Parent: "b952d8c5-1e63-4669-aced-fd86bfb84f44"
+Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Vechile/_Local/Vehicle Panels/Rural Car/Programs Attributes/Explosion/ItCoversExplotion
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T112034Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "79f18c52-1570-4ecb-b32e-a55df2fb321d"
+      Hint: Check
+      Type: Checkbox
+      Value: 1

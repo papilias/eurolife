@@ -26,7 +26,7 @@
                 using (Html.BeginEditFrame(item.ID.ToString(), ""))
                 {
                 <a href="@item.ImageUrl(Templates.PDF.Fields.File)" class="file-item" download="true">
-                    <div class="file-item__title">@item.Field(Templates.PDF.Fields.Title)</div>
+                    <div class="file-item__title">@item.Field(Templates.HasMedia.Fields.Title)</div>
                     <div class="file-item__desc">
                         @Html.Sitecore().Dictionary("/Media/PDF Toolkit Accordion/PDF Label", "PDF")
                         @item.FileSize(Templates.PDF.Fields.File)

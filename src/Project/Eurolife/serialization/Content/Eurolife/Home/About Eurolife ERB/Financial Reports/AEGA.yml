@@ -1,0 +1,21 @@
+﻿---
+ID: "9311244d-45da-45ee-8e0e-aa04023b2798"
+Parent: "5cf333da-07c4-4076-b9a4-d6e0c37a76d7"
+Template: "05bf3f91-d5db-4e93-99e9-8e5830c85bb6"
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Financial Reports/AEGA
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190522T122139Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ff6fc789-f1f2-495e-8a94-efcbc528e1c6"
+      Hint: PDFGroupTitle
+      Value: A.E.G.A

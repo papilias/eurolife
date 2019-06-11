@@ -1,0 +1,60 @@
+﻿---
+ID: "8988b1b9-6a39-4f69-9d63-8ba288a1039f"
+Parent: "9205cd23-fd6f-4a9f-9079-97a705f4612d"
+Template: "a357360c-a1fd-4439-a5ab-4d131d300f95"
+Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/Life Quality/HOPEgenesis/Region Adoptions
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{8C3BFB4A-8C49-4C54-A11A-21766A9B7FDD}"
+              p:after="r[@uid='{55347922-CD43-4DDA-8B58-A20247C54C1B}']"
+              s:ds="{842DAFC7-1D4E-469A-933B-E0C2BF104983}"
+              s:id="{6434235F-FBC8-489B-8E8C-26D0CC1373F4}"
+              s:ph="page-layout" />
+            <r
+              uid="{C6727DDC-1026-4733-91FE-3C7DC31831D6}"
+              s:ds="{D8DB7B18-F41B-47EA-8447-A851528DBD78}"
+              s:par="" />
+            <r
+              uid="{B0BE0A87-ACE8-4E53-BF7B-021B112CAA11}"
+              p:after="*[1=2]"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:ph="page-layout" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190610T081058Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: HOPEgenesis
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: HOPEgenesis
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />

@@ -1,0 +1,14 @@
+﻿---
+ID: "0ae3a4fd-3593-475a-b785-2c38ebdef4f9"
+Parent: "e8f41762-5e51-4ed5-9345-5c208fd960ca"
+Template: "a096d891-6565-4505-8ad8-d497fd1b8776"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Vechile/_Local
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190606T081504Z

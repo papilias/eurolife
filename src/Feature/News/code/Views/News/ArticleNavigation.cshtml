@@ -1,0 +1,33 @@
+﻿@using Wedia.Feature.News.Models
+@using Wedia.Feature.News
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model ArticleNavigation
+
+@if (Model.PreviousItem != null)
+{
+  <section class="m-t-112 prenext">
+    <div class="center--1100 center">
+      <div class="prenext__label">Previous</div>
+      <h3 class="prenext__title h3">
+        <a href="@Model.PreviousItem.Url()">
+          @Model.PreviousItem.Field(Templates.NewsArticle.Fields.Title)
+        </a>
+      </h3>
+    </div>
+  </section>
+}
+
+@if (Model.NextItem != null)
+{
+  <section class="m-t-112 prenext">
+    <div class="center--1100 center">
+      <div class="prenext__label">Next</div>
+      <h3 class="prenext__title h3">
+        <a href="@Model.NextItem.Url()">
+          @Model.NextItem.Field(Templates.NewsArticle.Fields.Title)
+        </a>
+      </h3>
+    </div>
+  </section>
+}
+

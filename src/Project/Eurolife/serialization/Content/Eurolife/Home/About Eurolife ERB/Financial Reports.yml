@@ -1,0 +1,98 @@
+﻿---
+ID: "5cf333da-07c4-4076-b9a4-d6e0c37a76d7"
+Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
+Template: "7fc965fc-b67a-40a0-8428-2cdf16c71b68"
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Financial Reports
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1"
+      s:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{6E6DA1B3-F105-4A1F-9C85-6C7D2BC54917}"
+          p:after="r[@uid='{84E2B112-98FC-4500-AE40-EC91CAA3A458}']" />
+        <r
+          uid="{9FD02409-896F-42FA-9462-9FB2E863C855}"
+          p:after="r[@uid='{E15129EC-8A8A-4F77-A6C6-7F2B9CC6C2F3}']"
+          s:id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
+          s:par="UseStaticPlaceholderNames=1"
+          s:ph="page-layout" />
+        <r
+          uid="{67D601FE-E27B-47B7-A225-1217F053C575}"
+          p:after="*[1=2]"
+          s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
+          s:par="UseStaticPlaceholderNames=1"
+          s:ph="/page-layout/section" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{3BF719F4-A775-4269-BFA9-127B9F138B51}"
+              p:before="*"
+              s:id="{7D095F33-73E4-40C7-8D62-367931538B49}"
+              s:ph="/page-layout/section/col-huge" />
+            <r
+              uid="{A606C70B-25CB-4B7C-8315-6635D8769296}"
+              p:after="r[@uid='{3BF719F4-A775-4269-BFA9-127B9F138B51}']"
+              s:ds="{16351D16-DE59-4F85-B750-07E16E068026}"
+              s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
+              s:par=""
+              s:ph="/page-layout/section-{25B8BF77-9304-44C6-8708-F63DBBDC776A}-0/col-huge-{7790551E-2EC2-492E-AC8C-93770261883F}-0" />
+            <r
+              uid="{7790551E-2EC2-492E-AC8C-93770261883F}"
+              p:after="r[@uid='{A606C70B-25CB-4B7C-8315-6635D8769296}']"
+              s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
+              s:ph="/page-layout/section-{25B8BF77-9304-44C6-8708-F63DBBDC776A}-0" />
+            <r
+              uid="{B7F85EBC-8E4F-4DBD-8BCE-8D9CDED678F8}"
+              p:after="r[@uid='{7790551E-2EC2-492E-AC8C-93770261883F}']"
+              s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
+              s:ph="/page-layout/section-{25B8BF77-9304-44C6-8708-F63DBBDC776A}-0/col-huge-{269C271D-2EB4-4B50-8ADF-3911C38794F3}-0" />
+            <r
+              uid="{077F847B-1E02-4DBB-8228-1766F07D50AD}"
+              p:after="r[@uid='{B7F85EBC-8E4F-4DBD-8BCE-8D9CDED678F8}']"
+              s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
+              s:ph="/page-layout/section-{25B8BF77-9304-44C6-8708-F63DBBDC776A}-0/col-huge-{269C271D-2EB4-4B50-8ADF-3911C38794F3}-0" />
+            <r
+              uid="{9AB8A7F7-CA8E-4521-924D-9D57E4F6F9BF}"
+              p:after="r[@uid='{077F847B-1E02-4DBB-8228-1766F07D50AD}']"
+              s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
+              s:ph="/page-layout/section-{4DD69CAD-186F-48BD-8022-C5E0B667F02D}-0/col-huge-{AA2EF5D3-6E90-414B-986D-A5326FE3DAC1}-0" />
+            <r
+              uid="{25B8BF77-9304-44C6-8708-F63DBBDC776A}"
+              p:after="r[@uid='{9FD02409-896F-42FA-9462-9FB2E863C855}']"
+              s:id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
+              s:ph="page-layout" />
+            <r
+              uid="{67D601FE-E27B-47B7-A225-1217F053C575}"
+              p:after="*[1=2]" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190521T132009Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Financial Reports
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Financial Reports

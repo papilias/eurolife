@@ -1,0 +1,33 @@
+﻿---
+ID: "2bae198d-5e42-47ac-8c31-116c573a5115"
+Parent: "fcaf11c9-9f40-46eb-aff6-7bd0e581828a"
+Template: "f9be04cf-b18a-4cf7-9a9f-f757a73e44c1"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Vechile/_Local/Vehicle Panels/Car/Programs/Simple Hospital
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190528T085329Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "61303124-e3cf-431f-b6eb-25a1b3201834"
+      Hint: PanelItemTitle
+      Value: Simple Hospital
+    - ID: "be970800-6d58-4663-ae9b-111a8ffcd2bd"
+      Hint: PanelItemValue
+      Type: Multilist
+      Value: |
+        {5140AD2F-3922-4EF8-99F0-3FEB65BAF180}
+        {4ACCD83D-AD7A-400E-BB0B-6A6E065C0A77}
+        {2AE9AAE0-B2D1-4665-8169-FD63BE2D702C}
+        {15E1D2C0-3D2D-4B29-88CF-3DC3A8571ECB}

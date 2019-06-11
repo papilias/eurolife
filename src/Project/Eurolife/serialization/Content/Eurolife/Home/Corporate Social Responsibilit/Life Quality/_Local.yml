@@ -1,0 +1,14 @@
+﻿---
+ID: "7463fc34-8a6d-43d8-b1aa-e5890c463873"
+Parent: "98d0c2f9-5683-4d5e-bf97-40ee0bb990ed"
+Template: "a096d891-6565-4505-8ad8-d497fd1b8776"
+Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/Life Quality/_Local
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190610T073458Z

@@ -1,0 +1,38 @@
+﻿---
+ID: "ef7fffcb-ee5e-4f3d-9a64-690f80ec34c4"
+Parent: "e01df085-048e-488f-ac24-ed840550649a"
+Template: "53c26f16-7773-448b-b668-b1c6aa3ae091"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Health/_Local/Coverages
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14cae3cd-f0b5-4ed4-99d4-d46cf790d2c6"
+      Hint: CoveragesTitle
+      Value: Τι καλύπτουν τα νοσοκομειακά προγράμματα υγείας
+    - ID: "208a8c4c-9ca3-4d74-841e-e62cb92a9879"
+      Hint: ItNotCovers
+      Value: |
+        <tr>
+          <td>
+            I don't cover this
+          <td>
+        </td></td></tr>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190527T140156Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ebc5143c-f5a2-40fc-8b58-f1c0f60671ee"
+      Hint: ItCovers
+      Value: |
+        <ul>
+            <li>sfhsjdfhsjkdfjsdf</li>
+            <li>sldfjskldjfsdfksldf</li>
+            <li>lksjdflksdjfslkdjksdf</li>
+            <li>jksldfsdlkfjsjkldfkj</li>
+        </ul>

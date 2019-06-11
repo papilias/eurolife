@@ -1,0 +1,21 @@
+﻿---
+ID: "fcaf89b5-45d2-4bd1-96c1-6a350572faee"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "bf28aa5c-d111-4785-93ee-99d425d076eb"
+Path: /sitecore/content/Eurolife
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "eb2af3ca-2892-4044-b791-394344ab8456"
+    Hint: Theme
+    Value: "{C410C01A-5CC4-4954-93AF-8E3570FF6EB3}"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20190508T124824:636929165040388613Z"
+    - ID: "b4926567-fd0b-4bed-b86b-1d3b25c90d8b"
+      Hint: SiteBrowserTitle
+      Value: "- Eurolife"

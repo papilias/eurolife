@@ -1,0 +1,72 @@
+﻿---
+ID: "1e3cba11-a5ac-4c09-89da-4284718f8481"
+Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
+Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Eurolife Group
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{0215720C-4604-4263-BC48-6CCEED73B05C}"
+              p:before="*"
+              s:ds="{A4C91FA8-D954-43C3-AE73-4EC4D230B22B}"
+              s:id="{78DA17BB-A03F-455A-9319-8E68171EA944}"
+              s:par=""
+              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0/col-three" />
+            <r
+              uid="{5F0C98ED-6885-43B3-B42D-49C11E6BCD97}"
+              p:after="r[@uid='{0215720C-4604-4263-BC48-6CCEED73B05C}']"
+              s:ds="{A4C91FA8-D954-43C3-AE73-4EC4D230B22B}"
+              s:id="{78DA17BB-A03F-455A-9319-8E68171EA944}"
+              s:par=""
+              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0/col-two" />
+            <r
+              uid="{2DE3A143-E1F5-4B15-8D25-BB65E9F34538}"
+              p:after="r[@uid='{5F0C98ED-6885-43B3-B42D-49C11E6BCD97}']"
+              s:ds="{A4C91FA8-D954-43C3-AE73-4EC4D230B22B}"
+              s:id="{78DA17BB-A03F-455A-9319-8E68171EA944}"
+              s:par=""
+              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0/col-one" />
+            <r
+              uid="{DE502E65-144B-4032-AB0C-2704282B069E}"
+              p:after="r[@uid='{2DE3A143-E1F5-4B15-8D25-BB65E9F34538}']"
+              s:ds=""
+              s:id="{3BDBA4E5-69EE-4438-A4A8-B604A0A212DB}"
+              s:par="UseStaticPlaceholderNames=1"
+              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0" />
+          </d>
+        </r>
+    - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
+      Hint: PreTitle
+      Value: Eurolife Group
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190523T113006Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: What we do and why it matters
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Eurolife Group

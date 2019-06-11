@@ -1,0 +1,24 @@
+﻿---
+ID: "34a7a76e-3b56-4d44-b8e4-c8c686fcb3a8"
+Parent: "99558eb7-b1fd-4633-bfdb-45ee9f8e3ff2"
+Template: "f9be04cf-b18a-4cf7-9a9f-f757a73e44c1"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Residence/_Local/Property Panel/Programs/Agile
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T112757Z
+    - ID: "61303124-e3cf-431f-b6eb-25a1b3201834"
+      Hint: PanelItemTitle
+      Value: Multihome Ευέλικτο
+    - ID: "be970800-6d58-4663-ae9b-111a8ffcd2bd"
+      Hint: PanelItemValue
+      Type: Multilist
+      Value: |
+        {6122DB9D-0DCF-4BEA-B835-23DB79CB3423}
+        {567A7B50-DE02-4397-A54F-8B1A7C8CCA07}
+        {2A129D8A-0461-46D0-BBF0-098C64B6B24F}

@@ -1,0 +1,21 @@
+﻿---
+ID: "ccadcfc3-7e0e-4a69-921e-3c627276dfad"
+Parent: "a2c349de-ccff-4c20-a666-bdde48d58eff"
+Template: "2a8d0010-55dc-4af8-9ecb-e590d157d546"
+Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/Education And Civilazation/SomeCompanyPage/Articles List/2019/06/11/07/27/Article here
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
+      Hint: NewsDesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190611T072734Z
+    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
+      Hint: NewsTitle
+      Value: Some companies Article

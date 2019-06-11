@@ -1,0 +1,29 @@
+﻿---
+ID: "bfb128b4-69a5-4066-b294-8951b3ee0521"
+Parent: "231018bc-ca06-494e-af9b-a186235373cf"
+Template: "39d408e6-e9b8-491f-b351-9c27b520323b"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Vechile/_Local/Vehicle Panels/Rural Car/Attributes Categories/main
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "070ba0de-12b3-4559-9b33-46c028777bd4"
+      Hint: IsMain
+      Type: Checkbox
+      Value: 1
+    - ID: "0fedef40-1ed0-422a-aefb-b9ed2277043c"
+      Hint: Rows
+      Type: Multilist
+      Value: |
+        {3EAF81D6-AFE1-4219-A63A-833D68A6D133}
+        {9A7CAE0D-E1AC-4377-8876-BC00A90DC87C}
+        {C12BF32F-C0A5-45A7-9E6B-6926AB3D3FEA}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T113054Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

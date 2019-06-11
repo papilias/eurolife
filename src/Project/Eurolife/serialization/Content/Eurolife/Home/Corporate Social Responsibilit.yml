@@ -1,0 +1,95 @@
+﻿---
+ID: "a5f4940a-1774-4a2d-b5c4-07c728cdf01a"
+Parent: "f2be096d-911f-4409-8a98-9ee16cb8b283"
+Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
+Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{33B2F7DC-BA90-4A18-BDF3-E8175D97D039}"
+              p:before="*"
+              s:ds="{FFE033F9-2D7E-4E55-82D2-B1770B1D9435}"
+              s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
+              s:ph="/page-layout/numbers-teaser-placeholder-5-{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}-0" />
+            <r
+              uid="{73F600F0-AD8C-4DD8-95F9-A5F117B89D35}"
+              p:after="r[@uid='{33B2F7DC-BA90-4A18-BDF3-E8175D97D039}']"
+              s:ds="{12A9B2DD-75B4-442E-8EBA-F8EF0410403F}"
+              s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
+              s:ph="/page-layout/numbers-teaser-placeholder-2-{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}-0" />
+            <r
+              uid="{EBD6A40B-0D73-4EF4-9602-E8D195E6A938}"
+              p:after="r[@uid='{73F600F0-AD8C-4DD8-95F9-A5F117B89D35}']"
+              s:ds="{470E126D-D737-4D64-BCE3-9C35AE6F5666}"
+              s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
+              s:par=""
+              s:ph="/page-layout/numbers-teaser-placeholder-1-{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}-0" />
+            <r
+              uid="{E764DD56-049A-4E35-87E8-DF4AFD9E9ED2}"
+              p:after="r[@uid='{EBD6A40B-0D73-4EF4-9602-E8D195E6A938}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-1-{9B1A930E-929F-4532-BCB7-C0BEAE5A0FDA}-0" />
+            <r
+              uid="{9B1A930E-929F-4532-BCB7-C0BEAE5A0FDA}"
+              p:after="r[@uid='{9015BC53-2AE3-455A-A1DD-879A04CC5E07}']"
+              s:ds="{52FAEAE8-A7A0-44BE-BA58-88D10642CD2F}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:par=""
+              s:ph="page-layout" />
+            <r
+              uid="{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}"
+              p:after="r[@uid='{9B1A930E-929F-4532-BCB7-C0BEAE5A0FDA}']"
+              s:ds="{68BB4E38-6009-444B-B3EF-E0E979AF4165}"
+              s:id="{826556BC-A668-46ED-B763-E5D3CAD6F2CD}"
+              s:par=""
+              s:ph="page-layout" />
+            <r
+              uid="{6B6A645F-8400-4DA1-9FD4-EE38FDCEFEB4}"
+              p:after="*[1=2]"
+              s:ds="{A5F4940A-1774-4A2D-B5C4-07C728CDF01A}"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:par=""
+              s:ph="page-layout" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190607T073802Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: Corporate Social Responsibility
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: +πράττουμε
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Ενθαρρύνουμε κάθε άνθρωπο να ζει τη ζωή που επιθυμεί.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Corporate Social Responsibility

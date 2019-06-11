@@ -46,7 +46,7 @@
     foreach(var pdf in activeSubgroup.PDFs)
     {
         <a href="@pdf.ImageUrl(Templates.PDF.Fields.File)" download="true">
-            @pdf.Field(Templates.PDF.Fields.Title)
+            @pdf.Field(Templates.HasMedia.Fields.Title)
         </a>
     }
 }

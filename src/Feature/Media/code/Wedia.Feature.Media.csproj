@@ -84,10 +84,13 @@
     <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
     <Content Include="Views\MediaFeature\PDFToolkitAccordion.cshtml" />
     <Content Include="Views\MediaFeature\PDFGroupedList.cshtml" />
+    <Content Include="Views\MediaFeature\MediaCarousel.cshtml" />
+    <Content Include="Views\MediaFeature\PDFList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MediaFeatureController.cs" />
+    <Compile Include="Models\MediaSelectorElement.cs" />
     <Compile Include="Models\PDFGroup.cs" />
     <Compile Include="Models\PdfGroupDto.cs" />
     <Compile Include="Models\PDFGroups.cs" />
@@ -125,6 +128,10 @@
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Theming\code\Wedia.Foundation.Theming.csproj">
+      <Project>{19d479ad-ff86-4eda-a045-6d7f080814dc}</Project>
+      <Name>Wedia.Foundation.Theming</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -97,7 +97,9 @@
     <Content Include="assets\js\EventBus.js" />
     <Content Include="css\anchorlist.css" />
     <Content Include="css\breadcrumb.css" />
+    <Content Include="css\fancybox.css" />
     <Content Include="css\hero.css" />
+    <Content Include="css\jquery.fancybox.min.css" />
     <Content Include="css\product.css" />
     <Content Include="css\style.css" />
     <Content Include="fonts\converted\Ubuntu-LightItalic\preview.html" />
@@ -155,6 +157,7 @@
     <Content Include="js\app.js" />
     <Content Include="js\main.js" />
     <Content Include="js\vendor\jquery-3.4.1.slim.min.js" />
+    <Content Include="js\vendor\jquery.fancybox.min.js" />
     <Content Include="js\vendor\slick.min.js" />
     <Content Include="Views\Common\Sublayouts\PageHeader.cshtml" />
     <Content Include="Views\Common\Sublayouts\Section.cshtml" />

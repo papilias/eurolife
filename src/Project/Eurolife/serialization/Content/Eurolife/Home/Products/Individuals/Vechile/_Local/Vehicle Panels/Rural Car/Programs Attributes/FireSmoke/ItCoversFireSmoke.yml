@@ -1,0 +1,22 @@
+﻿---
+ID: "804a5145-e2d6-41ea-8986-d2db4f16c473"
+Parent: "6fdc1ce2-e906-4034-bd8f-ac5b5776de83"
+Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
+Path: /sitecore/content/Eurolife/Home/Products/Individuals/Vechile/_Local/Vehicle Panels/Rural Car/Programs Attributes/FireSmoke/ItCoversFireSmoke
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T112034Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "79f18c52-1570-4ecb-b32e-a55df2fb321d"
+      Hint: Check
+      Type: Checkbox
+      Value: 1

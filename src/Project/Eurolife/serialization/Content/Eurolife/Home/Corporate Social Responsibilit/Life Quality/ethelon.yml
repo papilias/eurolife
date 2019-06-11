@@ -1,0 +1,31 @@
+﻿---
+ID: "fe47e5c7-de2d-4bb3-96b5-52ed0cd245a2"
+Parent: "98d0c2f9-5683-4d5e-bf97-40ee0bb990ed"
+Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/Life Quality/ethelon
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190611T071633Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: ethelon
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: ethelon
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
