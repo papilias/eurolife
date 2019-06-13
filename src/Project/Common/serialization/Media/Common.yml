@@ -1,6 +1,6 @@
 ﻿---
-ID: "7de10e47-6a99-4b11-a9cf-646f915f5500"
-Parent: "41a84fb8-5eae-4d23-a42a-8a0434ff89a3"
+ID: "20012de4-cb4c-4adb-b94a-da5a09b1b646"
+Parent: "0118fafa-c139-4eca-b84d-3ff242c40cfb"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
 Path: /sitecore/media library/Project/Common
 DB: master
@@ -10,4 +10,9 @@ Languages:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Value: "20190613T082151:636960109111218501Z"
+      Hint: __Created
+      Value: 20190613T124220Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

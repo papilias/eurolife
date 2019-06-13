@@ -94,6 +94,7 @@
     <Content Include="App_Config\layers.config.xdt" />
     <Content Include="App_Config\Environment\Project\Eurolife.Dev.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
+    <Content Include="App_Data\packages\eurolife.xml" />
     <Content Include="Views\Website\Layouts\Default.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
