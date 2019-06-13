@@ -89,10 +89,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Environment\Project\Eurolife.Dev.config" />
     <Content Include="App_Config\Include\Project\Eurolife.Website.config" />
     <Content Include="App_Config\Include\Project\Eurolife.Website.Serialization.config" />
     <Content Include="App_Config\layers.config.xdt" />
+    <Content Include="App_Config\Environment\Project\Eurolife.Dev.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Website\Layouts\Default.cshtml" />
     <None Include="Web.config" />

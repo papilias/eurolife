@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\js\app.js" />
+    <Content Include="App_Config\Environment\Project\Common.Release.config" />
     <None Include="assets\js\components\PanelColumn.vue" />
     <None Include="assets\js\components\CoveragesAccordion.vue" />
     <Content Include="assets\js\components\PanelFilter.vue" />
