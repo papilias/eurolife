@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		gulp-config.js = gulp-config.js
-		gulpfile.js.bck = gulpfile.js.bck
+		gulpfile.js = gulpfile.js
 		nuget.config = nuget.config
 		publishsettings.targets = publishsettings.targets
 	EndProjectSection

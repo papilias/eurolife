@@ -1,0 +1,14 @@
+﻿---
+ID: "dbb8547a-37bc-44eb-848f-ff89bbfe839a"
+Parent: "877091a7-131e-40d2-bdc6-5534284c5d03"
+Template: "9f6e14e6-c593-410b-a57e-21f6b5a413ad"
+Path: /sitecore/system/Settings/Buckets/Item Buckets Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190610T090831Z
