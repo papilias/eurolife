@@ -7,14 +7,24 @@
 @if (!Model?.Item?.DescendsFrom(Templates.HasTeaserContent.ID) ?? true)
 {
     @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserContent.ID),
-        AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-        Model.Item?.ID,
-        Model.Rendering.Item?.ID)
-    return;
+          AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+          Model.Item?.ID,
+          Model.Rendering.Item?.ID)
+  return;
 }
 
-@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)
-@Html.Sitecore().Field(Templates.HasTeaserContent.Fields.Content)
-@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
+<section class="t-c bg-life-insurance center--1100 center p-t-64 p-b-64 m-b-112">
+  <h1 class="h3 m-b-16 color-life-insurance">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
 
-@Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA)
+  @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
+  {
+    <div class="center--480 center m-b-48 color-life-insurance">
+      @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
+    </div>
+  }
+
+
+  @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--default btn--dark" })
+</section>
+
+

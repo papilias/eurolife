@@ -8,25 +8,27 @@ using Sitecore;
 
 namespace Wedia.Feature.Teasers.Controllers
 {
-    public class TeasersController : Controller
+  public class TeasersController : Controller
+  {
+    public ActionResult GetDynamicContent(string viewName)
     {
-        public ActionResult GetDynamicContent(string viewName)
-        {
-            var dataSourceItem = RenderingContext.Current.Rendering.Item;
+      var dataSourceItem = RenderingContext.Current.Rendering.Item;
 
-            if (!dataSourceItem?.DescendsFrom(Templates.DynamicTeaser.ID) ?? true)
-            {
-                return Context.PageMode.IsExperienceEditor ?
-                    this.InfoMessage(new InfoMessage(AlertTexts.InvalidDataSourceTemplateFriendlyMessage, InfoMessage.MessageType.Error)) :
-                    null;
-            }
+      if (!dataSourceItem?.DescendsFrom(Templates.DynamicTeaser.ID) ?? true)
+      {
+        return Context.PageMode.IsExperienceEditor ?
+            this.InfoMessage(new InfoMessage(AlertTexts.InvalidDataSourceTemplateFriendlyMessage, InfoMessage.MessageType.Error)) :
+            null;
+      }
 
-            var model = new DynamicTeaserModel(dataSourceItem);
+      var model = new DynamicTeaserModel(dataSourceItem);
 
-            return View(viewName, model);
-        }
-
-        public ActionResult TeaserList() => GetDynamicContent("TeaserList");
-        public ActionResult ThreeColumnsTeaser() => GetDynamicContent("ThreeColumnsTeaser");
+      return View(viewName, model);
     }
+
+    public ActionResult TeaserList() => GetDynamicContent("TeaserList");
+    public ActionResult ThreeColumnsTeaser() => GetDynamicContent("ThreeColumnsTeaser");
+
+    public ActionResult ColoredTeaserList() => GetDynamicContent("ColoredTeaserList");
+  }
 }

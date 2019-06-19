@@ -3,41 +3,37 @@
 @using Wedia.Foundation.Alerts.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
-                                          
+
 @if (!Model?.Item?.DescendsFrom(Templates.HasTeaserContent.ID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserContent.ID),
-        AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-        Model.Item?.ID,
-        Model.Rendering.Item?.ID)
-    return;
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserContent.ID),
+      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+      Model.Item?.ID,
+      Model.Rendering.Item?.ID)
+  return;
 }
-
-@{
-    var sectionItem = Model.Item.GetAncestorOrSelfOfTemplate(Templates.HasTeaserContent.ID);
-}   
 
 @if (Model.Item.FieldHasValue(Templates.HasTeaserContent.Fields.DesktopImage))
 {
-    <section class="solo-teaser m-b-112">
-        <div class="solo-teasers__detail-wrap">
-            <div class="solo-teaser__contents">
-                @if (Model.Item.FieldHasValue(Templates.HasTeaserHeadline.Fields.Title))
-                {
-                    <h3 class="solo-teaser__title m-t-64">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h3>
-                }
-                @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary))
-                {
-                    <p class="solo-teaser__text">@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)</p>
-                }
-                @if (Model.Item.FieldHasValue(Templates.HasTeaserCTA.Fields.CTA))
-                {
-                    @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new  {@class= "btn btn--default btn--dark m-b-64" })
-                }
-            </div>
-        </div>
-        <div class="solo-teaser__image">
-            @Html.Sitecore().ImageField(Templates.HasTeaserContent.Fields.DesktopImage, sectionItem, Templates.HasTeaserContent.Dimensions.ColoredImageHeight, Templates.HasTeaserContent.Dimensions.ColoredImageWidth)  
-        </div>
-    </section>
+  <section class="solo-teaser m-b-112">
+    <div class="solo-teasers__detail-wrap">
+      <div class="solo-teaser__contents">
+        @if (Model.Item.FieldHasValue(Templates.HasTeaserHeadline.Fields.Title))
+        {
+          <h3 class="solo-teaser__title m-t-64">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h3>
+        }
+        @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary))
+        {
+          <p class="solo-teaser__text">@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)</p>
+        }
+        @if (Model.Item.FieldHasValue(Templates.HasTeaserCTA.Fields.CTA))
+        {
+          @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--default btn--dark m-b-64" })
+        }
+      </div>
+    </div>
+    <div class="solo-teaser__image">
+      @Html.Sitecore().ImageField(Templates.HasTeaserContent.Fields.DesktopImage, Model.Item, Templates.HasTeaserContent.Dimensions.ColoredImageHeight, Templates.HasTeaserContent.Dimensions.ColoredImageWidth)
+    </div>
+  </section>
 }

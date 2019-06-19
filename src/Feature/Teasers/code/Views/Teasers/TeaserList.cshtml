@@ -21,11 +21,11 @@
     </p>
   }
 
-    @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+  @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+  {
+    for (var i = 0; i < elements.Count; i++)
     {
-      for (var i = 0; i < elements.Count; i++)
-      {
-        @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
-      }
+      @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
     }
-  </section>
+  }
+</section>

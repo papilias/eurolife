@@ -37,7 +37,6 @@ namespace Wedia.Feature.Teasers
       {
         public static readonly ID DesktopImage = new ID("{CFC640DB-B9E4-41D6-ABCD-5050D6B6D6FE}");
         public static readonly ID MobileImage = new ID("{9245807D-C1E8-4987-AB3E-3ABC0AC05229}");
-        public static readonly ID Content = new ID("{4C371D3E-7CB4-48FB-86E9-745CC92B1F92}");
         public static readonly ID Label = new ID("{12F214C9-16EE-4CF1-9220-7D1C8FEFC9A1}");
       }
 
