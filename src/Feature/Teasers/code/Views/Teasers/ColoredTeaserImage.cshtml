@@ -4,23 +4,23 @@
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserContent.ID) ?? true)
+@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserImage.ID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserContent.ID),
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserImage.ID),
       AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
       Model.Item?.ID,
       Model.Rendering.Item?.ID)
   return;
 }
 
-@if (Model.Item.FieldHasValue(Templates.HasTeaserContent.Fields.DesktopImage))
+@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.DesktopImage))
 {
   <article class="zigzag__item m-b-64 bg-life-insurance">
 
     <div class="zigzag__image--light">
-      @Html.Sitecore().ImageField(Templates.HasTeaserContent.Fields.DesktopImage, Model.Item, 
-        Templates.HasTeaserContent.Dimensions.ColoredImageHeight, 
-        Templates.HasTeaserContent.Dimensions.ColoredImageWidth)
+      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.DesktopImage, Model.Item,
+        Wedia.Feature.Teasers.Constants.ImageDimensions.ColoredTeaser.Height,
+        Wedia.Feature.Teasers.Constants.ImageDimensions.ColoredTeaser.Width)
     </div>
 
     <div class="zigzag__info--light">

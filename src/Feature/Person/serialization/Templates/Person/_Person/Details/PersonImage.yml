@@ -1,16 +1,19 @@
 ﻿---
-ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
-Parent: "2fffa17c-3798-4721-9d3f-032b2e1dd2d8"
+ID: "a212c93a-7c83-4fed-bc5a-5b035baeff50"
+Parent: "521fe453-bcce-48f7-97d0-71da1e2a7614"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Teasers/_HasTeaserContent/Content/DesktopImage
+Path: /sitecore/templates/Feature/Person/_Person/Details/PersonImage
 DB: master
 SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/media library/Feature/Person
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: Image
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 150
+  Value: 300
 Languages:
 - Language: en
   Versions:
@@ -18,4 +21,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190509T092851Z
+      Value: 20190513T112355Z

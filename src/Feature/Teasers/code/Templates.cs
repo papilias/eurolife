@@ -29,7 +29,7 @@ namespace Wedia.Feature.Teasers
       }
     }
 
-    public struct HasTeaserContent
+    public struct HasTeaserImage
     {
       public static readonly ID ID = new ID("{94FCF2F1-3CCA-4D44-87FC-4400397C7AAE}");
 
@@ -37,13 +37,6 @@ namespace Wedia.Feature.Teasers
       {
         public static readonly ID DesktopImage = new ID("{CFC640DB-B9E4-41D6-ABCD-5050D6B6D6FE}");
         public static readonly ID MobileImage = new ID("{9245807D-C1E8-4987-AB3E-3ABC0AC05229}");
-        public static readonly ID Label = new ID("{12F214C9-16EE-4CF1-9220-7D1C8FEFC9A1}");
-      }
-
-      public struct Dimensions
-      {
-        public static readonly int ColoredImageWidth = 720;
-        public static readonly int ColoredImageHeight = 520;
       }
     }
 
@@ -73,6 +66,16 @@ namespace Wedia.Feature.Teasers
       public struct Fields
       {
         public static readonly ID Label = new ID("{12F214C9-16EE-4CF1-9220-7D1C8FEFC9A1}");
+      }
+    }
+
+    public struct HasTeaserDownloadButton
+    {
+      public static readonly ID ID = new ID("{289626EC-F1F0-4EB1-AF6F-01A29E5936B1}");
+
+      public struct Fields
+      {
+        public static readonly ID CTA = new ID("{F51DD24C-64BE-4832-9F98-E03F9E84FA63}");
       }
     }
   }

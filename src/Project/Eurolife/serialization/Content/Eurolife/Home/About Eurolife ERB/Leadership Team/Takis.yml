@@ -61,6 +61,10 @@ Languages:
     - ID: "902ad41a-7a0a-43fc-9080-0a858d455597"
       Hint: PersonTitle
       Value: Takis
+    - ID: "a212c93a-7c83-4fed-bc5a-5b035baeff50"
+      Hint: PersonImage
+      Value: |
+        <image mediapath="" alt="248-512" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{A6075585-F449-475E-8804-8F092F59F22D}" ></image>
     - ID: "e57a5fee-e68d-4d37-ac1f-edc51e551121"
       Hint: PersonPosition
       Value: TAkis Position

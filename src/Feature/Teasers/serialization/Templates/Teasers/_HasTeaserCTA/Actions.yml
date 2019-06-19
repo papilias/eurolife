@@ -2,7 +2,7 @@
 ID: "fc015e14-4f90-470b-944a-889ecb07b9d7"
 Parent: "6e50fbea-af05-4901-8b4d-3308e1ff92c4"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Teasers/_HasTeaserCTA/Content
+Path: /sitecore/templates/Feature/Teasers/_HasTeaserCTA/Actions
 DB: master
 Languages:
 - Language: en

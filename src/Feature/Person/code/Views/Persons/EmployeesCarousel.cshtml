@@ -20,22 +20,24 @@
         @foreach (var item in Model)
         {
           <div>
-            @Html.Sitecore().ImageField(Templates.Person.Fields.DesktopImage, item)
+            @Html.Sitecore().ImageField(Templates.Person.Fields.Image, 
+              item, 
+              Constants.ImageDimensions.Carousel.Height, 
+              Constants.ImageDimensions.Carousel.Width)
             @{
 
               quotes += $@"
                             <div>
-
-                                <h2 class='h5 m-b-8'>{item.Field(Templates.Person.Fields.Title)}</h2>
-                                <div class='leadership-slider__position'>{item.Field(Templates.Person.Fields.Position)}</div>
-                      ";
+                              <h2 class='h5 m-b-8'>{item.Field(Templates.Person.Fields.Title)}</h2>
+                              <div class='leadership-slider__position'>{item.Field(Templates.Person.Fields.Position)}</div>
+                        ";
 
               if (item.FieldHasValue(Templates.Person.Fields.Quote))
               {
                 quotes += $@"
-                                    <div class='leadership-slider__quote'>
-                                        {item.Field(Templates.Person.Fields.Quote)}
-                                    </div>";
+                            <div class='leadership-slider__quote'>
+                                {item.Field(Templates.Person.Fields.Quote)}
+                            </div>";
               }
 
 

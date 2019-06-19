@@ -21,9 +21,8 @@ Languages:
         sitecore\admin
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
-      Value: |
-        <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{1E3CBA11-A5AC-4C09-89DA-4284718F8481}" />
+      Value: 
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: DesktopImage
       Value: |
-        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
+        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" ></image>

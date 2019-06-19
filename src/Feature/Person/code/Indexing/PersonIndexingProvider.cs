@@ -33,7 +33,7 @@ namespace Wedia.Feature.Person.Indexing
             var contentItem = item.GetItem();
             formattedResult.Title = FieldRenderer.Render(contentItem, Templates.Person.Fields.Title.ToString());
             formattedResult.Description = FieldRenderer.Render(contentItem, Templates.Person.Fields.Position.ToString());
-            formattedResult.Media = ((ImageField)contentItem.Fields[Templates.Person.Fields.DesktopImage])?.MediaItem;
+            formattedResult.Media = ((ImageField)contentItem.Fields[Templates.Person.Fields.Image])?.MediaItem;
             formattedResult.ViewName = "~/Views/Person/PersonSearchResult";
         }
     }
