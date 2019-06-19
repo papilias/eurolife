@@ -19,6 +19,13 @@ SharedFields:
   Value: WordProcessing/32x32/comment_h.png
 Languages:
 - Language: en
+  Fields:
+  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
+    Hint: Tooltip
+    Value: Edit item
+  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
+    Hint: Header
+    Value: Edit item
   Versions:
   - Version: 1
     Fields:
