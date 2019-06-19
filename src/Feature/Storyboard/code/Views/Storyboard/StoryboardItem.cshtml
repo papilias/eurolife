@@ -2,9 +2,13 @@
 @using Wedia.Feature.Storyboard
 @model Sitecore.Data.Items.Item
 
+
 <li>
-    @Html.Sitecore().Field(Templates.StoryboardItem.Fields.Year, Model)
+  <div class="timeline__date">@Html.Sitecore().Field(Templates.StoryboardItem.Fields.Year, Model)</div>
+  <div class="timeline__events timeline__events--plain timeline__text">
     @Html.Sitecore().Field(Templates.StoryboardItem.Fields.Content, Model)
+  </div>
+  <span class="dot"></span>
 </li>
 
 
