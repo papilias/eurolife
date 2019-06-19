@@ -27,16 +27,16 @@ SharedFields:
           uid="{090F8187-E3EA-4A1A-8615-0D67786253BA}" />
         <r
           id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
-          ph="page-header"
+          ph="page-layout-top"
           uid="{3C3EAEF9-B69F-4AB6-8C60-50298A3E6FF4}" />
         <r
           id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
-          ph="page-header"
+          ph="page-layout-top"
           uid="{79474B98-7D23-478D-AF7D-22991924C488}" />
         <r
-          id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
+          id="{3F152F68-ECD9-42D8-B73F-A5E16DF5D827}"
           ph="page-layout"
-          uid="{F24E8C87-C239-43FC-8265-0DB3CCC2B2F8}" />
+          uid="{7F7FE3DC-5F21-436C-9185-F2F41F72E41F}" />
       </d>
     </r>
 Languages:

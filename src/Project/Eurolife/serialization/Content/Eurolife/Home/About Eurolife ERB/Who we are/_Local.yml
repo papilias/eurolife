@@ -1,16 +1,10 @@
 ﻿---
-ID: "1013016b-840b-4024-9565-775144e4fccf"
-Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
+ID: "afa55dd2-d4a5-404e-9b6b-6fe77d977483"
+Parent: "ec2af234-49a5-48a1-87ce-7a660c5f4b18"
 Template: "a096d891-6565-4505-8ad8-d497fd1b8776"
-Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/_Local
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Who we are/_Local
 DB: master
 SharedFields:
-- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
-  Hint: __Masters
-  Type: TreelistEx
-  Value: |
-    {89A59513-F418-4DAE-890B-0D0DDA79F62B}
-    {7753C4B8-FFB7-4EF8-8F62-85A28AE89E2C}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: "-1000"
@@ -21,7 +15,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190612T142615Z
+      Value: 20190618T105055Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

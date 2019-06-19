@@ -1,6 +1,6 @@
 ﻿---
-ID: "dd53e47d-a937-45c7-a3df-7d45add6b208"
-Parent: "0118fafa-c139-4eca-b84d-3ff242c40cfb"
+ID: "b1062c22-02eb-421d-950d-0553a83e0b5a"
+Parent: "41a84fb8-5eae-4d23-a42a-8a0434ff89a3"
 Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
 Path: /sitecore/media library/Project/Eurolife
 DB: master
@@ -11,8 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190604T085000Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
+      Value: "20190613T083506:636960117069646816Z"

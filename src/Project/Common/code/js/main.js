@@ -189,6 +189,7 @@
 
             rightButton.addEventListener('click', _ => {
                 carousel.style.setProperty('--transform', order * (-274 - 32) + "px");
+
                 order++;
             });
 

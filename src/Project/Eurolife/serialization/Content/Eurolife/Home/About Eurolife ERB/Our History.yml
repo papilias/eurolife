@@ -9,6 +9,36 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{E2578252-E470-49D3-BD72-A7CC010D6DB2}"
+              p:before="*"
+              s:id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
+              uid="{7472BEEB-8E77-47A5-891E-70A408706AC1}"
+              p:after="r[@uid='{E2578252-E470-49D3-BD72-A7CC010D6DB2}']"
+              s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
+              uid="{484B1BA0-B5AF-4AF3-A936-C4C54EC0BBB9}"
+              p:after="r[@uid='{7472BEEB-8E77-47A5-891E-70A408706AC1}']"
+              s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+              s:ph="page-layout" />
+            <r
+              uid="{61C669D2-BE6B-4838-95E6-E5A651BA7AFC}">
+              <p:d />
+            </r>
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190517T081334Z

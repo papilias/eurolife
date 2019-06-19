@@ -51,6 +51,9 @@ Languages:
     - ID: "3a28c78d-3c5e-4d7b-837b-9f511fb70d80"
       Hint: PersonBody
       Value: <p>Takis body<br /></p><p><br /></p>
+    - ID: "47e95858-efcc-4862-8a26-3905105ece5b"
+      Hint: PersonQuote
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

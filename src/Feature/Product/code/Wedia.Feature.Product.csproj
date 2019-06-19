@@ -121,10 +121,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\..\Foundation\Alerts\code\Wedia.Foundation.Alerts.csproj">
       <Project>{85863230-7954-48f3-b895-35c3f4b4c2f3}</Project>

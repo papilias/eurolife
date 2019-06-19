@@ -89,7 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\js\app.js" />
-    <Content Include="App_Config\Environment\Project\Common.Release.config" />
+    <Content Include="App_Config\Environment\Project\Common.Release.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="assets\js\components\PanelColumn.vue" />
     <None Include="assets\js\components\CoveragesAccordion.vue" />
     <Content Include="assets\js\components\PanelFilter.vue" />
@@ -121,12 +123,20 @@
     <Content Include="fonts\Ubuntu-MediumItalic.svg" />
     <Content Include="fonts\Ubuntu-Regular.svg" />
     <Content Include="icons\info.svg" />
+    <Content Include="icons\left.svg" />
+    <Content Include="icons\right.svg" />
     <Content Include="images\arrow-right %281%29.svg" />
     <Content Include="images\arrow-right.svg" />
+    <Content Include="images\article-teaser.jpg" />
+    <Content Include="images\csr-next-desktop.jpg" />
     <Content Include="images\demo1.png" />
     <Content Include="images\eurolife-product-mobile.jpg" />
     <Content Include="images\eurolife-product.jpg" />
     <Content Include="images\facebook.svg" />
+    <Content Include="images\gallery1.jpg" />
+    <Content Include="images\gallery2.jpg" />
+    <Content Include="images\gallery3.jpg" />
+    <Content Include="images\gallery4.jpg" />
     <Content Include="images\iconfinder_Arrow_backward_1063879.svg" />
     <Content Include="images\iconfinder_Arrow_Forward_1063879.svg" />
     <Content Include="images\icons\check-blue.svg" />
@@ -152,6 +162,7 @@
     <Content Include="images\leading-team-5.jpg" />
     <Content Include="images\quote-big.svg" />
     <Content Include="images\teaser-demo.jpg" />
+    <Content Include="images\tholos.jpeg" />
     <Content Include="images\twitter.svg" />
     <Content Include="images\wedia-logo.svg" />
     <Content Include="images\youtube.svg" />
@@ -160,7 +171,6 @@
     <Content Include="js\vendor\jquery-3.4.1.slim.min.js" />
     <Content Include="js\vendor\jquery.fancybox.min.js" />
     <Content Include="js\vendor\slick.min.js" />
-    <Content Include="Views\Common\Sublayouts\PageHeader.cshtml" />
     <Content Include="Views\Common\Sublayouts\Section.cshtml" />
     <Content Include="Views\Common\Sublayouts\OneColumn.cshtml" />
     <Content Include="fonts\converted\Ubuntu-MediumItalic\Ubuntu-MediumItalic.eot" />

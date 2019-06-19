@@ -19,13 +19,8 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{DA67E2CC-7A3E-474C-A698-16F50E3BFBF3}"
-              p:before="*"
-              s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
-              s:ph="/page-layout/section-{CD99C690-52FD-4779-A68F-3FB3C85BCC56}-0/col-huge-{257FF17E-D5E4-47BB-86EC-F9B5EA5C6A75}-0" />
-            <r
               uid="{257FF17E-D5E4-47BB-86EC-F9B5EA5C6A75}"
-              p:after="r[@uid='{DA67E2CC-7A3E-474C-A698-16F50E3BFBF3}']"
+              p:before="*"
               s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
               s:ph="/page-layout/section-{CD99C690-52FD-4779-A68F-3FB3C85BCC56}-0" />
             <r
@@ -59,9 +54,30 @@ Languages:
               s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
               s:ph="/page-layout/section-{DB9595AB-E38A-4B28-A5BE-5BBC6E6C4779}-0" />
             <r
-              uid="{CD99C690-52FD-4779-A68F-3FB3C85BCC56}"
+              uid="{E7EA72CC-0746-4AEC-946B-8771963C430D}"
+              p:after="r[@uid='{9015BC53-2AE3-455A-A1DD-879A04CC5E07}']"
+              s:ds="{32039C03-DA31-4421-BBED-0F843809A090}"
+              s:id="{E49EABF7-D73F-4C34-B47B-C14505556162}"
+              s:ph="page-layout" />
+            <r
+              uid="{C5C992EA-D301-442D-A1D2-26BC8849D65A}"
+              p:after="r[@uid='{E7EA72CC-0746-4AEC-946B-8771963C430D}']"
+              s:ds="{868DC36E-C2F5-4E0A-B5AD-C83093265E95}"
+              s:id="{D1DD7390-C774-4C86-8904-FD074B9BD21D}"
+              s:par=""
+              s:ph="page-layout" />
+            <r
+              uid="{8E44D8EE-1248-4C48-A9E2-5C13396A9308}"
+              p:after="r[@uid='{C5C992EA-D301-442D-A1D2-26BC8849D65A}']"
+              s:ds="{2B83C3D2-6268-4455-A53D-7EA9BA9731F7}"
+              s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
+              s:ph="page-layout" />
+            <r
+              uid="{931C84E8-F2B1-43A2-A70D-29BCAFEA7917}"
               p:after="*[1=2]"
-              s:id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
+              s:ds="{E7E7F6D0-F959-48D3-AD9E-682B77EE6C5F}"
+              s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
+              s:par=""
               s:ph="page-layout" />
           </d>
         </r>

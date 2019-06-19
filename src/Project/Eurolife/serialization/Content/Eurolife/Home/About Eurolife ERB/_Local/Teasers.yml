@@ -1,8 +1,8 @@
 ﻿---
-ID: "bea2d734-f8d0-461d-97ee-90f1df5c8236"
-Parent: "2bb88d51-eae0-4aa1-ac42-d14ab7f3d866"
+ID: "0d51e54c-6b05-45c8-8163-09a9a269db17"
+Parent: "1013016b-840b-4024-9565-775144e4fccf"
 Template: "aacf7182-8b54-4b5c-8957-aa1369d879c9"
-Path: /sitecore/content/Eurolife/Global/Teasers/Career Teasers
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/_Local/Teasers
 DB: master
 Languages:
 - Language: en
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190524T110455Z
+      Value: 20190618T085423Z
