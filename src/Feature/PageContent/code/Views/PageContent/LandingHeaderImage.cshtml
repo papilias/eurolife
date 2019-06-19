@@ -6,87 +6,80 @@
 
 @if (!Model?.Item?.DescendsFrom(Templates.HasPageImageContent.ID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageImageContent.ID),
-        AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-        Model.Item?.ID,
-        Model.Rendering.Item?.ID)
-    return;
-}
-
-@{
-    var sectionItem = Model.Item.GetAncestorOrSelfOfTemplate(Templates.HasPageImageContent.ID);
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageImageContent.ID),
+      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+      Model.Item?.ID,
+      Model.Rendering.Item?.ID)
+  return;
 }
 
 <section class="hero hero--extra m-b-124 relator bread-overlays bread-light">
-    @Html.Sitecore().Placeholder("hero-breadcrumb")
+  @Html.Sitecore().Placeholder("page-layout-top")
 
-    @if ((Model.Item.FieldHasValue(Templates.HasPageContent.Fields.PreTitle)
-    || Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Title)
-    || Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Summary)) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if ((Model.Item.FieldHasValue(Templates.HasPageContent.Fields.PreTitle)
+  || Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Title)
+  || Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Summary)) || Sitecore.Context.PageMode.IsExperienceEditor)
+  {
+    <div class="hero-contents">
+      <div class="center--760 center relator">
+        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.PreTitle))
+        {
+          <h4 class="hero-contents__sup">@Html.Sitecore().Field(Templates.HasPageContent.Fields.PreTitle)</h4>
+        }
+        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Title))
+        {
+          <h1 class="h2 m-b-24">@Html.Sitecore().Field(Templates.HasPageContent.Fields.Title)</h1>
+        }
+        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Summary))
+        {
+          <p>@Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary)</p>
+        }
+      </div>
+    </div>
+  }
+
+  @{
+    var desktopImage = string.Empty;
+    var mobileImage = string.Empty;
+
+    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.DesktopImage.ToString()))
     {
-        <div class="hero-contents">
-            <div class="center--760 center relator">
-                @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.PreTitle))
-                {
-                    <h4 class="hero-contents__sup">@Html.Sitecore().Field(Templates.HasPageContent.Fields.PreTitle)</h4>
-                }
-                @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Title))
-                {
-                    <h1 class="h2 m-b-24">@Html.Sitecore().Field(Templates.HasPageContent.Fields.Title)</h1>
-                }
-                @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Summary))
-                {
-                    <p>@Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary)</p>
-                }
-            </div>
-        </div>
+      desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage,
+      new Sitecore.Resources.Media.MediaUrlOptions
+      {
+        Width = Templates.HasPageImageContent.Dimensions.LandingBannerWidth,
+        Height = Templates.HasPageImageContent.Dimensions.LandingBannerHeight
+      });
     }
 
-    @{
-        var desktopImage = string.Empty;
-        var mobileImage = string.Empty;
-
-        if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.DesktopImage.ToString()))
-        {
-            desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage,
-            new Sitecore.Resources.Media.MediaUrlOptions
-            {
-                Width = Templates.HasPageImageContent.Dimensions.LandingBannerWidth,
-                Height = Templates.HasPageImageContent.Dimensions.LandingBannerHeight
-            });
-        }
-
-        if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.MobileImage.ToString()))
-        {
-            mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage,
-            new Sitecore.Resources.Media.MediaUrlOptions
-            {
-                Width = Templates.HasPageImageContent.Dimensions.LandingBannerResponsiveWidth,
-                Height = Templates.HasPageImageContent.Dimensions.LandingBannerResponsiveHeight
-            });
-        }
+    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.MobileImage.ToString()))
+    {
+      mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage,
+      new Sitecore.Resources.Media.MediaUrlOptions
+      {
+        Width = Templates.HasPageImageContent.Dimensions.LandingBannerResponsiveWidth,
+        Height = Templates.HasPageImageContent.Dimensions.LandingBannerResponsiveHeight
+      });
     }
+  }
 
+  @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+  {
     <picture>
-        @if (!string.IsNullOrEmpty(mobileImage) && !Sitecore.Context.PageMode.IsExperienceEditor)
-        {
-            <source media="(min-width: 900px)" srcset="@mobileImage">
-        }
-        @if(Sitecore.Context.PageMode.IsExperienceEditor)
-        {
-            @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.MobileImage, sectionItem,
-            Templates.HasPageImageContent.Dimensions.LandingBannerHeight, Templates.HasPageImageContent.Dimensions.LandingBannerWidth)
-        } 
 
-        @if (!string.IsNullOrEmpty(desktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
-        {
-            if(!Sitecore.Context.PageMode.IsExperienceEditor)
-            {
-                <source srcset="@desktopImage">
-            }
-               
-            @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.DesktopImage, sectionItem,
-            Templates.HasPageImageContent.Dimensions.LandingBannerHeight, Templates.HasPageImageContent.Dimensions.LandingBannerWidth)
-        }
+      @if (!string.IsNullOrEmpty(desktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+      {
+      
+       <source media="(min-width: 900px)" srcset="@desktopImage">
+     
+      }
+
+      @if (!string.IsNullOrEmpty(mobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+      {
+        <source srcset="@mobileImage">
+      }
+
+      <img src="@desktopImage" alt="eurolife product" />
     </picture>
+  }
 </section>
