@@ -7,61 +7,55 @@ using Wedia.Foundation.Indexing.Repositories;
 using Sitecore.Data.Items;
 using Wedia.Foundation.Indexing.Models;
 using Wedia.Feature.Person.Models;
+using Wedia.Foundation.SitecoreExtensions.Extensions;
 
 namespace Wedia.Feature.Person.Repositories
 {
-    [Service(typeof(IPersonRepository))]
-    public class PersonRepository : IPersonRepository
+  [Service(typeof(IPersonRepository))]
+  public class PersonRepository : IPersonRepository
+  {
+    public ISearchServiceRepository _searchServiceRepository;
+
+    public PersonRepository(ISearchServiceRepository searchServiceRepository)
     {
-        public ISearchServiceRepository SearchServiceRepository;
-
-        public PersonRepository(ISearchServiceRepository searchServiceRepository)
-        {
-            SearchServiceRepository = searchServiceRepository;
-        }
-
-        public ResultsViewModel GetItemsPaged(Item contextItem, PagingSettings paggingSettings, int? page)
-        {
-            var pageNumber = GetPageNumber(page);
-
-            var query = new PersonQuery
-            {
-                QueryText = "*",
-                Page = pageNumber,
-                NoOfResults = paggingSettings.ResultsOnPage
-            };
-
-            var searchService = SearchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.Person.ID } });
-            searchService.Settings.Root = contextItem;
-            var results = searchService
-                .Search(query);
-            //.FindAll(GetSkippedItems(paggingSettings, pageNumber), paggingSettings.ResultsOnPage)
-            //.Results
-            //.Select(x => x.Item)
-            //.Where(x => x != null);
-
-            return new ResultsViewModel
-            {
-                Results = results,
-                Page = pageNumber,
-                ResultsOnPage = paggingSettings.ResultsOnPage,
-                TotalResults = results.TotalNumberOfResults,
-                VisiblePagesCount = paggingSettings.PagesToShow
-            };
-        }
-
-        private int GetPageNumber(int? page)
-        {
-            if (page == null)
-                return 0;
-
-            return page < 0 ? 0 : page.Value;
-        }
-
-        private int GetSkippedItems(PagingSettings pagingSettings, int page)
-        {
-
-            return pagingSettings.PagesToShow * page;
-        }
+      _searchServiceRepository = searchServiceRepository;
     }
+
+    public IEnumerable<Item> Get(Item contextItem)
+    {
+      if (contextItem == null)
+      {
+        throw new ArgumentNullException(nameof(contextItem));
+      }
+
+      var searchService = _searchServiceRepository
+        .Get(new SearchSettingsBase { Templates = new[] { Templates.Person.ID } });
+
+      searchService.Settings.Root = contextItem;
+
+      var results = searchService.FindAll();
+
+      return results.Results.Select(x => x.Item).Where(x => x != null);
+    }
+
+    public IEnumerable<Item> GetCarousel(Item context)
+    {
+      return context.GetMultiListValueItems(Templates.PersonGroup.Fields.Persons)
+        .Where(i => i.DescendsFrom(Templates.Person.ID));
+    }
+
+    private int GetPageNumber(int? page)
+    {
+      if (page == null)
+        return 0;
+
+      return page < 0 ? 0 : page.Value;
+    }
+
+    private int GetSkippedItems(PagingSettings pagingSettings, int page)
+    {
+
+      return pagingSettings.PagesToShow * page;
+    }
+  }
 }

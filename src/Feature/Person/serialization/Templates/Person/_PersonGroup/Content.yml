@@ -2,7 +2,7 @@
 ID: "46b2268b-a44d-45f2-920f-ed604c04b2b3"
 Parent: "5816c3b2-e272-4933-8bc4-d025f3c288b2"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Person/_PersonFolder/Content
+Path: /sitecore/templates/Feature/Person/_PersonGroup/Content
 DB: master
 Languages:
 - Language: en

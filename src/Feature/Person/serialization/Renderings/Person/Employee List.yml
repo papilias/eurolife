@@ -10,7 +10,7 @@ SharedFields:
   Value: Index
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Person
+  Value: Wedia.Feature.Person.Controllers.PersonsController, Wedia.Feature.Person
 Languages:
 - Language: en
   Versions:

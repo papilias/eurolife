@@ -2,7 +2,7 @@
 ID: "5816c3b2-e272-4933-8bc4-d025f3c288b2"
 Parent: "74cbdf84-2ee6-439e-863b-c6af412586d5"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Person/_PersonFolder
+Path: /sitecore/templates/Feature/Person/_PersonGroup
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

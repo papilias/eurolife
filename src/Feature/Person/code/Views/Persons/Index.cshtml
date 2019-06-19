@@ -1,0 +1,21 @@
+﻿@using Wedia.Feature.Person
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model IEnumerable<Sitecore.Data.Items.Item>
+
+
+<section class="leadership center center--1100 m-b-112 m-t-124">
+
+  @foreach (var item in Model)
+  {
+  <a class="leadership__member" href="@item.Url()">
+    @if (item.FieldHasValue(Templates.Person.Fields.DesktopImage))
+    {
+      @Html.Sitecore().ImageField(Templates.Person.Fields.DesktopImage, item)
+    }
+
+    <h2 class="leadership__name">@item.Field(Templates.Person.Fields.Title)</h2>
+    <h3 class="leadership__position">@item.Field(Templates.Person.Fields.Position)</h3>
+  </a>
+  }
+
+</section>
