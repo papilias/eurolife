@@ -79,7 +79,6 @@ namespace Wedia.Feature.News.Repositories
         return createdDate;
 
       var sitecoreDate = Sitecore.DateUtil.IsoDateToServerTimeIsoDate(inputDate.Value);
-      //var convertedDate = DateTime.ParseExact(sitecoreDate, "yyyyMMddTHHmmss");
 
       var convertedDate = DateTime.ParseExact(sitecoreDate, "yyyyMMddTHHmmss", Sitecore.Context.ContentLanguage.CultureInfo);
       return convertedDate;
@@ -87,5 +86,3 @@ namespace Wedia.Feature.News.Repositories
 
   }
 }
-
-//DateUtil.ToIsoDate(model.NavFile.FirstOrDefault().NavDate)

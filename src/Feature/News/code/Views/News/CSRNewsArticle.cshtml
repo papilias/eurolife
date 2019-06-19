@@ -10,28 +10,10 @@
     return;
   }
 
-  var previousArticle = Model.Item.Axes.GetPreviousSibling();
-  var nextArticle = Model.Item.Axes.GetNextSibling();
 }
 
 <article class="light m-t-112 m-b-112 center center--920 text-main">
   @Html.Sitecore().Field(Templates.NewsArticle.Fields.Body, Model.Item)
 </article>
-
-
-
-@if (previousArticle != null)
-{
-  <div>
-    Previous
-  </div>
-}
-
-@if (nextArticle != null)
-{
-  <div>
-    Next
-  </div>
-}
 
 
