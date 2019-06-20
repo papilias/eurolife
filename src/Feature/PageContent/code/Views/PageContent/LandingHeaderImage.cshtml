@@ -39,28 +39,13 @@
   }
 
   @{
-    var desktopImage = string.Empty;
-    var mobileImage = string.Empty;
-
-    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.DesktopImage.ToString()))
-    {
-      desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage,
-      new Sitecore.Resources.Media.MediaUrlOptions
+      var mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
       {
         Width = Templates.HasPageImageContent.Dimensions.LandingBannerWidth,
         Height = Templates.HasPageImageContent.Dimensions.LandingBannerHeight
-      });
-    }
-
-    if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.MobileImage.ToString()))
-    {
-      mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage,
-      new Sitecore.Resources.Media.MediaUrlOptions
-      {
-        Width = Templates.HasPageImageContent.Dimensions.LandingBannerResponsiveWidth,
-        Height = Templates.HasPageImageContent.Dimensions.LandingBannerResponsiveHeight
-      });
-    }
+      };
+      var desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptions);
+      var mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptions);
   }
 
   @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))

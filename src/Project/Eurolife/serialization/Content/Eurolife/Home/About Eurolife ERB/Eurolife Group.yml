@@ -1,7 +1,7 @@
 ﻿---
-ID: "1e3cba11-a5ac-4c09-89da-4284718f8481"
+ID: "c65d8f70-3364-489b-b8b5-71d02f602d95"
 Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
-Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
+Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
 Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Eurolife Group
 DB: master
 Languages:
@@ -19,54 +19,58 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{0215720C-4604-4263-BC48-6CCEED73B05C}"
-              p:before="*"
-              s:ds="{A4C91FA8-D954-43C3-AE73-4EC4D230B22B}"
-              s:id="{78DA17BB-A03F-455A-9319-8E68171EA944}"
-              s:par=""
-              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0/col-three" />
+              uid="{46643B2F-92A4-4AE3-AEA8-4EF7CA8B754E}"
+              p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
+              s:ds="{BBED9516-66A5-4392-B72B-18E051B05733}"
+              s:id="{E49EABF7-D73F-4C34-B47B-C14505556162}"
+              s:ph="page-layout" />
             <r
-              uid="{5F0C98ED-6885-43B3-B42D-49C11E6BCD97}"
-              p:after="r[@uid='{0215720C-4604-4263-BC48-6CCEED73B05C}']"
-              s:ds="{A4C91FA8-D954-43C3-AE73-4EC4D230B22B}"
-              s:id="{78DA17BB-A03F-455A-9319-8E68171EA944}"
+              uid="{7B728F4F-84B1-4764-A135-C2CD7D59592E}"
+              p:after="r[@uid='{46643B2F-92A4-4AE3-AEA8-4EF7CA8B754E}']"
+              s:ds="{5411F802-E353-431F-8B8E-862275FE4EBE}"
+              s:id="{D1DD7390-C774-4C86-8904-FD074B9BD21D}"
               s:par=""
-              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0/col-two" />
+              s:ph="page-layout" />
             <r
-              uid="{2DE3A143-E1F5-4B15-8D25-BB65E9F34538}"
-              p:after="r[@uid='{5F0C98ED-6885-43B3-B42D-49C11E6BCD97}']"
-              s:ds="{A4C91FA8-D954-43C3-AE73-4EC4D230B22B}"
-              s:id="{78DA17BB-A03F-455A-9319-8E68171EA944}"
-              s:par=""
-              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0/col-one" />
-            <r
-              uid="{DE502E65-144B-4032-AB0C-2704282B069E}"
-              p:after="r[@uid='{2DE3A143-E1F5-4B15-8D25-BB65E9F34538}']"
-              s:ds=""
-              s:id="{3BDBA4E5-69EE-4438-A4A8-B604A0A212DB}"
-              s:par="UseStaticPlaceholderNames=1"
-              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0" />
+              uid="{AF61DC36-395E-488D-8C77-03DBE06ED876}"
+              p:after="*[1=2]"
+              s:ds="{DE70EE94-3354-4117-94EB-C507F67F92C1}"
+              s:id="{5C56B6E0-DD5D-4A0F-ABC8-1AA48481841F}"
+              s:ph="page-layout" />
           </d>
         </r>
-    - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
-      Hint: PreTitle
-      Value: Eurolife Group
+    - ID: "0ce01372-9068-4424-8ec1-81005fbcfe3b"
+      Hint: SeoFollowLinks
+      Type: Checkbox
+      Value: 1
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190523T113006Z
+      Value: 20190619T104924Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: Όμιλος Eurolife ERB Insurance Group
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: What we do and why it matters
+      Value: Όμιλος Eurolife ERB Insurance Group
+    - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+      Hint: IncludeInSearchResults
+      Type: Checkbox
+      Value: 1
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
-      Value: At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
-      Hint: Summary
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
+        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Eurolife Group
+      Value: Όμιλος Eurolife ERB Insurance Group

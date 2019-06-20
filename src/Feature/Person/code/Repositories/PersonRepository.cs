@@ -38,24 +38,10 @@ namespace Wedia.Feature.Person.Repositories
       return results.Results.Select(x => x.Item).Where(x => x != null);
     }
 
-    public IEnumerable<Item> GetCarousel(Item context)
+    public IEnumerable<Item> GetCarousel(Item context, Item pageItem)
     {
       return context.GetMultiListValueItems(Templates.PersonGroup.Fields.Persons)
-        .Where(i => i.DescendsFrom(Templates.Person.ID));
-    }
-
-    private int GetPageNumber(int? page)
-    {
-      if (page == null)
-        return 0;
-
-      return page < 0 ? 0 : page.Value;
-    }
-
-    private int GetSkippedItems(PagingSettings pagingSettings, int page)
-    {
-
-      return pagingSettings.PagesToShow * page;
+        .Where(i => i.DescendsFrom(Templates.Person.ID) && i.ID != pageItem.ID);
     }
   }
 }

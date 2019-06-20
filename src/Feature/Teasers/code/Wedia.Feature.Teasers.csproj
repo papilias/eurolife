@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Constants.cs" />
     <Compile Include="Controllers\TeasersController.cs" />
     <Compile Include="Models\DynamicTeaserItem.cs" />
     <Compile Include="Models\DynamicTeaserModel.cs" />

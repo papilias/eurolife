@@ -18,10 +18,8 @@ namespace Wedia.Feature.Person
         public const string Title_FieldName = "PersonTitle";
         public static readonly ID Position = new ID("{E57A5FEE-E68D-4D37-AC1F-EDC51E551121}");
         public const string Position_FieldName = "PersonPosition";
-        public static readonly ID DesktopImage = new ID("{A212C93A-7C83-4FED-BC5A-5B035BAEFF50}");
-        public const string DesktopImage_FieldName = "PersonDesktopImage";
-        public static readonly ID MobileImage = new ID("{D1A816F7-BF40-40AD-A0DB-D26C6A69DC38}");
-        public const string MobileImage_FieldName = "PersonMobileImage";
+        public static readonly ID Image = new ID("{A212C93A-7C83-4FED-BC5A-5B035BAEFF50}");
+        public const string Image_FieldName = "PersonImage";
         public static readonly ID Body = new ID("{3A28C78D-3C5E-4D7B-837B-9F511FB70D80}");
         public const string Body_FieldName = "PersonBody";
         public static readonly ID Quote = new ID("{47E95858-EFCC-4862-8A26-3905105ECE5B}");

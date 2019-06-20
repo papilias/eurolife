@@ -1,15 +1,26 @@
-﻿@using Sitecore.Mvc
+﻿@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
 @using Sitecore.Mvc.Presentation
 @using Wedia.Feature.Person
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 
 @model RenderingModel
-@{
-    if (!Model?.Item?.DescendsFrom(Templates.Person.ID) ?? true)
-    {
-        return;
-    }
+
+@if (!Model?.Item?.DescendsFrom(Templates.Person.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Person.ID),
+      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+      Model.Item?.ID,
+      Model.Rendering.Item?.ID)
+  return;
 }
 
-@Model.Item.Field(Templates.Person.Fields.Body)
+
+<article class="leader-cv p-b-64 p-t-64">
+  <div class="center--920 center">
+    @Model.Item.Field(Templates.Person.Fields.Body)
+  </div>
+</article>
+
+
 

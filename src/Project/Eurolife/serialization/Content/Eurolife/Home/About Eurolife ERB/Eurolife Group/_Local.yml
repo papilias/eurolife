@@ -1,0 +1,21 @@
+﻿---
+ID: "1a46b834-01f1-4cf9-a127-004a199c91cd"
+Parent: "c65d8f70-3364-489b-b8b5-71d02f602d95"
+Template: "a096d891-6565-4505-8ad8-d497fd1b8776"
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Eurolife Group/_Local
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {7753C4B8-FFB7-4EF8-8F62-85A28AE89E2C}
+    {05BF3F91-D5DB-4E93-99E9-8E5830C85BB6}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190619T105318Z

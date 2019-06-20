@@ -4,9 +4,9 @@
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserContent.ID) ?? true)
+@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserHeadline.ID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserContent.ID),
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserHeadline.ID),
           AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
           Model.Item?.ID,
           Model.Rendering.Item?.ID)

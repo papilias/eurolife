@@ -5,9 +5,9 @@
 @using Wedia.Foundation.Theming.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserContent.ID) ?? true)
+@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserImage.ID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserContent.ID),
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserImage.ID),
       AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
       Model.Item?.ID,
       Model.Rendering.Item?.ID)
@@ -15,19 +15,19 @@
 }
 
 <div class="zigzag__item m-b-96 relator @Model.Rendering.GetFontColorClass()">
-  @if (Model.Item.FieldHasValue(Templates.HasTeaserContent.Fields.DesktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.DesktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
   {
     <div class="zigzag__image">
-      @Html.Sitecore().ImageField(Templates.HasTeaserContent.Fields.DesktopImage)
+      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.DesktopImage)
     </div>
 
 
   }
 
-  @if (Model.Item.FieldHasValue(Templates.HasTeaserContent.Fields.MobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+  @if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.MobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
   {
     <div class="zigzag__image">
-      @Html.Sitecore().ImageField(Templates.HasTeaserContent.Fields.MobileImage)
+      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.MobileImage)
     </div>
   }
 
