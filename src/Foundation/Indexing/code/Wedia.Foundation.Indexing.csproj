@@ -96,6 +96,7 @@
     <Compile Include="Infrastructure\Fields\HasPresentationComputedField.cs" />
     <Compile Include="Infrastructure\Fields\HasSearchResultFormatterComputedField.cs" />
     <Compile Include="Infrastructure\Fields\SearchResultFormatterComputedField.cs" />
+    <Compile Include="Infrastructure\Fields\SortOrderField.cs" />
     <Compile Include="Infrastructure\Providers\FallbackIndexingProvider.cs" />
     <Compile Include="Models\IndexedItem.cs" />
     <Compile Include="Models\IQuery.cs" />
