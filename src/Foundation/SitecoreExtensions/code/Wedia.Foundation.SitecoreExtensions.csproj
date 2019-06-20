@@ -111,6 +111,7 @@
     <Compile Include="Services\TrackerService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="web.config.xdt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
