@@ -5,6 +5,9 @@ Template: "7fc965fc-b67a-40a0-8428-2cdf16c71b68"
 Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Financial Reports
 DB: master
 SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout

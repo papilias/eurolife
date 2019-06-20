@@ -1,13 +1,13 @@
 ﻿---
 ID: "e1b6047c-95b0-4e13-92eb-5bd2ebdaadbf"
-Parent: "16351d16-de59-4f85-b750-07e16e068026"
+Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
 Template: "ce1d7e61-0867-4d85-8661-ebea1d8b48ea"
-Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Leadership Team/Alexandros Sarigewrgiou
+Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Alexandros Sarigewrgiou
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 150
+  Value: 400
 Languages:
 - Language: en
   Versions:
@@ -59,7 +59,7 @@ Languages:
       Hint: PersonTitle
       Value: Alexandros Sarigewrgiou
     - ID: "a212c93a-7c83-4fed-bc5a-5b035baeff50"
-      Hint: PersonDekstopImage
+      Hint: PersonImage
       Value: |
         <image mediapath="" alt="Sarrigeorgiou2" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{F014A106-CB82-4A8E-B98C-4F265717367C}" ></image>
     - ID: "e57a5fee-e68d-4d37-ac1f-edc51e551121"

@@ -13,7 +13,7 @@ SharedFields:
     {7753C4B8-FFB7-4EF8-8F62-85A28AE89E2C}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: "-1000"
+  Value: 0
 Languages:
 - Language: en
   Versions:

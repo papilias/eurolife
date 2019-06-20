@@ -4,6 +4,10 @@ Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
 Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
 Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Why choose us
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
 Languages:
 - Language: en
   Versions:

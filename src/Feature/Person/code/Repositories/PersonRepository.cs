@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using Wedia.Foundation.DependencyInjection;
 using Wedia.Foundation.Indexing.Repositories;
 using Sitecore.Data.Items;
 using Wedia.Foundation.Indexing.Models;
-using Wedia.Feature.Person.Models;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
 
 namespace Wedia.Feature.Person.Repositories
@@ -33,15 +31,20 @@ namespace Wedia.Feature.Person.Repositories
 
       searchService.Settings.Root = contextItem;
 
-      var results = searchService.FindAll();
+      var results = searchService.FindAll(0, 0, Foundation.Indexing.Constants.IndexFields.SortOrder);
 
-      return results.Results.Select(x => x.Item).Where(x => x != null);
+      return results.Results.Select(d => d.Item).Where(i => i != null); //.OrderBy(GetSortOrderValue);
     }
 
     public IEnumerable<Item> GetCarousel(Item context, Item pageItem)
     {
       return context.GetMultiListValueItems(Templates.PersonGroup.Fields.Persons)
         .Where(i => i.DescendsFrom(Templates.Person.ID) && i.ID != pageItem.ID);
+    }
+    
+    private static Func<Item, int> GetSortOrderValue(Item i)
+    {
+      return item => string.IsNullOrEmpty(item[Sitecore.FieldIDs.Sortorder]) ? 0 : int.Parse(item[Sitecore.FieldIDs.Sortorder]);
     }
   }
 }
