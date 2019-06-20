@@ -89,7 +89,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\js\app.js" />
-    <Content Include="App_Config\Environment\Project\Common.Release.config">
+    <None Include="App_Config\Environment\Project\Common.Release.config.bck">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="App_Config\Environment\Project\Common.Dev.config">
       <SubType>Designer</SubType>
     </Content>
     <None Include="assets\js\components\PanelColumn.vue" />
@@ -250,7 +253,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />
-    <Content Include="App_Config\Environment\Project\Common.Dev.config" />
+    <None Include="App_Config\Environment\Project\Common.Debug.config.bck" />
     <Content Include="App_Config\Include\Project\Common.Website.config" />
     <Content Include="App_Config\Include\Project\Common.Website.Serialization.config" />
     <None Include="Web.Debug.config">
@@ -258,6 +261,7 @@
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
