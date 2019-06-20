@@ -23,5 +23,8 @@ namespace Wedia.Foundation.Indexing.Models
 
         [IndexField(Constants.IndexFields.IsLatestVersion)]
         public bool IsLatestVersion { get; set; }
-    }
+
+        [IndexField(Constants.IndexFields.SortOrder)]
+        public int SortOrder { get; set; }
+  }
 }

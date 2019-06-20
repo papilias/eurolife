@@ -10,6 +10,7 @@
             public const string HasSearchResultFormatter = "has_search_result_formatter";
             public const string ContentType = "content_type";
             public const string SearchResultFormatter = "search_result_formatter";
+            public const string SortOrder = "sortorder";
         }
     }
 }
