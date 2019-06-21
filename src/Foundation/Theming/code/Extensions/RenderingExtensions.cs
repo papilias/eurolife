@@ -39,6 +39,17 @@ namespace Wedia.Foundation.Theming.Extensions
       return item?[Templates.Style.Fields.Class] ?? "";
     }
 
+    public static string GetAlignmentClass([NotNull] this Rendering rendering)
+    {
+      var id = MainUtil.GetID(rendering.Parameters[Constants.AlignItemsParameters.Alignment] ?? "", null);
+
+      if (ID.IsNullOrEmpty(id))
+        return "";
+
+      var item = rendering.RenderingItem.Database.GetItem(id);
+      return item?[Templates.Style.Fields.Class] ?? "";
+    }
+
     public static bool IsFixedHeight([NotNull] this Rendering rendering)
     {
       var isFixed = MainUtil.GetBool(rendering.Parameters[Constants.IsFixedHeightLayoutParameters.FixedHeight] ?? "", false);

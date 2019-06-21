@@ -23,5 +23,5 @@ namespace Wedia.Foundation.Theming
             public static readonly ID Color = new ID("{3DA3FB00-31F6-432D-979A-57CEE52B9D8A}");
         }
     }
-    }
+  }
 }

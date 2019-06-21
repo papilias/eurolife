@@ -35,5 +35,10 @@
     {
         public static string Color => "theme-default";
     }
+
+    public struct AlignItemsParameters
+    {
+      public static string Alignment => "Alignment";
+    }
   }
 }
