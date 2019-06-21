@@ -2,18 +2,21 @@
 @using Wedia.Foundation.Alerts
 @using Wedia.Foundation.Alerts.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Wedia.Foundation.Theming.Extensions
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserHeadline.ID) ?? true)
+@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserImage.ID) ?? true)
 {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserHeadline.ID),
-          AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-          Model.Item?.ID,
-          Model.Rendering.Item?.ID)
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserImage.ID),
+        AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+        Model.Item?.ID,
+        Model.Rendering.Item?.ID)
   return;
 }
 
-<section class="t-c bg-life-insurance center--1100 center p-t-64 p-b-64 m-b-112">
+<section class="t-c bg-life-insurance center--1100 center p-t-64 p-b-64 m-b-112 @RenderingContext.Current.Rendering.GetAlignmentClass() ">
+  @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.DesktopImage)
   <h1 class="h3 m-b-16 color-life-insurance">
     @Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)
   </h1>

@@ -1,0 +1,11 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="eurolife.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <File Include="Views\Identity\Copyright.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{42FB3DFF-05D2-45D4-B920-3D771DBB813D}</Item>
+  </File>
+  <File Include="Views\Identity\ContactWaysTeaser.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{0EF1DAA4-948B-4A62-8AF1-6654FCE35F85}</Item>
+  </File>
+</Project>

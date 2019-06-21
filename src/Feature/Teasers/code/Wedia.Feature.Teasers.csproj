@@ -96,6 +96,7 @@
     <Content Include="Views\Teasers\LightTeaserContent.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserList.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserImage.cshtml" />
+    <Content Include="Views\Teasers\TeaserWithImage.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

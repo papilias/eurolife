@@ -517,7 +517,7 @@ gulp.task("Package-Generate",
             "Package-Enumerate-Items",
             "Package-Enumerate-Users",
             "Package-Enumerate-Roles",
-            //"Package-Clean",
+            "Package-Clean",
             function (done) {
               done();
             }
