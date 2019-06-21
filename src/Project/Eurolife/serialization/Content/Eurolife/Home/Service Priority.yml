@@ -1,0 +1,87 @@
+﻿---
+ID: "9f486afa-7f59-4d25-9456-3f88ecfee18e"
+Parent: "f2be096d-911f-4409-8a98-9ee16cb8b283"
+Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
+Path: /sitecore/content/Eurolife/Home/Service Priority
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{55094AB5-A628-4693-AD1A-2E369C844BB1}"
+              p:before="*"
+              s:id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
+              uid="{02D1C11B-5702-4057-B680-003C61B52811}"
+              p:after="r[@uid='{55094AB5-A628-4693-AD1A-2E369C844BB1}']"
+              s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
+              uid="{544818A3-0F4F-4B40-9170-811BA628E3D9}"
+              p:after="r[@uid='{02D1C11B-5702-4057-B680-003C61B52811}']"
+              s:ds="{E504FD27-1F63-4C88-AC53-D60E58E5C43C}"
+              s:id="{6434235F-FBC8-489B-8E8C-26D0CC1373F4}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
+              uid="{01FC04A1-F11D-49AF-8D7E-B3BCA1D80B76}"
+              p:after="r[@uid='{544818A3-0F4F-4B40-9170-811BA628E3D9}']"
+              s:ds=""
+              s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
+              s:ph="page-layout" />
+            <r
+              uid="{83F1D698-7D3B-446C-8EA5-291E6B6F6EA2}"
+              p:after="r[@uid='{01FC04A1-F11D-49AF-8D7E-B3BCA1D80B76}']"
+              s:ds="{861FFA42-B99C-4B74-A8B8-B2A9D351C5A2}"
+              s:id="{7F610AEE-95C2-4814-9E1D-1E619ABCDE99}"
+              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D"
+              s:ph="page-layout" />
+            <r
+              uid="{D0A47F1A-0F26-4054-B498-2561095FEEF6}"
+              p:after="r[@uid='{83F1D698-7D3B-446C-8EA5-291E6B6F6EA2}']"
+              s:id="{0EF1DAA4-948B-4A62-8AF1-6654FCE35F85}"
+              s:ph="page-layout" />
+            <r
+              uid="{87235964-4703-4C6F-8CD8-E3B4ED6FA48D}">
+              <p:d />
+            </r>
+            <r
+              uid="{ED7FBF94-0E1A-4ABD-A360-646BE330FFF9}"
+              p:after="*[1=2]" />
+            <r
+              uid="{9015BC53-2AE3-455A-A1DD-879A04CC5E07}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190621T081539Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Προτεραιότητα στην εξυπηρέτηση
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Επιλέξτε τον τρόπο με τον οποίο θέλετε να μας μιλήσετε και θα φροντίσουμε για όσα σας απασχολούν.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Προτεραιότητα στην εξυπηρέτηση

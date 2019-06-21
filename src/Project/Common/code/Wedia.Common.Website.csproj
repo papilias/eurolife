@@ -246,6 +246,7 @@
     <Content Include="assets\styles\scss\layout\_footer.scss" />
     <Content Include="assets\styles\scss\layout\_header.scss" />
     <Content Include="assets\styles\scss\style.scss" />
+    <Content Include="Views\Common\Sublayouts\Footer.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

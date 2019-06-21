@@ -16,6 +16,39 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: "20190508T124824:636929165040388613Z"
+    - ID: "34375fc7-4df0-4c85-9d04-64c79d1ffef8"
+      Hint: ContactForm
+      Value: |
+        <link text="ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ" linktype="external" url="https://contactform.gr" anchor="" title="" class="" querystring="" target="" id="" />
+    - ID: "4ec67362-43ba-4021-89fa-4aa5a1ffb9e0"
+      Hint: OrganisationEmail
+      Value: info@eurolife.gr
+    - ID: "8b9f427a-d6bd-4aad-9e70-8965e09c4af2"
+      Hint: OrganisationAddresses
+      Type: Multilist
+      Value: |
+        {59C01224-17AB-4DEC-94DF-ACA4551537ED}
+        {E040CD67-CC5B-4BD9-9FBD-9D3CA75E19A5}
+    - ID: "a3b0f0f0-cac4-496a-aca7-8f80fc52bb6a"
+      Hint: ClickToCall
+      Value: |
+        <link text="CLICK TO CALL" linktype="external" url="https://clicktocall.gr" anchor="" title="" class="" querystring="" target="" id="" />
     - ID: "b4926567-fd0b-4bed-b86b-1d3b25c90d8b"
       Hint: SiteBrowserTitle
       Value: "- Eurolife"
+    - ID: "c43a2010-e0dc-41bf-bcfb-f6433a60845d"
+      Hint: OrganisationFax
+      Value: "211-1873530 (16530)"
+    - ID: "c8175f95-150a-47c9-a485-bf76e6436304"
+      Hint: OrganisationName
+      Value: Eurolife ERB
+    - ID: "c9937d39-6c03-44be-a0bb-965903c6ef43"
+      Hint: Copyright
+      Value: Copyright 2019 &copy; Eurolife
+    - ID: "cea1aafe-bc37-4321-a135-ededcac59783"
+      Hint: OrganisationPhone
+      Value: 210 9003800
+    - ID: "f3394d78-1e2b-4854-bea1-6180d271a426"
+      Hint: ClickToChat
+      Value: |
+        <link text="CLICK TO CHAT" linktype="external" url="https://clicktochat.gr" anchor="" title="" class="" querystring="" target="" id="" />

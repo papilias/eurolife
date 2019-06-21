@@ -53,6 +53,10 @@ SharedFields:
           id="{96D6AE2B-C735-4CD8-90C7-23736E95A16C}"
           ph="page-layout"
           uid="{BE07AC86-F2DA-4101-966A-89724B48C926}" />
+        <r
+          id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
+          ph="footer"
+          uid="{5D4EA784-2623-47A8-ABD2-008A2C5A41F1}" />
       </d>
     </r>
 - ID: "f7b94d8c-a842-49f8-ab7a-2169d00426b0"

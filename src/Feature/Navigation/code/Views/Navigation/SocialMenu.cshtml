@@ -1,0 +1,26 @@
+﻿@using Wedia.Feature.Navigation
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Wedia.Feature.Navigation.Models.NavigationItems
+
+@{
+  if (Model?.NavItems == null || !Model.NavItems.Any())
+  {
+    return;
+  }
+}
+
+<div class="footer__list">
+  <ul class="footer__social">
+    @foreach (var link in Model.NavItems)
+    {
+      <li>
+        <a href="@link.Url"
+           target="@link.Target"
+           title="@link.Item[Templates.Navigable.Fields.NavigationTitle]"
+           class="@link.Item[Templates.LinkMenuItem.Fields.Icon]">
+        </a>
+      </li>
+    }
+  </ul>
+  <a href="/" class="footer__subscription">Εγγραφή στο Newsletter</a>
+</div>

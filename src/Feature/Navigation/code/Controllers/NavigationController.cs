@@ -12,37 +12,46 @@ using Wedia.Foundation.Dictionary.Repositories;
 
 namespace Wedia.Feature.Navigation.Controllers
 {
-    public class NavigationController : Controller
+  public class NavigationController : Controller
+  {
+    private readonly INavigationRepository _navigationRepository;
+
+    public NavigationController(INavigationRepository navigationRepository)
     {
-        private readonly INavigationRepository _navigationRepository;
-
-        public NavigationController(INavigationRepository navigationRepository)
-        {
-            _navigationRepository = navigationRepository;
-        }
-
-        // GET: Breadcrumb
-        public ActionResult Breadcrumb()
-        {
-            var items = _navigationRepository.GetBreadcrumb();
-            return View(items);
-        }
-
-        public ActionResult NavigationLinks()
-        {
-            if (string.IsNullOrEmpty(RenderingContext.Current.Rendering.DataSource))
-            {
-                return Context.PageMode.IsExperienceEditor
-                    ? this.InfoMessage(
-                        new InfoMessage(
-                            DictionaryPhraseRepository.Current.Get("/Navigation/Link Menu/No Items", "This menu has no items,"),
-                            InfoMessage.MessageType.Warning)) 
-                            : null;
-            }
-
-            var item = RenderingContext.Current.Rendering.Item;
-            var items = _navigationRepository.GetLinkMenuItems(item);
-            return View("LinkMenu", items);
-        }
+      _navigationRepository = navigationRepository;
     }
+
+    // GET: Breadcrumb
+    public ActionResult Breadcrumb()
+    {
+      var items = _navigationRepository.GetBreadcrumb();
+      return View(items);
+    }
+
+    public ActionResult NavigationLinks() => GetMenu("NavigationLinks");
+
+    public ActionResult LinkMenu() => GetMenu("LinkMenu");
+
+    public ActionResult SocialLinks() => GetMenu("SocialMenu");
+
+    public ActionResult HorizontalNavigationLinks() => GetMenu("HorizontalNavigationLinks");
+
+    public ActionResult GetMenu(string view)
+    {
+      if (string.IsNullOrEmpty(RenderingContext.Current.Rendering.DataSource))
+      {
+        return Context.PageMode.IsExperienceEditor
+            ? this.InfoMessage(
+                new InfoMessage(
+                    DictionaryPhraseRepository.Current.Get("/Navigation/Link Menu/No Items", "This menu has no items,"),
+                    InfoMessage.MessageType.Warning))
+                    : null;
+      }
+
+      var item = RenderingContext.Current.Rendering.Item;
+      var items = _navigationRepository.GetLinkMenuItems(item);
+
+      return View(view, items);
+    }
+  }
 }

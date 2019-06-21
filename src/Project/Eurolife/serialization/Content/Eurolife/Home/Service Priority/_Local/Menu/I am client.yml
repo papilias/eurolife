@@ -1,0 +1,21 @@
+﻿---
+ID: "6d00df01-56da-481d-9c24-15aabcb45da8"
+Parent: "e504fd27-1f63-4c88-ac53-d60e58e5c43c"
+Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
+Path: /sitecore/content/Eurolife/Home/Service Priority/_Local/Menu/I am client
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190621T085602Z
+    - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
+      Hint: Link
+      Value: |
+        <link text="" linktype="javascript" url="#customer" anchor="" title="" class="" querystring="" target="" id="" />
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: I a client

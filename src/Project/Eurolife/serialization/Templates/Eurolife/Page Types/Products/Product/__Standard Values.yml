@@ -41,6 +41,10 @@ SharedFields:
           id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
           ph="page-layout"
           uid="{808DB0C9-D175-46EC-8A97-0F5B9601B93D}" />
+        <r
+          id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
+          ph="footer"
+          uid="{9DCAC3A5-FC4B-4B6F-87C6-4A0342390064}" />
       </d>
     </r>
 Languages:

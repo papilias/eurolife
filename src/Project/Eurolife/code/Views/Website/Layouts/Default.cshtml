@@ -28,7 +28,9 @@
   </main>
 
   <footer>
-    @Html.Sitecore().Placeholder("footer")
+    <div class="footer center--1100 center">
+      @Html.Sitecore().Placeholder("footer")
+    </div>
   </footer>
 
   @if (!Sitecore.Context.PageMode.IsExperienceEditor)

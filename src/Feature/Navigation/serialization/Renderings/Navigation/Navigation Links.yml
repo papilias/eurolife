@@ -1,13 +1,10 @@
 ﻿---
-ID: "6434235f-fbc8-489b-8e8c-26d0cc1373f4"
+ID: "1a432a16-e24c-4755-9545-a90cbf0a92e6"
 Parent: "41a74669-1f3f-4384-aecf-1d883be4d19b"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
 Path: /sitecore/layout/Renderings/Feature/Navigation/Navigation Links
 DB: master
 SharedFields:
-- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
-  Hint: Datasource Location
-  Value: "site:linkmenu"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: NavigationLinks
@@ -21,8 +18,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190527T111949Z
-    - ID: "77593ad2-0761-4d3e-8e17-82a304029640"
-      Hint: Supports Local Datasource
-      Type: Checkbox
-      Value: 1
+      Value: 20190620T110817Z
