@@ -1,10 +1,7 @@
-﻿@using Sitecore.Mvc
-@using Wedia.Foundation.Alerts
-@using Wedia.Foundation.Alerts.Extensions
-@using Wedia.Foundation.SitecoreExtensions.Extensions
-@using Wedia.Feature.PageContent
-@model Sitecore.Mvc.Presentation.RenderingModel
+﻿@using Wedia.Foundation.Theming.Extensions
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
 
-<div class="color-container">
+<div class="@RenderingContext.Current.Rendering.GetBackgroundClass()">
   @Html.Sitecore().Placeholder("page-layout-top")
 </div>

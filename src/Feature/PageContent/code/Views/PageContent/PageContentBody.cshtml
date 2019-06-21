@@ -4,19 +4,26 @@
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 
 @model Sitecore.Mvc.Presentation.RenderingModel
-@{
 
-    if (!Sitecore.Context.PageMode.IsExperienceEditor && !Html.Sitecore().HasValue(Templates.HasPageBodyContent.Fields.Body.ToString()))
-    {
-        @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageBodyContent.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
-        return;
-    }
-
+@if (!Model?.Item?.DescendsFrom(Templates.HasPageBodyContent.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageBodyContent.ID),
+      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+      Model.Item?.ID,
+      Model.Rendering.Item?.ID)
+  return;
 }
 
-<article class="light m-b-112 center center--760 text-main">
-  @Html.Sitecore().Field(Templates.HasPageBodyContent.Fields.Body)
-</article>
+@if (Sitecore.Context.PageMode.IsExperienceEditor || Html.Sitecore().HasValue(Templates.HasPageBodyContent.Fields.Body.ToString()))
+{
+  <article class="light m-b-112 center center--760 text-main">
+    @Html.Sitecore().Field(Templates.HasPageBodyContent.Fields.Body)
+  </article>
+}
+
+
+
+
 
 
 
