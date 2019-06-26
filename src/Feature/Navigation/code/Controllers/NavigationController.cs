@@ -34,6 +34,8 @@ namespace Wedia.Feature.Navigation.Controllers
 
     public ActionResult SocialLinks() => GetMenu("SocialMenu");
 
+    public ActionResult LinksList() => GetMenu("LinksList");
+
     public ActionResult HorizontalNavigationLinks() => GetMenu("HorizontalNavigationLinks");
 
     public ActionResult GetMenu(string view)

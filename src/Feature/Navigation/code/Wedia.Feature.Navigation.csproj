@@ -84,6 +84,7 @@
     <Content Include="Views\Navigation\NavigationLinks.cshtml" />
     <Content Include="Views\Navigation\SocialMenu.cshtml" />
     <Content Include="Views\Navigation\HorizontalNavigationLinks.cshtml" />
+    <Content Include="Views\Navigation\LinksList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
