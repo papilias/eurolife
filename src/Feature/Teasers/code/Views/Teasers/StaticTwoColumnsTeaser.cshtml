@@ -1,0 +1,34 @@
+﻿@using Wedia.Feature.Teasers
+@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Theming.Extensions
+@using Sitecore.Mvc.Presentation;
+
+@model RenderingModel
+
+@if (!Model?.Item?.DescendsFrom(Templates.HasTeaserHeadline.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasTeaserHeadline.ID),
+        AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+        Model.Item?.ID,
+        Model.Rendering.Item?.ID)
+  return;
+}
+
+
+<section class="m-t-96 m-b-96  @RenderingContext.Current.Rendering.GetBackgroundClass() ">
+  <h1 class="h4 t-c m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
+  <div class="m-b-48 center--650 center t-c">
+    @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
+  </div>
+
+  <div class="center center--1100 triplette @Html.PlaceholderStyle()">
+    @for (var i = 0; i < 2; i++)
+    {
+
+      @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
+
+    }
+  </div>
+</section>

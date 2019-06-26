@@ -86,9 +86,9 @@
     <Content Include="App_Config\Include\Feature\Feature.Teasers.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Teasers\TeaserList.cshtml" />
-    <Content Include="Views\Teasers\SimpleTeaserWithImage.cshtml" />
-    <Content Include="Views\Teasers\TeaserWithSideImageAndCTA.cshtml" />
-    <Content Include="Views\Teasers\CenteredTeaserWithCTA.cshtml" />
+    <Content Include="Views\Teasers\SimpleImageTeaser.cshtml" />
+    <Content Include="Views\Teasers\SideImageCTATeaser.cshtml" />
+    <Content Include="Views\Teasers\CenteredCTATeaser.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserImageCTA.cshtml" />
     <Content Include="Views\Teasers\ThreeColumnsTeaser.cshtml" />
     <Content Include="Views\Teasers\TeaserSticker.cshtml" />
@@ -96,7 +96,9 @@
     <Content Include="Views\Teasers\LightTeaserContent.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserList.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserImage.cshtml" />
-    <Content Include="Views\Teasers\TeaserWithImage.cshtml" />
+    <Content Include="Views\Teasers\ImageTeaser.cshtml" />
+    <Content Include="Views\Teasers\StaticTwoColumnsTeaser.cshtml" />
+    <Content Include="Views\Teasers\BorderedTeaser.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

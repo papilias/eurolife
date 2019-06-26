@@ -1,16 +1,16 @@
 ﻿---
-ID: "794921f7-3fca-48a3-9f5c-2823d0b59ba2"
+ID: "7f610aee-95c2-4814-9e1d-1e619abcde99"
 Parent: "e695305b-b056-484f-9289-9768370ea345"
 Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
-Path: /sitecore/layout/Renderings/Feature/Teasers/Teaser With Side Image And CTA
+Path: /sitecore/layout/Renderings/Feature/Teasers/Image Teaser
 DB: master
 SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: /Views/Teasers/TeaserWithSideImageAndCTA.cshtml
+  Value: /Views/Teasers/ImageTeaser.cshtml
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
-  Value: "{56FA53F0-6E12-47DA-B8CE-0B6FC63F5A3D}"
+  Value: "{1B588914-4206-4F93-8409-DB6671019E07}"
 Languages:
 - Language: en
   Versions:
@@ -18,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190528T132550Z
+      Value: 20190621T090758Z
     - ID: "77593ad2-0761-4d3e-8e17-82a304029640"
       Hint: Supports Local Datasource
       Type: Checkbox

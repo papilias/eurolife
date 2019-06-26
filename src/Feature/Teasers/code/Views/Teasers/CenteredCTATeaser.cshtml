@@ -25,8 +25,14 @@
     </div>
   }
 
+  @if (Model.Item.DescendsFrom(Templates.HasTeaserCTA.ID))
+  {
 
-  @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--default btn--dark" })
+    if (Model.Item.FieldHasValue(Templates.HasTeaserCTA.Fields.CTA) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+      @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--default btn--dark" })
+    }
+  }
 </section>
 
 
