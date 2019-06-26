@@ -1,0 +1,24 @@
+﻿@using Wedia.Feature.Identity
+@using Wedia.Feature.Identity.Repositories
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+  var identity = IdentityRepository.Get(Model.Item);
+  if (identity == null)
+  {
+    return;
+  }
+}
+
+<div>
+  @Html.Sitecore().Dictionary("/Identity/Contact Teaser/Teaser Content", "")
+
+  @Html.Sitecore().Field(Templates.Identity.Fields.ClickToCall, identity)
+  @Html.Sitecore().Field(Templates.Identity.Fields.ClickToChat, identity)
+
+  @Html.Sitecore().Dictionary("/Identity/Contact Teaser/Teaser Summary", "")
+  @Html.Sitecore().Field(Templates.Identity.Fields.ContactForm, identity)
+</div>
