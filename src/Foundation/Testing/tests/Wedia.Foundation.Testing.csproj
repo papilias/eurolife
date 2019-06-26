@@ -64,7 +64,6 @@
     </PackageReference>
     <PackageReference Include="System.Collections" Version="4.0.11" />
     <PackageReference Include="System.Collections.Concurrent" Version="4.0.12" />
-    <PackageReference Include="System.ComponentModel" Version="4.0.1" />
     <PackageReference Include="System.Diagnostics.Debug" Version="4.0.11" />
     <PackageReference Include="System.Globalization" Version="4.0.11" />
     <PackageReference Include="System.Linq" Version="4.1.0" />
