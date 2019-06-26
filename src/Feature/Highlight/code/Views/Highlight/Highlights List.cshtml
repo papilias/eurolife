@@ -12,19 +12,16 @@
 
 }
 
+
 @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
 {
+  <section class="product-moto center center--1100">
+    <h1 class="h2 m-b-24 color-health">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title)</h1>
+    <p>
+      @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary)
+    </p>
+  </section>
 
-  if (Model.Item.FieldHasValue(Templates.HighlightMain.Fields.Title) || Sitecore.Context.PageMode.IsExperienceEditor)
-  {
-    <section class="product-moto center center--1100">
-      <h1 class="h2 m-b-24 color-health">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title)</h1>
-      <p>
-        @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary)
-      </p>
-    </section>
-  }
-   
   <section class="highlights center--1100 center">
 
     @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))

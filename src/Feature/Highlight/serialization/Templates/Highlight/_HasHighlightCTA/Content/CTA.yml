@@ -2,7 +2,7 @@
 ID: "678ca6e6-b6f0-4bb1-b09e-972ad0d9c5c4"
 Parent: "7b32af92-7749-4676-898a-91319a507d64"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Highlight/_HighlightCTA/Content/CTA
+Path: /sitecore/templates/Feature/Highlight/_HasHighlightCTA/Content/CTA
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

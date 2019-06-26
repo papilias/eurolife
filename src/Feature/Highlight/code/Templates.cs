@@ -29,7 +29,7 @@ namespace Wedia.Feature.Highlight
       }
     }
 
-    public struct HighlightIcon
+    public struct HasHighlightIcon
     {
       public static readonly ID ID = new ID("{14D413E0-B5FF-4946-9A1C-ABDFFF144F4E}");
 
@@ -39,7 +39,7 @@ namespace Wedia.Feature.Highlight
       }
     }
 
-    public struct HighlightCTA
+    public struct HasHighlightCTA
     {
       public static readonly ID ID = new ID("{93DC636B-D9AB-4189-9A34-ADA134A9C913}");
 

@@ -2,7 +2,7 @@
 ID: "7b32af92-7749-4676-898a-91319a507d64"
 Parent: "93dc636b-d9ab-4189-9a34-ada134a9c913"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Highlight/_HighlightCTA/Content
+Path: /sitecore/templates/Feature/Highlight/_HasHighlightCTA/Content
 DB: master
 Languages:
 - Language: en
