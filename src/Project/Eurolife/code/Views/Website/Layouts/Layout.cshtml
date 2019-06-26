@@ -1,0 +1,27 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Wedia.Foundation.Assets.Services
+@using Wedia.Foundation.Assets.Models
+
+@{
+
+  Layout = "MVCOuterLayout.cshtml";
+
+}
+
+<header role="banner">
+  @Html.Sitecore().Placeholder("page-top")
+</header>
+
+<main id="app" role="main">
+  @Html.Sitecore().Placeholder("page-layout")
+</main>
+
+<footer>
+  <div class="footer center--1100 center">
+    @Html.Sitecore().Placeholder("footer")
+  </div>
+</footer>
+
+@RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+

@@ -1,0 +1,28 @@
+﻿---
+ID: "098c371c-e513-47f4-855f-3e1a20154f30"
+Parent: "0b76535d-a182-4878-8fe4-58b3e3612c43"
+Template: "f8ff2ebe-ab6a-41ab-a0c9-30656f056dfa"
+Path: /sitecore/content/Eurolife/Global/Teasers/We are listening/Negatives
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
+      Hint: TeaserSummary
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
+      Hint: TeaserTitle
+      Value: Μαζί και στα αρνητικά
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190624T110539Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
+      Hint: TeaserCTA
+      Value: |
+        <link text="ΥΠΟΒΟΛΗ ΠΑΡΑΠΟΝΟΥ" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{9F486AFA-7F59-4D25-9456-3F88ECFEE18E}" />

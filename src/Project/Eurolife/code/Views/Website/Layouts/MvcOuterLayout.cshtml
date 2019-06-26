@@ -1,7 +1,9 @@
 ﻿@using Wedia.Foundation.Assets.Services
 @using Wedia.Foundation.Assets.Models
 @using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.ExperienceForms.Mvc.Html
 @using Wedia.Foundation.Theming.Extensions
+
 @{
   Layout = null;
 }
@@ -12,30 +14,14 @@
   {
     @Html.Sitecore().Placeholder("head")
   }
-
+  @Html.RenderFormStyles()
+  @Html.RenderFormScripts()
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
   @RenderAssetsService.Current.RenderStyles()
 
   @Html.Sitecore().VisitorIdentification()
 </head>
-<body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor() ">
-  <header role="banner">
-    @Html.Sitecore().Placeholder("page-top")
-  </header>
-
-  <main id="app" role="main">
-    @Html.Sitecore().Placeholder("page-layout")
-  </main>
-
-  <footer>
-    <div class="footer center--1100 center">
-      @Html.Sitecore().Placeholder("footer")
-    </div>
-  </footer>
-
-  @if (!Sitecore.Context.PageMode.IsExperienceEditor)
-  {
-    @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
-  }
+<body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor()">
+  @RenderBody()
 </body>
 </html>

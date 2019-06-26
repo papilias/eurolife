@@ -1,0 +1,17 @@
+﻿---
+ID: "a7673248-6815-4563-a5a3-145cddc59369"
+Parent: "ba299c84-6d1a-4615-b7aa-2952e9b7fe0d"
+Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
+Path: /sitecore/content/Eurolife/Global/Links/Contact Teaser/Branch network
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190624T083104Z
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Branch network

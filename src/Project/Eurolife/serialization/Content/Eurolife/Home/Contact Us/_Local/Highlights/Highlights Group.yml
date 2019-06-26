@@ -1,0 +1,21 @@
+﻿---
+ID: "789440b4-6bed-4abb-a826-e0c6dc0cf045"
+Parent: "f111e2af-0ea1-4773-a074-ed98013839a1"
+Template: "7753c4b8-ffb7-4ef8-8f62-85a28ae89e2c"
+Path: /sitecore/content/Eurolife/Home/Contact Us/_Local/Highlights/Highlights Group
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d27e9b7-91d4-4a39-adcd-f103cb5ebede"
+      Hint: Highlights
+      Type: TreelistEx
+      Value: |
+        {F3CCABB0-D490-45C8-BF61-DECCD4C67EEC}
+        {93F82E44-4D55-4AB6-94DD-BC626C8149AE}
+        {F33A400B-FCD1-4615-B69D-F4962E4A63AE}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190624T095322Z

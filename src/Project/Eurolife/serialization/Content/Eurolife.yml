@@ -19,7 +19,7 @@ Languages:
     - ID: "34375fc7-4df0-4c85-9d04-64c79d1ffef8"
       Hint: ContactForm
       Value: |
-        <link text="ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ" linktype="external" url="https://contactform.gr" anchor="" title="" class="" querystring="" target="" id="" />
+        <link text="ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ" linktype="external" url="https://contactform.gr" anchor="" title="" class="" querystring="" target="_blank" id="" />
     - ID: "4ec67362-43ba-4021-89fa-4aa5a1ffb9e0"
       Hint: OrganisationEmail
       Value: info@eurolife.gr
@@ -32,10 +32,10 @@ Languages:
     - ID: "a3b0f0f0-cac4-496a-aca7-8f80fc52bb6a"
       Hint: ClickToCall
       Value: |
-        <link text="CLICK TO CALL" linktype="external" url="https://clicktocall.gr" anchor="" title="" class="" querystring="" target="" id="" />
+        <link text="CLICK TO CALL" linktype="external" url="https://clicktocall.gr" anchor="" title="" class="" querystring="" target="_blank" id="" />
     - ID: "b4926567-fd0b-4bed-b86b-1d3b25c90d8b"
       Hint: SiteBrowserTitle
-      Value: "- Eurolife"
+      Value: Eurolife
     - ID: "c43a2010-e0dc-41bf-bcfb-f6433a60845d"
       Hint: OrganisationFax
       Value: "211-1873530 (16530)"
@@ -51,4 +51,4 @@ Languages:
     - ID: "f3394d78-1e2b-4854-bea1-6180d271a426"
       Hint: ClickToChat
       Value: |
-        <link text="CLICK TO CHAT" linktype="external" url="https://clicktochat.gr" anchor="" title="" class="" querystring="" target="" id="" />
+        <link text="CLICK TO CHAT" linktype="external" url="https://clicktochat.gr" anchor="" title="" class="" querystring="" target="_blank" id="" />

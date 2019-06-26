@@ -1,8 +1,8 @@
 ﻿---
-ID: "cb11dd98-9b7e-4757-a896-c8f879580a68"
+ID: "a3e3da4e-6065-4120-978b-47f4df26cc49"
 Parent: "e2664876-fb48-4457-83ce-14668c82ed74"
 Template: "1fedd608-b4a0-4db4-80f0-4e9a50140e17"
-Path: /sitecore/content/Eurolife/Global/Dictionary/Identity/Contact Teaser/Summary
+Path: /sitecore/content/Eurolife/Global/Dictionary/Identity/Contact Teaser/Teaser Summary
 DB: master
 Languages:
 - Language: en
@@ -11,10 +11,10 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190621T103120Z
+      Value: 20190624T072751Z
     - ID: "38302aff-d022-418e-a9bb-188e32878193"
       Hint: Phrase
-      Value: Όλοι οι τρόποι με τους οποίους μπορούμε να έρθουμε σε επαφή.
+      Value: Εάν θέλετε να επικοινωνήσετε μαζί μας γραπτώς, μπορείτε να συπληρώσετε το αίτημας σας στη φόρμα και να το στείλετε.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
