@@ -1,0 +1,49 @@
+﻿---
+ID: "c69247a1-5bc7-4439-beb0-ea8c9eb88ff1"
+Parent: "f31044d5-797a-431f-90ac-21aed91b216d"
+Template: "f31044d5-797a-431f-90ac-21aed91b216d"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Glossary/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
+        <r
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="page-layout"
+          uid="{278BFBCB-161E-44F5-ACBA-79F023FFD296}" />
+        <r
+          id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+          ph="page-layout"
+          uid="{445B75E3-A71F-40B7-A2E5-7184D8BE9450}" />
+        <r
+          id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+          ph="page-layout-top"
+          uid="{6855F7B6-CB75-4DDA-86C3-6A6856C549DE}" />
+        <r
+          id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+          ph="page-layout-top"
+          uid="{42CC5E3F-DE08-4474-93D0-E95B55D5BC19}" />
+        <r
+          id="{571DC8E9-55BB-43D6-A850-F43028BDBD34}"
+          ph="page-layout"
+          uid="{515F182E-1399-4A7D-B577-809C0EAE600B}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190627T042555Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

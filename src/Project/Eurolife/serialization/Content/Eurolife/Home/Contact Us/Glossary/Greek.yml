@@ -1,0 +1,14 @@
+﻿---
+ID: "539e1c1e-5132-43b2-9e11-9671290e8691"
+Parent: "549d8912-0c79-4bb0-b938-da7007da4521"
+Template: "4965de79-3d40-42d4-82a7-fc4829b3bf3f"
+Path: /sitecore/content/Eurolife/Home/Contact Us/Glossary/Greek
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190627T090256Z

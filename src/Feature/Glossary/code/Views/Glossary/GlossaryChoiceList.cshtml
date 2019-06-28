@@ -1,0 +1,27 @@
+﻿@using Wedia.Feature.Glossary
+@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (!Model?.Item?.DescendsFrom(Templates.GlossaryChoiceGroup.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.GlossaryChoiceGroup.ID),
+      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+      Model.Item?.ID,
+      Model.Rendering.Item?.ID)
+  return;
+}
+
+<h2>@Html.Sitecore().Field(Templates.GlossaryChoiceGroup.ID)</h2>
+
+@Html.Sitecore().Dictionary("/Glossary/Glossary Choice List/Accordion Title",
+  "If you need help with the insurance terms please look at the dictionary")
+
+@foreach (var glossary in Model.Item.GetMultiListValueItems(Templates.GlossaryChoiceGroup.Fields.Items))
+{
+  <h3>@Html.Sitecore().Field(Templates.Glossary.Fields.Title, glossary, new { DisableWebEdit = true })</h3>
+  <div>@Html.Sitecore().Field(Templates.Glossary.Fields.Title, glossary, new { DisableWebEdit = true })</div>
+}

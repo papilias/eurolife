@@ -1,0 +1,24 @@
+﻿---
+ID: "dd931152-97c4-4677-8ed0-513d457ba3d8"
+Parent: "d5560d22-1ecd-4a25-8462-0696d5f13eaa"
+Template: "b2e685e5-6beb-40f5-b6e9-34819cb918ce"
+Path: /sitecore/content/Eurolife/Home/Contact Us/Glossary/English/A/AnEnglishWordFromA
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190627T090512Z
+    - ID: "4d753c7b-d0a0-42d1-9843-e2d23987fe81"
+      Hint: Gloss
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b32edb07-d02e-46fe-8559-122a4f7526d6"
+      Hint: GlossaryTitle
+      Value: An English Word From A

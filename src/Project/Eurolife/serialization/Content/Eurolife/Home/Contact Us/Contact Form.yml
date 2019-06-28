@@ -1,41 +1,38 @@
 ﻿---
-ID: "aa52fe3f-1438-409f-ac73-21d474f65679"
+ID: "63caa14f-a348-4933-884d-1ece0035cbfa"
 Parent: "9f486afa-7f59-4d25-9456-3f88ecfee18e"
-Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Template: "e415fa01-028e-4e7e-b4d8-5d6dd3de59e5"
 Path: /sitecore/content/Eurolife/Home/Contact Us/Contact Form
 DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{55D0D822-E403-4F76-8B28-6B538DD1EC06}"
+          p:after="*[1=2]"
+          s:ds="{7EE29A0B-3DB1-4893-9E14-1304004071E0}"
+          s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          s:ph="page-layout" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1"
-          s:xsd="http://www.w3.org/2001/XMLSchema">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{F29CF295-D083-436B-9CB8-4B5B8F5A4F91}"
-              p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
-              s:ds="{7EE29A0B-3DB1-4893-9E14-1304004071E0}"
-              s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
-              s:ph="page-layout" />
-            <r
-              uid="{8A4FE19E-E0CD-4703-92D4-AF77527473FB}"
-              p:after="*[1=2]" />
-          </d>
-        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190624T122933Z
-    - ID: "35a852ed-2304-4c92-9030-05191e888225"
-      Hint: JavascriptCodeTop
-      Value: 
-    - ID: "681982e8-5879-46f1-80cf-27f5201be782"
-      Hint: InheritAssets
+      Value: 20190627T115956Z
+    - ID: "6e129621-73bc-403c-b4db-bf403c685630"
+      Hint: MetaDescription
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
       Type: Checkbox
       Value: 1

@@ -1,0 +1,20 @@
+﻿---
+ID: "ae204aed-5c86-4c6a-a0c2-036501649bd7"
+Parent: "3b99b080-371f-48b2-8fe9-822b45c36bf7"
+Template: "7753c4b8-ffb7-4ef8-8f62-85a28ae89e2c"
+Path: /sitecore/content/Eurolife/Home/Contact Us/We Want To Hear You/_Local/Highlights/Highlights Accordion
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d27e9b7-91d4-4a39-adcd-f103cb5ebede"
+      Hint: Highlights
+      Type: TreelistEx
+      Value: |
+        {02F591BD-52FE-4211-820A-0826835BB4D5}
+        {0137CE72-60A5-4EDC-AD46-5F511DF24A39}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190624T111617Z

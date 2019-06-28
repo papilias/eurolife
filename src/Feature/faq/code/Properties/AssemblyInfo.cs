@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("code")]
+[assembly: AssemblyTitle("Wedia.Feature.FAQ")]
 [assembly: AssemblyDescription("A module part of the Eurolife solution")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

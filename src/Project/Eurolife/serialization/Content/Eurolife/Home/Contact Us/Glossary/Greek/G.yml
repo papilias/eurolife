@@ -1,0 +1,17 @@
+﻿---
+ID: "b681509c-0f75-478f-8593-dda2ed6c7734"
+Parent: "539e1c1e-5132-43b2-9e11-9671290e8691"
+Template: "4965de79-3d40-42d4-82a7-fc4829b3bf3f"
+Path: /sitecore/content/Eurolife/Home/Contact Us/Glossary/Greek/G
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11b676d0-3dd3-44ad-ae8e-35306e194e34"
+      Hint: GlossaryGroupTitle
+      Value: Γ
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190626T095046Z

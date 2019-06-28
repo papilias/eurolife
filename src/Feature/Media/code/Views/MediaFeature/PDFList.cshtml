@@ -27,15 +27,16 @@
 
     @foreach (var item in items)
     {
-
-      <div class="list__item list__item--double">
-        <div class="list--double__info">
-          <h4 class="list--double__title">@item.Field(Templates.HasMedia.Fields.Title)</h4>
-          <div class="list--double__subtitle">@item.Field(Templates.HasMedia.Fields.Description)</div>
-        </div>
-
+      <div class="list__item list__item--triple">
+        <h4 class="list__title">@item.Field(Templates.HasMedia.Fields.Title)</h4>
+        <div class="list__size">@item.FileSize(Templates.PDF.Fields.File)</div>
         <div class="list__download">
-          <a class="btn btn--dark btn--icon btn--icon-download" href="@item.ImageUrl(Templates.PDF.Fields.File)" download="true"></a>
+          <a href="@item.ImageUrl(Templates.PDF.Fields.File)"
+             download="true"
+             aria-label="@Html.Sitecore().Field(Templates.HasMedia.Fields.Title, item,new { DisableWebEdit = true })"
+             role="button"
+             class="btn btn--dark btn--icon btn--icon-download">
+          </a>
         </div>
       </div>
     }
@@ -43,3 +44,9 @@
   </section>
 
 }
+
+
+@*@if (item.FieldHasValue(Templates.HasMedia.Fields.Description) || Sitecore.Context.PageMode.IsExperienceEditor)
+{
+  <div class="list--double__subtitle">@item.Field(Templates.HasMedia.Fields.Description)</div>
+}*@

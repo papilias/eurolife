@@ -33,4 +33,4 @@ Languages:
     - ID: "f51dd24c-64be-4832-9f98-e03f9e84fa63"
       Hint: TeaserDownloadCTA
       Value: |
-        <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{2B87C416-F4C9-4942-B109-F0952DEE07E3}" />
+        <link id="{2B87C416-F4C9-4942-B109-F0952DEE07E3}" querystring="" target="" text="" anchor="" url="/Eurolife/Global/PDFs/PDFs Folder/PDFFFF" title="" class="" linktype="internal" />

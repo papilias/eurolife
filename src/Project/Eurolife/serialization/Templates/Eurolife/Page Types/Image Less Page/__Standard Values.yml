@@ -1,0 +1,46 @@
+﻿---
+ID: "afd93e2a-c20b-4c83-a0bc-91d3ee974088"
+Parent: "e415fa01-028e-4e7e-b4d8-5d6dd3de59e5"
+Template: "e415fa01-028e-4e7e-b4d8-5d6dd3de59e5"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Image Less Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
+        <r
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="head"
+          uid="{06DA9574-BCA4-48EF-8C05-D2EDDA8140AC}" />
+        <r
+          id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+          par="Background=%7b7F898357-3B13-4BEC-802E-7EF58D50F030%7d"
+          ph="page-layout"
+          uid="{EE984C68-2851-4F5C-8BED-1E3EB770700C}" />
+        <r
+          id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+          ph="page-layout-top"
+          uid="{30015168-4FF2-4051-AA94-73A00F70B126}" />
+        <r
+          id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+          ph="page-layout-top"
+          uid="{BC7240F4-39D2-44FC-9615-4F8EAE1A20FA}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190627T111927Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,17 @@
+﻿---
+ID: "d5560d22-1ecd-4a25-8462-0696d5f13eaa"
+Parent: "2f40f5d1-53b6-4b83-b299-1a656845b511"
+Template: "4965de79-3d40-42d4-82a7-fc4829b3bf3f"
+Path: /sitecore/content/Eurolife/Home/Contact Us/Glossary/English/A
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11b676d0-3dd3-44ad-ae8e-35306e194e34"
+      Hint: GlossaryGroupTitle
+      Value: A
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190627T090353Z

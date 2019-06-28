@@ -16,6 +16,9 @@ SharedFields:
     {68DC8ED7-3248-4897-B179-7516EA3ED3C3}
     {672FFC13-EA1C-476F-8B06-2BFACE235A8F}
     {E5F4F03B-3264-4FB8-ACB9-1A24E024C9BA}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
