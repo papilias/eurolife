@@ -16,19 +16,14 @@
   return;
 }
 
-
-<section class="m-t-96 m-b-96  @RenderingContext.Current.Rendering.GetBackgroundClass() ">
-  <h1 class="h4 t-c m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
-  <div class="m-b-48 center--650 center t-c">
-    @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
+<div class="bg-life-insurance m-b-112">
+  <div class="center--1100 center">
+    <h2 class="h4 p-t-110 p-b-64 t-c">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h2>
+    <div class="cta-double flex-spread p-b-100">
+      @for (var i = 0; i < 2; i++)
+      {
+        @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
+      }
+    </div>
   </div>
-
-  <div class="center center--1100 triplette @Html.PlaceholderStyle()">
-    @for (var i = 0; i < 2; i++)
-    {
-
-      @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
-
-    }
-  </div>
-</section>
+</div>
