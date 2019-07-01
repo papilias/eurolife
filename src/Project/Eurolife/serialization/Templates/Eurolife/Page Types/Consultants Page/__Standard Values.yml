@@ -1,0 +1,58 @@
+﻿---
+ID: "e2a8cd49-1a08-4340-8c2b-534388045872"
+Parent: "cd25cca7-747a-493a-8bc4-b1f44778283c"
+Template: "cd25cca7-747a-493a-8bc4-b1f44778283c"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Consultants Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{92BDD493-96EF-45FD-8036-F4855D59885F}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
+        <r
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="head"
+          uid="{F1E1304B-F2F2-480C-A6EB-9DA351E731F7}" />
+        <r
+          id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+          par="Background=%7b7F898357-3B13-4BEC-802E-7EF58D50F030%7d"
+          ph="page-layout"
+          uid="{FF420249-13FD-46FF-B285-3EF8A125E968}" />
+        <r
+          id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+          ph="page-layout-top"
+          uid="{D93B3ED7-762F-45CA-B427-A946D652E377}" />
+        <r
+          id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+          ph="page-layout-top"
+          uid="{6BAA0C24-D58B-46CA-84DD-B8603EC2411B}" />
+        <r
+          id="{0F9E6F9A-5594-4916-A469-4086731DE761}"
+          ph="page-layout"
+          uid="{FC515B31-6D97-431D-8EDE-E43C9950A390}" />
+        <r
+          id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
+          ph="footer"
+          uid="{682FD00A-48CB-4FA4-9C62-43CDBBE1F611}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190628T105106Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

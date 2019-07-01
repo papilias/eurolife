@@ -1,13 +1,13 @@
 ﻿---
-ID: "cb46fc83-8b2f-49a6-b9b9-4639b4407191"
+ID: "827cc9f0-7875-4f82-9386-300dba5bea5f"
 Parent: "9f486afa-7f59-4d25-9456-3f88ecfee18e"
-Template: "a096d891-6565-4505-8ad8-d497fd1b8776"
-Path: /sitecore/content/Eurolife/Home/Contact Us/_Local
+Template: "cd25cca7-747a-493a-8bc4-b1f44778283c"
+Path: /sitecore/content/Eurolife/Home/Contact Us/Consultants
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 800
+  Value: 100
 Languages:
 - Language: en
   Versions:
@@ -15,4 +15,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190621T085455Z
+      Value: 20190628T112603Z

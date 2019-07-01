@@ -1,8 +1,8 @@
 ﻿---
-ID: "afd93e2a-c20b-4c83-a0bc-91d3ee974088"
-Parent: "e415fa01-028e-4e7e-b4d8-5d6dd3de59e5"
-Template: "e415fa01-028e-4e7e-b4d8-5d6dd3de59e5"
-Path: /sitecore/templates/Project/Eurolife/Page Types/Image Less Page/__Standard Values
+ID: "2af4dde6-4946-4481-b4d4-7be915d6beac"
+Parent: "ae711333-bf88-44a2-b049-2aaec5d679fa"
+Template: "ae711333-bf88-44a2-b049-2aaec5d679fa"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Imageless Page/__Standard Values
 DB: master
 SharedFields:
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
@@ -16,20 +16,24 @@ SharedFields:
         <r
           id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
           ph="head"
-          uid="{06DA9574-BCA4-48EF-8C05-D2EDDA8140AC}" />
+          uid="{0F0CC30D-546E-428A-858B-90D07491F3B4}" />
         <r
           id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
           par="Background=%7b7F898357-3B13-4BEC-802E-7EF58D50F030%7d"
           ph="page-layout"
-          uid="{EE984C68-2851-4F5C-8BED-1E3EB770700C}" />
+          uid="{8A619E14-2225-4EB6-B5DF-DBC38797961B}" />
         <r
           id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
           ph="page-layout-top"
-          uid="{30015168-4FF2-4051-AA94-73A00F70B126}" />
+          uid="{C614E7EB-5944-48E0-8762-ECFADF91E774}" />
         <r
           id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
           ph="page-layout-top"
-          uid="{BC7240F4-39D2-44FC-9615-4F8EAE1A20FA}" />
+          uid="{F0D55CE4-C648-4548-870B-164CE7DB305D}" />
+        <r
+          id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
+          ph="footer"
+          uid="{2D3DD99D-83A5-411A-87F1-2F324B98FD53}" />
       </d>
     </r>
 Languages:
@@ -39,7 +43,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190627T111927Z
+      Value: 20190628T095351Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

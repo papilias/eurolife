@@ -4,6 +4,10 @@ Parent: "9f486afa-7f59-4d25-9456-3f88ecfee18e"
 Template: "f31044d5-797a-431f-90ac-21aed91b216d"
 Path: /sitecore/content/Eurolife/Home/Contact Us/Glossary
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
 Languages:
 - Language: en
   Versions:

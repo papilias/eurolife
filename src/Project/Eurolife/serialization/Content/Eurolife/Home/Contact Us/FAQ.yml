@@ -1,9 +1,13 @@
 ﻿---
 ID: "d75df390-1bd5-47c6-b31f-9fade555508e"
 Parent: "9f486afa-7f59-4d25-9456-3f88ecfee18e"
-Template: "e415fa01-028e-4e7e-b4d8-5d6dd3de59e5"
+Template: "ae711333-bf88-44a2-b049-2aaec5d679fa"
 Path: /sitecore/content/Eurolife/Home/Contact Us/FAQ
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
 Languages:
 - Language: en
   Versions:
