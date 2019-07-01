@@ -6,9 +6,9 @@
 
 @model RenderingModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.Person.ID) ?? true)
+@if (!Model?.Item?.DescendsFrom(Templates.HasPersonContent.ID) ?? true)
 {
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Person.ID),
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPersonContent.ID),
       AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
       Model.Item?.ID,
       Model.Rendering.Item?.ID)
@@ -18,7 +18,7 @@
 
 <article class="leader-cv p-b-64 p-t-64">
   <div class="center--920 center">
-    @Model.Item.Field(Templates.Person.Fields.Body)
+    @Model.Item.Field(Templates.HasPersonContent.Fields.Body)
   </div>
 </article>
 

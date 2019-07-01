@@ -6,6 +6,8 @@ using Wedia.Foundation.Indexing.Repositories;
 using Sitecore.Data.Items;
 using Wedia.Foundation.Indexing.Models;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
+using Wedia.Feature.Person.Models;
+using Sitecore.Data;
 
 namespace Wedia.Feature.Person.Repositories
 {
@@ -19,21 +21,9 @@ namespace Wedia.Feature.Person.Repositories
       _searchServiceRepository = searchServiceRepository;
     }
 
-    public IEnumerable<Item> Get(Item contextItem)
+    public IEnumerable<Item> GetEmployees(Item contextItem)
     {
-      if (contextItem == null)
-      {
-        throw new ArgumentNullException(nameof(contextItem));
-      }
-
-      var searchService = _searchServiceRepository
-        .Get(new SearchSettingsBase { Templates = new[] { Templates.Person.ID } });
-
-      searchService.Settings.Root = contextItem;
-
-      var results = searchService.FindAll(0, 0, Foundation.Indexing.Constants.IndexFields.SortOrder);
-
-      return results.Results.Select(d => d.Item).Where(i => i != null); //.OrderBy(GetSortOrderValue);
+      return Get(contextItem, Templates.Person.ID);
     }
 
     public IEnumerable<Item> GetCarousel(Item context, Item pageItem)
@@ -41,10 +31,43 @@ namespace Wedia.Feature.Person.Repositories
       return context.GetMultiListValueItems(Templates.PersonGroup.Fields.Persons)
         .Where(i => i.DescendsFrom(Templates.Person.ID) && i.ID != pageItem.ID);
     }
-    
-    private static Func<Item, int> GetSortOrderValue(Item i)
+
+    public IEnumerable<ConsultantsGroup> GetConsultantsGroups(Item contextItem)
     {
-      return item => string.IsNullOrEmpty(item[Sitecore.FieldIDs.Sortorder]) ? 0 : int.Parse(item[Sitecore.FieldIDs.Sortorder]);
+      return Get(contextItem, Templates.HasPersonGroupName.ID)
+        .Select(d => new ConsultantsGroup
+        {
+          Item = d,
+          Consultants = GetConsultants(d)
+        })
+        .Where(i => i != null);
+    }
+
+    private IEnumerable<Consultant> GetConsultants(Item contextItem)
+    {
+      return Get(contextItem, Templates.Person.ID)
+        .Select(d => new Consultant
+        {
+          Item = d
+        });
+    }
+
+    private IEnumerable<Item> Get(Item contextItem, ID TemplateID)
+    {
+      if (contextItem == null)
+      {
+        throw new ArgumentNullException(nameof(contextItem));
+      }
+
+      var searchService = _searchServiceRepository
+        .Get(new SearchSettingsBase { Templates = new[] { TemplateID } });
+
+      searchService.Settings.Root = contextItem;
+
+      var results = searchService.FindAll(0, 0, Foundation.Indexing.Constants.IndexFields.SortOrder);
+
+      return results.Results.Select(d => d.Item).Where(i => i != null); //.OrderBy(GetSortOrderValue);
+
     }
   }
 }

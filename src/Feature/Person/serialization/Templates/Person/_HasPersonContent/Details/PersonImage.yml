@@ -1,8 +1,8 @@
 ﻿---
 ID: "a212c93a-7c83-4fed-bc5a-5b035baeff50"
-Parent: "521fe453-bcce-48f7-97d0-71da1e2a7614"
+Parent: "c7b73258-d66e-48bd-b5c4-469fe462303a"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Person/_Person/Details/PersonImage
+Path: /sitecore/templates/Feature/Person/_HasPersonContent/Details/PersonImage
 DB: master
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"

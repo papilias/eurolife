@@ -22,7 +22,8 @@ namespace Wedia.Feature.Person.Indexing
             var fieldNames = new[]
             {
                 Templates.Person.Fields.Title_FieldName,
-                Templates.Person.Fields.Position_FieldName
+                Templates.Person.Fields.Name_FieldName,
+                Templates.HasPersonPosition.Fields.Position_FieldName
             };
 
             return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);
@@ -31,9 +32,9 @@ namespace Wedia.Feature.Person.Indexing
         public void FormatResult(SearchResultItem item, ISearchResult formattedResult)
         {
             var contentItem = item.GetItem();
-            formattedResult.Title = FieldRenderer.Render(contentItem, Templates.Person.Fields.Title.ToString());
-            formattedResult.Description = FieldRenderer.Render(contentItem, Templates.Person.Fields.Position.ToString());
-            formattedResult.Media = ((ImageField)contentItem.Fields[Templates.Person.Fields.Image])?.MediaItem;
+            formattedResult.Title = FieldRenderer.Render(contentItem, Templates.Person.Fields.Name.ToString());
+            formattedResult.Description = FieldRenderer.Render(contentItem, Templates.HasPersonPosition.Fields.Position.ToString());
+            formattedResult.Media = ((ImageField)contentItem.Fields[Templates.HasPersonContent.Fields.Image])?.MediaItem;
             formattedResult.ViewName = "~/Views/Person/PersonSearchResult";
         }
     }

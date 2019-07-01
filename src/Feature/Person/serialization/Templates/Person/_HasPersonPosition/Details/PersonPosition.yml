@@ -1,16 +1,16 @@
 ﻿---
-ID: "47e95858-efcc-4862-8a26-3905105ece5b"
-Parent: "521fe453-bcce-48f7-97d0-71da1e2a7614"
+ID: "e57a5fee-e68d-4d37-ac1f-edc51e551121"
+Parent: "f98deb80-e5f5-4134-b813-8a7f85810e3c"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Person/_Person/Details/PersonQuote
+Path: /sitecore/templates/Feature/Person/_HasPersonPosition/Details/PersonPosition
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: "Multi-Line Text"
+  Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 600
+  Value: 200
 Languages:
 - Language: en
   Versions:
@@ -18,4 +18,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190605T111850Z
+      Value: 20190513T112355Z

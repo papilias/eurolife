@@ -19,31 +19,41 @@
       <div class="js-leadership-slider-image" dir="rtl">
         @foreach (var item in Model)
         {
-          <div>
-            @Html.Sitecore().ImageField(Templates.Person.Fields.Image, 
-              item, 
-              Constants.ImageDimensions.Carousel.Height, 
-              Constants.ImageDimensions.Carousel.Width)
-            @{
+        <div>
+          @if (item.DescendsFrom(Templates.HasPersonContent.ID)
+            && (item.FieldHasValue(Templates.HasPersonContent.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
+          {
+            @Html.Sitecore().ImageField(Templates.HasPersonContent.Fields.Image,
+          item,
+          Constants.ImageDimensions.Carousel.Height,
+          Constants.ImageDimensions.Carousel.Width)
+          }
 
-              quotes += $@"
-                            <div>
-                              <h2 class='h5 m-b-8'>{item.Field(Templates.Person.Fields.Title)}</h2>
-                              <div class='leadership-slider__position'>{item.Field(Templates.Person.Fields.Position)}</div>
-                        ";
+          @{
+              quotes += $@"<div>
+                              <h2 class='h5 m-b-8'>{item.Field(Templates.Person.Fields.Name)}</h2>";
 
-              if (item.FieldHasValue(Templates.Person.Fields.Quote))
+              if (item.DescendsFrom(Templates.HasPersonQuote.ID)
+              && (item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote) || item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote)))
               {
-                quotes += $@"
-                            <div class='leadership-slider__quote'>
-                                {item.Field(Templates.Person.Fields.Quote)}
-                            </div>";
+
+
+                quotes += $@"<div class='leadership-slider__position'>{item.Field(Templates.HasPersonPosition.Fields.Position)}</div>";
+              }
+
+
+              if (item.DescendsFrom(Templates.HasPersonQuote.ID)
+              && (item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote) || item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote)))
+              {
+                quotes += $@"<div class='leadership-slider__quote'>
+                                    {item.Field(Templates.HasPersonQuote.Fields.Quote)}
+                             </div>";
               }
 
 
               quotes += "</div>";
-            }
-          </div>
+          }
+        </div>
         }
 
       </div>

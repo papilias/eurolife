@@ -1,0 +1,45 @@
+﻿@using Wedia.Feature.Person.Models
+@using Wedia.Feature.Person
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model IEnumerable<ConsultantsGroup>
+
+@{
+  if (Model == null || !Model.Any())
+  {
+    return;
+  }
+}
+
+@Html.Sitecore().Dictionary("/Person/Consultants List/Select Default", "All")
+
+@foreach (var group in Model)
+{
+  @Html.Sitecore().Field(Templates.HasPersonGroupName.Fields.Name, group.Item, new { DisableWebEdit = true })
+}
+
+
+@foreach (var group in Model)
+{
+  @group.Item.Field(Templates.HasPersonGroupName.Fields.Name)
+
+  if (group.Consultants == null || !group.Consultants.Any())
+  {
+    continue;
+  }
+
+  foreach (var consultant in group.Consultants)
+  {
+    <div>
+      @consultant.Item.Field(Templates.Person.Fields.Name)
+      @consultant.Item.Field(Templates.HasPersonContact.Fields.Address)
+    </div>
+
+    <div>
+      T: @consultant.Item.Field(Templates.HasPersonContact.Fields.Telephone)
+      K: @consultant.Item.Field(Templates.HasPersonContact.Fields.Mobile)
+      F: @consultant.Item.Field(Templates.HasPersonContact.Fields.Fax)
+      E: @consultant.Item.Field(Templates.HasPersonContact.Fields.Email)
+    </div>
+  }
+}
