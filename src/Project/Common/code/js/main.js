@@ -26,8 +26,10 @@
 
     $(document).ready(function () {
 
-        var horScrollItems = document.querySelector("js-scroll-items");
+        const horScrollItems = document.querySelector("js-scroll-items");
         if(horScrollItems != null) horScroll();
+
+        const ww = window.innerWidth;
 
 
         //gallery carousel start
@@ -138,13 +140,14 @@
 
         // Get the header
 
+        var headerHeight = 0;
+        if (window.innerWidth > 780)
+            headerHeight = document.getElementById('fix-1').clientHeight;
 
-        var headerHeight = document.getElementById('fix-1').clientHeight;
+
         header.style.setProperty('--h1', headerHeight + "px");
         var stick1 = document.getElementById("after-sticky-1");
         stick1.style.setProperty('--p1', headerHeight + "px");
-
-
 
         var menuHeight = document.getElementById('fix-2').clientHeight;
         var stick2 = document.getElementById("after-sticky-2");
@@ -166,6 +169,7 @@
         }
 
         function stickySecond() {
+
             if (window.pageYOffset > (elementSecondFromTop - headerHeight)) {
                 menu.classList.add("sticky-second");
             } else {
@@ -176,6 +180,7 @@
 
     //grid carousel start
     const carousels = document.querySelectorAll(".js-grid-table");
+    const subcarousels = document.querySelectorAll(".js-grid-subtable");
     const leftButton = document.querySelector(".js-program-left");
     const rightButton = document.querySelector(".js-program-right");
     var order = 1;
@@ -185,11 +190,11 @@
 
         for (const carousel of carousels) {
 
-           // carousel.style.setProperty('--programCount', programNumber);
-
             rightButton.addEventListener('click', _ => {
                 carousel.style.setProperty('--transform', order * (-274 - 32) + "px");
-
+                for (const subcarousel of subcarousels) {
+                    subcarousel.style.setProperty('--transform', order * (-274 - 32) + "px");
+                }
                 order++;
             });
 
@@ -198,11 +203,37 @@
                     --order;
                     var horder = order - 1;
                     carousel.style.setProperty('--transform', horder * (-274 - 32) + "px");
+                    for (const subcarousel of subcarousels) {
+                        subcarousel.style.setProperty('--transform', horder * (-274 - 32) + "px");
+                    }
                 }
             });
+
         }
     }
     //grid carousel end
+
+    //sync scroll of windows START
+    var scrollers = document.getElementsByClassName('grid-table-window');
+
+    var scrollerDivs = Array.prototype.filter.call(scrollers, function(testElement) {
+        return testElement.nodeName === 'DIV';
+    });
+
+    function scrollAll(scrollLeft) {
+        scrollerDivs.forEach(function(element, index, array) {
+            element.scrollLeft = scrollLeft;
+        });
+    }
+
+    scrollerDivs.forEach(function(element, index, array) {
+        element.addEventListener('scroll', function(e) {
+            scrollAll(e.target.scrollLeft);
+        });
+    });
+    //sync scroll of windows END
+
+
 
 
     //filtering in products
@@ -257,6 +288,38 @@
             });
         }
     }
+
+    //EMPAND PROGRAMS STARTS
+
+
+
+
+    //js drop item start
+    const dropItems = document.querySelectorAll(".js-selected-item");
+
+    if (dropItems != null) {
+
+        for (const dropItem of dropItems) {
+
+            dropItem.addEventListener('click', _ => {
+
+                _removeClasses();
+                document.getElementById(dropItem.dataset.value).classList.add('selected-content--visible');
+
+            });
+
+        }
+    }
+    var els = document.querySelectorAll('.selected-content--visible');
+    function _removeClasses() {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList.remove('selected-content--visible')
+        }
+    }
+    //js drop item end
+
+
+
 
 
 

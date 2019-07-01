@@ -9,6 +9,12 @@
 \*------------------------------------*/
 .anchorlist {
   padding-bottom: 23px; }
+  @media (max-width: 820px) {
+    .anchorlist {
+      padding-top: 23px; } }
+  @media (max-width: 1140px) {
+    .anchorlist {
+      min-width: 1200px; } }
   .anchorlist li {
     list-style-type: none;
     display: inline-block; }
@@ -17,6 +23,11 @@
     padding: 10px 20px;
     border-radius: 25px;
     margin: 0; }
+
+@media (max-width: 1140px) {
+  #fix-2 {
+    width: 100%;
+    overflow-x: auto; } }
 
 .theme-health .achorlist__active {
   color: #ff303d;
