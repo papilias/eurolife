@@ -151,6 +151,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
+    <Content Include="Views\Forms\RadioButtonList.cshtml" />
+    <Content Include="Views\Forms\Checkbox.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
