@@ -1,0 +1,14 @@
+﻿---
+ID: "fcaaded3-358b-47ed-b0e2-7330f18ff5c1"
+Parent: "09475790-230a-4164-89f1-a782a81498de"
+Template: "80ea3c96-2cca-4d69-8824-4b24e9770cbb"
+Path: /sitecore/content/Eurolife/Global/PDFs/Financial Reports
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190701T124006Z

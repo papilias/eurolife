@@ -4,12 +4,12 @@ using Wedia.Foundation.Indexing.Services;
 
 namespace Wedia.Foundation.Indexing.Repositories
 {
-    [Service(typeof(ISearchServiceRepository))]
-    public class SearchServiceRepository : ISearchServiceRepository
+  [Service(typeof(ISearchServiceRepository))]
+  public class SearchServiceRepository : ISearchServiceRepository
+  {
+    public virtual SearchService Get(ISearchSettings settings)
     {
-        public virtual SearchService Get(ISearchSettings settings)
-        {
-            return new SearchService(settings);
-        }
+      return new SearchService(settings);
     }
+  }
 }

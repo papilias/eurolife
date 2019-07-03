@@ -3,8 +3,8 @@ using Wedia.Foundation.Indexing.Services;
 
 namespace Wedia.Foundation.Indexing.Repositories
 {
-    public interface ISearchServiceRepository
-    {
-        SearchService Get(ISearchSettings searchSettings);
-    }
+  public interface ISearchServiceRepository
+  {
+    SearchService Get(ISearchSettings searchSettings);
+  }
 }

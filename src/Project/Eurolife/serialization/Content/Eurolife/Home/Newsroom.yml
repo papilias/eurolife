@@ -1,0 +1,20 @@
+﻿---
+ID: "c6568b6b-fbb6-4998-979e-7ef1ad907de7"
+Parent: "f2be096d-911f-4409-8a98-9ee16cb8b283"
+Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
+Path: /sitecore/content/Eurolife/Home/Newsroom
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190701T044057Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Newsroom
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Newsroom

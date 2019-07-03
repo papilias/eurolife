@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: 
+  Value: /sitecore/templates/Project/Common/Content Types/PDF Group
 - ID: "94069f66-609c-48b0-8281-521c30fb269d"
   Hint: Open Properties after Add
   Value: 
@@ -32,3 +32,6 @@ Languages:
       Hint: Supports Local Datasource
       Type: Checkbox
       Value: 0
+    - ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
+      Hint: JavaScript assets
+      Value: /scripts/media/media.js

@@ -1,0 +1,56 @@
+﻿---
+ID: "a2fb6452-d63e-4e33-bb82-b328bd0f0f2b"
+Parent: "7fc965fc-b67a-40a0-8428-2cdf16c71b68"
+Template: "7fc965fc-b67a-40a0-8428-2cdf16c71b68"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Downloads Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
+        <r
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="head"
+          uid="{84E2B112-98FC-4500-AE40-EC91CAA3A458}" />
+        <r
+          id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+          par="Background=%7b7F898357-3B13-4BEC-802E-7EF58D50F030%7d"
+          ph="page-layout"
+          uid="{D743758A-BC1A-41C9-928E-9838FCEFA758}" />
+        <r
+          id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+          ph="page-layout-top"
+          uid="{9608FB38-ADAC-4DBF-8948-4C6827127F56}" />
+        <r
+          id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+          ph="page-layout-top"
+          uid="{59FE8152-6994-4B44-A707-F9D01D80685E}" />
+        <r
+          id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
+          ph="footer"
+          uid="{220A26C8-7B0D-44B8-813D-BB6C5032AB6E}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190521T131703Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: $name

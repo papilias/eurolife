@@ -1,0 +1,30 @@
+﻿---
+ID: "326c573a-97bd-4c81-abab-4178afe8b8d3"
+Parent: "f2be096d-911f-4409-8a98-9ee16cb8b283"
+Template: "2eef2965-9203-4a23-b2ab-259a44afc84b"
+Path: /sitecore/content/Eurolife/Home/Search
+DB: master
+SharedFields:
+- ID: "06104eff-818d-4a95-8bf6-fdce039dbd81"
+  Hint: Facets
+  Type: Treelist
+  Value: "{D4357C99-B074-4B24-B999-6CD3D3E90A8D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190702T124711Z
+    - ID: "5ae7b7d1-eeaa-48fd-885b-7956a463d2c5"
+      Hint: SearchBoxTitle
+      Value: Enter a text to search for...
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

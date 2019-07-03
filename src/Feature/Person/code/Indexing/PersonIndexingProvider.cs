@@ -35,7 +35,7 @@ namespace Wedia.Feature.Person.Indexing
             formattedResult.Title = FieldRenderer.Render(contentItem, Templates.Person.Fields.Name.ToString());
             formattedResult.Description = FieldRenderer.Render(contentItem, Templates.HasPersonPosition.Fields.Position.ToString());
             formattedResult.Media = ((ImageField)contentItem.Fields[Templates.HasPersonContent.Fields.Image])?.MediaItem;
-            formattedResult.ViewName = "~/Views/Person/PersonSearchResult";
+            formattedResult.ViewName = "~/Views/Persons/PersonSearchResult.cshtml";
         }
     }
 }

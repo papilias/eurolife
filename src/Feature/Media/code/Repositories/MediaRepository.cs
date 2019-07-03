@@ -8,12 +8,21 @@ using Wedia.Feature.Media.Models;
 using Wedia.Foundation.DependencyInjection;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.Mvc.Extensions;
+using Wedia.Foundation.Indexing.Repositories;
+using Wedia.Foundation.Indexing.Models;
 
 namespace Wedia.Feature.Media.Repositories
 {
   [Service(typeof(IMediaRepository))]
   public class MediaRepository : IMediaRepository
   {
+    private readonly ISearchServiceRepository _searchServiceRepository;
+
+    public MediaRepository(ISearchServiceRepository searchServiceRepository)
+    {
+      _searchServiceRepository = searchServiceRepository;
+    }
+
     public static IEnumerable<MediaSelectorElement> Get([NotNull] Item item)
     {
       if (item == null)
@@ -44,15 +53,24 @@ namespace Wedia.Feature.Media.Repositories
     {
       if (item == null)
         throw new ArgumentNullException(nameof(item));
-
-
-      var groups = GetMediaFromChildren(item, Templates.PDFGroup.ID);
+      
+      var groups = GetMediaFromChildren(item, Templates.PDFFileGroup.ID);
       currentGroupID = CurrentPDFGroup(groups, currentGroupID);
 
       return new PDFGroups
       {
-        Groups = groups.Select((i, index) => PDFGroupFactory(i, currentGroupID, index))
+        Groups = groups.Select((i, index) => PDFFileGroupFactory(i, currentGroupID, index))
       };
+    }
+
+    public PDFGroup GetNextPage(ID currentFileGroupID, int page)
+    {
+      var group = Context.Database.GetItem(currentFileGroupID);
+
+      if (group == null)
+        throw new System.ArgumentNullException(nameof(group));
+
+      return PDFFileGroupFactory(group, currentFileGroupID, 1, page);
     }
 
     private ID CurrentPDFGroup(IEnumerable<Item> groups, ID currentGroupID = null)
@@ -62,15 +80,21 @@ namespace Wedia.Feature.Media.Repositories
           groups.FirstOrDefault()?.ID;
     }
 
-    private PDFGroup PDFGroupFactory(Item item, ID currentGroupID, int index)
+    private PDFGroup PDFFileGroupFactory(Item item, ID currentFileGroupID, int index, int? page = null)
     {
-      var isActive = IsActivePDFGroup(item, currentGroupID, index);
+      var isActive = IsActivePDFGroup(item, currentFileGroupID, index);
+      int pageNumber = page == null ? 0 : page < 0 ? 0 : page.Value;
+      var pdfs = isActive ? GetFileGroupPDFs(item, pageNumber) : null;
+      
       return new PDFGroup
       {
         Item = item,
         IsActive = isActive,
-        PDFs = isActive ? GetMediaFromMultiList(item, Templates.PDFGroup.Fields.Files, Templates.PDF.ID) : null,
-        SubGroups = GetPDFGroupedList(item, currentGroupID)
+        PDFs = pdfs,
+        Page = pageNumber,
+        ResultsOnPage = Constants.ItemsPerPage,
+        TotalResults = pdfs?.TotalNumberOfResults ?? 0,
+        SubGroups = GetPDFGroupedList(item, currentFileGroupID)
       };
     }
 
@@ -86,9 +110,37 @@ namespace Wedia.Feature.Media.Repositories
       return false;
     }
 
+    private ISearchResults GetFileGroupPDFs(Item item, int pageNumber)
+    {
+      if (!item.FieldHasValue(Templates.PDFFileGroup.Fields.FileGroup))
+        return null;
+
+      var folder = item.TargetItem(Templates.PDFFileGroup.Fields.FileGroup);
+
+      if (folder == null)
+        return null;
+
+      var query = new PDFQuery
+      {
+        Facets = null,
+        QueryText = "*",
+        NoOfResults = 1,
+        Page = pageNumber
+      };
+
+      
+      var searchService = _searchServiceRepository
+      .Get(new SearchSettingsBase { Templates = new[] { Templates.HasMedia.ID } });
+
+      searchService.Settings.Root = folder;
+
+      return searchService.Search(query);            
+    }
+
 
     private static IEnumerable<Item> GetMediaFromMultiList(Item item, ID fieldID, ID descendanTemplate)
     {
+
       return item.GetMultiListValueItems(fieldID).Where(i => i.DescendsFrom(descendanTemplate));
     }
 

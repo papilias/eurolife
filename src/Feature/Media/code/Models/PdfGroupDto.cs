@@ -6,8 +6,9 @@ using System.Web;
 
 namespace Wedia.Feature.Media.Models
 {
-    public class PdfGroupDto
-    {
-        public string Group { get; set; }
-    }
+  public class PdfGroupDto
+  {
+    public string Group { get; set; }
+
+  }
 }

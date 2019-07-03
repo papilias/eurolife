@@ -4,6 +4,14 @@ Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
 Template: "bf28aa5c-d111-4785-93ee-99d425d076eb"
 Path: /sitecore/content/Eurolife
 DB: master
+SharedFields:
+- ID: "74698670-ee24-4706-b688-848685462482"
+  Hint: ShowInMenu
+  Type: Checkbox
+  Value: 1
+- ID: "98b34509-e828-4a84-9943-4efe786e401f"
+  Hint: Search Results Page
+  Value: /sitecore/content/Eurolife/Home/Search
 Languages:
 - Language: en
   Fields:
@@ -33,6 +41,9 @@ Languages:
       Hint: ClickToCall
       Value: |
         <link text="CLICK TO CALL" linktype="external" url="https://clicktocall.gr" anchor="" title="" class="" querystring="" target="_blank" id="" />
+    - ID: "a89673ed-d5bb-42a7-a5be-1f65f49b7c8f"
+      Hint: Title
+      Value: Eurolife
     - ID: "b4926567-fd0b-4bed-b86b-1d3b25c90d8b"
       Hint: SiteBrowserTitle
       Value: Eurolife

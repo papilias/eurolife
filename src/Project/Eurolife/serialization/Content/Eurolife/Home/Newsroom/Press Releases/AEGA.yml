@@ -1,0 +1,32 @@
+﻿---
+ID: "fca55277-79de-43b9-b267-2f259818b208"
+Parent: "437fb1b6-5025-4c10-9867-8d88451ea48c"
+Template: "41277a6d-ff43-46db-af83-303b916940f5"
+Path: /sitecore/content/Eurolife/Home/Newsroom/Press Releases/AEGA
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190701T045734Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "92184ee7-4ee4-466b-85bc-ad334bb2beee"
+      Hint: PDFFiles
+      Type: Multilist with Search
+      Value: |
+        {90949D5E-04DB-4508-AFB8-2ADB9E5FA270}
+        {15F0A7AD-8BA6-42CF-968E-8DE81554CF3D}
+        {2B87C416-F4C9-4942-B109-F0952DEE07E3}
+        {8FC47F57-48F2-4704-A7F9-09E2D9A3A1BB}
+    - ID: "f4543aeb-0454-4609-afec-d2ab0dd4fa11"
+      Hint: PDFFileGroup
+      Value: "{1DE0BAE1-CE71-4458-8F85-95027AAB6029}"
+    - ID: "ff6fc789-f1f2-495e-8a94-efcbc528e1c6"
+      Hint: MediaGroupTitle
+      Value: AEZA

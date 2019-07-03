@@ -24,8 +24,7 @@ Languages:
         sitecore\admin
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
-      Value: |
-        <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{5CF333DA-07C4-4076-B9A4-D6E0C37A76D7}" />
+      Value: 
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: DesktopImage
       Value: |
@@ -33,4 +32,4 @@ Languages:
     - ID: "f51dd24c-64be-4832-9f98-e03f9e84fa63"
       Hint: TeaserDownloadCTA
       Value: |
-        <link id="{2B87C416-F4C9-4942-B109-F0952DEE07E3}" querystring="" target="" text="" anchor="" url="/Eurolife/Global/PDFs/PDFs Folder/PDFFFF" title="" class="" linktype="internal" />
+        <link id="{2B87C416-F4C9-4942-B109-F0952DEE07E3}" querystring="" linktype="internal" text="" anchor="" url="/Eurolife/Global/PDFs/PDFs Folder/PDFFFF" title="" class="" target="" />

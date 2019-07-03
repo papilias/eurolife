@@ -100,6 +100,7 @@
     <Content Include="Views\Persons\EmployeesCarousel.cshtml" />
     <Content Include="Views\Persons\EmployeeDetails.cshtml" />
     <Content Include="Views\Persons\ConsultantsList.cshtml" />
+    <Content Include="Views\Persons\PersonSearchResult.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

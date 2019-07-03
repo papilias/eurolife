@@ -23,7 +23,7 @@ namespace Wedia.Foundation.Indexing.Models
     {
       get
       {
-        return this._url ?? new Uri(this.Item.Url(), UriKind.Relative);
+         return this._url ?? new Uri(this.Item.Url(), UriKind.Relative);
       }
       set
       {

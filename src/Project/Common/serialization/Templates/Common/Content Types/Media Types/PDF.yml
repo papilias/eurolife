@@ -1,0 +1,22 @@
+﻿---
+ID: "906a3de5-2dd5-43ec-82e1-87d97d7c336c"
+Parent: "c6d97ab3-6f2f-4908-aca0-5e49b9683b0e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Common/Content Types/Media Types/PDF
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {87151256-44A4-48E2-92B9-E40A529C4540}
+    {3F38EA70-1F98-4A1C-BCB7-01E63046EEF6}
+    {C0C03229-5BD7-4D32-82F3-A1A71D97F727}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Value: "20190703T131526:636977565266005225Z"

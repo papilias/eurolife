@@ -23,7 +23,7 @@ Languages:
     - ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
       Hint: JavaScript assets
       Value: |
-        /js/vendor/jquery-3.4.1.slim.min.js
+        /js/vendor/jquery-3.4.1.min.js
         /js/vendor/slick.min.js
         /js/main.js
         /js/app.js

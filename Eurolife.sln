@@ -136,6 +136,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Glossary", "Glossary", "{29
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Glossary", "src\Feature\Glossary\code\Wedia.Feature.Glossary.csproj", "{7FB6FBAD-BCC4-48AF-A6F3-79BD7C092E55}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{2CB61550-70A2-4C26-843C-A31F31FA095E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Search", "src\Feature\Search\code\Wedia.Feature.Search.csproj", "{A975041D-3A89-413D-8B9B-BF323E2CF2BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Multisite", "Multisite", "{67ED945A-E763-4759-98B3-EC288155913A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Multisite", "src\Feature\Multisite\code\Wedia.Feature.Multisite.csproj", "{94DB6BE4-B72D-4A4A-A476-59EBC929B517}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -262,6 +270,14 @@ Global
 		{7FB6FBAD-BCC4-48AF-A6F3-79BD7C092E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FB6FBAD-BCC4-48AF-A6F3-79BD7C092E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FB6FBAD-BCC4-48AF-A6F3-79BD7C092E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A975041D-3A89-413D-8B9B-BF323E2CF2BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A975041D-3A89-413D-8B9B-BF323E2CF2BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A975041D-3A89-413D-8B9B-BF323E2CF2BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A975041D-3A89-413D-8B9B-BF323E2CF2BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DB6BE4-B72D-4A4A-A476-59EBC929B517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DB6BE4-B72D-4A4A-A476-59EBC929B517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DB6BE4-B72D-4A4A-A476-59EBC929B517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DB6BE4-B72D-4A4A-A476-59EBC929B517}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -326,9 +342,13 @@ Global
 		{1538CCBB-B2BA-4A45-8BEE-98E6AB0E68AD} = {6A3D5F2D-9500-4C3A-A38B-6888F5843481}
 		{29BD2D71-3CBD-4254-967A-F6C50A6CEB09} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 		{7FB6FBAD-BCC4-48AF-A6F3-79BD7C092E55} = {29BD2D71-3CBD-4254-967A-F6C50A6CEB09}
+		{2CB61550-70A2-4C26-843C-A31F31FA095E} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{A975041D-3A89-413D-8B9B-BF323E2CF2BE} = {2CB61550-70A2-4C26-843C-A31F31FA095E}
+		{67ED945A-E763-4759-98B3-EC288155913A} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{94DB6BE4-B72D-4A4A-A476-59EBC929B517} = {67ED945A-E763-4759-98B3-EC288155913A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
 	EndGlobalSection
 EndGlobal
