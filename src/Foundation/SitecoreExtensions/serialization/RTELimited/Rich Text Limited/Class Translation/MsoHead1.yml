@@ -1,26 +1,28 @@
 ﻿---
-ID: "dcbf6869-ae48-487f-9b15-dd285c87c12d"
-Parent: "c0eb664b-4dc7-4a7c-98f0-9884eaa2f1e6"
-Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/system/Settings/Html Editor Profiles/Rich Text Limited
+ID: "7b0b3816-4fc7-4e1e-92ab-9f6007dec60d"
+Parent: "e678526e-facc-4ccb-8cae-c9e4f8148a9b"
+Template: "10863561-7398-4c5d-8a99-b075b90c4e41"
+Path: /sitecore/system/Settings/Html Editor Profiles/Rich Text Limited/Class Translation/MsoHead1
 DB: core
 SharedFields:
-- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
-  Hint: __Masters
-  Type: tree list
-  Value: "{30235F43-6242-4107-87AB-5267E34EDF0C}"
+- ID: "2b6bd0bd-7b87-4e8d-99c8-16bbe70e7de0"
+  Hint: Key
+  Value: MsoHead1
+- ID: "caf92d8d-e76c-41a0-9567-6c5f86b63abf"
+  Hint: Value
+  Value: Heading1
 Languages:
 - Language: da
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: RTF, standard
+    Value: MsoHead1
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151003T031123Z
+      Value: 20151003T031126Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -29,13 +31,13 @@ Languages:
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Rich Text Standard
+    Value: MsoHead1
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151003T030834Z
+      Value: 20151003T030836Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -46,21 +48,25 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20071122T163756Z
+      Value: 20071122T183800
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
-      Value: 20060131T123640Z
+      Value: 20060131T143645
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: リッチ テキスト Default
+    Value: MSO 見出し 1
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151003T031004Z
+      Value: 20151003T031005Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

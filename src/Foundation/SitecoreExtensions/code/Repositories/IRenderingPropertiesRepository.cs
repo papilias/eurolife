@@ -1,8 +1,8 @@
 ﻿namespace Wedia.Foundation.SitecoreExtensions.Repositories
 {
-    using Sitecore.Mvc.Presentation;
+  using Sitecore.Mvc.Presentation;
 
-    public interface IRenderingPropertiesRepository
+  public interface IRenderingPropertiesRepository
   {
     T Get<T>(Rendering rendering);
   }

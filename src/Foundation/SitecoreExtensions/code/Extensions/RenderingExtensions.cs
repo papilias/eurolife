@@ -26,6 +26,22 @@ namespace Wedia.Foundation.SitecoreExtensions.Extensions
       return !int.TryParse(parameter, out returnValue) ? defaultValue : returnValue;
     }
 
+    public static bool GetBoolParameter(this Rendering rendering, string parameterName, bool defaultValue = false)
+    {
+      if (rendering == null)
+      {
+        throw new ArgumentNullException(nameof(rendering));
+      }
+
+      var parameter = rendering.Parameters[parameterName];
+      if (string.IsNullOrEmpty(parameter))
+      {
+        return defaultValue;
+      }
+
+      return MainUtil.GetBool(parameter, defaultValue);
+    }
+
     public static bool GetUseStaticPlaceholderNames([NotNull] this Rendering rendering)
     {
       return MainUtil.GetBool(rendering.Parameters[Constants.DynamicPlaceholdersLayoutParameters.UseStaticPlaceholderNames], false);
