@@ -49,6 +49,10 @@ SharedFields:
     </r>
 Languages:
 - Language: en
+  Fields:
+  - ID: "eb2af3ca-2892-4044-b791-394344ab8456"
+    Hint: Theme
+    Value: "{264F4CE2-40BC-4CFE-9977-EFFD90A7938C}"
   Versions:
   - Version: 1
     Fields:

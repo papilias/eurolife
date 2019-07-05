@@ -4,6 +4,14 @@ Parent: "6be6722c-9a7a-49a2-96d1-b0977ef3f35b"
 Template: "e4578522-04a6-4ee4-8d58-2776b57d2d1c"
 Path: /sitecore/system/Settings/Project/Themes/Common/Eurolife
 DB: master
+SharedFields:
+- ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
+  Hint: JavaScript assets
+  Value: |
+    /js/vendor/jquery-3.4.1.min.js
+    /js/vendor/slick.min.js
+    /js/main.js
+    /js/app.js
 Languages:
 - Language: en
   Versions:

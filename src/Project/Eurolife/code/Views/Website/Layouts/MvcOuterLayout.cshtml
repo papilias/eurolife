@@ -23,5 +23,6 @@
 </head>
 <body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor()">
   @RenderBody()
+  @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
 </body>
 </html>

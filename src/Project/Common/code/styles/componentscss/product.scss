@@ -12,6 +12,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-height: 80vh;
+  overflow: hidden;
+  transition: max-height 1000ms ease;
+  &--expanded{
+    max-height: 3000vh;
+  }
 }
 
 .coverage__title{
@@ -44,11 +50,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom:100px;
 }
 
 .teaser--highlight{
   flex-basis:100%;
+  display: flex;
+  flex-direction: column;
+
+  .btn{
+    min-width: 240px;
+  }
 
   @include breakpoint-rev(820){
     &:not(:last-child) {
@@ -64,36 +75,68 @@
   }
 }
 
-.teaser-icon{
-  margin-bottom:30px;
-}
-
 .teaser-highlight__text{
+  margin-bottom:48px;
   @include font-size(14);
   color:rgba(56,59,56, 0.6);
 }
 
+.teaser-icon{
+  width:100px;
+  height:74px;
+  margin-bottom:30px;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+}
 
 .teaser-icon__microscope{
-  background: url(../images/icons/health/microscope.svg);
-  background-repeat: no-repeat;
-  width:58px;
-  height:74px;
+  background-image: url(../images/icons/health/microscope.svg);
 }
 
 .teaser-icon__stithoscope{
-  background: url(../images/icons/health/stithoscope.svg);
-  background-repeat: no-repeat;
-  width:58px;
-  height:74px;
+  background-image: url(../images/icons/health/stithoscope.svg);
 }
 
 .teaser-icon__program{
-  background: url(../images/icons/health/program.svg);
-  background-repeat: no-repeat;
-  width:58px;
-  height:74px;
+  background-image: url(../images/icons/health/program.svg);
 }
+
+.teaser-icon__pickup{
+  background-image: url(../images/icons/home/pickup.svg);
+}
+
+.teaser-icon__support{
+  background-image: url(../images/icons/home/support.svg);
+}
+
+.teaser-icon__flexibility{
+  background-image: url(../images/icons/home/flexibility.svg);
+}
+
+.teaser-icon__discount{
+  background-image: url(../images/icons/motor/discount.svg);
+}
+
+.teaser-icon__accidentcare{
+  background-image: url(../images/icons/motor/accidentcare.svg);
+}
+
+.teaser-icon__settlement{
+  background-image: url(../images/icons/motor/settlement.svg);
+}
+
+.teaser-icon__shield{
+  background-image: url(../images/icons/life/shield.svg);
+}
+.teaser-icon__hourglass{
+  background-image: url(../images/icons/life/hourglass.svg);
+}
+.teaser-icon__life-jacket{
+  background-image: url(../images/icons/life/life-jacket.svg);
+}
+
+
+
 
 
 /*coverage*/
@@ -103,6 +146,10 @@
   @include breakpoint(1140){
     padding-right: 50%;
   }
+}
+
+.teaser__btn{
+  margin-top:auto;
 }
 
 .coverage__yes{
@@ -223,6 +270,12 @@
   .grid-table-cell{
     padding-left: 0;
     padding-right: 0;
+    min-height: 50px;
+    align-items: center;
+
+    @include breakpoint(540){
+      display: flex;
+    }
   }
 }
 
@@ -242,6 +295,14 @@
   transition: transform 500ms ease-in-out;
 }
 
+@include breakpoint(540) {
+  .theme-home, .theme-motor {
+    .grid-table {
+      grid-template-columns: repeat(var(--programCount), 428px);
+    }
+  }
+}
+
 .grid-table-window{
   overflow: hidden;
   padding-left: 0;
@@ -256,7 +317,7 @@
 }
 
 .grid-table-cell{
-  padding: 10px 20px;
+  padding: 4px 20px;
 
   @include breakpoint-rev(540){
     border-bottom: 1px solid #b5b5b5;
@@ -277,6 +338,14 @@
   .grid-table-cell{
     font-weight: 500;
     line-height: 1.2;
+    min-height: 60px;
+    align-items: center;
+    @include breakpoint(540){
+      display: flex;
+    }
+  }
+  .grid-table-cell--heading{
+    min-height: 80px;
   }
 }
 
@@ -289,15 +358,15 @@
   font-size:18px;
   padding:20px;
 }
-
-.program-attributes{
-  .grid-table-cell{
-    &:first-child{
-      /*height: 100%;*/
+.program-grid:not(.program-grid--subsection) {
+ > .program-attributes {
+    .grid-table-cell {
+      &:first-child {
+        min-height: 80px;
+      }
     }
   }
 }
-
 .theme-health{
   .grid-table-cell--heading {
       background-color: $color-health;
@@ -314,7 +383,14 @@
       color:$color-health;
     }
   }
+  .intro-text h1{
+    color:$color-health;
+  }
+  .nav-product{
+    background-color: $color-health;
+  }
 }
+
 .theme-motor{
   .grid-table-cell--heading {
     background-color: $color-motor;
@@ -331,7 +407,19 @@
       color: $color-motor;
     }
   }
+  .contentgroup__tick{
+     li:before {
+       background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%2300945f' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+     }
+   }
+  .intro-text h1{
+    color: $color-motor;
+  }
+  .nav-product{
+    background-color: $color-motor;
+  }
 }
+
 .theme-home{
   .grid-table-cell--heading  {
     background-color:$color-home;
@@ -348,7 +436,14 @@
       color:$color-home;
     }
   }
+  .intro-text h1{
+    color:$color-home;
+  }
+  .nav-product{
+    background-color: $color-home;
+  }
 }
+
 .theme-life{
   .grid-table-cell--heading {
     background-color:$color-life-insurance;
@@ -365,6 +460,17 @@
       color:$color-life-insurance;
     }
   }
+  .contentgroup__tick{
+    li:before {
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23485294' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+    }
+  }
+  .intro-text h1{
+    color: $color-life-insurance;
+  }
+  .nav-product{
+    background-color: $color-life-insurance;
+  }
 }
 
 .service-provided{
@@ -372,7 +478,7 @@
   &:after{
     content: '';
     display: block;
-    background-image: url(../images/icons/check-green.svg);
+    background-image: url(../images/icons/check-blue.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 24px;
@@ -405,17 +511,22 @@
     color:$dusky-blue;
     line-height: 1;
     cursor: pointer;
+    flex-grow: 1;
   }
 
   &__left{
     cursor: pointer;
+    margin-left: 24px;
   }
 
   &__right{
     cursor: pointer;
+    margin-left: 8px;
   }
 
-
+  @include breakpoint-rev(540){
+    display: none;
+  }
 }
 
 .icon-down{
@@ -553,12 +664,150 @@
   font-size: 12px;
   color: $dusky-blue;
   text-align: center;
+  display: inherit;
+  @include breakpoint(540){
+    display: none !important;
+  }
 }
 
 .program-expander{
   max-height: 0;
+  transition: max-height 400ms ease;
   overflow: hidden;
-  .program-expander--visible{
+  &.program-expander--visible{
     max-height:200vh;
   }
 }
+main{
+  overflow: hidden;
+}
+
+
+.contentgroup{
+  display: flex;
+  flex-wrap: wrap;
+
+  ul {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    margin-left: 14px;
+    border-bottom: 1px solid #eee;
+  }
+  &:last-child {
+  ul {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+
+
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+}
+
+.contentgroup__tick{
+  li {
+    margin-bottom: 8px;
+    position: relative;
+    font-size: 14px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 1px;
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23f2b100' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+      background-repeat: no-repeat;
+      background-size:16px;
+      width:24px;
+      height:24px;
+    }
+  }
+}
+
+.contentgroup__left{
+  padding-bottom:20px;
+  flex-basis: 150px;
+  margin-right: 24px;
+  border-right: 1px solid #eee;
+}
+
+.contentgroup__right{
+
+}
+
+.contentgroup__title{
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color:$color-home;
+}
+
+.theme-motor{
+  .contentgroup__title{
+    color: $color-motor;
+  }
+}
+
+.contentgroup__info{
+  font-size: 12px;
+  line-height: 1.3;
+  color: #383b38;
+}
+
+.coverage__expander{
+  font-size: 14px;
+  color:$cerulean;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+}
+
+.programs__tabs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.programs__tabs__title{
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  &:not(:first-child){
+    margin-left: 20px;
+  }
+  padding:15px;
+  @include breakpoint(1140){
+    padding:24px;
+  }
+
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 1.2;
+  @include fluid-type($min_width, $max_width, 14px, 18px);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+
+  &--active{
+    color:#fff;
+    font-weight: 500;
+  }
+}
+
+.theme-motor{
+  .programs__tabs__title--active{
+    background-color: $color-motor;
+  }
+}
+
+.program-wrap{
+  display: none;
+}
+
+.program-wrap--active{
+  display: block;
+}
+
+

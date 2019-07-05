@@ -3,6 +3,72 @@
 \*------------------------------------*/
 
 
+
+input[type="text"]{
+    display: block;
+    width:100%;
+    padding:8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.36;
+    font-family: inherit;
+    border:0;
+    border-bottom:1px solid #979797;
+}
+
+textarea{
+    width: 100%;
+    padding:8px;
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid #979797;
+    min-height: 80px;
+    font-family: inherit;
+}
+
+select{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #979797;
+    font-family: inherit;
+}
+
+
+input[type="submit"]{
+
+    display: inline-block;
+    margin-top: 32px;
+    border:1px solid $color-btn-dark;
+    border-radius:4px;
+    @include font-size(14);
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+    padding:10px 16px 11px;
+    @include breakpoint(700){
+        padding:14px 34px 15px;
+    }
+    background-color:$color-btn-dark;
+    color: #fff;
+    transition: background-color 150ms linear;
+}
+/*
+input[type="file"]{
+    border:0;
+    background-color: transparent;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 2px solid;
+        border-radius: 50%;
+        text-indent: -9999em;
+    }
+}
+
+*/
+
 /*btn classes*/
 .btn{
     display: inline-block;
@@ -35,8 +101,16 @@
 
 .btn--ghost{
     background-color: transparent;
+    color:#fff;
+    border-color: #fff;
+    transition: background-color 150ms linear, color 150ms linear, border-color 150ms linear;
+}
+
+.btn--ghost-rev {
+    background-color: transparent;
     color: $color-btn-dark;
-    transition: background-color 150ms linear, color 150ms linear;
+    border-color: $color-btn-dark;
+    transition: background-color 150ms linear, color 150ms linear, border-color 150ms linear;
 }
 
 .btn--icon{
@@ -49,17 +123,16 @@
     background-position: 50%;
 }
 
-
-
-
 .no-touch{
 
     .btn--dark:hover{
         background-color: $color-btn-dark-hover;
     }
     .btn--ghost:hover,
+    .btn--ghost-rev:hover,
     .btn--light:hover{
         background-color: $color-btn-dark;
+        border-color: $color-btn-dark;
         color:#fff;
     }
 }
@@ -81,15 +154,12 @@ label{
 }
 
 
-
-
-
 /*checkboxes*/
 input[type="checkbox"] {
 
     float: left;
     margin-top: 7px;
-    display: none; 
+    display: none;
 
     + label {
         position: relative;
@@ -137,9 +207,9 @@ input[type="checkbox"] {
 
 /*radio buttons*/
 input[type="radio"] {
-    float: left;
-    margin-top: 7px;
-    display: none; 
+    //float: left;
+    //margin-top: 7px;
+    //display: none;
 
     + label {
         position: relative;

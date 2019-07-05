@@ -2,7 +2,7 @@
 ID: "a357360c-a1fd-4439-a5ab-4d131d300f95"
 Parent: "74cdf335-ba3a-42bc-af08-b63f952e4d3b"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Eurolife/Page Types/News/Articles List
+Path: /sitecore/templates/Project/Eurolife/Page Types/News/News List
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

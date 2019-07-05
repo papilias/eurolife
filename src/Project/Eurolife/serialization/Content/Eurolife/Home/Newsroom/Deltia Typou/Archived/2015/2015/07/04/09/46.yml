@@ -1,0 +1,18 @@
+﻿---
+ID: "191af8ae-fd51-42e9-9828-ccb3183acbd1"
+Parent: "16583ac4-179a-4e06-b17f-6c533a5d55ca"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Eurolife/Home/Newsroom/Deltia Typou/Archived/2015/2015/07/04/09/46
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190704T094619Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

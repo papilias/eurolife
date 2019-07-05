@@ -5,6 +5,12 @@ Template: "bf28aa5c-d111-4785-93ee-99d425d076eb"
 Path: /sitecore/content/Eurolife
 DB: master
 SharedFields:
+- ID: "39f8176d-c412-4b99-ac7e-359580221a98"
+  Hint: SupportedLanguages
+  Type: Multilist
+  Value: |
+    {1325BEA9-4BE5-4DD9-B79F-678250B9F9D3}
+    {AF584191-45C9-4201-8740-5409F4CF8BDD}
 - ID: "74698670-ee24-4706-b688-848685462482"
   Hint: ShowInMenu
   Type: Checkbox
@@ -13,6 +19,36 @@ SharedFields:
   Hint: Search Results Page
   Value: /sitecore/content/Eurolife/Home/Search
 Languages:
+- Language: "el-GR"
+  Fields:
+  - ID: "eb2af3ca-2892-4044-b791-394344ab8456"
+    Hint: Theme
+    Value: "{C410C01A-5CC4-4954-93AF-8E3570FF6EB3}"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190704T085756Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8b9f427a-d6bd-4aad-9e70-8965e09c4af2"
+      Hint: OrganisationAddresses
+      Type: Multilist
+      Value: |
+        {59C01224-17AB-4DEC-94DF-ACA4551537ED}
+        {E040CD67-CC5B-4BD9-9FBD-9D3CA75E19A5}
+    - ID: "a89673ed-d5bb-42a7-a5be-1f65f49b7c8f"
+      Hint: Title
+      Value: Eurolife
+    - ID: "b4926567-fd0b-4bed-b86b-1d3b25c90d8b"
+      Hint: SiteBrowserTitle
+      Value: Eurolife
+    - ID: "c9937d39-6c03-44be-a0bb-965903c6ef43"
+      Hint: Copyright
+      Value: Copyright 2019 &copy; Eurolife
 - Language: en
   Fields:
   - ID: "eb2af3ca-2892-4044-b791-394344ab8456"

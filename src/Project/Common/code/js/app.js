@@ -1086,6 +1086,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -2036,10 +2042,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "section",
-    {
-      staticClass: "center center--1100 programs",
-      attrs: { id: "panels-wrapper" }
-    },
+    { staticClass: "center center--1100 programs m-b-112" },
     [
       _c("h1", { staticClass: "h4 m-b-16 t-c" }, [
         _vm._v(_vm._s(_vm.panelsGroup.title))
@@ -2049,36 +2052,51 @@ var render = function() {
         _vm._v("\n    " + _vm._s(_vm.panelsGroup.summary) + "\n  ")
       ]),
       _vm._v(" "),
-      _vm._l(_vm.panelsGroup.panels, function(panel, i) {
-        return _c(
-          "button",
-          {
-            key: "panel-button-" + panel.id,
-            on: {
-              click: function($event) {
-                return _vm.changeCurrentPanel(i)
+      _c(
+        "div",
+        { staticClass: "programs__tabs m-b-64 m-t-48" },
+        _vm._l(_vm.panelsGroup.panels, function(panel, i) {
+          return _c(
+            "div",
+            {
+              key: "panel-button-" + panel.id,
+              class: [
+                "programs__tabs__title",
+                { "programs__tabs__title--active": _vm.currentPanel == i }
+              ],
+              on: {
+                click: function($event) {
+                  return _vm.changeCurrentPanel(i)
+                }
               }
-            }
-          },
-          [_vm._v("\n    " + _vm._s(panel.title) + "\n  ")]
-        )
-      }),
+            },
+            [_vm._v("\n    " + _vm._s(panel.title) + "\n    ")]
+          )
+        }),
+        0
+      ),
       _vm._v(" "),
       _c(
         "transition-group",
         { attrs: { name: "slide", tag: "div", mode: "out-in" } },
         _vm._l(_vm.panelsGroup.panels, function(panel, i) {
-          return _vm.currentPanel == i
-            ? _c("app-panel", {
-                key: "panel-" + panel.id,
-                attrs: { panel: panel }
-              })
-            : _vm._e()
+          return _c("app-panel", {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.currentPanel == i,
+                expression: "currentPanel == i"
+              }
+            ],
+            key: "panel-" + panel.id,
+            attrs: { panel: panel }
+          })
         }),
         1
       )
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []

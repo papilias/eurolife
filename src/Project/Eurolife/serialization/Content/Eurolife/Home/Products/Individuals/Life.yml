@@ -4,6 +4,10 @@ Parent: "1e190284-5fd5-4b95-88ae-b5f53449cdfb"
 Template: "dc12306a-5c27-4986-840c-aa47154f0051"
 Path: /sitecore/content/Eurolife/Home/Products/Individuals/Life
 DB: master
+SharedFields:
+- ID: "3da3fb00-31f6-432d-979a-57cee52b9d8a"
+  Hint: Color
+  Value: "{FAB4637A-A59B-488E-8A85-3BA44B184F83}"
 Languages:
 - Language: en
   Fields:

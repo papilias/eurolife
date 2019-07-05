@@ -5,6 +5,17 @@ Template: "dc12306a-5c27-4986-840c-aa47154f0051"
 Path: /sitecore/content/Eurolife/Home/Products/Individuals/Health
 DB: master
 SharedFields:
+- ID: "3da3fb00-31f6-432d-979a-57cee52b9d8a"
+  Hint: Color
+  Value: "{9547C6F8-F73F-4A91-A58F-5AD62343D49D}"
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
+- ID: "681982e8-5879-46f1-80cf-27f5201be782"
+  Hint: InheritAssets
+  Type: Checkbox
+  Value: 1
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -19,11 +30,18 @@ SharedFields:
       </d>
     </r>
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190705T092610Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: en
-  Fields:
-  - ID: "eb2af3ca-2892-4044-b791-394344ab8456"
-    Hint: Theme
-    Value: "{264F4CE2-40BC-4CFE-9977-EFFD90A7938C}"
   Versions:
   - Version: 1
     Fields:
@@ -205,9 +223,6 @@ Languages:
     - ID: "328f77a3-08cc-4496-b8c9-184e3c194993"
       Hint: ToolkitHowItWorks
       Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-    - ID: "3da3fb00-31f6-432d-979a-57cee52b9d8a"
-      Hint: Color
-      Value: "{9547C6F8-F73F-4A91-A58F-5AD62343D49D}"
     - ID: "4791fadd-9bb5-4efd-b542-4d2f8bb634e4"
       Hint: ToolkitSubhead
       Value: |
@@ -216,10 +231,6 @@ Languages:
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Προγράμματα Ασφάλισης Υγείας
-    - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
-      Hint: IncludeInSearchResults
-      Type: Checkbox
-      Value: 1
     - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
       Hint: CTA
       Value: |

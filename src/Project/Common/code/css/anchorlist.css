@@ -20,7 +20,7 @@
     display: inline-block; }
   .anchorlist a {
     display: block;
-    padding: 10px 20px;
+    padding: 10px 19px;
     border-radius: 25px;
     margin: 0; }
 
@@ -28,6 +28,9 @@
   #fix-2 {
     width: 100%;
     overflow-x: auto; } }
+
+.achorlist__active {
+  background-color: #fff; }
 
 .theme-health .achorlist__active {
   color: #ff303d;

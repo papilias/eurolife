@@ -1,20 +1,20 @@
 ﻿---
-ID: "2fbc8012-c1c0-4c41-bf48-b3624c3142b2"
-Parent: "7a50f19a-9c15-420c-8bc2-f9410c35ce7f"
+ID: "06cdf192-dde5-4fe1-af02-dbd4a9196dc6"
+Parent: "a09292b1-6332-4922-91db-a24f95871323"
 Template: "1fedd608-b4a0-4db4-80f0-4e9a50140e17"
-Path: /sitecore/content/Eurolife/Global/Dictionary/Navigation/Link Menu/No Items
+Path: /sitecore/content/Eurolife/Global/Dictionary/News/News List/No Results
 DB: master
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190527T144151Z
+      Value: 20190705T074826Z
     - ID: "38302aff-d022-418e-a9bb-188e32878193"
       Hint: Phrase
-      Value: This menu has no items.
+      Value: "Δεν βρέθηκαν σχετικά άρθρα!"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -1,18 +1,24 @@
 ﻿<template>
-  <section id="panels-wrapper" class="center center--1100 programs">
+  <section class="center center--1100 programs m-b-112">
     <h1 class="h4 m-b-16 t-c">{{ panelsGroup.title }}</h1>
     <p class="m-b-48 t-c center center--650">
       {{ panelsGroup.summary }}
     </p>
 
-    <button v-for="(panel, i) in panelsGroup.panels"
-            @click="changeCurrentPanel(i)"
-            :key="`panel-button-${panel.id}`">
+    <div class="programs__tabs m-b-64 m-t-48">
+      <div v-for="(panel, i) in panelsGroup.panels"
+           :key="`panel-button-${panel.id}`"
+           @click="changeCurrentPanel(i)"
+           :class="['programs__tabs__title', {'programs__tabs__title--active': currentPanel == i }]">
       {{ panel.title }}
-    </button>
+      </div>
+    </div>
 
     <transition-group name="slide" tag="div" mode="out-in">
-      <app-panel v-for="(panel, i) in panelsGroup.panels" :panel="panel" :key="`panel-${panel.id}`" v-if="currentPanel == i"></app-panel>     
+      <app-panel v-for="(panel, i) in panelsGroup.panels" 
+                 :key="`panel-${panel.id}`" 
+                 :panel="panel"
+                 v-show="currentPanel == i"></app-panel>
     </transition-group>
   </section>
 </template>

@@ -26,6 +26,10 @@
 
     $(document).ready(function () {
 
+        if($('.form').length){
+            highLightLabel();
+        }
+
         const horScrollItems = document.querySelector("js-scroll-items");
         if(horScrollItems != null) horScroll();
 
@@ -127,7 +131,46 @@
 
     });
 
-    //
+    $('.programs__tabs__title').click(function(){
+        $programid = $(this).attr('data-id');
+        console.log($programid);
+        $('.programs__tabs__title').removeClass('programs__tabs__title--active');
+        $('.program-wrap').removeClass('program-wrap--active');
+        $(this).addClass('programs__tabs__title--active');
+        $('#'+$programid).addClass('program-wrap--active');
+
+    });
+
+
+    //expand program START
+    $( ".program-controls__more" ).click(function() {
+        $(this).parent().siblings('.program-expander').toggleClass('program-expander--visible');
+    });
+    //expand program END
+
+
+    //expand program START
+    const coverageExpandTrigger = document.querySelector('.js-coverage__expander');
+    const coverageExpander = document.querySelector('.coverage__area');
+    if(coverageExpander != null && coverageExpandTrigger != null) {
+        coverageExpandTrigger.addEventListener('click', _ => {
+            coverageExpander.classList.toggle("coverage__area--expanded");
+        });
+    }
+    //expand coverages END
+
+
+
+
+    const programExpandTriggerMobile = document.querySelectorAll('.js-grid-table-cell--expander');
+    for (const programTrigger of programExpandTriggerMobile) {
+
+        programTrigger.addEventListener('click', _ => {
+            programExpander.classList.toggle("program-expander--visible");
+        });
+    }
+
+
 
     var header = document.getElementById("fix-1");
     var menu = document.getElementById("fix-2");
@@ -320,9 +363,6 @@
 
 
 
-
-
-
     function horScroll() {
         const slider = document.querySelector('.js-scroll-items');
         let isDown = false;
@@ -353,6 +393,27 @@
         });
     }
 
+    function highLightLabel(){
+        $target = $( ".form input[type='text'], .form textarea" );
+        $target.each(function(){
+            var text_value=$(this).val();
+            if(text_value != '')
+            {
+                $(this).parents('.form__item').addClass('filled');
+            }
+        });
 
+        $target.bind('blur', function(){
+            if( !$(this).val() || $(this).hasClass('error')) {
+                if (!$(this).val())
+                    $(this).parents('.form__item').removeClass('filled');
+            }
+        });
+        $target.bind('focus', function(){
+            if( !$(this).val() || $(this).hasClass('error')) {
+                $(this).parents('.form__item').addClass('filled');
+            }
+        });
+    }
 
 })(jQuery);
