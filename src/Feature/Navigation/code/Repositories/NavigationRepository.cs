@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Wedia.Feature.Navigation.Models;
+using Wedia.Foundation.Alerts.Models;
 using Wedia.Foundation.DependencyInjection;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
 
@@ -44,14 +45,19 @@ namespace Wedia.Feature.Navigation.Repositories
       return items;
     }
 
-    public NavigationItems GetLinkMenuItems(Item menuRoot)
+    public NavigationItems GetLinkMenuItems(Item menuRoot, bool descending = false, int limit = 20)
     {
       if (menuRoot == null)
       {
         throw new ArgumentNullException(nameof(menuRoot));
       }
 
-      return GetChildNavigationItems(menuRoot, 0, 0);
+      return GetChildNavigationItems(menuRoot, 0, 0, descending, limit);
+    }
+
+    private NavigationItems InfoMessage(InfoMessage infoMessage)
+    {
+      throw new NotImplementedException();
     }
 
     private Item GetNavigationRoot(Item contextItem)
@@ -99,7 +105,7 @@ namespace Wedia.Feature.Navigation.Repositories
       return ContextItem.ID == item.ID || ContextItem.Axes.GetAncestors().Any(a => a.ID == item.ID);
     }
 
-    private NavigationItems GetChildNavigationItems(Item parentItem, int level, int maxLevel)
+    private NavigationItems GetChildNavigationItems(Item parentItem, int level, int maxLevel, bool descending = false, int limit = 20)
     {
       if (level > maxLevel || !parentItem.HasChildren)
       {
@@ -108,11 +114,15 @@ namespace Wedia.Feature.Navigation.Repositories
 
       var childItems = parentItem
           .Children
-          .Where(item => IncludeInNavigation(item))
-          .Select(i => CreateNavigationItem(i, level, maxLevel));
+          .Where(item => IncludeInNavigation(item));
+          
+
+      if (descending)
+        childItems = childItems.OrderByDescending(item => item[FieldIDs.Sortorder]);
+          
 
       var navItems = new NavigationItems {
-        NavItems = childItems.ToList()
+        NavItems = childItems.Select(i => CreateNavigationItem(i, level, maxLevel)).ToList()
       };
 
       if (parentItem.DescendsFrom(Templates.NavigationRoot.ID))
@@ -123,6 +133,5 @@ namespace Wedia.Feature.Navigation.Repositories
       return navItems;
 
     }
-
   }
 }

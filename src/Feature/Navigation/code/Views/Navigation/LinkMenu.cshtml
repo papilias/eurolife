@@ -3,40 +3,40 @@
 @model Wedia.Feature.Navigation.Models.NavigationItems
 
 @{
-    if (Model?.NavItems == null)
-    {
-        return;
-    }
+  if (Model?.NavItems == null)
+  {
+    return;
+  }
 }
 
 <section>
-    <div id="fix-2" class="sticky-pending">
-        <ul class="center center--1100 anchorlist">
-            @foreach (var item in Model.NavItems)
+  <div id="fix-2" class="sticky-pending">
+    <ul class="center center--1100 anchorlist">
+      @foreach (var item in Model.NavItems)
+      {
+        var activeClass = item.IsActive ? "achorlist__active" : "";
+
+        if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
+        {
+          activeClass += "divider-left";
+        }
+
+        <li>
+          <a href="@item.Url" target="@item.Target" class="@activeClass">
+            @if (!string.IsNullOrWhiteSpace(item.Item[Templates.LinkMenuItem.Fields.Icon]))
             {
-                var activeClass = item.IsActive ? "achorlist__active" : "";
-
-                if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
-                {
-                    activeClass += "divider-left";
-                }
-
-                <li>
-                    <a href="@item.Url" target="@item.Target" class="@activeClass">
-                        @if (!string.IsNullOrWhiteSpace(item.Item[Templates.LinkMenuItem.Fields.Icon]))
-                        {
-                            <span class="@item.Item[Templates.LinkMenuItem.Fields.Icon]"></span>
-                        }
-                        else
-                        {
-                            @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
-                        }
-                    </a>
-                </li>
-
+              <span class="@item.Item[Templates.LinkMenuItem.Fields.Icon]"></span>
             }
-        </ul>
-    </div>
-    <div id="after-sticky-2" class="after-sticky"></div>
+            else
+            {
+              @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
+            }
+          </a>
+        </li>
+
+      }
+    </ul>
+  </div>
+  <div id="after-sticky-2" class="after-sticky"></div>
 </section>
 
