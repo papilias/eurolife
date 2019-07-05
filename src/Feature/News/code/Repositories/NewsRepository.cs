@@ -5,9 +5,11 @@ using Sitecore.Buckets.Extensions;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Wedia.Feature.News.Models;
+using Wedia.Feature.Search.Models;
 using Wedia.Foundation.DependencyInjection;
 using Wedia.Foundation.Indexing.Models;
 using Wedia.Foundation.Indexing.Repositories;
+using NewsPagingSettings = Wedia.Feature.News.Models.PagingSettings;
 
 namespace Wedia.Feature.News.Repositories
 {
@@ -15,10 +17,12 @@ namespace Wedia.Feature.News.Repositories
   public class NewsRepository : INewsRepository
   {
     private readonly ISearchServiceRepository _searchServiceRepository;
+    private readonly SearchSettingsBase _searchBaseSettings;
 
     public NewsRepository(ISearchServiceRepository searchServiceRepository)
     {
       _searchServiceRepository = searchServiceRepository;
+      _searchBaseSettings = new SearchSettingsBase { Templates = new[] { Templates.NewsArticle.ID } };
     }
 
     public IEnumerable<Item> GetList(Item contextItem)
@@ -29,6 +33,32 @@ namespace Wedia.Feature.News.Repositories
     public IEnumerable<Item> GetLatest(Item contextItem, int count)
     {
       return Get(contextItem).OrderByDescending(i => i[Templates.NewsArticle.Fields.Date]).Take(count);
+    }
+
+    public NewsPageResults GetPagedList(Item contextItem, NewsPagingSettings pagingSettings, int? page)
+    {
+      var pageNumber = page == null ? 0 : page < 0 ? 0 : page.Value;
+
+      var searchQuery = new SearchQuery
+      {
+        QueryText = "*",
+        Page = pageNumber,
+        NoOfResults = pagingSettings.ResultsOnPage
+      };
+
+      var searchService = _searchServiceRepository.Get(_searchBaseSettings);
+
+      searchService.Settings.Root = contextItem;
+
+      var results = searchService.Search(searchQuery);
+
+      return new NewsPageResults
+      {
+        ResultsOnPage = pagingSettings.ResultsOnPage,
+        Results = results,
+        TotalResults = results.TotalNumberOfResults,
+        Page = pageNumber
+      };
     }
 
     public ArticleNavigation GetArticleNavigation(Item contextItem)
@@ -55,13 +85,8 @@ namespace Wedia.Feature.News.Repositories
 
     private IEnumerable<Item> Get(Item contextItem)
     {
-      if (contextItem == null)
-      {
-        throw new ArgumentNullException(nameof(contextItem));
-      }
-
       var searchService = _searchServiceRepository
-        .Get(new SearchSettingsBase { Templates = new[] { Templates.NewsArticle.ID } });
+        .Get(_searchBaseSettings);
 
       searchService.Settings.Root = contextItem;
 

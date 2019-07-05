@@ -28,12 +28,6 @@ namespace Wedia.Feature.News
         public static readonly ID Body = new ID("{4F14C1C9-29A8-4039-BE45-351A340C4D54}");
         public const string Body_FieldName = "NewsBody";
       }
-
-      public struct Dimensions
-      {
-        public static readonly int LatestArticlesImageWidth = 328;
-        public static readonly int LatestArticlesImageHeight = 200;
-      }
     }
 
     public struct NewsFolder

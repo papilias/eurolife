@@ -10,5 +10,6 @@ namespace Wedia.Feature.News.Repositories
     IEnumerable<Item> GetList(Item contextItem);
     IEnumerable<Item> GetLatest(Item contextItem, int count);
     ArticleNavigation GetArticleNavigation(Item contextItem);
+    NewsPageResults GetPagedList(Item contextItem, PagingSettings pagingSettings, int? page);
   }
 }

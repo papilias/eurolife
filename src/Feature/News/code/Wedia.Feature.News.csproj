@@ -98,16 +98,25 @@
     <Content Include="App_Config\Include\Feature\Feature.News.config" />
     <Content Include="App_Config\Include\Feature\Feature.News.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
+    <Content Include="Scripts\News\news.js" />
     <Content Include="Views\News\CSRNewsArticle.cshtml" />
     <Content Include="Views\News\CSRNewsPageHeader.cshtml" />
     <Content Include="Views\News\LatestNews.cshtml" />
     <Content Include="Views\News\CSRArticlesList.cshtml" />
     <Content Include="Views\News\ArticleNavigation.cshtml" />
+    <Content Include="Views\News\PagedNewsList.cshtml" />
+    <Content Include="Views\News\PagedListItems.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contants.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
     <Compile Include="Models\ArticleNavigation.cs" />
+    <Compile Include="Models\NewsPagingDto.cs" />
+    <Compile Include="Models\PagingSettings.cs" />
+    <Compile Include="Models\NewsPageResults.cs" />
     <Compile Include="Repositories\NewsRepository.cs" />
     <Compile Include="Indexing\NewsIndexingProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -144,6 +153,10 @@
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Search\code\Wedia.Feature.Search.csproj">
+      <Project>{A975041D-3A89-413D-8B9B-BF323E2CF2BE}</Project>
+      <Name>Wedia.Feature.Search</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

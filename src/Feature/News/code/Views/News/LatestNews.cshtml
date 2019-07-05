@@ -14,7 +14,7 @@
     {
     <article>
       
-      @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.DesktopImage, item, Templates.NewsArticle.Dimensions.LatestArticlesImageHeight, Templates.NewsArticle.Dimensions.LatestArticlesImageWidth)
+      @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.DesktopImage, item, Contants.ImageDimensions.ArticleCardImageHeight, Contants.ImageDimensions.ArticleCardImageWidth)
       <div class="latest__details">
         <time>@Html.Sitecore().Field(Templates.NewsArticle.Fields.Date, item)</time>
         <h2 class="h6 latest__title">
