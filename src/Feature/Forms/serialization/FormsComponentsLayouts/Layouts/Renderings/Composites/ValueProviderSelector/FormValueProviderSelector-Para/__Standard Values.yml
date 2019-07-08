@@ -1,0 +1,25 @@
+﻿---
+ID: "425966e5-cf62-46d0-9d4d-7683137facc4"
+Parent: "08483dc9-bcf2-413b-b29f-ddcf8e9622d3"
+Template: "08483dc9-bcf2-413b-b29f-ddcf8e9622d3"
+Path: "/sitecore/client/Applications/FormsBuilder/Components/Layouts/Renderings/Composites/ValueProviderSelector/FormValueProviderSelector-Parameters/__Standard Values"
+DB: core
+SharedFields:
+- ID: "3e079fc3-6b2d-41c9-9204-374a786fc761"
+  Hint: BindingConfiguration
+  Value: %7bName%7d=SelectedItemId
+- ID: "c5217339-80d0-4725-9340-574eed8e9082"
+  Hint: RenderingItemId
+  Value: "{41FEB2F6-C0DA-4383-A63A-4C6C36A4E385}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180405T102833Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

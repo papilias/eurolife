@@ -1,0 +1,25 @@
+﻿---
+ID: "c405291c-ad09-4a84-911f-08e781f22dae"
+Parent: "8c5a9b1d-e03f-4fce-baec-13281d6e8cd6"
+Template: "8c5a9b1d-e03f-4fce-baec-13281d6e8cd6"
+Path: "/sitecore/client/Applications/FormsBuilder/Components/Layouts/Renderings/Composites/DatesManager/FormDatesManager-Parameters/__Standard Values"
+DB: core
+SharedFields:
+- ID: "3e079fc3-6b2d-41c9-9204-374a786fc761"
+  Hint: BindingConfiguration
+  Value: min=StartDate&max=EndDate&%7bName%7d=SelectedDate
+- ID: "c5217339-80d0-4725-9340-574eed8e9082"
+  Hint: RenderingItemId
+  Value: "{1A89ABFC-8787-48F2-B148-D3556D817B32}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170627T141616Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

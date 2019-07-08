@@ -1,0 +1,25 @@
+﻿---
+ID: "b137e310-644c-42a8-9834-5eed6fe87ef1"
+Parent: "74874973-688f-4b39-97a0-b0e275234151"
+Template: "74874973-688f-4b39-97a0-b0e275234151"
+Path: "/sitecore/client/Applications/FormsBuilder/Components/Layouts/Renderings/Composites/DatasourceManager/FormDatasourceManager-Parameters/__Standard Values"
+DB: core
+SharedFields:
+- ID: "3e079fc3-6b2d-41c9-9204-374a786fc761"
+  Hint: BindingConfiguration
+  Value: %7bName%7d=CompItems
+- ID: "c5217339-80d0-4725-9340-574eed8e9082"
+  Hint: RenderingItemId
+  Value: "{E102E6E7-1AEF-4F23-AF58-01AFF299E9CA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170220T103342Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

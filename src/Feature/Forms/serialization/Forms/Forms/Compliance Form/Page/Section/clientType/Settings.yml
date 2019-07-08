@@ -1,0 +1,14 @@
+﻿---
+ID: "57d2245a-0f54-4a1e-b7a9-529eb5bb2894"
+Parent: "8af2fa65-0519-40c0-9b59-40201f374832"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/Forms/Compliance Form/Page/Section/clientType/Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190701T122836Z

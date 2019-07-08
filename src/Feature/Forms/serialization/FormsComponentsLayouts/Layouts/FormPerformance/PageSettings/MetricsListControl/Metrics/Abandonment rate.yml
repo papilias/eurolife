@@ -1,0 +1,104 @@
+﻿---
+ID: "42ebdaff-3286-4643-a218-412c904e2998"
+Parent: "fa14a231-41f3-4c36-9e5b-9e050dfab5fe"
+Template: "714b8a6c-4417-4971-8abd-3102a13b422a"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/FormPerformance/PageSettings/MetricsListControl/Metrics/Abandonment rate
+DB: core
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: /sitecore/shell/client/Applications/FormsBuilder/assets/images/icon_abandonment_rate.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Rate for afbrudte køb
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100306Z
+    - ID: "31c7abdf-a92b-4d4f-9345-bb3406bc2e36"
+      Hint: Text
+      Value: Procentdel, der ikke sender formularen
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Abbruchsrate
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100603Z
+    - ID: "31c7abdf-a92b-4d4f-9345-bb3406bc2e36"
+      Hint: Text
+      Value: Prozentsatz der nicht eingereichten Formulare
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Abandonment rate
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170503T112958Z
+    - ID: "31c7abdf-a92b-4d4f-9345-bb3406bc2e36"
+      Hint: Text
+      Value: Percentage not submitting the form
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 破棄率
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100839Z
+    - ID: "31c7abdf-a92b-4d4f-9345-bb3406bc2e36"
+      Hint: Text
+      Value: フォームを送信していない割合
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 放弃率
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T101121Z
+    - ID: "31c7abdf-a92b-4d4f-9345-bb3406bc2e36"
+      Hint: Text
+      Value: 未提交表单的百分比
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,25 @@
+﻿---
+ID: "282cb4f2-a55c-4401-ad62-4d44f0c80ce5"
+Parent: "92209f8d-c413-4017-bf56-6153789663d7"
+Template: "92209f8d-c413-4017-bf56-6153789663d7"
+Path: "/sitecore/client/Applications/FormsBuilder/Components/Layouts/Renderings/Composites/ConditionsManager/FormConditionsManager-Parameters/__Standard Values"
+DB: core
+SharedFields:
+- ID: "3e079fc3-6b2d-41c9-9204-374a786fc761"
+  Hint: BindingConfiguration
+  Value: conditionSettings_fieldKey=FieldKey&conditionSettings_fieldConditions=FieldConditions&conditionSettingsList=ConditionSettingsList
+- ID: "c5217339-80d0-4725-9340-574eed8e9082"
+  Hint: RenderingItemId
+  Value: "{5008FF6F-BA92-488E-9541-804C2F559D99}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180226T142940Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

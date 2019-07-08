@@ -1,0 +1,137 @@
+﻿---
+ID: "3dbf3675-80e8-4189-ab6d-0ddac4697d21"
+Parent: "d0ffa66f-dce0-45ea-8253-385303324d8b"
+Template: "8a7acb1a-0990-4c9e-a6f0-9612d0f5f51c"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGrid/PageSettings/PropertyGridTabControl/General
+DB: core
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{2D1B97C5-21BC-4DDD-AEED-4AF9FF9CDA8B}"
+          p:before="*"
+          s:id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          s:par="Id=PropertyGeneralBorder"
+          s:ph="" />
+        <r
+          uid="{4B4BCAA5-58E6-4194-9611-3AB6EC295EF0}"
+          p:after="r[@uid='{2D1B97C5-21BC-4DDD-AEED-4AF9FF9CDA8B}']"
+          s:id="{4FCB66FF-03DF-4F4E-BD4D-A017CDFC4B09}"
+          s:par="Id=ProgressIndicatorPanel&amp;IsFullWidth=1&amp;Delay=1000"
+          s:ph="PropertyGeneralBorder.Content" />
+        <r
+          uid="{A22A9A44-A3AB-4511-A222-07AFA08B4689}"
+          p:after="*[1=2]"
+          s:id="{90F4E9F6-B3C3-4A76-A7E8-FCCF6E68EC2D}"
+          s:par="Id=PropertiesPanel"
+          s:ph="ProgressIndicatorPanel.Content" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Generelt
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100304Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: Generelt
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: Generelt
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Allgemein
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100602Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: Allgemein
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: Allgemein
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170505T143409Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: General
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: General
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 一般
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100837Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: 一般
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: 一般
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 常规
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T101119Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: 常规
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: 常规

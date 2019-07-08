@@ -1,0 +1,142 @@
+﻿---
+ID: "92274085-6b97-4b19-ae3a-ce6ce2ba8f99"
+Parent: "d0ffa66f-dce0-45ea-8253-385303324d8b"
+Template: "8a7acb1a-0990-4c9e-a6f0-9612d0f5f51c"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/PropertyGrid/PageSettings/PropertyGridTabControl/FieldPerformance
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "c8b0cbfc-960c-4a4f-aa94-950fe2476fb6"
+  Hint: IsSubAppRegistered
+  Type: Checkbox
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E76F4E0A-43B0-4585-9475-FC77DEFCD384}"
+          p:before="*"
+          s:id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          s:par="Id=PropertyPerformanceBorder"
+          s:ph="" />
+        <r
+          uid="{AD13CA0D-B0BA-45FC-BA4B-649CD84265A9}"
+          p:after="*[1=2]"
+          s:id="{DE943A70-61A4-4D27-A166-C79A5BC9683A}"
+          s:par="ConfigurationItem=%7b2A540664-372D-42FF-9FBC-963AD2246FA8%7d&amp;Id=FieldPerformance"
+          s:ph="PropertyPerformanceBorder.Content" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Performance
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100328Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: Performance
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: Performance
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Performance
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100629Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: Performance
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: Performance
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Performance
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170505T143711Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: Performance
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: Performance
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: パフォーマンス
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100908Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: パフォーマンス
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: パフォーマンス
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 性能
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T101151Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "772aea8a-4d70-43f4-bd6b-ede5fb060623"
+      Hint: Tooltip
+      Value: 性能
+    - ID: "f808909e-dc32-4da6-9e5e-ed69eb9d3ed7"
+      Hint: Header
+      Value: 性能

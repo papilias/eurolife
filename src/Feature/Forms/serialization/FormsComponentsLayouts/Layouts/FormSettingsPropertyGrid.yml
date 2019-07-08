@@ -1,0 +1,148 @@
+﻿---
+ID: "345bb0da-58fb-4aeb-9482-dc5cb8286637"
+Parent: "02e48132-df0d-4300-a05d-a908d1db13c0"
+Template: "5f2c442f-2554-4c80-b1d9-2195fa6168b1"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/FormSettingsPropertyGrid
+DB: core
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+        <r
+          id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          par="Id=FormSettingsBorder"
+          uid="{470F8D69-AE76-4529-A263-AB890F93CD13}" />
+        <r
+          id="{CB83D434-31ED-4AC3-A280-CCE2B63F9743}"
+          par="PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fApplications%2fFormsBuilder%2fLayouts%2fFormSettingsPropertyGrid%2fFormSettingsPropertyGrid.js"
+          ph="FormSettingsBorder.Content"
+          uid="{29B502F2-1238-48A2-9BAB-7453849BEDFD}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="Id=RequiredFieldErrorText&amp;IsVisible=0"
+          ph="FormSettingsBorder.Content"
+          uid="{A840067C-8A67-4CDA-A09C-2CAC31F81925}" />
+        <r
+          id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          par="Id=SpacingBorder1&amp;PaddingType=Top&amp;UsePadding=1"
+          ph="FormSettingsBorder.Content"
+          uid="{E39B58AB-7745-4EBD-89FE-242166B4EC68}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="ConfigurationItem=%7b7014F67B-849B-4D9C-A77D-C3C80D80BF07%7d&amp;Id=SettingsTitle"
+          ph="FormSettingsBorder.Content"
+          uid="{71DC09FF-B53D-4DF8-9D19-856F161AA000}" />
+        <r
+          id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          par="Id=SpacingBorder"
+          ph="FormSettingsBorder.Content"
+          uid="{4C71FEF6-59A5-41E8-B0FD-B87944D1C605}" />
+        <r
+          id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}"
+          par="ConfigurationItem=%7b4F3B5A19-2C0F-4A28-9CF6-DD42176D7E4E%7d&amp;Id=SettingsDescription"
+          ph="FormSettingsBorder.Content"
+          uid="{73A580C5-A4CD-40A3-A1AB-1028F5F1E641}" />
+        <r
+          id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}"
+          par="Id=FormSettingsContentBorder"
+          ph="FormSettingsBorder.Content"
+          uid="{CB44D23D-1D90-40A5-B036-D4FDDDE69FC6}" />
+        <r
+          id="{59E2A66D-11D2-488D-A3BC-6C1C81326645}"
+          par="FieldDefinitionType=%7b83C3E20E-8E9B-49CE-93DA-1F31EE559416%7d&amp;SectionVisualization=%7b738F888B-46A9-47B6-947C-450D696B548F%7d&amp;Id=SettingsForm&amp;FieldsLayout=%7b0F6F5EFF-73B4-4597-A232-F50DF253514E%7d"
+          ph="FormSettingsContentBorder.Content"
+          uid="{3FFE6037-8FCC-4704-BD0D-536E82CD4D09}" />
+      </d>
+    </r>
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: FormularIndstillingerEgenskabGitter
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100302Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: FormularIndstillingerEgenskabGitter
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: FormularEinstellungenEigenschaftGrid
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100559Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: FormularEinstellungenEigenschaftGrid
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161115T150836Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: FormSettingsPropertyGrid
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: フォーム設定プロパティGUID
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100833Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: フォーム設定プロパティGUID
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 表单设置属性网格
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T101115Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7205a57f-93b4-413a-aa9a-6b16bbc59565"
+      Hint: BrowserTitle
+      Value: 表单设置属性网格

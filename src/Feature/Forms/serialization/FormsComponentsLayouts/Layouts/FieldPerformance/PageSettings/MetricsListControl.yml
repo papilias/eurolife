@@ -1,0 +1,102 @@
+﻿---
+ID: "525ac1ba-9e4f-4dd1-82bb-0ffd7f46fdf9"
+Parent: "8427dec2-8ce3-4b13-b8be-4fd1ca73180a"
+Template: "cd8b9663-036a-4c69-bb29-156b8c1b185e"
+Path: /sitecore/client/Applications/FormsBuilder/Components/Layouts/FieldPerformance/PageSettings/MetricsListControl
+DB: core
+SharedFields:
+- ID: "0cc7f24b-2013-46c6-8ae3-5233d094ff7c"
+  Hint: StaticData
+  Value: "{89D3E514-BDC0-4D25-B7C9-A8F55C4EDDA3}"
+- ID: "33ade740-c24c-48c8-b840-bc27a9568a31"
+  Hint: IsSelectionDisabled
+  Type: Checkbox
+  Value: 1
+- ID: "33f37f8e-cdb1-49e2-974f-a8f149bddeda"
+  Hint: IsStateDiscarded
+  Type: Checkbox
+  Value: 1
+- ID: "34cdf1db-7cc8-449a-b0b4-e974e600b349"
+  Hint: TileTemplatePath
+  Value: /sitecore/shell/client/Applications/FormsBuilder/Layouts/Performance/MetricsTiles/MetricsTile.html
+- ID: "7a61eed0-760e-4426-b7d4-0f3cb3719316"
+  Hint: TileCssPath
+  Value: /sitecore/shell/client/Applications/FormsBuilder/Layouts/Performance/MetricsTiles/MetricsTile.css
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "c3ca613a-45c9-4800-97bd-3f53554c7121"
+  Hint: ViewMode
+  Value: TileList
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: MetrikværdierListeKontrol
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100310Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: MetrikenListeSteuerung
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100608Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170503T103036Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: メトリクス リスト コントロール
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T100845Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 度量标准列表控件
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20181101T101127Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

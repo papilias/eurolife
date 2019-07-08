@@ -1,0 +1,18 @@
+﻿---
+ID: "50725d15-59ce-45f2-bac2-bc42e54b80ef"
+Parent: "18bf56fe-ca90-44f2-aec1-24a4cbf6dfbb"
+Template: "8ea2cf67-4250-47a2-aeca-4f70fd200dc7"
+Path: /sitecore/system/Settings/Rules/ValueProviderConditions/Rules
+DB: master
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{9AD7A893-37D9-4726-8FA4-E23B3F9DB826}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190225T123840Z
