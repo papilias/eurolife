@@ -11,12 +11,6 @@ SharedFields:
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
   Value: "{2023B8EE-3341-4B6E-AA88-06C90B09D9CC}"
-- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
-  Hint: Controller Action
-  Value: 
-- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
-  Hint: Controller
-  Value: 
 Languages:
 - Language: en
   Versions:

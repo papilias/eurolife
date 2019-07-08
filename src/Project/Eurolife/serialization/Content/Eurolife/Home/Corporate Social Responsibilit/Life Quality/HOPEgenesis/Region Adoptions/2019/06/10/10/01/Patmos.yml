@@ -4,12 +4,13 @@ Parent: "af96ccdf-d8e3-48b6-b05d-ed96751e8509"
 Template: "2a8d0010-55dc-4af8-9ecb-e590d157d546"
 Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/Life Quality/HOPEgenesis/Region Adoptions/2019/06/10/10/01/Patmos
 DB: master
+SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
-  Fields:
-  - ID: "eb2af3ca-2892-4044-b791-394344ab8456"
-    Hint: Theme
-    Value: "{0FDEBFFE-AB6D-49AF-810A-52E9D9B9064B}"
   Versions:
   - Version: 1
     Fields:
@@ -45,10 +46,6 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190610T100143Z
-    - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
-      Hint: IncludeInSearchResults
-      Type: Checkbox
-      Value: 1
     - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
       Hint: NewsBody
       Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.

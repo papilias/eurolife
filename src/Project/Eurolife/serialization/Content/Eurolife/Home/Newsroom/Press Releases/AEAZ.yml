@@ -16,14 +16,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "92184ee7-4ee4-466b-85bc-ad334bb2beee"
-      Hint: PDFFiles
-      Type: Multilist with Search
-      Value: |
-        {8737530C-DD1B-4782-9226-2FBD7A873EEA}
-        {136807AE-C732-41E9-917B-766D7A6624B8}
-        {DF7F16C4-7743-4896-82E7-0488F011E54F}
-        {2A02B5D0-63CD-40A9-8414-A38FF18911F0}
     - ID: "f4543aeb-0454-4609-afec-d2ab0dd4fa11"
       Hint: PDFFileGroup
       Value: "{FCAADED3-358B-47ED-B0E2-7330F18FF5C1}"

@@ -24,7 +24,7 @@ Languages:
       Hint: PersonTitle
       Value: Employee 15
     - ID: "a212c93a-7c83-4fed-bc5a-5b035baeff50"
-      Hint: PersonDekstopImage
+      Hint: PersonImage
       Value: |
         <image mediapath="" alt="248-512" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{A6075585-F449-475E-8804-8F092F59F22D}" ></image>
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"

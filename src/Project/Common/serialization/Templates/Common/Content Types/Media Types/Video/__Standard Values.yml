@@ -1,8 +1,8 @@
----
+﻿---
 ID: "63be2989-ddbd-4e62-b3d5-73e09ad7cd2d"
 Parent: "6dec0d88-0878-44d4-960b-d151edb81ae1"
 Template: "6dec0d88-0878-44d4-960b-d151edb81ae1"
-Path: /sitecore/templates/Project/Common/Content Types/Media/Video/__Standard Values
+Path: /sitecore/templates/Project/Common/Content Types/Media Types/Video/__Standard Values
 DB: master
 Languages:
 - Language: en

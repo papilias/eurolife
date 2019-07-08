@@ -5,6 +5,9 @@ Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
 Path: /sitecore/layout/Renderings/Feature/Search/Global Search
 DB: master
 SharedFields:
+- ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
+  Hint: JavaScript assets
+  Value: /scripts/search/search.js
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: GlobalSearch
@@ -19,6 +22,3 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190702T122816Z
-    - ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
-      Hint: JavaScript assets
-      Value: /scripts/search/search.js

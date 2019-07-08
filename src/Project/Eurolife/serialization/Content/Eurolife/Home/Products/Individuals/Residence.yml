@@ -126,9 +126,6 @@ Languages:
     - ID: "328f77a3-08cc-4496-b8c9-184e3c194993"
       Hint: ToolkitHowItWorks
       Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-    - ID: "3da3fb00-31f6-432d-979a-57cee52b9d8a"
-      Hint: Color
-      Value: "{A43E6423-6CE1-4BF2-AC60-1DCC9947C87A}"
     - ID: "4791fadd-9bb5-4efd-b542-4d2f8bb634e4"
       Hint: ToolkitSubhead
       Value: Στις ενότητες που ακολουθούν

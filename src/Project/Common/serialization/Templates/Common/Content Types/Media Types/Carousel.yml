@@ -1,8 +1,8 @@
----
+﻿---
 ID: "99a565ea-edea-4761-aaf1-77f4d4b2768c"
 Parent: "c6d97ab3-6f2f-4908-aca0-5e49b9683b0e"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Common/Content Types/Media/Carousel
+Path: /sitecore/templates/Project/Common/Content Types/Media Types/Carousel
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

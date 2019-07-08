@@ -5,6 +5,10 @@ Template: "ae711333-bf88-44a2-b049-2aaec5d679fa"
 Path: /sitecore/content/Eurolife/Home/Contact Us/Useful Docs
 DB: master
 SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 600
@@ -43,10 +47,6 @@ Languages:
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Χρήσιμα Έντυπα
-    - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
-      Hint: IncludeInSearchResults
-      Type: Checkbox
-      Value: 1
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox

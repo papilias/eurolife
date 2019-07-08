@@ -18,10 +18,10 @@ Languages:
         sitecore\Admin
     - ID: "92184ee7-4ee4-466b-85bc-ad334bb2beee"
       Hint: PDFFiles
-      Type: TreelistEx
+      Type: Multilist with Search
       Value: |
         {8737530C-DD1B-4782-9226-2FBD7A873EEA}
         {2B87C416-F4C9-4942-B109-F0952DEE07E3}
     - ID: "ff6fc789-f1f2-495e-8a94-efcbc528e1c6"
-      Hint: PDFGroupTitle
+      Hint: MediaGroupTitle
       Value: Ανακοινώσεις

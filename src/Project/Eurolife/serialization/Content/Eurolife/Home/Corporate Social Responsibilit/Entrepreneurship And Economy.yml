@@ -4,6 +4,11 @@ Parent: "a5f4940a-1774-4a2d-b5c4-07c728cdf01a"
 Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
 Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/Entrepreneurship And Economy
 DB: master
+SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:
@@ -22,10 +27,6 @@ Languages:
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Entrepreneurship & Economy
-    - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
-      Hint: IncludeInSearchResults
-      Type: Checkbox
-      Value: 1
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox

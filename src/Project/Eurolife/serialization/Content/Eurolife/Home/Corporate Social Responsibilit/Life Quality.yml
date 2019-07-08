@@ -4,6 +4,11 @@ Parent: "a5f4940a-1774-4a2d-b5c4-07c728cdf01a"
 Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
 Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/Life Quality
 DB: master
+SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:
@@ -56,10 +61,6 @@ Languages:
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Ποιότητα ζωής
-    - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
-      Hint: IncludeInSearchResults
-      Type: Checkbox
-      Value: 1
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: Βρισκόμαστε δίπλα τους, σε ό,τι είναι σημαντικό για τους ίδιους και τη ζωή τους. Γι'αυτό και συνεργαζόμαστε με δύο οργανισμούς που έχουν στον πυρήνα των δραστηριοτήτων τους τον άνθρωπο.
