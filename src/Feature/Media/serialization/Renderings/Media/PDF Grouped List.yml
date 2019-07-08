@@ -14,6 +14,9 @@ SharedFields:
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: 
+- ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
+  Hint: JavaScript assets
+  Value: /scripts/media/media.js
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: PDFGroupedList
@@ -32,6 +35,3 @@ Languages:
       Hint: Supports Local Datasource
       Type: Checkbox
       Value: 0
-    - ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
-      Hint: JavaScript assets
-      Value: /scripts/media/media.js
