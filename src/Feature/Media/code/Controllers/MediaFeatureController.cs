@@ -5,6 +5,7 @@ using Wedia.Feature.Media.Models;
 using Wedia.Feature.Media.Repositories;
 using Sitecore.Sites;
 using Wedia.Foundation.SitecoreExtensions.Utilities;
+using Wedia.Foundation.SitecoreExtensions.Repositories;
 
 namespace Wedia.Feature.Media.Controllers
 {
@@ -12,32 +13,35 @@ namespace Wedia.Feature.Media.Controllers
   {
     private readonly IMediaRepository _mediaRepository;
 
-    public MediaFeatureController(IMediaRepository mediaRepository)
+    private readonly IRenderingPropertiesRepository _renderingPropertiesRepository;
+
+    public MediaFeatureController(IMediaRepository mediaRepository, IRenderingPropertiesRepository renderingPropertiesRepository)
     {
       _mediaRepository = mediaRepository;
+      _renderingPropertiesRepository = renderingPropertiesRepository;
     }
 
-    public ActionResult PDFGroupedList(PdfGroupDto currentGroup)
+    public ActionResult PDFGroupedList(PDFGroupDto pdfGroupDto)
     {
-      ID id;
-      ID.TryParse(currentGroup.Group, out id);
-      var viewModel = _mediaRepository.GetPDFGroupedList(RenderingContext.Current.ContextItem, id);
+      var pagingSettings = _renderingPropertiesRepository.Get<PagingSettings>(RenderingContext.Current.Rendering);
+      pagingSettings.CurrentGroupID = pdfGroupDto.Group != null ? new ID(pdfGroupDto.Group) : null;   
+
+      var viewModel = _mediaRepository.GetPDFGroupedList(RenderingContext.Current.ContextItem, pagingSettings);
       return View(viewModel);
     }
 
     [HttpGet]
-    public ActionResult AjaxPDFGroupedList(PdfGroupDto currentGroup, int page = 1)
+    public ActionResult AjaxPDFGroupedList(PDFGroupDto pdfGroupDto, int page = 1)
     {
-      ID id;
-      ID.TryParse(currentGroup.Group, out id);
+      pdfGroupDto.CurrentGroupID = new ID(pdfGroupDto.Group);
 
-      var viewModel = _mediaRepository.GetNextPage(id, page);
+      var viewModel = _mediaRepository.GetNextPage(pdfGroupDto, page);
 
       if (viewModel.PDFs.Results == null)
         return Json(new { exhausted = true });
       
       var partial = Utilities.RenderRazorViewToString(ControllerContext, "PDFGroup", viewModel);
-      return Json(new { exhausted = viewModel.TotalPagesCount == page - 1, data = partial }, JsonRequestBehavior.AllowGet);
+      return Json(new { exhausted = viewModel.TotalPagesCount == page + 1, data = partial }, JsonRequestBehavior.AllowGet);
     }
 
   }

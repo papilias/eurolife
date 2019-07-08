@@ -5,13 +5,16 @@ Template: "b2e685e5-6beb-40f5-b6e9-34819cb918ce"
 Path: /sitecore/content/Eurolife/Home/Contact Us/Glossary/Greek/A/Demand
 DB: master
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
+    - ID: "1f40ae97-e31d-4388-b2ec-e23ffe4304eb"
+      Hint: GlossaryTitle
+      Value: Απαίτηση
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190626T095252Z
+      Value: 20190708T141300Z
     - ID: "4d753c7b-d0a0-42d1-9843-e2d23987fe81"
       Hint: Gloss
       Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
@@ -19,6 +22,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "b32edb07-d02e-46fe-8559-122a4f7526d6"
-      Hint: GlossaryTitle
-      Value: Αίτηση ασφάλισης

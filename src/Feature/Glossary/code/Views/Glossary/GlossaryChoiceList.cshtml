@@ -22,6 +22,6 @@
 
 @foreach (var glossary in Model.Item.GetMultiListValueItems(Templates.GlossaryChoiceGroup.Fields.Items))
 {
-  <h3>@Html.Sitecore().Field(Templates.Glossary.Fields.Title, glossary, new { DisableWebEdit = true })</h3>
-  <div>@Html.Sitecore().Field(Templates.Glossary.Fields.Title, glossary, new { DisableWebEdit = true })</div>
+  <h3>@Html.Sitecore().Field(Templates.HasGlossaryTitle.Fields.Title, glossary, new { DisableWebEdit = true })</h3>
+  <div>@Html.Sitecore().Field(Templates.Glossary.Fields.Gloss, glossary, new { DisableWebEdit = true })</div>
 }

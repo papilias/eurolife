@@ -8,7 +8,7 @@ namespace Wedia.Feature.Media.Repositories
 {
   public interface IMediaRepository
   {
-    PDFGroups GetPDFGroupedList([NotNull] Item item, ID currentGroup = null);
-    PDFGroup GetNextPage(ID currentFileGroupID, int page);
+    PDFGroups GetPDFGroupedList([NotNull] Item item, PagingSettings pagingSettings);
+    PDFGroup GetNextPage(PagingSettings pagingSettings, int page);
   }
 }

@@ -96,6 +96,7 @@
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Glossary\GlossaryList.cshtml" />
     <Content Include="Views\Glossary\GlossaryChoiceList.cshtml" />
+    <Content Include="Views\Glossary\GlossaryAccordionChoiceList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
