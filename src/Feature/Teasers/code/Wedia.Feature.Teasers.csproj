@@ -94,7 +94,6 @@
     <Content Include="Views\Teasers\TeaserSticker.cshtml" />
     <Content Include="Views\Teasers\TeaserNumbers.cshtml" />
     <Content Include="Views\Teasers\LightTeaserContent.cshtml" />
-    <Content Include="Views\Teasers\ColoredTeaserList.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserImage.cshtml" />
     <Content Include="Views\Teasers\ImageTeaser.cshtml" />
     <Content Include="Views\Teasers\StaticTwoColumnsTeaser.cshtml" />

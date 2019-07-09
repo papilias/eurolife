@@ -12,38 +12,16 @@ SharedFields:
   Hint: __Sortorder
   Value: 20
 Languages:
-- Language: da
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Overskrift 1
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151003T031056Z
+      Value: 20190709T074359Z
     - ID: "519cd02a-a857-4894-9c9b-ac9bdc472937"
       Hint: Header
-      Value: Overskrift 1
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-- Language: "de-DE"
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Überschrift 1
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T030809Z
-    - ID: "519cd02a-a857-4894-9c9b-ac9bdc472937"
-      Hint: Header
-      Value: Überschrift 1
+      Value: Heading 1
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -65,21 +43,3 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 20060131T143702
-- Language: "ja-JP"
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: 見出し 1
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T030937Z
-    - ID: "519cd02a-a857-4894-9c9b-ac9bdc472937"
-      Hint: Header
-      Value: 見出し 1
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin

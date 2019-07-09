@@ -13,7 +13,7 @@
   return;
 }
 
-@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.DesktopImage))
+@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.Image))
 {
   <section class="solo-teaser m-b-112">
     <div class="solo-teasers__detail-wrap">
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="solo-teaser__image">
-      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.DesktopImage, Model.Item,
+      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image, Model.Item,
         Wedia.Feature.Teasers.Constants.ImageDimensions.ColoredTeaser.Height,
         Wedia.Feature.Teasers.Constants.ImageDimensions.ColoredTeaser.Width)
     </div>

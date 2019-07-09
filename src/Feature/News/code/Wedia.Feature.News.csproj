@@ -99,8 +99,8 @@
     <Content Include="App_Config\Include\Feature\Feature.News.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Scripts\News\news.js" />
-    <Content Include="Views\News\CSRNewsArticle.cshtml" />
-    <Content Include="Views\News\CSRNewsPageHeader.cshtml" />
+    <Content Include="Views\News\NewsArticle.cshtml" />
+    <Content Include="Views\News\NewsPageHeader.cshtml" />
     <Content Include="Views\News\LatestNews.cshtml" />
     <Content Include="Views\News\CSRArticlesList.cshtml" />
     <Content Include="Views\News\ArticleNavigation.cshtml" />

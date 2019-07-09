@@ -15,7 +15,7 @@
 
 @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
 {
-  <section class="product-moto center center--1100">
+  <section id="highlights-list" class="product-moto center center--1100">
     <h1 class="h2 m-b-24 color-health">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title)</h1>
     <p>
       @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary)

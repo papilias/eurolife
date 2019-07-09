@@ -7,10 +7,10 @@ DB: master
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: /sitecore/content/Eurolife/Global/PDFs
+  Value: "StartSearchLocation={09475790-230A-4164-89F1-A782A81498DE}&TemplateFilter={80EA3C96-2CCA-4D69-8824-4B24E9770CBB}"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Droplink
+  Value: Multilist with Search
 Languages:
 - Language: en
   Versions:

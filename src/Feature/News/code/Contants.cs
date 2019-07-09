@@ -9,8 +9,12 @@ namespace Wedia.Feature.News
   {
     public struct ImageDimensions
     {
-      public static readonly int ArticleCardImageWidth = 328;
-      public static readonly int ArticleCardImageHeight = 200;
+      public const int LandingBannerWidth = 1740;
+      public const int LandingBannerHeight = 604;
+      public const int LandingBannerResponsiveWidth = 720;
+      public const int LandingBannerResponsiveHeight = 604;
+      public const int ArticleCardImageWidth = 328;
+      public const int ArticleCardImageHeight = 200;
     }
   }
 }

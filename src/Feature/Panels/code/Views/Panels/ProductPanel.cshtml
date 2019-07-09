@@ -5,7 +5,7 @@
 @using Newtonsoft.Json
 @model Panel
 
-<section class="center center--1100 programs">
+<section id="panel" class="center center--1100 programs">
   <h1 class="h4 m-b-16 t-c">
     @Model.Title
   </h1>
@@ -16,5 +16,5 @@
 
   <app-panel :panel="@JsonConvert.SerializeObject(Model)"></app-panel>
 
-  @Html.Partial("./PanelControls");
+  @Html.Partial("./PanelControls")
 </section>

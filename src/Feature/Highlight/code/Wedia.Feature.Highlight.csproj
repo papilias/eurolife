@@ -83,7 +83,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Highlight.config" />
     <Content Include="App_Config\Include\Feature\Feature.Highlight.Serialization.config" />
-    <Content Include="Views\Highlight\HighlightsSection.cshtml" />
+    <Content Include="Views\Highlight\HighlightsColumnsSectionWithIcon.cshtml" />
     <Content Include="Views\Highlight\HighlightsSectionCTA.cshtml" />
     <Content Include="Views\Highlight\HighlightsAccordion.cshtml" />
     <Content Include="Views\Highlight\HighlightsAccordionsGroup.cshtml" />

@@ -9,19 +9,20 @@ SharedFields:
   Hint: __Sortorder
   Value: 50
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190528T115306Z
+      Value: 20190709T090419Z
+    - ID: "46a86135-502b-4015-82fb-a4d54ab61719"
+      Hint: PanelTooltip
+      Value: I am a tooltip
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "ae0c5505-9bcd-4218-9e66-e5be620bcc7c"
       Hint: Value
-      Value: |
-        70% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-        
+      Value: 70% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.

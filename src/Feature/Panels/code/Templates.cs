@@ -67,6 +67,7 @@ namespace Wedia.Feature.Panels
         public static readonly ID Row = new ID("{3C78FA0C-C0BD-42DA-BD52-6C3EC55A2C73}");
         public static readonly ID Value = new ID("{AE0C5505-9BCD-4218-9E66-E5BE620BCC7C}");
         public static readonly ID Check = new ID("{79F18C52-1570-4ECB-B32E-A55DF2FB321D}");
+        public static readonly ID Tooltip = new ID("{46A86135-502B-4015-82FB-A4D54AB61719}");
       }
     }
 

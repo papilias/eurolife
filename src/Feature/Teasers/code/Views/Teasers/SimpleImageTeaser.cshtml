@@ -13,14 +13,9 @@
     return;
 }
 
-@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.DesktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor)
 {
-    @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.DesktopImage)
-}
-
-@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.MobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
-{
-    @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.MobileImage)
+    @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image)
 }
 
 @Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)

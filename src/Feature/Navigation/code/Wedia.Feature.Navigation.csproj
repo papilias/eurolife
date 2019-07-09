@@ -80,7 +80,7 @@
     <Content Include="App_Config\Include\Feature\Feature.Navigation.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Navigation\Breadcrumb.cshtml" />
-    <Content Include="Views\Navigation\LinkMenu.cshtml" />
+    <Content Include="Views\Navigation\RoundedLinkMenu.cshtml" />
     <Content Include="Views\Navigation\NavigationLinks.cshtml" />
     <Content Include="Views\Navigation\SocialMenu.cshtml" />
     <Content Include="Views\Navigation\HorizontalNavigationLinks.cshtml" />

@@ -66,8 +66,9 @@ namespace Wedia.Feature.Panels.Repositories
       {
         ID = item.ID,
         ParentID = item.ParentID,
-        Value = item.Fields[Templates.PanelRowItemValue.Fields.Value].Value,
-        IsChecked = item.Fields[Templates.PanelRowItemValue.Fields.Check].IsChecked()
+        Value = item.Fields[Templates.PanelRowItemValue.Fields.Value]?.Value,
+        IsChecked = item.Fields[Templates.PanelRowItemValue.Fields.Check].IsChecked(),
+        Tooltip = item.Fields[Templates.PanelRowItemValue.Fields.Tooltip]?.Value
       };
     }
 

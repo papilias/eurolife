@@ -16,7 +16,7 @@
 
 @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
 {
-  <section class="m-t-64 m-b-96 center center--1100 triplette">
+  <section id="higlights-section-cta" class="m-t-64 m-b-96 center center--1100 triplette">
 
     @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
     {

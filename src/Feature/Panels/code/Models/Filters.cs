@@ -6,15 +6,15 @@ using System.Web;
 
 namespace Wedia.Feature.Panels.Models
 {
-    public class Filters
-    {
-        [JsonProperty("title")]
-        public string Title { get; set; }
-        [JsonProperty("applyButton")]
-        public string ApplyButton { get; set; }
-        [JsonProperty("cancelButton")]
-        public string CancelButton { get; set; }
-        [JsonProperty("items")]
-        public IEnumerable<PanelRow> Items { get; set; }
-    }
+  public class Filters
+  {
+    [JsonProperty("title")]
+    public string Title { get; set; }
+    [JsonProperty("applyButton")]
+    public string ApplyButton { get; set; }
+    [JsonProperty("cancelButton")]
+    public string CancelButton { get; set; }
+    [JsonProperty("items")]
+    public IEnumerable<PanelRow> Items { get; set; }
+  }
 }
