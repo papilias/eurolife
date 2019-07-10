@@ -41,8 +41,8 @@
   @{
       var mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
       {
-        Width = Templates.HasPageImageContent.Dimensions.LandingBannerWidth,
-        Height = Templates.HasPageImageContent.Dimensions.LandingBannerHeight
+        Width = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerWidth,
+        Height = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerHeight
       };
       var desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptions);
       var mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptions);

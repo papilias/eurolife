@@ -23,8 +23,8 @@ namespace Wedia.Feature.Media.Indexing
 
       formattedResult.Title = FieldRenderer.Render(contentItem, Templates.HasMedia.Fields.Title.ToString());
       formattedResult.Description = FieldRenderer.Render(contentItem, Templates.HasMedia.Fields.Description.ToString());
-     // formattedResult.Media = ((ImageField)contentItem.Fields[Templates.HasMedia.Fields.Thumbnail])?.MediaItem;
-     // formattedResult.ViewName = "~/Views/MediaFeature/MediaSearchResult.cshtml";
+      formattedResult.Media = ((ImageField)contentItem.Fields[Templates.HasMedia.Fields.Thumbnail])?.MediaItem;
+      formattedResult.ViewName = "~/Views/MediaFeature/MediaSearchResult.cshtml";
     }
 
     public Expression<Func<SearchResultItem, bool>> GetQueryPredicate(IQuery query)

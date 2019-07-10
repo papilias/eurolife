@@ -24,7 +24,6 @@ namespace Wedia.Feature.Glossary
 
       public struct Fields
       {
-        public static readonly ID Title = new ID("{B32EDB07-D02E-46FE-8559-122A4F7526D6}");
         public static readonly ID Gloss = new ID("{4D753C7B-D0A0-42D1-9843-E2D23987FE81}");
       }
     }
@@ -35,8 +34,17 @@ namespace Wedia.Feature.Glossary
 
       public struct Fields
       {
-        public static readonly ID Title = new ID("{1364D42D-6D3E-48BB-BA4A-CE4303C1F034}");
         public static readonly ID Items = new ID("{58AE458F-3AD1-41D4-962D-D5B11002576D}");
+      }
+    }
+
+    public struct HasGlossaryTitle
+    {
+      public static readonly ID ID = new ID("{D9351E70-89C0-4FB5-A6A5-2503E0FC20AE}");
+
+      public struct Fields
+      {
+        public static readonly ID Title = new ID("{1F40AE97-E31D-4388-B2EC-E23FFE4304EB}");
       }
     }
   }

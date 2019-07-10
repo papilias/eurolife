@@ -7,15 +7,15 @@ using System.Web;
 
 namespace Wedia.Feature.Panels.Models
 {
-    public class PanelRow
-    {
-        [JsonProperty("id")]
-        public ID ID { get; set; }
-        [JsonProperty("title")]
-        public string Title { get; set; }
-        [JsonProperty("isCheckbox")]
-        public string IsCheckbox { get; set; }
-        [JsonProperty("props")]
-        public IEnumerable<PanelRowItem> Props { get; set; }
-    }
+  public class PanelRow
+  {
+    [JsonProperty("id")]
+    public ID ID { get; set; }
+    [JsonProperty("title")]
+    public string Title { get; set; }
+    [JsonProperty("isCheckbox")]
+    public string IsCheckbox { get; set; }
+    [JsonProperty("props")]
+    public IEnumerable<PanelRowItem> Props { get; set; }
+  }
 }

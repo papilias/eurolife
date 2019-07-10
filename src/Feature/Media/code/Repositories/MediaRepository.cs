@@ -49,28 +49,28 @@ namespace Wedia.Feature.Media.Repositories
       }
     }
 
-    public PDFGroups GetPDFGroupedList([NotNull] Item item, ID currentGroupID = null)
+    public PDFGroups GetPDFGroupedList([NotNull] Item item, PagingSettings pagingSettings)
     {
       if (item == null)
         throw new ArgumentNullException(nameof(item));
       
       var groups = GetMediaFromChildren(item, Templates.PDFFileGroup.ID);
-      currentGroupID = CurrentPDFGroup(groups, currentGroupID);
+      pagingSettings.CurrentGroupID = CurrentPDFGroup(groups, pagingSettings.CurrentGroupID);
 
       return new PDFGroups
       {
-        Groups = groups.Select((i, index) => PDFFileGroupFactory(i, currentGroupID, index))
+        Groups = groups.Select((i, index) => PDFFileGroupFactory(i, pagingSettings, index))
       };
     }
 
-    public PDFGroup GetNextPage(ID currentFileGroupID, int page)
+    public PDFGroup GetNextPage(PagingSettings pagingSettings, int page)
     {
-      var group = Context.Database.GetItem(currentFileGroupID);
+      var group = Context.Database.GetItem(pagingSettings.CurrentGroupID);
 
       if (group == null)
         throw new System.ArgumentNullException(nameof(group));
 
-      return PDFFileGroupFactory(group, currentFileGroupID, 1, page);
+      return PDFFileGroupFactory(group, pagingSettings, 1, page);
     }
 
     private ID CurrentPDFGroup(IEnumerable<Item> groups, ID currentGroupID = null)
@@ -80,21 +80,21 @@ namespace Wedia.Feature.Media.Repositories
           groups.FirstOrDefault()?.ID;
     }
 
-    private PDFGroup PDFFileGroupFactory(Item item, ID currentFileGroupID, int index, int? page = null)
+    private PDFGroup PDFFileGroupFactory(Item item, PagingSettings pagingSettings,  int index, int? page = null)
     {
-      var isActive = IsActivePDFGroup(item, currentFileGroupID, index);
+      var isActive = IsActivePDFGroup(item, pagingSettings.CurrentGroupID, index);
       int pageNumber = page == null ? 0 : page < 0 ? 0 : page.Value;
-      var pdfs = isActive ? GetFileGroupPDFs(item, pageNumber) : null;
-      
+      var pdfs = isActive ? GetFileGroupPDFs(item, pagingSettings, pageNumber) : null;
+
       return new PDFGroup
       {
         Item = item,
         IsActive = isActive,
         PDFs = pdfs,
         Page = pageNumber,
-        ResultsOnPage = Constants.ItemsPerPage,
+        ResultsOnPage = pagingSettings.ResultsOnPage,
         TotalResults = pdfs?.TotalNumberOfResults ?? 0,
-        SubGroups = GetPDFGroupedList(item, currentFileGroupID)
+        SubGroups = GetPDFGroupedList(item, pagingSettings)
       };
     }
 
@@ -110,7 +110,7 @@ namespace Wedia.Feature.Media.Repositories
       return false;
     }
 
-    private ISearchResults GetFileGroupPDFs(Item item, int pageNumber)
+    private ISearchResults GetFileGroupPDFs(Item item, PagingSettings pagingSettings, int pageNumber)
     {
       if (!item.FieldHasValue(Templates.PDFFileGroup.Fields.FileGroup))
         return null;
@@ -124,7 +124,7 @@ namespace Wedia.Feature.Media.Repositories
       {
         Facets = null,
         QueryText = "*",
-        NoOfResults = 1,
+        NoOfResults = pagingSettings.ResultsOnPage,
         Page = pageNumber
       };
 

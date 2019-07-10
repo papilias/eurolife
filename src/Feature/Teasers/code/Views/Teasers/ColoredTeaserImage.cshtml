@@ -2,7 +2,9 @@
 @using Wedia.Foundation.Alerts
 @using Wedia.Foundation.Alerts.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
-@model Sitecore.Mvc.Presentation.RenderingModel
+@using Wedia.Foundation.Theming.Extensions
+@using Sitecore.Mvc.Presentation;
+@model RenderingModel
 
 @if (!Model?.Item?.DescendsFrom(Templates.HasTeaserImage.ID) ?? true)
 {
@@ -13,12 +15,12 @@
   return;
 }
 
-@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.DesktopImage))
+@if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.Image))
 {
-  <article class="zigzag__item m-b-64 bg-life-insurance">
+  <article class="zigzag__item m-b-64 @RenderingContext.Current.Rendering.GetBackgroundClass()">
 
     <div class="zigzag__image--light">
-      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.DesktopImage, Model.Item,
+      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image, Model.Item,
         Wedia.Feature.Teasers.Constants.ImageDimensions.ColoredTeaser.Height,
         Wedia.Feature.Teasers.Constants.ImageDimensions.ColoredTeaser.Width)
     </div>

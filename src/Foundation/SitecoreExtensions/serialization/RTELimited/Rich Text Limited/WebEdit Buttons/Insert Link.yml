@@ -22,38 +22,13 @@ SharedFields:
   Hint: Icon
   Value: Office/16x16/link.png
 Languages:
-- Language: da
-  Fields:
-  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
-    Hint: Tooltip
-    Value: Indsæt link
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Indsæt link
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151003T031126Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-- Language: "de-DE"
-  Fields:
-  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
-    Hint: Tooltip
-    Value: Link einfügen
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Link einfügen
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T030836Z
+      Value: 20190709T074827Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -69,24 +44,6 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20080121T132644Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-- Language: "ja-JP"
-  Fields:
-  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
-    Hint: Tooltip
-    Value: リンクを挿入します
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: リンクを挿入
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T031005Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

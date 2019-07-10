@@ -18,4 +18,4 @@ Languages:
         sitecore\admin
     - ID: "7c0c7238-1f7c-43e6-8c16-d076f5dcde11"
       Hint: HighlightIconCssClass
-      Value: "teaser-icon__microscope"
+      Value: "teaser-icon__pickup"

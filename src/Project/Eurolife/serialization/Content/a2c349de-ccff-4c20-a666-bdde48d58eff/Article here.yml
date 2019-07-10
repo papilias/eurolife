@@ -12,10 +12,14 @@ Languages:
     - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
       Hint: NewsDesktopImage
       Value: |
-        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190611T072734Z
+    - ID: "cc55c7f7-8274-465b-8a77-d65b2153bb00"
+      Hint: NewsMobileImage
+      Value: |
+        <image mediaid="{3B090C83-81C2-4283-A2A0-CA7352081AA1}" />
     - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
       Hint: NewsTitle
       Value: Some companies Article

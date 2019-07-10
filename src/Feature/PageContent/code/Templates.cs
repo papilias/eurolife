@@ -14,13 +14,6 @@ namespace Wedia.Feature.PageContent
                 public const string DesktopImage_FieldName = "DesktopImage";
                 public static readonly ID MobileImage = new ID("{48C14F0A-157D-43E9-B294-261895506AE9}");
                 public const string DesktopImage_MobileImage = "MobileImage";
-            }  
-            public struct Dimensions
-            {
-                public static readonly int LandingBannerWidth = 1382;
-                public static readonly int LandingBannerHeight = 516;
-                public static readonly int LandingBannerResponsiveWidth = 702;
-                public static readonly int LandingBannerResponsiveHeight = 958;
             }
         }
 

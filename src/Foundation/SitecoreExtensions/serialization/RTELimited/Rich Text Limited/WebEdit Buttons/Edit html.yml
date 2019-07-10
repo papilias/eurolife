@@ -19,44 +19,20 @@ SharedFields:
   Hint: Icon
   Value: Office/16x16/Pencil.png
 Languages:
-- Language: da
+- Language: "el-GR"
   Fields:
   - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
     Hint: Tooltip
-    Value: Rediger teksten
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Rediger HTML
+    Value: Edit the text
   - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
     Hint: Header
-    Value: Rediger tekst
+    Value: Edit Text
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151003T031104Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-- Language: "de-DE"
-  Fields:
-  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
-    Hint: Tooltip
-    Value: Den Text bearbeiten
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Html bearbeiten
-  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
-    Hint: Header
-    Value: Text bearbeiten
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T030816Z
+      Value: 20190709T074736Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -79,24 +55,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
-- Language: "ja-JP"
-  Fields:
-  - ID: "371e0d96-4f00-4b80-ad14-6284e00493ba"
-    Hint: Tooltip
-    Value: テキストを編集します
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: HTML を編集する
-  - ID: "c523aba8-d1a1-4dcb-aeee-52635a4ab2ae"
-    Hint: Header
-    Value: テキスト編集
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T030945Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin

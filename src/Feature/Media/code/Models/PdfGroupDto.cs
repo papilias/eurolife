@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Wedia.Feature.Media.Models
 {
-  public class PdfGroupDto
+  public class PDFGroupDto : PagingSettings
   {
     public string Group { get; set; }
 

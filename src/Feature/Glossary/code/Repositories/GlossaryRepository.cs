@@ -36,7 +36,7 @@ namespace Wedia.Feature.Glossary.Repositories
         .Select(i => new GlossaryItem
         {
           Item = i,
-          Title = i.Fields[Templates.Glossary.Fields.Title]?.Value,
+          Title = i.Fields[Templates.HasGlossaryTitle.Fields.Title]?.Value,
           Gloss = i.Fields[Templates.Glossary.Fields.Gloss]?.Value
         })
         .OrderBy(i => i.Title);

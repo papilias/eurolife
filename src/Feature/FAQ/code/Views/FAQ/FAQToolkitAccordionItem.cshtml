@@ -23,10 +23,10 @@
         @foreach (var item in Model.Item.GetMultiListValueItems(Templates.FaqGroup.Fields.GroupMember))
         {
             <div class="m-b-8">
-                <strong>@Html.Sitecore().Field(Templates.Faq.Fields.Question, item)</strong>
+                <strong>@Html.Sitecore().Field(Templates.Faq.Fields.Question, item, new { DisableWebEdit = true })</strong>
             </div>
 
-            <p class="m-b-16">@Html.Sitecore().Field(Templates.Faq.Fields.Answer, item)</p>
+            <p class="m-b-16">@Html.Sitecore().Field(Templates.Faq.Fields.Answer, item, new { DisableWebEdit = true })</p>
 
         }
     </div>

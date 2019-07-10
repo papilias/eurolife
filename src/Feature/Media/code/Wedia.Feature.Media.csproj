@@ -95,13 +95,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Constants.cs" />
     <Compile Include="Controllers\MediaFeatureController.cs" />
     <Compile Include="Indexing\MediaIndexingProvider.cs" />
     <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
     <Compile Include="Models\MediaSelectorElement.cs" />
+    <Compile Include="Models\PagingSettings.cs" />
     <Compile Include="Models\PDFGroup.cs" />
-    <Compile Include="Models\PdfGroupDto.cs" />
+    <Compile Include="Models\PDFGroupDto.cs" />
     <Compile Include="Models\PDFGroups.cs" />
     <Compile Include="Models\PDFQuery.cs" />
     <Compile Include="Repositories\IMediaRepository.cs" />

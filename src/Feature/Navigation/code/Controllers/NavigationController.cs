@@ -31,7 +31,7 @@ namespace Wedia.Feature.Navigation.Controllers
 
     public ActionResult NavigationLinks() => GetMenu("NavigationLinks");
 
-    public ActionResult LinkMenu() => GetMenu("LinkMenu");
+    public ActionResult RoundedLinkMenu() => GetMenu("RoundedLinkMenu");
 
     public ActionResult ArticlesLinkMenu() => GetMenu("ArticlesLinkMenu",
         RenderingContext.Current.Rendering.GetBoolParameter(Constants.NavigationParameters.Descending),

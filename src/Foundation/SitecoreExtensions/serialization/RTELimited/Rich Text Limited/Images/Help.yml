@@ -10,35 +10,13 @@ SharedFields:
   Value: |
     <img height="16" src="/sitecore/shell/Themes/standard/core/16x16/help16.png" width="16" border="0" />
 Languages:
-- Language: da
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Hjælp
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20151003T031107Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-    - ID: "8e5179b0-2a09-4624-885d-619c0e3d0390"
-      Hint: Header
-      Value: <img height= 16  src=  sitecore shell themes standard core 16x16 help16 png  width= 16  border= 0   >help
-- Language: "de-DE"
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Hilfe
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T030819Z
+      Value: 20190709T075216Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -65,22 +43,3 @@ Languages:
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 20060131T143654
-- Language: "ja-JP"
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: ヘルプ
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20151003T030948Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
-    - ID: "8e5179b0-2a09-4624-885d-619c0e3d0390"
-      Hint: Header
-      Value: |
-        <img height="16" src="/sitecore/shell/Themes/standard/core/16x16/help16.png" width="16" border="0" />ヘルプ

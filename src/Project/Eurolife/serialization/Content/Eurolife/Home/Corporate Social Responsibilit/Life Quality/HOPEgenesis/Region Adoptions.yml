@@ -21,7 +21,7 @@ Languages:
             <r
               uid="{8C3BFB4A-8C49-4C54-A11A-21766A9B7FDD}"
               p:after="r[@uid='{55347922-CD43-4DDA-8B58-A20247C54C1B}']"
-              s:ds="{842DAFC7-1D4E-469A-933B-E0C2BF104983}"
+              s:ds=""
               s:id="{6434235F-FBC8-489B-8E8C-26D0CC1373F4}"
               s:ph="page-layout" />
             <r

@@ -9,7 +9,7 @@ $(document).ready(function () {
   var loading = false;
   var page = loadButton.data('page') + 1;
   var group = loadButton.data('group');
-
+  var resultsOnPage = loadButton.data('results-on-page');
 
   loadButton.click(function () {
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'GET',
-      url: `/api/feature/media/ajax-pdfs?group=${group}&page=${page}`,
+      url: `/api/feature/media/ajax-pdfs?group=${group}&page=${page}&resultsOnPage=${resultsOnPage}`,
       contentType: 'application/json; charset=utf-8',
       cache: false,
       success: function (response) {

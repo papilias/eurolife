@@ -97,11 +97,10 @@ else
 
   if (activeSubgroup.PDFs.TotalNumberOfResults > activeSubgroup.PDFs.Results.Count())
   {
-    var page = activeSubgroup.Page;
-
     <div><button id="loadMoreBtn" 
                  data-group="@activeSubgroup.Item.ID" 
-                 data-page="@page">Load  More</button></div>
+                 data-page="@activeSubgroup.Page"
+                 data-results-on-page="@activeSubgroup.ResultsOnPage">Load  More</button></div>
   }
 }
 
