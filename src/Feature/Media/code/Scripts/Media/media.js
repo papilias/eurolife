@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'GET',
-      url: `/api/feature/media/ajax-pdfs?group=${group}&page=${page}&resultsOnPage=${resultsOnPage}`,
+      url: `/api/feature/media/ajax-files?group=${group}&page=${page}&resultsOnPage=${resultsOnPage}`,
       contentType: 'application/json; charset=utf-8',
       cache: false,
       success: function (response) {

@@ -65,11 +65,6 @@ namespace Wedia.Feature.Media
 
     public struct MediaFile
     {
-      public static readonly ID ID = new ID("{D0AA44DB-CEDF-4B29-AFF6-B43BBFA07F1C}");
-    }
-
-    public struct PDF
-    {
       public static readonly ID ID = new ID("{87151256-44A4-48E2-92B9-E40A529C4540}");
 
       public struct Fields
@@ -78,7 +73,7 @@ namespace Wedia.Feature.Media
       }
     }
 
-    public struct PDFGroup
+    public struct  MediaFileGroup
     {
       public static readonly ID ID = new ID("{2598ADF9-8F12-4651-ABFB-435B1153A62A}");
 
@@ -88,13 +83,13 @@ namespace Wedia.Feature.Media
       }
     }
 
-    public struct PDFFileGroup
+    public struct MediaFileFolderGroup
     {
       public static readonly ID ID = new ID("{20C44FDF-B209-41B2-8A41-4AE8DF883C64}");
 
       public struct Fields
       {
-        public static readonly ID FileGroup = new ID("{F4543AEB-0454-4609-AFEC-D2AB0DD4FA11}");
+        public static readonly ID Group = new ID("{F4543AEB-0454-4609-AFEC-D2AB0DD4FA11}");
       }
     }
 

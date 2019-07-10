@@ -4,17 +4,19 @@ Parent: "71e53ec7-514f-4925-844c-bcdcc36ec2d2"
 Template: "906a3de5-2dd5-43ec-82e1-87d97d7c336c"
 Path: /sitecore/content/Eurolife/Global/PDFs/Financial Reports/2019/07/01/12/45/HOPEgenesis
 DB: master
+SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
-    - ID: "20faf759-601d-41e5-b2ce-cb23be133c32"
-      Hint: MediaDescription
-      Value: test2
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190520T134242Z
+      Value: 20190710T083658Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -23,6 +25,6 @@ Languages:
       Hint: MediaTitle
       Value: HOPEgenesis
     - ID: "bf50c27a-312f-408d-a49b-2e34d6a1e715"
-      Hint: PDFFile
+      Hint: MediaFile
       Value: |
         <file mediaid="{AB20A160-ADEE-4621-B5CE-D81B0915DEFF}" src="-/media/AB20A160ADEE4621B5CED81B0915DEFF.ashx"></file>

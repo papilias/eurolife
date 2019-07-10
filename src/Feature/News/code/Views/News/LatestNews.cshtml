@@ -1,27 +1,28 @@
-﻿@using Wedia.Foundation.Dictionary.Extensions
-@using Wedia.Foundation.SitecoreExtensions.Extensions
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Dictionary.Extensions
 @using Wedia.Feature.News
-@using Sitecore.Resources.Media
 @model IEnumerable<Sitecore.Data.Items.Item>
 
 <section class="center center--1100 m-b-112">
-  <h1 class="h4 t-c">@Html.Sitecore().Dictionary("/news/Latest News/Title", "Latest News")</h1>
-  <div class="t-c m-b-48 m-t-8">
-    @Html.Sitecore().Dictionary("/news/Latest News/Description", "Corporate Social Responsibility Latest Activities")
-  </div>
   <div class="latest">
     @foreach (var item in Model)
     {
     <article>
       
-      @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.DesktopImage, item, Contants.ImageDimensions.ArticleCardImageHeight, Contants.ImageDimensions.ArticleCardImageWidth)
-      <div class="latest__details">
-        <time>@Html.Sitecore().Field(Templates.NewsArticle.Fields.Date, item)</time>
-        <h2 class="h6 latest__title">
-          <a href="@item.Url()">
-            @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, item)
-          </a>
+      @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.DesktopImage, 
+        item, 
+        Contants.ImageDimensions.ArticleCardImageHeight, 
+        Contants.ImageDimensions.ArticleCardImageWidth, 
+        null,
+        true)
+      <div class="list__article__group">
+        <time>@Html.Sitecore().Field(Templates.NewsArticle.Fields.Date, item, new { format="d MMM yyyy", DisableWebEdit = true })</time>
+        <h2 class="h6 m-b-8">
+          @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, item, new { DisableWebEdit = true })
         </h2>
+        <a href="@item.Url()" class="link-plain">
+          @Html.Sitecore().Dictionary("/News/Latest News/More Button", "More")
+        </a>
       </div>
     </article>
     }

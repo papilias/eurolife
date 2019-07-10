@@ -14,6 +14,10 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
+      Hint: NewsDesktopImage
+      Value: |
+        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T093249Z

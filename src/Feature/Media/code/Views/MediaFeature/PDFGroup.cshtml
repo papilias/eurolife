@@ -1,7 +1,0 @@
-﻿@using Wedia.Feature.Media.Models
-@model PDFGroup
-
-@foreach (var pdf in Model.PDFs.Results)
-{
-  @Html.Partial("../MediaFeature/PDFListItem", pdf.Item)
-}

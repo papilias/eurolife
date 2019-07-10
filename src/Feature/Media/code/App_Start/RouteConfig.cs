@@ -10,7 +10,7 @@ namespace Wedia.Feature.Media
   {
     public static void RegisterRoutes(RouteCollection routes)
     {
-      routes.MapRoute("loadmore-pdfs", "api/feature/media/ajax-pdfs", new { controller = "MediaFeature", action = "AjaxPDFGroupedList", id = UrlParameter.Optional });
+      routes.MapRoute("loadmore-files", "api/feature/media/ajax-files", new { controller = "MediaFeature", action = "AjaxMediaFileFolderGroupedList", id = UrlParameter.Optional });
     }
   }
 }
