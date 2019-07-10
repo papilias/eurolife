@@ -1,10 +1,9 @@
 ﻿---
 ID: "8486e910-af9d-49f2-880c-70bf8e39b996"
-Parent: "f39c5c0e-3ef9-4626-843f-5d439658fdb5"
+Parent: "2f9f4971-e9b7-45c5-9e59-fc678a31e780"
 Template: "b2613cc1-a748-46a3-a0db-3774574bd339"
 Path: /sitecore/templates/Branches/Foundation/Multisite/RenderingSettings
 DB: master
-BranchID: "f6b0e6f1-2451-4c72-94fd-22d7b93b592a"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
