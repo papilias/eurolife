@@ -39,6 +39,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+  - Version: 3
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: Der opstod en fejl under hentning af meddelelsesdata.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171219T155111Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -58,6 +70,18 @@ Languages:
       Value: |
         sitecore\admin
   - Version: 2
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: Während des Einholens der Nachrichtendaten ist ein Fehler aufgetreten.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171219T155601Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+  - Version: 3
     Fields:
     - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
       Hint: Text
@@ -95,6 +119,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+  - Version: 3
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: An error has occurred while retrieving messages data. 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171101T100201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -114,6 +150,18 @@ Languages:
       Value: |
         sitecore\admin
   - Version: 2
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: メッセージ データを取得中にエラーが発生しました。
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171219T160008Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+  - Version: 3
     Fields:
     - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
       Hint: Text

@@ -1,28 +1,28 @@
 ﻿---
-ID: "68b57d0a-8ef7-465f-be3b-077dfddfdf74"
-Parent: "e117054e-e9b3-4750-8012-b01be51d1f0a"
+ID: "441d3171-b510-4ec1-9daa-7ad77de6e59c"
+Parent: "74cfa7d6-6553-43cf-bde1-c8e531287b19"
 Template: "b3bdfe59-6667-4432-b261-05d0e3f7fdf6"
-Path: /sitecore/Forms/Complaint Form/Page/Section/clientType/Settings/Datasource/Unnamed item
+Path: /sitecore/Forms/Complaint Form/Page/Section/contractType/Settings/Datasource/Type 1
 DB: master
 SharedFields:
 - ID: "3a07c171-9bca-464d-8670-c5703c6d3f11"
   Hint: Value
-  Value: Ασφαλισμένος
+  Value: Type 1
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 0
 Languages:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Ασφαλισμένος
+    Value: Type 1
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190701T122837Z
+      Value: 20190627T141109Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
