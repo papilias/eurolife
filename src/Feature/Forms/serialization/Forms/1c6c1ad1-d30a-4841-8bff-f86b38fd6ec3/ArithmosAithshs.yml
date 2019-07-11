@@ -24,7 +24,7 @@ SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
-    {"fieldConditions":[]}
+    {"fieldConditions":[{"matchTypeId":"{365C94DA-C1CD-4783-A91D-0D17A16C7117}","conditions":[{"fieldId":"CE808563951D49ACA83CCA835C034F68","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Αντισυμβαλλομενος"}],"actions":[{"fieldId":"8B1448E24AD94A96BA2540B7B3CDD9C4","actionTypeId":"{5744A87E-E32C-42CC-862F-96842A0202BB}","value":null}]}]}
 - ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
   Hint: Css Class
   Value: 

@@ -34,7 +34,7 @@ SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
-    {"fieldConditions":[{"matchTypeId":"{365C94DA-C1CD-4783-A91D-0D17A16C7117}","conditions":[{"fieldId":"CE808563951D49ACA83CCA835C034F68","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Αντισυμβαλλομενος"},{"fieldId":"CE808563951D49ACA83CCA835C034F68","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Ασφαλισμένος"},{"fieldId":"CE808563951D49ACA83CCA835C034F68","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Καλυπτόμενο Μέλος"},{"fieldId":"CE808563951D49ACA83CCA835C034F68","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Δικαιούχος"},{"fieldId":"CE808563951D49ACA83CCA835C034F68","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Νόμιμος Εκπρόσωπος"}],"actions":[{"fieldId":"5C015B6327CD4BD6B29688058C61A14E","actionTypeId":"{5744A87E-E32C-42CC-862F-96842A0202BB}","value":null},{"fieldId":"8B1448E24AD94A96BA2540B7B3CDD9C4","actionTypeId":"{C698C993-549E-486A-A09C-BB8D830DA958}","value":null}]}]}
+    {"fieldConditions":[{"matchTypeId":"{365C94DA-C1CD-4783-A91D-0D17A16C7117}","conditions":[{"fieldId":"CE808563951D49ACA83CCA835C034F68","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Αντισυμβαλλομενος"}],"actions":[{"fieldId":"5C015B6327CD4BD6B29688058C61A14E","actionTypeId":"{5744A87E-E32C-42CC-862F-96842A0202BB}","value":null},{"fieldId":"8B1448E24AD94A96BA2540B7B3CDD9C4","actionTypeId":"{C698C993-549E-486A-A09C-BB8D830DA958}","value":null}]}]}
 - ID: "78778432-6327-4cea-a28b-e190e3541d28"
   Hint: Value Field Name
   Value: Value
