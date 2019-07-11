@@ -91,6 +91,7 @@
     <Content Include="App_Config\Include\Feature\Feature.Media.config" />
     <Content Include="Views\MediaFeature\MediaSearchResult.cshtml" />
     <Content Include="Views\MediaFeature\MediaFileGroup.cshtml" />
+    <Content Include="Views\MediaFeature\MediaFeaturedFiles.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -93,5 +93,17 @@ namespace Wedia.Feature.Media
       }
     }
 
+    public struct HasMediaPublication
+    {
+      public static readonly ID ID = new ID("{3D83FC91-8358-4E1A-9CC1-FDF90C6E3AE2}");
+
+      public struct Fields
+      {
+        public static readonly ID FirstPublishDate = new ID("{1EAC664F-71C3-4F5B-8D1D-22C4363720B1}");
+        public static readonly ID PublishDate = new ID("{01D8867E-7244-41E9-9742-EE60972E6F12}");
+        public static readonly ID PublishSource = new ID("{502AB0B3-D1F6-4079-A6F4-C91EA0CCE9A1}");
+      }
+    }
+
   }
 }
