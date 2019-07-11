@@ -1,11 +1,13 @@
 ﻿using Sitecore;
 using Sitecore.Mvc.Presentation;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using Wedia.Feature.Person.Repositories;
 using Wedia.Foundation.Alerts;
 using Wedia.Foundation.Alerts.Extensions;
 using Wedia.Foundation.Alerts.Models;
 using Wedia.Foundation.Dictionary.Repositories;
+using Sitecore.Data.Items;
 
 namespace Wedia.Feature.Person.Controllers
 {
@@ -24,24 +26,8 @@ namespace Wedia.Feature.Person.Controllers
       return View(items);
     }
 
-    public ActionResult EmployeesCarousel()
-    {
-      var contextItem = RenderingContext.Current.Rendering.Item;
-      var pageItem = PageContext.Current.Item;
-
-      if (!contextItem?.DescendsFrom(Templates.PersonGroup.ID) ?? true)
-      {
-        return Context.PageMode.IsExperienceEditor
-            ? this.InfoMessage(
-                new InfoMessage(
-                    AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-                    InfoMessage.MessageType.Warning))
-                    : null;
-      }
-
-      var items = _personRepository.GetCarousel(contextItem, pageItem);
-      return View(items);
-    }
+    public ActionResult ExecutiveEmployeesCarousel() => GetCarousel("ExecutiveEmployeesCarousel");
+    public ActionResult EmployeesCarousel() => GetCarousel("EmployeesCarousel");
 
     public ActionResult ConsultantsList()
     {
@@ -60,6 +46,24 @@ namespace Wedia.Feature.Person.Controllers
       var items = _personRepository.GetConsultantsGroups(contextItem);
 
       return View(items);
+    }
+
+    public ActionResult GetCarousel(string viewName)
+    {
+      var contextItem = RenderingContext.Current.Rendering.Item;
+      var pageItem = PageContext.Current.Item;
+
+      if (!contextItem?.DescendsFrom(Templates.PersonGroup.ID) ?? true)
+      {
+        return Context.PageMode.IsExperienceEditor
+            ? this.InfoMessage(
+                new InfoMessage(
+                    AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+                    InfoMessage.MessageType.Warning))
+                    : null;
+      }
+
+      return View(viewName, _personRepository.GetCarousel(contextItem, pageItem));
     }
 
   }

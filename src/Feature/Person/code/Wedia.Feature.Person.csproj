@@ -97,10 +97,11 @@
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Persons\EmployeeHeader.cshtml" />
     <Content Include="Views\Persons\Index.cshtml" />
-    <Content Include="Views\Persons\EmployeesCarousel.cshtml" />
+    <Content Include="Views\Persons\ExecutiveEmployeesCarousel.cshtml" />
     <Content Include="Views\Persons\EmployeeDetails.cshtml" />
     <Content Include="Views\Persons\ConsultantsList.cshtml" />
     <Content Include="Views\Persons\PersonSearchResult.cshtml" />
+    <Content Include="Views\Persons\EmployeesCarousel.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

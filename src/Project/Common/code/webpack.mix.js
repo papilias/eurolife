@@ -12,9 +12,12 @@ let mix = require('laravel-mix');
  */
 
 mix.js('assets/js/app.js', 'js')
-    //.sass('src/app.scss', 'dist')
-    .setPublicPath('./');
-
+  //.sass('src/app.scss', 'dist')
+  .setPublicPath('./')
+  .sourceMaps()
+  .browserSync({
+    proxy: 'eurolife.local'
+  });
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

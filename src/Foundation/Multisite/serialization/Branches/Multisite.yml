@@ -1,7 +1,7 @@
 ﻿---
-ID: "2f9f4971-e9b7-45c5-9e59-fc678a31e780"
-Parent: "e24c4a00-08d6-41c8-b60e-e7990b21697a"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+ID: "f39c5c0e-3ef9-4626-843f-5d439658fdb5"
+Parent: "02b0563d-7870-456a-914f-5e902b6bf905"
+Template: "85adbf5b-e836-4932-a333-fe0f9fa1ed1e"
 Path: /sitecore/templates/Branches/Foundation/Multisite
 DB: master
 Languages:
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: "20190708T105151:636981799119053542Z"
+      Value: 20190521T112451Z
