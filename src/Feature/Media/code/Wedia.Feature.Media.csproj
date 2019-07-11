@@ -83,14 +83,15 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
     <Content Include="Scripts\Media\media.js" />
-    <Content Include="Views\MediaFeature\PDFToolkitAccordion.cshtml" />
-    <Content Include="Views\MediaFeature\PDFGroupedList.cshtml" />
+    <Content Include="Views\MediaFeature\MediaFileToolkitAccordion.cshtml" />
+    <Content Include="Views\MediaFeature\MediaFileFoldersGroupedList.cshtml" />
     <Content Include="Views\MediaFeature\MediaCarousel.cshtml" />
-    <Content Include="Views\MediaFeature\PDFList.cshtml" />
-    <Content Include="Views\MediaFeature\PDFListItem.cshtml" />
+    <Content Include="Views\MediaFeature\FileList.cshtml" />
+    <Content Include="Views\MediaFeature\FileListItem.cshtml" />
     <Content Include="App_Config\Include\Feature\Feature.Media.config" />
     <Content Include="Views\MediaFeature\MediaSearchResult.cshtml" />
-    <Content Include="Views\MediaFeature\PDFGroup.cshtml" />
+    <Content Include="Views\MediaFeature\MediaFileGroup.cshtml" />
+    <Content Include="Views\MediaFeature\MediaFeaturedFiles.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -100,10 +101,10 @@
     <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
     <Compile Include="Models\MediaSelectorElement.cs" />
     <Compile Include="Models\PagingSettings.cs" />
-    <Compile Include="Models\PDFGroup.cs" />
-    <Compile Include="Models\PDFGroupDto.cs" />
-    <Compile Include="Models\PDFGroups.cs" />
-    <Compile Include="Models\PDFQuery.cs" />
+    <Compile Include="Models\FileGroup.cs" />
+    <Compile Include="Models\MediaFileGroupDto.cs" />
+    <Compile Include="Models\FileGroups.cs" />
+    <Compile Include="Models\FileQuery.cs" />
     <Compile Include="Repositories\IMediaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\MediaRepository.cs" />

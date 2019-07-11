@@ -9,19 +9,73 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{02361106-CBCF-44F9-9208-9F6701C0B4CB}"
+              p:before="*"
+              s:ds="{726C99C9-EC5C-4745-895A-65DFB691D7C9}"
+              s:id="{D1009CC0-A073-4EA5-99FD-389C097F0B4E}"
+              s:ph="/page-layout/teaser-placeholder-1-{69C7D6D2-D5E3-4420-A34F-AEF6F85D3E3E}-0" />
+            <r
+              uid="{F8DEAF9C-C709-44A6-A056-EF20C34FADE9}"
+              p:after="r[@uid='{87235964-4703-4C6F-8CD8-E3B4ED6FA48D}']"
+              s:ds="{5E3C1C81-D559-43B4-B76B-1AC36C2D6EA4}"
+              s:id="{0374A95D-C053-4EC9-BC53-DE0E5725AFAB}"
+              s:ph="page-layout" />
+            <r
+              uid="{EB52154A-F549-4A2B-94E1-3ED9A756D222}"
+              p:after="r[@uid='{F8DEAF9C-C709-44A6-A056-EF20C34FADE9}']"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:ph="page-layout" />
+            <r
+              uid="{8D9D1FCE-957C-43F9-8CB1-B7C362F04164}"
+              p:after="r[@uid='{EB52154A-F549-4A2B-94E1-3ED9A756D222}']"
+              s:ds="{E941C6B7-952C-4B01-9790-EFB706DF73D6}"
+              s:id="{9D3F5813-2A4F-4024-9316-4D3FB263B883}"
+              s:ph="page-layout" />
+            <r
+              uid="{69C7D6D2-D5E3-4420-A34F-AEF6F85D3E3E}"
+              p:after="r[@uid='{8D9D1FCE-957C-43F9-8CB1-B7C362F04164}']"
+              s:ds="{27457690-0E5E-4AC3-808E-3002AAF7B676}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:ph="page-layout" />
+            <r
+              uid="{9015BC53-2AE3-455A-A1DD-879A04CC5E07}">
+              <p:d />
+            </r>
+            <r
+              uid="{ED7FBF94-0E1A-4ABD-A360-646BE330FFF9}"
+              p:after="*[1=2]" />
+          </d>
+        </r>
+    - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
+      Hint: PreTitle
+      Value: Newsroom
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190705T073717Z
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: Newsroom
+      Value: H Eurolife ERB στηρίζει και φέτος το θεσμό Πυθαγόρας
+    - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
+      Hint: CTA
+      Value: |
+        <link text="Περισσότερα" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{726C99C9-EC5C-4745-895A-65DFB691D7C9}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: Νέα πρωτοβουλία μας καλεί σε ένα διάλογο γόνιμο και κύριως, αισιόδοξο.
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |

@@ -17,7 +17,7 @@ Languages:
     - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
       Hint: NewsDesktopImage
       Value: |
-        <image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
+        <image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T094721Z

@@ -22,30 +22,35 @@
   {
     <div class="hero-contents">
       <div class="center--760 center relator">
-        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.PreTitle))
+        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.PreTitle) || Sitecore.Context.PageMode.IsExperienceEditor)
         {
           <h4 class="hero-contents__sup">@Html.Sitecore().Field(Templates.HasPageContent.Fields.PreTitle)</h4>
         }
-        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Title))
+        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Title) || Sitecore.Context.PageMode.IsExperienceEditor)
         {
           <h1 class="h2 m-b-24">@Html.Sitecore().Field(Templates.HasPageContent.Fields.Title)</h1>
         }
-        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Summary))
+        @if (Model.Item.FieldHasValue(Templates.HasPageContent.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
         {
           <p>@Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary)</p>
+        }
+
+        @if (Model.Item.FieldHasValue(Templates.HasPageCTA.Fields.CTA) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          @Html.Sitecore().Field(Templates.HasPageCTA.Fields.CTA, new { @class= "btn btn--ghost btn--default" })
         }
       </div>
     </div>
   }
 
   @{
-      var mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
-      {
-        Width = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerWidth,
-        Height = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerHeight
-      };
-      var desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptions);
-      var mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptions);
+    var mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
+    {
+      Width = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerWidth,
+      Height = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerHeight
+    };
+    var desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptions);
+    var mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptions);
   }
 
   @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
@@ -54,9 +59,9 @@
 
       @if (!string.IsNullOrEmpty(desktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
       {
-      
-       <source media="(min-width: 900px)" srcset="@desktopImage">
-     
+
+        <source media="(min-width: 900px)" srcset="@desktopImage">
+
       }
 
       @if (!string.IsNullOrEmpty(mobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
@@ -67,4 +72,8 @@
       <img src="@desktopImage" alt="eurolife product" />
     </picture>
   }
+
+ 
+
+
 </section>

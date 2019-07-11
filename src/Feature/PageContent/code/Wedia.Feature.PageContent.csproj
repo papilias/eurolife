@@ -89,7 +89,7 @@
     <Content Include="Views\PageContent\PageImage.cshtml" />
     <Content Include="Views\PageContent\PageHeaderTitle.cshtml" />
     <Content Include="Views\PageContent\PageContentBody.cshtml" />
-    <Content Include="Views\PageContent\PageTeaser.cshtml" />
+    <Content Include="Views\PageContent\PageTeaserListItem.cshtml" />
     <Content Include="Views\PageContent\LandingHeaderImage.cshtml" />
     <Content Include="Views\PageContent\PageInfoContent.cshtml" />
     <Content Include="Views\PageContent\PageImageTeaser.cshtml" />

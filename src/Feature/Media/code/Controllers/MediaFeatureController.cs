@@ -21,26 +21,26 @@ namespace Wedia.Feature.Media.Controllers
       _renderingPropertiesRepository = renderingPropertiesRepository;
     }
 
-    public ActionResult PDFGroupedList(PDFGroupDto pdfGroupDto)
+    public ActionResult MediaFileFoldersGroupedList(MediaFileGroupDto mediafileGroupDto)
     {
       var pagingSettings = _renderingPropertiesRepository.Get<PagingSettings>(RenderingContext.Current.Rendering);
-      pagingSettings.CurrentGroupID = pdfGroupDto.Group != null ? new ID(pdfGroupDto.Group) : null;   
+      pagingSettings.CurrentGroupID = mediafileGroupDto.Group != null ? new ID(mediafileGroupDto.Group) : null;   
 
-      var viewModel = _mediaRepository.GetPDFGroupedList(RenderingContext.Current.ContextItem, pagingSettings);
+      var viewModel = _mediaRepository.GetFilesGroupedList(RenderingContext.Current.ContextItem, pagingSettings);
       return View(viewModel);
     }
 
     [HttpGet]
-    public ActionResult AjaxPDFGroupedList(PDFGroupDto pdfGroupDto, int page = 1)
+    public ActionResult AjaxMediaFileFolderGroupedList(MediaFileGroupDto mediafileGroupDto, int page = 1)
     {
-      pdfGroupDto.CurrentGroupID = new ID(pdfGroupDto.Group);
+      mediafileGroupDto.CurrentGroupID = new ID(mediafileGroupDto.Group);
 
-      var viewModel = _mediaRepository.GetNextPage(pdfGroupDto, page);
+      var viewModel = _mediaRepository.GetNextPage(mediafileGroupDto, page);
 
-      if (viewModel.PDFs.Results == null)
+      if (viewModel.Files.Results == null)
         return Json(new { exhausted = true });
       
-      var partial = Utilities.RenderRazorViewToString(ControllerContext, "PDFGroup", viewModel);
+      var partial = Utilities.RenderRazorViewToString(ControllerContext, "MediaFileGroup", viewModel);
       return Json(new { exhausted = viewModel.TotalPagesCount == page + 1, data = partial }, JsonRequestBehavior.AllowGet);
     }
 

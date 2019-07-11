@@ -65,11 +65,6 @@ namespace Wedia.Feature.Media
 
     public struct MediaFile
     {
-      public static readonly ID ID = new ID("{D0AA44DB-CEDF-4B29-AFF6-B43BBFA07F1C}");
-    }
-
-    public struct PDF
-    {
       public static readonly ID ID = new ID("{87151256-44A4-48E2-92B9-E40A529C4540}");
 
       public struct Fields
@@ -78,7 +73,7 @@ namespace Wedia.Feature.Media
       }
     }
 
-    public struct PDFGroup
+    public struct  MediaFileGroup
     {
       public static readonly ID ID = new ID("{2598ADF9-8F12-4651-ABFB-435B1153A62A}");
 
@@ -88,13 +83,25 @@ namespace Wedia.Feature.Media
       }
     }
 
-    public struct PDFFileGroup
+    public struct MediaFileFolderGroup
     {
       public static readonly ID ID = new ID("{20C44FDF-B209-41B2-8A41-4AE8DF883C64}");
 
       public struct Fields
       {
-        public static readonly ID FileGroup = new ID("{F4543AEB-0454-4609-AFEC-D2AB0DD4FA11}");
+        public static readonly ID Group = new ID("{F4543AEB-0454-4609-AFEC-D2AB0DD4FA11}");
+      }
+    }
+
+    public struct HasMediaPublication
+    {
+      public static readonly ID ID = new ID("{3D83FC91-8358-4E1A-9CC1-FDF90C6E3AE2}");
+
+      public struct Fields
+      {
+        public static readonly ID FirstPublishDate = new ID("{1EAC664F-71C3-4F5B-8D1D-22C4363720B1}");
+        public static readonly ID PublishDate = new ID("{01D8867E-7244-41E9-9742-EE60972E6F12}");
+        public static readonly ID PublishSource = new ID("{502AB0B3-D1F6-4079-A6F4-C91EA0CCE9A1}");
       }
     }
 
