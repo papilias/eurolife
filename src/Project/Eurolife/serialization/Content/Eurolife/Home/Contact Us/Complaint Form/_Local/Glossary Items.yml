@@ -1,0 +1,25 @@
+﻿---
+ID: "50be701a-c4bd-4d41-bd39-b4395c552aae"
+Parent: "35190fce-451d-4b50-804a-c70ed0d9cf99"
+Template: "029f90fa-6f63-4d1d-ba0e-de4ea54426de"
+Path: /sitecore/content/Eurolife/Home/Contact Us/Complaint Form/_Local/Glossary Items
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190627T093434Z
+    - ID: "58ae458f-3ad1-41d4-962d-d5b11002576d"
+      Hint: GlossaryItems
+      Type: TreelistEx
+      Value: |
+        {DF117CEF-1E58-4FAB-A17A-DC92F5BD3F32}
+        {EE5294C2-975C-4F80-A7AE-FF95B1D6685F}
+        {DD931152-97C4-4677-8ED0-513D457BA3D8}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

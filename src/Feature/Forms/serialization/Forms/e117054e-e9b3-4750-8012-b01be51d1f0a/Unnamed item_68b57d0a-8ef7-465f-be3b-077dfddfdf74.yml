@@ -2,7 +2,7 @@
 ID: "68b57d0a-8ef7-465f-be3b-077dfddfdf74"
 Parent: "e117054e-e9b3-4750-8012-b01be51d1f0a"
 Template: "b3bdfe59-6667-4432-b261-05d0e3f7fdf6"
-Path: /sitecore/Forms/Compliance Form/Page/Section/clientType/Settings/Datasource/Unnamed item
+Path: /sitecore/Forms/Complaint Form/Page/Section/clientType/Settings/Datasource/Unnamed item
 DB: master
 SharedFields:
 - ID: "3a07c171-9bca-464d-8670-c5703c6d3f11"

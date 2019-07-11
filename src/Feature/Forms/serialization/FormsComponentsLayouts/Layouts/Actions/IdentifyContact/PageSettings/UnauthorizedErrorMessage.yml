@@ -39,6 +39,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+  - Version: 3
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: "Du har ikke tilstrækkelige adgangsrettigheder. Kontakt din Sitecore-administrator."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171219T155134Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -58,6 +70,18 @@ Languages:
       Value: |
         sitecore\admin
   - Version: 2
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: Sie haben nicht die benötigten Zugriffsrechte. Bitte wenden Sie sich an Ihren Sitecore Administrator.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171219T155629Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+  - Version: 3
     Fields:
     - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
       Hint: Text
@@ -95,6 +119,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+  - Version: 3
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: You do not have the sufficient access rights. Please contact your Sitecore administrator.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171101T100201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -114,6 +150,18 @@ Languages:
       Value: |
         sitecore\admin
   - Version: 2
+    Fields:
+    - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
+      Hint: Text
+      Value: 必要なアクセス権限がありません。Sitecore 管理者にご連絡ください。
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171219T160039Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+  - Version: 3
     Fields:
     - ID: "240acdcd-c405-4e49-a96a-b3caab843920"
       Hint: Text
