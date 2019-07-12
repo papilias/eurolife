@@ -11,4 +11,7 @@
   <File Include="Views\Identity\ContactTeaserActions.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{595C650D-84A2-4BEE-826C-A1E94A1528F7}</Item>
   </File>
+  <File Include="Views\Identity\NewsletterForm.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{CFD85A96-F432-466C-B945-E343EED2A9E5}</Item>
+  </File>
 </Project>
