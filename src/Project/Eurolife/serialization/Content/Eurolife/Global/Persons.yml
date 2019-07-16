@@ -1,0 +1,14 @@
+﻿---
+ID: "ab1c0c24-b504-4225-a0c1-540a2fdd2636"
+Parent: "1ad270cf-7ede-46b5-b9ab-3ab4d043f299"
+Template: "00661506-092d-47e4-a559-476c304fc40e"
+Path: /sitecore/content/Eurolife/Global/Persons
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T094656Z

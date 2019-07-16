@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using Sitecore.Data.Items;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
+using Wedia.Foundation.Dictionary.Repositories;
 
 namespace Wedia.Feature.Identity.Repositories
 {

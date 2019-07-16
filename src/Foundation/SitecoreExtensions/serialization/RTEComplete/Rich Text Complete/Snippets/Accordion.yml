@@ -8,8 +8,12 @@ SharedFields:
 - ID: "7dff83d2-e609-4c5f-99a9-13ec8536d65b"
   Hint: Value
   Value: |
-    <ul>
-       <li>
+    <ul class="accordion">
+      <li>
+        <input type="checkbox" name="panel" id="panel-10" checked>
+        <label for="panel-10">
+          <span class="accordion__state"></span>
+        </label>
       </li>
     </ul>
 Languages:

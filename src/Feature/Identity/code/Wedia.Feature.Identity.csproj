@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="campaignmonitor-api">
+      <Version>5.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.4" />
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
@@ -79,16 +82,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Identity.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Identity.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
+    <Content Include="Scripts\Identity\newsletter.js" />
     <Content Include="Views\Identity\FooterContactInfo.cshtml" />
     <Content Include="Views\Identity\Copyright.cshtml" />
     <Content Include="Views\Identity\ContactTeaserInfo.cshtml" />
     <Content Include="Views\Identity\ContactTeaserActions.cshtml" />
+    <Content Include="Views\Identity\NewsletterForm.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\IdentityController.cs" />
+    <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
+    <Compile Include="Models\NewsletterDto.cs" />
+    <Compile Include="Models\NewsletterFormResponse.cs" />
+    <Compile Include="Models\NewsletterFormViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IdentityRepository.cs" />
+    <Compile Include="Services\INewsletterService.cs" />
+    <Compile Include="Services\NewsletterService.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,10 +116,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Wedia.Foundation.DependencyInjection.csproj">
+      <Project>{64188ace-cc0b-4546-a5b0-2422931e3e05}</Project>
+      <Name>Wedia.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
       <Project>{71de993f-50e5-4300-a003-f07f877830cd}</Project>
       <Name>Wedia.Foundation.Dictionary</Name>

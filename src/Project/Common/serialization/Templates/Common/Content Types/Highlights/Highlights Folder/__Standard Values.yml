@@ -15,7 +15,19 @@ SharedFields:
     {1079F9FB-99F2-4A6C-AEA2-C3B8EB8F3AA2}
     {8E1BB2A4-99DF-4A44-9874-CFEC616097EE}
     {89A59513-F418-4DAE-890B-0D0DDA79F62B}
+    {E58FF9A2-2377-4437-875F-99CED2EFE94F}
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190712T083319Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: en
   Versions:
   - Version: 1
