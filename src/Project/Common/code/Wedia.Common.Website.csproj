@@ -239,10 +239,6 @@
     <Content Include="images\Thumbs.db" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
-    <Content Include="assets\styles\componentscss\anchorlist.scss" />
-    <Content Include="assets\styles\componentscss\breadcrumb.scss" />
-    <Content Include="assets\styles\componentscss\hero.scss" />
-    <Content Include="assets\styles\componentscss\product.scss" />
     <Content Include="assets\styles\scss\base-components\_accordion.scss" />
     <Content Include="assets\styles\scss\base-components\_intro.scss" />
     <Content Include="assets\styles\scss\base-components\_slick.scss" />

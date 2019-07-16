@@ -1,3 +1,6 @@
+/*------------------------------------*\
+  #TEASER
+\*------------------------------------*/
 .solo-teaser{
   position: relative;
   display: flex;
@@ -19,28 +22,34 @@
 .solo-teasers__detail-wrap{
   align-self: center;
   flex-basis: 100%;
-  @include breakpoint(700) {
+  margin-bottom:64px;
+  @include breakpoint(1140) {
     flex-basis: 50%;
   }
 }
 .solo-teaser__image{
-  flex-basis: 50%;
+  flex-basis: 100%;
+
+  @include breakpoint(1140) {
+    flex-basis: 50%;
+  }
   img {
-    width: auto;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
     max-width: 300%;
   }
   @include breakpoint(1140) {
     img {
-      height:auto;
-      width: 100%;
     }
   }
 }
 
 .solo-teaser__contents{
-  padding-left: 84px;
+  padding-left: 20px;
   padding-right: 20px;
   @include breakpoint(1140) {
+    padding-right:70px;
     padding-left: calc((100vw - 1100px) / 2);
   }
 }
@@ -54,5 +63,24 @@
 .solo-teaser__text{
   margin-bottom:48px;
   font-weight: 300;
-  max-width: 310px;
+}
+
+.solo-teaser{
+  li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    &:before{
+      content: '';
+      height: 2px;
+      width: 13px;
+      background-color: #ef3340;
+      position: absolute;
+      left: 0;
+      top: 11px;
+    }
+  }
 }

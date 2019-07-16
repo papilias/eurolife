@@ -5,5 +5,13 @@
 .intro{
   .flexify{
     justify-content: space-between;
+    @include breakpoint-rev(700){
+      flex-direction: column;
+    }
+  }
+}
+.intro-cta{
+  @include breakpoint-rev(700) {
+    margin-top:24px;
   }
 }

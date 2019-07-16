@@ -4,6 +4,10 @@
 #fix-1{
   height:var(--h1);
   z-index: 3;
+  @include breakpoint-rev(820){
+    position: static;
+    height: auto;
+  }
 }
 #fix-2{
   height:var(--h2);
@@ -16,6 +20,14 @@
   &.sticky-second{
     transform: translateY(-20px);
     box-shadow:0 9px 16px -10px rgba(0, 0, 0, 0.16);
+
+    @include breakpoint-rev(820){
+      transform: translateY(0);
+      top:0;
+    }
+  }
+  @include breakpoint-rev(820){
+    height:110px;
   }
 }
 
@@ -55,6 +67,9 @@
 
   + .after-sticky{
     padding-top:var(--p1);
+    @include breakpoint-rev(820){
+      padding-top:0;
+    }
   }
 }
 
