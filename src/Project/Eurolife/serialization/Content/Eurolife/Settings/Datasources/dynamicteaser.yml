@@ -1,5 +1,5 @@
 ﻿---
-ID: "86e49df6-7c9c-434d-ac45-35f77446e3a6"
+ID: "76bf6ca7-5bb6-4ee2-80bf-db5628a493c9"
 Parent: "89e25dc8-85f3-421d-b41e-9d5e3e40f8a5"
 Template: "15d489c4-ebf5-4f3b-bd82-d2e846ab73e4"
 Path: /sitecore/content/Eurolife/Settings/Datasources/dynamicteaser
@@ -11,14 +11,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190524T113228Z
+      Value: 20190723T051333Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "da14e9ad-1ce9-4f02-9f5e-23519c650c91"
       Hint: DatasourceTemplate
-      Value: /sitecore/templates/Project/Common/Content Types/Teasers/Dynamic Teaser
-    - ID: "ed070a1e-0115-4dbb-8685-df0c5bf846fa"
-      Hint: DatasourceLocation
-      Value: /sitecore/content/Eurolife/Global/Teasers
+      Value: "{62B2FB1B-FD79-403A-AED2-9D1F464A2E63}"

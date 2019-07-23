@@ -17,11 +17,11 @@
   @Html.Sitecore().Placeholder("page-layout-top")
   <section class="center center--1700 p-t-110 leader">
 
-    @if (Model.Item.DescendsFrom(Templates.HasPersonContent.ID)
-    && (Model.Item.FieldHasValue(Templates.HasPersonContent.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
+    @if (Model.Item.DescendsFrom(Templates.HasPersonImage.ID)
+    && (Model.Item.FieldHasValue(Templates.HasPersonImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
     {
       <div class="leader__photo">
-        @Html.Sitecore().ImageField(Templates.HasPersonContent.Fields.Image, Wedia.Feature.Person.Constants.ImageDimensions.Profile.Height, Wedia.Feature.Person.Constants.ImageDimensions.Profile.Width);
+        @Html.Sitecore().ImageField(Templates.HasPersonImage.Fields.Image, Wedia.Feature.Person.Constants.ImageDimensions.Profile.Height, Wedia.Feature.Person.Constants.ImageDimensions.Profile.Width);
       </div>
     }
 

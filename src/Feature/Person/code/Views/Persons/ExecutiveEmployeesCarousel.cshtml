@@ -20,10 +20,10 @@
         @foreach (var item in Model)
         {
         <div>
-          @if (item.DescendsFrom(Templates.HasPersonContent.ID)
-            && (item.FieldHasValue(Templates.HasPersonContent.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
+          @if (item.DescendsFrom(Templates.HasPersonImage.ID)
+            && (item.FieldHasValue(Templates.HasPersonImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
           {
-            @Html.Sitecore().ImageField(Templates.HasPersonContent.Fields.Image,
+            @Html.Sitecore().ImageField(Templates.HasPersonImage.Fields.Image,
           item,
           Constants.ImageDimensions.Carousel.Height,
           Constants.ImageDimensions.Carousel.Width)

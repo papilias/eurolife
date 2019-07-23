@@ -10,10 +10,10 @@
     foreach (var item in Model)
     {
       <a class="leadership__member" href="@item.Url()">
-        @if (item.DescendsFrom(Templates.HasPersonContent.ID)
-           && (item.FieldHasValue(Templates.HasPersonContent.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
+        @if (item.DescendsFrom(Templates.HasPersonImage.ID)
+           && (item.FieldHasValue(Templates.HasPersonImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
         {
-          @Html.Sitecore().ImageField(Templates.HasPersonContent.Fields.Image, item)
+          @Html.Sitecore().ImageField(Templates.HasPersonImage.Fields.Image, item)
         }
 
         <h2 class="leadership__name">@item.Field(Templates.Person.Fields.Name)</h2>

@@ -13,7 +13,7 @@ SharedFields:
   Value: 1
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "{2B83C3D2-6268-4455-A53D-7EA9BA9731F7}"
+  Value: "site:employeescarousel"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: EmployeesCarousel

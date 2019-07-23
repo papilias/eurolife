@@ -2,8 +2,6 @@
   #INPUTS
 \*------------------------------------*/
 
-
-
 input[type="text"]{
     display: block;
     width:100%;
@@ -33,7 +31,6 @@ select{
     font-family: inherit;
 }
 
-
 input[type="submit"]{
 
     display: inline-block;
@@ -52,22 +49,6 @@ input[type="submit"]{
     color: #fff;
     transition: background-color 150ms linear;
 }
-/*
-input[type="file"]{
-    border:0;
-    background-color: transparent;
-    &:before {
-        content: '';
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border: 2px solid;
-        border-radius: 50%;
-        text-indent: -9999em;
-    }
-}
-
-*/
 
 /*btn classes*/
 .btn{
@@ -99,6 +80,14 @@ input[type="file"]{
     transition: background-color 150ms linear, color 150ms linear;
 }
 
+.btn--white{
+    background-color:#fff;
+    color: $charcoal;
+    font-weight: 500;
+    border-color: #fff;
+    transition: background-color 150ms linear, color 150ms linear;
+}
+
 .btn--ghost{
     background-color: transparent;
     color:#fff;
@@ -123,6 +112,42 @@ input[type="file"]{
     background-position: 50%;
 }
 
+
+.btn--c-t-c{
+    padding:13px 17px 13px;
+    color:$strawberry;
+    svg{
+        max-width: 26px;
+        margin: 0 10px -8px -2px;
+    }
+}
+.no-touch{
+    .btn--c-t-c:hover{
+        path{
+            fill:#fff;
+        }
+    }
+}
+
+
+
+.btn--c-t-call{
+    margin-right: 10px;
+    padding:14px 17px;
+    svg{
+        max-width: 22px;
+        margin: 0 10px -8px -2px;
+    }
+}
+.btn--c-t-chat{
+    padding:15px 17px;
+    svg{
+        max-width: 28px;
+        margin: 0 10px -8px -2px;
+    }
+}
+
+
 .no-touch{
 
     .btn--dark:hover{
@@ -130,7 +155,9 @@ input[type="file"]{
     }
     .btn--ghost:hover,
     .btn--ghost-rev:hover,
-    .btn--light:hover{
+    .btn--light:hover,
+    .btn--white:hover,
+    .btn--material:hover{
         background-color: $color-btn-dark;
         border-color: $color-btn-dark;
         color:#fff;
@@ -207,9 +234,9 @@ input[type="checkbox"] {
 
 /*radio buttons*/
 input[type="radio"] {
-    //float: left;
-    //margin-top: 7px;
-    //display: none;
+    float: left;
+    margin-top: 7px;
+    display: none;
 
     + label {
         position: relative;
@@ -254,12 +281,21 @@ input[type="radio"] {
 
 .cta-double__item__label{
     display: block;
+    margin-bottom:8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $dusky-blue;
+}
+
+.cta-double__item__prompt{
+    max-width: 70%;
+    margin-bottom: 24px;
     font-size: 14px;
     color: $dusky-blue-soft;
 }
 
 .cta-double__item__link{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     color: $dusky-blue;
     &:after{
@@ -273,19 +309,16 @@ input[type="radio"] {
 }
 
 .cta-double__item{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
+        position: relative;
     padding:48px 36px 48px 48px;
     background-color: transparent;
     transition: background-color 250ms ease, box-shadow 300ms ease;
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0);
     border:1px solid $dusky-blue;
     svg{
-        margin-left: auto;
-        max-width: 35px;
-        grid-column: 2 / 2;
-        grid-row: 1 / span 2;
+        margin-left: 5px;
+        max-width: 18px;
+        margin-bottom: -3px;
     }
 }
 
@@ -306,7 +339,8 @@ input[type="radio"] {
         background-color: $color-life-insurance;
         box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.18);
         .cta-double__item__link,
-        .cta-double__item__label{
+        .cta-double__item__label,
+        .cta-double__item__prompt{
             color:#fff;
         }
         path, use{

@@ -21,14 +21,23 @@ namespace Wedia.Feature.Person
       }
     }
 
+    public struct HasPersonImage
+    {
+      public static readonly ID ID = new ID("{CCBE09A4-4E2B-43F2-BE19-5EC382143924}");
+
+      public struct Fields
+      {
+        public static readonly ID Image = new ID("{A212C93A-7C83-4FED-BC5A-5B035BAEFF50}");
+        public const string Image_FieldName = "PersonImage";
+      }
+    }
+
     public struct HasPersonContent
     {
       public static readonly ID ID = new ID("{050CC5CC-3AB1-4A3D-87D2-A25F798BDA55}");
 
       public struct Fields
       {
-        public static readonly ID Image = new ID("{A212C93A-7C83-4FED-BC5A-5B035BAEFF50}");
-        public const string Image_FieldName = "PersonImage";
         public static readonly ID Body = new ID("{3A28C78D-3C5E-4D7B-837B-9F511FB70D80}");
         public const string Body_FieldName = "PersonBody";
       }

@@ -26,6 +26,12 @@
 
     $(document).ready(function () {
 
+        if($('select').length) {
+            $('select').select2({
+                minimumResultsForSearch: -1
+            });
+        }
+
         if($('.form').length){
             highLightLabel();
         }
@@ -77,6 +83,21 @@
 
         }
 
+
+        if ($('.js-simple-slider').length) {
+            $('.js-simple-slider').slick({
+                mobileFirst:true,
+                dots: false,
+                arrows: true,
+                infinite: false,
+                speed: 500,
+                slidesToShow: 1,
+                fade: true,
+                prevArrow: $('.slick-prev'),
+                nextArrow: $('.slick-next')
+
+            });
+        }
 
         //leadership carousel start
         if ($('.js-leadership-slider-image').length) {
@@ -133,12 +154,15 @@
 
     $('.programs__tabs__title').click(function(){
         $programid = $(this).attr('data-id');
-        console.log($programid);
         $('.programs__tabs__title').removeClass('programs__tabs__title--active');
         $('.program-wrap').removeClass('program-wrap--active');
         $(this).addClass('programs__tabs__title--active');
         $('#'+$programid).addClass('program-wrap--active');
+    });
 
+    //expand vocabulary
+    $('.vocabulary__expander').click(function(){
+        $('.vocabulary').toggleClass('vocabulary--visible');
     });
 
 
@@ -416,4 +440,31 @@
         });
     }
 
+    //using an instersection observer for product START
+
+    const anchors = document.querySelectorAll('.invisible');
+
+    observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+
+                const id = entry.target.getAttribute('id');
+                $('.anchorlist a').removeClass('achorlist__active');
+                $('a[href="#'+id+'"]').addClass('achorlist__active');
+
+            } else {
+                entry.target.classList.remove('in-view');
+            }
+        });
+    });
+
+    anchors.forEach(anchor => {
+        observer.observe(anchor);
+    });
+
+    //using an instersection observer for product END
+
+
 })(jQuery);
+
+
