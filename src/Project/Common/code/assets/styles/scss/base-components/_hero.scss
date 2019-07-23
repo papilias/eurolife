@@ -88,3 +88,49 @@
   }
 }
 
+.hero-contents--plain{
+
+  position: absolute;
+  top: 0;
+  border: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+
+  &:after{
+    content: '';
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  h1{
+    color: #fff;
+  }
+
+  p{
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.hero-plain{
+  img{
+    object-fit: cover;
+    height: auto;
+    width:100%;
+  }
+}
+
+.hero--extra{
+  .h6{
+    font-weight: 500;
+    color:#fff;
+  }
+}

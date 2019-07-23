@@ -8,7 +8,7 @@
     list-style-type: none;
     border-radius: 5px;
     background-color:#fff;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
     border-left:6px solid $color-base;
   }
   h3 {
@@ -61,11 +61,32 @@
     transform: rotate(180deg);
   }
 }
+
+.accordion--glossary{
+  > li{
+    box-shadow: 0 0;
+    border-radius:0;
+    border: none;
+    border-bottom:2px solid rgba(181,181,181,0.4);
+  }
+  input[type="checkbox"] + label {
+    padding: 16px 24px 0;
+  }
+  .accordion__state{
+    border-color: $color-health;
+    &:before,&:after{
+      background: $color-health;
+    }
+  }
+}
+
+
+
 .accordion__content {
   overflow: hidden;
   max-height: 0em;
   position: relative;
-  padding: 0 24px;
+  padding: 0 60px 0 24px;
   transition: all 500ms cubic-bezier(0.865, 0.14, 0.095, 0.87);
   p {
     margin-bottom: 20px;
@@ -132,7 +153,11 @@ input:checked + label .accordion__state:before{
   display: none;
 }
 
-
+.accordion-heading{
+  border-left: 2px solid #ef3340;
+  padding: 10px 20px;
+  line-height: 1;
+}
 
 .no-touch{
   .file-item:hover {
