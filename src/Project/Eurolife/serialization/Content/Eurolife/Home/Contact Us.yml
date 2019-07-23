@@ -5,7 +5,7 @@ Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
 Path: /sitecore/content/Eurolife/Home/Contact Us
 DB: master
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
@@ -19,93 +19,80 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{0DE863F3-4672-4C68-9A67-B2A1F555BAB7}"
+              uid="{96717AD5-B29E-4751-9BB1-0E2ED2A83175}"
               p:before="*"
               s:ds="{098C371C-E513-47F4-855F-3E1A20154F30}"
               s:id="{79FE3C38-ED6A-4F45-A910-9939FDBA0075}"
-              s:par=""
-              s:ph="/page-layout/teaser-placeholder-2-{F818AF09-BFFE-4BB0-8152-E583CF283491}-0" />
+              s:ph="/page-layout/teaser-placeholder-2-{0A045CFD-AEFD-4B32-85AD-93A538ACBC95}-0" />
             <r
-              uid="{99CCDF89-3CF7-4C15-8754-E14BE18F78B1}"
-              p:after="r[@uid='{0DE863F3-4672-4C68-9A67-B2A1F555BAB7}']"
+              uid="{B1A86270-E50E-4B76-8250-9CC555A8382E}"
+              p:after="r[@uid='{96717AD5-B29E-4751-9BB1-0E2ED2A83175}']"
               s:ds="{D8D41721-CE9C-4AAE-89B7-D0B64D103089}"
               s:id="{79FE3C38-ED6A-4F45-A910-9939FDBA0075}"
               s:par=""
-              s:ph="/page-layout/teaser-placeholder-1-{F818AF09-BFFE-4BB0-8152-E583CF283491}-0" />
+              s:ph="/page-layout/teaser-placeholder-1-{0A045CFD-AEFD-4B32-85AD-93A538ACBC95}-0" />
             <r
-              uid="{A7B9430B-C0E5-4E86-8578-6DCECD913F3E}"
-              p:after="r[@uid='{99CCDF89-3CF7-4C15-8754-E14BE18F78B1}']"
+              uid="{101BBB19-460A-4CFD-9B29-6CEA237FA099}"
+              p:after="r[@uid='{B1A86270-E50E-4B76-8250-9CC555A8382E}']"
               s:id="{595C650D-84A2-4BEE-826C-A1E94A1528F7}"
-              s:ph="/page-layout/teaser-placeholder-2-{518A1581-D6AB-49EC-81BC-BD915508873C}-0" />
+              s:ph="/page-layout/teaser-placeholder-2-{F79415AF-7BA7-4FCC-81FC-AC294830676B}-0" />
             <r
-              uid="{338FAC63-5135-4EC0-B49F-05B78B96993A}"
-              p:after="r[@uid='{A7B9430B-C0E5-4E86-8578-6DCECD913F3E}']"
+              uid="{B3D9F9A0-E501-41CC-A7A2-7143CDD07C3D}"
+              p:after="r[@uid='{101BBB19-460A-4CFD-9B29-6CEA237FA099}']"
               s:id="{0EF1DAA4-948B-4A62-8AF1-6654FCE35F85}"
-              s:ph="/page-layout/teaser-placeholder-1-{518A1581-D6AB-49EC-81BC-BD915508873C}-0" />
+              s:ph="/page-layout/teaser-placeholder-1-{F79415AF-7BA7-4FCC-81FC-AC294830676B}-0" />
             <r
-              uid="{534A3F28-600E-4F4B-ADEB-24475E542FB1}"
-              p:after="r[@uid='{338FAC63-5135-4EC0-B49F-05B78B96993A}']"
-              s:ds="{BA299C84-6D1A-4615-B7AA-2952E9B7FE0D}"
-              s:id="{C21C1245-0641-48A4-B068-9C16BCD452EB}"
-              s:par=""
-              s:ph="/page-layout/teaser-placeholder-1-{518A1581-D6AB-49EC-81BC-BD915508873C}-0" />
-            <r
-              uid="{55094AB5-A628-4693-AD1A-2E369C844BB1}"
-              p:after="r[@uid='{534A3F28-600E-4F4B-ADEB-24475E542FB1}']"
+              uid="{AAFD4EAC-5D67-4FE1-AF66-2FA956C6B784}"
+              p:after="r[@uid='{B3D9F9A0-E501-41CC-A7A2-7143CDD07C3D}']"
               s:id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
               s:ph="/page-layout/page-layout-top" />
             <r
-              uid="{02D1C11B-5702-4057-B680-003C61B52811}"
-              p:after="r[@uid='{55094AB5-A628-4693-AD1A-2E369C844BB1}']"
+              uid="{3EA99C00-B995-42FD-8860-B94EBDDB1406}"
+              p:after="r[@uid='{AAFD4EAC-5D67-4FE1-AF66-2FA956C6B784}']"
               s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
               s:ph="/page-layout/page-layout-top" />
             <r
-              uid="{544818A3-0F4F-4B40-9170-811BA628E3D9}"
-              p:after="r[@uid='{02D1C11B-5702-4057-B680-003C61B52811}']"
+              uid="{EBF0915C-7FDD-47AC-8ED8-8AF9DB0036B1}"
+              p:after="r[@uid='{3EA99C00-B995-42FD-8860-B94EBDDB1406}']"
+              s:id="{32F9A214-369B-44EC-B30F-09BBA8BA8058}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
+              uid="{D92F2583-23BC-46FB-8064-7575BC7DE4BA}"
+              p:after="r[@uid='{EBF0915C-7FDD-47AC-8ED8-8AF9DB0036B1}']"
               s:ds="{E504FD27-1F63-4C88-AC53-D60E58E5C43C}"
               s:id="{6434235F-FBC8-489B-8E8C-26D0CC1373F4}"
               s:ph="/page-layout/page-layout-top" />
             <r
-              uid="{01FC04A1-F11D-49AF-8D7E-B3BCA1D80B76}"
-              p:after="r[@uid='{544818A3-0F4F-4B40-9170-811BA628E3D9}']"
-              s:ds=""
+              uid="{3A4D5EE4-9741-4B58-B61C-7CA929A132B6}"
+              p:after="r[@uid='{D92F2583-23BC-46FB-8064-7575BC7DE4BA}']"
               s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
-              s:par="Background=%7b7F898357-3B13-4BEC-802E-7EF58D50F030%7d"
               s:ph="page-layout" />
             <r
-              uid="{83F1D698-7D3B-446C-8EA5-291E6B6F6EA2}"
-              p:after="r[@uid='{01FC04A1-F11D-49AF-8D7E-B3BCA1D80B76}']"
-              s:ds="{861FFA42-B99C-4B74-A8B8-B2A9D351C5A2}"
-              s:id="{7F610AEE-95C2-4814-9E1D-1E619ABCDE99}"
-              s:par="Alignment=%7b90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7d"
-              s:ph="page-layout" />
-            <r
-              uid="{518A1581-D6AB-49EC-81BC-BD915508873C}"
-              p:after="r[@uid='{83F1D698-7D3B-446C-8EA5-291E6B6F6EA2}']"
-              s:ds="{034938BA-453D-4D0D-ACD2-BD8FD5E9663B}"
+              uid="{F79415AF-7BA7-4FCC-81FC-AC294830676B}"
+              p:after="r[@uid='{3A4D5EE4-9741-4B58-B61C-7CA929A132B6}']"
+              s:ds="{CED0CD3F-5283-4EF6-8402-3DA08C1ACEFF}"
               s:id="{ACD3AFD2-69FF-4DE4-9F99-68504F2B8D7D}"
-              s:par=""
               s:ph="page-layout" />
             <r
-              uid="{B3DF194A-006F-44B4-A117-6B2E1D8F6041}"
-              p:after="r[@uid='{518A1581-D6AB-49EC-81BC-BD915508873C}']"
+              uid="{0A045CFD-AEFD-4B32-85AD-93A538ACBC95}"
+              p:after="r[@uid='{F79415AF-7BA7-4FCC-81FC-AC294830676B}']"
+              s:ds="{61EDCAC3-2C0B-4EAE-9584-5FB804070E35}"
+              s:id="{ACD3AFD2-69FF-4DE4-9F99-68504F2B8D7D}"
+              s:ph="page-layout" />
+            <r
+              uid="{71833E62-20D2-4255-B79C-680CD5079D1C}"
+              p:after="r[@uid='{0A045CFD-AEFD-4B32-85AD-93A538ACBC95}']"
               s:ds="{789440B4-6BED-4ABB-A826-E0C6DC0CF045}"
               s:id="{BC33BB52-419D-4118-9D08-EE4009C50D3E}"
-              s:ph="page-layout" />
-            <r
-              uid="{F818AF09-BFFE-4BB0-8152-E583CF283491}"
-              p:after="r[@uid='{B3DF194A-006F-44B4-A117-6B2E1D8F6041}']"
-              s:ds="{0B76535D-A182-4878-8FE4-58B3E3612C43}"
-              s:id="{ACD3AFD2-69FF-4DE4-9F99-68504F2B8D7D}"
-              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
               s:ph="page-layout" />
             <r
               uid="{87235964-4703-4C6F-8CD8-E3B4ED6FA48D}">
               <p:d />
             </r>
             <r
-              uid="{ED7FBF94-0E1A-4ABD-A360-646BE330FFF9}"
-              p:after="*[1=2]" />
+              uid="{A14B5449-C946-4C04-95C5-F6266FB843DE}">
+              <p:d />
+            </r>
             <r
               uid="{9015BC53-2AE3-455A-A1DD-879A04CC5E07}">
               <p:d />
@@ -114,20 +101,25 @@ Languages:
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190621T081539Z
+      Value: 20190723T120036Z
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: Προτεραιότητα στην εξυπηρέτηση
-    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
-      Hint: Body
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: Πώς μπορούμε να σας βοηθήσουμε;
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Επιλέξτε τον τρόπο με τον οποίο θέλετε να μας μιλήσετε και θα φροντίσουμε για όσα σας απασχολούν.
+      Value: |
+        Η εξυπηρέτησή σας είναι προτεραιότητά μας. Βρείτε στοιχεία επικοινωνίας 
+        και χρήσιμες υπηρεσίες μέσω των οποίων θα φροντίσουμε για όσα σας 
+        απασχολούν.
+                    
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
+        <image mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" ></image>
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Προτεραιότητα στην εξυπηρέτηση
+      Value: Contact Us

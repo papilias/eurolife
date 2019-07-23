@@ -30,6 +30,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T085756Z
+    - ID: "4ec67362-43ba-4021-89fa-4aa5a1ffb9e0"
+      Hint: OrganisationEmail
+      Value: info@eurolife.gr
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -46,9 +49,18 @@ Languages:
     - ID: "b4926567-fd0b-4bed-b86b-1d3b25c90d8b"
       Hint: SiteBrowserTitle
       Value: Eurolife
+    - ID: "c43a2010-e0dc-41bf-bcfb-f6433a60845d"
+      Hint: OrganisationFax
+      Value: "211-1873530 (16530)"
+    - ID: "c8175f95-150a-47c9-a485-bf76e6436304"
+      Hint: OrganisationName
+      Value: Eurolife ERB
     - ID: "c9937d39-6c03-44be-a0bb-965903c6ef43"
       Hint: Copyright
       Value: Copyright 2019 &copy; Eurolife
+    - ID: "cea1aafe-bc37-4321-a135-ededcac59783"
+      Hint: OrganisationPhone
+      Value: 210 9003800
 - Language: en
   Fields:
   - ID: "eb2af3ca-2892-4044-b791-394344ab8456"

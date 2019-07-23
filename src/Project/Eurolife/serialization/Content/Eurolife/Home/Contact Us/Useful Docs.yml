@@ -13,7 +13,7 @@ SharedFields:
   Hint: __Sortorder
   Value: 600
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
@@ -27,27 +27,26 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{19904C3F-6C1E-4393-9572-14087E2CF9A2}"
-              p:after="r[@uid='{EE984C68-2851-4F5C-8BED-1E3EB770700C}']"
-              s:ds="{9752885A-E0FC-40B0-95F8-CDFFE59789CC}"
+              uid="{1ECB2697-B004-4D01-B8E1-3284162D3A44}"
+              p:after="r[@uid='{8A619E14-2225-4EB6-B5DF-DBC38797961B}']"
+              s:ds="{460BF782-7276-4832-AC24-5EFF6D35DF0F}"
               s:id="{5C56B6E0-DD5D-4A0F-ABC8-1AA48481841F}"
               s:ph="page-layout" />
           </d>
         </r>
-    - ID: "0ce01372-9068-4424-8ec1-81005fbcfe3b"
-      Hint: SeoFollowLinks
-      Type: Checkbox
-      Value: 1
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190627T144501Z
-    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
-      Hint: BrowserTitle
-      Value: Χρήσιμα Έντυπα
+      Value: 20190723T105100Z
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Χρήσιμα Έντυπα
-    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
-      Hint: CanIndex
-      Type: Checkbox
-      Value: 1
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: |
+        Σε αυτό το σημείο μπορείτε να ανατρέχετε για να κατεβάσετε έντυπα που 
+        ενδεχομένως να χρειαστείτε, καθώς και τις οδηγίες συμπλήρωσής τους.
+                    

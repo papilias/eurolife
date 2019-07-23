@@ -95,8 +95,8 @@
     <Content Include="Views\Teasers\TeaserNumbers.cshtml" />
     <Content Include="Views\Teasers\LightTeaserContent.cshtml" />
     <Content Include="Views\Teasers\ColoredTeaserImage.cshtml" />
-    <Content Include="Views\Teasers\ImageTeaser.cshtml" />
-    <Content Include="Views\Teasers\StaticTwoColumnsTeaser.cshtml" />
+    <Content Include="Views\Teasers\BackgroundImageTeaser.cshtml" />
+    <Content Include="Views\Teasers\TwoColumnsTeaser.cshtml" />
     <Content Include="Views\Teasers\BorderedTeaser.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>

@@ -9,7 +9,7 @@ SharedFields:
   Hint: __Sortorder
   Value: 300
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
@@ -23,26 +23,25 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{5AB25EA0-75B4-47FA-BD27-6B09E082F8B2}"
-              p:before="*"
-              s:id="{3F152F68-ECD9-42D8-B73F-A5E16DF5D827}"
-              s:ph="/page-layout/section-{F24E8C87-C239-43FC-8265-0DB3CCC2B2F8}-0/col-huge-{B5B4A1F5-0BF6-4FC8-88A1-C0BD54020ADA}-0" />
-            <r
-              uid="{B5B4A1F5-0BF6-4FC8-88A1-C0BD54020ADA}"
-              p:after="r[@uid='{5AB25EA0-75B4-47FA-BD27-6B09E082F8B2}']"
-              s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
-              s:ph="/page-layout/section-{F24E8C87-C239-43FC-8265-0DB3CCC2B2F8}-0" />
+              uid="{090F8187-E3EA-4A1A-8615-0D67786253BA}"
+              s:ds=""
+              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190513T113408Z
+      Value: 20190723T102725Z
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: LeadershipTeam
+      Value: Η ηγετική μας ομάδα
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
-      Hint: NavigationTitle
-      Value: LeadershipTeam
+      Value: |
+        Η Διοίκησή μας διαμορφώνει τη χάραξη της στρατηγικής μας και ορίζει τον 
+        τρόπο με τον οποίο λειτουργούμε και συμπεριφερόμαστε, τόσο απέναντι 
+        στους πελάτες μας, όσο και απέναντι στην κοινωνία.
+                        

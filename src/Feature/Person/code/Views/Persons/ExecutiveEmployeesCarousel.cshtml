@@ -13,47 +13,48 @@
 }
 
 <section class="m-t-96 m-b-272">
-  <h1 class="h4 center center--1100 m-b-64">@Html.Sitecore().Dictionary("/Person/Carousel/Title", "Our leadership team")</h1>
+  <h1 class="h4 center center--1100 m-b-64">@Html.Sitecore().Dictionary("/Person/Employees Carousel/Title", "Our leadership team")</h1>
   <div class="leadership-slider">
     <div class="leadership-slider--image">
       <div class="js-leadership-slider-image" dir="rtl">
         @foreach (var item in Model)
         {
-        <div>
-          @if (item.DescendsFrom(Templates.HasPersonImage.ID)
-            && (item.FieldHasValue(Templates.HasPersonImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
+          quotes += $@"<div>
+                                  <h2 class='h5 m-b-8'>{item.Field(Templates.Person.Fields.Name)}</h2>";
+
+          if (item.DescendsFrom(Templates.HasPersonQuote.ID)
+          && (item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote) || item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote)))
           {
-            @Html.Sitecore().ImageField(Templates.HasPersonImage.Fields.Image,
-          item,
-          Constants.ImageDimensions.Carousel.Height,
-          Constants.ImageDimensions.Carousel.Width)
+
+
+            quotes += $@"<div class='leadership-slider__position'>{item.Field(Templates.HasPersonPosition.Fields.Position)}</div>";
           }
 
-          @{
-              quotes += $@"<div>
-                              <h2 class='h5 m-b-8'>{item.Field(Templates.Person.Fields.Name)}</h2>";
 
-              if (item.DescendsFrom(Templates.HasPersonQuote.ID)
-              && (item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote) || item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote)))
-              {
-
-
-                quotes += $@"<div class='leadership-slider__position'>{item.Field(Templates.HasPersonPosition.Fields.Position)}</div>";
-              }
-
-
-              if (item.DescendsFrom(Templates.HasPersonQuote.ID)
-              && (item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote) || item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote)))
-              {
-                quotes += $@"<div class='leadership-slider__quote'>
-                                    {item.Field(Templates.HasPersonQuote.Fields.Quote)}
-                             </div>";
-              }
-
-
-              quotes += "</div>";
+          if (item.DescendsFrom(Templates.HasPersonQuote.ID)
+          && (item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote) || item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote)))
+          {
+            quotes += $@"<div class='leadership-slider__quote'>
+                                        {item.Field(Templates.HasPersonQuote.Fields.Quote)}
+                                  </div>";
           }
-        </div>
+
+
+          quotes += "</div>";
+
+
+          if (item.DescendsFrom(Templates.HasPersonImage.ID)
+             && (item.FieldHasValue(Templates.HasPersonImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
+          {
+            <div>
+
+              @Html.Sitecore().ImageField(Templates.HasPersonImage.Fields.Image,
+                item,
+                Constants.ImageDimensions.Carousel.Height,
+                Constants.ImageDimensions.Carousel.Width)
+              
+            </div>
+          }
         }
 
       </div>

@@ -20,6 +20,10 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
         l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
         <r
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="head"
+          uid="{1130C00F-9FD9-45FF-AF29-ACDC68D47866}" />
+        <r
           id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
           ph="page-layout"
           uid="{7EC18256-AFCB-4E92-BE82-AA9C5CBD5159}" />

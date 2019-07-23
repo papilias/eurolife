@@ -12,8 +12,6 @@
 
 }
 
-
-
 @if (Model.Item.FieldHasValue(Templates.HighlightMain.Fields.Title) || Sitecore.Context.PageMode.IsExperienceEditor)
 {
   <section id="hightlights-section" class="product-moto center center--1100">
@@ -23,27 +21,32 @@
     </p>
   </section>
 }
-   
-<section class="highlights center--1100 center">
 
-  @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
+<section class="highlights center--1100 center m-t-64 m-b-112">
+
+  @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
   {
-    using (Html.BeginEditFrame(item.ID.ToString(), ""))
+    foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
     {
-      <div class="teaser teaser--highlight">
-        <div class="teaser-icon @(item?.TargetItem(Templates.HasHighlightIcon.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
-        <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
-        <div class="teaser-highlight__text">
-          @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary, item)
+      using (Html.BeginEditFrame(item.ID.ToString(), ""))
+      {
+        <div class="teaser teaser--highlight">
+          <div class="teaser-icon @(item?.TargetItem(Templates.HasHighlightIcon.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
+          <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
+          <div class="teaser-highlight__text">
+            @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary, item)
+          </div>
+
+          @if (item.DescendsFrom(Templates.HasHighlightCTA.ID))
+          {
+            <div class="teaser__btn">
+              @Html.Sitecore().Field(Templates.HasHighlightCTA.Fields.CTA, item, new { @class = "btn--default btn btn--dark" })
+            </div>
+
+          }
+
         </div>
-
-        @if (item.DescendsFrom(Templates.HasHighlightCTA.ID))
-        {
-          @Html.Sitecore().Field(Templates.HasHighlightCTA.Fields.CTA, item)
-        }
-
-      </div>
+      }
     }
   }
-
 </section>

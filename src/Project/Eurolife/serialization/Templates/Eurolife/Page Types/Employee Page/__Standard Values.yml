@@ -1,0 +1,42 @@
+﻿---
+ID: "33547c8e-ed0a-410d-af9e-3dfa81a4d2d5"
+Parent: "ce1d7e61-0867-4d85-8661-ebea1d8b48ea"
+Template: "ce1d7e61-0867-4d85-8661-ebea1d8b48ea"
+Path: /sitecore/templates/Project/Eurolife/Page Types/Employee Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
+        <r
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="head"
+          uid="{B68D4FF5-3ADC-4AC8-8583-38361C21425D}" />
+        <r
+          id="{FFE84079-A9DA-410E-A281-0ED31C52FE96}"
+          ph="page-layout-top"
+          uid="{7CA55BE3-91AD-461C-9772-27B388C02DB4}" />
+        <r
+          id="{C567433E-34EA-4636-A942-3A93BFF54AAA}"
+          ph="page-layout"
+          uid="{CBFFD0E6-1024-41F9-92F3-185ECDD785AB}" />
+        <r
+          ds="{2B83C3D2-6268-4455-A53D-7EA9BA9731F7}"
+          id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
+          ph="page-layout"
+          uid="{1CFDF238-3C33-4029-A02F-AC7A63133ECA}" />
+      </d>
+    </r>
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T103308Z

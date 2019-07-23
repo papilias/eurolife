@@ -16,3 +16,11 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "c5270f95-33aa-4da7-b3b7-0eea5dd1b4b1"
+      Hint: Persons
+      Type: TreelistEx
+      Value: |
+        {E1B6047C-95B0-4E13-92EB-5BD2EBDAADBF}
+        {53AD8646-8A21-43EE-8B64-61A1D2AF8614}
+        {82A4D968-746B-4C39-ABD8-BED0BD368474}
+        {F52C1622-A9CD-4C17-9D0A-9D18EB43B022}

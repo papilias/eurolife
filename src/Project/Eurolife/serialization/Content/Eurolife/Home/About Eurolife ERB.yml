@@ -5,7 +5,7 @@ Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
 Path: /sitecore/content/Eurolife/Home/About Eurolife ERB
 DB: master
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
@@ -19,93 +19,18 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{257FF17E-D5E4-47BB-86EC-F9B5EA5C6A75}"
-              p:before="*"
-              s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
-              s:ph="/page-layout/section-{CD99C690-52FD-4779-A68F-3FB3C85BCC56}-0" />
-            <r
-              uid="{04DFEDF4-69D7-495F-88B1-9AF0668BAC32}"
-              p:after="r[@uid='{257FF17E-D5E4-47BB-86EC-F9B5EA5C6A75}']"
-              s:id="{D1009CC0-A073-4EA5-99FD-389C097F0B4E}"
-              s:ph="/page-layout/section-{A0174F3F-929C-42E4-A471-3EFEBED64995}-0/col-two-{083D88CB-EFEC-4527-BD6B-10EB7663AF17}-0" />
-            <r
-              uid="{0E99C186-C2C2-4E7C-94E1-BA067041D6FD}"
-              p:after="r[@uid='{04DFEDF4-69D7-495F-88B1-9AF0668BAC32}']"
-              s:id="{D1009CC0-A073-4EA5-99FD-389C097F0B4E}"
-              s:ph="/page-layout/section-{A0174F3F-929C-42E4-A471-3EFEBED64995}-0/col-three-{083D88CB-EFEC-4527-BD6B-10EB7663AF17}-0" />
-            <r
-              uid="{3A86E951-A7FE-48B2-AB17-3B5ECA9BC95F}"
-              p:after="r[@uid='{0E99C186-C2C2-4E7C-94E1-BA067041D6FD}']"
-              s:id="{D1009CC0-A073-4EA5-99FD-389C097F0B4E}"
-              s:ph="/page-layout/section-{A0174F3F-929C-42E4-A471-3EFEBED64995}-0/col-one-{083D88CB-EFEC-4527-BD6B-10EB7663AF17}-0" />
-            <r
-              uid="{9E2A5E03-A3B7-4208-90EF-37A6294715F0}"
-              p:after="r[@uid='{3A86E951-A7FE-48B2-AB17-3B5ECA9BC95F}']"
-              s:id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
-              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0/col-huge-{27216FFE-7598-44C3-BEC1-CCE4A3B6A8A9}-0" />
-            <r
-              uid="{27216FFE-7598-44C3-BEC1-CCE4A3B6A8A9}"
-              p:after="r[@uid='{9E2A5E03-A3B7-4208-90EF-37A6294715F0}']"
-              s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
-              s:ph="/page-layout/section-{93A41293-86EA-45A3-A0BE-DF16770633D0}-0" />
-            <r
-              uid="{B25BB8EC-10EE-46DC-921B-AA6DDC238626}"
-              p:after="r[@uid='{27216FFE-7598-44C3-BEC1-CCE4A3B6A8A9}']"
-              s:id="{CFDB3B22-1701-4396-8161-79FB6880F9A0}"
-              s:ph="/page-layout/section-{DB9595AB-E38A-4B28-A5BE-5BBC6E6C4779}-0" />
-            <r
-              uid="{E7EA72CC-0746-4AEC-946B-8771963C430D}"
+              uid="{267A75C4-ECE9-407A-B0EC-FA8A0D876E5B}"
               p:after="r[@uid='{9015BC53-2AE3-455A-A1DD-879A04CC5E07}']"
-              s:ds="{32039C03-DA31-4421-BBED-0F843809A090}"
-              s:id="{E49EABF7-D73F-4C34-B47B-C14505556162}"
-              s:ph="page-layout" />
-            <r
-              uid="{C5C992EA-D301-442D-A1D2-26BC8849D65A}"
-              p:after="r[@uid='{E7EA72CC-0746-4AEC-946B-8771963C430D}']"
-              s:ds="{868DC36E-C2F5-4E0A-B5AD-C83093265E95}"
-              s:id="{D1DD7390-C774-4C86-8904-FD074B9BD21D}"
-              s:par=""
-              s:ph="page-layout" />
-            <r
-              uid="{8E44D8EE-1248-4C48-A9E2-5C13396A9308}"
-              p:after="r[@uid='{C5C992EA-D301-442D-A1D2-26BC8849D65A}']"
               s:ds="{2B83C3D2-6268-4455-A53D-7EA9BA9731F7}"
               s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
-              s:ph="page-layout" />
-            <r
-              uid="{931C84E8-F2B1-43A2-A70D-29BCAFEA7917}"
-              p:after="*[1=2]"
-              s:ds="{E7E7F6D0-F959-48D3-AD9E-682B77EE6C5F}"
-              s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
               s:par=""
               s:ph="page-layout" />
           </d>
         </r>
-    - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
-      Hint: PreTitle
-      Value: I am a pre title
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190510T084826Z
-    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
-      Hint: Title
-      Value: I am a main header title
-    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
-      Hint: Body
-      Value: <p>I am the body<br /></p>
-    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
-      Hint: Summary
+      Value: 20190723T090317Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
       Value: |
-        I am the summary
-        
-    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
-      Hint: DesktopImage
-      Value: |
-        <image mediapath="" alt="banner_proothissi_apo_afises_1.ashx" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{09FE758E-4095-4CB1-B3AA-E1BD7C346264}" />
-    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
-      Hint: ShowInNavigation
-      Type: Checkbox
-      Value: 1
-    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
-      Hint: NavigationTitle
-      Value: About Eurolife ERB
+        sitecore\Admin

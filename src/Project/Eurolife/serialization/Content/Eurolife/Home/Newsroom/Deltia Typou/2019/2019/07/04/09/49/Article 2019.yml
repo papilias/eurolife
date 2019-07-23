@@ -14,6 +14,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
+      Hint: NewsDesktopImage
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T094946Z

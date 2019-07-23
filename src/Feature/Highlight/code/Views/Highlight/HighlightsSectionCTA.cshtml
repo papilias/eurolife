@@ -14,11 +14,11 @@
 
 }
 
-@using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
-{
-  <section id="higlights-section-cta" class="m-t-64 m-b-96 center center--1100 triplette">
 
-    @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
+<section id="higlights-section-cta" class="m-t-64 m-b-96 center center--1100 triplette">
+  @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+  {
+    foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
     {
       <a class="triplette-item triplette-item--linked radius-t" href="@item.LinkFieldUrl(Templates.HasHighlightCTA.Fields.CTA)">
         <h3 class="h6 m-b-8 triplette-item--linked__title">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h3>
@@ -27,6 +27,6 @@
         </p>
       </a>
     }
+  }
+</section>
 
-  </section>
-}

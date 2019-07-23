@@ -13,24 +13,28 @@
   }
 }
 
-<section>
-  <div>
-    <div>
-      @Html.Sitecore().Dictionary("/Identity/Contact Teaser/Phone", "Phone")
+<div id="contact-us-info" class="flex-spread__half ways__to-contact flex-spread">
+  <ul class="flex-spread__half">
+    <li class="phone">
+      <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Phone", "Phone")</h4>
       @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)
-
-      @Html.Sitecore().Dictionary("/Identity/Contact Teaser/Fax", "Fax")
+    </li>
+    <li class="fax">
+      <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Fax", "Fax")</h4>
       @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationFax, identity)
-
-      @Html.Sitecore().Dictionary("/Identity/Contact Teaser/Email", "Email")
+    </li>
+    <li class="email">
+      <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Email", "Email")</h4>
       @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationEmail, identity)
-
-      @foreach (var address in identity.GetMultiListValueItems(Templates.Identity.Fields.OrganizationAddresses))
-      {
-        @Html.Sitecore().Field(Templates.IdentityAddress.Fields.City, address)
+    </li>
+  </ul>
+  <ul class="flex-spread__half">
+    @foreach (var address in identity.GetMultiListValueItems(Templates.Identity.Fields.OrganizationAddresses))
+    {
+      <li class="place">
+        <h4>@Html.Sitecore().Field(Templates.IdentityAddress.Fields.City, address)</h4>
         @Html.Sitecore().Field(Templates.IdentityAddress.Fields.Street, address)
-      }
-    </div>
-  </div>
-  
-</section>
+      </li>
+    }
+  </ul>
+</div>

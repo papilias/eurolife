@@ -1,0 +1,26 @@
+﻿---
+ID: "b0fe7c9d-eb67-4f41-8fb9-d5fa15f922ad"
+Parent: "287ce608-460b-42b5-b00e-861a322e59b6"
+Template: "a096d891-6565-4505-8ad8-d497fd1b8776"
+Path: /sitecore/content/Eurolife/Home/Newsroom/Deltia Typou/2019/2019/07/04/09/49/Article 2019/_Local
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{62B2FB1B-FD79-403A-AED2-9D1F464A2E63}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-1000"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T110646Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

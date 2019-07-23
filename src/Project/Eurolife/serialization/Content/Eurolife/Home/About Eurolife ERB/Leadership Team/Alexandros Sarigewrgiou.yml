@@ -5,11 +5,15 @@ Template: "ce1d7e61-0867-4d85-8661-ebea1d8b48ea"
 Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Leadership Team/Alexandros Sarigewrgiou
 DB: master
 SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
@@ -23,41 +27,99 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{39BE2B26-72E3-4BB6-87DA-DE5F3CD0DBEA}"
-              s:ds="{2B83C3D2-6268-4455-A53D-7EA9BA9731F7}"
-              s:par="" />
+              uid="{BD80545B-50B9-4EBA-A553-F7F3AB205021}"
+              p:before="*"
+              s:id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
+              s:ph="/page-layout/page-layout-top" />
             <r
-              uid="{C473259B-3E88-4746-86B0-DDA729FAE031}"
-              p:after="r[@uid='{39BE2B26-72E3-4BB6-87DA-DE5F3CD0DBEA}']"
-              s:ds="{18967CA1-31C0-44A1-8B87-DE6F06C9D4B3}"
-              s:id="{D1DD7390-C774-4C86-8904-FD074B9BD21D}"
-              s:par=""
+              uid="{AFDE896E-A073-4A33-BA79-4FECBA1BC2FA}"
+              p:after="r[@uid='{BD80545B-50B9-4EBA-A553-F7F3AB205021}']"
+              s:id="{FFE84079-A9DA-410E-A281-0ED31C52FE96}"
               s:ph="page-layout" />
             <r
-              uid="{ADE3D9BB-8D44-4AFB-9311-6F61FE459002}"
-              p:after="*[1=2]"
-              s:ds="{10848391-9DE2-47F7-8B66-24B24ACD02D8}"
-              s:id="{D1DD7390-C774-4C86-8904-FD074B9BD21D}"
-              s:par=""
+              uid="{DCF7C070-3D64-42A3-BE01-8E825DFF17A5}"
+              p:after="r[@uid='{AFDE896E-A073-4A33-BA79-4FECBA1BC2FA}']"
+              s:id="{C567433E-34EA-4636-A942-3A93BFF54AAA}"
               s:ph="page-layout" />
+            <r
+              uid="{7CA55BE3-91AD-461C-9772-27B388C02DB4}">
+              <p:d />
+            </r>
+            <r
+              uid="{1CFDF238-3C33-4029-A02F-AC7A63133ECA}"
+              p:after="*[1=2]" />
+            <r
+              uid="{CBFFD0E6-1024-41F9-92F3-185ECDD785AB}">
+              <p:d />
+            </r>
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190513T113442Z
+      Value: 20190723T094401Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Alexandros Sarigewrgiou
+    - ID: "3a28c78d-3c5e-4d7b-837b-9f511fb70d80"
+      Hint: PersonBody
+      Value: |
+        <article class="leader-cv p-b-64 p-t-64">Ο κ. Σαρρηγεωργίου είναι Πρόεδρος &amp; Διευθύνων 
+        Σύμβουλος της Eurolife ERB Ασφαλιστικής. Μετά την ολοκλήρωση της 
+        καταστατικής θητείας του ως Πρόεδρος του Διοικητικού Συμβουλίου της 
+        Ένωσης Ασφαλιστικών Εταιριών Ελλάδος (2013-2017), σήμερα είναι 
+        Αντιπρόεδρος του Διοικητικού Συμβουλίου, μέλος του Advisory Board της 
+        Α.Μ. Nomikos Transworld Maritime Agencies S.A και μέλος του Executive 
+        Board for Europe, Middle East and Africa του Wharton School, University 
+        of Pennsylvania. Είναι επίσης Πρόεδρος του Διοικητικού Συμβουλίου του 
+        Wharton Club of Greece, μέλος του Διοικητικού Συμβουλίου και της 
+        Εκτελεστικής Επιτροπής του Ιδρύματος Οικονομικών και Βιομηχανικών 
+        Ερευνών (ΙΟΒΕ), καθώς και μέλος του Hellenic Advisory Board του South 
+        East European Studies at Oxford (SEESOX).
+                    
+                    <div class="center--920 center"><p>
+                        Μεταξύ άλλων Διοικητικών Συμβουλίων, έχει διατελέσει 
+        μέλος του Διοικητικού Συμβουλίου της S&amp;B Industrial Minerals 
+        Holdings S.A.R.L., της Επιτροπής Κεφαλαιαγοράς και του Ελληνικού 
+        Ινστιτούτου Ασφαλιστικών Σπουδών (ΕΙΑΣ).
+                    </p>
+                    <p>
+                        Ο κ. Σαρρηγεωργίου είναι πτυχιούχος MBA Finance του 
+        Wharton School of the University of Pennsylvania και κάτοχος MSc και BSc
+         Πολιτικού Μηχανικού του Columbia University.
+                    </p>
+                    <p>
+                        Στο παρελθόν έχει εργαστεί σε μεγάλους χρηματοοικονομικούς ομίλους στην Ελλάδα και στις ΗΠΑ.
+                    </p>
+                </div>
+            </article>
+    - ID: "47e95858-efcc-4862-8a26-3905105ece5b"
+      Hint: PersonQuote
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "66daf897-2490-46a2-9cec-3523434273bb"
+      Hint: PersonName
+      Value: Alexandros Sarigewrgiou
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "902ad41a-7a0a-43fc-9080-0a858d455597"
+      Hint: PersonTitle
+      Value: Alexandros
+    - ID: "a212c93a-7c83-4fed-bc5a-5b035baeff50"
+      Hint: PersonImage
+      Value: |
+        <image mediapath="" alt="Sarrigeorgiou2" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{F014A106-CB82-4A8E-B98C-4F265717367C}" ></image>
+    - ID: "e57a5fee-e68d-4d37-ac1f-edc51e551121"
+      Hint: PersonPosition
+      Value: Chief
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T094423Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "66daf897-2490-46a2-9cec-3523434273bb"
-      Hint: PersonName
-      Value: Alexandros Sarigewrgiou
-    - ID: "902ad41a-7a0a-43fc-9080-0a858d455597"
-      Hint: PersonTitle
-      Value: Alexandros Sarigewrgiou
-    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
-      Hint: NavigationTitle
-      Value: Alexandros Sarigewrgiou

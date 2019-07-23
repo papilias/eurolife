@@ -65,102 +65,88 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{FF3F9755-5C68-4AC7-9A46-2D98B6CE1A98}"
+              uid="{F1E4E9A2-D370-40F4-B6F5-B948FD46D529}"
               p:before="*"
+              s:ds="{5F113DBE-DA85-40AA-94DC-A7FAE63AD16B}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;FontColor"
+              s:ph="/page-layout/teaser-placeholder-3-{E68A57A0-0571-4337-AFC1-840884ED0226}-0" />
+            <r
+              uid="{CCD673F7-7928-4DF1-8C21-FB62B27963F1}"
+              p:after="r[@uid='{F1E4E9A2-D370-40F4-B6F5-B948FD46D529}']"
+              s:ds="{6BC516A4-E21B-432E-BF54-753877036093}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Background=%7B6ADEB5B7-13E8-45FE-A2B3-75C4910FA09F%7D&amp;FontColor"
+              s:ph="/page-layout/teaser-placeholder-2-{E68A57A0-0571-4337-AFC1-840884ED0226}-0" />
+            <r
+              uid="{8B309201-944D-46EA-90DB-687EC4B283E4}"
+              p:after="r[@uid='{CCD673F7-7928-4DF1-8C21-FB62B27963F1}']"
               s:ds="{749E3A93-268F-4AC9-99CD-D19F7D6D89EC}"
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;FontColor"
-              s:ph="/page-layout/teaser-placeholder-2-{666E076B-3242-41BB-8048-D9F17CE90B8B}-0" />
+              s:ph="/page-layout/teaser-placeholder-1-{E68A57A0-0571-4337-AFC1-840884ED0226}-0" />
             <r
-              uid="{8391C9AA-355E-439C-8BD1-C031C9082492}"
-              p:after="r[@uid='{FF3F9755-5C68-4AC7-9A46-2D98B6CE1A98}']"
-              s:ds="{8B132C4E-3749-4023-B16D-DB6443E42044}"
-              s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
-              s:ph="/page-layout/numbers-teaser-placeholder-1-{D3DB235C-00BB-47A8-A1AD-715F955FB6A1}-0" />
-            <r
-              uid="{65C31D01-8762-4A1A-89FA-A9A97C382B9F}"
-              p:after="r[@uid='{8391C9AA-355E-439C-8BD1-C031C9082492}']"
-              s:ds="{5F113DBE-DA85-40AA-94DC-A7FAE63AD16B}"
-              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par=""
-              s:ph="/page-layout/teaser-placeholder-3-{EC18DCD0-7D85-4651-BA84-68AA2C6D31AB}-0" />
-            <r
-              uid="{79A8E6B1-EF70-4BFD-A5D5-E25F8F31CEBA}"
-              p:after="r[@uid='{65C31D01-8762-4A1A-89FA-A9A97C382B9F}']"
-              s:ds="{749E3A93-268F-4AC9-99CD-D19F7D6D89EC}"
-              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par=""
-              s:ph="/page-layout/teaser-placeholder-2-{EC18DCD0-7D85-4651-BA84-68AA2C6D31AB}-0" />
-            <r
-              uid="{9C30A8E4-4201-4261-B1F5-91A5C33E0868}"
-              p:after="r[@uid='{79A8E6B1-EF70-4BFD-A5D5-E25F8F31CEBA}']"
-              s:ds="{6BC516A4-E21B-432E-BF54-753877036093}"
-              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par=""
-              s:ph="/page-layout/teaser-placeholder-1-{EC18DCD0-7D85-4651-BA84-68AA2C6D31AB}-0" />
-            <r
-              uid="{D3DB235C-00BB-47A8-A1AD-715F955FB6A1}"
+              uid="{E68A57A0-0571-4337-AFC1-840884ED0226}"
               p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
-              s:ds="{DE120B93-D83E-4F01-A9D9-06C7475A468B}"
-              s:id="{826556BC-A668-46ED-B763-E5D3CAD6F2CD}"
-              s:par=""
+              s:ds="{EFE3CA13-F948-499F-90C3-0276EF151DEF}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
               s:ph="page-layout" />
             <r
               uid="{8A4FE19E-E0CD-4703-92D4-AF77527473FB}"
-              p:after="r[@uid='{D3DB235C-00BB-47A8-A1AD-715F955FB6A1}']" />
-            <r
-              uid="{B4B3D42F-256C-497B-B59A-D99855DB68DD}"
-              p:after="*[1=2]"
-              s:ds="{10848391-9DE2-47F7-8B66-24B24ACD02D8}"
-              s:id="{29887712-3E85-461E-AE69-AC01ABBC7B38}"
-              s:ph="page-layout" />
+              p:after="*[1=2]" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190516T133011Z
-    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
-      Hint: BrowserTitle
-      Value: Who we are
+      Value: 20190723T101245Z
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: Who we are
-    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
-      Hint: MobileImage
-      Value: |
-        <image mediapath="/banner_proothissi_apo_afises_1" alt="banner_proothissi_apo_afises_1.ashx" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/banner_proothissi_apo_afises_1" mediaid="{09FE758E-4095-4CB1-B3AA-E1BD7C346264}" />
+      Value: Ποιοί είμαστε
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
-        The standard Lorem Ipsum passage, used since the 1500s
-        
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-        
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-        1914 translation by H. Rackham
-        
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+        <h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3><p>"Sed
+         ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
+        inventore veritatis et quasi architecto beatae vitae dicta sunt 
+        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum 
+        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam 
+        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
+        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam 
+        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+         Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
+        voluptas nulla pariatur?"</p>
+        <h3>1914 translation by H. Rackham</h3>
+        <p>"But I must explain to you how all this mistaken idea of denouncing 
+        pleasure and praising pain was born and I will give you a complete 
+        account of the system, and expound the actual teachings of the great 
+        explorer of the truth, the master-builder of human happiness. No one 
+        rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
+        but because those who do not know how to pursue pleasure rationally 
+        encounter consequences that are extremely painful. Nor again is there 
+        anyone who loves or pursues or desires to obtain pain of itself, because
+         it is pain, but because occasionally circumstances occur in which toil 
+        and pain can procure him some great pleasure. To take a trivial example,
+         which of us ever undertakes laborious physical exercise, except to 
+        obtain some advantage from it? But who has any right to find fault with a
+         man who chooses to enjoy a pleasure that has no annoying consequences, 
+        or one who avoids a pain that produces no resultant pleasure?"</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: |
+        Δίνουνε καθημερινά δύναμη στη ζωή σας.
+        
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
-    - ID: "bec0dfb9-56a3-42b7-a619-e387f2c5b4b2"
-      Hint: InfoContent
-      Value: |
-        Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-        
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-        1914 translation by H. Rackham
-        
-        "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
-    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
-      Hint: ShowInNavigation
-      Type: Checkbox
-      Value: 1
+        <image mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Who we are
+      Value: Ποιοί είμαστε
