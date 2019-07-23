@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
    <RichText.ProductCoverageListItem>
-      <FormDialog Header="Insert Product Coverage List Item" Text="Fill the required fields" OKButton="Insert">
+      <FormDialog Icon="software/16x16/component.png" Header="Insert Product Coverage List Item" Text="Fill the required fields" OKButton="Insert">
 
-         <Stylesheet Src="style.css" DeviceDependant="true" />
+         <Stylesheet Src="/style.css" DeviceDependant="true" />
          <script Type="text/javascript" Language="javascript" Src="/sitecore/shell/Controls/Rich Text Editor/ProductCoverageListItem/ProductCoverageListItem.js">.</script>
 
          <CodeBeside Type="Wedia.Feature.Product.Controls.RichTextEditor.ProductCoverageListItem.ProductCoverageListItemForm,Wedia.Feature.Product"/>

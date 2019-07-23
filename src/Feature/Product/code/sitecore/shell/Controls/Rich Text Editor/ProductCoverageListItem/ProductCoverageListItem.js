@@ -25,10 +25,7 @@ if (radWindow) {
 }
 
 function scClose(payload) {
-	//var returnValue = {
-	//	payload
-	//};
-	
+  
   getRadWindow().close(payload);
 }
 

@@ -95,9 +95,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Product.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Product.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\Feature\Feature.Product.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
+    <Content Include="sitecore\shell\Controls\Rich Text Editor\BindProductCoverageListItem.js" />
     <Content Include="sitecore\shell\Controls\Rich Text Editor\ProductCoverageListItem\ProductCoverageListItem.js" />
     <Content Include="sitecore\shell\Controls\Rich Text Editor\ProductCoverageListItem\ProductCoverageListItem.xml" />
     <Content Include="Views\Product\Toolkit.cshtml" />
