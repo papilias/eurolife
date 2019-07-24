@@ -23,7 +23,7 @@ namespace Wedia.Feature.Glossary.Repositories
         .Select(i => new GlossaryGroup
         {
           Item = i,
-          Title = i.Fields[Templates.GlossaryGroup.Fields.Title]?.Value,
+          Title = i.Fields[Templates.HasGlossaryTitle.Fields.Title]?.Value,
           Items = !root ? GetGlossaryItems(i) : null,
           Groups = root ? GetGlossaryGroups(i) : null
         });

@@ -11,11 +11,6 @@ namespace Wedia.Feature.Glossary
     public struct GlossaryGroup
     {
       public static readonly ID ID = new ID("{75AA1C60-7A7D-4EA4-BB69-362551088370}");
-
-      public struct Fields
-      {
-        public static readonly ID Title = new ID("{11B676D0-3DD3-44AD-AE8E-35306E194E34}");
-      }
     }
 
     public struct Glossary

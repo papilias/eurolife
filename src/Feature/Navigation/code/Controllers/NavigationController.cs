@@ -29,7 +29,7 @@ namespace Wedia.Feature.Navigation.Controllers
       return View(items);
     }
 
-    public ActionResult NavigationLinks() => GetMenu("NavigationLinks");
+    public ActionResult NavigationLinksList() => GetMenu("NavigationLinksList");
 
     public ActionResult RoundedLinkMenu() => GetMenu("RoundedLinkMenu");
 
@@ -39,7 +39,7 @@ namespace Wedia.Feature.Navigation.Controllers
 
     public ActionResult SocialLinks() => GetMenu("SocialMenu");
 
-    public ActionResult LinksList() => GetMenu("LinksList");
+    public ActionResult LinksList() => GetMenu("UnderlinedLinkMenu");
 
     public ActionResult HorizontalNavigationLinks() => GetMenu("HorizontalNavigationLinks");
 

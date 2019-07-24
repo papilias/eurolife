@@ -4,6 +4,22 @@ Parent: "fcaf89b5-45d2-4bd1-96c1-6a350572faee"
 Template: "703c5d3c-bcf5-47c7-b645-1da6028f6701"
 Path: /sitecore/content/Eurolife/Home
 DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{4841C2F0-B730-4907-B2E9-97BF2A1C6B45}"
+          p:after="r[@uid='{6B161BEF-C6A3-41CB-8955-8AE16FFC91A7}']"
+          s:id="{3841B020-877C-42E0-9348-5C4426A8321A}"
+          s:ph="footer-lists" />
+      </d>
+    </r>
 Languages:
 - Language: "el-GR"
   Versions:
