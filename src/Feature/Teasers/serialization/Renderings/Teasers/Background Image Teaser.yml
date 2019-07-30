@@ -10,7 +10,7 @@ SharedFields:
   Value: /Views/Teasers/BackgroundImageTeaser.cshtml
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
-  Value: "{1B588914-4206-4F93-8409-DB6671019E07}"
+  Value: "{37F44D51-8862-4029-A0C1-ACD0F3EA357B}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: "site:fullteaser"

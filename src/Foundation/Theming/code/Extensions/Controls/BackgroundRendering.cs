@@ -11,12 +11,12 @@ namespace Wedia.Foundation.Theming.Extensions.Controls
     /// </summary>
     private readonly HtmlTextWriter htmlWriter;
 
-    public BackgroundRendering(TextWriter writer, string backgroundClass, string tag = "div", string componentType = "well")
+    public BackgroundRendering(TextWriter writer, string backgroundClass, string tag = "div")
     {
       if (!string.IsNullOrEmpty(backgroundClass))
       {
         this.htmlWriter = new HtmlTextWriter(writer);
-        htmlWriter.AddAttribute("class", componentType + " " + backgroundClass);
+        htmlWriter.AddAttribute("class", backgroundClass);
         htmlWriter.RenderBeginTag(tag);
       }
     }

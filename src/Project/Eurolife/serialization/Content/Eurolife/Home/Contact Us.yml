@@ -19,8 +19,14 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{EA239517-ED5E-4915-800A-BFA818A77AB6}"
+              uid="{2141AFB9-ACD4-4C70-BD19-4EE50FB7B437}"
               p:before="*"
+              s:ds="{3A07CAAC-6EB1-4D6D-94E3-71F19D9AE2B8}"
+              s:id="{3AF05604-90F6-4368-B9BE-F5762A52601B}"
+              s:ph="/page-layout/teaser-placeholder-1-{A5A3F7E4-7F0C-4398-BE43-D616E6055DF9}-0" />
+            <r
+              uid="{EA239517-ED5E-4915-800A-BFA818A77AB6}"
+              p:after="r[@uid='{2141AFB9-ACD4-4C70-BD19-4EE50FB7B437}']"
               s:ds="{789440B4-6BED-4ABB-A826-E0C6DC0CF045}"
               s:id="{3AF05604-90F6-4368-B9BE-F5762A52601B}"
               s:ph="/page-layout/teaser-placeholder-2-{46DA3768-34F2-494D-8477-968008764ABC}-0" />
@@ -98,17 +104,18 @@ Languages:
               s:id="{BC33BB52-419D-4118-9D08-EE4009C50D3E}"
               s:ph="page-layout" />
             <r
-              uid="{5A0411D0-A937-4359-9970-202F4CAD7D63}"
+              uid="{A5A3F7E4-7F0C-4398-BE43-D616E6055DF9}"
               p:after="r[@uid='{71833E62-20D2-4255-B79C-680CD5079D1C}']"
-              s:ds="{68466347-4F65-4085-8166-DABF74910F66}"
-              s:id="{7F610AEE-95C2-4814-9E1D-1E619ABCDE99}"
+              s:ds="{A8A44FB7-60DF-4731-9E91-88400646F660}"
+              s:id="{5BEC366E-9A4D-452A-9DF2-CAE31CF620AD}"
+              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
               s:ph="page-layout" />
             <r
-              uid="{46DA3768-34F2-494D-8477-968008764ABC}"
-              p:after="r[@uid='{5A0411D0-A937-4359-9970-202F4CAD7D63}']"
-              s:ds="{9B0C74F9-1C86-4BED-ABE1-D04CBB4EE4D8}"
-              s:id="{ACD3AFD2-69FF-4DE4-9F99-68504F2B8D7D}"
-              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
+              uid="{3878B1A3-940B-489C-B634-EE95BC089722}"
+              p:after="r[@uid='{A5A3F7E4-7F0C-4398-BE43-D616E6055DF9}']"
+              s:ds="{68466347-4F65-4085-8166-DABF74910F66}"
+              s:id="{7F610AEE-95C2-4814-9E1D-1E619ABCDE99}"
+              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth=1"
               s:ph="page-layout" />
             <r
               uid="{87235964-4703-4C6F-8CD8-E3B4ED6FA48D}">

@@ -4,7 +4,7 @@
   {
     public struct HasContainerLayoutParameters
     {
-      public static string IsFluid => "ContainerIsFluid";
+      public static string IsFluid => "ContainerIsNotFullWidth";
     }
 
     public struct BackgroundLayoutParameters

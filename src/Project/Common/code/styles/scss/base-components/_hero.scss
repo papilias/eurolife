@@ -90,24 +90,19 @@
 
 .hero-contents--plain{
 
-  position: absolute;
-  top: 0;
-  border: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  padding-top: 70px;
+  padding-bottom: 74px;
 
 
-  &:after{
+  &:before{
     content: '';
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
   }
 
   h1{
@@ -123,8 +118,12 @@
 .hero-plain{
   img{
     object-fit: cover;
-    height: auto;
-    width:100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
   }
 }
 

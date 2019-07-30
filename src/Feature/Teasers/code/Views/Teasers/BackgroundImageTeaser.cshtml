@@ -13,26 +13,35 @@
         Model.Item?.ID,
         Model.Rendering.Item?.ID)
   return;
+
 }
 
-<section class="cv m-b-112 relator t-c @RenderingContext.Current.Rendering.GetAlignmentClass()">
-  <div class="center center--480">
-    <h1 class="h3 m-b-16">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
+@{
+  var contained = RenderingContext.Current.Rendering.GetContainerClass();
+  var alignment = RenderingContext.Current.Rendering.GetAlignmentClass();
+}
 
-    @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
-    {
-      @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
-    }
+<section class="hero-plain m-b-112 relator bread-overlays bread-light  @contained @alignment">
+ 
+  @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
+  {
+    <div class="hero-contents--plain">
+      <div class="center--1700 center relator">
+        <h1 class="h3 m-b-24">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
+        @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          <p>@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)</p> 
+        }
 
-    @if (Model.Item.FieldHasValue(Templates.HasTeaserCTA.Fields.CTA) || Sitecore.Context.PageMode.IsExperienceEditor)
-    {
-      @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--white btn--default" })
-    }
-
-    <div class="cv__image">
-      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image)
+        @if (Model.Item.FieldHasValue(Templates.HasTeaserCTA.Fields.CTA) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn--dark btn btn--default m-t-24" })
+        }
+      </div>
     </div>
-  </div>
+
+    @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image)
+  }
 </section>
 
 

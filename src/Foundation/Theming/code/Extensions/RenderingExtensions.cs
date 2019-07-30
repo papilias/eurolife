@@ -63,7 +63,7 @@ namespace Wedia.Foundation.Theming.Extensions
 
     public static string GetContainerClass([NotNull] this Rendering rendering)
     {
-      return rendering.IsContainerFluid() ? "container-fluid" : "container";
+      return rendering.IsContainerFluid() ? "center center--1100" : "";
     }
 
     public static bool IsContainerFluid([NotNull] this Rendering rendering)

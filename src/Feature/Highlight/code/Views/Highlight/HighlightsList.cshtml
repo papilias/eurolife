@@ -13,24 +13,23 @@
 }
 
 
-<div class="material__right">
-  @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
-  {
-    foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
-    {
-      using (Html.BeginEditFrame(item.ID.ToString(), ""))
+
+  
+@foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
+{
+ 
+  <div class="material__card @(item?.TargetItem(Templates.HasHighlightIcon.Fields.Icon)?[Templates.Icon.Fields.CssClass])">
+    
+      <div class="material__icon"></div>
+
+      <h2 class="material__title">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
+
+      @if (item.DescendsFrom(Templates.HasHighlightCTA.ID))
       {
-        <div class="material__card">
-
-          @(item?.TargetItem(Templates.HasHighlightIcon.Fields.Icon)?[Templates.Icon.Fields.CssClass])
-          <h2 class="material__title material__title--car">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
-
-          @if (item.DescendsFrom(Templates.HasHighlightCTA.ID))
-          {
-            @Html.Sitecore().Field(Templates.HasHighlightCTA.Fields.CTA, item, new { @class = "btn btn--material btn--material-car" })
-          }
-        </div>
+        @Html.Sitecore().Field(Templates.HasHighlightCTA.Fields.CTA, item, new { @class = "btn btn--material" })
       }
-    }
-  }
-</div>
+    
+  </div>
+  
+}
+  

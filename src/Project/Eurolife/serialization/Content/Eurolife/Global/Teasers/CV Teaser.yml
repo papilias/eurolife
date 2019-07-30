@@ -29,4 +29,4 @@ Languages:
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediapath="" alt="service-demo" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D80D0BC5-F015-4C31-95D0-1FD7E3DCC565}" />
+        <image mediapath="" alt="service-demo" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D80D0BC5-F015-4C31-95D0-1FD7E3DCC565}" ></image>
