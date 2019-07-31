@@ -18,5 +18,15 @@ namespace Wedia.Feature.UIComponents
         public static readonly ID Summary = new ID("{6D532B85-DADF-4513-8E22-ADEC9A80BDDA}");
       }
     }
+
+    public struct IFrame
+    {
+      public static readonly ID ID = new ID("{683AC653-2DE3-4147-9EA4-AF85DC61E740}");
+
+      public struct Fields
+      {
+        public static readonly ID IFrame = new ID("{D9CC1068-49D0-4E46-8859-95D8D0E95B76}");
+      }
+    }
   }
 }

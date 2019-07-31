@@ -1,21 +1,52 @@
 ﻿@using Wedia.Feature.Navigation
+@using Wedia.Foundation.Alerts
 @using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Alerts.Extensions
+@using Sitecore.Mvc.Presentation
 @model Wedia.Feature.Navigation.Models.NavigationItems
 
 @{
-  if (Model?.NavItems == null)
-  {
-    return;
-  }
+    if (Model?.NavItems == null)
+    {
+      @Html.PageEditorError("No Menu items");
+
+      return;
+    }
+
+
+    var limit = RenderingContext
+      .Current
+      .Rendering
+      .GetIntegerParameter(Wedia.Feature.Navigation.Constants.NavigationParameters.Limit);
+
 }
 
-<ul class="footer__legal">
-  @foreach (var link in Model.NavItems)
-  {
-    <li>
-      <a href="@link.Item.Url()">
-        @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, link.Item)
+
+<div class="center center--1700 m-b-64 anchorlist-narrow scroller">
+  <div class="nowrap">
+    @foreach (var item in Model.NavItems)
+    {
+      var activeClass = item.IsActive ? "tab--active" : "";
+
+      if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
+      {
+        activeClass += "divider-left";
+      }
+
+
+      <a href="@item.Url" target="@item.Target" class="tab @activeClass">
+        @if (!string.IsNullOrWhiteSpace(item.Item[Templates.LinkMenuItem.Fields.Icon]))
+        {
+          <span class="@item.Item[Templates.LinkMenuItem.Fields.Icon]"></span>
+        }
+        else
+        {
+          @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
+        }
       </a>
-    </li>
-  }
-</ul>
+
+    }
+
+  </div>
+</div>
+

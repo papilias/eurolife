@@ -85,7 +85,6 @@
     <Content Include="Views\Navigation\SocialMenu.cshtml" />
     <Content Include="Views\Navigation\HorizontalNavigationLinks.cshtml" />
     <Content Include="Views\Navigation\UnderlinedLinkMenu.cshtml" />
-    <Content Include="Views\Navigation\ArticlesLinkMenu.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +129,9 @@
       <Project>{19d479ad-ff86-4eda-a045-6d7f080814dc}</Project>
       <Name>Wedia.Foundation.Theming</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

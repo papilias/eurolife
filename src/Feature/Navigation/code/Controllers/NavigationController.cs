@@ -33,7 +33,7 @@ namespace Wedia.Feature.Navigation.Controllers
 
     public ActionResult RoundedLinkMenu() => GetMenu("RoundedLinkMenu");
 
-    public ActionResult ArticlesLinkMenu() => GetMenu("ArticlesLinkMenu",
+    public ActionResult UnderlinedLinkMenu() => GetMenu("UnderlinedLinkMenu",
         RenderingContext.Current.Rendering.GetBoolParameter(Constants.NavigationParameters.Descending),
         RenderingContext.Current.Rendering.GetIntegerParameter(Constants.NavigationParameters.Limit) + 1);
 

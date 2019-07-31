@@ -685,6 +685,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./assets/styles/scss/style.scss":
+/*!***************************************!*\
+  !*** ./assets/styles/scss/style.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./assets/js/components/CoveragesAccordion.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./assets/js/components/CoveragesAccordion.vue?vue&type=script&lang=js& ***!
@@ -14276,13 +14287,14 @@ module.exports = g;
 /***/ }),
 
 /***/ 0:
-/*!********************************!*\
-  !*** multi ./assets/js/app.js ***!
-  \********************************/
+/*!****************************************************************!*\
+  !*** multi ./assets/js/app.js ./assets/styles/scss/style.scss ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\projects\Eurolife\src\Project\Common\code\assets\js\app.js */"./assets/js/app.js");
+__webpack_require__(/*! C:\projects\Eurolife\src\Project\Common\code\assets\js\app.js */"./assets/js/app.js");
+module.exports = __webpack_require__(/*! C:\projects\Eurolife\src\Project\Common\code\assets\styles\scss\style.scss */"./assets/styles/scss/style.scss");
 
 
 /***/ })

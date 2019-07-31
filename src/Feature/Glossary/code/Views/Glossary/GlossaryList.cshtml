@@ -8,7 +8,7 @@
     {
       foreach (var group in rootGlossaryGroup.value.Groups)
       {
-        <a href="#@group.Item" class="tab tab--active">
+        <a href="#@group.Item.ID.ToString()" class="tab tab--active">
           @group.Title
         </a>
       }
@@ -29,7 +29,7 @@
     foreach (var group in rootGlossaryGroup.Groups)
     {
 
-      <h2 id="@group.Item.ID">
+      <h2 id="@group.Item.ID.ToString()">
         @Html.Sitecore().Field(Templates.HasGlossaryTitle.Fields.Title, group.Item)
       </h2> 
 
