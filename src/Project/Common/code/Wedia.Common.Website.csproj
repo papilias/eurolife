@@ -137,6 +137,7 @@
     <Content Include="icons\left.svg" />
     <Content Include="icons\location.svg" />
     <Content Include="icons\phone.svg" />
+    <Content Include="icons\quote.svg" />
     <Content Include="icons\right-purple.svg" />
     <Content Include="icons\right.svg" />
     <Content Include="images\arrow-right %281%29.svg" />
@@ -188,6 +189,12 @@
     <Content Include="images\our-people-1.jpg" />
     <Content Include="images\quote-big.svg" />
     <Content Include="images\right-simple.svg" />
+    <Content Include="images\section-1.jpg" />
+    <Content Include="images\section-2.jpg" />
+    <Content Include="images\section-356x352.jpg" />
+    <Content Include="images\section-356x413.jpg" />
+    <Content Include="images\section-356x424.jpg" />
+    <Content Include="images\section-356x483.jpg" />
     <Content Include="images\service-demo.jpg" />
     <Content Include="images\teaser-demo.jpg" />
     <Content Include="images\tholos.jpeg" />
@@ -492,6 +499,7 @@
     <Content Include="images\iconfinder_Arrow_backward.svgz" />
     <Content Include="images\icons\health\.DS_Store" />
     <Content Include="images\icons\home\.DS_Store" />
+    <Content Include="images\Thumbs.db" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="assets\styles\scss\base-components\_accordion.scss" />
@@ -581,6 +589,10 @@
     <Content Include="select2-develop\select2-develop\src\scss\_dropdown.scss" />
     <Content Include="select2-develop\select2-develop\src\scss\_multiple.scss" />
     <Content Include="select2-develop\select2-develop\src\scss\_single.scss" />
+    <Content Include="styles\scss\base-components\_benefits.scss" />
+    <Content Include="styles\scss\base-components\_home.scss" />
+    <Content Include="styles\scss\base-components\_statistics.scss" />
+    <Content Include="Views\Common\Sublayouts\Header.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -605,7 +617,9 @@
       <Name>Wedia.Foundation.SitecoreExtensions</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="images\New folder\" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>

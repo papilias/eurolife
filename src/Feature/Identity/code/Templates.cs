@@ -21,6 +21,7 @@ namespace Wedia.Feature.Identity
         public static readonly ID ClickToCall = new ID("{A3B0F0F0-CAC4-496A-ACA7-8F80FC52BB6A}");
         public static readonly ID ClickToChat = new ID("{F3394D78-1E2B-4854-BEA1-6180D271A426}");
         public static readonly ID ContactForm = new ID("{34375FC7-4DF0-4C85-9D04-64C79D1FFEF8}");
+        public static readonly ID LoginRegisterUrl = new ID("{48DC1E12-F410-4DA4-B560-AF1809E0262C}");
       }
     }
 

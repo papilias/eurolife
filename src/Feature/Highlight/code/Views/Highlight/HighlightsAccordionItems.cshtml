@@ -6,7 +6,8 @@
 @{
   if (!Model?.DescendsFrom(Templates.HighlightsGroup.ID) ?? true)
   {
-    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HighlightsGroup.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model?.ID, Model?.ID)
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HighlightsGroup.ID), 
+      AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model?.ID, Model?.ID)
     return;
   }
 

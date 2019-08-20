@@ -5,6 +5,109 @@ Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
 Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility
 DB: master
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{331C9ABF-B689-4918-8139-5C90D7A1AD88}"
+              p:before="*"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background&amp;ContainerIsNotFullWidth"
+              s:ph="/page-layout/teaser-placeholder-1-{EF162C50-9621-4471-90BF-FF650ACB40AA}-0" />
+            <r
+              uid="{A99977A1-68EB-4317-B0EC-C1651B2EC756}"
+              p:after="r[@uid='{331C9ABF-B689-4918-8139-5C90D7A1AD88}']"
+              s:ds="{515C5463-FA37-48B8-9AF9-BFBE4A9C1A6C}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-3-{93FF38E8-3769-4B6E-BCDE-6656CC8CEAE1}-0" />
+            <r
+              uid="{47B8BA01-8FBC-4A95-9A98-50CD3609DF18}"
+              p:after="r[@uid='{A99977A1-68EB-4317-B0EC-C1651B2EC756}']"
+              s:ds="{0B43B7D3-1981-4E23-962D-7BA84F44D839}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-2-{93FF38E8-3769-4B6E-BCDE-6656CC8CEAE1}-0" />
+            <r
+              uid="{F7DD35D5-A1B5-45F3-B1D9-0D4F525DD0F7}"
+              p:after="r[@uid='{47B8BA01-8FBC-4A95-9A98-50CD3609DF18}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-1-{93FF38E8-3769-4B6E-BCDE-6656CC8CEAE1}-0" />
+            <r
+              uid="{035DB841-B7D3-4FA8-B15F-5D55F3D618D8}"
+              p:after="r[@uid='{F7DD35D5-A1B5-45F3-B1D9-0D4F525DD0F7}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background&amp;ContainerIsNotFullWidth"
+              s:ph="/page-layout/teaser-placeholder-1-{1CC22588-F223-45DC-BBA7-561F11675FFA}-0" />
+            <r
+              uid="{EF162C50-9621-4471-90BF-FF650ACB40AA}"
+              p:after="r[@uid='{9015BC53-2AE3-455A-A1DD-879A04CC5E07}']"
+              s:ds="{52FAEAE8-A7A0-44BE-BA58-88D10642CD2F}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:ph="page-layout" />
+            <r
+              uid="{AE3F09D8-7CE5-4CA6-8FD0-F2F542775277}"
+              p:after="r[@uid='{EF162C50-9621-4471-90BF-FF650ACB40AA}']"
+              s:ds="{A5F4940A-1774-4A2D-B5C4-07C728CDF01A}"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:par=""
+              s:ph="Πρόσφατες δραστηριότητες Εταιρικής Υπευθυνότητας" />
+            <r
+              uid="{49B60503-399B-4E2F-BC1C-2B3EDAA7AF39}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190806T111149Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: +πράττουμε
+    - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
+      Hint: CTA
+      Value: |
+        <link text="ΔΕΙΤΕ ΤΟ ΒΙΝΤΕΟ" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{A5F4940A-1774-4A2D-B5C4-07C728CDF01A}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p dir="ltr" id="docs-internal-guid-f6d401f1-7fff-b46f-1f00-2d392f47c49d" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Όλα τα χρόνια παρουσίας μας στην ελληνική ασφαλιστική αγορά, στεκόμαστε </span><span style="background-color: transparent; text-decoration: none; color: #000000;">αξιόπιστα δίπλα στους ανθρώπους</span><span style="background-color: transparent; text-decoration: none; color: #000000;">, προστατεύοντας τους ίδιους, αλλά και όσους και όσα τους περιβάλλουν. Αυτά που έχτισαν και αυτά που θέλουν να προσφέρουν στην οικογένειά τους, στην επιχείρησή τους και στον ευρύτερο κύκλο τους. Η σχέση μας μαζί τους είναι </span><span style="background-color: transparent; text-decoration: none; color: #000000;">αμφίδρομη</span><span style="background-color: transparent; text-decoration: none; color: #000000;">. </span><span style="background-color: transparent; text-decoration: none; color: #000000;">Συνεργαζόμαστε</span><span style="background-color: transparent; text-decoration: none; color: #000000;">.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Αναγνωρίζοντας την αξία αυτής της σχέσης και εξελίσσοντάς την, πηγαίνουμε ένα βήμα πιο μπροστά από την προστασία. Θέλουμε </span><span style="background-color: transparent; text-decoration: none; color: #000000;">η παρουσία μας στην κοινωνία να έχει ακόμα πιο σημαντικό σκοπό</span><span style="background-color: transparent; text-decoration: none; color: #000000;">.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Με ουσιαστικές δράσεις και πραγματική συμμετοχή</span><span style="background-color: transparent; text-decoration: none; color: #000000;">.</span></p>
+        <br />
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Γι’ αυτό και έχουμε επενδύσει στο </span><span style="background-color: transparent; text-decoration: none; color: #000000;">+πράττουμε</span><span style="background-color: transparent; text-decoration: none; color: #000000;">, το πρόγραμμα εταιρικής κοινωνικής μας ευθύνης, με το οποίο στόχος μας είναι να δίνουμε σε όλους μια αισιόδοξη προοπτική για το μέλλον τους.</span></p>
+        <br />
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Στο πλαίσιό του, σχεδιάζουμε και υλοποιούμε μια σειρά από πρωτοβουλίες που βοηθούν τους ανθρώπους να βελτιώνουν τη ζωή και την καθημερινότητά τους.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Είμαστε αισιόδοξοι για όσα μπορούν να καταφέρουν και στόχος μας είναι να τους ενδυναμώνουμε για να το πετύχουν.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Γι’ αυτό και επενδύουμε σε τομείς που αναβαθμίζουν το αύριο για κάθε άνθρωπο.</span></p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Εταιρική κοινωνική Ευθύνη
 - Language: en
   Versions:
   - Version: 1
@@ -76,9 +179,28 @@ Languages:
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: +πράττουμε
+    - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
+      Hint: CTA
+      Value: |
+        <link text="ΔΕΙΤΕ ΤΟ ΒΙΝΤΕΟ" linktype="external" url="http://#" anchor="" target="" />
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: |
+        <strong id="docs-internal-guid-5d1ec560-7fff-f1da-831d-6e06817f443f"></strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Ό&lambda;&alpha; &tau;&alpha; &chi;&rho;ό&nu;&iota;&alpha; &pi;&alpha;&rho;&omicron;&upsilon;&sigma;ί&alpha;&sigmaf; &mu;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;ή &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή &alpha;&gamma;&omicron;&rho;ά, &sigma;&tau;&epsilon;&kappa;ό&mu;&alpha;&sigma;&tau;&epsilon; </span><span style="background-color: transparent; text-decoration: none; color: #000000;">&alpha;&xi;&iota;ό&pi;&iota;&sigma;&tau;&alpha; &delta;ί&pi;&lambda;&alpha; &sigma;&tau;&omicron;&upsilon;&sigmaf; &alpha;&nu;&theta;&rho;ώ&pi;&omicron;&upsilon;&sigmaf;</span><span style="background-color: transparent; text-decoration: none; color: #000000;">, &pi;&rho;&omicron;&sigma;&tau;&alpha;&tau;&epsilon;ύ&omicron;&nu;&tau;&alpha;&sigmaf; &tau;&omicron;&upsilon;&sigmaf; ί&delta;&iota;&omicron;&upsilon;&sigmaf;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; ό&sigma;&omicron;&upsilon;&sigmaf; &kappa;&alpha;&iota; ό&sigma;&alpha; &tau;&omicron;&upsilon;&sigmaf; &pi;&epsilon;&rho;&iota;&beta;ά&lambda;&lambda;&omicron;&upsilon;&nu;. &Alpha;&upsilon;&tau;ά &pi;&omicron;&upsilon; έ&chi;&tau;&iota;&sigma;&alpha;&nu; &kappa;&alpha;&iota; &alpha;&upsilon;&tau;ά &pi;&omicron;&upsilon; &theta;έ&lambda;&omicron;&upsilon;&nu; &nu;&alpha; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&nu; &sigma;&tau;&eta;&nu; &omicron;&iota;&kappa;&omicron;&gamma;έ&nu;&epsilon;&iota;ά &tau;&omicron;&upsilon;&sigmaf;, &sigma;&tau;&eta;&nu; &epsilon;&pi;&iota;&chi;&epsilon;ί&rho;&eta;&sigma;ή &tau;&omicron;&upsilon;&sigmaf; &kappa;&alpha;&iota; &sigma;&tau;&omicron;&nu; &epsilon;&upsilon;&rho;ύ&tau;&epsilon;&rho;&omicron; &kappa;ύ&kappa;&lambda;&omicron; &tau;&omicron;&upsilon;&sigmaf;. &Eta; &sigma;&chi;έ&sigma;&eta; &mu;&alpha;&sigmaf; &mu;&alpha;&zeta;ί &tau;&omicron;&upsilon;&sigmaf; &epsilon;ί&nu;&alpha;&iota; </span><span style="background-color: transparent; text-decoration: none; color: #000000;">&alpha;&mu;&phi;ί&delta;&rho;&omicron;&mu;&eta;</span><span style="background-color: transparent; text-decoration: none; color: #000000;">. </span><span style="background-color: transparent; text-decoration: none; color: #000000;">&Sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&zeta;ό&mu;&alpha;&sigma;&tau;&epsilon;</span><span style="background-color: transparent; text-decoration: none; color: #000000;">.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Alpha;&nu;&alpha;&gamma;&nu;&omega;&rho;ί&zeta;&omicron;&nu;&tau;&alpha;&sigmaf; &tau;&eta;&nu; &alpha;&xi;ί&alpha; &alpha;&upsilon;&tau;ή&sigmaf; &tau;&eta;&sigmaf; &sigma;&chi;έ&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &epsilon;&xi;&epsilon;&lambda;ί&sigma;&sigma;&omicron;&nu;&tau;ά&sigmaf; &tau;&eta;&nu;, &pi;&eta;&gamma;&alpha;ί&nu;&omicron;&upsilon;&mu;&epsilon; έ&nu;&alpha; &beta;ή&mu;&alpha; &pi;&iota;&omicron; &mu;&pi;&rho;&omicron;&sigma;&tau;ά &alpha;&pi;ό &tau;&eta;&nu; &pi;&rho;&omicron;&sigma;&tau;&alpha;&sigma;ί&alpha;. &Theta;έ&lambda;&omicron;&upsilon;&mu;&epsilon; </span><span style="background-color: transparent; text-decoration: none; color: #000000;">&eta; &pi;&alpha;&rho;&omicron;&upsilon;&sigma;ί&alpha; &mu;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha; &nu;&alpha; έ&chi;&epsilon;&iota; &alpha;&kappa;ό&mu;&alpha; &pi;&iota;&omicron; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ό &sigma;&kappa;&omicron;&pi;ό</span><span style="background-color: transparent; text-decoration: none; color: #000000;">.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Mu;&epsilon; &omicron;&upsilon;&sigma;&iota;&alpha;&sigma;&tau;&iota;&kappa;έ&sigmaf; &delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&iota;&kappa;ή &sigma;&upsilon;&mu;&mu;&epsilon;&tau;&omicron;&chi;ή</span><span style="background-color: transparent; text-decoration: none; color: #000000;">.</span></p>
+        <strong id="docs-internal-guid-5d1ec560-7fff-f1da-831d-6e06817f443f"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Gamma;&iota;&rsquo; &alpha;&upsilon;&tau;ό &kappa;&alpha;&iota; έ&chi;&omicron;&upsilon;&mu;&epsilon; &epsilon;&pi;&epsilon;&nu;&delta;ύ&sigma;&epsilon;&iota; &sigma;&tau;&omicron; </span><span style="background-color: transparent; text-decoration: none; color: #000000;">+&pi;&rho;ά&tau;&tau;&omicron;&upsilon;&mu;&epsilon;</span><span style="background-color: transparent; text-decoration: none; color: #000000;">, &tau;&omicron; &pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha; &epsilon;&tau;&alpha;&iota;&rho;&iota;&kappa;ή&sigmaf; &kappa;&omicron;&iota;&nu;&omega;&nu;&iota;&kappa;ή&sigmaf; &mu;&alpha;&sigmaf; &epsilon;&upsilon;&theta;ύ&nu;&eta;&sigmaf;, &mu;&epsilon; &tau;&omicron; &omicron;&pi;&omicron;ί&omicron; &sigma;&tau;ό&chi;&omicron;&sigmaf; &mu;&alpha;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &delta;ί&nu;&omicron;&upsilon;&mu;&epsilon; &sigma;&epsilon; ό&lambda;&omicron;&upsilon;&sigmaf; &mu;&iota;&alpha; &alpha;&iota;&sigma;&iota;ό&delta;&omicron;&xi;&eta; &pi;&rho;&omicron;&omicron;&pi;&tau;&iota;&kappa;ή &gamma;&iota;&alpha; &tau;&omicron; &mu;έ&lambda;&lambda;&omicron;&nu; &tau;&omicron;&upsilon;&sigmaf;.</span></p>
+        <strong id="docs-internal-guid-5d1ec560-7fff-f1da-831d-6e06817f443f"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Sigma;&tau;&omicron; &pi;&lambda;&alpha;ί&sigma;&iota;ό &tau;&omicron;&upsilon;, &sigma;&chi;&epsilon;&delta;&iota;ά&zeta;&omicron;&upsilon;&mu;&epsilon; &kappa;&alpha;&iota; &upsilon;&lambda;&omicron;&pi;&omicron;&iota;&omicron;ύ&mu;&epsilon; &mu;&iota;&alpha; &sigma;&epsilon;&iota;&rho;ά &alpha;&pi;ό &pi;&rho;&omega;&tau;&omicron;&beta;&omicron;&upsilon;&lambda;ί&epsilon;&sigmaf; &pi;&omicron;&upsilon; &beta;&omicron;&eta;&theta;&omicron;ύ&nu; &tau;&omicron;&upsilon;&sigmaf; &alpha;&nu;&theta;&rho;ώ&pi;&omicron;&upsilon;&sigmaf; &nu;&alpha; &beta;&epsilon;&lambda;&tau;&iota;ώ&nu;&omicron;&upsilon;&nu; &tau;&eta; &zeta;&omega;ή &kappa;&alpha;&iota; &tau;&eta;&nu; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;ό&tau;&eta;&tau;ά &tau;&omicron;&upsilon;&sigmaf;.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&iota;&sigma;&iota;ό&delta;&omicron;&xi;&omicron;&iota; &gamma;&iota;&alpha; ό&sigma;&alpha; &mu;&pi;&omicron;&rho;&omicron;ύ&nu; &nu;&alpha; &kappa;&alpha;&tau;&alpha;&phi;έ&rho;&omicron;&upsilon;&nu; &kappa;&alpha;&iota; &sigma;&tau;ό&chi;&omicron;&sigmaf; &mu;&alpha;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &tau;&omicron;&upsilon;&sigmaf; &epsilon;&nu;&delta;&upsilon;&nu;&alpha;&mu;ώ&nu;&omicron;&upsilon;&mu;&epsilon; &gamma;&iota;&alpha; &nu;&alpha; &tau;&omicron; &pi;&epsilon;&tau;ύ&chi;&omicron;&upsilon;&nu;.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Gamma;&iota;&rsquo; &alpha;&upsilon;&tau;ό &kappa;&alpha;&iota; &epsilon;&pi;&epsilon;&nu;&delta;ύ&omicron;&upsilon;&mu;&epsilon; &sigma;&epsilon; &tau;&omicron;&mu;&epsilon;ί&sigmaf; &pi;&omicron;&upsilon; &alpha;&nu;&alpha;&beta;&alpha;&theta;&mu;ί&zeta;&omicron;&upsilon;&nu; &tau;&omicron; &alpha;ύ&rho;&iota;&omicron; &gamma;&iota;&alpha; &kappa;ά&theta;&epsilon; ά&nu;&theta;&rho;&omega;&pi;&omicron;.</span></p>
+        <br class="Apple-interchange-newline" />
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox

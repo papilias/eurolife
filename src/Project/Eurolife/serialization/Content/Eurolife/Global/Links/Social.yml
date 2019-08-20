@@ -4,6 +4,10 @@ Parent: "dfffe867-296d-4b5d-8934-d9d3beba3db9"
 Template: "00d32287-3ed5-4d97-9b00-0f8ef05f6db8"
 Path: /sitecore/content/Eurolife/Global/Links/Social
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
 Languages:
 - Language: en
   Versions:

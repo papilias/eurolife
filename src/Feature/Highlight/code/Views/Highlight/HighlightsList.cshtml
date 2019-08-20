@@ -11,24 +11,29 @@
   }
 
 }
-
-
-
   
 @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights))
 {
  
-  <div class="material__card @(item?.TargetItem(Templates.HasHighlightIcon.Fields.Icon)?[Templates.Icon.Fields.CssClass])">
-    
-      <div class="material__icon"></div>
+  <div class="material__card @(item?.TargetItem(Templates.HighlightMain.Fields.Class)?[Templates.Icon.Fields.CssClass])">
+    @using (Html.BeginEditFrame(item.ID.ToString(), ""))
+    {
+      if (item.FieldHasValue(Templates.HasHighlightIcon.Fields.Icon))
+      {
+        <div class="material__icon">
+          <img src="@item.ImageUrl(Templates.HasHighlightIcon.Fields.Icon)"
+               alt="@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item, new { DisableWebEdit = true })" />
+        </div>
+      }
 
       <h2 class="material__title">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
 
-      @if (item.DescendsFrom(Templates.HasHighlightCTA.ID))
+      if (item.DescendsFrom(Templates.HasHighlightCTA.ID))
       {
         @Html.Sitecore().Field(Templates.HasHighlightCTA.Fields.CTA, item, new { @class = "btn btn--material" })
       }
-    
+    }
+
   </div>
   
 }

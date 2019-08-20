@@ -48,6 +48,7 @@ namespace Wedia.Feature.Navigation
       {
         public static readonly ID Icon = new ID("{48DD8F9D-3A6E-46DE-B185-4B1B53BFF3FD}");
         public static readonly ID DividerBefore = new ID("{B8C12C18-DCEF-4EDF-A030-50A4A55BEDAC}");
+        public static readonly ID Class = new ID("{D7BD8D43-DE42-4BDE-8E7E-DDFCE607A9C6}");
       }
     }
   }

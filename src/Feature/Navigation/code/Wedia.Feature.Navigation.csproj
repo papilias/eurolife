@@ -85,6 +85,9 @@
     <Content Include="Views\Navigation\SocialMenu.cshtml" />
     <Content Include="Views\Navigation\HorizontalNavigationLinks.cshtml" />
     <Content Include="Views\Navigation\UnderlinedLinkMenu.cshtml" />
+    <Content Include="Views\Navigation\MainMenuBuger.cshtml" />
+    <Content Include="Views\Navigation\HeaderTopNavigation.cshtml" />
+    <Content Include="Views\Navigation\MainMenu.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

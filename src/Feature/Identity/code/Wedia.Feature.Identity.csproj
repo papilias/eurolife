@@ -92,6 +92,8 @@
     <Content Include="Views\Identity\ContactTeaserInfo.cshtml" />
     <Content Include="Views\Identity\ContactTeaserActions.cshtml" />
     <Content Include="Views\Identity\NewsletterForm.cshtml" />
+    <Content Include="Views\Identity\Logo.cshtml" />
+    <Content Include="Views\Identity\LoginRegister.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

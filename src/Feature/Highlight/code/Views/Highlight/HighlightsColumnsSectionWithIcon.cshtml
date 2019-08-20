@@ -31,7 +31,13 @@
       using (Html.BeginEditFrame(item.ID.ToString(), ""))
       {
         <div class="teaser teaser--highlight">
-          <div class="teaser-icon @(item?.TargetItem(Templates.HasHighlightIcon.Fields.Icon)?[Templates.Icon.Fields.CssClass])"></div>
+
+          <div class="teaser-icon">
+            <img src="@item.ImageUrl(Templates.HasHighlightIcon.Fields.Icon)"
+                 alt="@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item, new { DisableWebEdit = true })" />
+          </div>
+    
+
           <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
           <div class="teaser-highlight__text">
             @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary, item)
@@ -42,7 +48,6 @@
             <div class="teaser__btn">
               @Html.Sitecore().Field(Templates.HasHighlightCTA.Fields.CTA, item, new { @class = "btn--default btn btn--dark" })
             </div>
-
           }
 
         </div>

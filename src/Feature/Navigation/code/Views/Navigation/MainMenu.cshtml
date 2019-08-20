@@ -1,0 +1,65 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Navigation
+@model Wedia.Feature.Navigation.Models.NavigationItems
+
+<nav class="nav-product nav-product--health" role="navigation">
+  
+  <div class="nav-product__wrap center center--1700">
+    <div class="nav-product__trigger">
+      @Model.Title
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+        <defs>
+          <path id="a" d="M41.118 32.08L23.029 50.137a2.948 2.948 0 0 1-4.166 0 2.938 2.938 0 0 1 0-4.159l16.005-15.98-16.005-15.978a2.938 2.938 0 0 1 0-4.16 2.95 2.95 0 0 1 4.166 0l18.09 18.06c.574.574.862 1.326.862 2.079a2.93 2.93 0 0 1-.863 2.08z" />
+        </defs>
+        <use fill="#FFF" fill-rule="nonzero" transform="rotate(90 29.99 30)" xlink:href="#a" />
+      </svg>
+    </div>
+
+    @Html.Sitecore().Placeholder("login-register-link")
+  </div>
+
+</nav>
+
+
+  <div class="menu-expanded">
+    <div class="menu-products center center--1700">
+      @foreach (var subMenu in Model.NavItems)
+      {
+        <div class="@Html.Sitecore().Field(Templates.LinkMenuItem.Fields.Class, subMenu.Item)">
+          <h3 class="h5">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, subMenu)</h3>
+
+          @if (subMenu.ShowChildren && subMenu.Children != null && subMenu.Children.NavItems.Any())
+          {
+            <ul class="personal__list">
+
+              @foreach (var menuItem in subMenu.Children.NavItems)
+              {
+
+                if (menuItem.Item.FieldHasValue(Templates.LinkMenuItem.Fields.Icon))
+                {
+                  <li>
+                    <a href="@menuItem.Url" class="@Html.Sitecore().Field(Templates.LinkMenuItem.Fields.Class, menuItem.Item)">
+                      <img src="@menuItem.Item.ImageUrl(Templates.LinkMenuItem.Fields.Icon)"
+                           alt="@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })" />
+                      <span>@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })</span>
+                    </a>
+                  </li>
+                }
+                else
+                {
+                  <li style="--delay: 0.2;">
+                    <a href="@menuItem.Url">
+                      @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })
+                    </a>
+                  </li>
+                }
+
+              }
+
+            </ul>
+          }
+
+        </div>
+       }
+    </div>
+  </div>

@@ -22,7 +22,7 @@ Languages:
         sitecore\admin
     - ID: "61303124-e3cf-431f-b6eb-25a1b3201834"
       Hint: PanelItemTitle
-      Value: Simple Hospital
+      Value: Premium nosokomeiako 1500
     - ID: "be970800-6d58-4663-ae9b-111a8ffcd2bd"
       Hint: PanelItemValue
       Type: Multilist

@@ -69,27 +69,46 @@ Languages:
               p:before="*"
               s:ds="{5F113DBE-DA85-40AA-94DC-A7FAE63AD16B}"
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;FontColor"
+              s:par="Alignment&amp;Background=%7B6ADEB5B7-13E8-45FE-A2B3-75C4910FA09F%7D&amp;ContainerIsNotFullWidth"
+              s:ph="/page-layout/teaser-placeholder-3-{E68A57A0-0571-4337-AFC1-840884ED0226}-0" />
+            <r
+              uid="{91F1E0FE-FA66-4015-904D-D262478D1BA9}"
+              p:after="r[@uid='{F1E4E9A2-D370-40F4-B6F5-B948FD46D529}']"
+              s:ds="{EAD02555-1EB7-4589-ABA0-C5B8BEB127FE}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-3-{E68A57A0-0571-4337-AFC1-840884ED0226}-0" />
             <r
               uid="{CCD673F7-7928-4DF1-8C21-FB62B27963F1}"
-              p:after="r[@uid='{F1E4E9A2-D370-40F4-B6F5-B948FD46D529}']"
+              p:after="r[@uid='{91F1E0FE-FA66-4015-904D-D262478D1BA9}']"
               s:ds="{6BC516A4-E21B-432E-BF54-753877036093}"
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par="Background=%7B6ADEB5B7-13E8-45FE-A2B3-75C4910FA09F%7D&amp;FontColor"
+              s:par="Alignment&amp;Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;ContainerIsNotFullWidth"
               s:ph="/page-layout/teaser-placeholder-2-{E68A57A0-0571-4337-AFC1-840884ED0226}-0" />
             <r
               uid="{8B309201-944D-46EA-90DB-687EC4B283E4}"
               p:after="r[@uid='{CCD673F7-7928-4DF1-8C21-FB62B27963F1}']"
               s:ds="{749E3A93-268F-4AC9-99CD-D19F7D6D89EC}"
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;FontColor"
+              s:par="Alignment&amp;Background=%7B3ABEF2ED-9AC2-40E8-83C3-5F94B5604F31%7D&amp;ContainerIsNotFullWidth"
               s:ph="/page-layout/teaser-placeholder-1-{E68A57A0-0571-4337-AFC1-840884ED0226}-0" />
             <r
               uid="{E68A57A0-0571-4337-AFC1-840884ED0226}"
               p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
               s:ds="{EFE3CA13-F948-499F-90C3-0276EF151DEF}"
               s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:ph="page-layout" />
+            <r
+              uid="{9685F76A-05BD-4B33-968F-2AF51C850636}"
+              p:after="r[@uid='{E68A57A0-0571-4337-AFC1-840884ED0226}']"
+              s:ds="{EAD02555-1EB7-4589-ABA0-C5B8BEB127FE}"
+              s:id="{D1DD7390-C774-4C86-8904-FD074B9BD21D}"
+              s:ph="page-layout" />
+            <r
+              uid="{6B7B1035-ED5D-47E8-B9C5-D785B5ACE3E4}"
+              p:after="r[@uid='{9685F76A-05BD-4B33-968F-2AF51C850636}']"
+              s:ds="{B0456E15-630F-4DC9-9653-8894BDA0D14A}"
+              s:id="{29887712-3E85-461E-AE69-AC01ABBC7B38}"
+              s:par=""
               s:ph="page-layout" />
             <r
               uid="{8A4FE19E-E0CD-4703-92D4-AF77527473FB}"
@@ -105,35 +124,39 @@ Languages:
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
-        <h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3><p>"Sed
-         ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
-        inventore veritatis et quasi architecto beatae vitae dicta sunt 
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum 
-        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam 
-        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam 
-        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-         Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
-        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo 
-        voluptas nulla pariatur?"</p>
-        <h3>1914 translation by H. Rackham</h3>
-        <p>"But I must explain to you how all this mistaken idea of denouncing 
-        pleasure and praising pain was born and I will give you a complete 
-        account of the system, and expound the actual teachings of the great 
-        explorer of the truth, the master-builder of human happiness. No one 
-        rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
-        but because those who do not know how to pursue pleasure rationally 
-        encounter consequences that are extremely painful. Nor again is there 
-        anyone who loves or pursues or desires to obtain pain of itself, because
-         it is pain, but because occasionally circumstances occur in which toil 
-        and pain can procure him some great pleasure. To take a trivial example,
-         which of us ever undertakes laborious physical exercise, except to 
-        obtain some advantage from it? But who has any right to find fault with a
-         man who chooses to enjoy a pleasure that has no annoying consequences, 
-        or one who avoids a pain that produces no resultant pleasure?"</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Kappa;ά&theta;&epsilon; &eta;&mu;έ&rho;&alpha;, &delta;&omicron;&upsilon;&lambda;&epsilon;&iota;ά &mu;&alpha;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &delta;&iota;&alpha;&chi;&epsilon;&iota;&rho;&iota;&zeta;ό&mu;&alpha;&sigma;&tau;&epsilon; &tau;&eta;&nu; &alpha;&beta;&epsilon;&beta;&alpha;&iota;ό&tau;&eta;&tau;&alpha; &kappa;&alpha;&iota; &nu;&alpha; &alpha;&xi;&iota;&omicron;&pi;&omicron;&iota;&omicron;ύ&mu;&epsilon; &tau;&iota;&sigmaf; &epsilon;&upsilon;&kappa;&alpha;&iota;&rho;ί&epsilon;&sigmaf;.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Mu;&epsilon; &tau;&eta;&nu; &kappa;&lambda;&eta;&rho;&omicron;&nu;&omicron;&mu;&iota;ά &tau;&eta;&sigmaf; &pi;&omicron;&lambda;&upsilon;&epsilon;&tau;&omicron;ύ&sigmaf; &epsilon;&mu;&pi;&epsilon;&iota;&rho;ί&alpha;&sigmaf; &mu;&alpha;&sigmaf; &sigma;&tau;&omicron; &epsilon;&pi;ί&kappa;&epsilon;&nu;&tau;&rho;&omicron; &tau;&eta;&sigmaf; &epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;ή&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή&sigmaf; &alpha;&gamma;&omicron;&rho;ά&sigmaf; &kappa;&alpha;&iota; &mu;&epsilon; &sigma;&tau;&alpha;&theta;&epsilon;&rho;έ&sigmaf; &tau;&iota;&sigmaf; &theta;&epsilon;&mu;&epsilon;&lambda;&iota;ώ&delta;&epsilon;&iota;&sigmaf; &alpha;&rho;&chi;έ&sigmaf; &mu;&alpha;&sigmaf;, &mu;&pi;&alpha;ί&nu;&omicron;&upsilon;&mu;&epsilon; &sigma;&epsilon; &mu;&iota;&alpha; &nu;έ&alpha; &epsilon;&pi;&omicron;&chi;ή, &mu;&epsilon; &tau;&eta;&nu; ώ&theta;&eta;&sigma;&eta; &pi;&omicron;&upsilon; &mu;&alpha;&sigmaf; &delta;ί&nu;&epsilon;&iota; &omicron; &iota;&sigma;&chi;&upsilon;&rho;ό&sigmaf; &kappa;&alpha;&iota; &alpha;&xi;&iota;ό&pi;&iota;&sigma;&tau;&omicron;&sigmaf; &delta;&iota;&epsilon;&theta;&nu;ή&sigmaf; Ό&mu;&iota;&lambda;&omicron;&sigmaf; &tau;&eta;&sigmaf; Fairfax.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Epsilon;&xi;&epsilon;&lambda;&iota;&sigma;&sigma;ό&mu;&alpha;&sigma;&tau;&epsilon;, &gamma;&iota;&alpha; &nu;&alpha; &sigma;&tau;&epsilon;&kappa;ό&mu;&alpha;&sigma;&tau;&epsilon; &delta;ί&pi;&lambda;&alpha; &sigma;&omicron;&upsilon; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&alpha;.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Kappa;&alpha;&iota; ό&tau;&alpha;&nu; &lambda;έ&mu;&epsilon; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&alpha;, &epsilon;&nu;&nu;&omicron;&omicron;ύ&mu;&epsilon; &mu;&epsilon; &nu;έ&omicron;, &delta;&iota;&alpha;&phi;&omicron;&rho;&epsilon;&tau;&iota;&kappa;ό &tau;&rho;ό&pi;&omicron;.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"><br />
+        </strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Pi;&rho;&omicron;&chi;&omega;&rho;ά&mu;&epsilon; &pi;έ&rho;&alpha; &alpha;&pi;ό &tau;&eta;&nu; &pi;&rho;&omicron;&sigma;&tau;&alpha;&sigma;ί&alpha; ό&sigma;&omega;&nu; έ&chi;&omicron;&upsilon;&nu; &alpha;&xi;ί&alpha; &gamma;&iota;&alpha; &epsilon;&sigma;έ&nu;&alpha;, &epsilon;&xi;&alpha;&sigma;&phi;&alpha;&lambda;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &tau;&eta;&nu; &alpha;&pi;&lambda;ό&tau;&eta;&tau;&alpha; &kappa;&alpha;&iota; &tau;&eta;&nu; &epsilon;&upsilon;&epsilon;&lambda;&iota;&xi;ί&alpha; &pi;&omicron;&upsilon; &chi;&rho;&epsilon;&iota;ά&zeta;&epsilon;&sigma;&alpha;&iota; &kappa;&alpha;&iota; &sigma;&omicron;&upsilon; &delta;ί&nu;&omicron;&upsilon;&mu;&epsilon; &tau;&eta; &delta;ύ&nu;&alpha;&mu;&eta; &nu;&alpha; &kappa;ά&nu;&epsilon;&iota;&sigmaf; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&epsilon;&sigmaf; &epsilon;&pi;&iota;&lambda;&omicron;&gamma;έ&sigmaf;.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"><br />
+        </strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Kappa;ά&nu;&omicron;&upsilon;&mu;&epsilon; &alpha;&pi;&lambda;ή &tau;&eta;&nu; &pi;&rho;&omicron;&sigma;&tau;&alpha;&sigma;ί&alpha; ό&sigma;&omega;&nu; έ&chi;&omicron;&upsilon;&nu; &sigma;&eta;&mu;&alpha;&sigma;ί&alpha; &gamma;&iota;&alpha; &epsilon;&sigma;έ&nu;&alpha; &kappa;&alpha;&iota; &epsilon;&upsilon;&kappa;&omicron;&lambda;ό&tau;&epsilon;&rho;&eta; &tau;&eta;&nu; &alpha;&xi;&iota;&omicron;&pi;&omicron;ί&eta;&sigma;&eta; &tau;&omega;&nu; &nu;έ&omega;&nu; &epsilon;&upsilon;&kappa;&alpha;&iota;&rho;&iota;ώ&nu;.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"><br />
+        </strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Delta;&epsilon;&nu; &alpha;&lambda;&lambda;ά&zeta;&omicron;&upsilon;&mu;&epsilon;, ό&mu;&omega;&sigmaf;, &tau;&iota;&sigmaf; &theta;&epsilon;&mu;&epsilon;&lambda;&iota;ώ&delta;&epsilon;&iota;&sigmaf; &alpha;&rho;&chi;έ&sigmaf; &mu;&alpha;&sigmaf;.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"><br />
+        </strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Kappa;&rho;&alpha;&tau;ά&mu;&epsilon; &tau;&iota;&sigmaf; &alpha;&xi;ί&epsilon;&sigmaf; &pi;&omicron;&upsilon; &mu;&alpha;&sigmaf; έ&phi;&epsilon;&rho;&alpha;&nu; &omega;&sigmaf; &epsilon;&delta;ώ.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Tau;&eta;&nu; &alpha;&xi;&iota;&omicron;&pi;&iota;&sigma;&tau;ί&alpha;. &Tau;&eta; &delta;&iota;&alpha;&phi;ά&nu;&epsilon;&iota;&alpha;. &Tau;&eta; &phi;&rho;&omicron;&nu;&tau;ί&delta;&alpha; &mu;&alpha;&sigmaf; &pi;&rho;&omicron;&sigmaf; &tau;&omicron;&upsilon;&sigmaf; &alpha;&nu;&theta;&rho;ώ&pi;&omicron;&upsilon;&sigmaf;, &mu;έ&sigma;&alpha; &alpha;&pi;ό &tau;&eta; &delta;&iota;&alpha;&rho;&kappa;ή &epsilon;&pi;έ&nu;&delta;&upsilon;&sigma;&eta; &sigma;&tau;&eta;&nu; &epsilon;&xi;έ&lambda;&iota;&xi;ή &tau;&omicron;&upsilon;&sigmaf;. &Tau;&eta;&nu; &pi;&rho;&omicron;&tau;&epsilon;&rho;&alpha;&iota;ό&tau;&eta;&tau;ά &mu;&alpha;&sigmaf; &nu;&alpha; &epsilon;&pi;&iota;&sigma;&tau;&rho;έ&phi;&omicron;&upsilon;&mu;&epsilon; &alpha;&xi;ί&alpha; &sigma;&tau;&eta;&nu; &kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha;.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"><br />
+        </strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Gamma;&iota;&alpha;&tau;ί &epsilon;&mu;&epsilon;ί&sigmaf; &upsilon;&pi;&omicron;&sigma;&tau;&eta;&rho;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &tau;&omicron;&upsilon;&sigmaf; &alpha;&nu;&theta;&rho;ώ&pi;&omicron;&upsilon;&sigmaf; &pi;&omicron;&upsilon; &delta;&iota;&epsilon;&kappa;&delta;&iota;&kappa;&omicron;ύ&nu; &pi;&epsilon;&rho;&iota;&sigma;&sigma;ό&tau;&epsilon;&rho;&alpha; &alpha;&pi;ό &tau;&eta; &zeta;&omega;ή.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"><br />
+        </strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &kappa;&omicron;&nu;&tau;ά &sigma;&omicron;&upsilon;, &gamma;&iota;&alpha; &nu;&alpha; έ&rho;&chi;&epsilon;&sigma;&alpha;&iota; &pi;&iota;&omicron; &kappa;&omicron;&nu;&tau;ά &sigma;&tau;&iota;&sigmaf; &epsilon;&pi;&iota;&theta;&upsilon;&mu;ί&epsilon;&sigmaf;, &tau;&alpha; ό&nu;&epsilon;&iota;&rho;&alpha; &kappa;&alpha;&iota; &tau;&omicron;&upsilon;&sigmaf; &sigma;&tau;ό&chi;&omicron;&upsilon;&sigmaf; &sigma;&omicron;&upsilon;.&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"><br />
+        </strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Upsilon;&pi;&omicron;&sigma;&tau;&eta;&rho;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &tau;&eta;&nu; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&eta; &epsilon;&kappa;&delta;&omicron;&chi;ή &tau;&eta;&sigmaf; &zeta;&omega;ή&sigmaf; &sigma;&omicron;&upsilon;.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>&Alpha;&upsilon;&tau;ή &epsilon;ί&nu;&alpha;&iota; &eta; &delta;έ&sigma;&mu;&epsilon;&upsilon;&sigma;ή &mu;&alpha;&sigmaf;.</strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><span id="docs-internal-guid-82a95887-7fff-d3e0-c294-a84c0a7a4a3e"></span><br class="Apple-interchange-newline" />
+        </span></p>
+        <h3><strong id="docs-internal-guid-4dcedab3-7fff-5aea-f904-51452e73608c"></strong><br class="Apple-interchange-newline" />
+        </h3>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

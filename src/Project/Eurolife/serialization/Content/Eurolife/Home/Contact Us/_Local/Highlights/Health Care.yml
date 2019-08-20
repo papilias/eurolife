@@ -14,7 +14,8 @@ Languages:
       Value: 20190730T135519Z
     - ID: "3dff77f8-1841-43f4-980a-8c7ce45836bc"
       Hint: HighlightContentIcon
-      Value: "{C4EE511A-DA52-4B94-B02F-B84C89C972D2}"
+      Value: |
+        <image mediaid="{84C2CB5C-F525-41AA-B01C-1A98588D9DD8}" />
     - ID: "5bc5032c-22d2-4b23-b3bd-9a490ab20223"
       Hint: HighlightTitle
       Value: Φροντίδα Υγείας

@@ -71,27 +71,14 @@
 
 }
 
-.material__card--health {
-  .material__title{
-    color:$strawberry;
-  }
-  .material__icon {
-    background-image: url('../icons/health-with-bg.svg');
-  }
 
+.color-health {
   .btn--material{
     color: $strawberry;
     border-color: $strawberry;
   }
 }
-  .material__card--car {
-    .material__title{
-      color: $light-forest-green;
-    }
-
-    .material__icon {
-      background-image: url('../icons/car-with-bg.svg');
-    }
+  .color-motor {
     .btn--material{
       color:$light-forest-green;
       border-color: $light-forest-green;
@@ -99,13 +86,7 @@
 
   }
 
-  .material__card--home {
-    .material__title{
-        color:$dusty-orange;
-    }
-    .material__icon{
-    background-image:url('../icons/house-with-bg.svg');
-    }
+  .color-home {
     .btn--material{
       color:$dusty-orange;
       border-color: $dusty-orange;

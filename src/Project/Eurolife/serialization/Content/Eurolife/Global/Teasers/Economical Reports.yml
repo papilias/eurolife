@@ -11,7 +11,8 @@ Languages:
     Fields:
     - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
       Hint: TeaserSummary
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: |
+        <span id="docs-internal-guid-5a64783f-7fff-6b2b-02f3-c82b2acbde41" style="background-color: transparent; text-decoration: none; color: #000000;">&Sigma;&upsilon;&nu;&omicron;&pi;&tau;&iota;&kappa;ά &omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;&iota;&kappa;ά &sigma;&tau;&omicron;&iota;&chi;&epsilon;ί&alpha;, &omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;&iota;&kappa;έ&sigmaf; &kappa;&alpha;&tau;&alpha;&sigma;&tau;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; &Epsilon;&kappa;&theta;έ&sigma;&epsilon;&iota;&sigmaf;.</span>
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
       Value: Οικονομικά Στοιχεία
@@ -24,7 +25,8 @@ Languages:
         sitecore\admin
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
-      Value: 
+      Value: |
+        <link text="Αναλυτικά οικονομικά στοιχεία" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E573F7B0-63C7-4E31-8C92-EC4EF7F97A74}" />
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: DesktopImage
       Value: |
@@ -32,4 +34,4 @@ Languages:
     - ID: "f51dd24c-64be-4832-9f98-e03f9e84fa63"
       Hint: TeaserDownloadCTA
       Value: |
-        <link id="{2B87C416-F4C9-4942-B109-F0952DEE07E3}" querystring="" linktype="internal" text="" anchor="" url="/Eurolife/Global/PDFs/PDFs Folder/PDFFFF" title="" class="" target="" />
+        <link id="{2B87C416-F4C9-4942-B109-F0952DEE07E3}" querystring="" target="" text="Financial Report 2018" anchor="" title="" class="" url="/Eurolife/Global/PDFs/PDFs Folder/Oikonomika stoixeia 2017" linktype="internal" />

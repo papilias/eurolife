@@ -90,6 +90,7 @@
     <Content Include="Views\Highlight\HighlightsAccordionItems.cshtml" />
     <Content Include="Views\Highlight\HighlightsAccordionHeader.cshtml" />
     <Content Include="Views\Highlight\HighlightsList.cshtml" />
+    <Content Include="Views\Highlight\HighlightsCirclesGroup.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

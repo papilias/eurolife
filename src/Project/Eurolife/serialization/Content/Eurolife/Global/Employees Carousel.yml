@@ -25,3 +25,14 @@ Languages:
         {B36A61E3-63C4-4397-B2F0-3F0525E911CB}
         {FD40068C-4D19-49B5-96E9-64A76ADFBB8E}
         {314596C1-15F2-4781-B607-160EA32B3B35}
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T123308Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

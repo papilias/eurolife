@@ -1,0 +1,24 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Identity.Repositories
+@using Wedia.Feature.Identity
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+
+@{
+  var identity = IdentityRepository.Get(Model.Item);
+
+  if (identity == null)
+  {
+    return;
+  }
+
+}
+
+@if (identity.FieldHasValue(Templates.Identity.Fields.LoginRegisterUrl))
+{
+  @Html.Sitecore().Field(Templates.Identity.Fields.LoginRegisterUrl, identity, new { @class = "link-register" })
+}
+
+
+
+

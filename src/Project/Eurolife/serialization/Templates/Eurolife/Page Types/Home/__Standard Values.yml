@@ -22,9 +22,40 @@ SharedFields:
           ph="head"
           uid="{E4574849-F093-4781-872F-B5521227E520}" />
         <r
-          id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+          id="{EF0BEAD8-DD54-4579-8F4A-2A4971C29F73}"
+          ph="header"
+          uid="{1379C545-83E6-4B43-852F-333DB5A4F8F3}" />
+        <r
+          id="{100F42AE-7160-4F29-B6DB-E01C388B3891}"
+          ph="before-header"
+          uid="{04387F46-DE24-464A-B428-37841C5E0570}" />
+        <r
+          id="{B5B0DC88-B109-41EE-8714-4E2E06FC0FED}"
+          ph="main-burger"
+          uid="{F322CAE7-039F-4E1B-A6F2-6D7AB0C1E4AC}" />
+        <r
+          ds="{1DC8C6E2-A9B8-40A8-B4B0-5B5ACDE42D32}"
+          id="{DB5E61BA-9B4C-4123-B200-5F30E491EE20}"
+          ph="header-content"
+          uid="{453FF03B-06C4-476E-9DEA-DA9DD9C9F547}" />
+        <r
+          id="{B5B0DC88-B109-41EE-8714-4E2E06FC0FED}"
+          ph="header-top-navbar"
+          uid="{4ADA3C2E-C4C3-4CCC-93A3-DB18F8114B94}" />
+        <r
+          ds="{281383DB-C1D6-4557-B5EF-3163F9DFE725}"
+          id="{DF10DE99-F5AE-474C-A6F3-4DF2E22ED8F2}"
+          ph="header-content"
+          uid="{F81A4B07-53D8-4940-A27E-1770C5F30386}" />
+        <r
+          id="{ECEA9D7D-DEFD-4B60-ABD0-198B4B59D3A3}"
+          ph="login-register-link"
+          uid="{D852DC77-F36A-4A01-BE16-25861FBC43CD}" />
+        <r
+          ds="{B0A0CC7A-407F-4771-A72D-6A19F18603A6}"
+          id="{BEB1CB25-D3BE-40AE-B12A-59B250819984}"
           ph="page-layout"
-          uid="{C773E9BD-5A10-468C-9467-20E287A0FCE6}" />
+          uid="{38C98C25-C442-4001-BD35-EC187B0701C0}" />
         <r
           id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
           ph="footer"
@@ -55,6 +86,17 @@ SharedFields:
       </d>
     </r>
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190820T133944Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: en
   Versions:
   - Version: 1

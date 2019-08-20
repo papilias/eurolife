@@ -17,52 +17,51 @@
   int? carouselHeight = null;
 }
 
-<div id="@carouselId" class="center center--1100 flex-spread m-t-112">
-  <h1 class="h3 m-b-48">
-    @Html.Sitecore().Dictionary("/media/carousel/title", "Title")
-  </h1>
-
-  <div class="gallery__controls">
-    <span class="gallery-prev">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
-        <defs><path id="a" d="M41.118 32.08L23.029 50.137a2.948 2.948 0 0 1-4.166 0 2.938 2.938 0 0 1 0-4.159l16.005-15.98-16.005-15.978a2.938 2.938 0 0 1 0-4.16 2.95 2.95 0 0 1 4.166 0l18.09 18.06c.574.574.862 1.326.862 2.079a2.93 2.93 0 0 1-.863 2.08z" /></defs>
-        <use fill="#003B4D" fill-rule="nonzero" transform="rotate(-180 29.99 30)" xlink:href="#a" />
-      </svg>
-    </span>
-    <span class="gallery-next">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
-        <defs><path id="a" d="M41.118 32.08L23.029 50.137a2.948 2.948 0 0 1-4.166 0 2.938 2.938 0 0 1 0-4.159l16.005-15.98-16.005-15.978a2.938 2.938 0 0 1 0-4.16 2.95 2.95 0 0 1 4.166 0l18.09 18.06c.574.574.862 1.326.862 2.079a2.93 2.93 0 0 1-.863 2.08z" /></defs>
-        <use fill="#003B4D" fill-rule="nonzero" xlink:href="#a" />
-      </svg>
-    </span>
-  </div>
-</div>
-
-<section class="gallery m-b-112">
-
-  <div class="js-gallery">
+<section class="hero hero--extra m-b-124 relator">
+  <div class="js-hero-slider hero-slider">
     @foreach (var element in elements)
     {
       var field = element.Item.DescendsFrom(Templates.HasMediaVideo.ID) ? Templates.HasMedia.Fields.Thumbnail : Templates.HasMediaImage.Fields.Image;
       var image = element.Item.ImageUrl(field);
       var description = element.Item.Fields[Templates.HasMedia.Fields.Description];
       var title = element.Item.Fields[Templates.HasMedia.Fields.Title];
+      var label = element.Item.Fields[Templates.HasMedia.Fields.Label];
+      var url = (element.Item.DescendsFrom(Templates.HasMediaUrl.ID) && element.Item.FieldHasValue(Templates.HasMediaUrl.Fields.Url)) 
+        ? Html.Sitecore().Field(Templates.HasMediaUrl.Fields.Url, element.Item, new { DisableWebEdit = true }).ToString() : "#";
 
       if (element.Item.DescendsFrom(Templates.HasMediaVideo.ID))
       {
-
-      <a data-fancybox="gallery" data-caption="@description" href="@element.Item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink)" class="gallery__video">
-        <img src="@image" alt="@title" />
-      </a>
+        var videoUrl = element.Item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink);
       }
       else
       {
-      <a data-fancybox="gallery" data-caption="@description" href="@image">
-        <img src="@image" alt="@title" />
-      </a>
+        <a class="hero-slider__item" href="">
+          <div class="hero-contents">
+            <div class="center--760 center relator">
+              <h3 class="h6">@label</h3>
+              <h2 class="h2 m-b-16 m-t-32">@title</h2>
+              <p>@description</p>
+            </div>
+          </div>
+          <picture>
+            <source media="(min-width: 900px)" srcset="images/eurolife-product.jpg">
+            <source srcset="images/eurolife-product-mobile.jpg">
+            <img src="@image" alt="@title" />
+          </picture>
+        </a>
       }
 
     }
-    <div></div>
+    
   </div>
+  <div class="grouping-dots"></div>
+  <div class="hidden custom-dots js-custom-dots">
+    @foreach (var element in elements)
+    {
+      <span>
+        @Html.Sitecore().Field(Templates.HasMedia.Fields.Thumbnail, element.Item, new { DisableWebEdit = true })
+      </span>
+    }
+  </div>
+
 </section>

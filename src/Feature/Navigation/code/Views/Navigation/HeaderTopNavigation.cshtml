@@ -1,0 +1,29 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Navigation
+@model Wedia.Feature.Navigation.Models.NavigationItems
+
+@{
+  if (Model?.NavItems == null || !Model.NavItems.Any())
+  {
+    return;
+  }
+}
+
+<nav class="nav-main" role="navigation" aria-label="@Model.Title">
+  <div class="nav-main__in center center--1700">
+    @Html.Sitecore().Placeholder("header-top-navbar")
+
+
+      <ul class="nav-main__list">
+        @foreach (var item in Model.NavItems)
+        {
+          <li>
+            <a href="@item.Url"
+               title="@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item, new { DisableWebEdit = true })">
+               @item.Item.Field(Templates.Navigable.Fields.NavigationTitle)
+            </a>
+          </li>                  
+        }
+      </ul>
+    </div>
+  </nav>

@@ -9,7 +9,6 @@ namespace Wedia.Feature.Teasers
   {
     public struct ImageDimensions
     {
-
       public struct ColoredTeaser
       {
         public static int Width => 720;

@@ -1,0 +1,39 @@
+﻿---
+ID: "df5403e3-4446-437f-994b-794639f94fdd"
+Parent: "96afb584-b188-44b2-948a-2d29f33ecfd1"
+Template: "c2f594c5-783f-4f96-a24a-ea6521dd6bb1"
+Path: /sitecore/content/Eurolife/Global/Media/Carousel Image 1
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "193f78b8-6160-4346-92c3-2954ce7026de"
+      Hint: MediaImage
+      Value: |
+        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{DF9B5715-071A-488F-BD99-DED0B874B748}" />
+    - ID: "20faf759-601d-41e5-b2ce-cb23be133c32"
+      Hint: MediaDescription
+      Value: Δίνουμε καθημερινά δύναμη στη ζωή σας
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190820T134832Z
+    - ID: "2b8d567c-52b2-4d1b-a645-2021d33c24ee"
+      Hint: MediaLabel
+      Value: ΠΟΙΟΙ ΕΙΜΑΣΤΕ
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "661c186c-f966-466b-8aaf-5fb32600711b"
+      Hint: Url
+      Value: |
+        <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{85D60CA6-EAB7-44E7-9D78-E8DB75756B35}" />
+    - ID: "8e77d56c-9ad2-4b70-bc1f-beb99de004e9"
+      Hint: MediaTitle
+      Value: Ενθαρύνουμε κάθε άνθρωπο να ζει με τη ζωή που επιθυμεί
+    - ID: "de984d10-9f28-4135-b53f-fe8b5de19c55"
+      Hint: MediaThumbnail
+      Value: |
+        <image mediaid="{8B400C50-36CB-4054-956F-3A322D9B12CD}" />

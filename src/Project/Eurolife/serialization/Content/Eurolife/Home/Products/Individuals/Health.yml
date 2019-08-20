@@ -148,10 +148,14 @@ Languages:
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Προγράμματα Ασφάλισης Υγείας
+    - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
+      Hint: CTA
+      Value: |
+        <link linktype="internal" text="ΖΗΤΗΣΤΕ ΠΡΟΣΦΟΡΑ" querystring="" target="_blank" id="{9F486AFA-7F59-4D25-9456-3F88ECFEE18E}" />
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
-        <h1 class="h2 m-b-24">Η καλή υγεία ξεκινά με τη σιγουριά του να νιώθετε ασφαλείς<br /></h1>
+        <h1 class="h2 m-b-24"></h1>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -32,11 +32,10 @@
 
   @foreach (var item in Model.Item.GetMultiListValueItems(Templates.HighlightsAccordionsGroup.Fields.Accordions).Select((value, i) => new { i, value }))
   {
-
     <transition name="slide">
       <app-coverages-accordion :identifier="@item.i" key="app-coverages-accordion-@item.i">
         @Html.Partial("../Highlight/HighlightsAccordionItems", item.value)
       </app-coverages-accordion>
-      </transition>
-    }
-  </section>
+    </transition>
+  }
+</section>

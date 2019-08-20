@@ -5,6 +5,20 @@ Template: "9111d58b-a754-4498-81ee-06a344178014"
 Path: /sitecore/content/Eurolife/Home/Corporate Social Responsibility/_Local/Teasers/Statistic Numbers Teaser
 DB: master
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
+      Hint: TeaserTitle
+      Value: Οι στόχοι μας για το 2019
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190806T111257Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
@@ -23,6 +37,6 @@ Languages:
       Value: |
         sitecore\admin
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
-      Hint: DesktopImage
+      Hint: TeaserImage
       Value: |
         <image mediapath="" alt="300" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{CF982FC6-8B30-4EB1-BC94-C4F510245A62}" ></image>

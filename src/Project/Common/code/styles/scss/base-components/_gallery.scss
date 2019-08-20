@@ -10,6 +10,27 @@
       max-width: 543px;
     }
   }
+
+  .slick-dots{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(0, 1fr) );
+    width:100%;
+    max-width: 1100px;
+    margin-top: 24px;
+
+    button{
+      display: none;
+    }
+
+    li{
+      height: 2px;
+      background-color: $color-base-grey;
+    }
+    .slick-active{
+      background-color: $color-base;
+    }
+  }
+
 }
 
 
@@ -56,24 +77,5 @@
     max-width: 32px;
 }
 
-.slick-dots{
-  display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(0, 1fr) );
-  width:100%;
-  max-width: 1100px;
-  margin-top: 24px;
-
-  button{
-    display: none;
-  }
-
-  li{
-    height: 2px;
-    background-color: $color-base-grey;
-  }
-  .slick-active{
-    background-color: $color-base;
-  }
-}
 
 

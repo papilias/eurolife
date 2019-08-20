@@ -43,22 +43,47 @@ namespace Wedia.Feature.Navigation.Controllers
 
     public ActionResult HorizontalNavigationLinks() => GetMenu("HorizontalNavigationLinks");
 
+    public ActionResult HeaderTopNavigation() => GetMenu("HeaderTopNavigation");
+
+    public ActionResult MainMenu()
+    {
+      if (HasError())
+      {
+        return ErrorResponse();
+      }
+
+      var item = RenderingContext.Current.Rendering.Item;
+      var items = _navigationRepository.GetPrimaryMenu(item);
+
+      return View("MainMenu", items);
+    }
+
     public ActionResult GetMenu(string view, bool descending = false, int limit = 20)
     {
-      if (string.IsNullOrEmpty(RenderingContext.Current.Rendering.DataSource))
+      if (HasError())
       {
-        return Context.PageMode.IsExperienceEditor
-            ? this.InfoMessage(
-                new InfoMessage(
-                    DictionaryPhraseRepository.Current.Get("/Navigation/Link Menu/Missing Datasource", "Missing Datasource"),
-                    InfoMessage.MessageType.Warning))
-                    : null;
+        return ErrorResponse();
       }
 
       var item = RenderingContext.Current.Rendering.Item;
       var items = _navigationRepository.GetLinkMenuItems(item, descending, limit);
 
       return View(view, items);
+    }
+
+    private bool HasError()
+    {
+      return string.IsNullOrEmpty(RenderingContext.Current.Rendering.DataSource);
+    }
+
+    private ViewResult ErrorResponse()
+    {
+      return Context.PageMode.IsExperienceEditor
+            ? this.InfoMessage(
+                new InfoMessage(
+                    DictionaryPhraseRepository.Current.Get("/Navigation/Link Menu/Missing Datasource", "Missing Datasource"),
+                    InfoMessage.MessageType.Warning))
+                    : null;
     }
   }
 }

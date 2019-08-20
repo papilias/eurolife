@@ -4,6 +4,10 @@ Parent: "fbd33008-e833-476d-8257-605422ad08dd"
 Template: "f1e8aa8c-0acb-4186-b3fb-448897ca0831"
 Path: /sitecore/content/Eurolife/Home/Products/Individuals/Health/_Local/Health Panel/HealthProductPanel
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
 Languages:
 - Language: "el-GR"
   Versions:
@@ -12,8 +16,9 @@ Languages:
     - ID: "09ab4417-580d-412a-b022-1288b2f95534"
       Hint: PanelSummary
       Value: |
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+        Χρησιμοποιήστε τους πίνακες για να συγκρίνετε τις καλύψεις και τα χαρακτηριστικά 
+        των προγραμμάτων υγείας και να επιλέξετε εκείνο που σας ταιριάζει περισσότερο.
+        
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190709T085100Z

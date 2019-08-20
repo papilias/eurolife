@@ -41,6 +41,15 @@ Languages:
               uid="{61C669D2-BE6B-4838-95E6-E5A651BA7AFC}">
               <p:d />
             </r>
+            <r
+              uid="{1C735F67-F569-4381-97B3-0D81784A6E00}"
+              p:after="r[@uid='{8CA78EF5-A01F-4533-AD25-5FE747DD9A2A}']"
+              s:ds="{E7E7F6D0-F959-48D3-AD9E-682B77EE6C5F}"
+              s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
+              s:ph="page-layout" />
+            <r
+              uid="{46611E3B-D8C2-4E28-BB02-794509C55173}"
+              p:after="*[1=2]" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
@@ -48,10 +57,10 @@ Languages:
       Value: 20190517T081334Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
-      Value: Our History
+      Value: Η ιστορία μας
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: Our History
+      Value: Η ιστορία μας
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: For over 20 years, we've been supporting people through life's challenges and opportunities
+      Value: Όλα τα χρόνια μας στην ασφαλιστική αγορά, είμαστε δίπλα σας, βοηθώντας σας να αξιοποιείτε κάθε σημαντική ευκαιρία που συναντάτε. 

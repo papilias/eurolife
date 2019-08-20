@@ -45,6 +45,18 @@ namespace Wedia.Feature.Navigation.Repositories
       return items;
     }
 
+    public NavigationItems GetPrimaryMenu(Item menuRoot, bool descending = false, int limit = 20)
+    {
+
+      if (menuRoot == null)
+      {
+        throw new ArgumentNullException(nameof(menuRoot));
+      }
+
+      return GetChildNavigationItems(menuRoot, 0, 2, descending, limit);
+  
+    }
+
     public NavigationItems GetLinkMenuItems(Item menuRoot, bool descending = false, int limit = 20)
     {
       if (menuRoot == null)
@@ -96,7 +108,9 @@ namespace Wedia.Feature.Navigation.Repositories
         Item = item,
         Url = item.DescendsFrom(Templates.Link.ID) ? item.LinkFieldUrl(Templates.Link.Fields.Link) : item.Url(),
         Target = item.DescendsFrom(Templates.Link.ID) ? item.LinkFieldTarget(Templates.Link.Fields.Link) : "",
-        IsActive = IsItemActive(targetItem ?? item)
+        IsActive = IsItemActive(targetItem ?? item),
+        Children = GetChildNavigationItems(item, level + 1, maxLevel),
+        ShowChildren = !item.DescendsFrom(Templates.Navigable.ID) || item.Fields[Templates.Navigable.Fields.ShowChildren].IsChecked()
       };
     }
 

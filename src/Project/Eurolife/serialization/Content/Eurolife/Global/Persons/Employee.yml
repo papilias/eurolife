@@ -32,3 +32,14 @@ Languages:
     - ID: "e57a5fee-e68d-4d37-ac1f-edc51e551121"
       Hint: PersonPosition
       Value: Employee Position
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T123428Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

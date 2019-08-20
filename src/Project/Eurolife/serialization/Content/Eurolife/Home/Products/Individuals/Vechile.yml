@@ -35,16 +35,35 @@ Languages:
               <p:d />
             </r>
             <r
-              uid="{ACFFEE9F-6FAD-44A9-B170-EAEE529FF15D}"
+              uid="{783C0524-8AAA-40BE-AE4C-68E44A526943}"
               p:after="r[@uid='{5EF5D0A3-333E-4901-A5F1-31DA788A11EC}']"
+              s:ds="{2DA2B94C-1CC7-472F-8EF5-F9078491EB6E}"
+              s:id="{BC33BB52-419D-4118-9D08-EE4009C50D3E}"
+              s:ph="page-layout" />
+            <r
+              uid="{87561E40-955C-4DEB-A0A3-34A1FD16CFB9}"
+              p:after="r[@uid='{783C0524-8AAA-40BE-AE4C-68E44A526943}']"
+              s:ds="{B957526C-A985-4686-A6BC-251AF5719507}"
+              s:id="{54928386-719D-48B9-8A91-524D9961E36D}"
+              s:ph="page-layout" />
+            <r
+              uid="{ACFFEE9F-6FAD-44A9-B170-EAEE529FF15D}"
+              p:after="r[@uid='{87561E40-955C-4DEB-A0A3-34A1FD16CFB9}']"
               s:ds="{0EC26ED4-EB11-44DB-9C39-D94AAF84209E}"
               s:id="{98840516-9993-49A2-AFB1-BDCF9562822A}"
               s:ph="page-layout" />
             <r
               uid="{72B5F3AA-E220-485B-B0C4-40B6D945ECE8}"
-              p:after="*[1=2]"
+              p:after="r[@uid='{9DCAC3A5-FC4B-4B6F-87C6-4A0342390064}']"
               s:ds="{867AA84E-5E34-4096-9DFA-A9758E8616DE}"
               s:id="{18EEA154-E01A-402A-9726-1D5B8A6E145D}"
+              s:ph="page-layout" />
+            <r
+              uid="{D9D355FC-7918-49AC-A9C9-B9B08CB99B9B}"
+              p:after="*[1=2]"
+              s:ds="{1FA9A0FC-32D8-499E-AAE5-843B07E01E04}"
+              s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
+              s:par=""
               s:ph="page-layout" />
           </d>
         </r>
@@ -54,9 +73,12 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Προγράμματα Ασφάλισης
+    - ID: "4791fadd-9bb5-4efd-b542-4d2f8bb634e4"
+      Hint: ToolkitSubhead
+      Value: 
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: Προγράμματα Ασφάλισης
+      Value: Προγράμματα Ασφάλισης Οχήματος
     - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
       Hint: CTA
       Value: |
@@ -65,9 +87,12 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "83b0e4e3-ab03-43e3-8083-3e7fd2946ad4"
+      Hint: ToolkitTitle
+      Value: 
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: Όποιος κι αν είναι ο προορισμός, φροντίζουμε το ταξίδι να είναι ξέγνοιαστο
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |

@@ -5,6 +5,17 @@ Template: "2c7f1576-9844-4119-8f1e-a4e70c4791b9"
 Path: /sitecore/content/Eurolife/Home/Contact Us/_Local/AlreadyClient
 DB: master
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190805T140629Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1
@@ -28,6 +39,6 @@ Languages:
       Value: |
         <link text="Σύνδεση στο my eurolife" linktype="external" url="https://something.com" anchor="" title="" class="" querystring="" target="" id="" />
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
-      Hint: DesktopImage
+      Hint: TeaserImage
       Value: |
         <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />

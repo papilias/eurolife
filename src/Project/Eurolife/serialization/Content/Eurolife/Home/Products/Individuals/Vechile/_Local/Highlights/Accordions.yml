@@ -4,6 +4,10 @@ Parent: "68b77450-a1af-44dc-93a1-a5d84b9310d8"
 Template: "1079f9fb-99f2-4a6c-aea2-c3b8eb8f3aa2"
 Path: /sitecore/content/Eurolife/Home/Products/Individuals/Vechile/_Local/Highlights/Accordions
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
 Languages:
 - Language: en
   Versions:

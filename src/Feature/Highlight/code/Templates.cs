@@ -26,6 +26,7 @@ namespace Wedia.Feature.Highlight
       {
         public static readonly ID Title = new ID("{5BC5032C-22D2-4B23-B3BD-9A490AB20223}");
         public static readonly ID Summary = new ID("{7CD45D99-885C-4EF4-AE14-2AB581AE9C74}");
+        public static readonly ID Class = new ID("{DB34680E-D68F-40DF-835D-41238824A281}");
       }
     }
 

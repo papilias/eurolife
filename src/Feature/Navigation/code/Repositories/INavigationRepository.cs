@@ -11,6 +11,7 @@ namespace Wedia.Feature.Navigation.Repositories
     public interface INavigationRepository
     {
         NavigationItems GetBreadcrumb();
-        NavigationItems GetLinkMenuItems(Item menuItem, bool descending = false, int limit = 20);
+        NavigationItems GetPrimaryMenu(Item menuItem, bool descending = false, int limit = 20);
+        NavigationItems GetLinkMenuItems(Item menuItem, bool descending = false, int limit = 20);        
     }
 }
