@@ -240,7 +240,7 @@
   }
 }
 
-.personal__list{
+.menu-products__personal ul{
   padding-top:33px;
   display: grid;
   grid-gap: 10px;
@@ -281,7 +281,7 @@
     background-color: $color-civil;
   }
 
-  .professional__list{
+  .menu-products__profesional ul{
     a{
       position: relative;
       &:after{
@@ -312,7 +312,7 @@
     padding-bottom: 20px;
     transform: translateX(100px);
     opacity: 0;
-    transition: opacity 900ms ease, transform 600ms ease-out;
+    transition: opacity 900ms ease, transformpersonal__list 600ms ease-out;
     --delay: 0;
     transition-delay: calc(var(--delay) * 1000ms);
     overflow: hidden;

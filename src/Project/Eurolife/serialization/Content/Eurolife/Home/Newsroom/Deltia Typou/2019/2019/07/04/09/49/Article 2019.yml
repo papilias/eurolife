@@ -37,6 +37,9 @@ Languages:
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
+    - ID: "f426dcd4-a506-4a26-a7c1-e77ae6e22a1a"
+      Hint: NewsDate
+      Value: 20190820T000000
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Άρθρο 2019

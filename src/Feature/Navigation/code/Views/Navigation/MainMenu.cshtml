@@ -30,33 +30,38 @@
 
           @if (subMenu.ShowChildren && subMenu.Children != null && subMenu.Children.NavItems.Any())
           {
-            <ul class="personal__list">
+          <ul>
+            @{
+              var delay = 0.2;
+            }
 
-              @foreach (var menuItem in subMenu.Children.NavItems)
+            @foreach (var menuItem in subMenu.Children.NavItems)
+            {
+
+              if (menuItem.Item.FieldHasValue(Templates.LinkMenuItem.Fields.Icon))
               {
+                <li>
+                  <a href="@menuItem.Url" class="@Html.Sitecore().Field(Templates.LinkMenuItem.Fields.Class, menuItem.Item)">
+                    <img src="@menuItem.Item.ImageUrl(Templates.LinkMenuItem.Fields.Icon)"
+                         alt="@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })" />
+                    <span>@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })</span>
+                  </a>
+                </li>
+              }
+              else
+              {
+                <li style="--delay: @delay.ToString().Replace(",", ".");">
+                  <a href="@menuItem.Url">
+                    @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })
+                  </a>
+                </li>
 
-                if (menuItem.Item.FieldHasValue(Templates.LinkMenuItem.Fields.Icon))
-                {
-                  <li>
-                    <a href="@menuItem.Url" class="@Html.Sitecore().Field(Templates.LinkMenuItem.Fields.Class, menuItem.Item)">
-                      <img src="@menuItem.Item.ImageUrl(Templates.LinkMenuItem.Fields.Icon)"
-                           alt="@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })" />
-                      <span>@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })</span>
-                    </a>
-                  </li>
-                }
-                else
-                {
-                  <li style="--delay: 0.2;">
-                    <a href="@menuItem.Url">
-                      @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, menuItem.Item, new { DisableWebEdit = true })
-                    </a>
-                  </li>
-                }
-
+                delay += 0.2;
               }
 
-            </ul>
+            }
+
+          </ul>
           }
 
         </div>

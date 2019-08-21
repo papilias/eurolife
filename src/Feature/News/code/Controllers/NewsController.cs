@@ -40,21 +40,13 @@ namespace Wedia.Feature.News.Controllers
       return View("CSRArticlesList", items);
     }
 
-    public ActionResult LatestNews()
-    {
-      var item = RenderingContext.Current.Rendering.Item;
-
-      if (item == null)
-        return ErrorMessage(DictionaryPhraseRepository
+    public ActionResult LatestNews() => GetLatestArticles("LatestNews", DictionaryPhraseRepository
           .Current
           .Get("/News/Latest News/Missing Rendering Item", "Invalid or Missing Datasource"));
 
-
-      var count = RenderingContext.Current.Rendering.GetIntegerParameter("count", 3);
-      var items = _newsRepository.GetLatest(RenderingContext.Current.Rendering.Item, count);
-
-      return View("LatestNews", items);
-    }
+    public ActionResult LatestNewsImageless() => GetLatestArticles("LatestNewsListImageless", DictionaryPhraseRepository
+          .Current
+          .Get("/News/Latest News List Imageless/Missing Rendering Item", "Invalid or Missing Datasource"));
 
     public ActionResult ArticleNavigation()
     {
@@ -94,6 +86,20 @@ namespace Wedia.Feature.News.Controllers
           .Get("/News/News List/Missing Rendering Item", "Invalid or Missing Datasource"));
 
       return GetPagedResults(item, pagingDto, page, true);
+    }
+
+    private ActionResult GetLatestArticles(string viewName, string errorMessage)
+    {
+      var item = RenderingContext.Current.Rendering.Item;
+
+      if (item == null)
+        return ErrorMessage(errorMessage);
+
+
+      var count = RenderingContext.Current.Rendering.GetIntegerParameter("count", Contants.LatestNews.NumberOfArticles);
+      var items = _newsRepository.GetLatest(RenderingContext.Current.Rendering.Item, count);
+
+      return View(viewName, items);
     }
 
     private ActionResult GetPagedResults(Item item, PagingSettings pagingSettings, int page = 0, bool isPartial = false)

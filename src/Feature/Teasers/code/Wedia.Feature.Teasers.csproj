@@ -99,6 +99,7 @@
     <Content Include="Views\Teasers\TwoColumnsTeaser.cshtml" />
     <Content Include="Views\Teasers\BorderedTeaser.cshtml" />
     <Content Include="Views\Teasers\TeaserWithPlaceholder.cshtml" />
+    <Content Include="Views\Teasers\TeaserWithLabelAndIcon.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

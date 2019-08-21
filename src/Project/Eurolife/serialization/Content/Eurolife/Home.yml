@@ -25,6 +25,23 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{6598148A-FF59-4A7E-9796-BF5D157225EE}"
+              p:before="*"
+              s:ds="{F33A1017-2CF8-46A2-8AC6-3A8F59B90C31}"
+              s:id="{1BE547E4-8F8B-4717-A241-CB1D19631F1D}"
+              s:ph="/page-layout/teaser-placeholder-1-{956AA09C-54B2-4AC4-A056-5C43B15F6F89}-0" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T074306Z
@@ -45,38 +62,3 @@ Languages:
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Αρχική
-- Language: en
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
-      Hint: __Final Renderings
-      Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1"
-          s:xsd="http://www.w3.org/2001/XMLSchema">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{C773E9BD-5A10-468C-9467-20E287A0FCE6}">
-              <p:d />
-            </r>
-          </d>
-        </r>
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190508T150239Z
-    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
-      Hint: BrowserTitle
-      Value: Eurolife
-    - ID: "428f3a15-002b-4ebb-a9b5-cc021d99f648"
-      Hint: NavigationRootTitle
-      Value: 
-    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
-      Hint: ShowInNavigation
-      Type: Checkbox
-      Value: 1
-    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
-      Hint: NavigationTitle
-      Value: Home

@@ -16,5 +16,10 @@ namespace Wedia.Feature.News
       public const int ArticleCardImageWidth = 328;
       public const int ArticleCardImageHeight = 200;
     }
+
+    public struct LatestNews
+    {
+      public const int NumberOfArticles = 3;
+    }
   }
 }

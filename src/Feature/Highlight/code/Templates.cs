@@ -85,5 +85,15 @@ namespace Wedia.Feature.Highlight
       }
     }
 
+    public struct HasHighlightImage
+    {
+      public static readonly ID ID = new ID("{6A4BE822-84E6-45CA-9858-076085EFAF8E}");
+
+      public struct Fields
+      {
+        public static readonly ID Image = new ID("{8999B235-CA9C-4C4E-8608-F6C96F3293D5}");
+      }
+    }
+
   }
 }

@@ -10,7 +10,7 @@ SharedFields:
   Value: /Views/UIComponents/Section Header.cshtml
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "site:headersection"
+  Value: "site:sectionheader"
 Languages:
 - Language: en
   Versions:

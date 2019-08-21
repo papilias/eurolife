@@ -5143,17 +5143,17 @@ li.place {
     width: 100%;
     height: 100%; }
 
-.personal__list {
+.menu-products__personal ul {
   padding-top: 33px;
   display: grid;
   grid-gap: 10px;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr; }
-  .personal__list li {
+  .menu-products__personal ul li {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%; }
-  .personal__list a {
+  .menu-products__personal ul a {
     display: block;
     height: 130px;
     width: 133px;
@@ -5182,9 +5182,9 @@ li.place {
 .no-touch .hover-civil:hover {
   background-color: #21c5b6; }
 
-.no-touch .professional__list a {
+.no-touch .menu-products__profesional ul a {
   position: relative; }
-  .no-touch .professional__list a:after {
+  .no-touch .menu-products__profesional ul a:after {
     height: 1px;
     content: "";
     width: 100%;
@@ -5200,12 +5200,12 @@ li.place {
     -webkit-transform: translateX(-101%);
     -ms-transform: translateX(-101%);
     transform: translateX(-101%); }
-  .no-touch .professional__list a:hover:after {
+  .no-touch .menu-products__profesional ul a:hover:after {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0); }
 
-.professional__list {
+.menu-products__profesional ul {
   padding-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5215,24 +5215,22 @@ li.place {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%; }
-  .professional__list li {
+  .menu-products__profesional ul li {
     padding-bottom: 20px;
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
     transform: translateX(100px);
     opacity: 0;
-    -webkit-transition: opacity 900ms ease, -webkit-transform 600ms ease-out;
-    transition: opacity 900ms ease, -webkit-transform 600ms ease-out;
-    -o-transition: opacity 900ms ease, transform 600ms ease-out;
-    transition: opacity 900ms ease, transform 600ms ease-out;
-    transition: opacity 900ms ease, transform 600ms ease-out, -webkit-transform 600ms ease-out;
+    -webkit-transition: opacity 900ms ease, transformpersonal__list 600ms ease-out;
+    -o-transition: opacity 900ms ease, transformpersonal__list 600ms ease-out;
+    transition: opacity 900ms ease, transformpersonal__list 600ms ease-out;
     --delay: 0;
     -webkit-transition-delay: calc(var(--delay) * 1000ms);
     -o-transition-delay: calc(var(--delay) * 1000ms);
     transition-delay: calc(var(--delay) * 1000ms);
     overflow: hidden; }
 
-.menu-expanded--yes li {
+.menu-expanded--yes ul li {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
