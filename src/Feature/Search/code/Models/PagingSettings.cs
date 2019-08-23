@@ -11,11 +11,11 @@
     {
       get
       {
-        return this.pagesToShow < 1 ? DefaultPagesToShow : this.pagesToShow;
+        return pagesToShow < 1 ? DefaultPagesToShow : pagesToShow;
       }
       set
       {
-        this.pagesToShow = value;
+        pagesToShow = value;
       }
     }
 
@@ -23,11 +23,11 @@
     {
       get
       {
-        return this.resultsOnPage < 1 ? DefaultResultsOnPage : this.resultsOnPage;
+        return resultsOnPage < 1 ? DefaultResultsOnPage : resultsOnPage;
       }
       set
       {
-        this.resultsOnPage = value;
+        resultsOnPage = value;
       }
     }
   }

@@ -18,7 +18,9 @@ namespace Wedia.Feature.News
         public const string Title_FieldName = "NewsTitle";
 
         public static readonly ID DesktopImage = new ID("{06DA1C6E-A118-40BC-9C2A-C951364F98F7}");
+        public const string DesktopImage_FieldName = "NewsDesktopImage";
         public static readonly ID MobileImage = new ID("{CC55C7F7-8274-465B-8A77-D65B2153BB00}");
+        public const string DesktopImage_MobileImage = "NewsMobileImage";
 
         public static readonly ID Date = new ID("{F426DCD4-A506-4A26-A7C1-E77AE6E22A1A}");
 

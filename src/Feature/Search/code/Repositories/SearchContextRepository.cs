@@ -35,8 +35,8 @@ namespace Wedia.Feature.Search.Repositories
         Query = query,
         SearchBoxTitle = searchResultsPageItem[Templates.SearchResults.Fields.SearchBoxTitle],
         SearchResultsUrl = searchResultsPageItem.Url(),
-        Root = this.GetRootItem(searchResultsPageItem),
-        Facets = this.GetFacets(searchResultsPageItem).ToArray()
+        Root = GetRootItem(searchResultsPageItem),
+        Facets = GetFacets(searchResultsPageItem).ToArray()
       };
     }
 

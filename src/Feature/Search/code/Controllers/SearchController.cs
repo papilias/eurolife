@@ -4,63 +4,57 @@ using Sitecore.Diagnostics;
 using Wedia.Feature.Search.Models;
 using Wedia.Feature.Search.Repositories;
 using Wedia.Feature.Search.Services;
-using Wedia.Foundation.Indexing;
 using Wedia.Foundation.SitecoreExtensions.Attributes;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
 using Wedia.Foundation.SitecoreExtensions.Repositories;
 using Sitecore.Mvc.Presentation;
 using Sitecore;
 using Constants = Wedia.Foundation.Indexing.Constants;
+using Wedia.Foundation.SitecoreExtensions.Utilities;
 
 namespace Wedia.Feature.Search.Controllers
 {
   public class SearchController : Controller
   {
-    private ISearchContextRepository SearchContextRepository { get; }
-    private FacetQueryStringService FacetQueryStringService { get; }
-    private SearchService SearchService { get; }
-    private IRenderingPropertiesRepository RenderingPropertiesRepository { get; }
+    private readonly ISearchContextRepository _searchContextRepository;
+    private readonly FacetQueryStringService _facetQueryStringService;
+    private readonly SearchService _searchService;
+    private readonly IRenderingPropertiesRepository _renderingPropertiesRepository;
 
     public SearchController(ISearchContextRepository contextRepository, FacetQueryStringService facetQueryStringService, SearchService searchService, IRenderingPropertiesRepository renderingPropertiesRepository)
     {
-      this.SearchContextRepository = contextRepository;
-      this.FacetQueryStringService = facetQueryStringService;
-      this.SearchService = searchService;
-      this.RenderingPropertiesRepository = renderingPropertiesRepository;
+      _searchContextRepository = contextRepository;
+      _facetQueryStringService = facetQueryStringService;
+      _searchService = searchService;
+      _renderingPropertiesRepository = renderingPropertiesRepository;
     }
 
     public ActionResult SearchResults(string query)
     {
-      var searchResults = this.GetSearchResults(query, null, null);
-      return this.View(searchResults.Results);
+      var searchResults = GetSearchResults(query, null, null);
+      return View(searchResults.Results);
     }
 
     public ActionResult PagedSearchResults(string query, int? page, string facets)
     {
-      var results = this.GetSearchResults(query, page, facets);
-      return this.View(results);
+      var results = GetSearchResults(query, page, facets);
+      return View(results);
     }
 
     public ActionResult GlobalSearch()
     {
-      var searchContext = this.SearchContextRepository.Get();
+      var searchContext = _searchContextRepository.Get();
       if (searchContext == null)
       {
         Log.Warn("Attempting to show GlobalSearch without a search context", this);
         return new EmptyResult();
       }
-      return this.View(this.SearchContextRepository.Get());
-    }
-
-    public ActionResult SearchFacets(string query, int? page, string facets)
-    {
-      var searchResults = this.GetSearchResults(query, page, facets);
-      return this.View(searchResults);
+      return View(_searchContextRepository.Get());
     }
 
     public ActionResult SearchResultsHeader(string query, int? page, string facets)
     {
-      var searchContext = this.SearchContextRepository.Get();
+      var searchContext = _searchContextRepository.Get();
       if (searchContext == null)
       {
         Log.Warn("Attempting to show SearchResultsHeader without a search context", this);
@@ -69,59 +63,40 @@ namespace Wedia.Feature.Search.Controllers
 
       var results = new SearchResultsHeader
       {
-        Context = this.SearchContextRepository.Get(),
-        Results = this.GetSearchResults(query, page, facets)
+        Context = _searchContextRepository.Get(),
+        Results = GetSearchResults(query, page, facets)
       };
 
-      return this.View(results);
+      return View(results);
     }
 
-    [HttpPost]
+    [HttpGet]
     [SkipAnalyticsTracking]
-    public ActionResult ToggleFacet(string query, string facets, string facetName, string facetValue)
+    public ActionResult AjaxSearchResults(string query, int resultsOnPage, int? page, string facets)
     {
-      var resultsUrl = this.SearchContextRepository.Get().SearchResultsUrl;
-      var newFacetQueryString = this.FacetQueryStringService.ToggleFacet(facets, facetName, facetValue);
-      var url = resultsUrl + $"?query={query}&facets={newFacetQueryString}";
-      return new JsonResult { Data = new { query, facets = newFacetQueryString, url } };
+      var paggingSettings = new PagingSettings { ResultsOnPage = resultsOnPage };
+
+      var searchResults = GetSearchResults(query, page, facets, paggingSettings);
+
+      if (!searchResults.Results.Results.Any())
+        return Json(new { exhausted = true });
+
+      var partial = Utilities.RenderRazorViewToString(ControllerContext, "SearchResults", searchResults.Results);
+      return Json(new { exhausted = searchResults.TotalPagesCount == page + 1, data = partial }, JsonRequestBehavior.AllowGet);
     }
 
-    [HttpPost]
-    [SkipAnalyticsTracking]
-    public ActionResult AjaxSearchResults(string query)
+    private SearchResultsViewModel GetSearchResults(string query, int? page, string facets, PagingSettings paggingSettings = null)
     {
-      var searchResults = this.SearchService.SearchFromTopResults(query, 5);
-      return this.CreateAjaxResults(searchResults);
-    }
-
-    private JsonResult CreateAjaxResults(SearchResultsViewModel searchResults)
-    {
-      var facet = searchResults.Results.Facets.FirstOrDefault(f => f.Definition.FieldName == Constants.IndexFields.ContentType);
-      var results = new
+      if (HttpContext.Items.Contains("SearchResults"))
       {
-        Results = searchResults.Results.Results.Select(r => new { r.Title, Description = this.TruncateDescription(r.Description), r.ContentType, r.Url, Image = r.Media?.ImageUrl(64, 64) }),
-        Facet = new { facet?.Definition.FieldName, facet?.Definition.Title },
-        FacetValues = facet?.Values.Select(v => new { v.Title, v.Count, Value = v.Value.ToString() })
-      };
-      return new JsonResult { Data = new { Results = results, Count = searchResults.Results.TotalNumberOfResults } };
-    }
-
-    private string TruncateDescription(string longDescription)
-    {
-      return longDescription == null ? string.Empty : StringUtil.Clip(StringUtil.RemoveTags(longDescription), 150, true);
-    }
-
-    private SearchResultsViewModel GetSearchResults(string query, int? page, string facets)
-    {
-      if (this.HttpContext.Items.Contains("SearchResults"))
-      {
-        return this.HttpContext.Items["SearchResults"] as SearchResultsViewModel;
+        return HttpContext.Items["SearchResults"] as SearchResultsViewModel;
       }
+      
 
-      var pagingSettings = this.RenderingPropertiesRepository.Get<PagingSettings>(RenderingContext.Current.Rendering);
-      var viewModel = this.SearchService.Search(query, page, facets, pagingSettings);
+      var pagingSettings = paggingSettings ?? _renderingPropertiesRepository.Get<PagingSettings>(RenderingContext.Current.Rendering);
+      var viewModel = _searchService.Search(query, page, facets, pagingSettings);
 
-      this.HttpContext?.Items.Add("SearchResults", viewModel);
+      HttpContext?.Items.Add("SearchResults", viewModel);
       return viewModel;
     }
   }

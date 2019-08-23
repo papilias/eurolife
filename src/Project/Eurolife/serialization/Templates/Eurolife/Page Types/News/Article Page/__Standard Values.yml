@@ -2,7 +2,7 @@
 ID: "dadae90e-315c-48c0-8987-934306b01704"
 Parent: "2a8d0010-55dc-4af8-9ecb-e590d157d546"
 Template: "2a8d0010-55dc-4af8-9ecb-e590d157d546"
-Path: /sitecore/templates/Project/Eurolife/Page Types/News/Article/__Standard Values
+Path: /sitecore/templates/Project/Eurolife/Page Types/News/Article Page/__Standard Values
 DB: master
 SharedFields:
 - ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
@@ -44,10 +44,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
-      Hint: NewsDesktopImage
-      Value: |
-        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190705T084429Z

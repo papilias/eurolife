@@ -16,7 +16,18 @@ namespace Wedia.Feature.News.Indexing
   {
     public string ContentType => DictionaryPhraseRepository.Current.Get("/News/Search/Content Type", "News");
 
-    public IEnumerable<ID> SupportedTemplates => throw new NotImplementedException();
+    public IEnumerable<ID> SupportedTemplates => new[] { Templates.NewsArticle.ID };
+
+    public Expression<Func<SearchResultItem, bool>> GetQueryPredicate(IQuery query)
+    {
+      var fieldNames = new[] {
+        Templates.NewsArticle.Fields.Title_FieldName,
+        Templates.NewsArticle.Fields.Summary_FieldName,
+        Templates.NewsArticle.Fields.Body_FieldName
+      };
+
+      return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);
+    }
 
     public void FormatResult(SearchResultItem item, ISearchResult formattedResult)
     {
@@ -33,15 +44,6 @@ namespace Wedia.Feature.News.Indexing
       formattedResult.ViewName = "~/Views/News/NewsSearchResult.cshtml";
     }
 
-    public Expression<Func<SearchResultItem, bool>> GetQueryPredicate(IQuery query)
-    {
-      var fieldNames = new[] {
-        Templates.NewsArticle.Fields.Title_FieldName,
-        Templates.NewsArticle.Fields.Summary_FieldName,
-        Templates.NewsArticle.Fields.Body_FieldName
-      };
-
-      return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);
-    }
+    
   }
 }

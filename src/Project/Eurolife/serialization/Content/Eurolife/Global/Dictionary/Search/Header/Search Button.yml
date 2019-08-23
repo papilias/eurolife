@@ -1,8 +1,8 @@
 ﻿---
-ID: "cb5f55b8-3316-4705-ad3e-b34f443fb711"
-Parent: "3a8e646d-ef3d-4c94-bcdb-34f007a5ff09"
+ID: "7961b7be-7c6a-4bbd-81d6-b2cb240e266e"
+Parent: "845d2ef5-9608-47ad-b544-fd0ef9aae21e"
 Template: "1fedd608-b4a0-4db4-80f0-4e9a50140e17"
-Path: /sitecore/content/Eurolife/Global/Dictionary/News/Search/Content Type
+Path: /sitecore/content/Eurolife/Global/Dictionary/Search/Header/Search Button
 DB: master
 Languages:
 - Language: "el-GR"
@@ -11,10 +11,10 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190823T060650Z
+      Value: 20190823T052748Z
     - ID: "38302aff-d022-418e-a9bb-188e32878193"
       Hint: Phrase
-      Value: News
+      Value: Αναζήτηση
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -25,10 +25,10 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190607T084713Z
+      Value: 20190823T052600Z
     - ID: "38302aff-d022-418e-a9bb-188e32878193"
       Hint: Phrase
-      Value: News
+      Value: Search
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

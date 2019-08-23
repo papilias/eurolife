@@ -93,6 +93,7 @@
     <Content Include="Views\News\PagedNewsList.cshtml" />
     <Content Include="Views\News\PagedListItems.cshtml" />
     <Content Include="Views\News\LatestNewsListImageless.cshtml" />
+    <Content Include="Views\News\NewsSearchResult.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

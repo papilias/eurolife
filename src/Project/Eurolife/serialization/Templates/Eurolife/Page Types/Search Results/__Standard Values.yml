@@ -14,21 +14,83 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
         l="{373393A6-AA10-4771-B9C2-2EA1EB0583F5}">
         <r
-          id="{28332AE5-3C7A-4C36-A714-3496498DD0DE}"
-          par="ResultsOnPage=1&amp;PagesToShow=1"
+          id="{20E8AA26-11C7-4A12-B7E3-A8F7C8200071}"
+          ph="head"
+          uid="{099A4B67-E8A8-4069-B71D-54560F1954D0}" />
+        <r
+          id="{EF0BEAD8-DD54-4579-8F4A-2A4971C29F73}"
+          ph="header"
+          uid="{84AC5261-3550-46BE-87E1-FB9B4CBC7635}" />
+        <r
+          id="{100F42AE-7160-4F29-B6DB-E01C388B3891}"
+          ph="before-header"
+          uid="{E04B549D-4F1C-47D6-9322-79C17786744D}" />
+        <r
+          id="{B5B0DC88-B109-41EE-8714-4E2E06FC0FED}"
+          ph="main-burger"
+          uid="{CBCCC55C-235C-4AEA-A0A3-764736EA64D4}" />
+        <r
+          ds="{1DC8C6E2-A9B8-40A8-B4B0-5B5ACDE42D32}"
+          id="{DB5E61BA-9B4C-4123-B200-5F30E491EE20}"
+          ph="header-content"
+          uid="{6A30E3D9-4E56-45F2-87EF-C77D1676192E}" />
+        <r
+          id="{B5B0DC88-B109-41EE-8714-4E2E06FC0FED}"
+          ph="header-top-navbar"
+          uid="{619C9EA9-0AA7-4FDE-B337-A012A2212880}" />
+        <r
+          ds="{281383DB-C1D6-4557-B5EF-3163F9DFE725}"
+          id="{DF10DE99-F5AE-474C-A6F3-4DF2E22ED8F2}"
+          ph="header-content"
+          uid="{0405AB17-580C-43B1-8A63-D8F67A703269}" />
+        <r
+          id="{ECEA9D7D-DEFD-4B60-ABD0-198B4B59D3A3}"
+          ph="login-register-link"
+          uid="{5C126924-B080-482D-B188-FE24CC47F9E1}" />
+        <r
+          id="{02B988C4-C887-429F-A9CC-A9C356CCA1DD}"
           ph="page-layout"
-          uid="{D5D18727-2026-4F04-99CB-50FC766DA6AB}" />
+          uid="{3576D025-FEE2-4FA7-86A2-53023B99AFF8}" />
+        <r
+          id="{28332AE5-3C7A-4C36-A714-3496498DD0DE}"
+          ph="page-layout"
+          uid="{81CAFB6E-9421-49BE-89B7-9BF1CADD1C96}" />
       </d>
     </r>
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190702T134051Z
+      Value: 20190823T051315Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0ce01372-9068-4424-8ec1-81005fbcfe3b"
+      Hint: SeoFollowLinks
+      Type: Checkbox
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190702T134051Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: $name
