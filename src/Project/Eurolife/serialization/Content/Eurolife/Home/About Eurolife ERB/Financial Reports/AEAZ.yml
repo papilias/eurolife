@@ -17,7 +17,8 @@ Languages:
       Value: |
         sitecore\admin
     - ID: "f4543aeb-0454-4609-afec-d2ab0dd4fa11"
-      Hint: PDFFileGroup
+      Hint: MediaFileFolderGroup
+      Type: Multilist with Search
       Value: 
     - ID: "ff6fc789-f1f2-495e-8a94-efcbc528e1c6"
       Hint: MediaGroupTitle

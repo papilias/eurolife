@@ -178,6 +178,16 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190805T144018Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Contact Us
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
     - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
       Hint: __Valid from
       Value: 20190805T144018Z
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Contact Us

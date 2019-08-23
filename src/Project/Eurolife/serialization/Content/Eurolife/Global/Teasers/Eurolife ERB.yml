@@ -23,6 +23,6 @@ Languages:
       Hint: TeaserCTA
       Value: 
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
-      Hint: DesktopImage
+      Hint: TeaserImage
       Value: |
         <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" ></image>

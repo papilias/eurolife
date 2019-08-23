@@ -15,7 +15,7 @@ Languages:
     Fields:
     - ID: "1ac1cee8-850d-4779-a8d6-370771e20126"
       Hint: Accordions
-      Type: Multilist
+      Type: Multilist with Search
       Value: |
         {68743A53-7EEE-487E-9C07-AA68AE8A51CA}
         {6F0251CE-958C-44C3-AB8A-2DC7881B052D}

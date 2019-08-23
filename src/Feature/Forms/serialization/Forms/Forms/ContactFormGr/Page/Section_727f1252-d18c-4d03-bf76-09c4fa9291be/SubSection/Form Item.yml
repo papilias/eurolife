@@ -1,6 +1,6 @@
 ﻿---
-ID: "101ca80a-5a04-42fd-8343-5509d55a6e5f"
-Parent: "1f81d1b7-6110-4d12-8ce1-cb6b50e4cf48"
+ID: "8ee84fd5-cd57-4cc9-927b-15923cf405dc"
+Parent: "89b079fb-2b08-4083-ae9b-384fa12fe17d"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
 Path: /sitecore/Forms/ContactFormGr/Page/Section/SubSection/Form Item
 DB: master
@@ -30,7 +30,7 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 8648993640A6465882F5ED482CE5E4B3
+  Value: A1086F6D2FDC499EA6A72D51EE197490
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
@@ -63,14 +63,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T100241Z
+      Value: 20190710T095243Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Τηλέφωνο (Κινητό ή Σταθερό)
+      Value: Όνομα
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 

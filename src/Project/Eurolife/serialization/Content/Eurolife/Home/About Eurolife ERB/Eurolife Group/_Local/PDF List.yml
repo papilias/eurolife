@@ -17,7 +17,7 @@ Languages:
       Value: |
         sitecore\Admin
     - ID: "92184ee7-4ee4-466b-85bc-ad334bb2beee"
-      Hint: PDFFiles
+      Hint: MediaFiles
       Type: Multilist with Search
       Value: |
         {8737530C-DD1B-4782-9226-2FBD7A873EEA}

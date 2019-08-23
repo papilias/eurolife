@@ -1,8 +1,8 @@
 ﻿---
-ID: "741c8b45-546e-4269-83a8-ceb742000cd4"
-Parent: "361826ce-bd8a-41aa-97da-bb9c4d094b25"
+ID: "9e3e04aa-cec6-4e8b-b42a-78461b1000a8"
+Parent: "6be7ba90-cfe5-40d5-8f88-8bedebef738a"
 Template: "8cddb194-f456-4a75-89b7-346f8f39f95c"
-Path: /sitecore/Forms/ComplaintFormGr/Page/Section/SubSection
+Path: /sitecore/Forms/ComplaintFormGr/Page/Section
 DB: master
 SharedFields:
 - ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
@@ -14,13 +14,13 @@ SharedFields:
     {"fieldConditions":[]}
 - ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
   Hint: Css Class
-  Value: form__item
+  Value: "form__group form__group--radio"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 46E3566DEB1E4434AD02637AEF22FAD0
+  Value: D8389F4DCED84F31B1D3AD4043A215C2
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 500
+  Value: 0
 Languages:
 - Language: "el-GR"
   Versions:
@@ -28,7 +28,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T115403Z
+      Value: 20190710T111933Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

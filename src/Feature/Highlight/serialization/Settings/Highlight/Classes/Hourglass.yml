@@ -4,6 +4,10 @@ Parent: "24b66050-5511-4a13-adc7-b55b7a332019"
 Template: "7fd34a8d-cd3e-4720-9d5a-1df02a5e12ce"
 Path: /sitecore/system/Settings/Feature/Highlight/Classes/Hourglass
 DB: master
+SharedFields:
+- ID: "7c0c7238-1f7c-43e6-8c16-d076f5dcde11"
+  Hint: HighlightIconCssClass
+  Value: "teaser-icon__hourglass"
 Languages:
 - Language: en
   Versions:
@@ -16,6 +20,3 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "7c0c7238-1f7c-43e6-8c16-d076f5dcde11"
-      Hint: HighlightIconCssClass
-      Value: "teaser-icon__hourglass"

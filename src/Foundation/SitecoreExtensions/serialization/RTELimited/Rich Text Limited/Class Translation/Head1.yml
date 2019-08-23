@@ -12,12 +12,6 @@ SharedFields:
   Hint: Value
   Value: Heading1
 Languages:
-- Language: da
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Head1
-  Versions:
 - Language: "de-DE"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

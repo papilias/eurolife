@@ -34,6 +34,6 @@ Languages:
       Value: |
         sitecore\admin
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
-      Hint: DesktopImage
+      Hint: TeaserImage
       Value: |
         <image mediapath="" alt="300" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{CF982FC6-8B30-4EB1-BC94-C4F510245A62}" ></image>

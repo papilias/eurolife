@@ -23,6 +23,6 @@ Languages:
       Value: |
         sitecore\admin
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
-      Hint: DesktopImage
+      Hint: TeaserImage
       Value: |
         <image mediapath="" alt="banner_proothissi_apo_afises_1.ashx" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{09FE758E-4095-4CB1-B3AA-E1BD7C346264}" ></image>

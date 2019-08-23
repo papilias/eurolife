@@ -20,6 +20,6 @@ Languages:
       Hint: MediaTitle
       Value: Some Doc
     - ID: "bf50c27a-312f-408d-a49b-2e34d6a1e715"
-      Hint: PDFFile
+      Hint: MediaFile
       Value: |
         <file mediaid="{AB20A160-ADEE-4621-B5CE-D81B0915DEFF}" src="-/media/AB20A160ADEE4621B5CED81B0915DEFF.ashx"></file>
