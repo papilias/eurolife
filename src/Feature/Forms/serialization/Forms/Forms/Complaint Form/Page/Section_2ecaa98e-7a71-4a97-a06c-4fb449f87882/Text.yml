@@ -1,6 +1,6 @@
 ﻿---
-ID: "005ad60b-6c4a-4db1-b85c-4c6c1c6fa120"
-Parent: "cc8f4032-3161-4bdb-ad45-f606b9de5186"
+ID: "5e734ba7-912f-4fcf-ab6c-5eb1b352adaa"
+Parent: "2ecaa98e-7a71-4a97-a06c-4fb449f87882"
 Template: "fc18f915-eac6-460a-8777-6e1376a9ea09"
 Path: /sitecore/Forms/Complaint Form/Page/Section/Text
 DB: master
@@ -17,7 +17,7 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: FD03D7E9CDED43E9B3EE28E05ED9D7EF
+  Value: 1CEA61983012489A8DDA9803B75EFBD1
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
@@ -31,7 +31,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190627T141237Z
+      Value: 20190627T141829Z
     - ID: "9666782b-21bb-40ce-b38f-8f6c53fa5070"
       Hint: Text
-      Value: Προσωπικά Στοιχεία
+      Value: Περιγράψτε μας το θέμα που αντιμετοπίζεται

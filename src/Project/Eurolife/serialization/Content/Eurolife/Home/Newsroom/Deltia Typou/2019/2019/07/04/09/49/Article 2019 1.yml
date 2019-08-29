@@ -20,12 +20,9 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Άρθρο 2019 1
-    - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
-      Hint: NewsBody
-      Value: Άρθρο 2019 1
     - ID: "554286b4-e1f0-49d5-a706-9739f30830bf"
       Hint: NewsSummary
-      Value: Άρθρο 2019 1
+      Value: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness"
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -37,9 +34,6 @@ Languages:
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
-    - ID: "f426dcd4-a506-4a26-a7c1-e77ae6e22a1a"
-      Hint: NewsDate
-      Value: 20190822T000000
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Άρθρο 2019 1

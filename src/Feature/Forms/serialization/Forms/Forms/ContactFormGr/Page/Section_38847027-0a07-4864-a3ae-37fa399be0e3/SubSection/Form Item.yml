@@ -1,7 +1,7 @@
 ﻿---
-ID: "9e116d31-1591-4591-ba43-fedf8d0b988c"
-Parent: "3bda7a82-164e-4186-b4da-d9abc23225bb"
-Template: "9121d435-48b8-4649-9d13-03d680474fad"
+ID: "a4c428a8-5b2f-4194-a6b7-0474d34aadce"
+Parent: "b808d97e-79da-4b39-a248-8693e48dcbfa"
+Template: "d8386d04-c1e3-4cd3-9227-9e9f86ef3c88"
 Path: /sitecore/Forms/ContactFormGr/Page/Section/SubSection/Form Item
 DB: master
 SharedFields:
@@ -9,45 +9,28 @@ SharedFields:
   Hint: Validations
   Type: Treelist
   Value: 
-- ID: "21ed172d-97e2-4ac4-8eaf-0a8860b891f4"
-  Hint: Default Selection
-  Value: 
 - ID: "467c22b4-b1a2-4620-b8bb-74c2d8b369fc"
   Hint: Label Css Class
   Value: 
-- ID: "492361e0-72d8-4847-82ba-ebfc235cf57b"
-  Hint: Display Field Name
-  Value: __Display name
-- ID: "54424e06-0e7a-47a7-8cb2-7383d700472f"
-  Hint: Is Dynamic
-  Type: Checkbox
-  Value: 0
 - ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
   Hint: Field Type
-  Value: "{E0CFADEE-1AC0-471D-A820-2E70D1547B4B}"
-- ID: "5be76442-950f-4c1f-a797-bebd71101abb"
-  Hint: Datasource
-  Value: 
+  Value: "{A296A1C1-0DA0-4493-A92E-B8191F43AEC6}"
 - ID: "5d09f88a-0e2a-4f87-8151-af4a2aa26ec3"
   Hint: Value Provider
   Value: 
-- ID: "6bf5048d-fbbd-4839-9f18-4412d4e11834"
-  Hint: Show Empty Item
-  Type: Checkbox
-  Value: 1
+- ID: "71061c01-a495-4bf3-a52c-d378346bfae2"
+  Hint: Max Length
+  Value: 512
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
-- ID: "78778432-6327-4cea-a28b-e190e3541d28"
-  Hint: Value Field Name
-  Value: Value
 - ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
   Hint: Css Class
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: E11609BB76324BFCA88B111962FE2DD8
+  Value: BEA47C78441D443A8D61CF286F3B8888
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
@@ -56,6 +39,9 @@ SharedFields:
   Hint: Allow Save
   Type: Checkbox
   Value: 1
+- ID: "9f7da002-7b86-436b-8dda-7efe5837b88e"
+  Hint: Min Length
+  Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
@@ -63,6 +49,13 @@ SharedFields:
   Hint: Is Tracking Enabled
   Type: Checkbox
   Value: 1
+- ID: "e43e4e5f-6b45-4e3b-8d85-85ab87d2cc12"
+  Hint: Rows
+  Value: 4
+- ID: "ecd17630-5f51-45db-b52f-b3dfaec4fa1b"
+  Hint: Store Binding Value
+  Type: Checkbox
+  Value: 0
 - ID: "f6696439-2dac-4183-8f3d-1979188d8336"
   Hint: Value Provider Parameters
   Value: 
@@ -73,11 +66,17 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T100824Z
+      Value: 20190710T101244Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Θέμα
+      Value: Μήνυμα
+    - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
+      Hint: Placeholder Text
+      Value: 
+    - ID: "b775bca9-2605-4d60-b367-a0c354be2504"
+      Hint: Default Value
+      Value: 

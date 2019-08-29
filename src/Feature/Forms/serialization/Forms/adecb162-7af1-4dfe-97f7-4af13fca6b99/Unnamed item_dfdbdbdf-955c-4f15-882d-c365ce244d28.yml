@@ -1,5 +1,5 @@
 ﻿---
-ID: "9be701fa-5b81-4637-9174-c65a49cba94c"
+ID: "dfdbdbdf-955c-4f15-882d-c365ce244d28"
 Parent: "adecb162-7af1-4dfe-97f7-4af13fca6b99"
 Template: "b3bdfe59-6667-4432-b261-05d0e3f7fdf6"
 Path: /sitecore/Forms/ComplaintFormGr/Page/Section/Sxesimetosimbolaio/Settings/Datasource/Unnamed item
@@ -7,16 +7,16 @@ DB: master
 SharedFields:
 - ID: "3a07c171-9bca-464d-8670-c5703c6d3f11"
   Hint: Value
-  Value: Αντισυμβαλλομενος
+  Value: Νόμιμος Εκπρόσωπος
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 100
 Languages:
 - Language: "el-GR"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Αντισυμβαλλομενος
+    Value: Νόμιμος Εκπρόσωπος
   Versions:
   - Version: 1
     Fields:
