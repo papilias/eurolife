@@ -9,33 +9,16 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
-      Hint: NewsDesktopImage
-      Value: |
-        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" ></image>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T093113Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: 2014  Άρθρο
-    - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
-      Hint: NewsBody
-      Value: |
-        <p><img alt="" src="-/media/09FE758E40954CB1B3AAE1BD7C346264.ashx" width="200" height="250" /></p>
-        <p>&nbsp;</p>
-        <h3>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
-        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
-      Hint: NewsTitle
-      Value: 2014 Άρθρο
-    - ID: "f426dcd4-a506-4a26-a7c1-e77ae6e22a1a"
-      Hint: NewsDate
-      Value: 20140717T000000
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: 2014 Άρθρο

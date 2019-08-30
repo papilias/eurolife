@@ -9,22 +9,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
-      Hint: NewsDesktopImage
-      Value: |
-        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190611T075630Z
-    - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
-      Hint: NewsBody
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-    - ID: "554286b4-e1f0-49d5-a706-9739f30830bf"
-      Hint: NewsSummary
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
-      Hint: NewsTitle
-      Value: Next Article
-    - ID: "f426dcd4-a506-4a26-a7c1-e77ae6e22a1a"
-      Hint: NewsDate
-      Value: 20190628T210000Z

@@ -16,37 +16,14 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190806T130651Z
-    - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
-      Hint: NewsBody
-      Value: |
-        <strong id="docs-internal-guid-562bbb6e-7fff-e112-abe7-242fcc90bd04"></strong>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon; &delta;&omega;&rho;&epsilon;ά&nu; &sigma;&tau;&iota;&sigmaf; &epsilon;&gamma;&kappa;ύ&omicron;&upsilon;&sigmaf; &gamma;&upsilon;&nu;&alpha;ί&kappa;&epsilon;&sigmaf; &tau;&eta;&sigmaf; &Pi;ά&tau;&mu;&omicron;&upsilon; ό&lambda;&alpha; &tau;&alpha; έ&xi;&omicron;&delta;&alpha; &pi;&omicron;&upsilon; &sigma;&chi;&epsilon;&tau;ί&zeta;&omicron;&nu;&tau;&alpha;&iota; &mu;&epsilon; &tau;&eta;&nu; &epsilon;&gamma;&kappa;&upsilon;&mu;&omicron;&sigma;ύ&nu;&eta; &tau;&omicron;&upsilon;&sigmaf;, &tau;&omicron;&nu; &tau;&omicron;&kappa;&epsilon;&tau;ό, &tau;&eta; &mu;&epsilon;&tau;&alpha;&phi;&omicron;&rho;ά &kappa;&alpha;&iota; &tau;&eta; &delta;&iota;&alpha;&mu;&omicron;&nu;ή &tau;&omicron;&upsilon;&sigmaf; &sigma;&epsilon; &pi;&epsilon;&rho;&iota;&omicron;&chi;έ&sigmaf; &kappa;&omicron;&nu;&tau;ά &sigma;&tau;&eta;&nu; &pi;&epsilon;&rho;&iota;&omicron;&chi;ή &mu;ό&nu;&iota;&mu;&eta;&sigmaf; &kappa;&alpha;&tau;&omicron;&iota;&kappa;ί&alpha;&sigmaf; &tau;&omicron;&upsilon;&sigmaf;, &sigma;&tau;&iota;&sigmaf; &omicron;&pi;&omicron;ί&epsilon;&sigmaf; &delta;&rho;&alpha; &eta; &iota;&alpha;&tau;&rho;&iota;&kappa;ή &omicron;&mu;ά&delta;&alpha; &tau;&eta;&sigmaf; HOPEgenesis.&nbsp;</span></p>
-        <strong id="docs-internal-guid-562bbb6e-7fff-e112-abe7-242fcc90bd04"><br />
-        </strong>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Alpha;&upsilon;&tau;ή &tau;&eta; &sigma;&tau;&iota;&gamma;&mu;ή, &omicron; &alpha;&rho;&iota;&theta;&mu;ό&sigmaf; &tau;&omega;&nu; &omega;&phi;&epsilon;&lambda;&omicron;ύ&mu;&epsilon;&nu;&omega;&nu; &gamma;&upsilon;&nu;&alpha;&iota;&kappa;ώ&nu; &epsilon;ί&nu;&alpha;&iota; &Chi;. </span></p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&nbsp;</span></p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><img alt="" src="-/media/D80D0BC5F0154C3195D01FD7E3DCC565.ashx" width="1000" height="306" /><br />
-        </span></p>
-        <img alt="" src="-/media/09FE758E40954CB1B3AAE1BD7C346264.ashx" width="200" height="250" /><br class="Apple-interchange-newline" />
-    - ID: "554286b4-e1f0-49d5-a706-9739f30830bf"
-      Hint: NewsSummary
-      Value: |
-        Υποστηρίζουμε το έργο της HOPEgenesis 
-        και βοηθάμε τις ωφελούμενες γυναίκες να γεννήσουν με ασφάλεια.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
-      Hint: NewsTitle
-      Value: Πάτμος
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
-    - ID: "f426dcd4-a506-4a26-a7c1-e77ae6e22a1a"
-      Hint: NewsDate
-      Value: 20190806T130900Z
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Πάτμος

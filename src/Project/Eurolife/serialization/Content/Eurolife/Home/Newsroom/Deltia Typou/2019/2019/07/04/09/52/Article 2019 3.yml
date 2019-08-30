@@ -32,9 +32,6 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
-    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
-      Hint: NewsTitle
-      Value: Article 2019 3
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

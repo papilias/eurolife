@@ -24,9 +24,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
-    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
-      Hint: NewsTitle
-      Value: Article 2019 5
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

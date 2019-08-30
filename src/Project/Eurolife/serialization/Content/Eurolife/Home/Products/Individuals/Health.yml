@@ -180,9 +180,3 @@ Languages:
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Health
-- Language: en
-  Fields:
-  - ID: "eb2af3ca-2892-4044-b791-394344ab8456"
-    Hint: Theme
-    Value: "{264F4CE2-40BC-4CFE-9977-EFFD90A7938C}"
-  Versions:

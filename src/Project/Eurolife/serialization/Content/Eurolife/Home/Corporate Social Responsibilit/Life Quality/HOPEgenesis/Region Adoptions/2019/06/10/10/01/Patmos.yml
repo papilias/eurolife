@@ -46,12 +46,6 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190610T100143Z
-    - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
-      Hint: NewsBody
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
-    - ID: "554286b4-e1f0-49d5-a706-9739f30830bf"
-      Hint: NewsSummary
-      Value: Υποστιρίζουμε το έργο της HOPEgenesis και βοηθάμε τις ωφελούμενες γυναίκες να γεννήσουν με ασφάλεια
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -60,9 +54,6 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
-    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
-      Hint: NewsTitle
-      Value: ΠΑΤΜΟΣ
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
