@@ -30,6 +30,7 @@ namespace Wedia.Feature.Navigation.Controllers
     }
 
     public ActionResult NavigationLinksList() => GetMenu("NavigationLinksList");
+    public ActionResult FooterNavigationLinksList() => GetMenu("FooterNavigationLinksList");
 
     public ActionResult RoundedLinkMenu() => GetMenu("RoundedLinkMenu");
 
