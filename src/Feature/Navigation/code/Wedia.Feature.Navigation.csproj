@@ -81,13 +81,15 @@
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Navigation\Breadcrumb.cshtml" />
     <Content Include="Views\Navigation\RoundedLinkMenu.cshtml" />
-    <Content Include="Views\Navigation\NavigationLinksList.cshtml" />
+    <Content Include="Views\Navigation\FooterNavigationLinksList.cshtml" />
     <Content Include="Views\Navigation\SocialMenu.cshtml" />
     <Content Include="Views\Navigation\HorizontalNavigationLinks.cshtml" />
     <Content Include="Views\Navigation\UnderlinedLinkMenu.cshtml" />
     <Content Include="Views\Navigation\MainMenuBuger.cshtml" />
     <Content Include="Views\Navigation\HeaderTopNavigation.cshtml" />
     <Content Include="Views\Navigation\MainMenu.cshtml" />
+    <Content Include="Views\Navigation\TopNavbar.cshtml" />
+    <Content Include="Views\Navigation\NavigationLinksList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

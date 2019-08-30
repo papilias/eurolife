@@ -23,6 +23,18 @@
         });
     }
 
+    const searchSwitch = document.querySelector('.js-search-switch');
+    const searchClose = document.querySelector('.js-search-close');
+
+    if(searchSwitch != null && searchClose != null) {
+        searchSwitch.addEventListener('click', _ => {
+            body.classList.toggle('search-open');
+        });
+        searchClose.addEventListener('click', _ => {
+            body.classList.remove('search-open');
+        });
+    }
+
 
     $(document).ready(function () {
 
@@ -200,6 +212,8 @@
         $(this).parent().siblings('.program-expander').toggleClass('program-expander--visible');
     });
     //expand program END
+
+
 
 
     //expand program START

@@ -14,8 +14,8 @@
   {
     @Html.Sitecore().Placeholder("head")
   }
-  @*@Html.RenderFormStyles()
-  @Html.RenderFormScripts()*@
+  @Html.RenderFormStyles()
+  @Html.RenderFormScripts()
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
   @RenderAssetsService.Current.RenderStyles()
 

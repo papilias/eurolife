@@ -34,19 +34,32 @@ SharedFields:
           ph="main-burger"
           uid="{F322CAE7-039F-4E1B-A6F2-6D7AB0C1E4AC}" />
         <r
-          ds="{1DC8C6E2-A9B8-40A8-B4B0-5B5ACDE42D32}"
-          id="{DB5E61BA-9B4C-4123-B200-5F30E491EE20}"
+          id="{A0A0A73C-2CBD-49D4-A343-802315C97B33}"
           ph="header-content"
-          uid="{453FF03B-06C4-476E-9DEA-DA9DD9C9F547}" />
+          uid="{9AF7E4D8-805E-4608-93C8-E6A75B23B419}" />
         <r
           id="{B5B0DC88-B109-41EE-8714-4E2E06FC0FED}"
           ph="header-top-navbar"
           uid="{4ADA3C2E-C4C3-4CCC-93A3-DB18F8114B94}" />
         <r
+          ds="{1DC8C6E2-A9B8-40A8-B4B0-5B5ACDE42D32}"
+          id="{DB5E61BA-9B4C-4123-B200-5F30E491EE20}"
+          ph="header-top-navbar"
+          uid="{453FF03B-06C4-476E-9DEA-DA9DD9C9F547}" />
+        <r
+          id="{8350EF42-974D-44FB-9105-4655872C7741}"
+          ph="header-top-navbar"
+          uid="{53F66B8B-A149-4062-ABA6-BD795CEE3188}" />
+        <r
           ds="{281383DB-C1D6-4557-B5EF-3163F9DFE725}"
           id="{DF10DE99-F5AE-474C-A6F3-4DF2E22ED8F2}"
           ph="header-content"
           uid="{F81A4B07-53D8-4940-A27E-1770C5F30386}" />
+        <r
+          ds="{41DFEE5F-CC0B-40A1-9456-2810FEBC7478}"
+          id="{7F3E7BBF-DA49-4B36-8B2E-01C733DC4902}"
+          ph="popular-searches"
+          uid="{24446B16-0278-4BCE-AE69-60322B765F53}" />
         <r
           id="{ECEA9D7D-DEFD-4B60-ABD0-198B4B59D3A3}"
           ph="login-register-link"
