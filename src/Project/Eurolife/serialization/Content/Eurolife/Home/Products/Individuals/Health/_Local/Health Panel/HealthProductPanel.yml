@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 400
 Languages:
 - Language: "el-GR"
   Versions:
@@ -28,10 +28,7 @@ Languages:
     - ID: "3eedcf8a-848c-4beb-8513-b0577ee4acfe"
       Hint: PanelItems
       Type: TreelistEx
-      Value: |
-        {16C920D0-8B3F-4848-950C-751B5D598463}
-        {1B0ACE63-EFF8-43F9-9975-17E1C274F3CC}
-        {94A7F32C-42A6-4F0A-BB2C-98E04A2948FE}
+      Value: 
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -41,4 +38,4 @@ Languages:
       Type: TreelistEx
       Value: |
         {6DEEC115-2361-4FB5-BA71-D5F814415502}
-        {D99443FB-C85E-4523-9250-91FCBFE00E4F}
+        {63B74C72-7EAD-4B3A-BD4A-1A54C0DCD2A9}
