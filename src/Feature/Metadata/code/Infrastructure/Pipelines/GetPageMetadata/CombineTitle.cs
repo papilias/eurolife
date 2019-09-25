@@ -7,7 +7,7 @@ namespace Wedia.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
     {
         public void Process(GetPageMetadataArgs args)
         {
-            args.Metadata.Title = args.Metadata.PageTitle + args.Metadata.SiteTitle;
+            args.Metadata.Title = $"{args.Metadata.PageTitle} - {args.Metadata.SiteTitle}";
         }
     }
 }
