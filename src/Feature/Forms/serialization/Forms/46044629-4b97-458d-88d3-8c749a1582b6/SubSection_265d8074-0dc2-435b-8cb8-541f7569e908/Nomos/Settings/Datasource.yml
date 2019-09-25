@@ -1,0 +1,18 @@
+﻿---
+ID: "c327a29e-32e1-4a62-b25a-ac05c3651cb4"
+Parent: "174aa7bc-ce2b-4d57-afaf-ec779ae5285a"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/Forms/ComplaintFormGr/Page/Section/SubSection/Nomos/Settings/Datasource
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190920T135550Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

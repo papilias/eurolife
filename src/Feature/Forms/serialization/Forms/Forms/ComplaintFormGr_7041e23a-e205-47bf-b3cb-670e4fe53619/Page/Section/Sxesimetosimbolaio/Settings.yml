@@ -1,0 +1,18 @@
+﻿---
+ID: "585dc68e-e633-47dd-8b6a-5aaf92faeda1"
+Parent: "bb2f205d-6a06-4f11-9f8d-f659f9983161"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/Forms/ComplaintFormGr/Page/Section/Sxesimetosimbolaio/Settings
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190920T135544Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
