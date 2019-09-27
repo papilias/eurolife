@@ -2,7 +2,7 @@
 ID: "b3a5e589-f660-4c3b-940a-034f9bd4caef"
 Parent: "9f486afa-7f59-4d25-9456-3f88ecfee18e"
 Template: "ae711333-bf88-44a2-b049-2aaec5d679fa"
-Path: /sitecore/content/Eurolife/Home/Contact Us/Complaint Form
+Path: "/sitecore/content/Eurolife/Home/Contact Us/Complaint-Form"
 DB: master
 SharedFields:
 - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"

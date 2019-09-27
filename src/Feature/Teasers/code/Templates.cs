@@ -39,6 +39,16 @@ namespace Wedia.Feature.Teasers
       }
     }
 
+    public struct HasTeaserImageMobile
+    {
+      public static readonly ID ID = new ID("{80336FBB-35B4-437C-BD89-68DE697C8348}");
+
+      public struct Fields
+      {
+        public static readonly ID Image = new ID("{87F8CB69-AC48-4D6A-88EE-B19665F166F3}");
+      }
+    }
+
     public struct HasTeaserSummary
     {
       public static readonly ID ID = new ID("{85BB73D4-978F-4B24-AFC4-243058868D0C}");

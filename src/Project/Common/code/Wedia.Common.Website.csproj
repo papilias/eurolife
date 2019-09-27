@@ -273,7 +273,6 @@
     <Content Include="images\iconfinder_Arrow_backward.svgz" />
     <Content Include="images\icons\health\.DS_Store" />
     <Content Include="images\icons\home\.DS_Store" />
-    <Content Include="images\Thumbs.db" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="assets\styles\scss\base-components\_accordion.scss" />

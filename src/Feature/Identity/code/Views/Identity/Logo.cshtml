@@ -19,8 +19,9 @@
 <a href="@homeUrl"
    class="logo @( hasTagLine ? "has-tagline" : "")"
    role="link"
+   aria-label="Eurolife Logo Link to Homepage"
    title="Logo">
-  @Html.Sitecore().Field(Templates.Identity.Fields.Logo, identity, new { DisableWebEdit = true })
+  @*@Html.Sitecore().Field(Templates.Identity.Fields.Logo, identity, new { DisableWebEdit = true })*@
 
   @if (hasTagLine)
   {

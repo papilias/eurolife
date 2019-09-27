@@ -27,6 +27,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "0626d59c-fbef-41ce-bfa3-226304b9e846"
+      Hint: Logo Tagline
+      Value: Eurolife
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T085756Z

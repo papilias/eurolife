@@ -22,7 +22,7 @@
 }
 
 <section class="hero-plain m-b-112 relator bread-overlays bread-light  @contained @alignment">
- 
+
   @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
   {
     <div class="hero-contents--plain">
@@ -30,7 +30,7 @@
         <h1 class="h3 m-b-24">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
         @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
         {
-          <p>@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)</p> 
+          <p>@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)</p>
         }
 
         @if (Model.Item.FieldHasValue(Templates.HasTeaserCTA.Fields.CTA) || Sitecore.Context.PageMode.IsExperienceEditor)
@@ -40,7 +40,31 @@
       </div>
     </div>
 
-    @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image)
+    if (Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+      @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image)
+      @Html.Sitecore().ImageField(Templates.HasTeaserImageMobile.Fields.Image)
+    }
+    else
+    {
+      if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.Image))
+      {
+        var imageUrl = Model.Item.ImageUrl(Templates.HasTeaserImage.Fields.Image); 
+
+        <picture>
+          <source media="(min-width: 900px)" srcset="@imageUrl">
+     
+          @if (Model.Item.FieldHasValue(Templates.HasTeaserImageMobile.Fields.Image))
+          {
+            var imageUrlMobile = Model.Item.ImageUrl(Templates.HasTeaserImageMobile.Fields.Image);
+            <source srcset="@imageUrlMobile">
+          }
+
+          <img src="@imageUrl" alt=""> 
+        </picture>
+
+      }
+    }
   }
 </section>
 

@@ -2,7 +2,7 @@
 ID: "50be701a-c4bd-4d41-bd39-b4395c552aae"
 Parent: "35190fce-451d-4b50-804a-c70ed0d9cf99"
 Template: "029f90fa-6f63-4d1d-ba0e-de4ea54426de"
-Path: /sitecore/content/Eurolife/Home/Contact Us/Complaint Form/_Local/Glossary Items
+Path: "/sitecore/content/Eurolife/Home/Contact Us/Complaint-Form/_Local/Glossary Items"
 DB: master
 Languages:
 - Language: en

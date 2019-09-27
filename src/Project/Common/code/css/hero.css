@@ -7,7 +7,7 @@
 /*------------------------------------*\
   #VARIABLES
 \*------------------------------------*/
-.hero {
+/*.hero {
   margin-right: 16px; }
   @media (min-width: 1140px) {
     .hero {
@@ -20,9 +20,9 @@
       margin-right: calc( (100vw - 1700px ) / 2 + 53px); } }
   .hero img {
     width: 100%;
-    border-radius: 0 0 100px 0; }
+    border-radius: 0 0 100px 0; }       */
 
-/*hero with extras*/
+/*hero with extras
 .hero-contents {
   position: absolute;
   top: 0;
@@ -115,3 +115,4 @@
 .hero--extra .h6 {
   font-weight: 500;
   color: #fff; }
+                         */
