@@ -11,6 +11,6 @@
   }
 }
 
-<div class="footer__copy">
-  @Html.Sitecore().Field(Templates.Identity.Fields.Copyright, identity)
+<div class="footer__copy">   
+  Copyright @System.DateTime.Now.Year &copy; @Html.Sitecore().Field(Templates.Identity.Fields.Copyright, identity)
 </div>
