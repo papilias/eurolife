@@ -15,6 +15,7 @@
     @Html.Sitecore().Placeholder("head")
   }
   @Html.RenderFormStyles()
+  <script type="text/javascript" src="/js/vendor/jquery-3.4.1.min.js"></script>
   @Html.RenderFormScripts()
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
   @RenderAssetsService.Current.RenderStyles()

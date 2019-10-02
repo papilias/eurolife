@@ -27,13 +27,52 @@ Languages:
               s:ph="page-layout" />
           </d>
         </r>
+    - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
+      Hint: PreTitle
+      Value: ΓΝΩΡΙΣΤΕ ΜΑΣ
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190723T090317Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: About Eurolife
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Ενθαρρύνουμε κάθε άνθρωπο  να ζει τη ζωή που επιθυμεί
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{13F2C7CE-9B6D-41FD-AF5B-2EEE1F35772C}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&Sigma;&epsilon; έ&nu;&alpha;&nu; &kappa;ό&sigma;&mu;&omicron; &pi;&omicron;&upsilon; &alpha;&lambda;&lambda;ά&zeta;&epsilon;&iota;, &mu;&epsilon;&tau;&alpha;&mu;&omicron;&rho;&phi;&omega;&nu;ό&mu;&alpha;&sigma;&tau;&epsilon; &kappa;&alpha;&iota; &epsilon;&mu;&epsilon;ί&sigmaf;, ώ&sigma;&tau;&epsilon; &nu;&alpha; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon; &kappa;ά&theta;&epsilon; &sigma;&tau;&iota;&gamma;&mu;ή &tau;&omicron;&nu; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&omicron; &epsilon;&alpha;&upsilon;&tau;ό &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &nu;&alpha; &epsilon;&mu;&pi;&nu;έ&omicron;&upsilon;&mu;&epsilon; &tau;&omicron;&upsilon;&sigmaf; &pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf;.</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&Alpha;&upsilon;&tau;ό &mu;&alpha;&sigmaf; &kappa;ά&nu;&epsilon;&iota; &alpha;&kappa;ό&mu;&eta; &pi;&iota;&omicron; &delta;&upsilon;&nu;&alpha;&tau;&omicron;ύ&sigmaf; &kappa;&alpha;&iota; &sigma;ί&gamma;&omicron;&upsilon;&rho;&omicron;&upsilon;&sigmaf; &gamma;&iota;&alpha; &tau;&omicron; &alpha;ύ&rho;&iota;&omicron;.</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&Pi;&rho;&omicron;&tau;&epsilon;&rho;&alpha;&iota;ό&tau;&eta;&tau;&alpha; &gamma;&iota;&alpha; ό&lambda;&omicron;&upsilon;&sigmaf; &epsilon;&mu;ά&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &delta;ί&pi;&lambda;&alpha; &sigma;&alpha;&sigmaf;, &sigma;&chi;&epsilon;&delta;&iota;ά&zeta;&omicron;&nu;&tau;&alpha;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ά &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &pi;&omicron;&upsilon; &alpha;&pi;&alpha;&nu;&tau;&omicron;ύ&nu; &sigma;&epsilon; &kappa;ά&theta;&epsilon; &sigma;&alpha;&sigmaf; &alpha;&nu;ά&gamma;&kappa;&eta;.&nbsp;</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&Sigma;&alpha;&sigmaf; &epsilon;&nu;&delta;&upsilon;&nu;&alpha;&mu;ώ&nu;&omicron;&upsilon;&mu;&epsilon; &mu;&epsilon; &alpha;&upsilon;&tau;&omicron;&pi;&epsilon;&pi;&omicron;ί&theta;&eta;&sigma;&eta;, &alpha;&iota;&sigma;&iota;&omicron;&delta;&omicron;&xi;ί&alpha; &kappa;&alpha;&iota; &epsilon;&upsilon;&epsilon;&lambda;&iota;&xi;ί&alpha;, ώ&sigma;&tau;&epsilon; &nu;&alpha; &mu;&pi;&omicron;&rho;&epsilon;ί&tau;&epsilon; &nu;&alpha; &alpha;&pi;&omicron;&lambda;&alpha;&mu;&beta;ά&nu;&epsilon;&tau;&epsilon; ό,&tau;&iota; έ&chi;&epsilon;&iota; &sigma;&eta;&mu;&alpha;&sigma;ί&alpha; &kappa;&alpha;&iota; &alpha;&xi;ί&alpha; &sigma;&tau;&eta; &zeta;&omega;ή &sigma;&alpha;&sigmaf;.&nbsp;</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&Kappa;&alpha;&tau;&alpha;&nu;&omicron;&omicron;ύ&mu;&epsilon; ό&lambda;&omicron;&upsilon;&sigmaf; &epsilon;&sigma;ά&sigmaf; &pi;&omicron;&upsilon; &theta;έ&lambda;&epsilon;&tau;&epsilon; &nu;&alpha; &omicron;&rho;ί&zeta;&epsilon;&tau;&epsilon; &omicron;&iota; ί&delta;&iota;&omicron;&iota; &tau;&eta;&nu; &kappa;ά&theta;&epsilon; &eta;&mu;έ&rho;&alpha; &kappa;&alpha;&iota; &epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&iota;&sigma;&iota;ό&delta;&omicron;&xi;&omicron;&iota; &gamma;&iota;&alpha; ό&lambda;&alpha; &alpha;&upsilon;&tau;ά &pi;&omicron;&upsilon; &mu;&pi;&omicron;&rho;&epsilon;ί&tau;&epsilon; &nu;&alpha; &kappa;&alpha;&tau;&alpha;&phi;έ&rho;&epsilon;&tau;&epsilon;.</p>
+        <div>&nbsp;</div>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: |
+        Υποστηρίζουμε εσάς 
+        που θέλετε να διεκδικείτε περισσότερα, κάθε ημέρα.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: About
 - Language: en
   Versions:
   - Version: 1

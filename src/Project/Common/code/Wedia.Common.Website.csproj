@@ -101,12 +101,7 @@
     <None Include="assets\js\components\PanelGrid.vue" />
     <None Include="assets\js\components\PanelFilters.vue" />
     <Content Include="assets\js\EventBus.js" />
-    <Content Include="css\anchorlist.css" />
-    <Content Include="css\breadcrumb.css" />
     <Content Include="css\fancybox.css" />
-    <Content Include="css\hero.css" />
-    <Content Include="css\jquery.fancybox.min.css" />
-    <Content Include="css\product.css" />
     <Content Include="css\style.css" />
     <Content Include="fonts\converted\Ubuntu-LightItalic\preview.html" />
     <Content Include="fonts\converted\Ubuntu-LightItalic\styles.css" />
@@ -273,6 +268,14 @@
     <Content Include="images\iconfinder_Arrow_backward.svgz" />
     <Content Include="images\icons\health\.DS_Store" />
     <Content Include="images\icons\home\.DS_Store" />
+    <Content Include="fonts\Ubuntu-Bold.woff2" />
+    <Content Include="fonts\Ubuntu-BoldItalic.woff2" />
+    <Content Include="fonts\Ubuntu-Italic.woff2" />
+    <Content Include="fonts\Ubuntu-Light.woff2" />
+    <Content Include="fonts\Ubuntu-LightItalic.woff2" />
+    <Content Include="fonts\Ubuntu-Medium.woff2" />
+    <Content Include="fonts\Ubuntu-MediumItalic.woff2" />
+    <Content Include="fonts\Ubuntu-Regular.woff2" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="assets\styles\scss\base-components\_accordion.scss" />

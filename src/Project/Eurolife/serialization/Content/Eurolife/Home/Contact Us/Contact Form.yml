@@ -5,6 +5,9 @@ Template: "ae711333-bf88-44a2-b049-2aaec5d679fa"
 Path: /sitecore/content/Eurolife/Home/Contact Us/Contact Form
 DB: master
 SharedFields:
+- ID: "b015a3a0-585e-4ee6-b8f3-0f4b1cdbd4f4"
+  Hint: JavascriptCodeBottom
+  Value: 
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 300
