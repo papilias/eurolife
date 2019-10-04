@@ -23,7 +23,7 @@ Languages:
               p:after="r[@uid='{D743758A-BC1A-41C9-928E-9838FCEFA758}']"
               s:ds=""
               s:id="{7D095F33-73E4-40C7-8D62-367931538B49}"
-              s:par="ResultsOnPage=2&amp;PagesToShow"
+              s:par="ResultsOnPage=10&amp;PagesToShow=5"
               s:ph="page-layout" />
             <r
               uid="{0048155A-EC1A-4151-BF83-4B140CC631CA}"
