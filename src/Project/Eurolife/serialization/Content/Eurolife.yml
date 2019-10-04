@@ -33,10 +33,14 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190704T085756Z
-    - ID: "48dc1e12-f410-4da4-b560-af1809e0262c"
-      Hint: LoginRegister
+    - ID: "2c137e1a-ade1-4d1a-af60-0e0f9a386c5b"
+      Hint: Register
       Value: |
-        <link text="LOGIN / REGISTER" linktype="external" url="https://github.com" anchor="" title="" class="" querystring="" target="" id="" />
+        <link text="REGISTER" linktype="external" url="#" anchor="" title="REGISTER" class="" querystring="" target="_blank" id="" />
+    - ID: "48dc1e12-f410-4da4-b560-af1809e0262c"
+      Hint: Login
+      Value: |
+        <link text="LOGIN " linktype="external" url="#" anchor="" title="LOGIN " class="" querystring="" target="_blank" id="" />
     - ID: "4ec67362-43ba-4021-89fa-4aa5a1ffb9e0"
       Hint: OrganisationEmail
       Value: info@eurolife.gr

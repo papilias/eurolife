@@ -3,7 +3,7 @@
 @model Wedia.Feature.Navigation.Models.NavigationItems
 
 <nav class="nav-product nav-product--health" role="navigation">
-  
+
   <div class="nav-product__wrap center center--1700">
     <div class="nav-product__trigger">
       @Model.Title
@@ -21,15 +21,15 @@
 </nav>
 
 
-  <div class="menu-expanded">
-    <div class="menu-products center center--1700">
-      @foreach (var subMenu in Model.NavItems)
-      {
-        <div class="@Html.Sitecore().Field(Templates.LinkMenuItem.Fields.Class, subMenu.Item)">
-          <h3 class="h5">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, subMenu)</h3>
+<div class="menu-expanded">
+  <div class="menu-products center center--1700">
+    @foreach (var subMenu in Model.NavItems)
+    {
+      <div class="@Html.Sitecore().Field(Templates.LinkMenuItem.Fields.Class, subMenu.Item)">
+        <h3 class="h5">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, subMenu)</h3>
 
-          @if (subMenu.ShowChildren && subMenu.Children != null && subMenu.Children.NavItems.Any())
-          {
+        @if (subMenu.ShowChildren && subMenu.Children != null && subMenu.Children.NavItems.Any())
+        {
           <ul>
             @{
               var delay = 0.2;
@@ -62,9 +62,9 @@
             }
 
           </ul>
-          }
+        }
 
-        </div>
-       }
-    </div>
+      </div>
+    }
   </div>
+</div>

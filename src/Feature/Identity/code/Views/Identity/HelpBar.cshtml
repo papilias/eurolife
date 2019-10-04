@@ -1,0 +1,58 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.Identity.Repositories
+@using Wedia.Feature.Identity
+@using Wedia.Foundation.Dictionary.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel  
+
+@{
+  /**/
+
+  var identity = IdentityRepository.Get(Model.Item);
+
+  if (identity == null)
+  {
+    return;
+  }  
+} 
+
+@if (identity.FieldHasValue(Templates.Identity.Fields.OrganizationPhone))
+{
+  <div class="nav-support">
+    <span class="nav-support__label">
+      @Html.Sitecore().Dictionary("/Identity/HeaderCustomerCare/Title", "Title")
+    </span>
+    <span class="nav-support__phone">
+      @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)
+    </span>
+  </div>
+}
+
+@if (identity.FieldHasValue(Templates.Identity.Fields.OnlinePayment))
+{
+  @Html.Sitecore().Field(Templates.Identity.Fields.OnlinePayment, identity, new { @class = "btn--white-header" })
+} 
+
+@if (identity.FieldHasValue(Templates.Identity.Fields.Login) || identity.FieldHasValue(Templates.Identity.Fields.Register))
+{ 
+  <div class="access">
+    <div class="access__label">
+      @Html.Sitecore().Dictionary("/Identity/HeaderCustomerCare/LoginRegister", "LOGIN / REGISTER")
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+        <defs>
+          <path id="accesssvg" d="M41.118 32.08L23.029 50.137a2.948 2.948 0 0 1-4.166 0 2.938 2.938 0 0 1 0-4.159l16.005-15.98-16.005-15.978a2.938 2.938 0 0 1 0-4.16 2.95 2.95 0 0 1 4.166 0l18.09 18.06c.574.574.862 1.326.862 2.079a2.93 2.93 0 0 1-.863 2.08z" />
+        </defs>
+        <use fill="#FFF" fill-rule="nonzero" transform="rotate(90 29.99 30)" xlink:href="#accesssvg" />
+      </svg>
+    </div>
+    <ul class="access__list">
+      @if (identity.FieldHasValue(Templates.Identity.Fields.Login))
+      {
+        <li>@Html.Sitecore().Field(Templates.Identity.Fields.Login, identity)</li>
+      }
+      @if (identity.FieldHasValue(Templates.Identity.Fields.Register))
+      {
+        <li>@Html.Sitecore().Field(Templates.Identity.Fields.Register, identity)</li>
+      } 
+    </ul>
+  </div>     
+}

@@ -93,7 +93,7 @@
     <Content Include="Views\Identity\ContactTeaserActions.cshtml" />
     <Content Include="Views\Identity\NewsletterForm.cshtml" />
     <Content Include="Views\Identity\Logo.cshtml" />
-    <Content Include="Views\Identity\LoginRegister.cshtml" />
+    <Content Include="Views\Identity\HelpBar.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
