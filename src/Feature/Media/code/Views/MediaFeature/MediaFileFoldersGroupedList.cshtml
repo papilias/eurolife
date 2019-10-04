@@ -95,7 +95,8 @@ else
     @Html.Partial("../MediaFeature/MediaFileGroup", activeSubgroup)
   </div>
 
-  if (activeSubgroup.Files.TotalNumberOfResults > activeSubgroup.Files.Results.Count())
+  if (activeSubgroup.Files.TotalNumberOfResults > activeSubgroup.Files.Results.Count()
+    && Sitecore.Mvc.Presentation.RenderingContext.Current.ContextItem.TemplateID != Templates.FinancialReports.ID)
   {
     <div><button id="loadMoreBtn" 
                  data-group="@activeSubgroup.Item.ID" 

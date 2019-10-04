@@ -14,9 +14,9 @@ namespace Wedia.Feature.Media.Models
     public ISearchResults Files { get; set; }
     public int Page { get; set; }
     public bool IsActive { get; set; }
-    public int TotalResults { get; set; }
-
-    public int ResultsOnPage { get; set; }
+    public int TotalResults { get; set; }  
+    public int ResultsOnPage { get; set; } 
+    public int PagesToShow { get; set; }
 
     public virtual int TotalPagesCount
     {

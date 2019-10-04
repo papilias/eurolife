@@ -94,7 +94,8 @@ namespace Wedia.Feature.Media.Repositories
         Page = pageNumber,
         ResultsOnPage = pagingSettings.ResultsOnPage,
         TotalResults = files?.TotalNumberOfResults ?? 0,
-        SubGroups = GetFilesGroupedList(item, pagingSettings)
+        SubGroups = GetFilesGroupedList(item, pagingSettings),
+        PagesToShow = pagingSettings.PagesToShow        
       };
     }
 

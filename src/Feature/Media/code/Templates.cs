@@ -116,5 +116,10 @@ namespace Wedia.Feature.Media
       }
     }
 
+    public struct FinancialReports
+    {
+      public static readonly ID ID = new ID("{7FC965FC-B67A-40A0-8428-2CDF16C71B68}");
+    }
+
   }
 }
