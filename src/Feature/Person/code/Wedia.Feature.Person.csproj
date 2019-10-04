@@ -94,6 +94,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Person.config" />
     <Content Include="App_Config\Include\Feature\Feature.Person.Serialization.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Persons\EmployeeHeader.cshtml" />
     <Content Include="Views\Persons\Index.cshtml" />

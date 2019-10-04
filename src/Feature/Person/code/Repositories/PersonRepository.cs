@@ -26,6 +26,11 @@ namespace Wedia.Feature.Person.Repositories
       return Get(contextItem, Templates.Person.ID);
     }
 
+    public IEnumerable<Item> GetEmployeesOrdered(Item contextItem)
+    {
+      return contextItem.GetChildren().Where(x => x.TemplateID == Templates.Employee.ID);
+    }
+
     public IEnumerable<Item> GetCarousel(Item context, Item pageItem)
     {
       return context.GetMultiListValueItems(Templates.PersonGroup.Fields.Persons)

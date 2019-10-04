@@ -22,7 +22,7 @@ namespace Wedia.Feature.Person.Controllers
 
     public ActionResult Index(int? page)
     {
-      var items = _personRepository.GetEmployees(RenderingContext.Current.Rendering.Item);
+      var items = _personRepository.GetEmployeesOrdered(RenderingContext.Current.Rendering.Item);
       return View(items);
     }
 

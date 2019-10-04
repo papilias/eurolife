@@ -8,6 +8,11 @@ namespace Wedia.Feature.Person
 {
   public struct Templates
   {
+    public struct Employee
+    {
+      public static readonly ID ID = new ID("{CE1D7E61-0867-4D85-8661-EBEA1D8B48EA}");
+    }   
+
     public struct Person
     {
       public static readonly ID ID = new ID("{E876D234-83DB-4B57-BE87-365D9576377A}");
