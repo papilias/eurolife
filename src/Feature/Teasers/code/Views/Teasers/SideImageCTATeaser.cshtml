@@ -3,6 +3,7 @@
 @using Wedia.Foundation.Alerts.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @using Wedia.Foundation.Theming.Extensions
+@using Sitecore.Mvc.Presentation;
 @model Sitecore.Mvc.Presentation.RenderingModel
 
 @if (!Model?.Item?.DescendsFrom(Templates.HasTeaserImage.ID) ?? true)
@@ -14,6 +15,11 @@
   return;
 }
 
+@{ 
+    var fontColor = !string.IsNullOrEmpty(RenderingContext.Current.Rendering.GetFontColorClass()) ?
+      RenderingContext.Current.Rendering.GetFontColorClass() : "color-health";
+}
+
 <div class="zigzag__item m-b-96 relator @Model.Rendering.GetFontColorClass()">
   @if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor)
   {
@@ -22,7 +28,7 @@
     </div>
   }
   <div class="zigzag__info">
-    <h2 class="h2 color-base m-b-16">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h2>
+    <h2 class="h2 @fontColor m-b-16">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h2>
     <div class="zigzag__text m-b-32">
       @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
     </div>

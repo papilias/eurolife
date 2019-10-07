@@ -19,15 +19,27 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{331C9ABF-B689-4918-8139-5C90D7A1AD88}"
+              uid="{DF34B79B-459F-40AF-9CAB-A3C2AF61C301}"
               p:before="*"
+              s:ds="{515C5463-FA37-48B8-9AF9-BFBE4A9C1A6C}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-3-{EF162C50-9621-4471-90BF-FF650ACB40AA}-0" />
+            <r
+              uid="{6478E09C-3C61-4E08-9C7E-EEB2C595A1F9}"
+              p:after="r[@uid='{DF34B79B-459F-40AF-9CAB-A3C2AF61C301}']"
+              s:ds="{0B43B7D3-1981-4E23-962D-7BA84F44D839}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-2-{EF162C50-9621-4471-90BF-FF650ACB40AA}-0" />
+            <r
+              uid="{BBF41FF1-8ABF-4395-88E1-6A71B76B802B}"
+              p:after="r[@uid='{6478E09C-3C61-4E08-9C7E-EEB2C595A1F9}']"
               s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
-              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background&amp;ContainerIsNotFullWidth"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
               s:ph="/page-layout/teaser-placeholder-1-{EF162C50-9621-4471-90BF-FF650ACB40AA}-0" />
             <r
               uid="{A99977A1-68EB-4317-B0EC-C1651B2EC756}"
-              p:after="r[@uid='{331C9ABF-B689-4918-8139-5C90D7A1AD88}']"
+              p:after="r[@uid='{BBF41FF1-8ABF-4395-88E1-6A71B76B802B}']"
               s:ds="{515C5463-FA37-48B8-9AF9-BFBE4A9C1A6C}"
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:ph="/page-layout/teaser-placeholder-3-{93FF38E8-3769-4B6E-BCDE-6656CC8CEAE1}-0" />
@@ -63,10 +75,6 @@ Languages:
               s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
               s:par=""
               s:ph="Πρόσφατες δραστηριότητες Εταιρικής Υπευθυνότητας" />
-            <r
-              uid="{49B60503-399B-4E2F-BC1C-2B3EDAA7AF39}">
-              <p:d />
-            </r>
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
