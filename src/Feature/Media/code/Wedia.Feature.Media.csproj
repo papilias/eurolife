@@ -89,6 +89,7 @@
     <Content Include="Views\MediaFeature\MediaSearchResult.cshtml" />
     <Content Include="Views\MediaFeature\MediaFileGroup.cshtml" />
     <Content Include="Views\MediaFeature\MediaFeaturedFiles.cshtml" />
+    <Content Include="Views\MediaFeature\MediaFancyBox.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

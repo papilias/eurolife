@@ -10,6 +10,44 @@ SharedFields:
   Type: Checkbox
   Value: 1
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{DCB110EE-44C0-4727-8533-A4C70849A9C5}"
+              p:after="r[@uid='{8D27D5CE-DB61-484C-91B1-AC3CD541DDD9}']"
+              s:ds="{9636D6AD-6DE0-49F4-9E68-04BDF5344FFD}"
+              s:id="{1BF54FF4-8012-41EB-9C0D-974C2537CE86}"
+              s:ph="page-layout" />
+            <r
+              uid="{779D4FEB-0A1D-460E-85C8-75AA68216D4A}"
+              p:after="r[@uid='{DCB110EE-44C0-4727-8533-A4C70849A9C5}']"
+              s:ds="{9636D6AD-6DE0-49F4-9E68-04BDF5344FFD}"
+              s:id="{BEB1CB25-D3BE-40AE-B12A-59B250819984}"
+              s:ph="page-layout" />
+            <r
+              uid="{1AB62D8B-9157-471E-8974-AFE1CC48AC0C}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191007T134832Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
 - Language: en
   Versions:
   - Version: 1
@@ -24,17 +62,17 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{EB5B3672-88A9-495F-8C99-4FA9A269F54E}"
+              p:after="r[@uid='{8D27D5CE-DB61-484C-91B1-AC3CD541DDD9}']"
+              s:ds="{9636D6AD-6DE0-49F4-9E68-04BDF5344FFD}"
+              s:id="{1BF54FF4-8012-41EB-9C0D-974C2537CE86}"
+              s:ph="page-layout" />
+            <r
               uid="{E34C51BD-1BB1-4E68-A58C-8E897A8157CA}"
               p:after="r[@uid='{DD817563-16FE-4AF7-9491-460427DD6087}']"
               s:ds="{2E7C3A13-8230-40A6-B582-6860D1B9DE5D}"
               s:id="{5C56B6E0-DD5D-4A0F-ABC8-1AA48481841F}"
               s:ph="page-layout" />
-            <r
-              uid="{2E6A8213-2234-4FCB-A14A-77ACF237F26E}"
-              p:after="r[@uid='{E34C51BD-1BB1-4E68-A58C-8E897A8157CA}']" />
-            <r
-              uid="{90ACB83F-DEF8-4E32-9836-0068BA34835B}"
-              p:after="r[@uid='{2E6A8213-2234-4FCB-A14A-77ACF237F26E}']" />
             <r
               uid="{031E6899-F3DA-478B-A545-B2A86FFD92C7}"
               p:after="*[1=2]"
