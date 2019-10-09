@@ -21,6 +21,10 @@ namespace Wedia.Feature.Media
         public static readonly ID Thumbnail = new ID("{DE984D10-9F28-4135-B53F-FE8B5DE19C55}");
         public const string Thumbnail_FieldName = "MediaThumbnail";
         public static readonly ID Label = new ID("{2B8D567C-52B2-4D1B-A645-2021D33C24EE}");
+        public static readonly ID FirstPublisdDate = new ID("{1EAC664F-71C3-4F5B-8D1D-22C4363720B1}");
+        public const string Media_FirstPublishDate = "MediaFirstPublishedDate";
+        public static readonly ID PublishSource = new ID("{502AB0B3-D1F6-4079-A6F4-C91EA0CCE9A1}");
+        public const string Media_PublishSource = "MediaPublishSource";
       }
     }
 
