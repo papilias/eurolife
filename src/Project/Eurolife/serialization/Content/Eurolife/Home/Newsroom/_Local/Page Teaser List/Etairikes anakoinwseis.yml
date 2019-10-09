@@ -1,0 +1,29 @@
+﻿---
+ID: "808bd36f-94dc-4fd3-9057-64dae1771257"
+Parent: "27457690-0e5e-4ac3-808e-3002aaf7b676"
+Template: "2c7f1576-9844-4119-8f1e-a4e70c4791b9"
+Path: /sitecore/content/Eurolife/Home/Newsroom/_Local/Page Teaser List/Etairikes anakoinwseis
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
+      Hint: TeaserTitle
+      Value: Έντυπο Αυτοπιστοποίησης Φορολογικής Κατοικίας Φυσικού Προσώπου
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191009T072551Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
+      Hint: TeaserCTA
+      Value: |
+        <link text="ΠΕΡΙΣΣΟΤΕΡΑ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{437FB1B6-5025-4C10-9867-8D88451EA48C}" />

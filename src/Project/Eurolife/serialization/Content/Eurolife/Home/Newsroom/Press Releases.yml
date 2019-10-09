@@ -31,7 +31,7 @@ Languages:
               p:after="r[@uid='{D743758A-BC1A-41C9-928E-9838FCEFA758}']"
               s:ds=""
               s:id="{7D095F33-73E4-40C7-8D62-367931538B49}"
-              s:par="ResultsOnPage=1&amp;PagesToShow"
+              s:par="ResultsOnPage=10&amp;PagesToShow"
               s:ph="page-layout" />
           </d>
         </r>

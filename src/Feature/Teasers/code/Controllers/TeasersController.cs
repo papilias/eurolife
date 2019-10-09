@@ -27,6 +27,7 @@ namespace Wedia.Feature.Teasers.Controllers
     }
 
     public ActionResult TeaserList() => GetDynamicContent("TeaserList");
+    public ActionResult GreyCTAList() => GetDynamicContent("GreyCTAList");
     public ActionResult ThreeColumnsTeaser() => GetDynamicContent("ThreeColumnsTeaser");
 
     public ActionResult ColoredTeaserList() => GetDynamicContent("ColoredTeaserList");

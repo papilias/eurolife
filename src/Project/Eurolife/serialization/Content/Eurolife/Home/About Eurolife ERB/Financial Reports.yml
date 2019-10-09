@@ -4,6 +4,10 @@ Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
 Template: "7fc965fc-b67a-40a0-8428-2cdf16c71b68"
 Path: /sitecore/content/Eurolife/Home/About Eurolife ERB/Financial Reports
 DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Network/16x16/download.png
 Languages:
 - Language: en
   Versions:
