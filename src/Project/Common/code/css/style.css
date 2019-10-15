@@ -108,7 +108,8 @@ html {
 
 img, svg {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
 
 a {
   color: #030000;
@@ -3584,6 +3585,7 @@ article time {
       margin-right: calc( (100vw - 1700px ) / 2 + 53px); } }
   .hero img {
     width: 100%;
+    display: block;
     border-radius: 0 0 100px 0; }
 
 /*hero with extras*/
@@ -5455,9 +5457,21 @@ a.btn--ghost-header {
     max-width: 16px;
     margin: 0 2px; }
 
+.access {
+  position: relative; }
+  .access:hover .access__list {
+    display: block; }
+
 .access__list {
+  padding: 12px 20px;
   position: absolute;
-  top: 45px; }
+  top: 50px;
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 14px; }
 
 /*------------------------------------*\
   #FOOTER
