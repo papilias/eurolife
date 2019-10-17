@@ -4,6 +4,18 @@ namespace Wedia.Feature.PageContent
 {
   public struct Templates
   {
+
+    public struct HasPageIconContent
+    {
+      public static readonly ID ID = new ID("{A5A87E16-7A80-47F8-AD2B-C27DCA24EB46}");
+
+      public struct Fields
+      {
+        public static readonly ID Image = new ID("{23EF204D-DF36-447D-9E7D-8862C8B6455F}");
+        public const string Image_FieldName = "Image";        
+      }
+    }
+
     public struct HasPageImageContent
     {
       public static readonly ID ID = new ID("{AE8B3FD1-CD52-49C5-9CFD-FDE8B7D58751}");
