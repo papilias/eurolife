@@ -45,16 +45,21 @@
       </div>
     }
 
-    
-    var mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
-    {
-      Width = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerWidth,
-      Height = Wedia.Feature.PageContent.Constants.Dimensions.LandingBannerHeight
-    };
-    var desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptions);
-    var mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptions);
-    
 
+    var mediaUrlOptionsDesktop = new Sitecore.Resources.Media.MediaUrlOptions
+    {
+      Width = 1920,
+      Height = 800
+    }; 
+
+    var mediaUrlOptionsMobile = new Sitecore.Resources.Media.MediaUrlOptions
+    {
+      Width = 500,
+      Height = 680
+    };
+
+    var desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptionsDesktop);
+    var mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptionsMobile);   
 
     <picture>
 

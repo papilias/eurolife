@@ -8,25 +8,45 @@
     var mobileImage = string.Empty;
 
 
+    var mediaUrlOptionsDesktop = new Sitecore.Resources.Media.MediaUrlOptions
+    {
+      Width = 1920,
+      Height = 800
+    };
+
+    var mediaUrlOptionsMobile = new Sitecore.Resources.Media.MediaUrlOptions
+    {
+      Width = 500,
+      Height = 680
+    };      
+
     if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.DesktopImage.ToString()))
     {
-        desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage);
-    }
-
+      desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptionsDesktop);
+    }   
 
     if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.MobileImage.ToString()))
     {
-        mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage);
+      mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptionsMobile);
     }
 }
 <section class="hero m-t-48 m-b-24">
+  <picture>
+    @if (!string.IsNullOrEmpty(desktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+      <source media="(min-width: 900px)" srcset="@desktopImage">
+    }
+
+    @if (!string.IsNullOrEmpty(mobileImage) || Sitecore.Context.PageMode.IsExperienceEditor)
+    {
+      <source srcset="@mobileImage">
+    }
+
     @if (Sitecore.Context.PageMode.IsExperienceEditor || desktopImage != null)
     {
-        @Model.Item.Field(Templates.HasPageImageContent.Fields.DesktopImage)
-
-    }
-    @*@if (Sitecore.Context.PageMode.IsExperienceEditor || mobileImage != null)
-    {
-        @Model.Item.Field(Templates.HasPageImageContent.Fields.MobileImage)
-    }*@
-</section>
+      @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.DesktopImage, Model.Item,
+        800,
+        1920)    
+    }                             
+  </picture>   
+</section>   
