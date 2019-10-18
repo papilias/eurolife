@@ -1,9 +1,13 @@
 ﻿---
-ID: "a32e98af-9df1-402b-81bf-df087d40974a"
-Parent: "f6ec7e67-840a-4686-8368-6dc2cd9c5569"
+ID: "6463c30c-fa0d-47b2-8173-ee548a7ccabf"
+Parent: "f35d4075-8868-4bfe-8012-e98c840a8546"
 Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
-Path: /sitecore/content/Eurolife/Global/Links/Legal Menu/Cookies policy
+Path: "/sitecore/content/Eurolife/Global/Links/Footer Menu/first-column/Contact"
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
 Languages:
 - Language: "el-GR"
   Versions:
@@ -11,11 +15,15 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191018T113620Z
+      Value: 20190930T135828Z
+    - ID: "3b4322c4-9d93-498d-85cf-c29921147099"
+      Hint: ShowChildren
+      Type: Checkbox
+      Value: 1
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\admin
+        sitecore\Admin
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
@@ -26,18 +34,22 @@ Languages:
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Cookies
+      Value: Επικοινωνία
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190621T075407Z
+      Value: 20190620T094253Z
+    - ID: "3b4322c4-9d93-498d-85cf-c29921147099"
+      Hint: ShowChildren
+      Type: Checkbox
+      Value: 0
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" linktype="external" url="https://google.com" anchor="" title="" class="" querystring="" target="" id="" />
+        <link text="Github" linktype="external" url="https://github.com" anchor="" title="" class="" querystring="" target="" id="{0DE95AE4-41AB-4D01-9EB0-67441B7C2450}" />
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Πολιτική για Cookies
+      Value: Γραφείο Τύπου

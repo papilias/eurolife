@@ -116,10 +116,15 @@ SharedFields:
           ph="footer-lists"
           uid="{0059B78B-EBC2-4BED-B4D6-60A5FCBF6A0C}" />
         <r
+          ds="{525D0B06-A114-4E28-BACB-5F882243B7E1}"
+          id="{1A432A16-E24C-4755-9545-A90CBF0A92E6}"
+          ph="footer-lists"
+          uid="{0F0310FB-4A4C-4024-8878-49C41EC0915A}" />
+        <r
           ds="{CD586CC0-02F0-49E5-B173-B26C9E691573}"
           id="{D07F45C9-1D5F-4C48-9BF7-40EB6EB7FCA9}"
           ph="footer-lists"
-          uid="{6B161BEF-C6A3-41CB-8955-8AE16FFC91A7}" />
+          uid="{629B8D30-5B6E-490F-9CE0-0A87592BCF8C}" />
         <r
           id="{42FB3DFF-05D2-45D4-B920-3D771DBB813D}"
           ph="footer-bottom"

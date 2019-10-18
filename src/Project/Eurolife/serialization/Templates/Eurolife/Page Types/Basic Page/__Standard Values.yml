@@ -83,23 +83,28 @@ SharedFields:
           ph="page-layout"
           uid="{832CD083-2620-47BB-9F2B-63084D865567}" />
         <r
+          id="{42FB3DFF-05D2-45D4-B920-3D771DBB813D}"
+          ph="footer-bottom"
+          uid="{33BFC7C5-E93E-476E-80F4-C0F9291C433C}" />
+        <r
           ds="{F6EC7E67-840A-4686-8368-6DC2CD9C5569}"
           id="{814E1B60-9115-4FBB-BA23-150A4835C038}"
           ph="footer-bottom"
           uid="{FDBA264F-8E95-4481-879A-14901EBE5299}" />
         <r
-          id="{42FB3DFF-05D2-45D4-B920-3D771DBB813D}"
-          ph="footer-bottom"
-          uid="{33BFC7C5-E93E-476E-80F4-C0F9291C433C}" />
+          ds="{F35D4075-8868-4BFE-8012-E98C840A8546}"
+          id="{1A432A16-E24C-4755-9545-A90CBF0A92E6}"
+          ph="footer-lists"
+          uid="{F37D820E-621E-4C6F-8B55-E5C1EF880B79}" />
         <r
           id="{D7CBA708-89EB-46BB-85C1-201BCE491C4C}"
           ph="footer-lists"
           uid="{CD85DD57-3079-4BC2-8B5C-4F276FDA05A4}" />
         <r
-          ds="{F35D4075-8868-4BFE-8012-E98C840A8546}"
+          ds="{525D0B06-A114-4E28-BACB-5F882243B7E1}"
           id="{1A432A16-E24C-4755-9545-A90CBF0A92E6}"
           ph="footer-lists"
-          uid="{F37D820E-621E-4C6F-8B55-E5C1EF880B79}" />
+          uid="{56B1FF2C-B5CF-4579-9A1E-052C05C68D0F}" />
         <r
           ds="{CD586CC0-02F0-49E5-B173-B26C9E691573}"
           id="{D07F45C9-1D5F-4C48-9BF7-40EB6EB7FCA9}"
