@@ -24,29 +24,37 @@
 
 <div class="center center--1700 m-b-64 anchorlist-narrow scroller">
   <div class="nowrap">
-    @foreach (var item in Model.NavItems)
+    @foreach (var item in Model.NavItems.Select((value, i) => new { i, value }))
     {
-      var activeClass = item.IsActive ? "tab--active" : "";
+      var activeClass = string.Empty;
 
-      if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
+      if(item.value.IsActive)
+      {
+        if (item.i == 0 && Request.Url.AbsolutePath == item.value.Url)
+        {
+          activeClass = "tab--active ";
+        }
+        else if(item.i > 0)
+        {
+          activeClass = "tab--active ";
+        }
+      }
+
+      if (item.value.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
       {
         activeClass += "divider-left";
       }
 
-
-      <a href="@item.Url" target="@item.Target" class="tab @activeClass">
-        @if (!string.IsNullOrWhiteSpace(item.Item[Templates.LinkMenuItem.Fields.Icon]))
+      <a href="@item.value.Url" target="@item.value.Target" class="tab @activeClass">
+        @if (!string.IsNullOrWhiteSpace(item.value.Item[Templates.LinkMenuItem.Fields.Icon]))
         {
-          <span class="@item.Item[Templates.LinkMenuItem.Fields.Icon]"></span>
+          <span class="@item.value.Item[Templates.LinkMenuItem.Fields.Icon]"></span>
         }
         else
         {
-          @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
+          @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.value.Item)          
         }
       </a>
-
     }
-
   </div>
 </div>
-
