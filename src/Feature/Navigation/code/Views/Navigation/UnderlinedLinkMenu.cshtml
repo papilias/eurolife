@@ -22,8 +22,7 @@
 }
 
 
-<div class="center center--1700 m-b-64 anchorlist-narrow scroller">
-  <div class="nowrap">
+<div class="center center--1700 m-b-64 t-c js-scroll-items scroll-items">    
     @foreach (var item in Model.NavItems.Select((value, i) => new { i, value }))
     {
       var activeClass = string.Empty;
@@ -55,6 +54,5 @@
           @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.value.Item)          
         }
       </a>
-    }
-  </div>
+    }   
 </div>
