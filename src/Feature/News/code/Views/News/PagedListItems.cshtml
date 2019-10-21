@@ -13,14 +13,14 @@
     {
       @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.DesktopImage,
         result.Item,
-        Contants.ImageDimensions.ArticleCardImageHeight,
-        Contants.ImageDimensions.ArticleCardImageWidth,
+        0,
+        400,
         null,
         true)
     }
 
     <div class="list__article__group">
-      <time>@Html.Sitecore().Field(Templates.NewsArticle.Fields.Date, result.Item)</time>
+      <time>@Html.Sitecore().Field(Templates.NewsArticle.Fields.Date, result.Item, new { format = "d MMM yyyy", DisableWebEdit = true })</time>
       <h2 class="h6 m-b-16">
         @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, result.Item)
       </h2>
