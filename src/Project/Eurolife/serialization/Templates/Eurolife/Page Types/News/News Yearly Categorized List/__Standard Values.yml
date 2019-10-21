@@ -71,6 +71,11 @@ SharedFields:
           ph="popular-searches"
           uid="{758BF815-8945-4084-8156-FEFF756056A1}" />
         <r
+          ds="{76C9E52F-0BD6-4A1F-B2BB-8509568EAACA}"
+          id="{CF9A98B4-8C85-463D-A91B-43549CF5813C}"
+          ph="login-register-menu"
+          uid="{A7E90FDD-EA44-4574-B09B-D35C493BC93C}" />
+        <r
           id="{ECEA9D7D-DEFD-4B60-ABD0-198B4B59D3A3}"
           ph="login-register-link"
           uid="{655DA27A-D2A4-4B93-821B-523AB6F3D577}" />

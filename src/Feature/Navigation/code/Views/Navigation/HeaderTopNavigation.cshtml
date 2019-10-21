@@ -12,12 +12,31 @@
 <ul class="nav-main__list">
   @foreach (var item in Model.NavItems)
   {
-    <li>
-      <a href="@item.Url"
-          title="@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item, new { DisableWebEdit = true })">
-          @item.Item.Field(Templates.Navigable.Fields.NavigationTitle)
-      </a>
-    </li>                  
+    @RenderSubMenu(item)
   }
 </ul>
-    
+
+
+@helper  RenderSubMenu(Wedia.Feature.Navigation.Models.NavigationItem navItem)
+{
+  bool active = false;
+  bool hasChildren = navItem.Children != null && navItem.Children.NavItems.Any() && navItem.ShowChildren ? true : false;
+  string liClass = hasChildren ? "sublisted" : string.Empty;
+
+    <li class="@liClass">
+      <a href="@navItem.Url" target="@navItem.Target">          
+          @navItem.Item.Field(Templates.Navigable.Fields.NavigationTitle)
+      </a>
+      @{ 
+          if(hasChildren)
+          {
+              <ul class="sublist">
+                    @foreach(var subItem in navItem.Children.NavItems)
+                    {
+                      @RenderSubMenu(subItem)
+                    }
+              </ul>
+          }
+      }
+    </li>
+}

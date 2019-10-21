@@ -57,6 +57,18 @@ namespace Wedia.Feature.Navigation.Repositories
   
     }
 
+    public NavigationItems GetHeaderNavigationItems(Item menuRoot, bool descending = false, int limit = 20)
+    {
+
+      if (menuRoot == null)
+      {
+        throw new ArgumentNullException(nameof(menuRoot));
+      }
+
+      return GetChildNavigationItems(menuRoot, 0, 5, descending, limit);
+
+    }
+
     public NavigationItems GetLinkMenuItems(Item menuRoot, bool descending = false, int limit = 20)
     {
       if (menuRoot == null)

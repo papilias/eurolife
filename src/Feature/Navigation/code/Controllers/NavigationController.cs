@@ -29,6 +29,7 @@ namespace Wedia.Feature.Navigation.Controllers
       return View(items);
     }
 
+    public ActionResult LoginRegisterLinks() => GetMenu("LoginRegisterLinks");
     public ActionResult NavigationLinksList() => GetMenu("NavigationLinksList");
     public ActionResult FooterNavigationLinksList() => GetMenu("FooterNavigationLinksList");
 
@@ -44,7 +45,7 @@ namespace Wedia.Feature.Navigation.Controllers
 
     public ActionResult HorizontalNavigationLinks() => GetMenu("HorizontalNavigationLinks");
 
-    public ActionResult HeaderTopNavigation() => GetMenu("HeaderTopNavigation");
+    public ActionResult HeaderTopNavigation() => GetHeaderNavigationMenu("HeaderTopNavigation");
 
     public ActionResult MainMenu()
     {
@@ -57,6 +58,19 @@ namespace Wedia.Feature.Navigation.Controllers
       var items = _navigationRepository.GetPrimaryMenu(item);
 
       return View("MainMenu", items);
+    }
+
+    public ActionResult GetHeaderNavigationMenu(string view, bool descending = false, int limit = 20)
+    {
+      if (HasError())
+      {
+        return ErrorResponse();
+      }
+
+      var item = RenderingContext.Current.Rendering.Item;
+      var items = _navigationRepository.GetHeaderNavigationItems(item, descending, limit);
+
+      return View(view, items);
     }
 
     public ActionResult GetMenu(string view, bool descending = false, int limit = 20)

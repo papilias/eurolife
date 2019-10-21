@@ -43,6 +43,11 @@ SharedFields:
           ph="header-top-navbar"
           uid="{D2586846-1765-4544-A465-0CAB0D43E94D}" />
         <r
+          ds="{76C9E52F-0BD6-4A1F-B2BB-8509568EAACA}"
+          id="{CF9A98B4-8C85-463D-A91B-43549CF5813C}"
+          ph="login-register-menu"
+          uid="{F71CE93F-CFA7-4CC6-80D8-0F1A684191E2}" />
+        <r
           id="{8350EF42-974D-44FB-9105-4655872C7741}"
           ph="header-top-navbar"
           uid="{73DB8C44-4A75-4F1A-A6F1-8A42867FB262}" />

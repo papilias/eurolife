@@ -73,6 +73,10 @@ Languages:
     - ID: "c9937d39-6c03-44be-a0bb-965903c6ef43"
       Hint: Copyright
       Value: "Eurolife!!!"
+    - ID: "cd55543c-7eca-405f-89a1-6bc0a9d10292"
+      Hint: OnlinePayment
+      Value: |
+        <link text="test" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{85D60CA6-EAB7-44E7-9D78-E8DB75756B35}" />
     - ID: "cea1aafe-bc37-4321-a135-ededcac59783"
       Hint: OrganisationPhone
       Value: 210 9003800

@@ -1,22 +1,17 @@
 ﻿---
-ID: "e2473267-a767-495e-99a6-d5ded40d3619"
-Parent: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
+ID: "761905ca-de43-47b6-acc8-7a3e410cb4d2"
+Parent: "1c4073ac-9ee3-4916-b50b-421e205cb9a5"
 Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
-Path: /sitecore/templates/Project/Common/Content Types/Navigation/Link Menu Item/__Standard Values
+Path: /sitecore/content/Eurolife/Global/Links/Header Top Menu/Newsroom/Leadership/Sub1
 DB: master
-SharedFields:
-- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
-  Hint: __Masters
-  Type: TreelistEx
-  Value: "{D3D187F8-CEF5-4DBB-B634-E56CBF866512}"
 Languages:
-- Language: en
+- Language: "el-GR"
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190527T110414Z
+      Value: 20191021T122048Z
     - ID: "3b4322c4-9d93-498d-85cf-c29921147099"
       Hint: ShowChildren
       Type: Checkbox
@@ -31,4 +26,4 @@ Languages:
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: $name
+      Value: Sub1
