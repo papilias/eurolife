@@ -11,6 +11,7 @@
     return;
   }
 
+    var guiID = Guid.NewGuid().ToString();
 }
 
 <section class="p-t-64 p-b-64 m-b-96 relator">
@@ -20,8 +21,8 @@
       @foreach (var faq in Model.Item.GetMultiListValueItems(Templates.FaqGroup.Fields.GroupMember).Select((content, index) => new { content, index}))
       {
         <li>
-          <input type="checkbox" name="panel" id="panel-@faq.index">
-          <label for="panel-@faq.index">
+          <input type="checkbox" name="panel" id="panel-@guiID-@faq.index">
+          <label for="panel-@guiID-@faq.index">
             @Html.Sitecore().Field(Templates.Faq.Fields.Question, faq.content)
             <span class="accordion__state"></span>
           </label>
