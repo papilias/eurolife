@@ -45,10 +45,29 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{6E16B7ED-0ADE-4B0B-90C9-6AC4E219E6C4}"
+              uid="{1EEBB07A-9591-4545-B793-D784AE2F3851}"
               p:before="*"
+              s:id="{DB5E61BA-9B4C-4123-B200-5F30E491EE20}"
+              s:ph="/header/header-content" />
+            <r
+              uid="{6E16B7ED-0ADE-4B0B-90C9-6AC4E219E6C4}"
+              p:after="r[@uid='{1EEBB07A-9591-4545-B793-D784AE2F3851}']"
               s:id="{EF0BEAD8-DD54-4579-8F4A-2A4971C29F73}"
               s:ph="header" />
+            <r
+              uid="{129305E6-68B4-4024-B645-0D4CC2E6A37A}">
+              <p:d />
+            </r>
+            <r
+              uid="{98EE8C66-79FA-4FC3-994A-051242989481}">
+              <p:d />
+            </r>
+            <r
+              uid="{2DF92F82-6DFC-4405-AC7E-50E583730EE4}"
+              p:after="r[@uid='{8A619E14-2225-4EB6-B5DF-DBC38797961B}']"
+              s:ds="{50BE701A-C4BD-4D41-BD39-B4395C552AAE}"
+              s:id="{DB108908-FD99-4956-BD8C-E099C306A04D}"
+              s:ph="page-layout" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
