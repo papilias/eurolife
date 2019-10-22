@@ -19,9 +19,14 @@
 
 @helper  RenderSubMenu(Wedia.Feature.Navigation.Models.NavigationItem navItem)
 {
-  bool active = false;
-  bool hasChildren = navItem.Children != null && navItem.Children.NavItems.Any() && navItem.ShowChildren ? true : false;
-  string liClass = hasChildren ? "sublisted" : string.Empty;
+bool active = false;
+bool hasChildren = navItem.Children != null && navItem.Children.NavItems.Any() && navItem.ShowChildren ? true : false;
+string liClass = hasChildren ? "sublisted" : string.Empty;
+
+if(Request.Url.AbsoluteUri.Contains(navItem.Url))
+{
+  liClass += " active";
+}
 
     <li class="@liClass">
       <a href="@navItem.Url" target="@navItem.Target">          
