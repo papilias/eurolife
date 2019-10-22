@@ -69,7 +69,7 @@ namespace Wedia.Feature.Person.Repositories
 
       searchService.Settings.Root = contextItem;
 
-      var results = searchService.FindAll(0, 0);
+      var results = searchService.FindAll(0, 0, "sortorder");
       //, Foundation.Indexing.Constants.IndexFields.SortOrder);
 
       return results.Results.Select(d => d.Item).Where(i => i != null); //.OrderBy(GetSortOrderValue);

@@ -4,6 +4,10 @@ Parent: "c30b80f8-6d15-460f-ad29-b45d49901bbb"
 Template: "ad888dc7-06e0-46f4-a47d-548689e81318"
 Path: /sitecore/content/Eurolife/Home/Contact Us/Consultants/Athens/Another Consultant
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 5
 Languages:
 - Language: en
   Versions:
