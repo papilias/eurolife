@@ -16,7 +16,7 @@
 }
 
 <div class="color-container">
-  <div class="center center--1700 m-b-64 ">
+  <div class="center center--1700 m-b-64 t-c js-scroll-items scroll-items">
     @foreach (var parentCategory in Model.Groups)
     {
 
@@ -29,7 +29,7 @@
       using (Html.BeginEditFrame(parentCategory.Item.ID.ToString(), ""))
       {
         <a href="@($" {Sitecore.Mvc.Presentation.RenderingContext.Current.ContextItem.Url()}?group={parentCategory.Item.ID}")"
-           class="tab  @(parentCategory.IsActive ? " tab--active" : "" )">
+           class="tab  @(parentCategory.IsActive ? " tab--active" : "" ) item">
           @parentCategory.Item.Field(Templates.HasMediaGroupTitle.Fields.Title)
         </a>
       }
