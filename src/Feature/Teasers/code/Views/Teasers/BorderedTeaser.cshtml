@@ -18,11 +18,11 @@
   <label class="cta-double__item__label">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</label>
 
   @if (Model.Item.DescendsFrom(Templates.HasTeaserSummary.ID)
-    && ( Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor))
+    && (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor))
   {
-    
-    @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
-
+    <div class="cta-double__item__prompt">
+      @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
+    </div>
   }
 
   @if (Model.Item.DescendsFrom(Templates.HasTeaserCTA.ID)
