@@ -1,0 +1,14 @@
+﻿---
+ID: "2146ce5c-b177-4e7f-af39-abb44ddef07d"
+Parent: "f2be096d-911f-4409-8a98-9ee16cb8b283"
+Template: "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b"
+Path: /sitecore/content/Eurolife/Home/Proionta
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191023T095244Z

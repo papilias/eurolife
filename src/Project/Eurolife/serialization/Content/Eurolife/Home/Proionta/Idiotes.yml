@@ -1,0 +1,14 @@
+﻿---
+ID: "14beec30-d5f4-4cdf-b18a-a9d85fa4882a"
+Parent: "2146ce5c-b177-4e7f-af39-abb44ddef07d"
+Template: "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b"
+Path: /sitecore/content/Eurolife/Home/Proionta/Idiotes
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191023T095244Z
