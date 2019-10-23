@@ -57,13 +57,13 @@
     var mediaUrlOptionsDesktop = new Sitecore.Resources.Media.MediaUrlOptions
     {
       Width = 1920,
-      Height = 800
+      Height = 0
     };
 
     var mediaUrlOptionsMobile = new Sitecore.Resources.Media.MediaUrlOptions
     {
       Width = 500,
-      Height = 680
+      Height = 0
     };
 
     var desktopImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.DesktopImage, mediaUrlOptionsDesktop);

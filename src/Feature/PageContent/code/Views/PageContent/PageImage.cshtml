@@ -11,13 +11,13 @@
     var mediaUrlOptionsDesktop = new Sitecore.Resources.Media.MediaUrlOptions
     {
       Width = 1920,
-      Height = 800
+      Height = 0
     };
 
     var mediaUrlOptionsMobile = new Sitecore.Resources.Media.MediaUrlOptions
     {
       Width = 500,
-      Height = 680
+      Height = 0
     };      
 
     if (Html.Sitecore().HasValue(Templates.HasPageImageContent.Fields.DesktopImage.ToString()))
@@ -45,7 +45,7 @@
     @if (Sitecore.Context.PageMode.IsExperienceEditor || desktopImage != null)
     {
       @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.DesktopImage, Model.Item,
-        800,
+        0,
         1920)    
     }                             
   </picture>   
