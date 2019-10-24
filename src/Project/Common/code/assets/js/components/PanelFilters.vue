@@ -1,11 +1,11 @@
 ﻿<template>
   <div class="filter">
     <span class="filter__trigger" @click="show = true">{{ filters.title }}</span>
-    <div class="filter__results filter__results--active" v-show="show">
+    <div class="filter__results" v-show="show">
 
       <div class="filter__results__column" v-for="(filter,i) in propedFilters" :key="`proped-filter-${i}`">
         <div class="filter__results__heading">{{ filter.title }}</div>
-        <panel-filter :filter="filter" v-model="selectedFilters"></panel-filter>
+        <panel-filter :filter="filter" v-model="selectedFilters" @apply="apply"></panel-filter>
       </div>
 
       <div v-if="unPropedFilters.length > 0" class="filter__results__column">
@@ -17,8 +17,7 @@
       </div>
 
       <div class="filter__actions">
-        <span class="filter__apply js-apply-filters" @click="show = false">{{ filters.cancelButton }}</span>
-        <span class="filter__apply js-apply-filters" @click="apply">{{ filters.applyButton }}</span>
+        <span class="filter__apply js-apply-filters" @click="cancel">{{ filters.cancelButton }}</span>        
       </div>
     </div>
   </div>
@@ -26,7 +25,7 @@
 
 <script>
   import PanelFilter from './PanelFilter';
-  import { EventBus } from '../EventBus.js';
+  import { EventBus } from '../EventBus.js';    
 
   export default {
     props: {
@@ -42,7 +41,7 @@
       selectedFilters: []
     }),
     methods: {
-      makeFilters() {
+      makeFilters() {         
         if (!this.filters.items)
           return;
 
@@ -53,8 +52,12 @@
             this.unPropedFilters.push(filter);
         });
       },
-      apply() {
-        EventBus.$emit("applyFilters", this.selectedFilters);
+      apply() {         
+        EventBus.$emit("applyFilters", this.selectedFilters);         
+      },
+      cancel() {  
+        const filterResults = document.querySelector(".filter__results");
+        filterResults.classList.remove("filter__results--active");
         this.show = false;
       }
     },

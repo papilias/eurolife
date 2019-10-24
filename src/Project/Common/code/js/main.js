@@ -209,7 +209,7 @@
 
     //expand program START
     $( ".program-controls__more" ).click(function() {
-        $(this).parent().siblings('.program-expander').toggleClass('program-expander--visible');
+        $(this).parent().prev().find('.program-expander').toggleClass('program-expander--visible');
     });
     //expand program END
 
@@ -358,45 +358,45 @@
         });
 
 
-        const filterClicks = document.querySelectorAll(".filter__item input");
-        for (const filterClick of filterClicks) {
-            filterClick.addEventListener('click', _ => {
-                $('.program').removeClass("program--visible");
+        //const filterClicks = document.querySelectorAll(".filter__item input");
+        //for (const filterClick of filterClicks) {
+        //    filterClick.addEventListener('click', _ => {
+        //        $('.program').removeClass("program--visible");
 
-                const checkboxes = document.querySelectorAll(".filter__item input");
-                var datas = [];
-                //looping checked values and adding to array
-                for (const checkbox of checkboxes) {
-                    if (checkbox.checked == true) {
-                        const dataAttr = checkbox.dataset.index;
-                        datas.push(dataAttr);
-                    }
-                }
+        //        const checkboxes = document.querySelectorAll(".filter__item input");
+        //        var datas = [];
+        //        //looping checked values and adding to array
+        //        for (const checkbox of checkboxes) {
+        //            if (checkbox.checked == true) {
+        //                const dataAttr = checkbox.dataset.index;
+        //                datas.push(dataAttr);
+        //            }
+        //        }
 
-                if (datas.length > 0) {
-                    $('.program').removeClass("program--visible");
-                    const programs = document.querySelectorAll('.program');
-                    for (const program of programs) {
-                        var programActive = new Boolean(false);
-                        var programDatas = program.dataset.characteristics;
-                        for (const datum of datas) {
+        //        if (datas.length > 0) {
+        //            $('.program').removeClass("program--visible");
+        //            const programs = document.querySelectorAll('.program');
+        //            for (const program of programs) {
+        //                var programActive = new Boolean(false);
+        //                var programDatas = program.dataset.characteristics;
+        //                for (const datum of datas) {
 
-                            if (programDatas.includes(datum)) {
-                                programActive = true;
-                            }
+        //                    if (programDatas.includes(datum)) {
+        //                        programActive = true;
+        //                    }
 
-                            if (programActive == true) {
-                                program.classList.add('program--visible');
-                                console.log(programActive)
-                            }
-                            else program.classList.remove('program--visible');
-                        }
-                    }
-                }
-                else $('.program').addClass("program--visible");
+        //                    if (programActive == true) {
+        //                        program.classList.add('program--visible');
+        //                        console.log(programActive)
+        //                    }
+        //                    else program.classList.remove('program--visible');
+        //                }
+        //            }
+        //        }
+        //        else $('.program').addClass("program--visible");
 
-            });
-        }
+        //    });
+        //}
     }
 
     //EMPAND PROGRAMS STARTS
