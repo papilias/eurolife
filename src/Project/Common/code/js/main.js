@@ -461,7 +461,7 @@
     }
 
     function highLightLabel(){
-        $target = $( ".form input[type='text'], .form textarea" );
+        $target = $(".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea");
         $target.each(function(){
             var text_value=$(this).val();
             if(text_value != '')

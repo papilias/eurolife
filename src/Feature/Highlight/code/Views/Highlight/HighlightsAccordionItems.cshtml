@@ -8,9 +8,10 @@
   {
     @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HighlightsGroup.ID), 
       AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model?.ID, Model?.ID)
-    return;
+      return;
   }
 
+  var guiID = Guid.NewGuid().ToString();
 }
 
 <div class="center center--1100">
@@ -18,8 +19,8 @@
     @foreach (var item in Model.GetMultiListValueItems(Templates.HighlightsGroup.Fields.Highlights).Select((value, i) => new { i, value }))
     {
       <li>
-        <input type="checkbox" name="panel" id="panel-@item.i">
-        <label for="panel-@item.i">
+        <input type="checkbox" name="panel" id="panel-@guiID-@item.i">
+        <label for="panel-@guiID-@item.i">
           @Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item.value)
           <span class="accordion__state"></span>
         </label>
@@ -27,7 +28,6 @@
           <div class="p-b-16">
             @Html.Sitecore().Field(Templates.HasHightlightRTE.Fields.Content, item.value)
           </div>
-
         </div>
       </li>
     }
