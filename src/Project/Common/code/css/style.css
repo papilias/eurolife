@@ -2793,7 +2793,7 @@ article time {
 
 .form__group {
   margin-bottom: 64px; }
-  .form__group input[type="checkbox"] {
+  .form__group input[type="checkbox"], .form__group input[type="radio"] {
     display: block;
     margin-right: 5px; }
 
