@@ -66,11 +66,6 @@ SharedFields:
           ph="login-register-menu"
           uid="{05972BC1-5414-4D9A-B9C2-E3FE7EB27CCD}" />
         <r
-          ds="{525D0B06-A114-4E28-BACB-5F882243B7E1}"
-          id="{1A432A16-E24C-4755-9545-A90CBF0A92E6}"
-          ph="footer-lists"
-          uid="{2C2CEEC9-C93F-4327-A773-401DC3211DC8}" />
-        <r
           id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
           ph="page-layout-top"
           uid="{C614E7EB-5944-48E0-8762-ECFADF91E774}" />
