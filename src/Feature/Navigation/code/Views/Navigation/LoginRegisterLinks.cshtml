@@ -26,7 +26,7 @@
       @foreach (var link in Model.NavItems)
       {
         <li>
-          <a href="@link.Item.Url()">
+          <a href="@link.Item.LinkFieldUrl(Templates.Link.Fields.Link)" target="_blank">
             @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, link.Item)
           </a>
         </li>
