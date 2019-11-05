@@ -2,7 +2,7 @@
 ID: "8ee84fd5-cd57-4cc9-927b-15923cf405dc"
 Parent: "89b079fb-2b08-4083-ae9b-384fa12fe17d"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/ContactFormGr/Page/Section/SubSection/Form Item
+Path: /sitecore/Forms/ContactFormGr/Page/Section/SubSection/first name
 DB: master
 SharedFields:
 - ID: "10e5829a-1943-4597-b9ee-406ce3d13e13"

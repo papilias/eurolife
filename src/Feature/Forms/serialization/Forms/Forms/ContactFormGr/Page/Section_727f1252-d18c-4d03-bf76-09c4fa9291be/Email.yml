@@ -1,8 +1,8 @@
 ﻿---
-ID: "986c1d30-710b-455e-89b1-1afac4992693"
-Parent: "b0bccd23-adb6-484b-9f65-57f9b75743e1"
+ID: "b285b2e9-9621-4416-a9d3-8a0a388a67ae"
+Parent: "727f1252-d18c-4d03-bf76-09c4fa9291be"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/ContactFormGr/Page/Section/SubSection/Form Item
+Path: /sitecore/Forms/ContactFormGr/Page/Section/Email
 DB: master
 SharedFields:
 - ID: "10e5829a-1943-4597-b9ee-406ce3d13e13"
@@ -30,11 +30,11 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: EB5ADFCC3429480EAF2DA45A7150A00E
+  Value: F7994C1718304387832AA8B7DD1938EB
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
-  Value: 0
+  Value: 1
 - ID: "90c4f94c-ec2c-4ee4-b4c8-f3e29cbe630e"
   Hint: Allow Save
   Type: Checkbox
@@ -44,7 +44,7 @@ SharedFields:
   Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 300
 - ID: "d99833ea-238a-4505-90ef-c69bf3eba946"
   Hint: Is Tracking Enabled
   Type: Checkbox
@@ -63,14 +63,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T100241Z
+      Value: 20191031T095705Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\Admin
+        sitecore\admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Επώνυμο
+      Value: Email
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 

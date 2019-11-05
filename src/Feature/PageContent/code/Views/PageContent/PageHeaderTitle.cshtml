@@ -14,10 +14,15 @@
   return;
 }
    
+@{ 
+    var homeUrl = Sitecore.Context.Site?.GetStartItem()?.Url() ?? "/";
+}
 
-<div id="fix-1" class="intro sticky-pending sticky-health p-t-24">
+<div id="fix-1" class="intro sticky-pending sticky-health p-t-24">    
   <div class="center center--1700 flexify">
-    <div class="intro-text">
+    <div class="intro-text">  
+      <a href="@homeUrl" class="logo" role="link" aria-label="Eurolife Logo Link to Homepage" title="Logo">Eurolife</a>         
+
       @if (Html.Sitecore().HasValue(Templates.HasPageContent.Fields.Title.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
       {
         <h1 class="h3 m-b-16">
@@ -30,7 +35,7 @@
         <div class="intro__text">
           <p>
             @Html.Sitecore().Field(Templates.HasPageContent.Fields.Summary)
-          </p>          
+          </p>
         </div>
       }
     </div>
