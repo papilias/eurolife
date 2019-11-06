@@ -16,6 +16,10 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190820T102749Z
+    - ID: "3b4322c4-9d93-498d-85cf-c29921147099"
+      Hint: ShowChildren
+      Type: Checkbox
+      Value: 1
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -23,11 +27,15 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{25BCC0B2-B176-4483-8368-4ACE4DDDF0E4}" />
+        <link id="{25BCC0B2-B176-4483-8368-4ACE4DDDF0E4}" querystring="" target="" text="" anchor="" title="" class="" url="/Eurolife/Home/gnoriste-mas" linktype="internal" />
+    - ID: "b8c12c18-dcef-4edf-a030-50a4a55bedac"
+      Hint: DividerBefore
+      Type: Checkbox
+      Value: 1
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: ABOUT EUROLIFE ERB
+      Value: Γνωρίστε μας

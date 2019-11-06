@@ -27,7 +27,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link linktype="internal" />
+        <link linktype="external" url="https://as-milisoume.gr" anchor="" target="" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

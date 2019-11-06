@@ -1,0 +1,39 @@
+﻿---
+ID: "900a8e73-5be6-4528-be90-6f3a76d2386b"
+Parent: "1447db77-5186-47b7-a046-2dcc24c37530"
+Template: "06510e4d-13dd-480a-909a-06392bdfa89e"
+Path: /sitecore/Forms/ContactFormGr/Page/Section/SubSection/RawHtml
+DB: master
+SharedFields:
+- ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
+  Hint: Field Type
+  Value: "{F6ABF2D4-D864-48D7-A464-75025A42162E}"
+- ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
+  Hint: Conditions
+  Value: |
+    {"fieldConditions":[]}
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: 
+- ID: "84ece662-5034-40cb-9c60-744db64bb294"
+  Hint: Field Key
+  Value: DACE69B6054C41F7A99DD91EF272871A
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191025T101332Z
+    - ID: "318b47e2-a908-4aad-b595-9dbdeeffbcf3"
+      Hint: Html
+      Value: |
+        Ενημερώθηκα σχετικά με την  <a href="https://stagingcms.eurolife.gr/prosopika-dedomena"  style="color:#0645AD">επεξεργασία των προσωπικών μου δεδομένων</a>.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

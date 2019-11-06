@@ -1,0 +1,18 @@
+﻿---
+ID: "8655f201-6547-486f-b815-a3386731f864"
+Parent: "70c14a73-6afc-43c3-bb66-a9fffa7a6345"
+Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Path: "/sitecore/content/Eurolife/Home/exipiretisi/diadikasia-paraponon/page-for-text"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191012T123943Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

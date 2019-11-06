@@ -1,0 +1,35 @@
+﻿---
+ID: "e85c51ab-ee63-402b-96b6-56620faab48b"
+Parent: "b25aab12-94dd-4340-9b7c-4f5dd6beff24"
+Template: "0603f166-35b8-469f-8123-e8d87bedc171"
+Path: "/sitecore/media library/Feature/Media/PDFs/AEGA_Oikonomika-stoixeia/Sinoptika-oikomika-sotixiea/EFG Eurolife GENERAL 2009_Synoptiko"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/E85C51ABEE63402B96B656620FAAB48B.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "a69f7667-6216-4691-92ec-9c93a09be7fe"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 175063
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: application/pdf
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: pdf
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191004T132905Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

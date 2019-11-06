@@ -1,0 +1,27 @@
+﻿---
+ID: "d09f8ab0-d345-4137-9e54-866d2333f6fc"
+Parent: "f857984f-7557-4ccb-8e79-2926d9392641"
+Template: "53c26f16-7773-448b-b668-b1c6aa3ae091"
+Path: /sitecore/content/Eurolife/Home/Proionta/Individuals/Residence/_Local/Property Coverages
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14cae3cd-f0b5-4ed4-99d4-d46cf790d2c6"
+      Hint: CoveragesTitle
+      Value: Τι καλύπτουν τα νοσοκομειακά προγράμματα υγείας
+    - ID: "208a8c4c-9ca3-4d74-841e-e62cb92a9879"
+      Hint: ItNotCovers
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T111615Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "ebc5143c-f5a2-40fc-8b58-f1c0f60671ee"
+      Hint: ItCovers
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.

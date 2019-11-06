@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
       Hint: TeaserSummary
-      Value: 
+      Value: &Epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&iota;&sigma;&iota;ό&delta;&omicron;&xi;&omicron;&iota; &gamma;&iota;&alpha; ό&lambda;&alpha; &alpha;&upsilon;&tau;ά &pi;&omicron;&upsilon; &mu;&pi;&omicron;&rho;&epsilon;ί&tau;&epsilon; &nu;&alpha; &kappa;&alpha;&tau;&alpha;&phi;έ&rho;&epsilon;&tau;&epsilon;
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
       Value: Υποστηρίζουμε εσάς που θέλετε να διεκδικείτε περισσότερα, κάθε ημέρα
@@ -25,4 +25,4 @@ Languages:
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediapath="" alt="trees" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{08F07E43-044C-404B-A6E3-F0EBA0E36429}" />
+        <image mediaid="{3DDC9FF6-6D88-41EB-BD0E-78B09BC164B5}" />

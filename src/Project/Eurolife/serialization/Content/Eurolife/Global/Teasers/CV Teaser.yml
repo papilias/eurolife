@@ -25,8 +25,8 @@ Languages:
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
       Value: |
-        <link text="ΣΥΝΔΕΣΗ ΣΤΟ EUROLIFE CONNECT" linktype="external" url="https://github.com" anchor="" title="" class="" querystring="" target="" id="" />
+        <link linktype="external" text="ΣΤΕΙΛΕ ΒΙΟΓΡΑΦΙΚΟ" url="https://github.com" anchor="" target="" />
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediapath="" alt="service-demo" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D80D0BC5-F015-4C31-95D0-1FD7E3DCC565}" ></image>
+        <image mediapath="" alt="service-demo" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8D2FB8A9-A455-424E-A208-06B460AAD0B5}"></image>

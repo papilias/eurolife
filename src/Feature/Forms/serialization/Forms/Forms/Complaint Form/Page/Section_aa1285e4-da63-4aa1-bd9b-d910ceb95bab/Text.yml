@@ -23,8 +23,22 @@ SharedFields:
   Value: 0
 - ID: "c6caa979-c3ac-4ffc-861e-2961f5fc3c48"
   Hint: Html Tag
-  Value: p
+  Value: h2
 Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191021T125704Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "9666782b-21bb-40ce-b38f-8f6c53fa5070"
+      Hint: Text
+      Value: Στοιχεία Επικοινωνίας
 - Language: en
   Versions:
   - Version: 1

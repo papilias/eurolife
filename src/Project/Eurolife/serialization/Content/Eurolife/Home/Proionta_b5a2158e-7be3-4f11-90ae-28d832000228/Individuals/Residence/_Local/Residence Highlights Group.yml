@@ -1,0 +1,21 @@
+﻿---
+ID: "417c76be-7c80-4cce-bd03-a437d583f42b"
+Parent: "f857984f-7557-4ccb-8e79-2926d9392641"
+Template: "7753c4b8-ffb7-4ef8-8f62-85a28ae89e2c"
+Path: /sitecore/content/Eurolife/Home/Proionta/Individuals/Residence/_Local/Residence Highlights Group
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d27e9b7-91d4-4a39-adcd-f103cb5ebede"
+      Hint: Highlights
+      Type: TreelistEx
+      Value: |
+        {F0A10304-8681-4AA1-B35D-9E3EF6B2ED53}
+        {D6680C31-14FC-4432-9FF2-6FB874947C7E}
+        {CDAB3895-732D-46B8-A689-B8BF45EC6A6D}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190605T105632Z

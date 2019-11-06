@@ -11,22 +11,11 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191018T113757Z
+      Value: 20191016T101911Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\admin
-    - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
-      Hint: Link
-      Value: |
-        <link linktype="internal" />
-    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
-      Hint: ShowInNavigation
-      Type: Checkbox
-      Value: 1
-    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
-      Hint: NavigationTitle
-      Value: branch network
+        sitecore\Admin
 - Language: en
   Versions:
   - Version: 1

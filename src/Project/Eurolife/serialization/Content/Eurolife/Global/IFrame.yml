@@ -4,6 +4,10 @@ Parent: "1ad270cf-7ede-46b5-b9ab-3ab4d043f299"
 Template: "a817bd1a-b1b4-4652-9eb0-f5f6eb47082a"
 Path: /sitecore/content/Eurolife/Global/IFrame
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
 Languages:
 - Language: "el-GR"
   Versions:

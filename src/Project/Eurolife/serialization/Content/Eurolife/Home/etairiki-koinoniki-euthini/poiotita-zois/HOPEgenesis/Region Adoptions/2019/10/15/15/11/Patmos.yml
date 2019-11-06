@@ -1,0 +1,61 @@
+﻿---
+ID: "25854686-ebbb-416b-8bd6-4ea32c2e71b7"
+Parent: "d7f23352-72c2-4f79-9a24-9a51cfaf46f3"
+Template: "2a8d0010-55dc-4af8-9ecb-e590d157d546"
+Path: "/sitecore/content/Eurolife/Home/etairiki-koinoniki-euthini/poiotita-zois/HOPEgenesis/Region Adoptions/2019/10/15/15/11/Patmos"
+DB: master
+SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
+      Hint: NewsDesktopImage
+      Value: |
+        <image mediaid="{8D4FF1C4-77C6-42C4-9B3B-AA34EF7B7DE2}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191015T151126Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: Πάτμος
+    - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
+      Hint: NewsBody
+      Value: |
+        <strong> </strong>
+        <p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left;"><span style="color: black;">&Pi;&rho;ώ&tau;&omicron;&sigmaf; &kappa;&omicron;&iota;&nu;ό&sigmaf; &mu;&alpha;&sigmaf; &pi;&rho;&omicron;&omicron;&rho;&iota;&sigma;&mu;ό&sigmaf; &epsilon;ί&nu;&alpha;&iota; &eta; &Pi;ά&tau;&mu;&omicron;&sigmaf;. &Sigma;&tau;&eta;&rho;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &tau;&iota;&sigmaf; &gamma;&upsilon;&nu;&alpha;ί&kappa;&epsilon;&sigmaf; &tau;&omicron;&upsilon; &nu;&eta;&sigma;&iota;&omicron;ύ &kappa;&alpha;&iota; &mu;&alpha;&zeta;ί &mu;&epsilon; &tau;&eta; </span><span style="color: black;">HOPEgenesis </span><span style="color: black;">&tau;&iota;&sigmaf; &phi;έ&rho;&nu;&omicron;&upsilon;&mu;&epsilon; &pi;&iota;&omicron; &kappa;&omicron;&nu;&tau;ά &sigma;&tau;&omicron; &nu;&alpha; &phi;&tau;&iota;ά&xi;&omicron;&upsilon;&nu; &tau;&eta; &delta;&iota;&kappa;ή &tau;&omicron;&upsilon;&sigmaf; &omicron;&iota;&kappa;&omicron;&gamma;έ&nu;&epsilon;&iota;&alpha;.</span></p>
+    - ID: "554286b4-e1f0-49d5-a706-9739f30830bf"
+      Hint: NewsSummary
+      Value: |
+        Πρώτος κοινός μας προορισμός είναι η Πάτμος. Στηρίζουμε τις γυναίκες του νησιού και μαζί με τη HOPEgenesis τις φέρνουμε πιο κοντά στο να φτιάξουν τη δική τους οικογένεια.
+        
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "cc55c7f7-8274-465b-8a77-d65b2153bb00"
+      Hint: NewsMobileImage
+      Value: |
+        <image mediaid="{CF842D0B-DEB8-4AFB-A98D-74CD5BCE9F66}" />
+    - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
+      Hint: NewsTitle
+      Value: Πάτμος
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "f426dcd4-a506-4a26-a7c1-e77ae6e22a1a"
+      Hint: NewsDate
+      Value: 20190703T151100Z
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Πάτμος

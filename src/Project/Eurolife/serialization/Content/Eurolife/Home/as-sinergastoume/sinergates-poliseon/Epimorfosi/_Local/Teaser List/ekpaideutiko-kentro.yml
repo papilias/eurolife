@@ -1,0 +1,37 @@
+﻿---
+ID: "b54cb846-d6e7-4312-9a0f-413abad7d541"
+Parent: "aaa2763e-3f65-4b26-bd0b-a2df4cf0d7df"
+Template: "2c7f1576-9844-4119-8f1e-a4e70c4791b9"
+Path: "/sitecore/content/Eurolife/Home/as-sinergastoume/sinergates-poliseon/Epimorfosi/_Local/Teaser List/ekpaideutiko-kentro"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
+      Hint: TeaserSummary
+      Value: |
+        <strong id="docs-internal-guid-19077a63-7fff-f838-321c-d6c7da7d4871"></strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; font-size: 12px; color: #000000;">&Tau;&omicron; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ό &Kappa;έ&nu;&tau;&rho;&omicron; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;ί &alpha;&nu;&alpha;&pi;ό&sigma;&pi;&alpha;&sigma;&tau;&omicron; &tau;&mu;ή&mu;&alpha; &tau;&eta;&sigmaf; &Gamma;&epsilon;&nu;&iota;&kappa;ή&sigmaf; &Delta;&iota;&epsilon;ύ&theta;&upsilon;&nu;&sigma;&eta;&sigmaf; &Pi;&omega;&lambda;ή&sigma;&epsilon;&omega;&nu; &amp; &Epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &pi;&alpha;&rho;έ&chi;&epsilon;&iota; &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;&omega;&mu;έ&nu;&eta; &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta; &sigma;&epsilon; ό&lambda;&alpha; &tau;&alpha; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&zeta;ό&mu;&epsilon;&nu;&alpha; &delta;ί&kappa;&tau;&upsilon;&alpha; &pi;&omega;&lambda;ή&sigma;&epsilon;&omega;&nu; &tau;&eta;&sigmaf; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;ί&alpha;&sigmaf;. &Eta;&mu;&epsilon;&rho;ί&delta;&epsilon;&sigmaf;, &sigma;&epsilon;&mu;&iota;&nu;ά&rho;&iota;&alpha; &kappa;&alpha;&iota; &pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha; &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&omicron;&pi;&omicron;&iota;&omicron;ύ&nu;&tau;&alpha;&iota; &sigma;&tau;&omicron; &Kappa;έ&nu;&tau;&rho;&omicron; &mu;&alpha;&sigmaf;, ό&pi;&omicron;&upsilon; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&nu;&tau;&alpha;&iota; &tau;&epsilon;&chi;&nu;&iota;&kappa;έ&sigmaf; &gamma;&nu;ώ&sigma;&epsilon;&iota;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ώ&nu; &kappa;&alpha;&iota; &chi;&rho;&eta;&mu;&alpha;&tau;&omicron;&omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;&iota;&kappa;ώ&nu; &pi;&rho;&omicron;ϊό&nu;&tau;&omega;&nu;, &gamma;&nu;ώ&sigma;&epsilon;&iota;&sigmaf; &gamma;&iota;&alpha; &mu;&epsilon;&theta;ό&delta;&omicron;&upsilon;&sigmaf; &pi;&omega;&lambda;ή&sigma;&epsilon;&omega;&nu;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &epsilon;&nu;&eta;&mu;έ&rho;&omega;&sigma;&eta; &sigma;&chi;&epsilon;&tau;&iota;&kappa;ά &mu;&epsilon; &theta;έ&mu;&alpha;&tau;&alpha; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;ή&sigmaf; &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta;&sigmaf;.</span></p>
+    - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
+      Hint: TeaserTitle
+      Value: Πιστοποιημένο Εκπαιδευτικό Κέντρο
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T051501Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
+      Hint: TeaserCTA
+      Value: 
+    - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
+      Hint: TeaserImage
+      Value: |
+        <image mediaid="{D9327403-6180-49E9-A8BF-2A63C4085583}" ></image>

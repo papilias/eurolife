@@ -1,0 +1,31 @@
+﻿---
+ID: "575a5a43-6e8c-4bb6-bd6c-6320e81683c4"
+Parent: "b9a4181a-38c1-49db-af4b-24321176afe7"
+Template: "f1e8aa8c-0acb-4186-b3fb-448897ca0831"
+Path: /sitecore/content/Eurolife/Home/Proionta/Individuals/Vechile/_Local/Vehicle Panels/Bikes/Bikes Panel
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190606T083047Z
+    - ID: "3c70dc86-2eaa-46eb-ac08-077bdda5a247"
+      Hint: PanelTitle
+      Value: Bikes Panel
+    - ID: "3eedcf8a-848c-4beb-8513-b0577ee4acfe"
+      Hint: PanelItems
+      Type: TreelistEx
+      Value: |
+        {03B37F04-C7E7-4FF4-A25F-364114B28081}
+        {63B792E9-16BC-4CC4-BD81-5015CA4B8236}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6b0a5c41-7ad3-4548-96a9-b5086c2f0969"
+      Hint: PanelCateogies
+      Type: TreelistEx
+      Value: "{A233EFC5-5575-4C03-8881-083837440CD5}"

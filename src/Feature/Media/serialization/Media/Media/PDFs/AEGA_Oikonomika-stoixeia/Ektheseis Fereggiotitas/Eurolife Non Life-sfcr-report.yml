@@ -1,0 +1,35 @@
+﻿---
+ID: "8423c35d-dc23-4c59-b5e2-8960b1ebc983"
+Parent: "fdc2e590-e40b-49e9-a691-0d314fc7f9d7"
+Template: "0603f166-35b8-469f-8123-e8d87bedc171"
+Path: "/sitecore/media library/Feature/Media/PDFs/AEGA_Oikonomika-stoixeia/Ektheseis Fereggiotitas/Eurolife Non Life-sfcr-report"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/8423C35DDC234C59B5E28960B1EBC983.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "7901aeb1-6955-48a8-9a6d-83a9fec0d6d8"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1834015
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: application/pdf
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: pdf
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191004T132339Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

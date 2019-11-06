@@ -1,0 +1,52 @@
+﻿---
+ID: "8fb47e89-9c8a-4aa3-8c3f-1271c6ffdb78"
+Parent: "9f486afa-7f59-4d25-9456-3f88ecfee18e"
+Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Path: "/sitecore/content/Eurolife/Home/exipiretisi/Email-template"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{911E608F-9A2D-4946-99C6-C0C88BCDB6F0}">
+              <p:d />
+            </r>
+            <r
+              uid="{716B39C6-C4F4-4EFC-87A5-0521DBABC367}">
+              <p:d />
+            </r>
+            <r
+              uid="{7EC18256-AFCB-4E92-BE82-AA9C5CBD5159}">
+              <p:d />
+            </r>
+            <r
+              uid="{38F9E908-43B0-496F-A297-C6604E4B07A4}">
+              <p:d />
+            </r>
+            <r
+              uid="{88B91DF2-05C4-4CE5-A2AF-B1506006B971}">
+              <p:d />
+            </r>
+            <r
+              uid="{27A0739B-9BC8-410D-B804-5FF63392E63F}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191025T124712Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

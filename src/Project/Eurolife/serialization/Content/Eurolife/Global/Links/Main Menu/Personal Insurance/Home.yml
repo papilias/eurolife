@@ -23,7 +23,7 @@ Languages:
     - ID: "48dd8f9d-3a6e-46de-b185-4b1b53bff3fd"
       Hint: Icon
       Value: |
-        <image mediapath="/Feature/Navigation/car-with-bg" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Feature/Navigation/car-with-bg" mediaid="{E0235612-4B7F-4DFD-9C36-4C0DEB144E59}" />
+        <image mediapath="/Feature/Navigation/car-with-bg" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Feature/Navigation/car-with-bg" mediaid="{30B6B90F-14AC-470B-A3E6-B59CB990BC21}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -31,14 +31,14 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{5F1D3D87-C473-4CF0-86D1-1093CC0BC48A}" />
+        <link id="{58E9AE0F-8D5C-4BFA-AF3F-B534D837F51E}" querystring="" target="" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/katoikia" title="" class="" linktype="internal" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Σπίτι
+      Value: Κατοικία
 - Language: en
   Versions:
   - Version: 1
@@ -61,7 +61,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{5F1D3D87-C473-4CF0-86D1-1093CC0BC48A}" />
+        <link id="{5F1D3D87-C473-4CF0-86D1-1093CC0BC48A}" querystring="" linktype="internal" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/Life" title="" class="" target="" />
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Σπίτι

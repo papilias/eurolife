@@ -1,0 +1,35 @@
+﻿---
+ID: "93ecde5c-7cda-453b-a9ab-4c302670163f"
+Parent: "384f10a6-de69-49c4-bf5c-fbb435173c87"
+Template: "0603f166-35b8-469f-8123-e8d87bedc171"
+Path: "/sitecore/media library/Feature/Media/PDFs/AEAZ_Oikonomika_stoixeia/ektheseis-esoterikon-metavliton/examinaia_ekthesi_esoterikou_kefalaiou122017"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/93ECDE5C7CDA453BA9AB4C302670163F.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "8fb24207-5351-4c8a-93bc-fa2c794bf627"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 529518
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: application/pdf
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: pdf
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190929T192151Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

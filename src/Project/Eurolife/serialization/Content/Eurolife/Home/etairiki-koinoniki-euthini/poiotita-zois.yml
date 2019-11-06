@@ -1,0 +1,156 @@
+﻿---
+ID: "98d0c2f9-5683-4d5e-bf97-40ee0bb990ed"
+Parent: "a5f4940a-1774-4a2d-b5c4-07c728cdf01a"
+Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Path: "/sitecore/content/Eurolife/Home/etairiki-koinoniki-euthini/poiotita-zois"
+DB: master
+SharedFields:
+- ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
+  Hint: IncludeInSearchResults
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{A06E4ADE-113C-403B-8D95-93E4957FB746}"
+              p:before="*"
+              s:ds="{C8C87C66-93CE-48BF-87CB-3DE2D9872439}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment&amp;Background=%7BF53D7E33-D5A7-4BD4-AFE9-3DB28EDAA7EB%7D&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-3-{6E4948B2-7E87-42C5-8B4B-EF588D16FDCC}-0" />
+            <r
+              uid="{98E8D736-74E9-4E3F-BA82-4673F32F923E}"
+              p:after="r[@uid='{A06E4ADE-113C-403B-8D95-93E4957FB746}']"
+              s:ds="{ECF7A6C4-B180-4DF6-9EDC-8A7CF49E4CB2}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-2-{6E4948B2-7E87-42C5-8B4B-EF588D16FDCC}-0" />
+            <r
+              uid="{3744EC6A-EA1D-41A6-871A-062EC60933CB}"
+              p:after="r[@uid='{98E8D736-74E9-4E3F-BA82-4673F32F923E}']"
+              s:ds="{85363511-40FE-4AB1-B94C-42FCA8256431}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-1-{6E4948B2-7E87-42C5-8B4B-EF588D16FDCC}-0" />
+            <r
+              uid="{38F9E908-43B0-496F-A297-C6604E4B07A4}">
+              <p:d />
+            </r>
+            <r
+              uid="{534D5EB5-45BE-4428-9747-75977ED522AA}"
+              p:after="r[@uid='{7EC18256-AFCB-4E92-BE82-AA9C5CBD5159}']"
+              s:id="{34504938-755D-431A-BB30-FD36F57B6595}"
+              s:ph="page-layout" />
+            <r
+              uid="{6E4948B2-7E87-42C5-8B4B-EF588D16FDCC}"
+              p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
+              s:ds="{423919D4-CF44-47F5-BCEE-5D963A204A84}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:ph="page-layout" />
+            <r
+              uid="{E0C835DE-EB64-4C54-B2F3-6E5935DDE69D}"
+              p:after="r[@uid='{6E4948B2-7E87-42C5-8B4B-EF588D16FDCC}']"
+              s:ds="{AE1FA6FB-D110-4853-A99E-F9399A8EE5F2}"
+              s:id="{0374A95D-C053-4EC9-BC53-DE0E5725AFAB}"
+              s:ph="page-layout" />
+            <r
+              uid="{1C53FFF0-606F-4465-8FEF-DE48D1EA9A5C}"
+              p:after="r[@uid='{E0C835DE-EB64-4C54-B2F3-6E5935DDE69D}']"
+              s:ds="{98D0C2F9-5683-4D5E-BF97-40EE0BB990ED}"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:ph="page-layout" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190806T111212Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: Ποιότητα Ζωής
+    - ID: "3b4322c4-9d93-498d-85cf-c29921147099"
+      Hint: ShowChildren
+      Type: Checkbox
+      Value: 1
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Ποιότητα Ζωής
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{CF846E39-6348-4D3E-88CF-AAB00A660CD4}"
+              p:before="*"
+              s:ds="{85363511-40FE-4AB1-B94C-42FCA8256431}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-1-{52BCE638-DAF5-4A7D-A1A8-1B95AC2B332D}-0" />
+            <r
+              uid="{3EB7B458-6C22-41A9-A846-CEEF61C2AF61}"
+              p:after="r[@uid='{88B91DF2-05C4-4CE5-A2AF-B1506006B971}']"
+              s:id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
+              s:ph="page-layout" />
+            <r
+              uid="{52BCE638-DAF5-4A7D-A1A8-1B95AC2B332D}"
+              p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
+              s:ds="{423919D4-CF44-47F5-BCEE-5D963A204A84}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:ph="page-layout" />
+            <r
+              uid="{3FFE80E4-04EE-486A-A656-0961E40367FB}"
+              p:after="*[1=2]"
+              s:ds="{98D0C2F9-5683-4D5E-BF97-40EE0BB990ED}"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:par=""
+              s:ph="page-layout" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190607T092833Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: Ποιότητα ζωής
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Ποιότητα ζωής

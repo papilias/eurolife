@@ -1,0 +1,58 @@
+﻿---
+ID: "f6cc459c-07e0-469f-b11b-205d269b1f38"
+Parent: "0003f06d-ca88-49bf-bedd-c1d92b20e46f"
+Template: "2c7f1576-9844-4119-8f1e-a4e70c4791b9"
+Path: "/sitecore/content/Eurolife/Home/as-sinergastoume/Dioikitika-stelexi/Praktiki-askisi/_Local/SEND-CV2"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
+      Hint: TeaserSummary
+      Value: |
+        <p>&Epsilon;&pi;ί&lambda;&epsilon;&xi;&epsilon; &tau;&eta; &theta;έ&sigma;&eta; &pi;&omicron;&upsilon; &sigma;&epsilon; &epsilon;&nu;&delta;&iota;&alpha;&phi;έ&rho;&epsilon;&iota; &gamma;&iota;&alpha; &tau;&eta;&nu; &pi;&rho;&alpha;&kappa;&tau;&iota;&kappa;ή &sigma;&omicron;&upsilon; ά&sigma;&kappa;&eta;&sigma;&eta; &kappa;&alpha;&iota; &sigma;&upsilon;&mu;&pi;&lambda;ή&rho;&omega;&sigma;&epsilon; &tau;&alpha; &sigma;&tau;&omicron;&iota;&chi;&epsilon;ί&alpha; &sigma;&omicron;&upsilon; &sigma;&tau;&iota;&sigmaf; &phi;ό&rho;&mu;&epsilon;&sigmaf; &pi;&omicron;&upsilon; &alpha;&kappa;&omicron;&lambda;&omicron;&upsilon;&theta;&omicron;ύ&nu;. &Epsilon;ά&nu; &delta;&epsilon;&nu; &upsilon;&pi;ά&rho;&chi;&epsilon;&iota; &delta;&iota;&alpha;&theta;έ&sigma;&iota;&mu;&eta; &theta;έ&sigma;&eta; &pi;&omicron;&upsilon; &nu;&alpha; &alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;ί&nu;&epsilon;&tau;&alpha;&iota; &sigma;&tau;&eta;&nu; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή &sigma;&omicron;&upsilon; &kappa;&alpha;&tau;&epsilon;ύ&theta;&upsilon;&nu;&sigma;&eta;, &mu;&pi;&omicron;&rho;&epsilon;ί&sigmaf; &nu;&alpha; &mu;&alpha;&sigmaf; &sigma;&tau;&epsilon;ί&lambda;&epsilon;&iota;&sigmaf; &tau;&omicron; &beta;&iota;&omicron;&gamma;&rho;&alpha;&phi;&iota;&kappa;ό &sigma;&omicron;&upsilon; ό&pi;&omicron;&iota;&alpha; &sigma;&tau;&iota;&gamma;&mu;ή &epsilon;&pi;&iota;&theta;&upsilon;&mu;&epsilon;ί&sigmaf;.<br class="t-last-br" />
+        </p>
+    - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
+      Hint: TeaserTitle
+      Value: Διαθέσιμες θέσεις
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190923T131444Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
+      Hint: TeaserCTA
+      Value: |
+        <link text="ΔΕΙΤΕ ΤΙΣ ΘΕΣΕΙΣ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{834816B5-4D7C-4417-ACAF-65E46A21CD32}" />
+    - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
+      Hint: TeaserImage
+      Value: |
+        <image mediaid="{710E8A88-6AF2-40B6-A8A5-C743D36E99B2}" />
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
+      Hint: TeaserSummary
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
+      Hint: TeaserTitle
+      Value: Η ιστορία μας
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190618T084740Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
+      Hint: TeaserCTA
+      Value: 
+    - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
+      Hint: TeaserImage
+      Value: |
+        <image mediapath="" alt="300" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{E7088082-A118-422D-86EF-19D553D3D47F}" ></image>

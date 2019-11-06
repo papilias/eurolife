@@ -1,0 +1,35 @@
+﻿---
+ID: "35db3aa7-3935-4737-9c35-7dd150a9432b"
+Parent: "245ba7fc-ca11-4fd1-b901-9f67430f3399"
+Template: "0603f166-35b8-469f-8123-e8d87bedc171"
+Path: "/sitecore/media library/Feature/Media/PDFs/oikonomika-stoixeia-omilou/sinoptika oikonomika stoixeia/UROLIFE-Holding-MAKETA-31122018"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/35DB3AA7393547379C357DD150A9432B.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "bae9ae4a-8f9c-40a6-8bc2-1f17ad322b5a"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 347414
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: application/pdf
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: pdf
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191003T201902Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

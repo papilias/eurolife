@@ -14,9 +14,11 @@ Languages:
       Type: TreelistEx
       Value: |
         {E82BA7EC-E280-4C6F-BBD9-8D234078708A}
-        {0A3AB400-BA02-46A5-A9CA-184098E22870}
-        {02A8A63E-34D6-4E0C-A75F-C09064374C68}
         {DB048DBE-760E-4DE7-B2C5-5B6B977129E2}
+        {02A8A63E-34D6-4E0C-A75F-C09064374C68}
+        {0A3AB400-BA02-46A5-A9CA-184098E22870}
+        {EE309253-323E-4C0A-AC4B-5F7F58A16A55}
+        {7F46096F-F80C-466C-A016-50616391FBCE}
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190821T074744Z
@@ -29,4 +31,7 @@ Languages:
         sitecore\Admin
     - ID: "7cd45d99-885c-4ef4-ae14-2ab581ae9c74"
       Hint: HighlightSummary
-      Value: Υποστηρίζουμε εσάς που θέλετε να διεκδικείτε περισσότερα, κάθε ημέρα
+      Value: |
+        Υποστηρίζουμε εσάς 
+        που θέλετε να διεκδικείτε περισσότερα, κάθε ημέρα
+        

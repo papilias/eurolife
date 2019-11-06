@@ -1,0 +1,35 @@
+﻿---
+ID: "e0fba750-52a0-4c77-a859-45237a49c521"
+Parent: "384f10a6-de69-49c4-bf5c-fbb435173c87"
+Template: "0603f166-35b8-469f-8123-e8d87bedc171"
+Path: "/sitecore/media library/Feature/Media/PDFs/AEAZ_Oikonomika_stoixeia/ektheseis-esoterikon-metavliton/Eurolife ERB Life Insurance Etisia ekthesi esoterikon kefalaion 2017"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/E0FBA75052A04C77A85945237A49C521.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "f266920b-fd03-41f4-b9f4-efd8dcc8c09c"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 596979
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: application/pdf
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: pdf
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190929T192150Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

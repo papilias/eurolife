@@ -18,11 +18,16 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190821T084023Z
+    - ID: "2b28dcca-4258-4f5d-a795-b475333909cb"
+      Hint: Active
+      Value: 3
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
-      Value: |
-        <link text="ΠΕΡΙΣΣΟΤΕΡΑ ΓΙΑ ΕΣΑΣ" linktype="external" url="https://github.com" anchor="" target="" />
+      Value: 
+    - ID: "c1b4b643-02c7-4362-b316-465478198ff6"
+      Hint: Count
+      Value: 

@@ -4,6 +4,10 @@ Parent: "1ad270cf-7ede-46b5-b9ab-3ab4d043f299"
 Template: "206cfb90-88ac-4c41-b8b6-96ef47fc22f1"
 Path: /sitecore/content/Eurolife/Global/Identity
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
 Languages:
 - Language: en
   Versions:

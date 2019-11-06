@@ -1,0 +1,232 @@
+﻿---
+ID: "a5f4940a-1774-4a2d-b5c4-07c728cdf01a"
+Parent: "f2be096d-911f-4409-8a98-9ee16cb8b283"
+Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
+Path: "/sitecore/content/Eurolife/Home/etairiki-koinoniki-euthini"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{860100C1-8993-485C-A1AE-7F298DDF4717}"
+              p:before="*"
+              s:id="{0EDE950C-1012-4AAE-9B9F-79D1F3115D59}"
+              s:ph="page-layout" />
+            <r
+              uid="{03904853-B083-4CFF-8626-59F895531272}"
+              p:after="r[@uid='{860100C1-8993-485C-A1AE-7F298DDF4717}']"
+              s:ds="{515C5463-FA37-48B8-9AF9-BFBE4A9C1A6C}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B84C9D386-DCAC-4792-816F-BE3A92FC6203%7D"
+              s:ph="/page-layout/teaser-placeholder-3-{198E03EE-214E-49A9-9912-05E882C8D412}-0" />
+            <r
+              uid="{4C607AAC-3FEA-4089-9FBC-16EDA9E563E6}"
+              p:after="r[@uid='{03904853-B083-4CFF-8626-59F895531272}']"
+              s:ds="{0B43B7D3-1981-4E23-962D-7BA84F44D839}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-2-{198E03EE-214E-49A9-9912-05E882C8D412}-0" />
+            <r
+              uid="{04A26A11-170C-4F65-A0C0-8FFBD967932F}"
+              p:after="r[@uid='{4C607AAC-3FEA-4089-9FBC-16EDA9E563E6}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B1C81D96D-FFF9-4983-BB2F-B1E185B6E5AC%7D"
+              s:ph="/page-layout/teaser-placeholder-1-{198E03EE-214E-49A9-9912-05E882C8D412}-0" />
+            <r
+              uid="{B2A66F0F-8943-4145-BEEF-DBED041EEBDF}"
+              p:after="r[@uid='{04A26A11-170C-4F65-A0C0-8FFBD967932F}']"
+              s:ds="{515C5463-FA37-48B8-9AF9-BFBE4A9C1A6C}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Alignment&amp;Background=%7B3ABEF2ED-9AC2-40E8-83C3-5F94B5604F31%7D&amp;ContainerIsNotFullWidth"
+              s:ph="/page-layout/teaser-placeholder-3-{EF162C50-9621-4471-90BF-FF650ACB40AA}-0" />
+            <r
+              uid="{46340518-7B67-4A1E-9555-B9AAD792A57B}"
+              p:after="r[@uid='{B2A66F0F-8943-4145-BEEF-DBED041EEBDF}']"
+              s:ds="{0B43B7D3-1981-4E23-962D-7BA84F44D839}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Alignment&amp;Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;ContainerIsNotFullWidth"
+              s:ph="/page-layout/teaser-placeholder-2-{EF162C50-9621-4471-90BF-FF650ACB40AA}-0" />
+            <r
+              uid="{331C9ABF-B689-4918-8139-5C90D7A1AD88}"
+              p:after="r[@uid='{46340518-7B67-4A1E-9555-B9AAD792A57B}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Alignment&amp;Background=%7B6ADEB5B7-13E8-45FE-A2B3-75C4910FA09F%7D&amp;ContainerIsNotFullWidth"
+              s:ph="/page-layout/teaser-placeholder-1-{EF162C50-9621-4471-90BF-FF650ACB40AA}-0" />
+            <r
+              uid="{A99977A1-68EB-4317-B0EC-C1651B2EC756}"
+              p:after="r[@uid='{331C9ABF-B689-4918-8139-5C90D7A1AD88}']"
+              s:ds="{515C5463-FA37-48B8-9AF9-BFBE4A9C1A6C}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-3-{93FF38E8-3769-4B6E-BCDE-6656CC8CEAE1}-0" />
+            <r
+              uid="{47B8BA01-8FBC-4A95-9A98-50CD3609DF18}"
+              p:after="r[@uid='{A99977A1-68EB-4317-B0EC-C1651B2EC756}']"
+              s:ds="{0B43B7D3-1981-4E23-962D-7BA84F44D839}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-2-{93FF38E8-3769-4B6E-BCDE-6656CC8CEAE1}-0" />
+            <r
+              uid="{F7DD35D5-A1B5-45F3-B1D9-0D4F525DD0F7}"
+              p:after="r[@uid='{47B8BA01-8FBC-4A95-9A98-50CD3609DF18}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:ph="/page-layout/teaser-placeholder-1-{93FF38E8-3769-4B6E-BCDE-6656CC8CEAE1}-0" />
+            <r
+              uid="{035DB841-B7D3-4FA8-B15F-5D55F3D618D8}"
+              p:after="r[@uid='{F7DD35D5-A1B5-45F3-B1D9-0D4F525DD0F7}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background&amp;ContainerIsNotFullWidth"
+              s:ph="/page-layout/teaser-placeholder-1-{1CC22588-F223-45DC-BBA7-561F11675FFA}-0" />
+            <r
+              uid="{87235964-4703-4C6F-8CD8-E3B4ED6FA48D}">
+              <p:d />
+            </r>
+            <r
+              uid="{198E03EE-214E-49A9-9912-05E882C8D412}"
+              p:after="r[@uid='{9015BC53-2AE3-455A-A1DD-879A04CC5E07}']"
+              s:ds="{52FAEAE8-A7A0-44BE-BA58-88D10642CD2F}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:ph="page-layout" />
+            <r
+              uid="{402F570A-6440-4F0D-8C2E-094BACABE70F}"
+              p:after="r[@uid='{198E03EE-214E-49A9-9912-05E882C8D412}']"
+              s:id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
+              s:ph="page-layout" />
+            <r
+              uid="{D2926F17-C0DE-4334-BF24-91C37CC66178}"
+              p:after="r[@uid='{402F570A-6440-4F0D-8C2E-094BACABE70F}']"
+              s:ds="{9E84C2AD-83B0-430D-B962-78F4E33F2017}"
+              s:id="{0374A95D-C053-4EC9-BC53-DE0E5725AFAB}"
+              s:ph="page-layout" />
+            <r
+              uid="{C782D467-A8E2-44EB-937A-84B283C0E106}"
+              p:after="r[@uid='{D2926F17-C0DE-4334-BF24-91C37CC66178}']"
+              s:ds="{A5F4940A-1774-4A2D-B5C4-07C728CDF01A}"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:ph="page-layout" />
+            <r
+              uid="{AE3F09D8-7CE5-4CA6-8FD0-F2F542775277}"
+              p:after="r[@uid='{C782D467-A8E2-44EB-937A-84B283C0E106}']"
+              s:ds="{A5F4940A-1774-4A2D-B5C4-07C728CDF01A}"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:par=""
+              s:ph="Πρόσφατες δραστηριότητες Εταιρικής Υπευθυνότητας" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190806T111149Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: +πράττουμε
+    - ID: "3b4322c4-9d93-498d-85cf-c29921147099"
+      Hint: ShowChildren
+      Type: Checkbox
+      Value: 1
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
+      Hint: ShowInNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Εταιρική κοινωνική Ευθύνη
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{33B2F7DC-BA90-4A18-BDF3-E8175D97D039}"
+              p:before="*"
+              s:ds="{FFE033F9-2D7E-4E55-82D2-B1770B1D9435}"
+              s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
+              s:ph="/page-layout/numbers-teaser-placeholder-5-{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}-0" />
+            <r
+              uid="{73F600F0-AD8C-4DD8-95F9-A5F117B89D35}"
+              p:after="r[@uid='{33B2F7DC-BA90-4A18-BDF3-E8175D97D039}']"
+              s:ds="{12A9B2DD-75B4-442E-8EBA-F8EF0410403F}"
+              s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
+              s:ph="/page-layout/numbers-teaser-placeholder-2-{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}-0" />
+            <r
+              uid="{EBD6A40B-0D73-4EF4-9602-E8D195E6A938}"
+              p:after="r[@uid='{73F600F0-AD8C-4DD8-95F9-A5F117B89D35}']"
+              s:ds="{470E126D-D737-4D64-BCE3-9C35AE6F5666}"
+              s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
+              s:par=""
+              s:ph="/page-layout/numbers-teaser-placeholder-1-{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}-0" />
+            <r
+              uid="{E764DD56-049A-4E35-87E8-DF4AFD9E9ED2}"
+              p:after="r[@uid='{EBD6A40B-0D73-4EF4-9602-E8D195E6A938}']"
+              s:ds="{17930365-41F1-4AC3-B142-D91EAF364000}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-1-{9B1A930E-929F-4532-BCB7-C0BEAE5A0FDA}-0" />
+            <r
+              uid="{9B1A930E-929F-4532-BCB7-C0BEAE5A0FDA}"
+              p:after="r[@uid='{9015BC53-2AE3-455A-A1DD-879A04CC5E07}']"
+              s:ds="{52FAEAE8-A7A0-44BE-BA58-88D10642CD2F}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:par=""
+              s:ph="page-layout" />
+            <r
+              uid="{921AF241-D8F8-42AE-BC70-D3792A3B5D4F}"
+              p:after="r[@uid='{9B1A930E-929F-4532-BCB7-C0BEAE5A0FDA}']"
+              s:ds="{68BB4E38-6009-444B-B3EF-E0E979AF4165}"
+              s:id="{826556BC-A668-46ED-B763-E5D3CAD6F2CD}"
+              s:par=""
+              s:ph="page-layout" />
+            <r
+              uid="{6B6A645F-8400-4DA1-9FD4-EE38FDCEFEB4}"
+              p:after="*[1=2]"
+              s:ds="{A5F4940A-1774-4A2D-B5C4-07C728CDF01A}"
+              s:id="{CFFFE422-9F95-454F-8C3E-9312C505222A}"
+              s:par=""
+              s:ph="page-layout" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190607T073802Z
+    - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
+      Hint: BrowserTitle
+      Value: Corporate Social Responsibility
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
+    - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
+      Hint: NavigationTitle
+      Value: Corporate Social Responsibility

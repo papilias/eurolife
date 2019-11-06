@@ -1,0 +1,35 @@
+﻿---
+ID: "9f4ad4fe-e0d8-4dc7-87bc-497b64836fd0"
+Parent: "3889faff-4ef8-4eff-bac1-3bfab5124fc0"
+Template: "7bb0411f-50cd-4c21-ad8f-1fcde7c3affe"
+Path: "/sitecore/media library/Feature/Media/PDFs/Publicity/2019/PressRelease_EurolifeERB_monodromos-h-synergasia-tou-kratous-me-thn-idiwtikh-asfalish"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/9F4AD4FEE0D84DC787BC497B64836FD0.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "f5c9003e-75c5-45f5-961b-41424e3b824d"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 244650
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: docx
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191010T150245Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

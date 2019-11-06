@@ -1,0 +1,35 @@
+﻿---
+ID: "d8de76bb-e3f9-4395-956f-7f4f775379f5"
+Parent: "10a0f879-e5b1-4541-8df8-ffdebdc4f5d1"
+Template: "0603f166-35b8-469f-8123-e8d87bedc171"
+Path: /sitecore/media library/Feature/Media/PDFs/Products Usefull Docs/spiti/iw8ben
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/D8DE76BBE3F94395956F7F4F775379F5.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "58c9da83-67cc-4b4c-8f3b-f43bf253d566"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 180700
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: application/pdf
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: pdf
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191030T213821Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

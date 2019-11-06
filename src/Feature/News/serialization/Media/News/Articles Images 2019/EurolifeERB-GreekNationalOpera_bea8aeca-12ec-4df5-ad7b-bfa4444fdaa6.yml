@@ -1,0 +1,56 @@
+﻿---
+ID: "bea8aeca-12ec-4df5-ad7b-bfa4444fdaa6"
+Parent: "805eb97b-7506-4145-bdbc-6ba18d74c736"
+Template: "daf085e8-602e-43a6-8299-038ff171349f"
+Path: "/sitecore/media library/Feature/News/Articles Images 2019/EurolifeERB-GreekNationalOperaValeria-Isaeva6"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/BEA8AECA12EC4DF5AD7BBFA4444FDAA6.ashx?h=16&thn=1&w=16"
+- ID: "1a25c485-c7f4-4488-ad5a-b8d72e4a66df"
+  Hint: Model
+  Value: Canon EOS 6D Mark II
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 3700
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "2ee82b12-f9e5-4843-b9c3-cf1d67800408"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1109816
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/jpeg
+- ID: "7798cd59-76dc-4869-8bda-2952a64b8687"
+  Hint: Make
+  Value: Canon
+- ID: "90a6fe48-f3e0-42f3-a18a-edaa7db9ca57"
+  Hint: DateTime
+  Value: "2019:09:23 13:05:06"
+- ID: "b0145335-8735-414b-9169-a1d4e4dc9641"
+  Hint: Software
+  Value: Adobe Photoshop Lightroom 6.14 (Windows)
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: jpg
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 3700 x 2466
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 2466
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191010T115034Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

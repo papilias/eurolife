@@ -1,0 +1,36 @@
+﻿---
+ID: "43bed730-8783-4ad1-9f53-a73750e72dce"
+Parent: "aaa2763e-3f65-4b26-bd0b-a2df4cf0d7df"
+Template: "2c7f1576-9844-4119-8f1e-a4e70c4791b9"
+Path: "/sitecore/content/Eurolife/Home/as-sinergastoume/sinergates-poliseon/Epimorfosi/_Local/Teaser List/anotata-ekpaideutika-idrimata"
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
+      Hint: TeaserSummary
+      Value: |
+        <span id="docs-internal-guid-8c6b1275-7fff-ee68-587b-a33747e1f486" style="background-color: transparent; text-decoration: none; font-size: 12px; color: #000000;">Ό&lambda;&alpha; &alpha;&upsilon;&tau;ά &tau;&alpha; &chi;&rho;ό&nu;&iota;&alpha;, έ&chi;&omicron;&upsilon;&mu;&epsilon; &alpha;&nu;&alpha;&pi;&tau;ύ&xi;&epsilon;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&epsilon; &Alpha;&nu;ώ&tau;&alpha;&tau;&alpha; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ά &iota;&delta;&rho;ύ&mu;&alpha;&tau;&alpha; &kappa;&alpha;&iota; &epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;&omicron;ύ&sigmaf; &phi;&omicron;&rho;&epsilon;ί&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon; &epsilon;&upsilon;&kappa;&alpha;&iota;&rho;ί&epsilon;&sigmaf; &gamma;&iota;&alpha; &Pi;&rho;&alpha;&kappa;&tau;&iota;&kappa;ή Ά&sigma;&kappa;&eta;&sigma;&eta; &sigma;&epsilon; &phi;&omicron;&iota;&tau;&eta;&tau;έ&sigmaf;, &epsilon;&xi;&epsilon;&iota;&delta;&iota;&kappa;&epsilon;&upsilon;&mu;έ&nu;&alpha; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ά &Pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha;, &Alpha;&nu;&omicron;&iota;&chi;&tau;έ&sigmaf; &Eta;&mu;&epsilon;&rho;ί&delta;&epsilon;&sigmaf;, &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;έ&sigmaf; &Delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; Workshops, &Pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha; &Delta;&iota;&omicron;ί&kappa;&eta;&sigma;&eta;&sigmaf; &gamma;&iota;&alpha; &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ά &Sigma;&tau;&epsilon;&lambda;έ&chi;&eta;, &Pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha; &Epsilon;&pi;&alpha;&nu;&alpha;&pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;ί&eta;&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &pi;&omicron;&lambda;&lambda;ά ά&lambda;&lambda;&alpha;. </span>
+    - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
+      Hint: TeaserTitle
+      Value: Συνέργειες με Ανώτατα Εκπαιδευτικά Ιδρύματα και Φορείς
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T051501Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
+      Hint: TeaserCTA
+      Value: 
+    - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
+      Hint: TeaserImage
+      Value: |
+        <image mediaid="{0CC2B097-EE60-48FA-98B3-A7E505B7E20C}" ></image>

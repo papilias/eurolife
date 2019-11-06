@@ -100,7 +100,6 @@
     <Content Include="App_Config\layers.config.xdt" />
     <Content Include="App_Config\Environment\Project\Eurolife.Dev.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
-    <Content Include="App_Data\packages\eurolife.xml" />
     <Content Include="Views\Website\Layouts\MVCOuterLayout.cshtml" />
     <Content Include="Views\Website\Layouts\Layout.cshtml" />
     <None Include="Web.config" />
@@ -130,6 +129,9 @@
       <Project>{19d479ad-ff86-4eda-a045-6d7f080814dc}</Project>
       <Name>Wedia.Foundation.Theming</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\packages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
