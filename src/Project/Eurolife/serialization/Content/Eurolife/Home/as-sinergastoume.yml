@@ -70,6 +70,9 @@ Languages:
               s:ph="page-layout" />
           </d>
         </r>
+    - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
+      Hint: PreTitle
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190723T045447Z
@@ -80,6 +83,20 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 1
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Η επιτυχία μας είναι οι άνθρωποί μας
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediapath="" alt="demo1" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{08214E12-38FE-4893-AEA8-3116359BED2E}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p>
+        Έ&nu;&alpha;&sigmaf; &alpha;&pi;ό &tau;&omicron;&upsilon;&sigmaf; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ό&tau;&epsilon;&rho;&omicron;&upsilon;&sigmaf; &pi;&alpha;&rho;ά&gamma;&omicron;&nu;&tau;&epsilon;&sigmaf; &tau;&eta;&sigmaf; &epsilon;&pi;&iota;&tau;&upsilon;&chi;&eta;&mu;έ&nu;&eta;&sigmaf; &pi;&omicron;&rho;&epsilon;ί&alpha;&sigmaf; &mu;&alpha;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &tau;&omicron; &alpha;&nu;&theta;&rho;ώ&pi;&iota;&nu;&omicron; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;ό &mu;&alpha;&sigmaf;, έ&mu;&mu;&iota;&sigma;&theta;&omicron; &pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;ό &kappa;&alpha;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;ά&tau;&epsilon;&sigmaf;. &Mu;&epsilon; &tau;&iota;&sigmaf; &iota;&kappa;&alpha;&nu;ό&tau;&eta;&tau;&epsilon;&sigmaf;, &tau;&eta;&nu; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;&sigma;&mu;&alpha;&tau;&iota;&kappa;ό&tau;&eta;&tau;&alpha;, &tau;&eta; &sigma;&upsilon;&nu;έ&pi;&epsilon;&iota;&alpha; &kappa;&alpha;&iota; &tau;&eta; &delta;&iota;&alpha;&rho;&kappa;ή &pi;&rho;&omicron;&sigma;&pi;ά&theta;&epsilon;&iota;&alpha; &pi;&omicron;&upsilon; &epsilon;&pi;&iota;&delta;&epsilon;&iota;&kappa;&nu;ύ&omicron;&upsilon;&nu;, &alpha;&nu;&epsilon;&beta;ά&zeta;&omicron;&upsilon;&nu; &tau;&eta;&nu; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;ί&alpha; &mu;&alpha;&sigmaf; &psi;&eta;&lambda;ά &sigma;&tau;&eta;&nu; &epsilon;&kappa;&tau;ί&mu;&eta;&sigma;&eta; &tau;&omega;&nu; &pi;&epsilon;&lambda;&alpha;&tau;ώ&nu; &mu;&alpha;&sigmaf;.
+        </p>
+        <p>&Gamma;&iota;' &alpha;&upsilon;&tau;ό, &alpha;&nu;&alpha;&zeta;&eta;&tau;ά&mu;&epsilon; &pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;ό &kappa;&alpha;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;ά&tau;&epsilon;&sigmaf; &mu;&epsilon; &sigma;ύ&gamma;&chi;&rho;&omicron;&nu;&eta; &tau;&epsilon;&chi;&nu;&omicron;&gamma;&nu;&omega;&sigma;ί&alpha;, &delta;&upsilon;&nu;&alpha;&mu;&iota;&sigma;&mu;ό, &omicron;&mu;&alpha;&delta;&iota;&kappa;ό &pi;&nu;&epsilon;ύ&mu;&alpha;, &delta;έ&sigma;&mu;&epsilon;&upsilon;&sigma;&eta; &sigma;&tau;&eta; &sigma;&upsilon;&nu;&epsilon;&chi;ή &epsilon;&xi;έ&lambda;&iota;&xi;&eta; &kappa;&alpha;&iota; &pi;&rho;&omicron;&sigma;&alpha;&nu;&alpha;&tau;&omicron;&lambda;&iota;&sigma;&mu;ό &sigma;&tau;&omicron;&nu; &pi;&epsilon;&lambda;ά&tau;&eta;.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -88,6 +105,15 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: |
+        Οι ικανότητες, η ομαδικότητα και ο δυναμισμός συνθέτουν  
+        την αποτελεσματικότητα της Eurolife ERB Ασφαλιστικής 
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{0F236D80-8C09-4451-9131-0F65AF573D5F}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
@@ -102,6 +128,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191011T091850Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Career
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -106,6 +106,9 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Χρήσιμα Έντυπα
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Χρήσιμα Έντυπα
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -114,3 +117,8 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: |
+        Σε αυτό το σημείο μπορείτε να ανατρέχετε για να κατεβάσετε έντυπα που ενδεχομένως να χρειαστείτε, καθώς και τις οδηγίες συμπλήρωσής τους.
+                    

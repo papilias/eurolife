@@ -23,6 +23,9 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 0
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Εκπαίδευση
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

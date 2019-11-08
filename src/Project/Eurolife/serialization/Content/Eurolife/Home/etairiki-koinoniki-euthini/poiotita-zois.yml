@@ -73,6 +73,10 @@ Languages:
               s:ph="page-layout" />
           </d>
         </r>
+    - ID: "23ef204d-df36-447d-9e7d-8862c8b6455f"
+      Hint: IconImage
+      Value: |
+        <image mediaid="{E4BD4F77-EA16-4F91-ADE8-5804641C907A}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190806T111212Z
@@ -83,6 +87,19 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 1
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Ποιότητα Ζωής
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{71621C6F-15E6-4419-88CC-014175A5AE42}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p>&Sigma;&tau;&epsilon;&kappa;ό&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&xi;&iota;ό&pi;&iota;&sigma;&tau;&alpha; &delta;ί&pi;&lambda;&alpha; &sigma;&epsilon; &kappa;ά&theta;&epsilon; ά&nu;&theta;&rho;&omega;&pi;&omicron; &pi;&omicron;&upsilon; &sigma;&kappa;έ&phi;&tau;&epsilon;&tau;&alpha;&iota; &tau;&omicron; &mu;έ&lambda;&lambda;&omicron;&nu; &tau;&omicron;&upsilon; &kappa;&alpha;&iota; &theta;έ&lambda;&epsilon;&iota; &nu;&alpha; &kappa;ά&nu;&epsilon;&iota; ό&nu;&epsilon;&iota;&rho;&alpha; &gamma;&iota;&rsquo; &alpha;&upsilon;&tau;ό. &Epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &epsilon;&delta;ώ, &mu;&epsilon; έ&rho;&gamma;&alpha; &kappa;&alpha;&iota; &pi;&rho;ά&xi;&epsilon;&iota;&sigmaf; &pi;&omicron;&upsilon; έ&chi;&omicron;&upsilon;&nu; &sigma;&tau;ό&chi;&omicron; &nu;&alpha; &beta;&epsilon;&lambda;&tau;&iota;ώ&nu;&omicron;&upsilon;&nu; &tau;&eta;&nu; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;ό&tau;&eta;&tau;ά &tau;&omicron;&upsilon;.
+        </p>
+        <p>&Mu;&epsilon; &tau;&eta; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&pi;&omicron;&rho;&omicron;ύ&mu;&epsilon; &nu;&alpha; &kappa;&alpha;&tau;&alpha;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon; &pi;&epsilon;&rho;&iota;&sigma;&sigma;ό&tau;&epsilon;&rho;&alpha;, &gamma;&iota;&rsquo; &alpha;&upsilon;&tau;ό &kappa;&alpha;&iota; &epsilon;&nu;ώ&nu;&omicron;&upsilon;&mu;&epsilon; &tau;&iota;&sigmaf; &delta;&upsilon;&nu;ά&mu;&epsilon;&iota;&sigmaf; &mu;&alpha;&sigmaf; &mu;&epsilon; &omicron;&rho;&gamma;&alpha;&nu;&iota;&sigma;&mu;&omicron;ύ&sigmaf; &pi;&omicron;&upsilon; έ&chi;&omicron;&upsilon;&nu; &sigma;&tau;&omicron;&nu; &pi;&upsilon;&rho;ή&nu;&alpha; &tau;&omega;&nu; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&omicron;&tau;ή&tau;&omega;&nu; &tau;&omicron;&upsilon;&sigmaf; έ&nu;&alpha; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&omicron; &alpha;ύ&rho;&iota;&omicron; &gamma;&iota;&alpha; &kappa;ά&theta;&epsilon; ά&nu;&theta;&rho;&omega;&pi;&omicron;.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -91,6 +108,15 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: |
+        Υποστηρίζουμε την κοινωνία σήμερα, με ουσιαστικές πρωτοβουλίες και πράξεις που αναδεικνύουν την αυτοπεποίθηση κάθε ανθρώπου και τον ενδυναμώνουν να προσπαθεί για ό,τι είναι σημαντικό για τον ίδιο.
+        
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{2361595B-49E2-4D49-AF18-65B274DA334A}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
@@ -143,10 +169,23 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Ποιότητα ζωής
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Ποιότητα ζωής
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Βρισκόμαστε δίπλα τους, σε ό,τι είναι σημαντικό για τους ίδιους και τη ζωή τους. Γι'αυτό και συνεργαζόμαστε με δύο οργανισμούς που έχουν στον πυρήνα των δραστηριοτήτων τους τον άνθρωπο.
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Υποστηρίζουμε την ευημερία των ανθρώπων και θέλουμε να χτίζουμε την αυτοπεποίθησή τους.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" src="" height="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" hspace="" usethumbnail="" showineditor="" width="" alt="carousel_1920x680" vspace="" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

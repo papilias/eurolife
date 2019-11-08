@@ -15,6 +15,10 @@ var path = require("path");
 var rimrafDir = require("rimraf");
 var rimraf = require("gulp-rimraf");
 var xmlpoke = require("xmlpoke");
+//
+var sass = require("gulp-sass");
+var autoprefixer = require("gulp-autoprefixer");
+//var wait = require("gulp-wait");
 
 var config;
 if (fs.existsSync("./gulp-config.js.user")) {
@@ -251,7 +255,7 @@ gulp.task("default", gulp.series(function (callback) {
     "Publish-All-Projects",
     "Apply-Xml-Transform",
     "Publish-Transforms",
-    "Sync-Unicorn"
+    //"Sync-Unicorn"
 ));
 
 
@@ -523,4 +527,22 @@ gulp.task("Package-Generate",
             }
         )
 );
+
+//
+gulp.task('sass', function () {
+    //return gulp.src('styles/scss/style.scss')
+	return gulp.src('src/Project/Common/code/styles/scss/style.scss')
+        // .pipe(wait(400))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('css'))
+});
+
+gulp.task('watch', function () {
+    //gulp.watch('styles/**/**/*.scss', gulp.series('sass'));
+	gulp.watch('src/Project/Common/code/styles/**/**/*.scss', gulp.series('sass'));
+
+
+});
+
 

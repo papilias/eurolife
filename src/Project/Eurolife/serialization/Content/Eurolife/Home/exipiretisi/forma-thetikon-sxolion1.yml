@@ -65,6 +65,9 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Φόρμα Υποβολής Θετικών Σχολίων
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Φόρμα Υποβολής Θετικών Σχολίων
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -73,6 +76,9 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: 
 - Language: en
   Versions:
   - Version: 1
@@ -105,6 +111,9 @@ Languages:
       Value: 20190627T093032Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
+      Value: Φόρμα Υποβολής Παραπόνου
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
       Value: Φόρμα Υποβολής Παραπόνου
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex

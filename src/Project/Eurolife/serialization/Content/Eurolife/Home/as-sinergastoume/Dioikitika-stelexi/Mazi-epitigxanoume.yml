@@ -165,6 +165,21 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 1
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Μαζί Επιτυγχάνουμε
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{2054D94C-D483-4090-83C6-CE9B6490D448}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p><strong>&Delta;ί&nu;&omicron;&upsilon;&mu;&epsilon; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;ά έ&mu;&pi;&nu;&epsilon;&upsilon;&sigma;&eta; &sigma;&tau;&alpha; &sigma;&tau;&epsilon;&lambda;έ&chi;&eta; &mu;&alpha;&sigmaf;.
+        </strong></p>
+        <p>&Omicron; &sigma;&kappa;&omicron;&pi;ό&sigmaf; &nu;&alpha; &epsilon;&nu;&theta;&alpha;&rho;&rho;ύ&nu;&omicron;&upsilon;&mu;&epsilon; &kappa;ά&theta;&epsilon; ά&nu;&theta;&rho;&omega;&pi;&omicron; &nu;&alpha; &zeta;ή&sigma;&epsilon;&iota; &tau;&eta; &zeta;&omega;ή &pi;&omicron;&upsilon; &epsilon;&pi;&iota;&theta;&upsilon;&mu;&epsilon;ί &epsilon;ί&nu;&alpha;&iota; &mu;&epsilon;&gamma;&alpha;&lambda;&epsilon;&iota;ώ&delta;&eta;&sigmaf;, &kappa;&iota; &alpha;&upsilon;&tau;ό &epsilon;ί&nu;&alpha;&iota; &kappa;ά&tau;&iota; &pi;&omicron;&upsilon; &gamma;&nu;&omega;&rho;ί&zeta;&omicron;&upsilon;&mu;&epsilon;.
+        </p>
+        <p>&Gamma;&iota;&rsquo; &alpha;&upsilon;&tau;ό, ό&pi;&omega;&sigmaf; &alpha;&kappa;&omicron;ύ&rho;&alpha;&sigma;&tau;&alpha; &delta;&omicron;&upsilon;&lambda;&epsilon;ύ&omicron;&upsilon;&mu;&epsilon; &gamma;&iota;&alpha; &nu;&alpha; &sigma;&tau;&eta;&rho;ί&xi;&omicron;&upsilon;&mu;&epsilon; &tau;&omicron;&upsilon;&sigmaf; &pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf;, &mu;&epsilon; &tau;&omicron;&nu; ί&delta;&iota;&omicron; &tau;&rho;ό&pi;&omicron; &delta;&omicron;&upsilon;&lambda;&epsilon;ύ&omicron;&upsilon;&mu;&epsilon; &kappa;&alpha;&iota; &gamma;&iota;&alpha; &tau;&omicron;&upsilon;&sigmaf; &alpha;&nu;&theta;&rho;ώ&pi;&omicron;&upsilon;&sigmaf; &mu;&alpha;&sigmaf;, &tau;&omicron;&upsilon;&sigmaf; &sigma;&tau;&epsilon;&kappa;ό&mu;&alpha;&sigma;&tau;&epsilon;, &tau;&omicron;&upsilon;&sigmaf; &upsilon;&pi;&omicron;&sigma;&tau;&eta;&rho;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &kappa;&alpha;&iota; &tau;&omicron;&upsilon;&sigmaf; &epsilon;&mu;&pi;&nu;έ&omicron;&upsilon;&mu;&epsilon; &pi;&rho;&omicron;&sigmaf; &tau;&eta;&nu; &epsilon;&pi;ί&tau;&epsilon;&upsilon;&xi;&eta; &mu;&iota;&alpha;&sigmaf; &beta;έ&lambda;&tau;&iota;&sigma;&tau;&eta;&sigmaf; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;ό&tau;&eta;&tau;&alpha;&sigmaf;.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -173,6 +188,13 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Στην Eurolife ERB Ασφαλιστική οι ομάδες μας και οι άνθρωποι που τις απαρτίζουν είναι η βάση των εργασιών μας.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{554E3CC4-21CC-4EFB-8718-D4B51B5C41D6}" ></image>
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

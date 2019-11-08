@@ -13,7 +13,7 @@
 
 }
 
-<section class="m-t-96 m-b-96 @contained @background">
+<section class="m-t-96 m-b-112 @contained @background">
   <h1 class="h4 t-c m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
   <div class="m-b-48 center--650 center t-c">
     @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
@@ -28,7 +28,7 @@
     }
   </div>
 
-  <div class="m-b-48 center--650 center t-c">
+  <div class="m-t-48 m-b-48 center--650 center t-c">
     @if (Model.Item.FieldHasValue(Templates.HasTeaserCTA.Fields.CTA) || Sitecore.Context.PageMode.IsExperienceEditor)
     {
       @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, Model.Item, new { @class = "btn btn--ghost-rev btn--default" })

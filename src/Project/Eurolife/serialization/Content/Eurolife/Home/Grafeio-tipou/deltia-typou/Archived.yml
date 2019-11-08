@@ -31,6 +31,9 @@ Languages:
     - ID: "428f3a15-002b-4ebb-a9b5-cc021d99f648"
       Hint: NavigationRootTitle
       Value: Περισσότερα
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Περισσότερα
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox

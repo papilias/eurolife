@@ -12,7 +12,7 @@
 .triplette-item{
   flex-basis:100%;
   padding: 48px 32px;
-  margin-bottom:20px;
+  /*margin-bottom:20px;*/
 
   @include breakpoint(540){
     flex-basis:49%;

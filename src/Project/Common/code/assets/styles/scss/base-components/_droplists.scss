@@ -5,8 +5,8 @@
   position: relative;
 }
 
-.droplist__options{
-  top:49px;
+.droplist__options {
+  top: 49px;
   position: absolute;
   width: 100%;
   background-color: #fff;
@@ -15,23 +15,28 @@
   overflow: hidden;
   transition: max-height 300ms ease;
 
-  ul{
+  ul {
     max-height: 100vh;
     max-width: 100%;
     overflow-y: auto;
     margin-right: -17px;
     border-left: 8px solid #FFF;
     border-right: 8px solid #FFF;
+
+    @include breakpoint(820) {
+      max-width: 60%;
+    }
   }
 
-  li:not(:last-child){
-    border-bottom: 1px solid $charcoal;
+  li:not(:last-child) {
+    border-bottom: 1px solid $color-btn-light;
   }
-  li{
+
+  li {
     padding: 5px 0;
   }
 
-  a{
+  a {
     display: block;
     padding: 10px;
     background-color: transparent;
@@ -39,17 +44,18 @@
   }
 }
 
-.droplist-trigger{
+.droplist-trigger {
   padding: 10px;
   border-bottom: 1px solid $charcoal;
   vertical-align: bottom;
   font-size: 18px;
-  cursor:pointer;
+  cursor: pointer;
+
   @include breakpoint-rev(820) {
     display: block;
   }
 
-  svg{
+  svg {
     max-width: 20px;
     max-height: 22px;
     margin-left: 40px;
@@ -58,18 +64,16 @@
 
 .droplist--active {
   .droplist__options {
-    max-height:100vh;
+    max-height: 100vh;
     overflow: hidden;
   }
 }
 
 
-  .no-touch{
-    .droplist {
-      a:hover{
-        background-color: $color-life-insurance-soft;
-      }
+.no-touch {
+  .droplist {
+    a:hover {
+      background-color: $color-life-insurance-soft;
     }
   }
-
-
+}

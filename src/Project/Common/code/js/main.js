@@ -28,7 +28,7 @@
 
     if(searchSwitch != null && searchClose != null) {
         searchSwitch.addEventListener('click', _ => {
-            body.classList.toggle('search-open');
+          body.classList.toggle('search-open');
         });
         searchClose.addEventListener('click', _ => {
             body.classList.remove('search-open');
@@ -142,7 +142,7 @@
             $('.js-leadership-slider-image').slick({
                 dots: false,
                 arrows: false,
-                infinite: false,
+                infinite: true,
                 speed: 500,
                 slidesToShow: 3,
                 rtl: true,
@@ -168,7 +168,7 @@
                 mobileFirst:true,
                 dots: false,
                 arrows: true,
-                infinite: false,
+                infinite: true,
                 speed: 500,
                 slidesToShow: 1,
                 fade: true,
@@ -204,7 +204,26 @@
 
     //submenu
     $( ".nav-product__trigger" ).click(function() {
-        $('.menu-expanded').toggleClass('menu-expanded--yes');
+        //MOBILE OR NOT
+        if($(window).width() <= 1024) {
+            //IS OPEN OR NOT
+            if($('.menu-expanded').hasClass('menu-expanded--yes')){
+                $('.menu-expanded').toggleClass('menu-expanded--yes');
+
+                setTimeout(() => {
+                    $('.nav-main__in, .nav-product__wrap').toggleClass('--retract');
+                }, 500);
+            }
+            else {
+                $('.nav-main__in, .nav-product__wrap').toggleClass('--retract');
+
+                setTimeout(() => {
+                    $('.menu-expanded').toggleClass('menu-expanded--yes');
+                }, 1000);
+            }
+        }
+        else
+            $('.menu-expanded').toggleClass('menu-expanded--yes');
     });
 
     //expand program START
@@ -222,6 +241,11 @@
     if(coverageExpander != null && coverageExpandTrigger != null) {
         coverageExpandTrigger.addEventListener('click', _ => {
             coverageExpander.classList.toggle("coverage__area--expanded");
+
+            if(coverageExpander.classList.contains('coverage__area--expanded'))
+                coverageExpandTrigger.innerHTML = 'ΔΕΙΤΕ ΛΙΓΟΤΕΡΑ';
+            else
+                coverageExpandTrigger.innerHTML = 'ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ';
         });
     }
     //expand coverages END
@@ -358,45 +382,45 @@
         });
 
 
-        //const filterClicks = document.querySelectorAll(".filter__item input");
-        //for (const filterClick of filterClicks) {
-        //    filterClick.addEventListener('click', _ => {
-        //        $('.program').removeClass("program--visible");
+        const filterClicks = document.querySelectorAll(".filter__item input");
+        for (const filterClick of filterClicks) {
+            filterClick.addEventListener('click', _ => {
+                $('.program').removeClass("program--visible");
 
-        //        const checkboxes = document.querySelectorAll(".filter__item input");
-        //        var datas = [];
-        //        //looping checked values and adding to array
-        //        for (const checkbox of checkboxes) {
-        //            if (checkbox.checked == true) {
-        //                const dataAttr = checkbox.dataset.index;
-        //                datas.push(dataAttr);
-        //            }
-        //        }
+                const checkboxes = document.querySelectorAll(".filter__item input");
+                var datas = [];
+                //looping checked values and adding to array
+                for (const checkbox of checkboxes) {
+                    if (checkbox.checked == true) {
+                        const dataAttr = checkbox.dataset.index;
+                        datas.push(dataAttr);
+                    }
+                }
 
-        //        if (datas.length > 0) {
-        //            $('.program').removeClass("program--visible");
-        //            const programs = document.querySelectorAll('.program');
-        //            for (const program of programs) {
-        //                var programActive = new Boolean(false);
-        //                var programDatas = program.dataset.characteristics;
-        //                for (const datum of datas) {
+                if (datas.length > 0) {
+                    $('.program').removeClass("program--visible");
+                    const programs = document.querySelectorAll('.program');
+                    for (const program of programs) {
+                        var programActive = new Boolean(false);
+                        var programDatas = program.dataset.characteristics;
+                        for (const datum of datas) {
 
-        //                    if (programDatas.includes(datum)) {
-        //                        programActive = true;
-        //                    }
+                            if (programDatas.includes(datum)) {
+                                programActive = true;
+                            }
 
-        //                    if (programActive == true) {
-        //                        program.classList.add('program--visible');
-        //                        console.log(programActive)
-        //                    }
-        //                    else program.classList.remove('program--visible');
-        //                }
-        //            }
-        //        }
-        //        else $('.program').addClass("program--visible");
+                            if (programActive == true) {
+                                program.classList.add('program--visible');
+                                console.log(programActive)
+                            }
+                            else program.classList.remove('program--visible');
+                        }
+                    }
+                }
+                else $('.program').addClass("program--visible");
 
-        //    });
-        //}
+            });
+        }
     }
 
     //EMPAND PROGRAMS STARTS
@@ -461,7 +485,7 @@
     }
 
     function highLightLabel(){
-        $target = $(".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea");
+        $target = $( ".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea" );
         $target.each(function(){
             var text_value=$(this).val();
             if(text_value != '')
@@ -485,29 +509,39 @@
 
     //using an instersection observer for product START
 
-    const anchors = document.querySelectorAll('.invisible');
+    $('section[id]').each(function() {
+        $(this).addClass('signpost');
+    });
+    setTimeout(() => {
+        const anchors = document.querySelectorAll('.signpost');
 
-    observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
+        observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
 
-                const id = entry.target.getAttribute('id');
-                $('.anchorlist a').removeClass('achorlist__active');
-                $('a[href="#'+id+'"]').addClass('achorlist__active');
+                    const id = entry.target.getAttribute('id');
+                    $('.anchorlist a').removeClass('achorlist__active');
+                    $('a[href="#'+id+'"]').addClass('achorlist__active');
 
-            } else {
-                entry.target.classList.remove('in-view');
-            }
+                } else {
+                    entry.target.classList.remove('in-view');
+                }
+            });
         });
-    });
 
-    anchors.forEach(anchor => {
-        observer.observe(anchor);
-    });
+        anchors.forEach(anchor => {
+            observer.observe(anchor);
+        });
+    }, 200);
 
     //using an instersection observer for product END
 
+    //MUTE LINKS WITH "#" HREF ATTRIBUTE
+    if($(window).width <= 768) {
+        $('header li.sublisted > a').click(function (e) {
+            e.preventDefault();
+            $(this).siblings(".sublist").toggleClass("active");
+        });
+    }
 
 })(jQuery);
-
-

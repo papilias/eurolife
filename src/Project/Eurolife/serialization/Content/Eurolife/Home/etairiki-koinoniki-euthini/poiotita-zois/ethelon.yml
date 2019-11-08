@@ -48,12 +48,31 @@ Languages:
               s:ph="page-layout" />
           </d>
         </r>
+    - ID: "23ef204d-df36-447d-9e7d-8862c8b6455f"
+      Hint: IconImage
+      Value: |
+        <image mediaid="{E4BD4F77-EA16-4F91-ADE8-5804641C907A}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190806T125041Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Ethelon
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Ethelon
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{26F17BF1-AD17-4A5F-8954-0BD6B700600A}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p>&Delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&omicron;&pi;&omicron;&iota;&omicron;ύ&mu;&alpha;&sigma;&tau;&epsilon; &mu;έ&sigma;&alpha; &sigma;&tau;&eta;&nu; &kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha; &kappa;&alpha;&iota; έ&nu;&alpha;&sigmaf; &alpha;&pi;ό &tau;&omicron;&upsilon;&sigmaf; &rho;ό&lambda;&omicron;&upsilon;&sigmaf; &mu;&alpha;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &alpha;&phi;&omicron;&upsilon;&gamma;&kappa;&rho;&alpha;&zeta;ό&mu;&alpha;&sigma;&tau;&epsilon; &kappa;&alpha;&iota; &nu;&alpha; &alpha;&kappa;&omicron;ύ&mu;&epsilon; &tau;&iota;&sigmaf; &alpha;&nu;ά&gamma;&kappa;&epsilon;&sigmaf; &tau;&omega;&nu; &alpha;&nu;&theta;&rho;ώ&pi;&omega;&nu;. &Alpha;&nu;&alpha;&gamma;&nu;&omega;&rho;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &tau;&iota;&sigmaf; &pi;&rho;&omicron;&sigma;&pi;ά&theta;&epsilon;&iota;&epsilon;&sigmaf; ό&lambda;&omega;&nu; &gamma;&iota;&alpha; έ&nu;&alpha; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&omicron; &mu;έ&lambda;&lambda;&omicron;&nu; &kappa;&alpha;&iota; &sigma;&kappa;&omicron;&pi;ό&sigmaf; &mu;&alpha;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &beta;&rho;&iota;&sigma;&kappa;ό&mu;&alpha;&sigma;&tau;&epsilon; &sigma;&tau;&omicron; &pi;&lambda;&epsilon;&upsilon;&rho;ό &tau;&omicron;&upsilon;&sigmaf;, &sigma;&epsilon; &kappa;ά&theta;&epsilon; &tau;&omicron;&upsilon;&sigmaf; &pi;&rho;&omicron;&sigma;&pi;ά&theta;&epsilon;&iota;&alpha;.
+        &Sigma;&epsilon; &alpha;&upsilon;&tau;ό έ&chi;&omicron;&upsilon;&mu;&epsilon; &gamma;&iota;&alpha; &sigma;ύ&mu;&mu;&alpha;&chi;ό &mu;&alpha;&sigmaf; &tau;&eta;&nu; ethelon.
+        </p>
+        <p>&Eta; ethelon &epsilon;ί&nu;&alpha;&iota; έ&nu;&alpha;&sigmaf; &mu;&eta; &kappa;&epsilon;&rho;&delta;&omicron;&sigma;&kappa;&omicron;&pi;&iota;&kappa;ό&sigmaf; &omicron;&rho;&gamma;&alpha;&nu;&iota;&sigma;&mu;ό&sigmaf; &pi;&omicron;&upsilon; &delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;ή&theta;&eta;&kappa;&epsilon; &mu;&epsilon; &sigma;&kappa;&omicron;&pi;ό &tau;&eta;&nu; &alpha;&nu;ά&delta;&epsilon;&iota;&xi;&eta; &kappa;&alpha;&iota; &tau;&eta;&nu; &pi;&rho;&omicron;ώ&theta;&eta;&sigma;&eta; &tau;&eta;&sigmaf; έ&nu;&nu;&omicron;&iota;&alpha;&sigmaf; &tau;&omicron;&upsilon; &epsilon;&theta;&epsilon;&lambda;&omicron;&nu;&tau;&iota;&sigma;&mu;&omicron;ύ &sigma;&tau;&eta;&nu; &epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;ή &kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha;. &Mu;έ&sigma;&alpha; &alpha;&pi;ό έ&nu;&alpha; &sigma;ύ&nu;&omicron;&lambda;&omicron; &delta;&rho;ά&sigma;&epsilon;&omega;&nu;, &epsilon;&kappa;&delta;&eta;&lambda;ώ&sigma;&epsilon;&omega;&nu; &kappa;&alpha;&iota; &pi;&rho;&omega;&tau;&omicron;&beta;&omicron;&upsilon;&lambda;&iota;ώ&nu;, &epsilon;&nu;&tau;&omicron;&pi;ί&zeta;&epsilon;&iota;, &kappa;&iota;&nu;&eta;&tau;&omicron;&pi;&omicron;&iota;&epsilon;ί &kappa;&alpha;&iota; &sigma;&upsilon;&nu;&delta;έ&epsilon;&iota; ά&tau;&omicron;&mu;&alpha;, &alpha;&upsilon;&tau;ό&nu;&omicron;&mu;&epsilon;&sigmaf; &omicron;&mu;ά&delta;&epsilon;&sigmaf;, &theta;&epsilon;&sigma;&mu;&iota;&kappa;&omicron;ύ&sigmaf; &phi;&omicron;&rho;&epsilon;ί&sigmaf; &kappa;&alpha;&iota; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;ί&epsilon;&sigmaf; &mu;&epsilon; &mu;&eta; &kappa;&epsilon;&rho;&delta;&omicron;&sigma;&kappa;&omicron;&pi;&iota;&kappa;&omicron;ύ&sigmaf; &omicron;&rho;&gamma;&alpha;&nu;&iota;&sigma;&mu;&omicron;ύ&sigmaf;, &alpha;&pi;&omicron;&sigma;&kappa;&omicron;&pi;ώ&nu;&tau;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&epsilon;&iota;ώ&nu; &mu;&epsilon;&tau;&alpha;&xi;ύ &tau;&omicron;&upsilon;&sigmaf; &mu;&epsilon; &beta;ά&sigma;&eta; &tau;&eta;&nu; &epsilon;&theta;&epsilon;&lambda;&omicron;&nu;&tau;&iota;&kappa;ή &pi;&rho;&omicron;&sigma;&phi;&omicron;&rho;ά.
+        &Tau;&omicron; ό&rho;&alpha;&mu;&alpha; &tau;&eta;&sigmaf; ethelon &epsilon;ί&nu;&alpha;&iota; &eta; &epsilon;&delta;&rho;&alpha;ί&omega;&sigma;&eta; &tau;&omicron;&upsilon; &epsilon;&theta;&epsilon;&lambda;&omicron;&nu;&tau;&iota;&sigma;&mu;&omicron;ύ &omega;&sigmaf; &tau;&rho;ό&pi;&omicron;&upsilon; &zeta;&omega;ή&sigmaf; &kappa;&alpha;&iota; &kappa;&upsilon;&rho;ί&alpha;&rho;&chi;&eta;&sigmaf; &alpha;&xi;ί&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha; &ndash; έ&nu;&alpha; ό&rho;&alpha;&mu;&alpha; &mu;&epsilon; &tau;&omicron; &omicron;&pi;&omicron;ί&omicron; &tau;&alpha;&upsilon;&tau;&iota;&zeta;ό&mu;&alpha;&sigma;&tau;&epsilon;.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -62,6 +81,13 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Η συνεργασία μας με την ethelon έχει ως σκοπό να βελτιώσει την καθημερινότητα των συνανθρώπων μας που ζουν κάτω από δύσκολες συνθήκες.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{174E02FF-7A7C-4D41-9986-54B16CC3EB1D}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
@@ -79,7 +105,17 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: ethelon
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: ethelon
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />

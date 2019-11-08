@@ -204,7 +204,7 @@ time{
 }
 
 .latest__details{
-  padding: 24px;
+  padding: 24px 24px 36px;
 }
 .latest__title{
   font-weight: 500;
@@ -367,7 +367,7 @@ article time{
 }
 
 .list__item--ghost:not(:last-child) {
-  .btn {
+
     &:after {
       content: '';
       width: 100%;
@@ -377,12 +377,21 @@ article time{
       left: 0;
       background-color: #e8e8e8;
     }
-  }
+
 }
 
 .no-touch{
   .list__item--ghost:hover{
     box-shadow: 0 2px 30px 0 rgba(232, 232, 232, 0.5);
     border-color: transparent;
+  }
+}
+
+.list-grid, .list-column, .latest{
+  img{
+    max-height: 270px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 0;
   }
 }

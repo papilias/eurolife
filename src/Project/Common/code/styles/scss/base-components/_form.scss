@@ -16,12 +16,16 @@
     }
   }
 }
+
 .form__group{
   margin-bottom: 64px;
+  input[type="checkbox"], input[type="radio"]{
+    display: block;
+    margin-right: 5px;
+  }
 }
 
 .form__item{
-
   margin-bottom:10px;
 
   label{

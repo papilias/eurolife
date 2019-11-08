@@ -42,16 +42,40 @@ Languages:
               p:after="*[1=2]" />
           </d>
         </r>
+    - ID: "23ef204d-df36-447d-9e7d-8862c8b6455f"
+      Hint: IconImage
+      Value: |
+        <image mediaid="{E4BD4F77-EA16-4F91-ADE8-5804641C907A}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190806T130756Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Έρευνες
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Έρευνες
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{5129AE73-5C02-4C52-9F65-6C27E1684827}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p>&Eta; &sigma;&omega;&sigma;&tau;ή &gamma;&nu;ώ&sigma;&eta; &tau;&omicron;&upsilon; &pi;&rho;&omicron;&beta;&lambda;ή&mu;&alpha;&tau;&omicron;&sigmaf; &epsilon;ί&nu;&alpha;&iota; &tau;&omicron; &pi;&rho;ώ&tau;&omicron; &beta;ή&mu;&alpha; &gamma;&iota;&alpha; &tau;&eta;&nu; &epsilon;&pi;ί&lambda;&upsilon;&sigma;ή &tau;&omicron;&upsilon;.
+        </p>
+        <p>&Eta; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&alpha;&sigmaf; &mu;&epsilon; &tau;&eta; HOPEgenesis &pi;&epsilon;&rho;&iota;&lambda;&alpha;&mu;&beta;ά&nu;&epsilon;&iota; &kappa;&alpha;&iota; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;ό&tau;&eta;&tau;&epsilon;&sigmaf; &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf;, έ&rho;&epsilon;&upsilon;&nu;&alpha;&sigmaf; &kappa;&alpha;&iota; &kappa;&alpha;&tau;&alpha;&gamma;&rho;&alpha;&phi;ή&sigmaf; &tau;&omicron;&upsilon; &pi;&rho;&omicron;&beta;&lambda;ή&mu;&alpha;&tau;&omicron;&sigmaf;. &Sigma;&upsilon;&mu;&pi;&rho;ά&tau;&tau;&omicron;&upsilon;&mu;&epsilon; &kappa;&alpha;&iota; &gamma;&iota;&alpha; &tau;&eta;&nu; &epsilon;&pi;&iota;&sigma;&tau;&eta;&mu;&omicron;&nu;&iota;&kappa;ή &tau;&epsilon;&kappa;&mu;&eta;&rho;ί&omega;&sigma;&eta; &tau;&omicron;&upsilon; &pi;&rho;&omicron;&beta;&lambda;ή&mu;&alpha;&tau;&omicron;&sigmaf; &tau;&eta;&sigmaf; &upsilon;&pi;&omicron;&gamma;&epsilon;&nu;&nu;&eta;&tau;&iota;&kappa;ό&tau;&eta;&tau;&alpha;&sigmaf;, &upsilon;&lambda;&omicron;&pi;&omicron;&iota;ώ&nu;&tau;&alpha;&sigmaf; έ&rho;&epsilon;&upsilon;&nu;&epsilon;&sigmaf;, &sigma;&epsilon; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&epsilon; &kappa;&omicron;&rho;&upsilon;&phi;&alpha;ί&omicron;&upsilon;&sigmaf; &alpha;&kappa;&alpha;&delta;&eta;&mu;&alpha;ϊ&kappa;&omicron;ύ&sigmaf; &omicron;&rho;&gamma;&alpha;&nu;&iota;&sigma;&mu;&omicron;ύ&sigmaf; &tau;&eta;&sigmaf; &chi;ώ&rho;&alpha;&sigmaf;.</p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Μαζί με τη HOPEgenesis αναπτύσσουμε δράσεις και πρωτοβουλίες που έχουν στόχο να ανατρέψουν την υπογεννητικότητα στην Ελλάδα.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{861600A7-01C5-49EC-BD85-9B25BA0EB04A}" />
 - Language: en
   Versions:
   - Version: 1
@@ -92,7 +116,20 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: HOPEgenesis
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: HOPEgenesis
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />

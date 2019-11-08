@@ -2,7 +2,10 @@
   #INPUTS
 \*------------------------------------*/
 
-input[type="text"]{
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]{
     display: block;
     width:100%;
     padding:8px;
@@ -48,6 +51,10 @@ input[type="submit"]{
     background-color:$color-btn-dark;
     color: #fff;
     transition: background-color 150ms linear;
+}
+
+.form *{
+    outline: none;
 }
 
 /*btn classes*/
@@ -129,8 +136,6 @@ input[type="submit"]{
     }
 }
 
-
-
 .btn--c-t-call{
     margin-right: 10px;
     padding:14px 17px;
@@ -161,6 +166,20 @@ input[type="submit"]{
         background-color: $color-btn-dark;
         border-color: $color-btn-dark;
         color:#fff;
+    }
+}
+
+.btn--play{
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 32px;
+    svg{
+        max-width: 30px;
+        display: inline-block;
+        max-height: 25px;
+        margin-left: 5px;
+        margin-bottom: -8px;
     }
 }
 

@@ -4,7 +4,6 @@
   var homeUrl = Sitecore.Context.Site?.GetStartItem()?.Url() ?? "/";
 }
 <div class="header-mobile" aria-hidden="true">
-  <a href="@homeUrl" class="logo" role="link" aria-label="Eurolife Logo Link to Homepage" title="Logo">Eurolife</a>
   @Html.Sitecore().Placeholder("main-burger")
   <div>
     <div class="search-switch js-search-switch">

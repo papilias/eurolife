@@ -3,57 +3,61 @@
 \*------------------------------------*/
 
 /*leadership slider*/
-.leadership-slider{
+.leadership-slider {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   padding-right: 150px;
 
   @include breakpoint(1700) {
-    margin-right:calc( (100vw - 1700px ) / 2 + 60px);
+    margin-right: calc( (100vw - 1700px ) / 2 + 60px);
   }
 
   @include breakpoint(700) {
     padding-right: 60px;
   }
 
-  &:before{
+  &:before {
     content: "";
     position: absolute;
-    top:0;
-    left: 0;
-    width:100%;
-    height:calc(100% - 20px);
-    margin-top:160px;
+    top: 0;
+    left: 50%;
+    width: calc(100% - 160px);
+    height: calc(100% - 20px);
+    margin-top: 160px;
     background-color: #eee;
+    transform: translateX(-50%);
   }
-
-
 }
 
-.leadership-slider--image{
+.leadership-slider--image {
   flex-basis: 100%;
   max-width: 100%;
-  @include breakpoint(700){
+
+  @include breakpoint(700) {
     flex-basis: 70%;
     max-width: 70%;
   }
 
-  .slick-slide{
-    margin:0 20px;
+  .slick-slide {
+    margin: 0 20px;
+    overflow: hidden;
+
     img {
+      transform: scale(1.2);
       filter: blur(10px);
       background-color: rgba(255, 255, 255, 0.57);
-      transition: filter 200ms ease;
-    }
-  }
-  .slick-current{
-    img {
-      filter: blur(0);
-      background-color: rgba(255, 255, 255, 0.57);
+      transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
     }
   }
 
+  .slick-current {
+    img {
+      filter: blur(0);
+      transform: scale(1);
+      background-color: rgba(255, 255, 255, 0.57);
+    }
+  }
 }
 
 .leadership-slider--text{
@@ -81,7 +85,7 @@
     position: absolute;
     z-index: 2;
     bottom: -80px;
-    right: 43px;
+    right: 133px;
     top:auto;
   }
 
@@ -102,6 +106,7 @@
 .leadership-slider__quote{
   line-height: 1.7;
   font-weight: 300;
+  max-height: 140px;
 
   &:before{
     content:"";
@@ -271,6 +276,9 @@
 }
 
 .leader-cv{
+  .leader-cv{
+    padding:0;
+  }
   @include breakpoint(820) {
     background-color: #eee;
   }

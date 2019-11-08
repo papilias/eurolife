@@ -47,18 +47,18 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{5200D91E-857D-4D4F-BA07-1AA6BC5F0C12}"
+              uid="{839005AC-C96F-40AA-8D17-EAD43AD0766B}"
               p:before="*"
               s:id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
               s:ph="/page-layout/page-layout-top" />
             <r
-              uid="{8FD5AA8D-C28B-4ECA-9791-B04C30D38972}"
-              p:after="r[@uid='{5200D91E-857D-4D4F-BA07-1AA6BC5F0C12}']"
+              uid="{221C1732-E321-40D7-BDF5-30014AFC745B}"
+              p:after="r[@uid='{839005AC-C96F-40AA-8D17-EAD43AD0766B}']"
               s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
               s:ph="/page-layout/page-layout-top" />
             <r
               uid="{CA3A18F4-6204-4595-811A-6CA6F41CFEE9}"
-              p:after="r[@uid='{8FD5AA8D-C28B-4ECA-9791-B04C30D38972}']"
+              p:after="r[@uid='{221C1732-E321-40D7-BDF5-30014AFC745B}']"
               s:ds="{343A2D4A-4747-4663-807C-3C1B1EAA2DBE}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-3-{5F5E2956-71BF-410C-A56C-5AA802D29025}-0" />
@@ -75,6 +75,17 @@ Languages:
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-1-{5F5E2956-71BF-410C-A56C-5AA802D29025}-0" />
             <r
+              uid="{61C669D2-BE6B-4838-95E6-E5A651BA7AFC}">
+              <p:d />
+            </r>
+            <r
+              uid="{249AD93B-9C1A-442B-B030-7CC841EA8545}"
+              p:after="r[@uid='{1E463C9D-B21F-4C56-842F-694C4E0C6C01}']"
+              s:ds=""
+              s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
+              s:ph="page-layout" />
+            <r
               uid="{5F5E2956-71BF-410C-A56C-5AA802D29025}"
               p:after="r[@uid='{8CA78EF5-A01F-4533-AD25-5FE747DD9A2A}']"
               s:ds="{65F11D60-4B69-4500-B758-FE8BA8074D33}"
@@ -85,11 +96,17 @@ Languages:
               p:after="*[1=2]" />
           </d>
         </r>
+    - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
+      Hint: PreTitle
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190917T143125Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
+      Value: Η ιστορία μας
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
       Value: Η ιστορία μας
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
@@ -99,6 +116,9 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Όλα τα χρόνια μας στην ασφαλιστική αγορά, είμαστε δίπλα σας, βοηθώντας σας να αξιοποιείτε κάθε σημαντική ευκαιρία που συναντάτε.
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
@@ -155,3 +175,9 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Η ιστορία μας
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Η ιστορία μας en
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Όλα τα χρόνια μας στην ασφαλιστική αγορά, είμαστε δίπλα σας, βοηθώντας σας να αξιοποιείτε κάθε σημαντική ευκαιρία που συναντάτε. 

@@ -1,6 +1,7 @@
 /*------------------------------------*\
   #STYLES
 \*------------------------------------*/
+@import "base/fonts.scss";
 @import "base/variables.scss";
 @import "base/mixins.scss";
 @import "base/base.scss";
@@ -40,6 +41,7 @@
 @import "base-components/benefits.scss";
 @import "base-components/home.scss";
 @import "base-components/statistics.scss";
+@import "base-components/search.scss";
 
 @import "layout/header.scss";
 @import "layout/footer.scss";

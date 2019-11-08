@@ -46,6 +46,185 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191025T124712Z
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <table class="body-wrap" align="center" width="100%" style="background-color: #ffffff;">
+            <tbody>
+                <tr>
+                    <td class="container">
+                    <table width="660" align="center" cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="width: 100%;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="height: 26px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tdlogo logo">
+                                            <img alt="" src="eurolifelogo.png" width="170" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="height: 26px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #ef3340; height: 8px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img alt="" src="main.jpg" style="width:100%;" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="height: 30px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 40px;"></td>
+                                                        <td style="width: 580px;">
+                                                        <h2 style="font-size: 20p; line-height: 22px;"><img alt="" height="44" width="230" src="-/media/67CEAF615BC8437C8C5237D6087A0B9F.ashx?h=44&amp;w=230" style="height: 44px; width: 230px;" /></h2>
+                                                        <p style="font-size: 20p; line-height: 22px;"><img alt="" height="466" width="721" src="-/media/F6D15E8E89654B8D81474965A742E5CE.ashx" /></p>
+                                                        <h2 style="font-size: 20p; line-height: 22px;">&Alpha;&gamma;&alpha;&pi;&eta;&tau;έ &pi;&epsilon;&lambda;ά&tau;&eta;,</h2>
+                                                        <p style="font-size: 16px; color: #000; line-height:1.5;">&Eta; &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή &sigma;&alpha;&sigmaf; &sigma;&tau;&omicron; My Eurolife &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;ώ&theta;&eta;&kappa;&epsilon;. &Eta; &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή &sigma;&alpha;&sigmaf; &sigma;&tau;&omicron; My Eurolife &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;ώ&theta;&eta;&kappa;&epsilon;.</p>
+                                                        <p style="font-size: 16px; color: #000; line-height:1.5;">&Eta; &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή &sigma;&alpha;&sigmaf; &sigma;&tau;&omicron; My Eurolife &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;ώ&theta;&eta;&kappa;&epsilon;. &Eta; &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή &sigma;&alpha;&sigmaf; &sigma;&tau;&omicron; My Eurolife &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;ώ&theta;&eta;&kappa;&epsilon;.</p>
+                                                        <p style="font-size: 16px; color: #000; line-height:1.5;">&Eta; &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή &sigma;&alpha;&sigmaf; &sigma;&tau;&omicron; My Eurolife &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;ώ&theta;&eta;&kappa;&epsilon;. &Eta; &epsilon;&gamma;&gamma;&rho;&alpha;&phi;ή &sigma;&alpha;&sigmaf; &sigma;&tau;&omicron; My Eurolife &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;ώ&theta;&eta;&kappa;&epsilon;.</p>
+                                                        <p style="font-size: 16px; color: #000; line-height:1.5;">&Mu;&epsilon; &tau;&eta; &sigma;ύ&nu;&delta;&epsilon;&sigma;&eta; &sigma;&alpha;&sigmaf; &mu;&pi;&omicron;&rho;&epsilon;&iota;&tau;&epsilon;:</p>
+                                                        <ul style="line-height:1.5;">
+                                                            <li><span class="red-block"></span><strong>&Nu;&alpha; &delta;&epsilon;&iota;&tau;&epsilon; &omicron;&lambda;&alpha; &tau;&alpha; &sigma;&upsilon;&mu;&beta;&omicron;&lambda;&alpha;&iota; &sigma;&alpha;&sigmaf;, &tau;&iota;&sigmaf; &kappa;&alpha;&lambda;ύ&psi;&epsilon;&iota;&sigmaf; &sigma;&alpha;</strong></li>
+                                                            <li><span class="red-block"></span><strong>&Nu;&alpha; &delta;&epsilon;&iota;&tau;&epsilon; &omicron;&lambda;&alpha; &tau;&alpha; &sigma;&upsilon;&mu;&beta;&omicron;&lambda;&alpha;&iota; &sigma;&alpha;&sigmaf;, &tau;&iota;&sigmaf; &kappa;&alpha;&lambda;ύ&psi;&epsilon;&iota;&sigmaf; &sigma;&alpha;</strong></li>
+                                                            <li><span class="red-block"></span><strong>&Nu;&alpha; &delta;&epsilon;&iota;&tau;&epsilon; &omicron;&lambda;&alpha; &tau;&alpha; &sigma;&upsilon;&mu;&beta;&omicron;&lambda;&alpha;&iota; &sigma;&alpha;&sigmaf;, &tau;&iota;&sigmaf; &kappa;&alpha;&lambda;ύ&psi;&epsilon;&iota;&sigmaf; &sigma;&alpha;</strong></li>
+                                                            <li><span class="red-block"></span><strong>&Nu;&alpha; &delta;&epsilon;&iota;&tau;&epsilon; &omicron;&lambda;&alpha; &tau;&alpha; &sigma;&upsilon;&mu;&beta;&omicron;&lambda;&alpha;&iota; &sigma;&alpha;&sigmaf;, &tau;&iota;&sigmaf; &kappa;&alpha;&lambda;ύ&psi;&epsilon;&iota;&sigmaf; &sigma;&alpha;</strong></li>
+                                                            <li><span class="red-block"></span><strong>&Nu;&alpha; &delta;&epsilon;&iota;&tau;&epsilon; &omicron;&lambda;&alpha; &tau;&alpha; &sigma;&upsilon;&mu;&beta;&omicron;&lambda;&alpha;&iota; &sigma;&alpha;&sigmaf;, &tau;&iota;&sigmaf; &kappa;&alpha;&lambda;ύ&psi;&epsilon;&iota;&sigmaf; &sigma;&alpha;</strong></li>
+                                                        </ul>
+                                                        <p style="font-size: 16px; color: #000; line-height:1.5;">&Pi;&alpha;&rho;ά&lambda;&lambda;&eta;&lambda;&alpha; &mu;&epsilon; &tau;&eta;&nu; &nu;&epsilon;&alpha; &pi;&lambda;&alpha;&tau;&phi;&omicron;&rho;&mu;&alpha; &mu;&pi;&omicron;&rho;&epsilon;&iota;&tau;&epsilon; &nu;&alpha; &alpha;&nu;&alpha;&tau;&rho;&epsilon;&xi;&epsilon;&tau;&epsilon; &sigma;&tau;&eta; &sigma;&epsilon;&lambda;&iota;&delta;&alpha; &tau;&omega;&nu; &sigma;&upsilon;&chi;&nu;&omega;&nu; &epsilon;&rho;&omega;&tau;&eta;&sigma;&epsilon;&omega;&nu; &alpha;&lambda;&lambda;&alpha; &kappa;&alpha;&iota; &sigma;&tau;&omicron; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ό &lambda;&epsilon;&xi;&iota;&kappa;&omicron;, &omicron;&pi;&omicron;&upsilon; &epsilon;&chi;&omicron;&upsilon;&mu;&epsilon; &sigma;&upsilon;&gamma;&kappa;&epsilon;&nu;&tau;&rho;&omega;&sigma;&epsilon;&iota; &tau;&iota;&sigmaf; &epsilon;&iota;&delta;&iota;&kappa;&epsilon;&sigmaf; &omicron;&rho;&omicron;&lambda;&omicron;&gamma;&iota;&epsilon;&sigmaf;.</p>
+                                                        </td>
+                                                        <td style="width: 40px;"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="height: 10px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 40px;"></td>
+                                                        <td>
+                                                        <p style="font-size: 16px; color: #000; line-height:1.5; margin-bottom:0;">&Mu;&epsilon; &epsilon;&kappa;&tau;ί&mu;&eta;&sigma;&eta;, </p>
+                                                        <p style="font-size: 22px; color: #ef3340; line-height:1.5; margin-top:0;">&Omicron;&mu;ά&delta;&alpha; My Eurolife</p>
+                                                        </td>
+                                                        <td style="width: 40px;"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height: 30px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ef3340; height: 8px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="height: 30px;"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 40px;"></td>
+                                            <td style="width:50%;">
+                                            <h6 style="font-size:14px; font-weight:400; line-height:1; color:#9c9c9c; margin-top:0; margin-bottom:5px;">&Kappa;&epsilon;&nu;&tau;&rho;&omicron; &epsilon;&xi;&upsilon;&pi;&eta;&rho;&epsilon;&tau;&eta;&sigma;&eta;&sigmaf; &Pi;&epsilon;&lambda;&alpha;&tau;&omega;&nu;</h6>
+                                            <p style="color:#ef3340;font-size:32px; line-height:1;font-weight:400; margin:0;">210 9304800</p>
+                                            </td>
+                                            <td style="text-align:right;width:50%;">
+                                            <a href="https://www.facebook.com" target="_blank" style="text-decoration:none; margin-left:5px; vertical-align: middle;">
+                                            <img alt="" src="icon-facebook.png" width="30" />
+                                            </a>
+                                            <a href="https://www.twitter.com" target="_blank" style="text-decoration:none;margin-left:5px; vertical-align: middle;">
+                                            <img alt="" src="icon-twitter.png" width="30" />
+                                            </a>
+                                            <a href="https://www.youtube.com" target="_blank" style="text-decoration:none;margin-left:7px; vertical-align: middle;">
+                                            <img alt="" src="icon-youtube.png" width="30" />
+                                            </a>
+                                            </td>
+                                            <td style="width: 40px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" style="height: 20px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 40px;"></td>
+                                            <td colspan="2">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:20%;">
+                                                        <a style="color:#1b1b1b;">info@eurolife.gr</a>
+                                                        </td>
+                                                        <td style="text-align:right;width:80%;">
+                                                        <a style="color:#9c9c9c; font-size:12px; margin-left:5px;">Ό&rho;&omicron;&iota; &Chi;&rho;&eta;&sigma;&eta;&sigmaf;</a>
+                                                        <a style="color:#9c9c9c; font-size:12px; margin-left:5px;">&Pi;&rho;&omicron;&sigma;&tau;&alpha;&sigma;&iota;&alpha; &Pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;ώ&nu; &Delta;&epsilon;&delta;&omicron;&mu;&epsilon;&nu;&omega;&nu;</a>
+                                                        <a style="color:#9c9c9c; font-size:12px; margin-left:5px;">&Pi;&omicron;&lambda;&iota;&tau;&iota;&kappa;ή &gamma;&iota;&alpha; cookies</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                            <td style="width: 40px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="height: 40px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 40px;"></td>
+                                            <td colspan="2">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width:50%;">
+                                                        <img alt="" src="eurolifelogo.png" width="145" />
+                                                        </td>
+                                                        <td style="text-align:right;width:50%; color:#9c9c9c; font-size:12px;">
+                                                        Copyright 2020 &copy; Eurolife
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                            <td style="width: 40px;"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

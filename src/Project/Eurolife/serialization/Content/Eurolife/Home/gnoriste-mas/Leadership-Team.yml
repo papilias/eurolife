@@ -45,10 +45,19 @@ Languages:
       Hint: MetaKeywords
       Type: Treelist
       Value: "{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}"
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Η ηγετική μας ομάδα
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: |
+        Η Διοίκησή μας διαμορφώνει τη χάραξη της στρατηγικής μας και ορίζει τον τρόπο με τον οποίο λειτουργούμε και 
+        συμπεριφερόμαστε, τόσο απέναντι στους πελάτες μας, όσο και απέναντι στην κοινωνία.
+                        
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
@@ -63,6 +72,9 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190807T103250Z
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Leadership Team
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

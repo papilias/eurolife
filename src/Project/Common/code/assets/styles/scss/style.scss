@@ -1,6 +1,7 @@
 /*------------------------------------*\
   #STYLES
 \*------------------------------------*/
+@import "base/fonts.scss";
 @import "base/variables.scss";
 @import "base/mixins.scss";
 @import "base/base.scss";
@@ -18,11 +19,30 @@
 @import "base-components/teaser.scss";
 @import "base-components/timeline.scss";
 @import "base-components/figures.scss";
-
+@import "base-components/lists.scss";
+@import "base-components/droplists.scss";
+@import "base-components/gallery.scss";
+@import "base-components/prenext.scss";
+@import "base-components/tabs.scss";
+@import "base-components/partners.scss";
+@import "base-components/form.scss";
+@import "base-components/tooltip.scss";
+@import "base-components/glossary.scss";
+@import "base-components/select2.scss";
+@import "base-components/anchorlist.scss";
+@import "base-components/breadcrumb.scss";
+@import "base-components/hero.scss";
+@import "base-components/product.scss";
+@import "base-components/people.scss";
+@import "base-components/career.scss";
+@import "base-components/contact.scss";
+@import "base-components/over-image.scss";
+@import "base-components/material.scss";
+@import "base-components/benefits.scss";
+@import "base-components/home.scss";
+@import "base-components/statistics.scss";
+@import "base-components/search.scss";
 
 @import "layout/header.scss";
 @import "layout/footer.scss";
-
-
-
 

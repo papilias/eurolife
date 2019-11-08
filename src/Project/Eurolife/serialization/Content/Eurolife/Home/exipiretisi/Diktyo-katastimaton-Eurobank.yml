@@ -66,6 +66,16 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Δίκτυο Καταστημάτων
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Δίκτυο Καταστημάτων Eurobank
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p>&Tau;&alpha; &kappa;&alpha;&tau;&alpha;&sigma;&tau;ή&mu;&alpha;&tau;&alpha; Eurobank &kappa;&alpha;&iota; &Delta;&iota;&kappa;&tau;ύ&omicron;&upsilon; &Nu;έ&omicron; &Tau;&alpha;&chi;&upsilon;&delta;&rho;&omicron;&mu;&iota;&kappa;ό &Tau;&alpha;&mu;&iota;&epsilon;&upsilon;&tau;ή&rho;&iota;&omicron; &sigma;&epsilon; ό&lambda;&eta; &tau;&eta;&nu; &Epsilon;&lambda;&lambda;ά&delta;&alpha; &delta;&iota;&alpha;&theta;έ&tau;&omicron;&upsilon;&nu; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ά &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &tau;&eta;&sigmaf; Eurolife ERB &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή&sigmaf;.
+        </p>
+        <p>&Epsilon;&iota;&delta;&iota;&kappa;ά &epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&mu;έ&nu;&omicron;&iota; &upsilon;&pi;ά&lambda;&lambda;&eta;&lambda;&omicron;&iota;, &pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;&iota;&eta;&mu;έ&nu;&omicron;&iota; &sigma;ύ&mu;&phi;&omega;&nu;&alpha; &mu;&epsilon; &tau;&eta;&nu; &iota;&sigma;&chi;ύ&omicron;&upsilon;&sigma;&alpha; &nu;&omicron;&mu;&omicron;&theta;&epsilon;&sigma;ί&alpha;, &sigma;&alpha;&sigmaf; &epsilon;&nu;&eta;&mu;&epsilon;&rho;ώ&nu;&omicron;&upsilon;&nu; &gamma;&iota;&alpha; &tau;&alpha; &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &alpha;&nu;&alpha;&lambda;&alpha;&mu;&beta;ά&nu;&omicron;&upsilon;&nu; &epsilon;&pi;&iota;&tau;ό&pi;&omicron;&upsilon; &tau;&iota;&sigmaf; &alpha;&pi;&alpha;&rho;&alpha;ί&tau;&eta;&tau;&epsilon;&sigmaf; &delta;&iota;&alpha;&delta;&iota;&kappa;&alpha;&sigma;ί&epsilon;&sigmaf;. &Eta; &alpha;ί&tau;&eta;&sigma;&eta; &alpha;&sigma;&phi;ά&lambda;&iota;&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &eta; έ&kappa;&delta;&omicron;&sigma;&eta; &sigma;&upsilon;&mu;&beta;&omicron;&lambda;&alpha;ί&omicron;&upsilon; &gamma;ί&nu;&omicron;&nu;&tau;&alpha;&iota; &alpha;&pi;&lambda;ά &kappa;&alpha;&iota; &gamma;&rho;ή&gamma;&omicron;&rho;&alpha;.</p>
+        <a href="https://www.eurobank.gr/el/retail#GeoStart">&Beta;&rho;&epsilon;ί&tau;&epsilon; &kappa;&omicron;&nu;&tau;&iota;&nu;ό &kappa;&alpha;&tau;ά&sigma;&tau;&eta;&mu;&alpha;</a> &tau;&omicron;&upsilon; &Delta;&iota;&kappa;&tau;ύ&omicron;&upsilon; Eurobank ή &Nu;έ&omicron; &Tau;&alpha;&chi;&upsilon;&delta;&rho;&omicron;&mu;&iota;&kappa;ό &Tau;&alpha;&mu;&iota;&epsilon;&upsilon;&tau;ή&rho;&iota;&omicron;.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

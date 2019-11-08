@@ -20,7 +20,7 @@
 }
 
 .list--partners__col-1{
-  min-width: 40%;
+  flex-basis: 55%;
   @include breakpoint-rev(820){
     flex-basis: 100%;
     margin-bottom: 24px;
@@ -41,13 +41,22 @@
 }
 
 .list--partners__col-2{
+  flex-basis: 100%;
 
   @include breakpoint(820){
+    flex-basis: 15%;
     margin-left: auto;
   }
   margin-right: 34px;
 }
 
+.list--partners__col-3{
+  flex-basis: 100%;
+
+  @include breakpoint(820){
+    flex-basis: 25%;
+  }
+}
 
 .selected-content{
   opacity: 0;

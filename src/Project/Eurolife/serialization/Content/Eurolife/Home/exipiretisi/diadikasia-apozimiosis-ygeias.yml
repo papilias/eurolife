@@ -112,6 +112,13 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 1
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Διαδικασίες αποζημίωσης
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <span id="docs-internal-guid-0fcce88f-7fff-a5d3-e7dc-426a6d6e048c" style="background-color: transparent; text-decoration: none; color: #000000;">&Eta; &delta;&iota;&alpha;&delta;&iota;&kappa;&alpha;&sigma;ί&alpha; &tau;&eta;&sigmaf; &alpha;&pi;&omicron;&zeta;&eta;&mu;ί&omega;&sigma;&eta;&sigmaf; &gamma;&iota;&alpha; &pi;&epsilon;&rho;&iota;&sigma;&tau;&alpha;&tau;&iota;&kappa;ά &upsilon;&gamma;&epsilon;ί&alpha;&sigmaf; &delta;&iota;&alpha;&phi;&omicron;&rho;&omicron;&pi;&omicron;&iota;&epsilon;ί&tau;&alpha;&iota; &alpha;&nu;ά&lambda;&omicron;&gamma;&alpha; &mu;&epsilon; &tau;&omicron; &pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha; &kappa;&alpha;&iota; &tau;&iota;&sigmaf; &kappa;&alpha;&lambda;ύ&psi;&epsilon;&iota;&sigmaf; &pi;&omicron;&upsilon; έ&chi;&epsilon;&tau;&epsilon; &sigma;&tau;&omicron; &sigma;&upsilon;&mu;&beta;ό&lambda;&alpha;&iota;ό &sigma;&alpha;&sigmaf;. &Pi;&alpha;&tau;ή&sigma;&tau;&epsilon; &epsilon;&pi;ά&nu;&omega; &sigma;&tau;&eta;&nu; &pi;&epsilon;&rho;ί&pi;&tau;&omega;&sigma;&eta; &pi;&omicron;&upsilon; &alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;ί&nu;&epsilon;&tau;&alpha;&iota; &sigma;&tau;&omicron; &delta;&iota;&kappa;ό &sigma;&alpha;&sigmaf; &sigma;&upsilon;&mu;&beta;ό&lambda;&alpha;&iota;&omicron; &gamma;&iota;&alpha; &nu;&alpha; &delta;&epsilon;ί&tau;&epsilon; &tau;&iota;&sigmaf; &pi;&lambda;&eta;&rho;&omicron;&phi;&omicron;&rho;ί&epsilon;&sigmaf;.</span>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -120,6 +127,9 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: Αναλυτικά τα βήματα που ακολουθούνται σε περίπτωση που κάνετε αίτηση για αποζημίωση για την υγεία, το όχημα και το σπίτι σας.
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

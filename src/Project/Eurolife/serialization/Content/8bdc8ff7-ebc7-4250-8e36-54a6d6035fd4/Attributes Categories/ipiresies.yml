@@ -1,0 +1,25 @@
+﻿---
+ID: "1da8b762-9f37-4629-b9b2-065ed484796f"
+Parent: "bbfa45a0-aab8-4b25-9623-eec4fe0ce45d"
+Template: "39d408e6-e9b8-491f-b351-9c27b520323b"
+Path: /sitecore/content/Eurolife/Home/Proionta/Idiotes/katoikia/_Local/panel katoikias/ktirio kai periexomeno/Attributes Categories/ipiresies
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0fedef40-1ed0-422a-aefb-b9ed2277043c"
+      Hint: Rows
+      Type: Multilist
+      Value: "{426FF228-F6AF-4D16-8814-976B3892BB4B}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191027T203545Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c7a77ab1-e14b-4ab5-aea0-e3d6e3db5941"
+      Hint: Title
+      Value: Υπηρεσίες

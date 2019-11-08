@@ -68,10 +68,25 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 1
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Ο Ασφαλιστικός Όμιλος Eurolife ERB
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p dir="ltr" id="docs-internal-guid-f6cd94fc-7fff-ae35-c1e7-652b6afdfd0e" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="color: #000000;">&Epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; έ&nu;&alpha;&sigmaf; &alpha;&pi;ό &tau;&omicron;&upsilon;&sigmaf; &kappa;&omicron;&rho;&upsilon;&phi;&alpha;ί&omicron;&upsilon;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;&omicron;ύ&sigmaf; &omicron;&mu;ί&lambda;&omicron;&upsilon;&sigmaf; &sigma;&tau;&eta;&nu; &Epsilon;&lambda;&lambda;ά&delta;&alpha;, &mu;&epsilon; &pi;&epsilon;&rho;ί&pi;&omicron;&upsilon;</span><span style="color: #000000;"> 11%</span><span style="color: #000000;"> &mu;&epsilon;&rho;ί&delta;&iota;&omicron; &tau;&eta;&sigmaf; &sigma;&upsilon;&nu;&omicron;&lambda;&iota;&kappa;ή&sigmaf; &alpha;&gamma;&omicron;&rho;ά&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&epsilon;&iota;ώ&nu; &zeta;&omega;ή&sigmaf; &kappa;&alpha;&iota; &gamma;&epsilon;&nu;&iota;&kappa;ώ&nu; &gamma;&iota;&alpha; &tau;&omicron;</span><span style="color: #000000;"> <strong>2018</strong></span><span style="color: #000000;">.&nbsp;</span></p>
+        <br />
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="color: #000000;">&Xi;&epsilon;&kappa;&iota;&nu;ή&sigma;&alpha;&mu;&epsilon; &tau;&eta; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;ό&tau;&eta;&tau;ά &mu;&alpha;&sigmaf; &tau;&omicron; 2000, &omega;&sigmaf; &mu;&omicron;&nu;ά&delta;&alpha; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ώ&nu; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&omicron;&tau;ή&tau;&omega;&nu; &tau;&eta;&sigmaf; &Tau;&rho;ά&pi;&epsilon;&zeta;&alpha;&sigmaf; Eurobank. &Tau;&omicron;&nu; &Delta;&epsilon;&kappa;έ&mu;&beta;&rho;&iota;&omicron; &tau;&omicron;&upsilon; 2015, &eta; Fairfax Financial Holdings S.A., έ&nu;&alpha;&sigmaf; &delta;&iota;&epsilon;&theta;&nu;ή&sigmaf; &epsilon;&pi;&epsilon;&nu;&delta;&upsilon;&tau;&iota;&kappa;ό&sigmaf; ό&mu;&iota;&lambda;&omicron;&sigmaf; &mu;&epsilon; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ή &epsilon;&mu;&pi;&epsilon;&iota;&rho;ί&alpha; &kappa;&alpha;&iota; &epsilon;&xi;&epsilon;&iota;&delta;ί&kappa;&epsilon;&upsilon;&sigma;&eta; &sigma;&tau;&omicron;&nu; &kappa;&lambda;ά&delta;&omicron; &tau;&omega;&nu; &alpha;&sigma;&phi;&alpha;&lambda;&epsilon;&iota;ώ&nu;, &mu;&alpha;&sigmaf; &epsilon;&mu;&pi;&iota;&sigma;&tau;&epsilon;ύ&tau;&eta;&kappa;&epsilon;, &kappa;&alpha;&iota; &alpha;&pi;ό &tau;&omicron;&nu; &Alpha;ύ&gamma;&omicron;&upsilon;&sigma;&tau;&omicron; &tau;&omicron;&upsilon; 2016 &epsilon;&lambda;έ&gamma;&chi;&epsilon;&iota; &tau;&omicron; 80% &tau;&omicron;&upsilon; &Omicron;&mu;ί&lambda;&omicron;&upsilon;.&nbsp;&nbsp;</span></p>
+        <br />
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="color: #000000;">&Omicron;&iota; &epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;έ&sigmaf; &theta;&upsilon;&gamma;&alpha;&tau;&rho;&iota;&kappa;έ&sigmaf; &mu;&alpha;&sigmaf; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&omicron;&pi;&omicron;&iota;&omicron;ύ&nu;&tau;&alpha;&iota; &sigma;&tau;&omicron;&upsilon;&sigmaf; &kappa;&lambda;ά&delta;&omicron;&upsilon;&sigmaf; &Alpha;&sigma;&phi;&alpha;&lambda;ί&sigma;&epsilon;&omega;&nu; &Zeta;&omega;ή&sigmaf; &kappa;&alpha;&iota; &Gamma;&epsilon;&nu;&iota;&kappa;ώ&nu; &Alpha;&sigma;&phi;&alpha;&lambda;ί&sigma;&epsilon;&omega;&nu;, &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&nu;&tau;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &alpha;&gamma;&omicron;&rho;ά &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &sigma;&epsilon; ό&lambda;&omicron;&upsilon;&sigmaf; &tau;&omicron;&upsilon;&sigmaf; &kappa;ύ&rho;&iota;&omicron;&upsilon;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;&omicron;ύ&sigmaf; &kappa;&lambda;ά&delta;&omicron;&upsilon;&sigmaf;, &mu;&epsilon; &pi;&epsilon;&rho;&iota;&sigma;&sigma;ό&tau;&epsilon;&rho;&omicron;&upsilon;&sigmaf; &alpha;&pi;ό </span><span style="color: #000000;"><strong>450.000</strong></span><strong><span style="color: #000000;"> </span></strong><span style="color: #000000;"><strong>&pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf;</strong>.</span></p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{2D1F10F8-BFC9-4741-9630-26D4CE994ED4}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
@@ -123,10 +138,25 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Όμιλος Eurolife ERB Insurance Group
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Όμιλος Eurolife ERB Insurance Group
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <p dir="ltr" id="docs-internal-guid-f6cd94fc-7fff-ae35-c1e7-652b6afdfd0e" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; έ&nu;&alpha;&sigmaf; &alpha;&pi;ό &tau;&omicron;&upsilon;&sigmaf; &kappa;&omicron;&rho;&upsilon;&phi;&alpha;ί&omicron;&upsilon;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;&omicron;ύ&sigmaf; &omicron;&mu;ί&lambda;&omicron;&upsilon;&sigmaf; &sigma;&tau;&eta;&nu; &Epsilon;&lambda;&lambda;ά&delta;&alpha;, &mu;&epsilon; &pi;&epsilon;&rho;ί&pi;&omicron;&upsilon;</span><span style="background-color: transparent; text-decoration: none; color: #000000;">*</span><span style="background-color: transparent; text-decoration: none; color: #000000;"> &mu;&epsilon;&rho;ί&delta;&iota;&omicron; &tau;&eta;&sigmaf; &sigma;&upsilon;&nu;&omicron;&lambda;&iota;&kappa;ή&sigmaf; &alpha;&gamma;&omicron;&rho;ά&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&epsilon;&iota;ώ&nu; &zeta;&omega;ή&sigmaf; &kappa;&alpha;&iota; &gamma;&epsilon;&nu;&iota;&kappa;ώ&nu; &gamma;&iota;&alpha; &tau;&omicron;</span><span style="background-color: transparent; text-decoration: none; color: #000000;"> 2018</span><span style="background-color: transparent; text-decoration: none; color: #000000;">.&nbsp;</span></p>
+        <br />
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Xi;&epsilon;&kappa;&iota;&nu;ή&sigma;&alpha;&mu;&epsilon; &tau;&eta; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;ό&tau;&eta;&tau;ά &mu;&alpha;&sigmaf; &tau;&omicron; 2000, &omega;&sigmaf; &mu;&omicron;&nu;ά&delta;&alpha; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ώ&nu; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&omicron;&tau;ή&tau;&omega;&nu; &tau;&eta;&sigmaf; &Tau;&rho;ά&pi;&epsilon;&zeta;&alpha;&sigmaf; Eurobank. &Tau;&omicron;&nu; &Delta;&epsilon;&kappa;έ&mu;&beta;&rho;&iota;&omicron; &tau;&omicron;&upsilon; 2015, &eta; Fairfax Financial Holdings S.A., έ&nu;&alpha;&sigmaf; &delta;&iota;&epsilon;&theta;&nu;ή&sigmaf; &epsilon;&pi;&epsilon;&nu;&delta;&upsilon;&tau;&iota;&kappa;ό&sigmaf; ό&mu;&iota;&lambda;&omicron;&sigmaf; &mu;&epsilon; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ή &epsilon;&mu;&pi;&epsilon;&iota;&rho;ί&alpha; &kappa;&alpha;&iota; &epsilon;&xi;&epsilon;&iota;&delta;ί&kappa;&epsilon;&upsilon;&sigma;&eta; &sigma;&tau;&omicron;&nu; &kappa;&lambda;ά&delta;&omicron; &tau;&omega;&nu; &alpha;&sigma;&phi;&alpha;&lambda;&epsilon;&iota;ώ&nu;, &mu;&alpha;&sigmaf; &epsilon;&mu;&pi;&iota;&sigma;&tau;&epsilon;ύ&tau;&eta;&kappa;&epsilon;, &kappa;&alpha;&iota; &alpha;&pi;ό &tau;&omicron;&nu; &Alpha;ύ&gamma;&omicron;&upsilon;&sigma;&tau;&omicron; &tau;&omicron;&upsilon; 2016 &epsilon;&lambda;έ&gamma;&chi;&epsilon;&iota; &tau;&omicron; 80% &tau;&omicron;&upsilon; &Omicron;&mu;ί&lambda;&omicron;&upsilon;.&nbsp;&nbsp;</span></p>
+        <br />
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Omicron;&iota; &epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;έ&sigmaf; &theta;&upsilon;&gamma;&alpha;&tau;&rho;&iota;&kappa;έ&sigmaf; &mu;&alpha;&sigmaf; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&omicron;&pi;&omicron;&iota;&omicron;ύ&nu;&tau;&alpha;&iota; &sigma;&tau;&omicron;&upsilon;&sigmaf; &kappa;&lambda;ά&delta;&omicron;&upsilon;&sigmaf; &Alpha;&sigma;&phi;&alpha;&lambda;ί&sigma;&epsilon;&omega;&nu; &Zeta;&omega;ή&sigmaf; &kappa;&alpha;&iota; &Gamma;&epsilon;&nu;&iota;&kappa;ώ&nu; &Alpha;&sigma;&phi;&alpha;&lambda;ί&sigma;&epsilon;&omega;&nu;, &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&nu;&tau;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &alpha;&gamma;&omicron;&rho;ά &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &sigma;&epsilon; ό&lambda;&omicron;&upsilon;&sigmaf; &tau;&omicron;&upsilon;&sigmaf; &kappa;ύ&rho;&iota;&omicron;&upsilon;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;&omicron;ύ&sigmaf; &kappa;&lambda;ά&delta;&omicron;&upsilon;&sigmaf;, &mu;&epsilon; &pi;&epsilon;&rho;&iota;&sigma;&sigma;ό&tau;&epsilon;&rho;&omicron;&upsilon;&sigmaf; &alpha;&pi;ό </span><span style="background-color: transparent; text-decoration: none; color: #000000;">450.000</span><span style="background-color: transparent; text-decoration: none; color: #000000;"> </span><span style="background-color: transparent; text-decoration: none; color: #000000;">&pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf;.</span></p>
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="Habitat-004-wide" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{71BC2865-797C-4F65-95D6-3CA4EBACD0D7}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

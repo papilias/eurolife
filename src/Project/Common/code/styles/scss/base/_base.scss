@@ -52,7 +52,13 @@ html {
     box-sizing:border-box;
 }
 
-img, svg{
+img{
+    max-width:100%;
+    height:auto;
+    display: block;
+}
+
+svg{
     max-width:100%;
     height:auto;
 }
@@ -90,5 +96,8 @@ figure{
     p{
         margin-top:0;
         margin-bottom:48px;
+    }
+    ul{
+        padding-left: 20px;
     }
 }

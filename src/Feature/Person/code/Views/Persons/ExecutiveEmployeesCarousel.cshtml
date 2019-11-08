@@ -20,7 +20,7 @@
         @foreach (var item in Model)
         {
           quotes += $@"<div>
-                                  <h2 class='h5 m-b-8'>{item.Field(Templates.Person.Fields.Name)}</h2>";
+                                  <h2 class='h5 m-b-8'><a href='{@item.Url()}'>{item.Field(Templates.Person.Fields.Name)}</a></h2>";
 
           if (item.DescendsFrom(Templates.HasPersonQuote.ID)
           && (item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote) || item.FieldHasValue(Templates.HasPersonQuote.Fields.Quote)))
@@ -47,13 +47,13 @@
              && (item.FieldHasValue(Templates.HasPersonImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor))
           {
             <div>
-
-              @Html.Sitecore().ImageField(Templates.HasPersonImage.Fields.Image,
-                item,
-                Constants.ImageDimensions.Carousel.Height,
-                Constants.ImageDimensions.Carousel.Width)
-              
-            </div>
+              <a href="@item.Url()">
+                @Html.Sitecore().ImageField(Templates.HasPersonImage.Fields.Image,
+                  item,
+                  Constants.ImageDimensions.Carousel.Height,
+                  Constants.ImageDimensions.Carousel.Width)
+                </a>
+             </div>
           }
         }
 

@@ -55,6 +55,12 @@ html {
 img{
     max-width:100%;
     height:auto;
+    display: block;
+}
+
+svg{
+    max-width:100%;
+    height:auto;
 }
 
 a{
@@ -80,14 +86,36 @@ figure{
     max-width:100%; 
 }
 
-.text-main{
-    line-height: 1.7;
-    h3{
-        margin-top:0;
-        margin-bottom: 8px;
+.text-main {
+  line-height: 1.7;
+  padding: 0;
+
+  @include breakpoint(700) {
+    padding: 0 80px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+
+  ul {
+    padding-left: 30px;
+
+    li:before {
+      content: "";
+      width: 13px;
+      height: 2px;
+      background: red;
+      display: inline-block;
+      transform: translate(-20px, -5px);
+      margin-left: -13px;
     }
-    p{
-        margin-top:0;
-        margin-bottom:48px;
-    }
+  }
 }

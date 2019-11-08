@@ -4,7 +4,7 @@
 @{
   var elements = Model.Items.ToList();
 }
-<section class="m-b-112 center--1100 center zigzag relator">
+<section class="m-b-112 m-t-112 center--1100 center zigzag relator">
   @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
   {
     if (Model.Item.FieldHasValue(Templates.HasTeaserHeadline.Fields.Title) || !Sitecore.Context.PageMode.IsNormal)

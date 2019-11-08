@@ -1,5 +1,5 @@
 ﻿<template>
-    <div :class="`program-grid ${panelGridClass}`">
+    <div :class="`program-grid ${panelGridClass} program-grid-${items.length}`">
 
         <div class="grid-table-column program-attributes">
             <div class="grid-table-cell"></div>

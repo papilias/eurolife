@@ -17,6 +17,10 @@ footer{
   border-top:1px solid #eee;
   color: rgba(56,59,56, 0.6);
   font-size:14px;
+  @include breakpoint-rev(1140){
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .footer__legal{
@@ -25,11 +29,16 @@ footer{
     color: rgba(56,59,56, 0.6);
     margin:0 10px;
   }
+  @include breakpoint-rev(1140){
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
 }
 
 .footer__madeyby{
   color: rgba(56,59,56, 0.6);
   line-height: 1;
+  order:3;
 }
 
 .footer__lists{
@@ -40,7 +49,14 @@ footer{
 }
 
 .footer__list{
-  flex-basis: 20%;
+  flex-basis: 100%;
+  margin-bottom: 34px;
+  @include breakpoint(820){
+    flex-basis: 30%;
+  }
+  @include breakpoint(1140){
+    flex-basis: 20%;
+  }
   a{
     display: block;
     margin-bottom:16px;
@@ -66,9 +82,14 @@ footer{
 .footer__social {
   display:flex;
   width:100%;
-  justify-content: flex-end;
-  li{
-    margin-left:15px;
+  li {
+    margin: 0 15px 0 0;
+  }
+  @include breakpoint(1140) {
+    justify-content: flex-end;
+    li {
+      margin: 0 0 0 10px;
+    }
   }
   svg{
     width: 28px;
@@ -83,5 +104,12 @@ a.footer__subscription{
   display: block;
   font-weight: 800;
   font-size:16px;
-  text-align: right;
+  @include breakpoint(1140) {
+    text-align: right;
+  }
+}
+@include breakpoint-rev(1140) {
+  .footer__copy {
+    order: 2;
+  }
 }

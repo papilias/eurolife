@@ -1,17 +1,19 @@
 /*figures*/
 .figures{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "figure__cell--1" "figure__cell--2" "figure__cell--4" "figure__cell--3";
+  .figures__inner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "figure__cell--1" "figure__cell--2" "figure__cell--4" "figure__cell--3";
 
-  @include breakpoint(700){
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "figure__cell--1 figure__cell--2" "figure__cell--3 figure__cell--4";
-  }
+    @include breakpoint(700){
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: "figure__cell--1 figure__cell--2" "figure__cell--3 figure__cell--4";
+    }
 
-  font-weight: 500;
-  img{
-    width:100%;
+    font-weight: 500;
+    img{
+      width:100%;
+    }
   }
 }
 
@@ -100,4 +102,25 @@
 
 .figures__text{
   margin-right:20px;
+}
+
+.figures__undertext {
+  display: flex;
+  justify-content: flex-end;
+
+  .figures__text_l, .figures__text_m {
+    display: none;
+  }
+
+  span {
+    margin-top: 20px;
+    font-size: 11px;
+    color: $color-btn-light !important;
+    display: block;
+    text-align: right;
+
+    @include breakpoint(700) {
+      padding-left: 200px;
+    }
+  }
 }

@@ -13,6 +13,10 @@
   &:nth-child(2n){
     flex-direction: row-reverse;
   }
+
+  .btn{
+    position: relative;
+  }
 }
 
 .zigzag__image{

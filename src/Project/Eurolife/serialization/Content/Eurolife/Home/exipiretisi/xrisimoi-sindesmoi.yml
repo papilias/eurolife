@@ -20,6 +20,39 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Χρήσιμοι Σύνδεσμοι
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Χρήσιμοι Σύνδεσμοι
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <a href="https://www.fairfax.ca/">Fairfax Financial Holding Limited</a><br />
+        <br />
+        <a href="https://www.eurobank.gr/">T&rho;ά&pi;&epsilon;&zeta;&alpha; Eurobank</a><br />
+        <br />
+        <a href="https://www.bankofgreece.gr/kiries-leitourgies/epopteia/epopteia-idiwtikhs-asfalishs">&Delta;&Epsilon;&Iota;&Alpha; &Tau;&tau;&Epsilon; </a><br />
+        <br />
+        <a href="http://www1.eaee.gr/">Έ&nu;&omega;&sigma;&eta; &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ώ&nu; &Epsilon;&tau;&alpha;&iota;&rho;&epsilon;&iota;ώ&nu;</a><br />
+        <br />
+        <a href="https://www.eurolife-asigurari.ro/">&Epsilon;urolife ERB Asigurari</a><br />
+        <a href="https://www.erbbrokers.gr/"><br />
+        ERB A&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;έ&sigmaf; &Upsilon;&pi;&eta;&rho;&epsilon;&sigma;ί&epsilon;&sigmaf; &Alpha;&Epsilon;&Mu;&Alpha;</a><br />
+        <a href="https://www.affidea.gr/"><br />
+        Affidea</a><br />
+        <br />
+        <a href="https://www.hygeia.gr/">Ό&mu;&iota;&lambda;&omicron;&sigmaf; &Upsilon;&gamma;&epsilon;ί&alpha;</a><br />
+        <a href="https://bioiatriki.gr/"><br />
+        Ό&mu;&iota;&lambda;&omicron;&sigmaf; &Beta;&iota;&omicron;&iota;&alpha;&tau;&rho;&iota;&kappa;ή</a><br />
+        <a href="https://www.euroclinic.gr/"><br />
+        Ό&mu;&iota;&lambda;&omicron;&sigmaf; &Epsilon;&upsilon;&rho;&omega;&kappa;&lambda;&iota;&nu;&iota;&kappa;ή</a><br />
+        <br />
+        <a href="https://www.iatriko.gr/?cl=609">Ό&mu;&iota;&lambda;&omicron;&sigmaf; &Iota;&alpha;&tau;&rho;&iota;&kappa;&omicron;ύ</a><br />
+        <br />
+        <a href="https://www.mapfre-asistencia.gr/partners/">Mapfre</a><br />
+        <br />
+        <a href="https://www.inter-partner.gr/IPA2/gr/default.aspx">Interpartner</a><br />
+        <a href="https://www.mednet.com.gr/"><br />
+        Mednet</a>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

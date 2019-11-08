@@ -18,7 +18,7 @@
   box-shadow:0 9px 16px -10px rgba(0, 0, 0, 0);
 
   &.sticky-second{
-    transform: translateY(-20px);
+    transform: translateY(-50px);
     box-shadow:0 9px 16px -10px rgba(0, 0, 0, 0.16);
 
     @include breakpoint-rev(820){
@@ -62,7 +62,7 @@
     overflow: hidden;
   }
   h1{
-    transform: translateY(10px) scale(.7);
+    transform: scale(.7);
   }
 
   + .after-sticky{

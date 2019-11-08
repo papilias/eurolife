@@ -293,7 +293,7 @@
 }
 
 @include breakpoint(540) {
-  .theme-home, .theme-motor {
+  .program-grid-2 {
     .grid-table {
       grid-template-columns: repeat(var(--programCount), 428px);
     }
@@ -337,6 +337,8 @@
     line-height: 1.2;
     min-height: 60px;
     align-items: center;
+    justify-content:center;
+
     @include breakpoint(540){
       display: flex;
     }
@@ -365,6 +367,14 @@
   }
 }
 .theme-health{
+  .product-moto{
+    h1{
+      color: $color-health;
+    }
+  }
+  .programs__tabs__title--active{
+    background-color:$color-health;
+  }
   .grid-table-cell--heading {
       background-color: $color-health;
     }
@@ -389,6 +399,14 @@
 }
 
 .theme-motor{
+  .product-moto{
+    h1{
+      color: $color-motor;
+    }
+  }
+  .programs__tabs__title--active{
+    background-color:$color-motor;
+  }
   .grid-table-cell--heading {
     background-color: $color-motor;
   }
@@ -418,6 +436,14 @@
 }
 
 .theme-home{
+  .product-moto{
+    h1{
+      color: $color-home;
+    }
+  }
+  .programs__tabs__title--active{
+    background-color:$color-home;
+  }
   .grid-table-cell--heading  {
     background-color:$color-home;
   }
@@ -442,6 +468,14 @@
 }
 
 .theme-life{
+  .product-moto{
+    h1{
+      color: $color-life-insurance;
+    }
+  }
+  .programs__tabs__title--active{
+    background-color:$color-life-insurance;
+  }
   .grid-table-cell--heading {
     background-color:$color-life-insurance;
   }
@@ -480,6 +514,7 @@
     background-size: 100%;
     width: 24px;
     height: 24px;
+    //margin:0 auto;
   }
 }
 
@@ -487,12 +522,13 @@
   position: relative;
   &:after{
     content: '—';
+    margin:0 auto;
   }
 }
 
 /*controls*/
 .program-controls{
-  margin-left: 212px;
+  padding-left: 212px;
   display: flex;
   justify-content: space-between;
   margin-top:54px;
@@ -807,4 +843,17 @@ main{
   display: block;
 }
 
+.sticky-pending{
+  .logo{
+    opacity:0;
+    pointer-events: none;
+    transition:0.5s opacity ease-in-out;
+  }
 
+  &.sticky{
+    .logo{
+      opacity:1;
+      pointer-events: auto;
+    }
+  }
+}

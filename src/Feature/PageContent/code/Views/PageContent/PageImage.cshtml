@@ -30,7 +30,7 @@
       mobileImage = Model.Item.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptionsMobile);
     }
 }
-<section class="hero m-t-48 m-b-24">
+<section class="hero m-b-64">
   <picture>
     @if (!string.IsNullOrEmpty(desktopImage) || Sitecore.Context.PageMode.IsExperienceEditor)
     {
@@ -46,7 +46,7 @@
     {
       @Html.Sitecore().ImageField(Templates.HasPageImageContent.Fields.DesktopImage, Model.Item,
         0,
-        1920)    
+        1280)    
     }                             
   </picture>   
 </section>   

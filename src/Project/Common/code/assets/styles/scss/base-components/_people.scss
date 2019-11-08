@@ -21,8 +21,10 @@
 .people__image{
   img{
     margin: 0 auto;
-    max-width: 156px;
-    border-radius:50%;
+    width: 156px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 156px;
   }
 }
 
@@ -37,5 +39,7 @@
   font-size: 14px;
   color:$color-black-faded;
 }
+
+
 
 

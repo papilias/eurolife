@@ -108,6 +108,9 @@ Languages:
             </r>
           </d>
         </r>
+    - ID: "23ef204d-df36-447d-9e7d-8862c8b6455f"
+      Hint: IconImage
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191009T111041Z
@@ -118,6 +121,16 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 1
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Συνεργάτες Πωλήσεων
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{6CFB0594-C03F-46DC-8E3D-60202438451F}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: 
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -126,6 +139,10 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{99628C21-2F2D-4388-AC96-7077D1EBDF15}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

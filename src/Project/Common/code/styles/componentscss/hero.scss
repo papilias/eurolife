@@ -5,8 +5,7 @@
 @import "../scss/base/mixins.scss";
 @import "../scss/base/variables.scss";
 
-.hero{
-
+.hero {
   margin-right: 16px;
 
 
@@ -22,9 +21,11 @@
     margin-right: calc( (100vw - 1700px ) / 2 + 53px);
   }
 
-  img{
-    width:100%;
+  img {
+    width: 100%;
     border-radius: 0 0 100px 0;
+    max-height: 576px;
+    object-fit: cover;
   }
 }
 

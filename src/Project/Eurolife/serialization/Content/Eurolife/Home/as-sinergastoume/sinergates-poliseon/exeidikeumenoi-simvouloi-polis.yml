@@ -96,6 +96,20 @@ Languages:
       Hint: ShowChildren
       Type: Checkbox
       Value: 1
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Εξειδικευμένοι Σύμβουλοι Πωλήσεων Εurolife ERB
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{DBF1607C-EAAE-4600-BCC9-F72633E81267}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <span style="background-color: transparent; text-decoration: none; color: #000000;">&Sigma;&tau;&eta; Eurolife ERB &pi;&iota;&sigma;&tau;&epsilon;ύ&omicron;&upsilon;&mu;&epsilon; &sigma;&tau;&omicron; &pi;&alpha;&rho;ό&nu; &kappa;&alpha;&iota; &sigma;&tau;&omicron; &mu;έ&lambda;&lambda;&omicron;&nu; &tau;&eta;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή&sigmaf; &alpha;&gamma;&omicron;&rho;ά&sigmaf;, &epsilon;&nu;ό&sigmaf; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;&omicron;ύ &kappa;&lambda;ά&delta;&omicron;&upsilon; &tau;&eta;&sigmaf; &omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;ί&alpha;&sigmaf; &mu;&alpha;&sigmaf; &pi;&omicron;&upsilon; &pi;&alpha;ί&zeta;&epsilon;&iota; &kappa;&alpha;&theta;&omicron;&rho;&iota;&sigma;&tau;&iota;&kappa;ό &rho;ό&lambda;&omicron; &sigma;&tau;&eta;&nu; &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta;, ό&chi;&iota; &mu;ό&nu;&omicron; &mu;έ&sigma;&omega; &tau;&omega;&nu; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ώ&nu; &epsilon;&pi;&epsilon;&nu;&delta;ύ&sigma;&epsilon;&omega;&nu; &tau;&omicron;&upsilon; &kappa;&lambda;ά&delta;&omicron;&upsilon; &sigma;&epsilon; &alpha;&upsilon;&tau;ή&nu;, &alpha;&lambda;&lambda;ά &pi;&epsilon;&rho;&iota;&sigma;&sigma;ό&tau;&epsilon;&rho;&omicron; &delta;&iota;ό&tau;&iota; &mu;έ&sigma;&alpha; &alpha;&pi;ό &tau;&eta;&nu; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;ή &mu;&alpha;&sigmaf; &delta;&omicron;&upsilon;&lambda;&epsilon;&iota;ά &alpha;&nu;&tau;&iota;&mu;&epsilon;&tau;&omega;&pi;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &tau;&iota;&sigmaf; &omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;&iota;&kappa;έ&sigmaf; &sigma;&upsilon;&nu;έ&pi;&epsilon;&iota;&epsilon;&sigmaf; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ώ&nu; &kappa;&alpha;&iota; &pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&iota;&kappa;ώ&nu; &kappa;&iota;&nu;&delta;ύ&nu;&omega;&nu;, &delta;&iota;&alpha;&mu;&omicron;&rho;&phi;ώ&nu;&omicron;&nu;&tau;&alpha;&sigmaf; έ&tau;&sigma;&iota; &sigma;&upsilon;&nu;&theta;ή&kappa;&epsilon;&sigmaf; &alpha;&sigma;&phi;ά&lambda;&epsilon;&iota;&alpha;&sigmaf; &sigma;&epsilon; &nu;&omicron;&iota;&kappa;&omicron;&kappa;&upsilon;&rho;&iota;ά &kappa;&alpha;&iota; &epsilon;&pi;&iota;&chi;&epsilon;&iota;&rho;ή&sigma;&epsilon;&iota;&sigmaf;.</span>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Tau;&omicron; &Epsilon;&tau;&alpha;&iota;&rho;&iota;&kappa;ό &Delta;ί&kappa;&tau;&upsilon;&omicron; &Pi;&omega;&lambda;ή&sigma;&epsilon;&omega;&nu; &tau;&eta;&sigmaf; Eurolife ERB, &delta;&iota;&alpha;&mu;&omicron;&rho;&phi;ώ&theta;&eta;&kappa;&epsilon; &pi;&rho;&omicron;&kappa;&epsilon;&iota;&mu;έ&nu;&omicron;&upsilon; &nu;&alpha; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&epsilon;&iota; &tau;&eta; &delta;&upsilon;&nu;&alpha;&tau;ό&tau;&eta;&tau;&alpha; &sigma;&epsilon; &alpha;&nu;&theta;&rho;ώ&pi;&omicron;&upsilon;&sigmaf; &mu;&epsilon; &epsilon;&pi;&iota;&delta;&iota;ώ&xi;&epsilon;&iota;&sigmaf; &nu;&alpha; &mu;&pi;&omicron;&rho;&omicron;ύ&nu; &nu;&alpha; &epsilon;&pi;&iota;&lambda;έ&xi;&omicron;&upsilon;&nu; &tau;&omicron; &epsilon;&pi;ά&gamma;&gamma;&epsilon;&lambda;&mu;&alpha; &tau;&omicron;&upsilon; &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;&omicron;ύ &Delta;&iota;&alpha;&mu;&epsilon;&sigma;&omicron;&lambda;&alpha;&beta;&eta;&tau;ή.</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">Έ&tau;&sigma;&iota;, &mu;&pi;&omicron;&rho;&omicron;ύ&mu;&epsilon; &nu;&alpha; &chi;&alpha;&rho;ί&sigma;&omicron;&upsilon;&mu;&epsilon; &pi;&rho;&omicron;&omicron;&pi;&tau;&iota;&kappa;ή &kappa;&alpha;&iota; &nu;&alpha; &epsilon;&nu;&tau;ά&xi;&omicron;&upsilon;&mu;&epsilon; &nu;έ&omicron;&upsilon;&sigmaf; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;ί&epsilon;&sigmaf; &sigma;&tau;&eta;&nu; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή &alpha;&gamma;&omicron;&rho;ά, &pi;&omicron;&upsilon; &theta;&alpha; &alpha;&gamma;&kappa;&alpha;&lambda;&iota;ά&sigma;&omicron;&upsilon;&nu; &tau;&omicron;&nu; &kappa;&lambda;ά&delta;&omicron;, &theta;&alpha; &epsilon;&xi;&epsilon;&lambda;ί&xi;&omicron;&upsilon;&nu; &tau;&iota;&sigmaf; &iota;&kappa;&alpha;&nu;ό&tau;&eta;&tau;έ&sigmaf; &tau;&omicron;&upsilon;&sigmaf; &kappa;&alpha;&iota; &theta;&alpha; &mu;&pi;&omicron;&rho;&omicron;ύ&nu;, &alpha;&pi;ό &tau;&eta;&nu; &pi;&rho;ώ&tau;&eta; &mu;έ&rho;&alpha; &sigma;&tau;&eta; &delta;&omicron;&upsilon;&lambda;&epsilon;&iota;ά, &nu;&alpha; &alpha;&pi;&omicron;&lambda;&alpha;ύ&sigma;&omicron;&upsilon;&nu; &tau;&eta;&nu; &upsilon;&pi;&omicron;&delta;&omicron;&mu;ή &pi;&omicron;&upsilon; &theta;&alpha; &tau;&omicron;&upsilon;&sigmaf; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon;, ώ&sigma;&tau;&epsilon; &nu;&alpha; &pi;&rho;&omicron;&sigma;&eta;&lambda;&omega;&theta;&omicron;ύ&nu; &alpha;&nu;&epsilon;&nu;ό&chi;&lambda;&eta;&tau;&omicron;&iota; &sigma;&tau;&eta;&nu; &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta; &tau;&eta;&sigmaf; &kappa;&alpha;&rho;&iota;έ&rho;&alpha;&sigmaf; &tau;&omicron;&upsilon;&sigmaf;.</span></p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -104,6 +118,10 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{3D706DE4-2356-4AEB-801A-E481A7B7CF70}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

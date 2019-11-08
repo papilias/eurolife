@@ -48,12 +48,31 @@ Languages:
               s:ph="page-layout" />
           </d>
         </r>
+    - ID: "23ef204d-df36-447d-9e7d-8862c8b6455f"
+      Hint: IconImage
+      Value: |
+        <image mediaid="{E4BD4F77-EA16-4F91-ADE8-5804641C907A}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190806T125041Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: Εθνική Λυρική Σκηνή
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: Εθνική Λυρική Σκηνή
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{BEC9B002-5A62-417B-8EFE-8340D32BA4DE}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        &Epsilon;&delta;ώ &kappa;&alpha;&iota; &chi;&rho;ό&nu;&iota;&alpha;, &eta; &Epsilon;&theta;&nu;&iota;&kappa;ή &Lambda;&upsilon;&rho;&iota;&kappa;ή &Sigma;&kappa;&eta;&nu;ή &epsilon;&pi;&iota;&delta;&epsilon;&iota;&kappa;&nu;ύ&epsilon;&iota; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ό έ&rho;&gamma;&omicron; &sigma;&tau;&eta;&nu; &pi;&omicron;&lambda;&iota;&tau;&iota;&sigma;&tau;&iota;&kappa;ή &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta; &tau;&eta;&sigmaf; &chi;ώ&rho;&alpha;&sigmaf;, &mu;&epsilon; &pi;&alpha;&rho;&alpha;&sigma;&tau;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha; &upsilon;&psi;&eta;&lambda;&omicron;ύ &kappa;ύ&rho;&omicron;&upsilon;&sigmaf; &kappa;&alpha;&iota; &alpha;&nu;&alpha;&gamma;&nu;&omega;&rho;&iota;&sigma;&mu;έ&nu;&eta;&sigmaf;
+        &alpha;&xi;ί&alpha;&sigmaf;. &Alpha;&pi;&omicron;&sigma;&tau;&omicron;&lambda;ή &tau;&eta;&sigmaf; &Epsilon;&Lambda;&Sigma; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&epsilon;&iota; &sigma;&epsilon; Έ&lambda;&lambda;&eta;&nu;&epsilon;&sigmaf; &kappa;&alpha;&iota; &xi;έ&nu;&omicron;&upsilon;&sigmaf; &theta;&epsilon;&alpha;&tau;έ&sigmaf; &pi;&alpha;&rho;&alpha;&gamma;&omega;&gamma;έ&sigmaf; &upsilon;&psi;&eta;&lambda;ή&sigmaf; &pi;&omicron;&iota;ό&tau;&eta;&tau;&alpha;&sigmaf;, &pi;&alpha;&rho;&omicron;&upsilon;&sigma;&iota;ά&zeta;&omicron;&nu;&tau;&alpha;&sigmaf; ό&pi;&epsilon;&rho;&epsilon;&sigmaf;, &mu;&pi;&alpha;&lambda;έ&tau;&alpha;, &omicron;&pi;&epsilon;&rho;έ&tau;&epsilon;&sigmaf;, ό&pi;&epsilon;&rho;&epsilon;&sigmaf; &gamma;&iota;&alpha; &pi;&alpha;&iota;&delta;&iota;ά &kappa;&alpha;&iota;
+        &rho;&epsilon;&sigma;&iota;&tau;ά&lambda; &kappa;.ά. &Tau;&omicron; &pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha; &tau;&eta;&sigmaf; &kappa;&alpha;&lambda;&lambda;&iota;&tau;&epsilon;&chi;&nu;&iota;&kappa;ή&sigmaf; &pi;&epsilon;&rho;&iota;ό&delta;&omicron;&upsilon; 2019/20 &tau;&eta;&sigmaf; &Epsilon;&theta;&nu;&iota;&kappa;ή&sigmaf; &Lambda;&upsilon;&rho;&iota;&kappa;ή&sigmaf; &Sigma;&kappa;&eta;&nu;ή&sigmaf;, &kappa;&alpha;&tau;ά &tau;&eta;&nu; &omicron;&pi;&omicron;ί&alpha; &theta;&alpha; &gamma;&iota;&omicron;&rho;&tau;&alpha;&sigma;&tau;&omicron;ύ&nu; &tau;&alpha; 80 &chi;&rho;ό&nu;&iota;&alpha; &lambda;&epsilon;&iota;&tau;&omicron;&upsilon;&rho;&gamma;ί&alpha;&sigmaf; &tau;&eta;&sigmaf;, &sigma;&eta;&mu;&alpha;&tau;&omicron;&delta;&omicron;&tau;&epsilon;ί &mu;&iota;&alpha; &nu;έ&alpha;
+        &epsilon;&pi;&omicron;&chi;ή &delta;&iota;&alpha;&lambda;ό&gamma;&omicron;&upsilon; &kappa;&alpha;&iota; &alpha;&lambda;&lambda;&eta;&lambda;&epsilon;&pi;ί&delta;&rho;&alpha;&sigma;&eta;&sigmaf; &mu;&epsilon; &tau;&omicron; &pi;&alpha;&gamma;&kappa;ό&sigma;&mu;&iota;&omicron; &gamma;ί&gamma;&nu;&epsilon;&sigma;&theta;&alpha;&iota; &sigma;&tau;&eta;&nu; &tau;έ&chi;&nu;&eta; &tau;&eta;&sigmaf; ό&pi;&epsilon;&rho;&alpha;&sigmaf;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &tau;&alpha;&upsilon;&tau;ό&chi;&rho;&omicron;&nu;&alpha; &epsilon;&sigma;&tau;&iota;ά&zeta;&epsilon;&iota; &sigma;&tau;&eta; &sigma;&tau;ή&rho;&iota;&xi;&eta; &tau;&eta;&sigmaf; &kappa;&alpha;&lambda;&lambda;&iota;&tau;&epsilon;&chi;&nu;&iota;&kappa;ή&sigmaf; &delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;ί&alpha;&sigmaf; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;ώ&nu;
+        &Epsilon;&lambda;&lambda;ή&nu;&omega;&nu; &delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;ώ&nu;.
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -62,6 +81,15 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: |
+        Συνεργαζόμαστε με την Εθνική Λυρική Σκηνή, ως Πάγιος Χορηγός του καλλιτεχνικού προγράμματος και των εκπαιδευτικών δραστηριοτήτων της, μεταφέροντας την αξία της
+        τέχνης σε κάθε άνθρωπο.
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{1C8F3D53-D17B-4727-921B-64837A3A4415}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
@@ -79,7 +107,17 @@ Languages:
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
       Value: ethelon
+    - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
+      Hint: Title
+      Value: ethelon
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediapath="" alt="carousel_1920x680" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{8427819A-9FA1-40D9-B8FB-91325460B6FD}" />
