@@ -926,3 +926,123 @@ main {
     }
   }
 }
+
+.theme-finance {
+  .product-moto {
+    h1 {
+      color: $color-finance;
+    }
+  }
+
+  .programs__tabs__title--active {
+    background-color: $color-finance;
+  }
+
+  .grid-table-cell--heading {
+    background-color: $color-finance;
+  }
+
+  .moto-heading {
+    color: $color-finance;
+  }
+
+  .accordion > li {
+    border-left-color: $color-finance;
+  }
+
+  .triplette-item--static {
+    background-color: $color-finance-soft;
+
+    h3 {
+      color: $color-finance;
+    }
+  }
+
+  .intro-text h1 {
+    color: $color-finance;
+  }
+
+  .nav-product {
+    background-color: $color-finance;
+  }
+}
+
+.theme-small-business {
+  .product-moto {
+    h1 {
+      color: $color-small-business;
+    }
+  }
+
+  .programs__tabs__title--active {
+    background-color: $color-small-business;
+  }
+
+  .grid-table-cell--heading {
+    background-color: $color-small-business;
+  }
+
+  .moto-heading {
+    color: $color-small-business;
+  }
+
+  .accordion > li {
+    border-left-color: $color-small-business;
+  }
+
+  .triplette-item--static {
+    background-color: $color-small-business-soft;
+
+    h3 {
+      color: $color-small-business;
+    }
+  }
+
+  .intro-text h1 {
+    color: $color-small-business;
+  }
+
+  .nav-product {
+    background-color: $color-small-business;
+  }
+}
+
+.theme-non-category {
+  .product-moto {
+    h1 {
+      color: $color-non-category;
+    }
+  }
+
+  .programs__tabs__title--active {
+    background-color: $color-non-category;
+  }
+
+  .grid-table-cell--heading {
+    background-color: $color-non-category;
+  }
+
+  .moto-heading {
+    color: $color-non-category;
+  }
+
+  .accordion > li {
+    border-left-color: $color-non-category;
+  }
+
+  .triplette-item--static {
+    background-color: $color-non-category-soft;
+
+    h3 {
+      color: $color-non-category;
+    }
+  }
+
+  .intro-text h1 {
+    color: $color-non-category;
+  }
+
+  .nav-product {
+    background-color: $color-non-category;
+  }
+}

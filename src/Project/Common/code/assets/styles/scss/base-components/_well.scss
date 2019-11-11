@@ -1,0 +1,30 @@
+﻿.well.bg-life-insurance {
+  padding: 64px 0;
+
+  .triplette {
+    position: relative;
+
+    .stats__item {
+      text-align: center;
+      color: $dusky-blue;
+      background: $color-life-insurance-soft;
+      position:relative;
+      z-index:1;
+      flex-basis:25%; 
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: $dusky-blue;
+      top: 30px;
+      z-index:0;
+    }
+  }
+}

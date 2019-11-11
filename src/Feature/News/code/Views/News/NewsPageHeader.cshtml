@@ -50,7 +50,7 @@
     || Model.Item.FieldHasValue(Templates.NewsArticle.Fields.MobileImage)
     || Sitecore.Context.PageMode.IsExperienceEditor)
 {
-  <section class="hero m-t-48 m-b-24">
+  <section class="hero m-b-24">
     @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
     {
       <picture>

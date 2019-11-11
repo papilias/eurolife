@@ -369,6 +369,10 @@ figure {
   margin-bottom: 24px;
 }
 
+.m-b-32 {
+  margin-bottom: 32px;
+}
+
 .m-b-48 {
   margin-bottom: 48px;
 }
@@ -515,11 +519,11 @@ figure {
 }
 
 .color-non-category {
-  color: #01c4b5;
+  color: #21C4B5;
 }
 
 .color-finance {
-  color: #018195;
+  color: #008094;
 }
 
 .color-life-insurance {
@@ -547,7 +551,7 @@ figure {
 }
 
 .bg-finance {
-  background-color: #018195;
+  background-color: #73CFD4;
 }
 
 .bg-life-insurance {
@@ -572,7 +576,7 @@ figure {
   color: #00945f;
 }
 .zigzag__item.bg-finance h2 {
-  color: #018195;
+  color: #008094;
 }
 .zigzag__item.bg-life-insurance h2 {
   color: #485294;
@@ -808,6 +812,14 @@ iframe {
 
 main section:last-child.hero-plain {
   margin-bottom: 0;
+}
+
+.latest-news + .media-featured-files {
+  margin-top: -80px !important;
+}
+
+.section-header-summary + .latest-news {
+  margin-top: 0 !important;
 }
 
 /*------------------------------------*\
@@ -4323,6 +4335,13 @@ article time {
   border-radius: 50%;
   cursor: pointer;
 }
+.grouping-dots li > a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 .grouping-dots li:after {
   opacity: 0;
   content: "";
@@ -5198,6 +5217,90 @@ main {
   pointer-events: auto;
 }
 
+.theme-finance .product-moto h1 {
+  color: #008094;
+}
+.theme-finance .programs__tabs__title--active {
+  background-color: #008094;
+}
+.theme-finance .grid-table-cell--heading {
+  background-color: #008094;
+}
+.theme-finance .moto-heading {
+  color: #008094;
+}
+.theme-finance .accordion > li {
+  border-left-color: #008094;
+}
+.theme-finance .triplette-item--static {
+  background-color: #73CFD4;
+}
+.theme-finance .triplette-item--static h3 {
+  color: #008094;
+}
+.theme-finance .intro-text h1 {
+  color: #008094;
+}
+.theme-finance .nav-product {
+  background-color: #008094;
+}
+
+.theme-small-business .product-moto h1 {
+  color: #EB7D2E;
+}
+.theme-small-business .programs__tabs__title--active {
+  background-color: #EB7D2E;
+}
+.theme-small-business .grid-table-cell--heading {
+  background-color: #EB7D2E;
+}
+.theme-small-business .moto-heading {
+  color: #EB7D2E;
+}
+.theme-small-business .accordion > li {
+  border-left-color: #EB7D2E;
+}
+.theme-small-business .triplette-item--static {
+  background-color: #FAC4B0;
+}
+.theme-small-business .triplette-item--static h3 {
+  color: #EB7D2E;
+}
+.theme-small-business .intro-text h1 {
+  color: #EB7D2E;
+}
+.theme-small-business .nav-product {
+  background-color: #EB7D2E;
+}
+
+.theme-non-category .product-moto h1 {
+  color: #21C4B5;
+}
+.theme-non-category .programs__tabs__title--active {
+  background-color: #21C4B5;
+}
+.theme-non-category .grid-table-cell--heading {
+  background-color: #21C4B5;
+}
+.theme-non-category .moto-heading {
+  color: #21C4B5;
+}
+.theme-non-category .accordion > li {
+  border-left-color: #21C4B5;
+}
+.theme-non-category .triplette-item--static {
+  background-color: #8CE3D4;
+}
+.theme-non-category .triplette-item--static h3 {
+  color: #21C4B5;
+}
+.theme-non-category .intro-text h1 {
+  color: #21C4B5;
+}
+.theme-non-category .nav-product {
+  background-color: #21C4B5;
+}
+
 /*------------------------------------*\
   #PEOPLE
 \*------------------------------------*/
@@ -5750,6 +5853,33 @@ li.place {
   margin-top: 15px;
 }
 
+.well.bg-life-insurance {
+  padding: 64px 0;
+}
+.well.bg-life-insurance .triplette {
+  position: relative;
+}
+.well.bg-life-insurance .triplette .stats__item {
+  text-align: center;
+  color: #485294;
+  background: #ecedf4;
+  position: relative;
+  z-index: 1;
+  flex-basis: 25%;
+}
+.well.bg-life-insurance .triplette .stats__item img {
+  margin: 0 auto;
+}
+.well.bg-life-insurance .triplette:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #485294;
+  top: 30px;
+  z-index: 0;
+}
+
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
@@ -6177,6 +6307,7 @@ li.place {
 .nav-support__label {
   margin-right: 5px;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .nav-support__phone {

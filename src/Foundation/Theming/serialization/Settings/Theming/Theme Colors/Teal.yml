@@ -1,0 +1,22 @@
+﻿---
+ID: "79de48cf-b0ed-474b-aa01-758b827304f4"
+Parent: "a107d95f-682e-4aa2-b3c3-e767855abdb7"
+Template: "cc84a3ac-cbe7-454e-8e28-929fcd7d8753"
+Path: /sitecore/system/Settings/Foundation/Theming/Theme Colors/Teal
+DB: master
+SharedFields:
+- ID: "41d1e1aa-4552-4852-b717-acd5d3e632c2"
+  Hint: Style
+  Value: "theme-non-category"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191108T142445Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

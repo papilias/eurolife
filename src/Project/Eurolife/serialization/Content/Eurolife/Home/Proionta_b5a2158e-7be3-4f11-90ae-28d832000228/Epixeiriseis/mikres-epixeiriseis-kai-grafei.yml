@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "3da3fb00-31f6-432d-979a-57cee52b9d8a"
   Hint: Color
-  Value: "{A43E6423-6CE1-4BF2-AC60-1DCC9947C87A}"
+  Value: "{3DBCCC4E-AA6B-4A5C-B599-27A48B9CFAE5}"
 - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
   Hint: IncludeInSearchResults
   Type: Checkbox
