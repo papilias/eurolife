@@ -6,12 +6,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-height: 80vh;
+  max-height: 60vh;
   overflow: hidden;
-  transition: max-height 1000ms ease;
+  transition: max-height 1000ms ease-in-out;
 
   &--expanded {
-    max-height: 3000vh;
+    max-height: 2000vh;
   }
 }
 
@@ -201,7 +201,7 @@
         border-radius: 50%;
       }
 
-      &:after {
+      &:before {
         content: '';
         position: absolute;
         left: -26px;
@@ -274,7 +274,7 @@
   .grid-table-cell {
     padding-left: 0;
     padding-right: 0;
-    min-height: 50px;
+    min-height: 90px;
     align-items: center;
 
     @include breakpoint(540) {
@@ -344,7 +344,7 @@
   .grid-table-cell {
     font-weight: 500;
     line-height: 1.2;
-    min-height: 60px;
+    min-height: 90px;
     align-items: center;
     justify-content: center;
 
@@ -553,7 +553,7 @@
 .service-provided {
   position: relative;
 
-  &:after {
+  &:before {
     content: '';
     display: block;
     background-image: url(../images/icons/check-blue.svg);
@@ -568,7 +568,7 @@
 .service-not-provided {
   position: relative;
 
-  &:after {
+  &:before {
     content: '—';
     margin: 0 auto;
   }
@@ -586,7 +586,7 @@
 .program-controls {
   padding-left: 212px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 54px;
 
   &__more {
@@ -601,22 +601,17 @@
     line-height: 1;
     cursor: pointer;
     flex-grow: 1;
+    max-height: 35px;
   }
 
   &__left {
     cursor: pointer;
     margin-left: 24px;
-    display:none;
   }
 
   &__right {
     cursor: pointer;
     margin-left: 8px;
-    display:none;
-  }
-
-  @include breakpoint-rev(540) {
-    display: none;
   }
 }
 
@@ -720,7 +715,7 @@
   margin-bottom: 24px;
 
   .program-attributes {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 

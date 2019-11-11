@@ -38,11 +38,38 @@
 
     $(document).ready(function () {
 
+        //FIXES
+        try {
+          if ($(".program-grid").length > 1) {
+            $(".program-controls__more").removeClass("hidden");
+          }
+
+          $(".grid-table-window").each(function () {
+            const t = $(this);
+
+            if (t.find(".grid-table-column").length > 3) {
+              $(".program-controls__left").removeClass("hidden");
+              $(".program-controls__right").removeClass("hidden");
+            }
+          });
+
+          if ($(".coverages")) {
+            if ($(".coverage__yes").find("ul").length <= 3) {
+              $(".coverage__area").addClass("coverage__area--expanded");
+              $(".js-coverage__expander").remove();
+            }
+          }
+        }
+        catch (e) {
+          console.log(e);
+        }
+
         if($('select').length) {
             $('select').select2({
                 minimumResultsForSearch: -1
             });
         }
+
 
         if($('.form').length){
             highLightLabel();
@@ -163,7 +190,8 @@
                         }
                     }
                 ]
-            });
+          });
+
             $('.js-leadership-slider-text').slick({
                 mobileFirst:true,
                 dots: false,
@@ -227,8 +255,15 @@
     });
 
     //expand program START
-    $( ".program-controls__more" ).click(function() {
-        $(this).parent().prev().find('.program-expander').toggleClass('program-expander--visible');
+    $(".program-controls__more").click(function () {
+      const t = $(this);
+
+      if (!t.parent().prev().find('.program-expander').hasClass('program-expander--visible'))
+        t.text('Δείτε λιγότερα');
+      else
+        t.text('Δείτε περισσότερα');  
+
+        t.parent().prev().find('.program-expander').toggleClass('program-expander--visible');
     });
     //expand program END
 
@@ -286,7 +321,7 @@
         var menuHeight = document.getElementById('fix-2').clientHeight;
         var stick2 = document.getElementById("after-sticky-2");
         menu.style.setProperty('--h2', menuHeight + "px");
-        menu.style.setProperty('--top', headerHeight + "px");
+        menu.style.setProperty('--top', (headerHeight - $("#fix-1 .intro__text").height() + 10) + "px");
         stick2.style.setProperty('--p2', menuHeight + "px");
 
         // Get the offset position of the navbar
@@ -543,5 +578,4 @@
             $(this).siblings(".sublist").toggleClass("active");
         });
     }
-
 })(jQuery);

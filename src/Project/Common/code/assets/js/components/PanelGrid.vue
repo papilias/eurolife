@@ -2,7 +2,7 @@
     <div :class="`program-grid ${panelGridClass} program-grid-${items.length}`">
 
         <div class="grid-table-column program-attributes">
-            <div class="grid-table-cell"></div>
+            <div v-if="category.isMain" class="grid-table-cell"></div>
             <div class="grid-table-cell" v-for="row in category.rows" :key="`panel-row-${row.id}`" >{{ row.title }}</div>
         </div>
 

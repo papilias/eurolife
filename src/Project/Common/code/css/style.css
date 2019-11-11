@@ -68,6 +68,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+table td {
+  padding: 20px !important;
+}
+
+@media (min-width: 820px) {
+  .iframe iframe {
+    width: 810px;
+  }
+}
 
 p {
   margin: 0 0 20px 0;
@@ -142,7 +151,7 @@ ul {
 }
 
 li {
-  list-style-type: none;
+  list-style-type: none !important;
 }
 
 figure {
@@ -810,7 +819,7 @@ iframe {
   background-color: #4a5294;
 }
 
-main section:last-child.hero-plain {
+main section:last-child.hero-plain:not(.center) {
   margin-bottom: 0;
 }
 
@@ -820,6 +829,10 @@ main section:last-child.hero-plain {
 
 .section-header-summary + .latest-news {
   margin-top: 0 !important;
+}
+
+.bg-life-insurance + section > h1, .bg-life-insurance + article {
+  margin-top: 48px;
 }
 
 /*------------------------------------*\
@@ -1351,7 +1364,7 @@ input[type=radio]:checked + label:after {
   transition: font-weight 3000ms ease-in-out;
 }
 .accordion input[type=checkbox] + label {
-  padding: 24px 24px 0;
+  padding: 24px 74px 0 24px;
 }
 .accordion input[type=checkbox] + label:after, .accordion input[type=checkbox] + label:before {
   display: none;
@@ -2107,7 +2120,6 @@ input:checked + label .accordion__state:before {
   width: 100%;
   height: auto;
   max-width: 300%;
-  max-height: 450px;
 }
 .solo-teaser__contents {
   padding-left: 20px;
@@ -3326,14 +3338,14 @@ article time {
 
 .tooltext {
   opacity: 0;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
   top: 32px;
-  left: -50px;
+  left: -125px;
   width: 250px;
   height: auto;
   background-color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   z-index: -1;
   box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.1);
@@ -3343,7 +3355,7 @@ article time {
 }
 .tooltext:after {
   bottom: 100%;
-  left: 60px;
+  left: 135px;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -4396,12 +4408,12 @@ article time {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-height: 80vh;
+  max-height: 60vh;
   overflow: hidden;
-  transition: max-height 1000ms ease;
+  transition: max-height 1000ms ease-in-out;
 }
 .coverage__area--expanded {
-  max-height: 3000vh;
+  max-height: 2000vh;
 }
 
 .coverage__title {
@@ -4582,7 +4594,7 @@ article time {
   height: 22px;
   border-radius: 50%;
 }
-.coverage__no > ul > li:after {
+.coverage__no > ul > li:before {
   content: "";
   position: absolute;
   left: -26px;
@@ -4646,7 +4658,7 @@ article time {
 .program-attributes .grid-table-cell {
   padding-left: 0;
   padding-right: 0;
-  min-height: 50px;
+  min-height: 90px;
   align-items: center;
 }
 @media (min-width: 540px) {
@@ -4718,7 +4730,7 @@ article time {
 .program .grid-table-cell {
   font-weight: 500;
   line-height: 1.2;
-  min-height: 60px;
+  min-height: 90px;
   align-items: center;
   justify-content: center;
 }
@@ -4866,7 +4878,7 @@ article time {
 .service-provided {
   position: relative;
 }
-.service-provided:after {
+.service-provided:before {
   content: "";
   display: block;
   background-image: url(../images/icons/check-blue.svg);
@@ -4879,7 +4891,7 @@ article time {
 .service-not-provided {
   position: relative;
 }
-.service-not-provided:after {
+.service-not-provided:before {
   content: "\2014";
   margin: 0 auto;
 }
@@ -4892,7 +4904,7 @@ article time {
 .program-controls {
   padding-left: 212px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 54px;
 }
 .program-controls__more {
@@ -4907,21 +4919,15 @@ article time {
   line-height: 1;
   cursor: pointer;
   flex-grow: 1;
+  max-height: 35px;
 }
 .program-controls__left {
   cursor: pointer;
   margin-left: 24px;
-  display: none;
 }
 .program-controls__right {
   cursor: pointer;
   margin-left: 8px;
-  display: none;
-}
-@media (max-width: 540px) {
-  .program-controls {
-    display: none;
-  }
 }
 
 .icon-down {
@@ -5024,7 +5030,7 @@ article time {
   margin-bottom: 24px;
 }
 .program-grid--subsection .program-attributes {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .program-grid--subsection__title {
@@ -5920,7 +5926,7 @@ li.place {
   display: block;
   margin-left: 15px;
   margin-right: 15px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.4;
   font-weight: 500;
 }

@@ -243,7 +243,8 @@
 }
 
 /*grid*/
-.program-grid{
+
+-grid{
   display: grid;
   margin-bottom: 40px;
   grid-template-columns: auto;
@@ -270,7 +271,7 @@
   .grid-table-cell{
     padding-left: 0;
     padding-right: 0;
-    min-height: 50px;
+    min-height: 100px;
     align-items: center;
 
     @include breakpoint(540){
@@ -522,10 +523,6 @@
   &__right{
     cursor: pointer;
     margin-left: 8px;
-  }
-
-  @include breakpoint-rev(540){
-    display: none;
   }
 }
 

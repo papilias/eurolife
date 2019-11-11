@@ -32,7 +32,7 @@
     transition: font-weight 3000ms ease-in-out;
   }
   input[type="checkbox"] + label{
-    padding:24px 24px 0;
+    padding:24px 74px 0 24px;
 
     &:after, &:before{
       display: none;

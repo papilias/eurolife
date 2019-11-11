@@ -9,10 +9,20 @@ footer, header, hgroup, menu, nav, section {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    
+    td{
+      padding:20px !important;
+    }
+}
+
+.iframe iframe {
+  @include breakpoint(820) {
+    width: 810px;
+  }
 }
 
 p {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 ::selection { 
@@ -78,7 +88,7 @@ ul{
     margin:0;
 }
 li{
-    list-style-type: none;
+    list-style-type: none !important;
 }
 
 figure{ 
