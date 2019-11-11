@@ -5893,29 +5893,18 @@ main section:last-child.hero-plain:not(.center) {
   margin-top: 48px;
 }
 
-.well {
+article + .well {
   background-color: #ecedf4;
 }
-.well .cta-double__item {
+article + .well .cta-double__item {
   position: relative;
 }
-.well .cta-double__item svg {
+article + .well .cta-double__item svg {
   position: absolute;
   right: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%) scale(1.5);
           transform: translateY(-50%) scale(1.5);
-}
-
-.highlights + .well {
-  background-color: transparent;
-}
-.highlights + .well .cta-double__item svg {
-  position: relative;
-  right: unset;
-  top: unset;
-  -webkit-transform: none;
-          transform: none;
 }
 
 section#highlights-accordion + section#highlights-accordion {

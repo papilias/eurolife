@@ -14,7 +14,7 @@
   margin-top: 48px;
 }
 
-.well {
+article + .well {
   background-color: $color-life-insurance-soft;
 
   .cta-double__item {
@@ -29,24 +29,11 @@
   }
 }
 
-.highlights + .well {
-  background-color: transparent;
-
-  .cta-double__item {
-    svg {
-      position: relative;
-      right: unset;
-      top: unset;
-      transform: none;
-    }
-  }
-}
-
 section#highlights-accordion + section#highlights-accordion {
   margin-top: 0;
   padding-top: 0;
 }
 
-ul.accordion:last-child{
+ul.accordion:last-child {
   margin-bottom: 80px;
 }

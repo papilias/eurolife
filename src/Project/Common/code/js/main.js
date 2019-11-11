@@ -358,21 +358,25 @@
 
         for (const carousel of carousels) {
 
-            rightButton.addEventListener('click', _ => {
-                carousel.style.setProperty('--transform', order * (-274 - 32) + "px");
+          $(rightButton).unbind().on('click', _ => {
+              const limit = $('.filter + .program-grid .program').length;
+
+            if (order + 2 < limit) {
+                carousel.style.setProperty('--transform', (order * (-274 - 32)) + "px");
                 for (const subcarousel of subcarousels) {
-                    subcarousel.style.setProperty('--transform', order * (-274 - 32) + "px");
+                  subcarousel.style.setProperty('--transform', (order * (-274 - 32)) + "px");
                 }
                 order++;
+              }
             });
 
             leftButton.addEventListener('click', _ => {
                 if (order > 1) {
                     --order;
                     var horder = order - 1;
-                    carousel.style.setProperty('--transform', horder * (-274 - 32) + "px");
+                    carousel.style.setProperty('--transform', (horder * (-274 - 32)) + "px");
                     for (const subcarousel of subcarousels) {
-                        subcarousel.style.setProperty('--transform', horder * (-274 - 32) + "px");
+                        subcarousel.style.setProperty('--transform', (horder * (-274 - 32)) + "px");
                     }
                 }
             });
