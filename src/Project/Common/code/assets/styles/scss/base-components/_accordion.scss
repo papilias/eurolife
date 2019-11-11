@@ -166,3 +166,10 @@ input:checked + label .accordion__state:before{
 
   }
 }
+
+#highlights-accordion {
+  h1{
+    max-width:900px;
+    margin:0 auto 32px;
+  }
+}

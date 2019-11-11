@@ -819,22 +819,6 @@ iframe {
   background-color: #4a5294;
 }
 
-main section:last-child.hero-plain:not(.center) {
-  margin-bottom: 0;
-}
-
-.latest-news + .media-featured-files {
-  margin-top: -80px !important;
-}
-
-.section-header-summary + .latest-news {
-  margin-top: 0 !important;
-}
-
-.bg-life-insurance + section > h1, .bg-life-insurance + article {
-  margin-top: 48px;
-}
-
 /*------------------------------------*\
   #INPUTS
 \*------------------------------------*/
@@ -1483,6 +1467,11 @@ input:checked + label .accordion__state:before {
 .no-touch .file-item:hover {
   background-color: rgba(239, 51, 64, 0.2);
   border-color: #EF3340;
+}
+
+#highlights-accordion h1 {
+  max-width: 900px;
+  margin: 0 auto 32px;
 }
 
 /*------------------------------------*\
@@ -3222,8 +3211,10 @@ article time {
 .selected-content {
   opacity: 0;
   overflow: hidden;
-  transition: max-height 500ms ease;
+  transition: all 500ms ease;
   max-height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .selected-content--visible {
@@ -5295,7 +5286,7 @@ main {
   border-left-color: #21C4B5;
 }
 .theme-non-category .triplette-item--static {
-  background-color: #8CE3D4;
+  background-color: #E8F9F7;
 }
 .theme-non-category .triplette-item--static h3 {
   color: #21C4B5;
@@ -5884,6 +5875,56 @@ li.place {
   background: #485294;
   top: 30px;
   z-index: 0;
+}
+
+main section:last-child.hero-plain:not(.center) {
+  margin-bottom: 0;
+}
+
+.latest-news + .media-featured-files {
+  margin-top: -80px !important;
+}
+
+.section-header-summary + .latest-news {
+  margin-top: 0 !important;
+}
+
+.bg-life-insurance + section > h1, .bg-life-insurance + article {
+  margin-top: 48px;
+}
+
+.well {
+  background-color: #ecedf4;
+}
+.well .cta-double__item {
+  position: relative;
+}
+.well .cta-double__item svg {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(1.5);
+          transform: translateY(-50%) scale(1.5);
+}
+
+.highlights + .well {
+  background-color: transparent;
+}
+.highlights + .well .cta-double__item svg {
+  position: relative;
+  right: unset;
+  top: unset;
+  -webkit-transform: none;
+          transform: none;
+}
+
+section#highlights-accordion + section#highlights-accordion {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul.accordion:last-child {
+  margin-bottom: 80px;
 }
 
 /*------------------------------------*\

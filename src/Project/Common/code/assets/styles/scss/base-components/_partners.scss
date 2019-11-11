@@ -61,8 +61,10 @@
 .selected-content{
   opacity: 0;
   overflow: hidden;
-  transition: max-height 500ms ease;
+  transition: all 500ms ease;
   max-height: 0;
+  margin:0;
+  padding:0;
 }
 .selected-content--visible{
   opacity: 1;

@@ -337,3 +337,32 @@ iframe{
     }
   }
 }
+
+.well {
+  background-color: $color-life-insurance-soft;
+
+  .cta-double__item {
+    position: relative;
+
+    svg {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%) scale(1.5);
+    }
+  }
+}
+
+main .section:last-child.well {
+  background-color: none;
+
+  .cta-double__item {
+    svg {
+      position: relative;
+      right: unset;
+      top: unset;
+      transform: none;
+
+    }
+  }
+}

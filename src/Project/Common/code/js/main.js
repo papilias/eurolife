@@ -54,7 +54,7 @@
           });
 
           if ($(".coverages")) {
-            if ($(".coverage__yes").find("ul").length <= 3) {
+            if ($(".coverage__yes").find("ul").length <= 4) {
               $(".coverage__area").addClass("coverage__area--expanded");
               $(".js-coverage__expander").remove();
             }
@@ -308,13 +308,12 @@
         };
 
         // Get the header
-
         var headerHeight = 0;
         if (window.innerWidth > 780)
             headerHeight = document.getElementById('fix-1').clientHeight;
 
 
-        header.style.setProperty('--h1', headerHeight + "px");
+        //header.style.setProperty('--h1', headerHeight + "px");
         var stick1 = document.getElementById("after-sticky-1");
         stick1.style.setProperty('--p1', headerHeight + "px");
 

@@ -337,19 +337,3 @@ iframe{
     }
   }
 }
-
-main section:last-child.hero-plain:not(.center) {
-  margin-bottom: 0;
-}
-
-.latest-news + .media-featured-files {
-  margin-top: -80px !important;
-}
-
-.section-header-summary + .latest-news{
-  margin-top: 0 !important;
-}
-
-.bg-life-insurance + section > h1, .bg-life-insurance + article{
-  margin-top: 48px;
-}
