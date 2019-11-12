@@ -351,37 +351,36 @@
     const subcarousels = document.querySelectorAll(".js-grid-subtable");
     const leftButton = document.querySelector(".js-program-left");
     const rightButton = document.querySelector(".js-program-right");
-    var order = 1;
-  //  if(document.getElementById("programs-table") != null)
+    var order = 0;
+    //  if(document.getElementById("programs-table") != null)
        // var programNumber = document.getElementById("programs-table").childElementCount;
     if (leftButton != null && rightButton != null) {
+      const limit = $('.js-grid-table').first().find('.program').length - 3;
 
-        for (const carousel of carousels) {
+      //RIGHT CLICK
+      $(rightButton).unbind().on('click', _ => {
+        console.log(order , " -> ", limit);
+        if (order < limit) {
+          order++;
+          const howmuch = (order * (-306)) + 'px';
 
-          $(rightButton).unbind().on('click', _ => {
-              const limit = $('.filter + .program-grid .program').length;
-
-            if (order + 2 < limit) {
-                carousel.style.setProperty('--transform', (order * (-274 - 32)) + "px");
-                for (const subcarousel of subcarousels) {
-                  subcarousel.style.setProperty('--transform', (order * (-274 - 32)) + "px");
-                }
-                order++;
-              }
-            });
-
-            leftButton.addEventListener('click', _ => {
-                if (order > 1) {
-                    --order;
-                    var horder = order - 1;
-                    carousel.style.setProperty('--transform', (horder * (-274 - 32)) + "px");
-                    for (const subcarousel of subcarousels) {
-                        subcarousel.style.setProperty('--transform', (horder * (-274 - 32)) + "px");
-                    }
-                }
-            });
-
+          $(carousels).each(function() { 
+            $(this).css('transform', 'translateX(' + (order * (-306)) + 'px)');
+          });
         }
+      });
+
+      $(leftButton).unbind().on('click', _ => {
+        console.log(order, " -> ", 0);
+        if (order > 0) {
+          --order;
+          const howmuch = (order * (-306)) + 'px';
+
+          $(carousels).each(function () {
+            $(this).css('transform', 'translateX(' + (order * (-306)) + 'px)');
+          });
+        }
+      });
     }
     //grid carousel end
 
