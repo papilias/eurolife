@@ -228,7 +228,6 @@
     <Content Include="fonts\Ubuntu-Regular.eot" />
     <Content Include="fonts\Ubuntu-Regular.ttf" />
     <Content Include="fonts\Ubuntu-Regular.woff" />
-    <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="webpack.mix.js" />
     <Content Include="assets\js\components\Panel.vue" />
