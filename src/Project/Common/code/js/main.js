@@ -23,20 +23,20 @@
         });
     }
 
-    const searchSwitch = document.querySelector('.js-search-switch');
-    const searchClose = document.querySelector('.js-search-close');
-
-    if(searchSwitch != null && searchClose != null) {
-        searchSwitch.addEventListener('click', _ => {
-          body.classList.toggle('search-open');
-        });
-        searchClose.addEventListener('click', _ => {
-            body.classList.remove('search-open');
-        });
-    }
-
 
     $(document).ready(function () {
+
+        const searchSwitch = $('.js-search-switch');
+        const searchClose = $('.js-search-close');
+
+        if (searchSwitch != null && searchClose != null) {
+          $(searchSwitch).on('click', _ => {
+            body.classList.toggle('search-open');
+          });
+          $(searchClose).on('click', _ => {
+            body.classList.remove('search-open');
+          });
+        }
 
         //FIXES
         try {
@@ -359,7 +359,6 @@
 
       //RIGHT CLICK
       $(rightButton).unbind().on('click', _ => {
-        console.log(order , " -> ", limit);
         if (order < limit) {
           order++;
           const howmuch = (order * (-306)) + 'px';
@@ -371,7 +370,6 @@
       });
 
       $(leftButton).unbind().on('click', _ => {
-        console.log(order, " -> ", 0);
         if (order > 0) {
           --order;
           const howmuch = (order * (-306)) + 'px';

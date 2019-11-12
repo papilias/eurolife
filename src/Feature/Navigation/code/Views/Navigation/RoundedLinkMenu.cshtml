@@ -16,6 +16,11 @@
       {
         var activeClass = item.IsActive ? "achorlist__active" : "";
 
+        if (Request.Url.AbsoluteUri.Contains(item.Url))
+        {
+          activeClass += " achorlist__active";
+        }
+
         if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
         {
           activeClass += "divider-left";
