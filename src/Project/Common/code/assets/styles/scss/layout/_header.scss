@@ -7,17 +7,22 @@
   font-weight: 800;
   font-size: 28px;
   line-height: 1;
+  transition: 0.5s opacity ease-in-out;
 
   img{
     width:140px;
   }
 }
 
-.nav-main{
+.nav-main {
   position: relative;
   z-index: 13;
   background-color: #fff;
+  padding-top: 20px;
 
+  @include breakpoint(820) {
+    padding-top: 0;
+  }
 }
 
 .nav-support__button{
@@ -37,20 +42,28 @@
   padding-bottom:20px;
 }
 
-.nav-main__list{
-    > li{
+.nav-main__list {
+  > li {
     display: block;
+
     @include breakpoint(820) {
       display: inline-block;
     }
+
     margin-left: 15px;
     margin-right: 15px;
     font-size: 15px;
     line-height: 1.4;
     font-weight: 500;
   }
-  > a{
-    padding: 28px 0;
+
+  > a {
+    display: block;
+
+    @include breakpoint(820) {
+      display: inline-block;
+      padding: 28px 0;
+    }
   }
 }
 
@@ -357,6 +370,11 @@
 }
 
 .search-open {
+  .logo{
+    opacity: 0;
+    pointer-events: none;
+  }
+
   .search-opener {
     z-index: 100;
     opacity: 1;
@@ -594,24 +612,29 @@ a.btn--ghost-header{
 }
 
 
-.sublisted{
+.sublisted {
   position: relative;
 
-  > a:after{
-    content:"";
+  > a:after {
+    content: "";
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='60' height='60' viewBox='0 0 60 60'><defs><path id='menusvg' d='M41.118 32.08L23.029 50.137a2.948 2.948 0 0 1-4.166 0 2.938 2.938 0 0 1 0-4.159l16.005-15.98-16.005-15.978a2.938 2.938 0 0 1 0-4.16 2.95 2.95 0 0 1 4.166 0l18.09 18.06c.574.574.862 1.326.862 2.079a2.93 2.93 0 0 1-.863 2.08z'></path></defs><use fill='%23000' fill-rule='nonzero' transform='rotate(90 29.99 30)' xlink:href='%23menusvg'></use></svg>");
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: 0 100%;
     display: inline-block;
-    width:18px;
-    height:18px;
-    position: relative;
-    top: 4px;
-    left: 5px;
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    top: 0;
+    right: -5px;
+
+    @include breakpoint(820){
+      position: relative;
+      top: 4px;
+      left: 5px;
+    }
   }
-
-
 }
 
 

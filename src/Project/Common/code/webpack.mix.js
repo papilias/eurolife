@@ -13,9 +13,12 @@ let mix = require('laravel-mix');
 
 mix.js('assets/js/app.js', 'js')
   .sass('assets/styles/scss/style.scss', 'css')
-  .sourceMaps()
+  .sourceMaps(true, 'source-map')
   .options({
     processCssUrls: false
+  })
+  .webpackConfig({
+	devtool: 'inline-source-map'
   })
   .setPublicPath('./'); 
 

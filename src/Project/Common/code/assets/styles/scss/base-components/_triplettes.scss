@@ -9,16 +9,30 @@
   flex-wrap: wrap;
 }
 
-.triplette-item{
-  flex-basis:100%;
-  padding: 48px 32px;
+.triplette-item {
+  flex-basis: 100%;
+  padding: 24px 32px;
+  margin: 0 auto 20px;
   /*margin-bottom:20px;*/
+  text-align: center;
 
-  @include breakpoint(540){
-    flex-basis:49%;
+  img {
+    margin: 0 auto;
+
+    @include breakpoint(540) {
+      margin:0;
+    }
   }
-  @include breakpoint(820){
-    flex-basis:32%;
+
+  @include breakpoint(540) {
+    flex-basis: 49%;
+    text-align: left;
+  }
+
+  @include breakpoint(820) {
+    flex-basis: 32%;
+    padding: 48px 32px;
+    margin: 0 auto;
   }
 }
 
@@ -33,6 +47,7 @@
   p{
     margin:0;
   }
+
 }
 
 /*link triplette extension - grey color base red on hover*/

@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-right: 150px;
+  padding-right: 20px;
 
   @include breakpoint(1700) {
     margin-right: calc( (100vw - 1700px ) / 2 + 60px);
@@ -22,7 +22,16 @@
     position: absolute;
     top: 0;
     left: 50%;
-    width: calc(100% - 160px);
+
+    @include breakpoint(700) {
+      width: calc(100% - 80px);
+    }
+
+    @include breakpoint(820) {
+      width: calc(100% - 160px);
+    }
+
+    width: 100%;
     height: calc(100% - 20px);
     margin-top: 160px;
     background-color: #eee;
@@ -33,10 +42,12 @@
 .leadership-slider--image {
   flex-basis: 100%;
   max-width: 100%;
+  padding-right:100px;
 
   @include breakpoint(700) {
     flex-basis: 70%;
     max-width: 70%;
+    padding-right: 0;
   }
 
   .slick-slide {
@@ -78,7 +89,7 @@
   position: absolute;
   z-index: 2;
   bottom: auto;
-  right: 43px;
+  right: 23px;
   top: 110px;
 
   @include breakpoint(700){
@@ -243,10 +254,11 @@
 }
 
 .leader__name{
-  margin-top: 0;
+  margin-top: 60px;
   margin-bottom: 8px;
   @include breakpoint(820) {
     max-width: 370px;
+    margin-top:0;
   }
   font-size: 32px;
   line-height: 1.2;

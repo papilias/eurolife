@@ -19,6 +19,7 @@
   align-content: end;
 
   article {
+    max-height: 400px;
     position: relative;
     break-inside: avoid-column;
     border-radius: 5px;

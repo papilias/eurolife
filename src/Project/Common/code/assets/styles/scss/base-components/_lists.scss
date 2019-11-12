@@ -64,18 +64,21 @@
 .list__detail{
   font-size: 18px;
 }
-.list__download{
+.list__download {
   text-align: left;
-  margin-top:24px;
-  .btn{
-    display: block;
+  margin-top: 24px;
+
+  .btn {
+    @include breakpoint(820) {
+      display: block;
+    }
   }
 
-  @include breakpoint(700){
+  @include breakpoint(700) {
     text-align: right;
-    margin-top:0;
+    margin-top: 0;
 
-    .btn{
+    .btn {
       display: inline-grid;
     }
   }
@@ -340,17 +343,21 @@ article time{
 
 //home ghost list
 
-.list__item--ghost{
+.list__item--ghost {
   position: relative;
-  padding:55px;
+  padding:20px 0;
   background-color: transparent;
 
-  time{
-    font-size:14px;
+  @include breakpoint(820) {
+    padding: 55px;
   }
 
-  .list__title{
-    font-size:22px;
+  time {
+    font-size: 14px;
+  }
+
+  .list__title {
+    font-size: 22px;
   }
 
   .btn {

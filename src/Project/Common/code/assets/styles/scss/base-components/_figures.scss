@@ -107,6 +107,7 @@
 .figures__undertext {
   display: flex;
   justify-content: flex-end;
+  margin-top:10px;
 
   .figures__text_l, .figures__text_m {
     display: none;
@@ -115,7 +116,7 @@
   span {
     margin-top: 20px;
     font-size: 11px;
-    color: $color-btn-light !important;
+    color: #2d2d2d !important;
     display: block;
     text-align: right;
 

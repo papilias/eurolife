@@ -3,7 +3,11 @@
 }
 
 .latest-news + .media-featured-files {
-  margin-top: -80px !important;
+  margin-top: -40px !important;
+
+  @include breakpoint(820){
+    margin-top: -80px !important;
+  }
 }
 
 .section-header-summary + .latest-news {

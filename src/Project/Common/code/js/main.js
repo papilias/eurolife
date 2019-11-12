@@ -26,6 +26,14 @@
 
     $(document).ready(function () {
 
+        //MUTE LINKS WITH "#" HREF ATTRIBUTE
+        if ($(window).width() <= 768) {
+          $('header li.sublisted > a').click(function (e) {
+            e.preventDefault();
+            $(this).siblings(".sublist").toggleClass("active");
+          });
+        }
+
         const searchSwitch = $('.js-search-switch');
         const searchClose = $('.js-search-close');
 
@@ -570,12 +578,4 @@
     }, 200);
 
     //using an instersection observer for product END
-
-    //MUTE LINKS WITH "#" HREF ATTRIBUTE
-    if($(window).width <= 768) {
-        $('header li.sublisted > a').click(function (e) {
-            e.preventDefault();
-            $(this).siblings(".sublist").toggleClass("active");
-        });
-    }
 })(jQuery);

@@ -118,14 +118,25 @@ figure{
   ul {
     padding-left: 30px;
 
+    li{
+      margin-bottom:24px;
+      p{
+        display:inline;
+      }
+    }
+
     li:before {
+      @include breakpoint(820){
+        margin-left:-13px;
+        width:13px;
+      }
       content: "";
-      width: 13px;
+      width: 10px;
       height: 2px;
       background: red;
       display: inline-block;
       transform: translate(-20px, -5px);
-      margin-left: -13px;
+      margin-left: -10px;
     }
   }
 }
