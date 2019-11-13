@@ -559,17 +559,17 @@
         const anchors = document.querySelectorAll('.signpost');
 
         observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.intersectionRatio > 0) {
+          entries.every(entry => {
+              if (entry.intersectionRatio > 0) {
+                const id = entry.target.getAttribute('id');
+                $('.anchorlist a').removeClass('achorlist__active');
+                $('a[href="#' + id + '"]').addClass('achorlist__active');
 
-                    const id = entry.target.getAttribute('id');
-                    $('.anchorlist a').removeClass('achorlist__active');
-                    $('a[href="#'+id+'"]').addClass('achorlist__active');
-
-                } else {
-                    entry.target.classList.remove('in-view');
-                }
-            });
+                return false;
+              }
+              else
+                return true;
+          });
         });
 
         anchors.forEach(anchor => {
