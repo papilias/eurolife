@@ -30,7 +30,7 @@
         if ($(window).width() <= 768) {
           $('header li.sublisted > a span').click(function (e) {
             e.preventDefault();
-            $(this).siblings(".sublist").toggleClass("active");
+            $(this).parent().siblings(".sublist").toggleClass("active");
           });
         }
 
