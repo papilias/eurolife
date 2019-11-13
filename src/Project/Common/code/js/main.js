@@ -28,7 +28,7 @@
 
         //MUTE LINKS WITH "#" HREF ATTRIBUTE
         if ($(window).width() <= 768) {
-          $('header li.sublisted > a').click(function (e) {
+          $('header li.sublisted > a span').click(function (e) {
             e.preventDefault();
             $(this).siblings(".sublist").toggleClass("active");
           });
@@ -356,7 +356,6 @@
 
     //grid carousel start
     const carousels = document.querySelectorAll(".js-grid-table");
-    const subcarousels = document.querySelectorAll(".js-grid-subtable");
     const leftButton = document.querySelector(".js-program-left");
     const rightButton = document.querySelector(".js-program-right");
     var order = 0;
@@ -552,8 +551,9 @@
 
     //using an instersection observer for product START
 
-    $('section[id]').each(function() {
-        $(this).addClass('signpost');
+    $('section[id]').each(function () {
+      const thisID = $(this).attr("id");
+      $(this).addClass('relator').attr("id", "").prepend("<div class='signpost anchor-200' id=" + thisID + "></div>");
     });
     setTimeout(() => {
         const anchors = document.querySelectorAll('.signpost');

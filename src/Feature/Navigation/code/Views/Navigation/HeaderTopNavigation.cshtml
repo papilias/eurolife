@@ -23,14 +23,20 @@ bool active = false;
 bool hasChildren = navItem.Children != null && navItem.Children.NavItems.Any() && navItem.ShowChildren ? true : false;
 string liClass = hasChildren ? "sublisted" : string.Empty;
 
-if(Request.Url.AbsoluteUri.Contains(navItem.Url))
+if (Request.Url.AbsoluteUri.Contains(navItem.Url))
 {
   liClass += " active";
 }
 
     <li class="@liClass">
       <a href="@navItem.Url" target="@navItem.Target">          
-          @navItem.Item.Field(Templates.Navigable.Fields.NavigationTitle)
+        @navItem.Item.Field(Templates.Navigable.Fields.NavigationTitle)
+        @{
+          if (hasChildren)
+          {
+            <span class="opener"></span> 
+          }
+        }
       </a>
       @{ 
           if(hasChildren)
