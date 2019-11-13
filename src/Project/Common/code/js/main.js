@@ -555,26 +555,35 @@
       const thisID = $(this).attr("id");
       $(this).addClass('relator').attr("id", "").prepend("<div class='signpost anchor-200' id=" + thisID + "></div>");
     });
+
     setTimeout(() => {
-        const anchors = document.querySelectorAll('.signpost');
+      // init the observer
+      const options = {
+        threshold: 0.35
+      }
 
-        observer = new IntersectionObserver(entries => {
-          entries.every(entry => {
-              if (entry.intersectionRatio > 0) {
-                const id = entry.target.getAttribute('id');
-                $('.anchorlist a').removeClass('achorlist__active');
-                $('a[href="#' + id + '"]').addClass('achorlist__active');
-
-                return false;
-              }
-              else
-                return true;
-          });
+      // simple function to use for callback in the intersection observer
+      const changeNav = (entries) => {
+        entries.forEach((entry) => {
+          // verify the element is intersecting
+          if (entry.isIntersecting && entry.intersectionRatio > 0) {
+            // remove old active class
+            $('.achorlist__active').removeClass('achorlist__active');
+            // get id of the intersecting section
+            var id = $(entry.target).find('.signpost').attr('id');
+            // find matching link & add appropriate class
+            $('[href="#' + id + '"]').addClass('achorlist__active');
+          }
         });
+      }
 
-        anchors.forEach(anchor => {
-            observer.observe(anchor);
-        });
+      const observer = new IntersectionObserver(changeNav, options);
+
+      // target the elements to be observed
+      const sections = document.querySelectorAll('.signpost');
+      sections.forEach((section) => {
+        observer.observe(section.parentElement);
+      });
     }, 200);
 
     //using an instersection observer for product END
