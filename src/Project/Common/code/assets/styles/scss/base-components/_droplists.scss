@@ -15,6 +15,10 @@
   overflow: hidden;
   transition: max-height 300ms ease;
 
+  @include breakpoint(820) {
+    max-width: 60%;
+  }
+
   ul {
     max-height: 100vh;
     max-width: 100%;
@@ -22,10 +26,6 @@
     margin-right: -17px;
     border-left: 8px solid #FFF;
     border-right: 8px solid #FFF;
-
-    @include breakpoint(820) {
-      max-width: 60%;
-    }
   }
 
   li:not(:last-child) {

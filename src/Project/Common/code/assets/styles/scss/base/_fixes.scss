@@ -41,3 +41,10 @@ section#highlights-accordion + section#highlights-accordion {
 ul.accordion:last-child {
   margin-bottom: 80px;
 }
+
+section h1.t-c {
+  @include breakpoint(820) {
+    max-width: 70%;
+    margin:0 auto 48px;
+  }
+}
