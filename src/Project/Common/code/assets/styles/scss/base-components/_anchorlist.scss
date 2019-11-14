@@ -1,27 +1,25 @@
 /*------------------------------------*\
   #NACHORLIST
 \*------------------------------------*/
-.anchorlist{
-  padding-bottom:23px;
-  padding-left:0;
-  padding-right:0;
+.anchorlist {
+  padding:24px 0;
 
-  @include breakpoint-rev(820) {
-    padding-top:23px;
+  @include breakpoint(820) {
+    padding-top:0;
   }
 
-  @include breakpoint-rev(1140){
-    white-space:nowrap;
+  @include breakpoint-rev(1140) {
+    white-space: nowrap;
   }
 
-  li{
+  li {
     list-style-type: none;
     display: inline-block;
   }
 
-  a{
+  a {
     display: block;
-    padding:10px 19px;
+    padding: 10px 19px;
     border-radius: 25px;
     margin: 0;
     transition: background-color 300ms ease;

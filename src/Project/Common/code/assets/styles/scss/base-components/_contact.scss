@@ -3,22 +3,36 @@
 \*------------------------------------*/
 
 //ways of communication
-.ways__to-contact{
+.ways__to-contact {
   font-size: 16px;
   font-weight: 300;
-  h4{
-    margin-bottom:4px;
+
+  h4 {
+    margin-bottom: 4px;
     margin-right: 20px;
-    margin-top:0;
+    margin-top: 0;
     font-size: 18px;
     font-weight: 500;
   }
-  li{
+
+  li {
     margin-bottom: 20px;
     margin-right: 20px;
-    padding-left:30px;
+    padding-left: 30px;
   }
 
+  @include breakpoint-rev(540){
+    margin-bottom: 20px;
+  }
+}
+
+@include breakpoint-rev(540) {
+  .ways {
+    .btn {
+      width: 100%;
+      display: block;
+    }
+  }
 }
 
 li.phone{

@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-height: 60vh;
+  max-height: 70vh;
   overflow: hidden;
   transition: max-height 1000ms ease-in-out;
 
@@ -22,8 +22,16 @@
 .coverage__column {
   flex-basis: 100%;
 
+  + .coverage__column {
+    margin-top: 24px;
+  }
+
   @include breakpoint(700) {
     flex-basis: 47%;
+
+    + .coverage__column {
+      margin:0;
+    }
   }
 }
 
@@ -62,7 +70,7 @@
 
   @include breakpoint-rev(820) {
     &:not(:last-child) {
-      margin-bottom: 48px;
+      margin-bottom: 24px;
     }
   }
 
@@ -201,7 +209,7 @@
         border-radius: 50%;
       }
 
-      &:before {
+      &:after {
         content: '';
         position: absolute;
         left: -26px;
@@ -325,7 +333,21 @@
   padding: 4px 20px;
 
   @include breakpoint-rev(540) {
-    border-bottom: 1px solid #b5b5b5;
+    &:after {
+      content: '';
+      height: 1px;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #b5b5b5;
+    }
+
+    &:last-child:after, &:first-child:after {
+      content: none;
+    }
 
     &:before {
       content: attr(data-title);
@@ -337,6 +359,12 @@
   }
 }
 
+.cat {
+  color: #b5b5b5;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .program {
   align-items: center;
   background-color: #eee;
@@ -344,12 +372,19 @@
   .grid-table-cell {
     font-weight: 500;
     line-height: 1.2;
-    min-height: 90px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-right: 60px;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     @include breakpoint(540) {
       display: flex;
+      min-height: 90px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 20px;
     }
   }
 
@@ -562,6 +597,11 @@
     width: 24px;
     height: 24px;
     //margin:0 auto;
+
+    @include breakpoint-rev(540) {
+      position: absolute;
+      bottom: 20px;
+    }
   }
 }
 
@@ -571,26 +611,49 @@
   &:before {
     content: '—';
     margin: 0 auto;
+
+    @include breakpoint-rev(540) {
+      position: absolute;
+      bottom: 20px;
+    }
   }
 }
 
 /*controls*/
-.theme-health {
+/*.theme-health {
   .program-controls {
     &__left, &__right{
       display:block;
     }
   }
-}
+}*/
 
 .program-controls {
-  padding-left: 212px;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 54px;
+  &__left, &__right {
+    display: none;
+  }
+
+  @include breakpoint(540) {
+    padding-left: 212px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 54px;
+
+    &__left {
+      cursor: pointer;
+      margin-left: 24px;
+      display: block;
+    }
+
+    &__right {
+      cursor: pointer;
+      margin-left: 8px;
+      display: block;
+    }
+  }
 
   &__more {
-    flex-basis: calc(100% - 104px);
+    flex-basis: 100%;
     padding: 10px 14px 8px;
     border: 1px solid $dusky-blue;
     border-radius: 4px;
@@ -602,16 +665,11 @@
     cursor: pointer;
     flex-grow: 1;
     max-height: 35px;
-  }
+    display: block;
 
-  &__left {
-    cursor: pointer;
-    margin-left: 24px;
-  }
-
-  &__right {
-    cursor: pointer;
-    margin-left: 8px;
+    @include breakpoint(540) {
+      flex-basis: calc(100% - 104px);
+    }
   }
 }
 
@@ -768,7 +826,7 @@
   overflow: hidden;
 
   &.program-expander--visible {
-    max-height: 200vh;
+    max-height: 400vh;
   }
 }
 
@@ -852,15 +910,18 @@ main {
 
 .coverage__expander {
   font-size: 14px;
-  color: $cerulean;
+  color: black;
   cursor: pointer;
+  font-weight: bold;
   letter-spacing: 0.4px;
 }
 
-.programs__tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@include breakpoint(540) {
+  .programs__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .programs__tabs__title {
@@ -869,9 +930,12 @@ main {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin:10px 0;
 
-  &:not(:first-child) {
-    margin-left: 20px;
+  @include breakpoint(540) {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
   }
 
   padding: 15px;

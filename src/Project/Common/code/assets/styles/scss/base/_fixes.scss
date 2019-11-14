@@ -29,6 +29,10 @@ article + .well {
       right: 40px;
       top: 50%;
       transform: translateY(-50%) scale(1.5);
+
+      use {
+        fill: $color-life-insurance;
+      }
     }
   }
 }

@@ -10,21 +10,27 @@
     }
   }
 }
-.intro-cta{
-  @include breakpoint-rev(700) {
-    margin-top:24px;
+@include breakpoint-rev(820) {
+  .intro-cta {
+    margin: 12px 0;
   }
 }
 
 //intro in basic pages with icons
 
-.iconed-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.iconed-header {
+  @include breakpoint(820) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-.iconed-header__icon{
+.iconed-header__icon {
   flex-basis: 190px;
   max-width: 190px;
+
+  @include breakpoint-rev(540) {
+    margin-bottom:20px;
+  }
 }

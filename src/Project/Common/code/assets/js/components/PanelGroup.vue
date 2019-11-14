@@ -1,5 +1,5 @@
 ﻿<template>
-  <section id="panel-group" class="center center--1100 programs m-b-112">
+  <section id="panel-group" class="center center--1100 programs">
     <h1 class="h4 m-b-16 t-c">{{ panelsGroup.title }}</h1>
     <p class="m-b-48 t-c center center--650">
       {{ panelsGroup.summary }}

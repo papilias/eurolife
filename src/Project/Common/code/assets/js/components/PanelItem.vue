@@ -1,5 +1,6 @@
 ﻿<template>
   <div :class="`grid-table-cell ${cellClass}`">
+    <span class="cat mobile-only">{{ title }}</span>
     {{ item.value }}
     <span class="tool" v-if="item.tooltip">
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
@@ -16,6 +17,10 @@
             item: {
                 type: Object,
                 required: true
+            },
+            title: {
+              type: String,
+              required: true
             }
         },
         computed: {

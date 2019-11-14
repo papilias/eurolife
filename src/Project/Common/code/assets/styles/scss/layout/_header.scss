@@ -627,7 +627,7 @@ a.btn--ghost-header{
 
     position: absolute;
     top: 0;
-    right: -5px;
+    right: 0;
 
     @include breakpoint(820){
       position: relative;
@@ -655,11 +655,11 @@ a.btn--ghost-header{
 
 @include breakpoint-rev(820) {
   .menu-products {
-    display:block;
-    padding:0;
+    display: block;
+    padding: 0;
 
-    .menu-products__profesional{
-      padding:20px 20px 10px;
+    .menu-products__profesional {
+      padding: 20px 20px 10px;
     }
 
     .menu-products__personal, .menu-products__profesional {
@@ -669,8 +669,8 @@ a.btn--ghost-header{
     .menu-products__personal {
       padding: 24px 0 48px 0;
 
-      h3{
-        margin:0 20px;
+      h3 {
+        margin: 0 20px;
       }
 
       ul {
@@ -683,11 +683,11 @@ a.btn--ghost-header{
     }
   }
 
-  .menu-switch{
+  .menu-switch {
     display: inline-block;
   }
 
-  .header-mobile{
+  .header-mobile {
     .search-switch {
       display: inline-block;
       opacity: 0;
@@ -695,20 +695,20 @@ a.btn--ghost-header{
       margin-right: 10px;
       pointer-events: none;
 
-      svg{
-        max-width:none;
-        width:24px;
-        height:24px;
+      svg {
+        max-width: none;
+        width: 24px;
+        height: 24px;
       }
     }
   }
 
-  body.menu-open{
+  body.menu-open {
     overflow: hidden;
 
-    .header-mobile{
+    .header-mobile {
       .search-switch {
-        opacity:1;
+        opacity: 1;
         pointer-events: auto;
       }
     }
@@ -731,27 +731,27 @@ a.btn--ghost-header{
     display: block;
     overflow-y: auto;
 
-    .nav-product__wrap{
-      padding:20px 0 0 0;
+    .nav-product__wrap {
+      padding: 20px 0 0 0;
 
-      &.--retract{
-        > div, > a{
-          display:none;
+      &.--retract {
+        > div, > a {
+          display: none;
         }
 
-        > div.nav-product__trigger{
-          display:block;
+        > div.nav-product__trigger {
+          display: block;
         }
       }
 
-      a.btn--white-header{
+      a.btn--white-header {
         font-size: 14px;
-        color:white;
+        color: white;
         background-color: #485294;
-        padding:15px 30px;
-        width:100%;
-        height:auto;
-        margin:0 20px 20px 20px;
+        padding: 15px 30px;
+        width: 100%;
+        height: auto;
+        margin: 0 20px 20px 20px;
         text-align: center;
       }
     }
@@ -761,10 +761,11 @@ a.btn--ghost-header{
 
       .nav-product__trigger {
         margin: 0 0 20px 20px;
+        width: 100%;
         color: $color-base;
 
         svg {
-          right:-25px;
+          right: 20px;
 
           path {
             fill: $color-base;
@@ -773,33 +774,33 @@ a.btn--ghost-header{
       }
     }
 
-    .nav-main__in{
-      transition:all 1s ease-in-out;
-      overflow:hidden;
-      max-height: 620px;
+    .nav-main__in {
+      transition: all 1s ease-in-out;
+      overflow: hidden;
+      max-height: 800px;
 
-      &.--retract{
+      &.--retract {
         max-height: 0;
-        padding-bottom:60px;
+        padding-bottom: 60px;
       }
     }
 
-    .access{
-      width:100%;
-      margin:0 20px;
+    .access {
+      width: 100%;
+      margin: 0 20px;
 
-      .access__label{
-        padding:15px 30px;
+      .access__label {
+        padding: 15px 30px;
         font-size: 14px;
-        height:auto;
-        color:#485294;
+        height: auto;
+        color: #485294;
         border-color: #485294;
         text-align: center;
 
-        svg{
-          right:unset;
-          margin-left:5px;
-          top:13px;
+        svg {
+          right: unset;
+          margin-left: 5px;
+          top: 13px;
 
           path {
             fill: #485294;
@@ -807,57 +808,59 @@ a.btn--ghost-header{
         }
       }
 
-      &:hover{
-        .access__label{
+      &:hover {
+        .access__label {
           background-color: white;
-          color:#485294;
+          color: #485294;
           border-color: transparent;
         }
       }
     }
   }
 
-  .nav-main__list{
-    margin-top:40px;
-    li{
-      margin:24px 0;
+  .nav-main__list {
+    margin-top: 40px;
+
+    li {
+      margin: 24px 0;
     }
   }
 
-  .menu-switch__top,.menu-switch__bottom{
+  .menu-switch__top, .menu-switch__bottom {
     transition: transform 300ms ease 100ms;
     transform: rotate(0);
     transform-origin: 100%;
   }
 
-  .menu-switch__middle{
+  .menu-switch__middle {
     opacity: 1;
-    transition:opacity 300ms ease;
+    transition: opacity 300ms ease;
     transition-delay: 200ms;
   }
 
-  .menu-open{
-    header{
+  .menu-open {
+    header {
       transform: translateY(0);
     }
-    .menu-switch__top{
+
+    .menu-switch__top {
       transform: rotate(-45deg);
     }
-    .menu-switch__bottom{
+
+    .menu-switch__bottom {
       transform: rotate(45deg);
     }
 
-    .menu-switch__middle{
+    .menu-switch__middle {
       opacity: 0;
       transition-delay: 0ms;
     }
-
   }
 
 
 
-  .header-mobile{
-    padding:27px 16px;
+  .header-mobile {
+    padding: 27px 16px;
     display: block;
     position: relative;
     z-index: 11;
@@ -867,25 +870,25 @@ a.btn--ghost-header{
   }
 
   .nav-main__list {
-    ul.sublist{
-      max-height:0;
-      overflow:hidden;
-      transition:0.5s max-height ease-in-out;
+    ul.sublist {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s max-height ease-in-out;
 
-      a:hover{
+      a:hover {
         background-color: transparent;
       }
 
-      &.active{
-        max-height:300px;
+      &.active {
+        max-height: 500px;
       }
 
       li:last-child {
         margin-bottom: 0;
       }
 
-      ul.sublist{
-        margin-left:20px;
+      ul.sublist {
+        margin-left: 20px;
       }
     }
 
@@ -903,23 +906,43 @@ a.btn--ghost-header{
   }
 
   .nav-support {
-    order:2;
-    margin:40px 0 0;
+    order: 2;
+    margin: 40px 0 0;
     display: block;
-    width:100%;
+    width: 100%;
 
-    .nav-support__label, .nav-support__phone{
-      display:none;
+    .nav-support__label {
+      display: none;
+    }
+
+    .nav-support__phone {
+      background-color: #485294;
+      padding: 15px 30px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+
+      > span {
+        display: none;
+      }
+
+      > a {
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+      }
     }
 
     .nav-support__button {
       display: block;
       font-size: 14px;
-      color:white;
+      color: white;
       background-color: #485294;
-      padding:15px 30px;
-      width:100%;
-      height:auto;
+      padding: 15px 30px;
+      width: 100%;
+      height: auto;
       text-align: center;
     }
   }
