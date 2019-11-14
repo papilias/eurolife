@@ -532,19 +532,22 @@
             var text_value=$(this).val();
             if(text_value != '')
             {
-                $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item-static').removeClass('filled');
             }
         });
 
         $target.bind('blur', function(){
             if( !$(this).val() || $(this).hasClass('error')) {
                 if (!$(this).val())
-                    $(this).parents('.form__item').removeClass('filled');
+                $(this).parents('.form__item').removeClass('filled');
+                $(this).parents('.form__item-static').removeClass('filled');
             }
         });
         $target.bind('focus', function(){
             if( !$(this).val() || $(this).hasClass('error')) {
-                $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item-static').removeClass('filled');
             }
         });
     }

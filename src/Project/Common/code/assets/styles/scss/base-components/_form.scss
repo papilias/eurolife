@@ -25,31 +25,36 @@
   }
 }
 
-.form__item{
-  margin-bottom:10px;
+.form__item, .form__item-static {
+  margin-bottom: 10px;
 
-  label{
+  label {
     padding-left: 8px;
     display: block;
     transform: translateY(30px);
-    transition:transform 300ms ease;
+    transition: transform 300ms ease;
   }
-  input{
+
+  input {
     position: relative;
     z-index: 2;
     margin-bottom: 10px;
     background: transparent;
   }
 
-  &.filled{
+  &.filled {
     label {
       transform: translateY(10px);
     }
   }
 
+  select {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 }
 
-.form__item-static{
+/*.form__item-static{
   margin-top:32px;
   label{
     padding-left: 8px;
@@ -59,7 +64,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
   }
-}
+}*/
 
 .form__item-upload{
   padding:25px 35px;
