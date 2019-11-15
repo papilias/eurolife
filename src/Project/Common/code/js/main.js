@@ -44,7 +44,10 @@
           $(searchClose).on('click', _ => {
             body.classList.remove('search-open');
           });
-        }
+      }
+
+      //CUSTOM RADIO BUTTONS
+      customRadioButtons();
 
         //FIXES
         try {
@@ -524,7 +527,16 @@
             slider.scrollLeft = scrollLeft - walk;
          //   console.log(walk);
         });
-    }
+  }
+
+  function customRadioButtons() {
+    $target = $("input[type=radio]");
+
+    $target.each(function () {
+      $(this).after("<label></label>");
+      $(this).parent().addClass("cursor-pointer");
+    });
+  }
 
     function highLightLabel(){
         $target = $( ".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea" );

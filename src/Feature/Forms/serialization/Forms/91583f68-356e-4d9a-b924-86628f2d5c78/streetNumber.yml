@@ -1,29 +1,26 @@
 ﻿---
-ID: "a834815e-f998-4138-a5d5-1316f0c22407"
-Parent: "47dd2633-b246-42dc-9023-b5e2d4258bd5"
-Template: "27686f73-aa5c-4e0e-ac6b-e3000d129e4f"
-Path: /sitecore/Forms/Complaint Form/Page/Section/SubSection/form_upload file
+ID: "221d08c9-5633-4752-9d71-c62661dcee3c"
+Parent: "91583f68-356e-4d9a-b924-86628f2d5c78"
+Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
+Path: /sitecore/Forms/Complaint Form/Page/Section/Subsection/streetNumber
 DB: master
 SharedFields:
 - ID: "10e5829a-1943-4597-b9ee-406ce3d13e13"
   Hint: Validations
   Type: Treelist
-  Value: |
-    {A610E086-6D6A-4E11-9AB1-B435229A7069}
-    {6E7AB3C0-2E3F-4E37-BB96-8BF9A9329417}
-- ID: "3cd88ccb-4798-41bc-9b5a-ce177a0de8a0"
-  Hint: Allowed Content Types
-  Value: |
-    image/png
-    image/jpeg
-    image/jpg
-    file/doc
+  Value: 
 - ID: "467c22b4-b1a2-4620-b8bb-74c2d8b369fc"
   Hint: Label Css Class
   Value: 
 - ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
   Hint: Field Type
-  Value: "{687A7B09-47E3-4FAA-AB2D-A4BF83DB0F1B}"
+  Value: "{4EE89EA7-CEFE-4C8E-8532-467EF64591FC}"
+- ID: "5d09f88a-0e2a-4f87-8151-af4a2aa26ec3"
+  Hint: Value Provider
+  Value: 
+- ID: "71061c01-a495-4bf3-a52c-d378346bfae2"
+  Hint: Max Length
+  Value: 255
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
@@ -33,7 +30,7 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 4A3D2B1A516C485D920C6E81BB1D596A
+  Value: 6A1309DB4D3846F0A64911D64E091642
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
@@ -42,6 +39,9 @@ SharedFields:
   Hint: Allow Save
   Type: Checkbox
   Value: 1
+- ID: "9f7da002-7b86-436b-8dda-7efe5837b88e"
+  Hint: Min Length
+  Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
@@ -49,9 +49,13 @@ SharedFields:
   Hint: Is Tracking Enabled
   Type: Checkbox
   Value: 1
-- ID: "eeb21e25-1e4a-4f52-94f1-0f9a13a28a9d"
-  Hint: Max File Size
-  Value: 5000
+- ID: "ecd17630-5f51-45db-b52f-b3dfaec4fa1b"
+  Hint: Store Binding Value
+  Type: Checkbox
+  Value: 0
+- ID: "f6696439-2dac-4183-8f3d-1979188d8336"
+  Hint: Value Provider Parameters
+  Value: 
 Languages:
 - Language: "el-GR"
   Versions:
@@ -59,25 +63,33 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191021T125705Z
+      Value: 20191021T125704Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Επισυναπτόμενα Αρχεία (Επιτρέπονται αρχεία .png, .pdf, .jpeg, .doc)
+      Value: Αριθμός
+    - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
+      Hint: Placeholder Text
+      Value: 
+    - ID: "b775bca9-2605-4d60-b367-a0c354be2504"
+      Hint: Default Value
+      Value: 
 - Language: en
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190627T141903Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
+      Value: 20190627T141619Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Επιλογή Αρχείου
+      Value: Αριθμός
+    - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
+      Hint: Placeholder Text
+      Value: 
+    - ID: "b775bca9-2605-4d60-b367-a0c354be2504"
+      Hint: Default Value
+      Value: 

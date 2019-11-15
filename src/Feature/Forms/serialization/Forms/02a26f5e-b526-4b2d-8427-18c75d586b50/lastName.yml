@@ -1,8 +1,8 @@
 ﻿---
-ID: "a59f111a-24ed-459e-af61-d15732d3fada"
-Parent: "47dd2633-b246-42dc-9023-b5e2d4258bd5"
+ID: "4e8e9147-c506-4816-8c4d-ee95573e8b37"
+Parent: "02a26f5e-b526-4b2d-8427-18c75d586b50"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/Complaint Form/Page/Section/SubSection/postalCode
+Path: /sitecore/Forms/Complaint Form/Page/Section/Subsection/lastName
 DB: master
 SharedFields:
 - ID: "10e5829a-1943-4597-b9ee-406ce3d13e13"
@@ -30,11 +30,11 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: D6FBF7B91EF64CD9B40D4CF6235C3DE0
+  Value: C92EF6902A094621A7B909AECD112053
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
-  Value: 0
+  Value: 1
 - ID: "90c4f94c-ec2c-4ee4-b4c8-f3e29cbe630e"
   Hint: Allow Save
   Type: Checkbox
@@ -63,14 +63,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191021T125704Z
+      Value: 20191021T125703Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Τ.Κ.
+      Value: * Όνομα
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 
@@ -83,10 +83,10 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190627T141654Z
+      Value: 20190627T141237Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: ΤΚ
+      Value: Επίθετο
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 

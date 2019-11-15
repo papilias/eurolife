@@ -252,6 +252,10 @@
   font-weight: 500;
 }
 
+.cursor-pointer{
+  cursor:pointer;
+}
+
 .flex-spread{
   display: flex;
   flex-wrap: wrap;
@@ -260,7 +264,7 @@
 
 @include breakpoint(540) {
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
 
