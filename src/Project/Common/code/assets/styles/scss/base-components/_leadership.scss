@@ -162,7 +162,7 @@
 .leadership__name{
   margin-left: 16px;
   margin-right: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   font-size: 22px;
   line-height: 1.2;
   font-weight: 500;
@@ -174,6 +174,7 @@
   line-height: 1.2;
   color: $color-black-faded;
   font-weight: 400;
+  margin-top:8px;
 }
 
 .leadership__member{

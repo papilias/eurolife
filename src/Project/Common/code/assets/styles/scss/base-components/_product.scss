@@ -272,7 +272,6 @@
 }
 
 .program-attributes {
-  font-size: 14px;
   display: none;
 
   @include breakpoint(540) {
@@ -654,7 +653,7 @@
 
   &__more {
     flex-basis: 100%;
-    padding: 10px 14px 8px;
+    padding: 10px 14px 24px;
     border: 1px solid $dusky-blue;
     border-radius: 4px;
     font-size: 12px;
@@ -666,6 +665,10 @@
     flex-grow: 1;
     max-height: 35px;
     display: block;
+
+    &.hidden{
+      display:none;
+    }
 
     @include breakpoint(540) {
       flex-basis: calc(100% - 104px);

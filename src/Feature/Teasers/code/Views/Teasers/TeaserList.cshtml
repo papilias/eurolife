@@ -9,7 +9,7 @@
   {
     if (Model.Item.FieldHasValue(Templates.HasTeaserHeadline.Fields.Title) || !Sitecore.Context.PageMode.IsNormal)
     {
-      <h1 class="h4 m-b-16 t-c">
+      <h1 class="h4 m-b-8 t-c">
         @Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)
       </h1>
     }

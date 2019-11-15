@@ -27,7 +27,7 @@
   {
     <div class="hero-contents--plain">
       <div class="center--1700 center relator">
-        <h1 class="h3 m-b-24">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
+        <h1 class="h3 m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
         @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
         {
           <p>@Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)</p>

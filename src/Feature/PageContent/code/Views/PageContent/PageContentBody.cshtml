@@ -16,7 +16,7 @@
 
 @if (Sitecore.Context.PageMode.IsExperienceEditor || Html.Sitecore().HasValue(Templates.HasPageBodyContent.Fields.Body.ToString()))
 {
-  <article id="body" class="light m-b-64 center center--1100 text-main">
+  <article id="body" class="light m-b-112 center center--1100 text-main">
     @Html.Sitecore().Field(Templates.HasPageBodyContent.Fields.Body)
   </article>
 }

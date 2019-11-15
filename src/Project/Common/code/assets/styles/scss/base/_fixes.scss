@@ -1,4 +1,12 @@
-﻿main section:last-child.hero-plain:not(.center) {
+﻿main > section:last-child {
+  margin-bottom: 128px;
+}
+
+main > section.leadership-container:last-child {
+  margin-bottom: 268px;
+}
+
+main > section:last-child.hero-plain:not(.center), main > section:last-child.siblings-wrap {
   margin-bottom: 0;
 }
 
@@ -46,9 +54,18 @@ ul.accordion:last-child {
   margin-bottom: 80px;
 }
 
-section h1.t-c {
-  @include breakpoint(820) {
-    max-width: 70%;
-    margin:0 auto 48px;
+section:not(.bg-life-insurance){
+  section h1.t-c {
+    @include breakpoint(820) {
+      max-width: 70%;
+      margin:0 auto 48px;
+    }
   }
+}
+
+h1.t-c {
+  text-align: center;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }

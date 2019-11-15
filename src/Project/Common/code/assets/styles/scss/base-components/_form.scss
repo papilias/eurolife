@@ -145,3 +145,7 @@ input[type="radio"] {
 label.cursor-pointer, .push-me {
   margin-left: 10px;
 }
+
+label:not(.cursor-pointer) + label.cursor-pointer{
+  margin-top: 15px;
+}

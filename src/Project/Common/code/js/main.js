@@ -574,7 +574,7 @@
     setTimeout(() => {
       // init the observer
       const options = {
-        threshold: 0.35
+        threshold: 0.15
       }
 
       // simple function to use for callback in the intersection observer

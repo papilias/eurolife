@@ -22,6 +22,6 @@
 
   @if (Model.Item.FieldHasValue(Templates.HasUIComponentsHeading.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)
   {
-    <div class="t-c m-b-32 m-t-8">@Html.Sitecore().Field(Templates.HasUIComponentsHeading.Fields.Summary)</div>
+    <div class="t-c m-b-32">@Html.Sitecore().Field(Templates.HasUIComponentsHeading.Fields.Summary)</div>
   }
 </section>

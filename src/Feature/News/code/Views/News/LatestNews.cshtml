@@ -31,7 +31,7 @@
         }
           <div class="list__article__group">
             <time>@Html.Sitecore().Field(Templates.NewsArticle.Fields.Date, item, new { format = "d MMM yyyy", DisableWebEdit = true })</time>
-            <h2 class="h6 latest__title">
+            <h2 class="h6 latest__title m-b-8">
               @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, item, new { DisableWebEdit = true })
             </h2>
             <div class="list__article__text">
