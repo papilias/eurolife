@@ -39,29 +39,53 @@
   }
 }
 
-.theme{
-  &-health{
-    .achorlist__active{
-      color:$color-health;
+.theme {
+  &-health {
+    .achorlist__active {
+      color: $color-health;
       background-color: $color-health-soft;
     }
   }
-  &-motor{
-    .achorlist__active{
-      color:$color-motor;
+
+  &-motor {
+    .achorlist__active {
+      color: $color-motor;
       background-color: $color-motor-soft;
     }
   }
-  &-home{
-    .achorlist__active{
-      color:$color-home;
+
+  &-home {
+    .achorlist__active {
+      color: $color-home;
       background-color: $color-home-soft;
     }
   }
-  &-life{
-    .achorlist__active{
-      color:$color-life-insurance;
+
+  &-life {
+    .achorlist__active {
+      color: $color-life-insurance;
       background-color: $color-life-insurance-soft;
+    }
+  }
+
+  &.-finance {
+    .achorlist-active {
+      color: $color-finance;
+      background-color: $color-finance-soft;
+    }
+  }
+
+  &.-non-category {
+    .achorlist-active {
+      color: $color-non-category;
+      background-color: $color-non-category-soft;
+    }
+  }
+
+  &.-small-business {
+    .achorlist-active {
+      color: $color-small-business;
+      background-color: $color-small-business-soft;
     }
   }
 }
