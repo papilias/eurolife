@@ -350,9 +350,9 @@
         function stickySecond() {
 
             if (window.pageYOffset > (elementSecondFromTop - headerHeight)) {
-                menu.classList.add("sticky-second");
+              menu.classList.add("sticky-second");
             } else {
-                menu.classList.remove("sticky-second");
+              menu.classList.remove("sticky-second");
             }
         }
     }

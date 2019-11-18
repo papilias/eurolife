@@ -7,41 +7,35 @@
 
 .hero {
   margin-right: 16px;
-  height: 500px;
 
   @include breakpoint(1700) {
     margin-right: calc( (100vw - 1700px ) / 2 + 53px);
   }
 
-  @include breakpoint(700) {
-    height:auto;
-  }
-
   img {
-    height: 100%;
-
-    @include breakpoint(700) {
-      width: 100%;
-      height: auto;
-    }
-
     display: block;
     border-radius: 0 0 100px 0;
-    max-height: 576px;
+    height: 576px;
+    width: 100%;
     object-fit: cover;
   }
 
-  ul{
-    li{
-      img{
-        height:auto;
+  ul {
+    li {
+      img {
+        height: auto;
       }
     }
+  }
+
+  + .rounded-menu {
+    margin: -112px 0px 112px;
+    padding-top: 24px;
   }
 }
 
 /*hero with extras*/
-.hero-contents{
+.hero-contents {
   position: absolute;
   top: 0;
   border: 0;
@@ -53,14 +47,15 @@
   text-align: center;
   height: 100%;
   justify-content: center;
+
   @include breakpoint(1700) {
     padding-left: calc((100vw - 1580px) / 2);
   }
 
-  &:after{
+  &:after {
     content: '';
     width: 100%;
-    height:100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -68,10 +63,14 @@
     border-radius: 0 0 100px 0;
   }
 
-  h1{
+  h1 {
     color: #fff;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  p{
+
+  p {
     font-size: 18px;
     color: #fff;
   }

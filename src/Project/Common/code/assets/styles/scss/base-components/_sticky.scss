@@ -15,13 +15,19 @@
 #fix-2 {
   z-index: 3;
   transform: translateY(0);
-  transition: transform 400ms ease, box-shadow 1000ms ease;
-  will-change: transform, box-shadow;
+  transition: transform 400ms ease, box-shadow 1000ms ease, max-width 400ms ease, padding 400ms ease;
+  will-change: transform, box-shadow, max-width, padding;
   box-shadow: 0 9px 16px -10px rgba(0, 0, 0, 0);
 
   &.sticky-second {
     transform: translateY(-50px);
     box-shadow: 0 9px 16px -10px rgba(0, 0, 0, 0.16);
+
+    > ul {
+      max-width: none;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
 
     @include breakpoint-rev(820) {
       transform: translateY(0);
