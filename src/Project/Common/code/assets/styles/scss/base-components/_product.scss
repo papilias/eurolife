@@ -185,14 +185,6 @@
       }
     }
   }
-
-  p {
-    margin-bottom: 24px !important;
-
-    + p {
-      display: none;
-    }
-  }
 }
 
 .coverage__no {
@@ -229,14 +221,6 @@
         width: 14px;
         height: 2px;
       }
-    }
-  }
-
-  p{
-    margin-bottom: 24px !important;
-
-    + p{
-      display: none;
     }
   }
 }
@@ -298,8 +282,8 @@
 
   .grid-table-cell {
     padding-left: 0;
-    padding-right: 0;
-    min-height: 90px;
+    padding-right: 20px;
+    min-height: 120px;
     align-items: center;
 
     @include breakpoint(540) {
@@ -387,6 +371,7 @@
   background-color: #eee;
 
   .grid-table-cell {
+    text-align: center;
     font-weight: 500;
     line-height: 1.2;
     padding-top: 10px;
@@ -398,7 +383,7 @@
 
     @include breakpoint(540) {
       display: flex;
-      min-height: 90px;
+      min-height: 120px;
       padding-top: 0;
       padding-bottom: 0;
       padding-right: 20px;
@@ -907,12 +892,14 @@ main {
 
 .contentgroup__left {
   padding-bottom: 20px;
-  flex-basis: 150px;
+  flex-basis: 20%;
   margin-right: 24px;
+  padding-right: 24px;
   border-right: 1px solid #eee;
 }
 
 .contentgroup__right {
+  flex-basis: 77%;
 }
 
 .contentgroup__title {
@@ -1148,4 +1135,56 @@ main {
 
 .intro .intro-cta .btn{
   padding: 10px 14px 10px;
+}
+
+.accordion__content {
+  .contentgroup__tick{
+    ul{
+      li{
+        list-style: none !important;
+      }
+    }
+  }
+}
+
+.theme-health {
+  .btn--white-header {
+    color: $color-health;
+  }
+}
+
+.theme-home {
+  .btn--white-header {
+    color: $color-home;
+  }
+}
+
+.theme-small-business {
+  .btn--white-header {
+    color: $color-small-business;
+  }
+}
+
+.theme-non-category {
+  .btn--white-header {
+    color: $color-non-category;
+  }
+}
+
+.theme-motor {
+  .btn--white-header {
+    color: $color-motor;
+  }
+}
+
+.theme-life {
+  .btn--white-header {
+    color: $color-life-insurance;
+  }
+}
+
+.theme-finance {
+  .btn--white-header {
+    color: $color-finance;
+  }
 }

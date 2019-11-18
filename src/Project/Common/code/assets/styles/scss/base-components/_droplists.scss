@@ -28,10 +28,6 @@
     border-right: 8px solid #FFF;
   }
 
-  li:not(:last-child) {
-    border-bottom: 1px solid $color-btn-light;
-  }
-
   li {
     padding: 5px 0;
   }

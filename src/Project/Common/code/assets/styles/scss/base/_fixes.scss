@@ -56,6 +56,12 @@ ul.accordion:last-child {
   margin-bottom: 80px;
 }
 
+.grey--bordered-area {
+  ul.accordion:last-child {
+    margin-bottom: 48px;
+  }
+}
+
 section:not(.bg-life-insurance){
   section h1.t-c {
     @include breakpoint(820) {
@@ -74,7 +80,6 @@ h1.t-c {
 
 .accordion__content ul li{
   list-style: disc !important;
-  margin-bottom:24px;
 }
 
 .accordion__content ul li.contentgroup__tick {
