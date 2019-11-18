@@ -16,8 +16,8 @@ var rimrafDir = require("rimraf");
 var rimraf = require("gulp-rimraf");
 var xmlpoke = require("xmlpoke");
 //
-var sass = require("gulp-sass");
-var autoprefixer = require("gulp-autoprefixer");
+//var sass = require("gulp-sass");
+//var autoprefixer = require("gulp-autoprefixer");
 //var wait = require("gulp-wait");
 
 var config;
