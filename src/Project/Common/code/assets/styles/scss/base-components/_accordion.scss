@@ -4,11 +4,11 @@
 
 .accordion {
   > li {
-    margin-bottom:8px;
+    margin-bottom:16px;
     list-style-type: none;
     border-radius: 5px;
     background-color:#fff;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
     border-left:6px solid $color-base;
   }
   h3 {
@@ -98,7 +98,7 @@
 }
 
 input[name='panel']:checked ~ .accordion__content {
-  max-height: 140em;
+  max-height: 400vh;
 
 }
 
@@ -163,7 +163,6 @@ input:checked + label .accordion__state:before{
   .file-item:hover {
     background-color:rgba(239, 51, 64, 0.2);
     border-color: $color-base;
-
   }
 }
 
@@ -171,5 +170,42 @@ input:checked + label .accordion__state:before{
   h1{
     max-width:900px;
     margin:0 auto 32px;
+  }
+}
+
+.no-touch {
+  .theme-motor {
+    .file-item:hover {
+      background-color: $color-motor-soft;
+      border-color: $color-motor;
+    }
+  }
+
+  .theme-home {
+    .file-item:hover {
+      background-color: $color-home-soft;
+      border-color: $color-home;
+    }
+  }
+
+  .theme-small-business {
+    .file-item:hover {
+      background-color: $color-small-business-soft;
+      border-color: $color-small-business;
+    }
+  }
+
+  .theme-non-category {
+    .file-item:hover {
+      background-color: $color-non-category-soft;
+      border-color: $color-non-category;
+    }
+  }
+
+  .theme-health {
+    .file-item:hover {
+      background-color: $color-health-soft;
+      border-color: $color-health;
+    }
   }
 }

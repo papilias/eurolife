@@ -3,22 +3,37 @@
 \*------------------------------------*/
 
 //ways of communication
-.ways__to-contact{
+.ways__to-contact {
   font-size: 16px;
   font-weight: 300;
-  h4{
-    margin-bottom:4px;
+  padding: 48px;
+
+  h4 {
+    margin-bottom: 4px;
     margin-right: 20px;
-    margin-top:0;
+    margin-top: 0;
     font-size: 18px;
     font-weight: 500;
   }
-  li{
+
+  li {
     margin-bottom: 20px;
     margin-right: 20px;
-    padding-left:30px;
+    padding-left: 30px;
   }
 
+  @include breakpoint-rev(540){
+    margin-bottom: 20px;
+  }
+}
+
+@include breakpoint-rev(540) {
+  .ways {
+    .btn {
+      width: 100%;
+      display: block;
+    }
+  }
 }
 
 li.phone{
@@ -46,12 +61,17 @@ li.place{
   background-position: 0 2px;
 }
 
+form {
+  .select2-container{
+    width:100% !important;
+  }
+}
 
 //click to call | chat
 
 .c-t-c{
   background-color: $strawberry;
-  padding: 38px 28px;
+  padding: 48px;
   color:#fff;
 }
 

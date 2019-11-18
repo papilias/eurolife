@@ -1,8 +1,9 @@
 ﻿.well.bg-life-insurance {
-  padding: 64px 0;
+  padding: 64px 0 8px;
 
   .triplette {
     position: relative;
+    align-items: baseline;
 
     .stats__item {
       text-align: center;
@@ -42,14 +43,14 @@
       height: 100%;
       left: 50%;
       transform: translateX(-50%);
-      top:0;
+      top: 0;
       background: $dusky-blue;
 
       @include breakpoint(540) {
         width: 100%;
         height: 2px;
         top: 50%;
-        left:0;
+        left: 0;
         transform: translateY(-50%);
       }
 

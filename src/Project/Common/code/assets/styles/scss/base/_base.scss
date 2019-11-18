@@ -25,14 +25,14 @@ p {
   margin: 0 0 20px 0;
 }
 
-::selection { 
-    background: $color-base;
-    color: #fff;
+::selection {
+  background: #e8f9f7;
+  color: black;
 }
- 
+
 ::-moz-selection {
-    background: #fff; 
-    color: #fff; 
+  background: #e8f9f7;
+  color: black;
 }
 
 body{

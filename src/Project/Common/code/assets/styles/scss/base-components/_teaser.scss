@@ -9,6 +9,11 @@
   justify-content: space-between;
   background-color: $color-life-insurance-soft;
   overflow: hidden;
+
+  .btn:not(.btn--dark){
+    color:$color-life-insurance;
+  }
+
   &:after{
     background-color: $color-life-insurance-soft;
     position: absolute;
@@ -29,6 +34,7 @@
 }
 .solo-teaser__image{
   flex-basis: 100%;
+  max-height: 500px;
 
   @include breakpoint(1140) {
     flex-basis: 50%;
@@ -57,7 +63,7 @@
 .solo-teaser__title{
   color: $color-life-insurance;
   font-size: 28px;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .solo-teaser__text{

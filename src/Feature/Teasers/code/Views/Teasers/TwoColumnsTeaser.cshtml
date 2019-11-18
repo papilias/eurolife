@@ -16,11 +16,11 @@
   return;
 }
 
-<div class="well p-t-80 p-b-48 m-b-48">
+<div class="well p-b-48 m-b-48">
   <section class="center--1100 center m-b-48 @RenderingContext.Current.Rendering.GetBackgroundClass()">
     @if (Model.Item.FieldHasValue(Templates.HasTeaserHeadline.Fields.Title) || Sitecore.Context.PageMode.IsExperienceEditor)
     {
-      <h1 class="h4 t-c m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
+      <h1 class="h4 t-c">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h1>
     }
 
     @if (Model.Item.FieldHasValue(Templates.HasTeaserSummary.Fields.Summary) || Sitecore.Context.PageMode.IsExperienceEditor)

@@ -17,7 +17,7 @@
   <ul class="flex-spread__half">
     <li class="phone">
       <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Phone", "Phone")</h4>
-      @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)
+      <a href="tel:@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)">@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)</a>
     </li>
     <li class="fax">
       <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Fax", "Fax")</h4>
@@ -25,7 +25,7 @@
     </li>
     <li class="email">
       <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Email", "Email")</h4>
-      @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationEmail, identity)
+      <a href="mailto:@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationEmail, identity)">@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationEmail, identity)</a>
     </li>
   </ul>
   <ul class="flex-spread__half">
@@ -33,7 +33,7 @@
     {
       <li class="place">
         <h4>@Html.Sitecore().Field(Templates.IdentityAddress.Fields.City, address)</h4>
-        @Html.Sitecore().Field(Templates.IdentityAddress.Fields.Street, address)
+        <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=@Html.Sitecore().Field(Templates.IdentityAddress.Fields.Street, address)">@Html.Sitecore().Field(Templates.IdentityAddress.Fields.Street, address)</a>
       </li>
     }
   </ul>

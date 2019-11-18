@@ -1,24 +1,25 @@
 /*------------------------------------*\
   #NACHORLIST
 \*------------------------------------*/
-.anchorlist{
-  padding-bottom:23px;
-  @include breakpoint-rev(820) {
-    padding-top:23px;
+.anchorlist {
+  padding:24px 0;
+
+  @include breakpoint(820) {
+    padding-top:0;
   }
 
-  @include breakpoint-rev(1140){
-    min-width:1200px;
+  @include breakpoint-rev(1140) {
+    white-space: nowrap;
   }
 
-  li{
+  li {
     list-style-type: none;
     display: inline-block;
   }
 
-  a{
+  a {
     display: block;
-    padding:10px 19px;
+    padding: 10px 19px;
     border-radius: 25px;
     margin: 0;
     transition: background-color 300ms ease;
@@ -38,29 +39,53 @@
   }
 }
 
-.theme{
-  &-health{
-    .achorlist__active{
-      color:$color-health;
+.theme {
+  &-health {
+    .achorlist__active {
+      color: $color-health;
       background-color: $color-health-soft;
     }
   }
-  &-motor{
-    .achorlist__active{
-      color:$color-motor;
+
+  &-motor {
+    .achorlist__active {
+      color: $color-motor;
       background-color: $color-motor-soft;
     }
   }
-  &-home{
-    .achorlist__active{
-      color:$color-home;
+
+  &-home {
+    .achorlist__active {
+      color: $color-home;
       background-color: $color-home-soft;
     }
   }
-  &-life{
-    .achorlist__active{
-      color:$color-life-insurance;
+
+  &-life {
+    .achorlist__active {
+      color: $color-life-insurance;
       background-color: $color-life-insurance-soft;
+    }
+  }
+
+  &.-finance {
+    .achorlist-active {
+      color: $color-finance;
+      background-color: $color-finance-soft;
+    }
+  }
+
+  &.-non-category {
+    .achorlist-active {
+      color: $color-non-category;
+      background-color: $color-non-category-soft;
+    }
+  }
+
+  &.-small-business {
+    .achorlist-active {
+      color: $color-small-business;
+      background-color: $color-small-business-soft;
     }
   }
 }

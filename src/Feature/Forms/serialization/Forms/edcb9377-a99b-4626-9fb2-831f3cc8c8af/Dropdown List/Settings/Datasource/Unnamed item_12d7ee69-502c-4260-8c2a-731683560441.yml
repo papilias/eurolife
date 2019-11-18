@@ -1,22 +1,22 @@
 ﻿---
-ID: "98b33242-bc50-4953-90e1-fa057b8e0163"
-Parent: "7d25dfd2-6cb6-4615-ba99-d70fb092388a"
+ID: "12d7ee69-502c-4260-8c2a-731683560441"
+Parent: "8e9301be-bb26-4bb5-aeea-6ec32d4814af"
 Template: "b3bdfe59-6667-4432-b261-05d0e3f7fdf6"
-Path: /sitecore/Forms/Complaint Form/Page/Section/SubSection/Dropdown List/Settings/Datasource/Unnamed item
+Path: /sitecore/Forms/Complaint Form/Page/Section/Subsection/Dropdown List/Settings/Datasource/Unnamed item
 DB: master
 SharedFields:
 - ID: "3a07c171-9bca-464d-8670-c5703c6d3f11"
   Hint: Value
-  Value: Ναι
+  Value: Όχι
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 100
 Languages:
 - Language: "el-GR"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Ναι
+    Value: Όχι
   Versions:
   - Version: 1
     Fields:

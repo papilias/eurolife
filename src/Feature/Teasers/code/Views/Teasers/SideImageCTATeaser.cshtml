@@ -20,7 +20,7 @@
       RenderingContext.Current.Rendering.GetFontColorClass() : "color-health";
 }
 
-<div class="zigzag__item m-b-96 relator">
+<div class="zigzag__item m-b-64 relator">
   @if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor)
   {
     <div class="zigzag__image">
@@ -28,7 +28,7 @@
     </div>
   }
   <div class="zigzag__info">
-    <h2 class="h2 @fontColor m-b-16">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h2>
+    <h2 class="h2 @fontColor m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h2>
     <div class="zigzag__text m-b-32">
       @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
     </div>

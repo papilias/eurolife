@@ -1,8 +1,8 @@
 ﻿---
-ID: "3d01e6d3-6d7f-4b15-8ccd-cddf74eee2bb"
-Parent: "47dd2633-b246-42dc-9023-b5e2d4258bd5"
+ID: "23fdd67e-69e0-47f0-8bbe-3c93aeb50f35"
+Parent: "ccf8d779-67c2-4da4-95e7-0759c09d317c"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/Complaint Form/Page/Section/SubSection/streetNumber
+Path: /sitecore/Forms/Complaint Form/Page/Section/Subsection/street
 DB: master
 SharedFields:
 - ID: "10e5829a-1943-4597-b9ee-406ce3d13e13"
@@ -30,7 +30,7 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 6A1309DB4D3846F0A64911D64E091642
+  Value: 17E0F2424FA54EF9BB7170F571F5A18A
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
@@ -70,7 +70,7 @@ Languages:
         sitecore\Admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Αριθμός
+      Value: Οδός
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 
@@ -86,7 +86,7 @@ Languages:
       Value: 20190627T141619Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Αριθμός
+      Value: Οδός
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 

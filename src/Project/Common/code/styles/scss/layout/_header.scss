@@ -411,7 +411,8 @@ a.btn--white-header{
    font-weight: 500;
    padding: 10px 20px 10px;
    margin-right: 8px;
-   background-color: #fff;
+   background-color: transparent;
+   border: 1px solid white;
    border-radius: 4px;
    height: 38px;
  }

@@ -1,8 +1,8 @@
 ﻿---
-ID: "2201e57f-123c-4a06-b387-1b4f2ec8226f"
-Parent: "47dd2633-b246-42dc-9023-b5e2d4258bd5"
-Template: "d8386d04-c1e3-4cd3-9227-9e9f86ef3c88"
-Path: /sitecore/Forms/Complaint Form/Page/Section/SubSection/message
+ID: "4b7feff7-4d09-4c72-8c33-b1de0a269c38"
+Parent: "0a60f234-46a9-430a-b2bd-c40f16bd68d5"
+Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
+Path: /sitecore/Forms/Complaint Form/Page/Section/Subsection/postalCode
 DB: master
 SharedFields:
 - ID: "10e5829a-1943-4597-b9ee-406ce3d13e13"
@@ -14,13 +14,13 @@ SharedFields:
   Value: 
 - ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
   Hint: Field Type
-  Value: "{A296A1C1-0DA0-4493-A92E-B8191F43AEC6}"
+  Value: "{4EE89EA7-CEFE-4C8E-8532-467EF64591FC}"
 - ID: "5d09f88a-0e2a-4f87-8151-af4a2aa26ec3"
   Hint: Value Provider
   Value: 
 - ID: "71061c01-a495-4bf3-a52c-d378346bfae2"
   Hint: Max Length
-  Value: 512
+  Value: 255
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
@@ -30,7 +30,7 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 3655574FEA3C476FBA32C1990BAE35C1
+  Value: D6FBF7B91EF64CD9B40D4CF6235C3DE0
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
@@ -49,9 +49,6 @@ SharedFields:
   Hint: Is Tracking Enabled
   Type: Checkbox
   Value: 1
-- ID: "e43e4e5f-6b45-4e3b-8d85-85ab87d2cc12"
-  Hint: Rows
-  Value: 4
 - ID: "ecd17630-5f51-45db-b52f-b3dfaec4fa1b"
   Hint: Store Binding Value
   Type: Checkbox
@@ -73,7 +70,7 @@ Languages:
         sitecore\Admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: 
+      Value: Τ.Κ.
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 
@@ -86,14 +83,10 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190627T141829Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
+      Value: 20190627T141654Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Μήνυμα
+      Value: ΤΚ
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 

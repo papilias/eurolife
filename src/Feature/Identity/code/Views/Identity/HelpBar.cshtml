@@ -22,7 +22,8 @@
       @Html.Sitecore().Dictionary("/Identity/HeaderCustomerCare/Title", "Title")
     </span>
     <span class="nav-support__phone">
-      @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)
+      <span>@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)</span>
+      <a href="tel:@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)"><span>@Html.Sitecore().Dictionary("/Identity/HeaderCustomerCare/Call", "Call")</span></a>
     </span>
   </div>
 }

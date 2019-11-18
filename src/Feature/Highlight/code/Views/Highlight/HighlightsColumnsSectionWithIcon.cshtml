@@ -15,7 +15,7 @@
 @if (Model.Item.FieldHasValue(Templates.HighlightMain.Fields.Title) || Sitecore.Context.PageMode.IsExperienceEditor)
 {
   <section id="hightlights-section" class="product-moto center center--1100">
-    <h1 class="h2 m-b-24 color-health">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title)</h1>
+    <h1 class="h2 m-b-8 color-health">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title)</h1>
     <p>
       @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary)
     </p>
@@ -38,7 +38,7 @@
           </div>
     
 
-          <h2 class="h5 m-b-16">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
+          <h2 class="h5 m-b-8">@Html.Sitecore().Field(Templates.HighlightMain.Fields.Title, item)</h2>
           <div class="teaser-highlight__text">
             @Html.Sitecore().Field(Templates.HighlightMain.Fields.Summary, item)
           </div>

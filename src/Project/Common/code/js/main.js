@@ -30,7 +30,7 @@
         if ($(window).width() <= 768) {
           $('header li.sublisted > a span').click(function (e) {
             e.preventDefault();
-            $(this).siblings(".sublist").toggleClass("active");
+            $(this).parent().siblings(".sublist").toggleClass("active");
           });
         }
 
@@ -44,7 +44,10 @@
           $(searchClose).on('click', _ => {
             body.classList.remove('search-open');
           });
-        }
+      }
+
+      //CUSTOM RADIO BUTTONS
+      customRadioButtons();
 
         //FIXES
         try {
@@ -347,9 +350,9 @@
         function stickySecond() {
 
             if (window.pageYOffset > (elementSecondFromTop - headerHeight)) {
-                menu.classList.add("sticky-second");
+              menu.classList.add("sticky-second");
             } else {
-                menu.classList.remove("sticky-second");
+              menu.classList.remove("sticky-second");
             }
         }
     }
@@ -524,7 +527,16 @@
             slider.scrollLeft = scrollLeft - walk;
          //   console.log(walk);
         });
-    }
+  }
+
+  function customRadioButtons() {
+    $target = $("input[type=radio]");
+
+    $target.each(function () {
+      $(this).after("<label></label>");
+      $(this).parent().addClass("cursor-pointer");
+    });
+  }
 
     function highLightLabel(){
         $target = $( ".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea" );
@@ -532,19 +544,22 @@
             var text_value=$(this).val();
             if(text_value != '')
             {
-                $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item-static').removeClass('filled');
             }
         });
 
         $target.bind('blur', function(){
             if( !$(this).val() || $(this).hasClass('error')) {
                 if (!$(this).val())
-                    $(this).parents('.form__item').removeClass('filled');
+                $(this).parents('.form__item').removeClass('filled');
+                $(this).parents('.form__item-static').removeClass('filled');
             }
         });
         $target.bind('focus', function(){
             if( !$(this).val() || $(this).hasClass('error')) {
-                $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item').addClass('filled');
+              $(this).parents('.form__item-static').removeClass('filled');
             }
         });
     }
@@ -559,7 +574,7 @@
     setTimeout(() => {
       // init the observer
       const options = {
-        threshold: 0.35
+        threshold: 0.15
       }
 
       // simple function to use for callback in the intersection observer

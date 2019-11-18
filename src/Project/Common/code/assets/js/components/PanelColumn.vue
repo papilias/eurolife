@@ -6,7 +6,7 @@
     </div>
 
     <template v-for="row in category.rows">
-      <panel-item :item="findItem(row)"></panel-item>
+      <panel-item :title="row.title" :item="findItem(row)"></panel-item>
     </template>
   </div>
 </template>
