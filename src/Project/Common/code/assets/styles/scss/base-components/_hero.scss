@@ -36,7 +36,7 @@
 
 .hero--inner{
   img{
-    max-height: 420px;
+    max-height: 540px;
   }
 }
 
@@ -65,7 +65,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 0 0 100px 0;
   }
 
@@ -160,12 +160,25 @@
 
 //*hero s lider*/
 
-.hero-slider__item{
+.hero-slider__item {
   position: relative;
   display: block;
-  color:#fff;
-  .h6{
+  color: #fff;
+
+  .h6 {
     font-weight: 400;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 60px;
+      background: $color-base;
+      height: 1px;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 

@@ -25,18 +25,21 @@
 .figure__cell--2{
   grid-area: figure__cell--2;
 }
-.figure__cell--3{
+.figure__cell--3 {
   grid-area: figure__cell--3;
-  padding:39px 35px 40px 35px;
-  @include breakpoint(1140){
-    padding: 69px 80px 69px 92px;
+  padding: 48px;
+
+  @include breakpoint(1140) {
+    padding: 64px;
   }
+
   background-color: $tealish;
+
   @include breakpoint(700) {
     border-bottom-left-radius: 100px;
   }
-  color: #fff;
 
+  color: #fff;
 }
 
 .figure__cell--4{
@@ -47,9 +50,9 @@
   }
   grid-area: figure__cell--4;
 
-  padding:39px 35px 40px 35px;
+  padding: 48px;
   @include breakpoint(1140){
-    padding: 69px 80px 69px 92px;
+    padding:64px;
   }
 
   .figures__text:nth-child(1),
@@ -89,12 +92,14 @@
   line-height: 1.19;
 }
 
-.figure__numbers-vertical{
+.figure__numbers-vertical {
   justify-content: center;
-  padding:39px 35px 40px 35px;
-  @include breakpoint(1140){
-    padding: 69px 80px 69px 92px;
+  padding: 48px;
+
+  @include breakpoint(1140) {
+    padding: 64px;
   }
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -118,7 +123,7 @@
     font-size: 11px;
     color: #2d2d2d !important;
     display: block;
-    text-align: right;
+    text-align: left;
 
     @include breakpoint(700) {
       padding-left: 200px;

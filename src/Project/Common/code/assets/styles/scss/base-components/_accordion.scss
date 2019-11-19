@@ -4,37 +4,41 @@
 
 .accordion {
   > li {
-    margin-bottom:16px;
+    margin-bottom: 16px;
     list-style-type: none;
     border-radius: 5px;
-    background-color:#fff;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
     border-left:6px solid $color-base;
   }
+
   h3 {
     margin: 0;
     line-height: 1.2;
     font-size: 20px;
     font-size: 2rem;
   }
+
   input[name='panel'] {
     display: none;
   }
+
   label {
     position: relative;
     width: 100%;
     display: block;
     margin-bottom: 24px;
-    padding:24px 24px 0;
+    padding: 24px 24px 0;
     line-height: 1.1;
     font-size: 18px;
     font-weight: 400;
     transition: font-weight 3000ms ease-in-out;
   }
-  input[type="checkbox"] + label{
-    padding:24px 74px 0 24px;
 
-    &:after, &:before{
+  input[type="checkbox"] + label {
+    padding: 24px 74px 0 24px;
+
+    &:after, &:before {
       display: none;
     }
   }
@@ -51,7 +55,7 @@
     background-position: 8px 11px;
   }
 
-  input:checked +label{
+  input:checked + label {
     font-weight: 500;
   }
 
