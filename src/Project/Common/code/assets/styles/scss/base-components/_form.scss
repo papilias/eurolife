@@ -18,11 +18,11 @@
 }
 
 .form__group{
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 
 .form__item{
-  margin-bottom:10px;
+  margin-bottom:20px;
 
   label{
     padding-left: 8px;
@@ -109,7 +109,7 @@ input[type="radio"] {
   + label:before {
     content: "";
     position: absolute;
-    left: -5px;
+    left: -10px;
     top: 0;
     width: 16px;
     height: 16px;
@@ -123,7 +123,7 @@ input[type="radio"] {
   + label:after {
     content: "";
     position: absolute;
-    left: -2px;
+    left: -7px;
     top: 3px;
     width: 12px;
     height: 12px;
@@ -140,6 +140,11 @@ input[type="radio"] {
   &:checked + label:after {
     background-color: $color-base;
   }
+}
+
+label.cursor-pointer{
+  padding-left: 10px;
+  margin-top: 8px;
 }
 
 label.cursor-pointer, .push-me {
