@@ -26,6 +26,15 @@
 
     $(document).ready(function () {
 
+        //CALL TABLE EQUALIZER
+        try {
+          if($('.programs').length > 0)
+            tableHeightEqualizer();
+        }
+        catch (e) {
+          console.log(e);
+        }
+
         //MUTE LINKS WITH "#" HREF ATTRIBUTE
         if ($(window).width() <= 768) {
           $('header li.sublisted > a span').click(function (e) {
@@ -602,4 +611,27 @@
     }, 200);
 
     //using an instersection observer for product END
+
+    //TABLE HEIGHT EQUALIZER
+    function tableHeightEqualizer() {
+      $(".program-grid").each(function () {
+        const grid = $(this);
+        const howmany = $(this).find(".program-attributes .grid-table-cell").length;
+
+        for (let i = 0; i < howmany; i++) {
+          let max = 0;
+
+          //FIND THE MAX PER ROW
+          $(grid).find(".grid-table-column").each(function () {
+            $(this).find(".grid-table-cell").eq(i).each(function () {
+              if ($(this).height() > max)
+                max = $(this).height();
+            });
+
+            //SET FIXED HEIGHT
+            $(this).find(".grid-table-cell").eq(i).height(max + "px");
+          });
+        }
+      });
+    }
 })(jQuery);

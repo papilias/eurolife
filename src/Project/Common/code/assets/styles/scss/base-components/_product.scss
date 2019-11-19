@@ -283,7 +283,6 @@
   .grid-table-cell {
     padding-left: 0;
     padding-right: 20px;
-    min-height: 120px;
     align-items: center;
 
     @include breakpoint(540) {
@@ -331,7 +330,13 @@
 }
 
 .grid-table-cell {
-  padding: 4px 20px;
+  padding:30px 4px;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @include breakpoint(540) {
+    font-size: 12px;
+  }
 
   @include breakpoint-rev(540) {
     &:after {
@@ -383,9 +388,8 @@
 
     @include breakpoint(540) {
       display: flex;
-      min-height: 120px;
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
       padding-right: 20px;
     }
   }
@@ -399,9 +403,9 @@
   height: 100%;
   border-radius: 0 0 25px 0;
   color: #fff;
-  line-height: 1.3;
+  line-height: 1.2;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   padding: 20px;
 }
 
@@ -782,10 +786,6 @@
 
 .program-grid--subsection {
   margin-bottom: 24px;
-
-  .program-attributes {
-    font-size: 11px;
-  }
 }
 
 .program-grid--subsection__title {
@@ -809,7 +809,7 @@
   h2 {
     padding: 16px 20px;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #eee;
   }
 }
@@ -1147,44 +1147,115 @@ main {
   }
 }
 
-.theme-health {
-  .btn--white-header {
+.theme-default {
+  .access__label {
     color: $color-health;
+
+    path {
+      fill: $color-health;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-health-soft;
+  }
+}
+
+
+.theme-health {
+  .access__label {
+    color: $color-health;
+
+    path {
+      fill: $color-health;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-health-soft;
   }
 }
 
 .theme-home {
-  .btn--white-header {
+  .access__label {
     color: $color-home;
+
+    path {
+      fill: $color-home;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-home-soft;
   }
 }
 
 .theme-small-business {
-  .btn--white-header {
+  .access__label {
     color: $color-small-business;
+
+    path {
+      fill: $color-small-business;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-small-business-soft;
   }
 }
 
 .theme-non-category {
-  .btn--white-header {
+  .access__label {
     color: $color-non-category;
+
+    path {
+      fill: $color-non-category;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-non-category-soft;
   }
 }
 
 .theme-motor {
-  .btn--white-header {
+  .access__label {
     color: $color-motor;
+
+    path {
+      fill: $color-motor;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-motor-soft;
   }
 }
 
 .theme-life {
-  .btn--white-header {
+  .access__label {
     color: $color-life-insurance;
+
+    path {
+      fill: $color-life-insurance;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-life-insurance-soft;
   }
 }
 
 .theme-finance {
-  .btn--white-header {
+  .access__label {
     color: $color-finance;
+
+    path {
+      fill: $color-finance;
+    }
+  }
+
+  .access__list a:hover, .nav-main .sublist a:hover {
+    background-color: $color-finance-soft;
   }
 }
