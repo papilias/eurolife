@@ -35,6 +35,7 @@
 .solo-teaser__image {
   flex-basis: 100%;
   height: 640px;
+  overflow: hidden; 
 
   @include breakpoint(1140) {
     flex-basis: 50%;
