@@ -73,7 +73,7 @@ section:not(.bg-life-insurance){
 
 h1.t-c {
   text-align: center;
-  max-width: 600px;
+  max-width: 640px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,6 +86,6 @@ h1.t-c {
   list-style: none !important;
 }
 
-.droplist + #selectorItems .selected-content{
+.droplist + #selectorItems .selected-content:not(.selected-content--visible){
   margin:0;
 }

@@ -68,22 +68,22 @@
     }
   }
 
-  &.-finance {
-    .achorlist-active {
+  &-finance {
+    .achorlist__active {
       color: $color-finance;
       background-color: $color-finance-soft;
     }
   }
 
-  &.-non-category {
-    .achorlist-active {
+  &-non-category {
+    .achorlist__active {
       color: $color-non-category;
       background-color: $color-non-category-soft;
     }
   }
 
-  &.-small-business {
-    .achorlist-active {
+  &-small-business {
+    .achorlist__active {
       color: $color-small-business;
       background-color: $color-small-business-soft;
     }
@@ -101,12 +101,11 @@
   }
 }
 
-.sticky-second{
+/*.sticky-second{
   .anchorlist{
     @include breakpoint(1700) {
       transform: translate(-240px, 0px);
     }
-
   }
-
 }
+*/

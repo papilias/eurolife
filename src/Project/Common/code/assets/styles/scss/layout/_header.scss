@@ -479,7 +479,9 @@ a.btn--white-header{
    font-weight: 500;
    padding: 10px 20px 10px;
    margin-right: 8px;
-   background-color: #fff;
+   background-color: transparent;
+   border: 1px solid white;
+   color: white;
    border-radius: 4px;
    height: 38px;
  }
@@ -499,9 +501,9 @@ a.btn--ghost-header{
   color: #fff;
   line-height: 1;
   font-weight: 500;
-  border:1px solid #fff;
   padding: 12px 35px 10px 20px;
   border-radius: 4px;
+  background-color: white;
   position: relative;
   height: 38px;
   cursor: pointer;
@@ -523,8 +525,8 @@ a.btn--ghost-header{
     }
     .access__label{
       background:#fff;
-      color: $color-base;
-      &:after{
+      border-radius: 0;
+      /*&:after{
         content: "";
         background: #fff;
         position: absolute;
@@ -533,19 +535,16 @@ a.btn--ghost-header{
         height: 5px;
         left: -1px;
         border: 1px solid #fff;
-      }
+      }*/
       &:before{
         content: "";
         background: #fff;
         position: absolute;
         top: -6px;
-        width: 100%;
+        width: calc(100% - 2px);
         height: 6px;
-        left: -1px;
+        left: 0px;
         border: 1px solid #fff;
-      }
-      path{
-        fill:$color-base;
       }
     }
   }
@@ -553,7 +552,7 @@ a.btn--ghost-header{
 
 .access__list{
   position: absolute;
-  top: 42px;
+  top: 38px;
   display: none;
   background-color: #fff;
   width: 100%;

@@ -24,9 +24,14 @@
     box-shadow: 0 9px 16px -10px rgba(0, 0, 0, 0.16);
 
     > ul {
-      max-width: none;
-      padding-left: 60px;
-      padding-right: 60px;
+      max-width: 1700px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @include breakpoint(1140) {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
     }
 
     @include breakpoint-rev(820) {
