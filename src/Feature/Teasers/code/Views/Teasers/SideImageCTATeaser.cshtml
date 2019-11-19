@@ -29,10 +29,10 @@
   }
   <div class="zigzag__info">
     <h2 class="h2 @fontColor m-b-8">@Html.Sitecore().Field(Templates.HasTeaserHeadline.Fields.Title)</h2>
-    <div class="zigzag__text m-b-32">
+    <div class="zigzag__text m-b-48">
       @Html.Sitecore().Field(Templates.HasTeaserSummary.Fields.Summary)
     </div>
-    <div class="m-t-32">
+    <div>
       @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--default btn--dark" })
     </div>
   </div>
