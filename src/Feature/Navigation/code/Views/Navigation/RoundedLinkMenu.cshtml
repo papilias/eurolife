@@ -12,36 +12,44 @@
 <section class="center center--1700 m-b-84 rounded-menu">
   <div id="fix-2" class="sticky-pending">
     <ul class="center center--1100 anchorlist">
-      @foreach (var item in Model.NavItems)
+      @foreach (var item in Model.NavItems.Select((value, i) => new { i, value }))
       {
-        var activeClass = item.IsActive ? "achorlist__active" : "";
 
-        if (Request.Url.AbsoluteUri.Contains(item.Url))
+        var activeClass = string.Empty;
+
+        if (item.value.IsActive)
         {
-          activeClass += " achorlist__active";
+          if (item.i == 0 && Request.Url.AbsolutePath == item.value.Url)
+          {
+            activeClass = "achorlist__active ";
+          }
+          else if (item.i > 0)
+          {
+            activeClass = "achorlist__active ";
+          }
         }
 
-        if (item.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
+        if (item.value.Item.Fields[Templates.LinkMenuItem.Fields.DividerBefore].IsChecked())
         {
           activeClass += "divider-left";
         }
 
-      <li>
-        @using (Html.BeginEditFrame(item.Item.ID.ToString(), ""))
-        {
-          <a href="@item.Url" target="@item.Target" class="@activeClass">
-            @if (!string.IsNullOrWhiteSpace(item.Item[Templates.LinkMenuItem.Fields.Icon]))
-            {
-              <span class="@item.Item[Templates.LinkMenuItem.Fields.Icon]"></span>
-            }
-            else
-            {
-              @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.Item)
-            }
-          </a>
-        }
+        <li>
+          @using (Html.BeginEditFrame(item.value.Item.ID.ToString(), ""))
+          {
+            <a href="@item.value.Url" target="@item.value.Target" class="@activeClass">
+              @if (!string.IsNullOrWhiteSpace(item.value.Item[Templates.LinkMenuItem.Fields.Icon]))
+              {
+                <span class="@item.value.Item[Templates.LinkMenuItem.Fields.Icon]"></span>
+              }
+              else
+              {
+                @Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, item.value.Item)
+              }
+            </a>
+          }
 
-      </li>
+        </li>
 
       }
     </ul>
