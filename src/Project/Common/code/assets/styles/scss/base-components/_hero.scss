@@ -29,8 +29,13 @@
   }
 
   + .rounded-menu {
-    margin: -112px 0px 112px;
+    margin: -84px 0px 48px;
     padding-top: 24px;
+
+    @include breakpoint(820) {
+      margin: -112px 0px 112px;
+      padding-top: 24px;
+    }
   }
 }
 
@@ -113,7 +118,6 @@
   justify-content: center;
   min-height: 400px;
 
-
   &:before{
     content: '';
     width: 100%;
@@ -132,6 +136,9 @@
   p{
     font-size: 18px;
     color: #fff;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -194,14 +201,20 @@
 
   li {
     position: relative;
-    width: 47px;
-    height: 47px;
-    margin: 0 10px;
+    width: 37px;
+    height: 37px;
     display: inline-block;
     padding: 10px;
+    margin: 0 7px;
     border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+
+    @include breakpoint(820) {
+      width: 47px;
+      height: 47px;
+      margin: 0 10px;
+    }
 
     > a {
       position: absolute;

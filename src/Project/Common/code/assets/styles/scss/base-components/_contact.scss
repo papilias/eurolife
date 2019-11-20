@@ -6,7 +6,11 @@
 .ways__to-contact {
   font-size: 16px;
   font-weight: 300;
-  padding: 48px;
+  padding: 24px;
+
+  @include breakpoint(820) {
+    padding: 48px;
+  }
 
   h4 {
     margin-bottom: 4px;
@@ -22,7 +26,7 @@
     padding-left: 30px;
   }
 
-  @include breakpoint-rev(540){
+  @include breakpoint-rev(540) {
     margin-bottom: 20px;
   }
 }

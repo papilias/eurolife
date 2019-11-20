@@ -70,7 +70,7 @@
 
   @include breakpoint-rev(820) {
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 36px;
     }
   }
 
@@ -84,9 +84,13 @@
 }
 
 .teaser-highlight__text {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   @include font-size(14);
   color: rgba(56,59,56, 0.6);
+
+  @include breakpoint(820) {
+    margin-bottom: 48px;
+  }
 }
 
 .teaser-icon {
@@ -614,11 +618,11 @@
 
   &:before {
     content: '—';
-    margin: 0 auto;
+    margin: 0 auto 10px;
 
     @include breakpoint-rev(540) {
       position: absolute;
-      bottom: 20px;
+      bottom: 0;
     }
   }
 }
@@ -1157,6 +1161,10 @@ main {
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-health-soft;
   }
+
+  h2.colored {
+    color: $color-health;
+  }
 }
 
 
@@ -1172,6 +1180,10 @@ main {
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-health-soft;
   }
+
+  h2.colored {
+    color: $color-health;
+  }
 }
 
 .theme-home {
@@ -1185,6 +1197,10 @@ main {
 
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-home-soft;
+  }
+
+  h2.colored {
+    color: $color-home;
   }
 }
 
@@ -1200,6 +1216,10 @@ main {
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-small-business-soft;
   }
+
+  h2.colored {
+    color: $color-small-business;
+  }
 }
 
 .theme-non-category {
@@ -1213,6 +1233,10 @@ main {
 
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-non-category-soft;
+  }
+
+  h2.colored {
+    color: $color-non-category;
   }
 }
 
@@ -1228,6 +1252,10 @@ main {
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-motor-soft;
   }
+
+  h2.colored {
+    color: $color-motor;
+  }
 }
 
 .theme-life {
@@ -1242,6 +1270,10 @@ main {
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-life-insurance-soft;
   }
+
+  h2.colored {
+    color: $color-life-insurance;
+  }
 }
 
 .theme-finance {
@@ -1255,5 +1287,9 @@ main {
 
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-finance-soft;
+  }
+
+  h2.colored {
+    color: $color-finance;
   }
 }

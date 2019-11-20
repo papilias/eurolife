@@ -27,7 +27,7 @@
 }
 .figure__cell--3 {
   grid-area: figure__cell--3;
-  padding: 48px;
+  padding: 24px;
 
   @include breakpoint(1140) {
     padding: 64px;
@@ -50,7 +50,7 @@
   }
   grid-area: figure__cell--4;
 
-  padding: 48px;
+  padding: 24px;
   @include breakpoint(1140){
     padding:64px;
   }
@@ -94,7 +94,7 @@
 
 .figure__numbers-vertical {
   justify-content: center;
-  padding: 48px;
+  padding: 24px;
 
   @include breakpoint(1140) {
     padding: 64px;

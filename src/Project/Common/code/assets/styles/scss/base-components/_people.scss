@@ -1,25 +1,50 @@
 /*------------------------------------*\
   #PEOPLE
 \*------------------------------------*/
-.people{
+.people {
   background-color: $duck-egg-blue;
 
-  .slick-arrow{
+  .slick-arrow {
     position: absolute;
-    top:50%;
-  }
-  .slick-disabled{
-    opacity: 0.6;
-  }
-  .slick-prev{
-    left:0;
-  }
-  .slick-next{
-    right:0;
+    bottom: 33px;
+
+    @include breakpoint(820) {
+      top: 50%;
+      bottom: unset;
+    }
+
+    svg {
+      width: 30px;
+
+      @include breakpoint(820) {
+        width: 60px;
+      }
+    }
+
+    .slick-disabled {
+      opacity: 0.6;
+    }
+
+    &.slick-prev {
+      left: 20px;
+
+      @include breakpoint(820) {
+        left: 0;
+      }
+    }
+
+    &.slick-next {
+      right: 20px;
+
+      @include breakpoint(820) {
+        right: 0;
+      }
+    }
   }
 }
-.people__image{
-  img{
+
+.people__image {
+  img {
     margin: 0 auto;
     width: 156px;
     border-radius: 50%;
@@ -28,7 +53,7 @@
   }
 }
 
-.people__quote{
+.people__quote {
   margin-left: 15%;
   margin-right: 15%;
   font-size: 22px;

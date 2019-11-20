@@ -340,7 +340,7 @@
         var menuHeight = document.getElementById('fix-2').clientHeight;
         var stick2 = document.getElementById("after-sticky-2");
         menu.style.setProperty('--h2', menuHeight + "px");
-        menu.style.setProperty('--top', (headerHeight - $("#fix-1 .intro__text").height() + 10) + "px");
+        menu.style.setProperty('--top', (headerHeight - $("#fix-1 .intro__text").height() -38) + "px");
         stick2.style.setProperty('--p2', menuHeight + "px");
 
         // Get the offset position of the navbar

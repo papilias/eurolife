@@ -55,23 +55,37 @@
                   <div class="list--partners__address">@consultant.Item.Field(Templates.HasPersonContact.Fields.Address)</div>
                 </div>
                 <div class="list--partners__col-2">
-                  <div class="list--partners__contact">
-                    <strong>
-                      @Html.Sitecore().Dictionary("/Person/Consultants List/Telephone Leading Letter", "P."):
-                     </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Telephone)</div>
-                  <div class="list--partners__contact"><strong>
-                    @Html.Sitecore().Dictionary("/Person/Consultants List/Mobile Leading Letter", "M."):
-                </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Mobile)</div>
-                </div>
+                  @if (@consultant.Item.Field(Templates.HasPersonContact.Fields.Telephone) != null) {
+                      <div class="list--partners__contact">
+                        <strong>
+                          @Html.Sitecore().Dictionary("/Person/Consultants List/Telephone Leading Letter", "P."):
+                        </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Telephone)
+                      </div>
+                    }
+                    @if (@consultant.Item.Field(Templates.HasPersonContact.Fields.Mobile) != null)
+                    {
+                      <div class="list--partners__contact">
+                        <strong>
+                          @Html.Sitecore().Dictionary("/Person/Consultants List/Mobile Leading Letter", "M."):
+                        </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Mobile)
+                      </div>
+                    }
+                    </div>
                 <div class="list--partners__col-3">
-                  <div class="list--partners__contact">
-                    <strong>
-                      @Html.Sitecore().Dictionary("/Person/Consultants List/Fax Leading Letter", "F."):
-                    </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Fax)</div>
-                  <div class="list--partners__contact">
-                    <strong>
-                      @Html.Sitecore().Dictionary("/Person/Consultants List/Email Leading Letter", "E."):
-                    </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Email)</div>
+                  @if (@consultant.Item.Field(Templates.HasPersonContact.Fields.Fax) != null) { 
+                    <div class="list--partners__contact">
+                      <strong>
+                        @Html.Sitecore().Dictionary("/Person/Consultants List/Fax Leading Letter", "F."):
+                      </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Fax)
+                    </div>
+                    }
+                  @if (@consultant.Item.Field(Templates.HasPersonContact.Fields.Email) != null) {
+                    <div class="list--partners__contact">
+                      <strong>
+                        @Html.Sitecore().Dictionary("/Person/Consultants List/Email Leading Letter", "E."):
+                      </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Email)
+                    </div>
+                  }
                 </div>
               </div>
           

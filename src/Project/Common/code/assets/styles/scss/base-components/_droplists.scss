@@ -6,7 +6,7 @@
 }
 
 .droplist__options {
-  top: 49px;
+  top: 74px;
   position: absolute;
   width: 100%;
   background-color: #fff;
@@ -27,7 +27,7 @@
     border-left: 8px solid #FFF;
     border-right: 8px solid #FFF;
   }
-
+  
   li {
     padding: 5px 0;
   }
@@ -54,7 +54,10 @@
   svg {
     max-width: 20px;
     max-height: 22px;
-    margin-left: 40px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

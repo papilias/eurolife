@@ -19,7 +19,7 @@
   }
 }
 
-.zigzag__image{
+.zigzag__image {
   flex-basis: 100%;
   object-fit: cover;
   overflow: hidden;
@@ -28,10 +28,16 @@
   @include breakpoint(700) {
     flex-basis: 43%;
   }
-  img{
-    height:600px;
-    width:auto;
-    max-width: none;
+
+  img {
+    @include breakpoint(820) {
+      height: 600px;
+      width: auto;
+      max-width: none;
+    }
+
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -52,8 +58,12 @@
     margin: 0 48px;
   }
 
-  .h2{
-    font-size: 42px;
+  .h2 {
+    font-size: 24px;
+
+    @inlcude breakpoint(820) {
+      font-size: 42px;
+    }
   }
 }
 
