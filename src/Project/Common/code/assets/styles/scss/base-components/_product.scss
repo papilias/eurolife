@@ -594,37 +594,19 @@
 }
 
 .service-provided {
-  position: relative;
-
-  &:before {
-    content: '';
-    display: block;
-    background-image: url(../images/icons/check-blue.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 24px;
-    height: 24px;
-    //margin:0 auto;
-
-    @include breakpoint-rev(540) {
-      position: absolute;
-      bottom: 20px;
-    }
-  }
+  display: block;
+  background-image: url(../images/icons/check-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  //margin:0 auto;
 }
 
 .service-not-provided {
   position: relative;
-
-  &:before {
-    content: '—';
-    margin: 0 auto 10px;
-
-    @include breakpoint-rev(540) {
-      position: absolute;
-      bottom: 0;
-    }
-  }
+  content: '—';
+  margin: 0 auto 10px;
 }
 
 /*controls*/

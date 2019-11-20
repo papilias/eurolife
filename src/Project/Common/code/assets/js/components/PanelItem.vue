@@ -1,6 +1,10 @@
 ﻿<template>
-  <div :class="`grid-table-cell ${cellClass}`">
+  <div class="grid-table-cell">
     <span class="cat mobile-only">{{ title }}</span>
+
+    <span v-if="!item.isChecked" :class="`grid-table-cell__icon ${cellClass}`"> - </span>
+    <span v-if="item.isChecked" :class="`grid-table-cell__icon ${cellClass}`"></span>
+
     {{ item.value }}
     <span class="tool" v-if="item.tooltip">
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
