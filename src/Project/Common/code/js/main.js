@@ -26,15 +26,6 @@
 
     $(document).ready(function () {
 
-        //CALL TABLE EQUALIZER
-        try {
-          if($('.programs').length > 0)
-            tableHeightEqualizer();
-        }
-        catch (e) {
-          console.log(e);
-        }
-
         //MUTE LINKS WITH "#" HREF ATTRIBUTE
         if ($(window).width() <= 768) {
           $('header li.sublisted > a span').click(function (e) {
@@ -227,7 +218,18 @@
             });
         }
 
-    });
+  });
+
+  $(window).on("load", () => {
+    //CALL TABLE EQUALIZER
+    try {
+      if ($('.programs').length > 0)
+        tableHeightEqualizer();
+    }
+    catch (e) {
+      console.log(e);
+    }
+  });
 
     $(document).keydown(function (e) {
 
@@ -381,10 +383,10 @@
       $(rightButton).unbind().on('click', _ => {
         if (order < limit) {
           order++;
-          const howmuch = (order * (-306)) + 'px';
+          const howmuch = (order * (-296)) + 'px';
 
           $(carousels).each(function() { 
-            $(this).css('transform', 'translateX(' + (order * (-306)) + 'px)');
+            $(this).css('transform', 'translateX(' + (order * (-296)) + 'px)');
           });
         }
       });
@@ -392,10 +394,10 @@
       $(leftButton).unbind().on('click', _ => {
         if (order > 0) {
           --order;
-          const howmuch = (order * (-306)) + 'px';
+          const howmuch = (order * (-296)) + 'px';
 
           $(carousels).each(function () {
-            $(this).css('transform', 'translateX(' + (order * (-306)) + 'px)');
+            $(this).css('transform', 'translateX(' + (order * (-296)) + 'px)');
           });
         }
       });
@@ -614,19 +616,22 @@
     //using an instersection observer for product END
 
     //TABLE HEIGHT EQUALIZER
-    function tableHeightEqualizer() {
-      $(".program-grid").each(function () {
+  function tableHeightEqualizer() {
+      $(".grid-table-cell").attr("style", "");
+      $("div:visible .program-grid").each(function () {
         const grid = $(this);
         const howmany = $(this).find(".program-attributes .grid-table-cell").length;
 
         for (let i = 0; i < howmany; i++) {
           let max = 0;
 
+          console.log(howmany);
+
           //FIND THE MAX PER ROW
           $(grid).find(".grid-table-column").each(function () {
             $(this).find(".grid-table-cell").eq(i).each(function () {
               if ($(this).height() > max)
-                max = $(this).height();
+                max = $(this).outerHeight();
             });
 
             //SET FIXED HEIGHT

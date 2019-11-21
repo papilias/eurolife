@@ -172,9 +172,14 @@
 
   > ul {
     padding-left: 30px;
+    color: rgb(74, 82, 148) !important;
 
     > li {
       position: relative;
+
+      span {
+        color: rgb(74, 82, 148) !important;
+      }
 
       &:before {
         content: '';
@@ -297,13 +302,14 @@
 
 .grid-table {
   display: grid;
-  grid-column-gap: 32px;
+  grid-column-gap: 0;
+  padding:0 32px;
   margin: 0 auto;
   align-items: top;
   grid-template-columns: repeat(var(--programCount), calc(100vw - 120px));
 
   @include breakpoint(540) {
-    grid-template-columns: repeat(var(--programCount), 274px);
+    grid-template-columns: repeat(var(--programCount), 296px);
   }
 
   border-radius: 0.5rem;
@@ -311,20 +317,36 @@
   transition: transform 500ms ease-in-out;
 }
 
-@include breakpoint(540) {
+/*@include breakpoint(540) {
   .program-grid-2 {
     .grid-table {
       grid-template-columns: repeat(var(--programCount), 428px);
     }
   }
+}*/
+.program-expander {
+  .grid-table-window{
+      .grid-table-column {
+      border-right: 1px solid #dedede;
+
+      &:last-child {
+        border: none;
+      }
+
+      .grid-table-cell:nth-child(2n) {
+        background: #f8f8f8;
+      }
+    }
+  }
 }
+
 
 .grid-table-window {
   overflow: hidden;
   padding-left: 0;
 
   @include breakpoint(540) {
-    padding-left: 29px;
+    padding-left: 0;
     border-left: 1px solid #eee;
   }
 
@@ -343,22 +365,6 @@
   }
 
   @include breakpoint-rev(540) {
-    &:after {
-      content: '';
-      height: 1px;
-      width: calc(100% - 40px);
-      margin: 0 auto;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #b5b5b5;
-    }
-
-    &:last-child:after, &:first-child:after {
-      content: none;
-    }
-
     &:before {
       content: attr(data-title);
       display: block;
@@ -412,10 +418,28 @@
 }
 
 .program-grid:not(.program-grid--subsection) {
-  > .program-attributes {
-    .grid-table-cell {
-      &:first-child {
-        min-height: 50px;
+  .program {
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+
+    .grid-table {
+      grid-column-gap: 0;
+      grid-template-columns: repeat(var(--programCount), 306px);
+    }
+
+    > .program-attributes {
+      .grid-table-cell {
+        &:first-child {
+          min-height: 50px;
+        }
       }
     }
   }
