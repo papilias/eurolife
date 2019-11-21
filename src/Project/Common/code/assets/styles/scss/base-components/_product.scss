@@ -324,6 +324,7 @@
     }
   }
 }*/
+
 .program-expander {
   .grid-table-window{
       .grid-table-column {
@@ -401,10 +402,6 @@
       padding-right: 20px;
     }
   }
-
-  .grid-table-cell--heading {
-    min-height: 50px;
-  }
 }
 
 .grid-table-cell--heading {
@@ -434,13 +431,11 @@
       grid-column-gap: 0;
       grid-template-columns: repeat(var(--programCount), 306px);
     }
+  }
 
-    > .program-attributes {
-      .grid-table-cell {
-        &:first-child {
-          min-height: 50px;
-        }
-      }
+  .grid-table-column {
+    .grid-table-cell:first-child {
+      height: 80px !important;
     }
   }
 }
