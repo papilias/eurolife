@@ -2,8 +2,7 @@
   <div class="grid-table-cell">
     <span class="cat mobile-only">{{ title }}</span>
 
-    <span v-if="!item.isChecked" :class="`grid-table-cell__icon ${cellClass}`"> - </span>
-    <span v-if="item.isChecked" :class="`grid-table-cell__icon ${cellClass}`"></span>
+    <span :class="`grid-table-cell__icon ${cellClass}`"> {{cellContent}} </span>
 
     {{ item.value }}
     <span class="tool" v-if="item.tooltip">
@@ -28,6 +27,12 @@
             }
         },
         computed: {
+          cellContent() {
+              if (this.item.value)
+                return;
+
+              return this.item.isChecked ? " " : " - ";
+            },
             cellClass() {
                 if (this.item.value)
                     return;

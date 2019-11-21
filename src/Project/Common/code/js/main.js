@@ -243,6 +243,7 @@
         $('.program-wrap').removeClass('program-wrap--active');
         $(this).addClass('programs__tabs__title--active');
         $('#'+$programid).addClass('program-wrap--active');
+        tableHeightEqualizer();
     });
 
     //expand vocabulary

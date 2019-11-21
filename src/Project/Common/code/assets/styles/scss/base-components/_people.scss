@@ -43,6 +43,10 @@
   }
 }
 
+:host {
+  display: block;
+}
+
 .people__image {
   img {
     margin: 0 auto;

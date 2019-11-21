@@ -334,7 +334,7 @@
 }
 
 .grid-table-cell {
-  padding:30px 4px;
+  padding:10px 4px;
   font-size: 14px;
   line-height: 1.2;
 
@@ -382,7 +382,7 @@
   .grid-table-cell {
     font-weight: 500;
     line-height: 1.2;
-    padding:20px 60px 20px 20px; 
+    padding:10px 60px 10px 20px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -390,14 +390,14 @@
     @include breakpoint(540) {
       text-align: center;
       display: flex;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       padding-right: 20px;
     }
   }
 
   .grid-table-cell--heading {
-    min-height: 80px;
+    min-height: 50px;
   }
 }
 
@@ -415,7 +415,7 @@
   > .program-attributes {
     .grid-table-cell {
       &:first-child {
-        min-height: 80px;
+        min-height: 50px;
       }
     }
   }
@@ -734,15 +734,25 @@
 }
 
 .filter__results__column {
-  flex-basis: 33%;
+  flex-basis: 100%;
+  margin-bottom:24px;
+
+  @include breakpoint(820) {
+    flex-basis: 33%;
+    margin-bottom: 0;
+  }
 }
 
 .filter__results__heading {
   min-height: 23px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   font-weight: 800;
   font-size: 14px;
   line-height: 1;
+
+  @include breakpoint(820) {
+    margin-bottom: 24px;
+  }
 }
 
 .filter__item {
@@ -876,14 +886,23 @@ main {
 
 .contentgroup__left {
   padding-bottom: 20px;
-  flex-basis: 20%;
-  margin-right: 24px;
   padding-right: 24px;
-  border-right: 1px solid #eee;
+  flex-basis: 100%;
+  display:block;
+
+  @include breakpoint(820) {
+    flex-basis: 20%;
+    margin-right: 24px;
+    border-right: 1px solid #eee;
+  }
 }
 
 .contentgroup__right {
-  flex-basis: 77%;
+  flex-basis: 100%;
+
+  @include breakpoint(820) {
+    flex-basis: 77%;
+  }
 }
 
 .contentgroup__title {
@@ -949,12 +968,7 @@ main {
     }
   }
 
-  padding: 15px;
-
-  @include breakpoint(1140) {
-    padding: 24px;
-  }
-
+  padding: 12px;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;

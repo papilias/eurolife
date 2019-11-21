@@ -84,22 +84,20 @@
   }
 }
 
-.leadership__arrows{
-
+.leadership__arrows {
   position: absolute;
   z-index: 2;
   bottom: auto;
   right: 23px;
   top: 110px;
 
-  @include breakpoint(700){
+  @include breakpoint(700) {
     position: absolute;
     z-index: 2;
-    bottom: -80px;
-    right: 133px;
-    top:auto;
+    bottom: -50px;
+    right: 113px;
+    top: auto;
   }
-
 }
 
 .slick-arrow{
