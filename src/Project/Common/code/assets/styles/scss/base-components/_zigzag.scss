@@ -61,8 +61,8 @@
   .h2 {
     font-size: 24px;
 
-    @inlcude breakpoint(820) {
-      font-size: 42px;
+    @include breakpoint(820) {
+      font-size: 36px;
     }
   }
 }

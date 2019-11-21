@@ -98,14 +98,22 @@ h1.t-c {
   }
 }
 
-  .accordion__content ul li {
-    list-style: disc !important;
-  }
+.accordion__content ul li {
+  list-style: disc !important;
+}
 
-  .accordion__content ul li.contentgroup__tick {
-    list-style: none !important;
-  }
+.accordion__content ul li.contentgroup__tick {
+  list-style: none !important;
+}
 
-  .droplist + #selectorItems .selected-content:not(.selected-content--visible) {
-    margin: 0;
+.droplist + #selectorItems .selected-content:not(.selected-content--visible) {
+  margin: 0;
+}
+
+main{
+  article{
+    .light, p{
+      font-weight: 400;
+    }
   }
+}
