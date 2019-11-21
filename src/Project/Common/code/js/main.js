@@ -617,15 +617,13 @@
 
     //TABLE HEIGHT EQUALIZER
   function tableHeightEqualizer() {
-      $(".grid-table-cell").attr("style", "");
-      $("div:visible .program-grid").each(function () {
+    $(".grid-table-cell").attr("style", "");
+    $(".program-grid").each(function () {
         const grid = $(this);
         const howmany = $(this).find(".program-attributes .grid-table-cell").length;
 
         for (let i = 0; i < howmany; i++) {
           let max = 0;
-
-          console.log(howmany);
 
           //FIND THE MAX PER ROW
           $(grid).find(".grid-table-column").each(function () {

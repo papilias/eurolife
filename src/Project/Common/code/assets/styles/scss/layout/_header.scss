@@ -484,6 +484,11 @@ a.btn--white-header{
    color: white;
    border-radius: 4px;
    height: 38px;
+
+   &:hover{
+     background-color: white;
+     color: $color-base;
+   }
  }
 
 a.btn--ghost-header{

@@ -303,12 +303,12 @@
 .grid-table {
   display: grid;
   grid-column-gap: 0;
-  padding:0 32px;
   margin: 0 auto;
   align-items: top;
   grid-template-columns: repeat(var(--programCount), calc(100vw - 120px));
 
   @include breakpoint(540) {
+    padding: 0 32px;
     grid-template-columns: repeat(var(--programCount), 296px);
   }
 
@@ -846,7 +846,7 @@
 
 .program-expander {
   max-height: 0;
-  transition: max-height 400ms ease;
+  transition: max-height 1.5s ease;
   overflow: hidden;
 
   &.program-expander--visible {
