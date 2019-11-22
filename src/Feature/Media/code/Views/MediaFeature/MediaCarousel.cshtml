@@ -21,12 +21,14 @@
   <div class="js-hero-slider hero-slider">
     @foreach (var element in elements)
     {
-      var field = element.Item.DescendsFrom(Templates.HasMediaVideo.ID) ? Templates.HasMedia.Fields.Thumbnail : Templates.HasMediaImage.Fields.Image;
+      var field = element.Item.DescendsFrom(Templates.HasMediaVideo.ID) ?
+        element.Item.Fields[Templates.HasMedia.Fields.Thumbnail].ID
+        : element.Item.Fields[Templates.HasMediaImage.Fields.Image].ID;
       var image = element.Item.ImageUrl(field);
       var description = element.Item.Fields[Templates.HasMedia.Fields.Description];
       var title = element.Item.Fields[Templates.HasMedia.Fields.Title];
       var label = element.Item.Fields[Templates.HasMedia.Fields.Label];
-      var url = (element.Item.DescendsFrom(Templates.HasMediaUrl.ID) && element.Item.FieldHasValue(Templates.HasMediaUrl.Fields.Url)) 
+      var url = (element.Item.DescendsFrom(Templates.HasMediaUrl.ID) && element.Item.FieldHasValue(Templates.HasMediaUrl.Fields.Url))
         ? Html.Sitecore().Field(Templates.HasMediaUrl.Fields.Url, element.Item, new { DisableWebEdit = true }).ToString() : "#";
 
       if (element.Item.DescendsFrom(Templates.HasMediaVideo.ID))
@@ -40,19 +42,19 @@
             <div class="center--760 center relator">
               <h3 class="h6">@label</h3>
               <h2 class="h2 m-b-16 m-t-32">@title</h2>
-              <p>@description</p>
+              <p>@description</p>                
             </div>
           </div>
           <picture>
-            <source media="(min-width: 900px)" srcset="images/eurolife-product.jpg">
-            <source srcset="images/eurolife-product-mobile.jpg">
+            <source media="(min-width: 900px)" srcset="@image">
+            <source srcset="@image">
             <img src="@image" alt="@title" />
           </picture>
         </a>
       }
 
     }
-    
+
   </div>
   <div class="grouping-dots"></div>
   <div class="hidden custom-dots js-custom-dots">
