@@ -709,9 +709,17 @@ section.programs{
 }
 
 .no-touch {
-  .program-controls__left:hover {
+  .program-controls__left, .program-controls__right {
     g {
-      opacity: 1;
+      opacity: 1 !important;
+    }
+  }
+
+  .program-controls__left.no, .program-controls__right.no {
+    cursor: not-allowed;
+
+    g {
+      opacity: 0.4 !important;
     }
   }
 }

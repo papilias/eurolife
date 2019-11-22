@@ -57,7 +57,7 @@
 
   .figures__text:nth-child(1),
   .figures__text:nth-child(2){
-    padding-bottom:48px;
+    padding-bottom:24px;
   }
   .figures__text:nth-child(3) {
     @include breakpoint-rev(700) {

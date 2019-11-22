@@ -23,11 +23,11 @@
     top: 0;
     left: 50%;
 
-    @include breakpoint(700) {
-      width: calc(100% - 80px);
+    @include breakpoint(820) {
+      width: calc(100% - 120px);
     }
 
-    @include breakpoint(820) {
+    @include breakpoint(1140) {
       width: calc(100% - 160px);
     }
 
@@ -94,9 +94,14 @@
   @include breakpoint(700) {
     position: absolute;
     z-index: 2;
-    bottom: -50px;
-    right: 113px;
+    bottom: -40px;
+    right: 33px;
     top: auto;
+  }
+
+  @include breakpoint(820) {
+    bottom: -55px;
+    right: 93px;
   }
 }
 

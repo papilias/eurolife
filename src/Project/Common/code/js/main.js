@@ -382,29 +382,35 @@
        // var programNumber = document.getElementById("programs-table").childElementCount;
     if (leftButton != null && rightButton != null) {
       const limit = $('.js-grid-table').first().find('.program').length - 3;
+      prepareButtons();
 
       //RIGHT CLICK
       $(rightButton).unbind().on('click', _ => {
         if (order < limit) {
           order++;
-          const howmuch = (order * (-296)) + 'px';
 
-          $(carousels).each(function() { 
+          $(carousels).each(function () {
             $(this).css('transform', 'translateX(' + (order * (-296)) + 'px)');
           });
-        }
+        } 
+        prepareButtons();
       });
 
       $(leftButton).unbind().on('click', _ => {
         if (order > 0) {
           --order;
-          const howmuch = (order * (-296)) + 'px';
 
           $(carousels).each(function () {
             $(this).css('transform', 'translateX(' + (order * (-296)) + 'px)');
           });
         }
+        prepareButtons();
       });
+
+      function prepareButtons() {
+        (order < limit) ? $(rightButton).removeClass("no") : $(rightButton).addClass("no");
+        (order > 0) ? $(leftButton).removeClass("no") : $(leftButton).addClass("no");
+      }
     }
     //grid carousel end
 

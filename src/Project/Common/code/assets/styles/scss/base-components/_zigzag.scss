@@ -92,9 +92,14 @@
   overflow: hidden;
 
   img {
-    height: 600px;
-    width:auto;
-    max-width: none !important;
+    height: auto;
+    width: 100%;
+
+    @include breakpoint(820) {
+      height: 600px;
+      width: auto;
+      max-width: none !important;
+    }
   }
 }
 
