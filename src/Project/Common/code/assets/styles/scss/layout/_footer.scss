@@ -40,9 +40,11 @@ footer{
       margin: 0;
       font-size: 12px;
 
-      &:after {
-        content: "|";
-        margin: 0 10px;
+      @include breakpoint(820){
+        &:after {
+          content: "|";
+          margin: 0 10px;
+        }
       }
     }
 

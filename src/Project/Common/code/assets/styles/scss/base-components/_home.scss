@@ -82,7 +82,7 @@
       grid-column: 1/1;
       grid-row: 5/9;
 
-      @include breakpoint(1140) {
+      @include breakpoint(820) {
         grid-row: 6/9;
       }
     }

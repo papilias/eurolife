@@ -172,7 +172,6 @@
 
   > ul {
     padding-left: 30px;
-    color: rgb(74, 82, 148) !important;
 
     > li {
       position: relative;
@@ -383,10 +382,18 @@
   align-items: center;
   background-color: #eee;
 
+  > section {
+    margin-top: 64px;
+
+    @include breakpoint(820) {
+      margin-top: 112px;
+    }
+  }
+
   .grid-table-cell {
     font-weight: 500;
     line-height: 1.4;
-    padding:10px 60px 10px 20px;
+    padding: 10px 60px 10px 20px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -1144,6 +1151,23 @@ main {
 
   .nav-product {
     background-color: $color-non-category;
+  }
+}
+
+.theme-default {
+  .product-moto {
+    text-align: center;
+    margin: 60px auto;
+
+    h1 {
+      font-size: 28px;
+      color: #383b38;
+    }
+
+    h1, p {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

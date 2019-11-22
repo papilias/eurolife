@@ -283,8 +283,12 @@
 
       if (!t.parent().prev().find('.program-expander').hasClass('program-expander--visible'))
         t.text('Δείτε λιγότερα');
-      else
-        t.text('Δείτε περισσότερα');  
+      else {
+        t.text('Δείτε περισσότερα');
+        $('html, body').animate({
+          scrollTop: $("section.programs").offset().top
+        }, 250);
+      }
 
         t.parent().prev().find('.program-expander').toggleClass('program-expander--visible');
     });
@@ -618,24 +622,25 @@
     //TABLE HEIGHT EQUALIZER
   function tableHeightEqualizer() {
     $(".grid-table-cell").attr("style", "");
+
     $(".program-grid").each(function () {
-        const grid = $(this);
-        const howmany = $(this).find(".program-attributes .grid-table-cell").length;
+      const grid = $(this);
+      const howmany = $(this).find(".program-attributes .grid-table-cell").length;
 
-        for (let i = 0; i < howmany; i++) {
-          let max = 0;
+      for (let i = 0; i < howmany; i++) {
+        let max = 0;
 
-          //FIND THE MAX PER ROW
-          $(grid).find(".grid-table-column").each(function () {
-            $(this).find(".grid-table-cell").eq(i).each(function () {
-              if ($(this).height() > max)
-                max = $(this).outerHeight();
-            });
-
-            //SET FIXED HEIGHT
-            $(this).find(".grid-table-cell").eq(i).height(max + "px");
+        //FIND THE MAX PER ROW
+        $(grid).find(".grid-table-column").each(function () {
+          $(this).find(".grid-table-cell").eq(i).each(function () {
+            if ($(this).height() > max)
+              max = $(this).outerHeight();
           });
-        }
-      });
-    }
+
+          //SET FIXED HEIGHT
+          setTimeout(() => { $(this).find(".grid-table-cell").eq(i).height(max + "px"); }, 500);
+        });
+      }
+    });
+  }
 })(jQuery);
