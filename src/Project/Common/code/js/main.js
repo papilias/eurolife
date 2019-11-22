@@ -635,9 +635,11 @@
 
       //CUT EXPANDED TABLE WIDTH IN CASE OF 2 COLUMNS
       if ($(window).width() >= 1024)
-        if ($(grid).hasClass("program-grid-2")) {
+        if ($(grid).hasClass("program-grid-2"))
           $(grid).parent().css({ "width" : "800px", "overflow" : "hidden" });
-        }
+      else
+        if ($(grid).hasClass("program-grid-1")) 
+          $(grid).parent().css({ "width": "400px", "overflow": "hidden" });
 
       for (let i = 0; i < howmany; i++) {
         let max = 0;
