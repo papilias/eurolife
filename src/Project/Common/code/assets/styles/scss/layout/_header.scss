@@ -162,7 +162,7 @@
   z-index: 10;
   transform: translateY(-105%);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.25);
-  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-in-out;
 }
 
 .menu-expanded--yes{
@@ -555,21 +555,28 @@ a.btn--ghost-header{
   }
 }
 
-.access__list{
+.access__list {
   position: absolute;
-  top: 38px;
+  bottom: 50px;
   display: none;
   background-color: #fff;
   width: 100%;
   box-shadow: 0 18px 17px 0px rgba(0, 0, 0, 0.1);
   font-size: 14px;
-  a{
+
+  @include breakpoint(540) {
+    top: 38px;
+    bottom: unset;
+  }
+
+  a {
     color: $charcoal;
-    padding:10px 20px;
+    padding: 10px 20px;
     display: block;
   }
-  a:hover{
-    background:$color-health-soft;
+
+  a:hover {
+    background: $color-health-soft;
   }
 }
 
@@ -729,7 +736,7 @@ a.btn--ghost-header{
 
   header {
     transform: translateY(-100%);
-    transition: transform 500ms ease;
+    transition: transform 500ms ease-in-out;
     position: fixed;
     background: #fff;
     left: 0;
@@ -760,7 +767,7 @@ a.btn--ghost-header{
         padding: 15px 30px;
         width: 100%;
         height: auto;
-        margin: 0 20px 20px 20px;
+        margin: 0 20px 0 20px;
         text-align: center;
       }
     }
@@ -769,7 +776,7 @@ a.btn--ghost-header{
       background-color: white !important;
 
       .nav-product__trigger {
-        margin: 0 0 20px 20px;
+        margin: 50px 0 20px 20px;
         width: 100%;
         color: $color-base;
 

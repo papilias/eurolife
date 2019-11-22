@@ -627,6 +627,12 @@
       const grid = $(this);
       const howmany = $(this).find(".program-attributes .grid-table-cell").length;
 
+      //CUT EXPANDED TABLE WIDTH IN CASE OF 2 COLUMNS
+      if ($(window).width() >= 1024)
+        if ($(grid).hasClass("program-grid-2")) {
+          $(grid).parent().css({ "width" : "800px", "overflow" : "hidden" });
+        }
+
       for (let i = 0; i < howmany; i++) {
         let max = 0;
 

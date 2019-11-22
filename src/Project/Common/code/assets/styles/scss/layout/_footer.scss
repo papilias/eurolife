@@ -18,7 +18,7 @@ footer{
   border-top: 1px solid #eee;
   color: rgba(56,59,56, 0.6);
 
-  @include breakpoint-rev(1140) {
+  @include breakpoint-rev(820) {
     flex-direction: column;
     text-align: center;
   }
@@ -55,7 +55,7 @@ footer{
     }
   }
 
-  @include breakpoint-rev(1140) {
+  @include breakpoint-rev(820) {
     flex-direction: column;
     margin-bottom: 24px;
   }

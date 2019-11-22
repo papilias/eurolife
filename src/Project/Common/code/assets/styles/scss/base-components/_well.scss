@@ -15,7 +15,7 @@
       padding: 20px 0;
       margin: 20px 0;
 
-      @include breakpoint(540) {
+      @include breakpoint(820) {
         flex-basis: 49%;
       }
 
@@ -46,12 +46,12 @@
       top: 0;
       background: $dusky-blue;
 
-      @include breakpoint(540) {
-        width: 100%;
+      @include breakpoint(820) {
+        width: calc(100% - 40px);
         height: 2px;
         top: 50%;
-        left: 0;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       z-index: 0;
