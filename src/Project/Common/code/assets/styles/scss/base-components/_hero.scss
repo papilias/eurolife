@@ -15,9 +15,13 @@
   img {
     display: block;
     border-radius: 0 0 100px 0;
-    height: 576px;
     width: 100%;
     object-fit: cover;
+    height: 400px;
+
+    @include breakpoint(540) {
+      height: 576px;
+    }
   }
 
   ul {
@@ -39,9 +43,13 @@
   }
 }
 
-.hero--inner{
-  img{
-    max-height: 540px;
+.hero--inner {
+  img {
+    height: 400px;
+
+    @include breakpoint(540) {
+      height: 540px;
+    }
   }
 }
 
@@ -191,12 +199,16 @@
 .grouping-dots {
   position: absolute;
   z-index: 2;
-  bottom: 50px;
+  bottom: 20px;
   left: 0;
   padding-left: calc((100vw - 1580px) / 2);
   right: 0;
   width: 100%;
   text-align: center;
+
+  @include breakpoint(540) {
+    bottom: 50px;
+  }
 
   li {
     position: relative;

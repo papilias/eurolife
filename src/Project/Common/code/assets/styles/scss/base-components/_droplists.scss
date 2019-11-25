@@ -6,7 +6,7 @@
 }
 
 .droplist__options {
-  top: 74px;
+  top: 48px;
   position: absolute;
   width: 100%;
   background-color: #fff;
@@ -46,6 +46,7 @@
   vertical-align: bottom;
   font-size: 18px;
   cursor: pointer;
+  display: block;
 
   @include breakpoint-rev(820) {
     display: block;

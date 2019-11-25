@@ -6,6 +6,14 @@
   }
 }
 
+section.hero--inner + div.scroll-items {
+  margin-top: -48px;
+
+  @include breakpoint(820) {
+    margin-bottom: -112px;
+  }
+}
+
 main > section.leadership-container:last-child {
   margin-bottom: 168px;
 

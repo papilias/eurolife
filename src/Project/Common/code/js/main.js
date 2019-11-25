@@ -65,7 +65,7 @@
           });
 
           if ($(".coverages")) {
-            if ($(".coverage__yes").find("ul").length <= 4) {
+            if ($(".coverage__yes > ul").children("li").length <= 3) {
               $(".coverage__area").addClass("coverage__area--expanded");
               $(".js-coverage__expander").remove();
             }
@@ -304,10 +304,12 @@
         coverageExpandTrigger.addEventListener('click', _ => {
             coverageExpander.classList.toggle("coverage__area--expanded");
 
-            if(coverageExpander.classList.contains('coverage__area--expanded'))
-                coverageExpandTrigger.innerHTML = 'ΔΕΙΤΕ ΛΙΓΟΤΕΡΑ';
-            else
-                coverageExpandTrigger.innerHTML = 'ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ';
+          if (coverageExpander.classList.contains('coverage__area--expanded')) 
+            coverageExpandTrigger.innerHTML = 'ΔΕΙΤΕ ΛΙΓΟΤΕΡΑ';
+          else 
+            coverageExpandTrigger.innerHTML = 'ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ';
+            
+          coverageExpandTrigger.classList.toggle('open');
         });
     }
     //expand coverages END
@@ -381,11 +383,12 @@
     //  if(document.getElementById("programs-table") != null)
        // var programNumber = document.getElementById("programs-table").childElementCount;
     if (leftButton != null && rightButton != null) {
-      const limit = $('.js-grid-table').first().find('.program').length - 3;
+      let limit = $('.js-grid-table').first().find('.program.program--visible').length - 3;
       prepareButtons();
 
       //RIGHT CLICK
       $(rightButton).unbind().on('click', _ => {
+        limit = $('.js-grid-table').first().find('.program.program--visible').length - 3;
         if (order < limit) {
           order++;
 
@@ -397,6 +400,7 @@
       });
 
       $(leftButton).unbind().on('click', _ => {
+        limit = $('.js-grid-table').first().find('.program.program--visible').length - 3;
         if (order > 0) {
           --order;
 
@@ -449,7 +453,7 @@
         });
 
 
-        const filterClicks = document.querySelectorAll(".filter__item input");
+        /*const filterClicks = document.querySelectorAll(".filter__item input");
         for (const filterClick of filterClicks) {
             filterClick.addEventListener('click', _ => {
                 $('.program').removeClass("program--visible");
@@ -463,6 +467,8 @@
                         datas.push(dataAttr);
                     }
                 }
+
+                console.log(datas);
 
                 if (datas.length > 0) {
                     $('.program').removeClass("program--visible");
@@ -487,7 +493,7 @@
                 else $('.program').addClass("program--visible");
 
             });
-        }
+        }*/
     }
 
     //EMPAND PROGRAMS STARTS
@@ -626,35 +632,35 @@
     //using an instersection observer for product END
 
     //TABLE HEIGHT EQUALIZER
-  function tableHeightEqualizer() {
-    $(".grid-table-cell").attr("style", "");
+    function tableHeightEqualizer() {
+      $(".grid-table-cell").attr("style", "");
 
-    $(".program-grid").each(function () {
-      const grid = $(this);
-      const howmany = $(this).find(".program-attributes .grid-table-cell").length;
+      $(".program-grid").each(function () {
+        const grid = $(this);
+        const howmany = $(this).find(".program-attributes .grid-table-cell").length;
 
-      //CUT EXPANDED TABLE WIDTH IN CASE OF 2 COLUMNS
-      if ($(window).width() >= 1024)
-        if ($(grid).hasClass("program-grid-2"))
-          $(grid).parent().css({ "width" : "800px", "overflow" : "hidden" });
-      else
-        if ($(grid).hasClass("program-grid-1")) 
-          $(grid).parent().css({ "width": "400px", "overflow": "hidden" });
+        //CUT EXPANDED TABLE WIDTH IN CASE OF 2 COLUMNS
+        if ($(window).width() >= 1024)
+          if ($(grid).hasClass("program-grid-2"))
+            $(grid).parent().css({ "width" : "800px", "overflow" : "hidden" });
+        else
+          if ($(grid).hasClass("program-grid-1")) 
+            $(grid).parent().css({ "width": "520px", "overflow": "hidden" });
 
-      for (let i = 0; i < howmany; i++) {
-        let max = 0;
+        for (let i = 0; i < howmany; i++) {
+          let max = 0;
 
-        //FIND THE MAX PER ROW
-        $(grid).find(".grid-table-column").each(function () {
-          $(this).find(".grid-table-cell").eq(i).each(function () {
-            if ($(this).height() > max)
-              max = $(this).outerHeight();
+          //FIND THE MAX PER ROW
+          $(grid).find(".grid-table-column").each(function () {
+            $(this).find(".grid-table-cell").eq(i).each(function () {
+              if ($(this).height() > max)
+                max = $(this).outerHeight();
+            });
+
+            //SET FIXED HEIGHT
+            setTimeout(() => { $(this).find(".grid-table-cell").eq(i).height(max + "px"); }, 500);
           });
-
-          //SET FIXED HEIGHT
-          setTimeout(() => { $(this).find(".grid-table-cell").eq(i).height(max + "px"); }, 500);
-        });
-      }
-    });
-  }
+        }
+      });
+    }
 })(jQuery);

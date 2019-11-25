@@ -5,7 +5,7 @@
       <template v-for="category in panel.categories">
 
         <div v-if="!category.isMain" class="program-expander" :key="`category-${category.id}`">
-          <div class="program-heading">
+          <div v-if="category.title" class="program-heading">
             <h2>
               {{ category.title }}
             </h2>

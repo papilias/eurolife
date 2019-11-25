@@ -384,6 +384,11 @@
       color:$color-health;
     }
   }
+  .contentgroup__tick{
+     li:before {
+       background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23ff303d' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+     }
+   }
   .intro-text h1{
     color:$color-health;
   }
@@ -684,16 +689,17 @@ main{
   display: flex;
   flex-wrap: wrap;
 
-  ul {
+  > ul {
     margin-bottom: 24px;
     padding-bottom: 24px;
     margin-left: 14px;
     border-bottom: 1px solid #eee;
   }
+
   &:last-child {
-  ul {
-    margin-bottom: 24px;
-    padding-bottom: 24px;
+    > ul {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
 
 
       &:last-child {

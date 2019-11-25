@@ -38,6 +38,10 @@
     @else if $point == 820 {
       @media (min-width: 820px) { @content ; }
     }
+
+    @else if $point == 920 {
+      @media (min-width: 920px) { @content ; }
+    }
     
     @else if $point == 700 {
       @media (min-width: 700px) { @content ; }
@@ -60,6 +64,9 @@
   }
   @else if $point == 960 {
     @media (max-width: 960px) { @content ; }
+  }
+  @else if $point == 920 {
+    @media (max-width: 920px) { @content ; }
   }
   @else if $point == 820 {
     @media (max-width: 820px) { @content ; }

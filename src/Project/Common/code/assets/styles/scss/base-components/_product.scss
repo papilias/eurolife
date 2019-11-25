@@ -4,6 +4,14 @@
 
 section.programs{
   z-index:2;
+
+  + section{
+    margin-top: 64px;
+
+    @include breakpoint(540){
+      margin-top:112px;
+    }
+  }
 }
 
 .coverage__area {
@@ -180,7 +188,7 @@ section.programs{
     > li {
       position: relative;
 
-      span {
+      > span {
         color: rgb(74, 82, 148) !important;
       }
 
@@ -384,7 +392,7 @@ section.programs{
 
 .program {
   align-items: center;
-  background-color: #eee;
+  background-color: #f8f8f8;
 
   > section {
     margin-top: 64px;
@@ -403,11 +411,11 @@ section.programs{
     position: relative;
 
     @include breakpoint(540) {
-      text-align: center;
       display: flex;
+      text-align: center;
       padding-top: 10px;
       padding-bottom: 10px;
-      padding-right: 20px;
+      padding-right: 30px;
     }
   }
 }
@@ -633,7 +641,7 @@ section.programs{
 .service-not-provided {
   position: relative;
   content: '—';
-  margin: 0 auto 10px;
+  margin: 0 0 6px;
 }
 
 /*controls*/
@@ -967,7 +975,7 @@ main {
   letter-spacing: 0.4px;
   position: relative;
 
-  &:after {
+  &:not(.open):after {
     content: "";
     position: absolute;
     width: 100%;
@@ -1232,6 +1240,12 @@ main {
   h2.colored {
     color: $color-health;
   }
+
+  a.btn--white-header {
+    &:hover {
+      color: $color-health;
+    }
+  }
 }
 
 .theme-home {
@@ -1249,6 +1263,12 @@ main {
 
   h2.colored {
     color: $color-home;
+  }
+
+  a.btn--white-header {
+    &:hover {
+      color: $color-home;
+    }
   }
 }
 
@@ -1268,6 +1288,12 @@ main {
   h2.colored {
     color: $color-small-business;
   }
+
+  a.btn--white-header {
+    &:hover {
+      color: $color-small-business;
+    }
+  }
 }
 
 .theme-non-category {
@@ -1285,6 +1311,12 @@ main {
 
   h2.colored {
     color: $color-non-category;
+  }
+
+  a.btn--white-header {
+    &:hover {
+      color: $color-non-category;
+    }
   }
 }
 
@@ -1304,6 +1336,12 @@ main {
   h2.colored {
     color: $color-motor;
   }
+
+  a.btn--white-header {
+    &:hover {
+      color: $color-motor;
+    }
+  }
 }
 
 .theme-life {
@@ -1322,6 +1360,12 @@ main {
   h2.colored {
     color: $color-life-insurance;
   }
+
+  a.btn--white-header {
+    &:hover {
+      color: $color-life-insurance;
+    }
+  }
 }
 
 .theme-finance {
@@ -1339,5 +1383,11 @@ main {
 
   h2.colored {
     color: $color-finance;
+  }
+
+  a.btn--white-header {
+    &:hover {
+      color: $color-finance;
+    }
   }
 }

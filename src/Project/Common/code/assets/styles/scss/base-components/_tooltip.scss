@@ -2,7 +2,7 @@
   #BASE
 \*------------------------------------*/
 
-.tool{
+.tool {
   position: absolute;
   max-width: 22px;
   margin-left: 8px;
@@ -11,24 +11,24 @@
   display: inline-block;
   right: 20px;
   top: 50%;
-  transform:translateY(-50%);
+  transform: translateY(-50%);
 
-  @include breakpoint(540){
-    position: relative;
-    right: unset;
-    top: unset;
-    transform: none;
+  svg {
+    opacity: 0.5;
+    transition:0.5s opacity ease-in-out;
   }
 
-  &:hover{
-    .tooltext{
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+
+    .tooltext {
       opacity: 1;
       z-index: 1;
       transform: translateY(0);
     }
   }
-
-
 }
 
 .tooltext {

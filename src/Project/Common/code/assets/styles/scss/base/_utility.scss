@@ -319,7 +319,7 @@
   .flex-spread__half {
     flex-basis: 100%;
 
-    @include breakpoint(540) {
+    @include breakpoint(820) {
       flex-basis: 48%;
     }
   }
