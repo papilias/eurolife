@@ -8,18 +8,10 @@ SharedFields:
 - ID: "10e5829a-1943-4597-b9ee-406ce3d13e13"
   Hint: Validations
   Type: Treelist
-  Value: |
-    {6E7AB3C0-2E3F-4E37-BB96-8BF9A9329417}
-    {A610E086-6D6A-4E11-9AB1-B435229A7069}
+  Value: 
 - ID: "3cd88ccb-4798-41bc-9b5a-ce177a0de8a0"
   Hint: Allowed Content Types
-  Value: |
-    image/jpeg
-    image/jpg
-    image/JPEG
-    image/JPG
-    image/png
-    file/pdf
+  Value: file/pdf
 - ID: "467c22b4-b1a2-4620-b8bb-74c2d8b369fc"
   Hint: Label Css Class
   Value: 
@@ -53,7 +45,7 @@ SharedFields:
   Value: 1
 - ID: "eeb21e25-1e4a-4f52-94f1-0f9a13a28a9d"
   Hint: Max File Size
-  Value: 5000
+  Value: 10000
 Languages:
 - Language: "el-GR"
   Versions:

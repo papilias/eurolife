@@ -26,14 +26,14 @@ Languages:
     - ID: "678ca6e6-b6f0-4bb1-b09e-972ad0d9c5c4"
       Hint: CTA
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{5F1D3D87-C473-4CF0-86D1-1093CC0BC48A}" />
+        <link id="{5F1D3D87-C473-4CF0-86D1-1093CC0BC48A}" querystring="" target="" text="" anchor="" title="" class="" url="/Eurolife/Home/Proionta/Idiotes/zoi" linktype="internal" />
     - ID: "7cd45d99-885c-4ef4-ae14-2ab581ae9c74"
       Hint: HighlightSummary
       Value: ΖΩΗ
     - ID: "8999b235-ca9c-4c4e-8608-f6c96f3293d5"
       Hint: HighlightImage
       Value: |
-        <image mediapath="" alt="section-356x483" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{C8795058-D01E-4F16-95C3-2A4DBDFAB403}" />
+        <image mediapath="" alt="section-356x483" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{5A9D32D3-9DE9-4C71-B31B-AC0AED25FAEF}" />
     - ID: "db34680e-d68f-40df-835d-41238824a281"
       Hint: HighlightClass
       Type: TreelistEx

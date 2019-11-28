@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 400
 Languages:
 - Language: "el-GR"
   Versions:
@@ -23,7 +23,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{78AAAB89-BC13-401B-A9CB-CC7C6DC4DD27}" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{4C2F624C-7611-4ABA-AD5F-94E03EB6768B}" />
     - ID: "d7bd8d43-de42-4bde-8e7e-ddfce607a9c6"
       Hint: Class
       Value: 

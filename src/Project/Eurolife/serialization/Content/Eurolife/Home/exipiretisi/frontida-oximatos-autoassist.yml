@@ -39,6 +39,11 @@ Languages:
               s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
               s:ph="/page-layout/page-layout-top" />
             <r
+              uid="{B64EB5AA-E1E5-4CD7-A27E-82F121D6B979}"
+              p:after="r[@uid='{5DF9D14E-D2BC-41A0-8510-512A0EE6E79C}']"
+              s:id="{32F9A214-369B-44EC-B30F-09BBA8BA8058}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
               uid="{7EC18256-AFCB-4E92-BE82-AA9C5CBD5159}">
               <p:d />
             </r>
@@ -47,7 +52,7 @@ Languages:
               p:after="r[@uid='{910D84F1-7A4E-46C5-A0AA-39C463C70E0A}']"
               s:ds=""
               s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
-              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
+              s:par="Background"
               s:ph="page-layout" />
             <r
               uid="{38F9E908-43B0-496F-A297-C6604E4B07A4}">
@@ -71,6 +76,10 @@ Languages:
               s:ph="page-layout" />
           </d>
         </r>
+    - ID: "23ef204d-df36-447d-9e7d-8862c8b6455f"
+      Hint: IconImage
+      Value: |
+        <image mediaid="{9F89E1DC-97A8-4CC3-8644-8D792DACACC8}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191024T145510Z
@@ -147,6 +156,10 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{2F6408F8-0FDF-40DF-B810-453F2A86C77B}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

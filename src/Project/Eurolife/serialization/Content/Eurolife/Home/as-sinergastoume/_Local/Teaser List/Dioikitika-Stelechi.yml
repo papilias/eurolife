@@ -30,7 +30,7 @@ Languages:
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediaid="{A3793CB0-7F59-4BFB-85E8-FD947AEFB514}" />
+        <image mediaid="{1955E26D-8493-4C25-9243-3B34A4801F4F}" />
     - ID: "f51dd24c-64be-4832-9f98-e03f9e84fa63"
       Hint: TeaserDownloadCTA
       Value: |

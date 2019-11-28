@@ -116,7 +116,7 @@ Languages:
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{2361595B-49E2-4D49-AF18-65B274DA334A}" />
+        <image mediaid="{9A55406E-4954-464E-BB31-04B8E780760D}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

@@ -1,0 +1,41 @@
+﻿---
+ID: "16479d57-6cc6-4382-bc51-f7934bf2aba0"
+Parent: "827cc9f0-7875-4f82-9386-300dba5bea5f"
+Template: "b8b6f714-6702-463a-a7b7-5b3abbbafb31"
+Path: "/sitecore/content/Eurolife/Home/exipiretisi/sinergazomena-sinergeia/sinergazomena-sienrgeia-content"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T141143Z
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{35B7F297-EA42-4A23-B1F6-0752FA3EE1F4}" />
+    - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
+      Hint: Body
+      Value: |
+        <span id="fld_827CC9F078754F829386300DBA5BEA5F_9580E8D5430E4746B4C16B71C56DF42E_el-GR_1_83a553e647f442b6847df329a55c10a5_4770_edit" class="scWebEditInput scEnabledChrome" contenteditable="true">Συνεργαζόμενα
+         συνεργεία θα βρείτε στην Αττική, στην Θεσσαλονίκη καθώς και στα 
+        μεγαλύτερα αστικά κέντρα. Λειτουργούν καθημερινά τις εργάσιμες ώρες. 
+        Σκοπός μας είναι να επεκτείνουμε συνεχώς τη λίστα των συνεργαζόμενων 
+        συνεργείων ώστε να καλύψουμε και άλλες περιοχές. Αναλυτικές πληροφορίες 
+        σχετικά με τις&nbsp; παροχές που προσφέρονται&nbsp; όπως ενδεικτικά αποκατάσταση 
+        της ζημιάς χωρίς εκταμίευση μπορείτε να τις πληροφορηθείτε σε απευθείας 
+        συννενόηση με το συνεργείο της επιλογής σας από την παρακάτω λίστα.Το 
+        σύνολο των&nbsp;συνεργαζόμενων συνεργείων καθώς και οι παροχές αυτών μπορεί 
+        να τροποποιηθούν εφόσον και όπως το κρίνει η εταιρία. Για το λόγο αυτό 
+        παρακαλούμε όπως πρίν από την επίσκεψή σας σε ένα από αυτά να 
+        επικοινωνήσετε τηλεφωνικά για επιβεβαίωση.</span>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
+      Hint: DesktopImage
+      Value: |
+        <image mediaid="{35B7F297-EA42-4A23-B1F6-0752FA3EE1F4}" />

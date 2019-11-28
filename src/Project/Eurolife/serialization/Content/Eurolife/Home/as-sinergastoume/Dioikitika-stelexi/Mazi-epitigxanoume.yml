@@ -27,8 +27,29 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{E5100320-3A98-49EE-94A1-9E8DD22EEA0F}"
+              uid="{9A0ED4B8-2DA2-4923-829A-398040A37312}"
               p:before="*"
+              s:ds="{58E89F0C-27F0-43E5-9498-F05C5744BD34}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Alignment&amp;Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;ContainerIsNotFullWidth&amp;FontColor"
+              s:ph="/page-layout/teaser-placeholder-3-{AC336B8D-040C-4075-BF75-3274086AEAC3}-0" />
+            <r
+              uid="{60200BBD-D2C9-4D0E-AEAA-5EF82A03F91B}"
+              p:after="r[@uid='{9A0ED4B8-2DA2-4923-829A-398040A37312}']"
+              s:ds="{69BA3CBF-195A-44E0-BD02-C00E83F3F55D}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Alignment&amp;Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;ContainerIsNotFullWidth&amp;FontColor=%7B1C81D96D-FFF9-4983-BB2F-B1E185B6E5AC%7D"
+              s:ph="/page-layout/teaser-placeholder-2-{AC336B8D-040C-4075-BF75-3274086AEAC3}-0" />
+            <r
+              uid="{9910E6C5-00A4-463A-B00D-CF622C22EDC1}"
+              p:after="r[@uid='{60200BBD-D2C9-4D0E-AEAA-5EF82A03F91B}']"
+              s:ds="{8B15FB85-1D26-4E16-A25E-544B9922EC18}"
+              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
+              s:par="Alignment&amp;Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-4-{AC336B8D-040C-4075-BF75-3274086AEAC3}-0" />
+            <r
+              uid="{E5100320-3A98-49EE-94A1-9E8DD22EEA0F}"
+              p:after="r[@uid='{9910E6C5-00A4-463A-B00D-CF622C22EDC1}']"
               s:ds="{F6DBA053-B3E7-4C5B-A5B4-7F5A6A5596F6}"
               s:id="{E1242E34-C107-4A13-BE8C-74A71E9B744A}"
               s:ph="/page-layout/numbers-teaser-placeholder-8-{88E83433-604A-4E18-A074-B1E28BF11509}-0" />
@@ -103,25 +124,11 @@ Languages:
               s:id="{79FE3C38-ED6A-4F45-A910-9939FDBA0075}"
               s:ph="/page-layout/teaser-placeholder-1-{BCFA7785-E81C-4218-AFF5-F52E9182CB22}-0" />
             <r
-              uid="{60200BBD-D2C9-4D0E-AEAA-5EF82A03F91B}"
-              p:after="r[@uid='{F8EA3BE9-2BAD-47ED-95DE-49647FD6FB18}']"
-              s:ds="{C9322E14-973A-4AFE-B5FB-61F7338D8D08}"
-              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par="Alignment&amp;Background=%7B6ADEB5B7-13E8-45FE-A2B3-75C4910FA09F%7D&amp;ContainerIsNotFullWidth&amp;FontColor=%7B1C81D96D-FFF9-4983-BB2F-B1E185B6E5AC%7D"
-              s:ph="/page-layout/teaser-placeholder-3-{AC336B8D-040C-4075-BF75-3274086AEAC3}-0" />
-            <r
-              uid="{9A0ED4B8-2DA2-4923-829A-398040A37312}"
-              p:after="r[@uid='{60200BBD-D2C9-4D0E-AEAA-5EF82A03F91B}']"
-              s:ds="{E51477B1-452D-4A8A-B694-158C636C7303}"
-              s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par="Alignment&amp;Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
-              s:ph="/page-layout/teaser-placeholder-2-{AC336B8D-040C-4075-BF75-3274086AEAC3}-0" />
-            <r
               uid="{2603B8BF-67B6-4250-BFF8-FCA4D474F193}"
-              p:after="r[@uid='{9A0ED4B8-2DA2-4923-829A-398040A37312}']"
-              s:ds="{47870F7D-0A8F-4C3A-8609-DC0622D015A4}"
+              p:after="r[@uid='{F8EA3BE9-2BAD-47ED-95DE-49647FD6FB18}']"
+              s:ds="{A7567022-45DE-4B0C-8EDB-A63F5FC6A430}"
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
-              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background=%7B3ABEF2ED-9AC2-40E8-83C3-5F94B5604F31%7D&amp;ContainerIsNotFullWidth&amp;FontColor=%7B84C9D386-DCAC-4792-816F-BE3A92FC6203%7D"
+              s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D&amp;ContainerIsNotFullWidth&amp;FontColor=%7B1C81D96D-FFF9-4983-BB2F-B1E185B6E5AC%7D"
               s:ph="/page-layout/teaser-placeholder-1-{AC336B8D-040C-4075-BF75-3274086AEAC3}-0" />
             <r
               uid="{7EC18256-AFCB-4E92-BE82-AA9C5CBD5159}">
@@ -138,18 +145,18 @@ Languages:
             <r
               uid="{AC336B8D-040C-4075-BF75-3274086AEAC3}"
               p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
-              s:ds="{E7A9BE96-0490-4F72-8920-C8093EF73937}"
+              s:ds="{6FE24FD1-C28B-45B5-8FC1-515D0BC5D1F5}"
               s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
               s:ph="page-layout" />
             <r
-              uid="{88E83433-604A-4E18-A074-B1E28BF11509}"
+              uid="{8A303829-F7DE-41C3-BF33-F9C8D78979FA}"
               p:after="r[@uid='{AC336B8D-040C-4075-BF75-3274086AEAC3}']"
-              s:ds="{2FECF8A1-6C90-4E9E-B0D2-A5C6775C990D}"
-              s:id="{826556BC-A668-46ED-B763-E5D3CAD6F2CD}"
+              s:ds="{4B2F9F03-7E07-4C5D-A58A-E8E78E7350B6}"
+              s:id="{1597D819-06AB-40E5-92B2-4A1090C7671B}"
               s:ph="page-layout" />
             <r
               uid="{BCFA7785-E81C-4218-AFF5-F52E9182CB22}"
-              p:after="r[@uid='{88E83433-604A-4E18-A074-B1E28BF11509}']"
+              p:after="r[@uid='{8A303829-F7DE-41C3-BF33-F9C8D78979FA}']"
               s:ds="{7BF216D9-42A6-47DD-AD36-1E3765509A6B}"
               s:id="{ACD3AFD2-69FF-4DE4-9F99-68504F2B8D7D}"
               s:ph="page-layout" />
@@ -171,7 +178,7 @@ Languages:
     - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
       Hint: MobileImage
       Value: |
-        <image mediaid="{2054D94C-D483-4090-83C6-CE9B6490D448}" />
+        <image mediaid="{DB4EAB9D-C864-4FFA-812A-ED2730DFCBE1}" />
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
@@ -194,7 +201,7 @@ Languages:
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{554E3CC4-21CC-4EFB-8718-D4B51B5C41D6}" ></image>
+        <image mediaid="{B0F700EA-97D1-451E-B6BC-1300C2A7AE94}"></image>
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

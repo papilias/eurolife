@@ -127,7 +127,7 @@ Languages:
     - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
       Hint: MobileImage
       Value: |
-        <image mediaid="{6CFB0594-C03F-46DC-8E3D-60202438451F}" />
+        <image mediaid="{87230EC6-ED5D-4193-8FDE-0745809FBD38}" />
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: 
@@ -139,10 +139,13 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: "Συνεργαστείτε μαζί μας είτε ώς μέλος της ομάδας πωλήσεων της εταιρείας, είτε ώς ανέξαρτητος συνεργάτης - μεσίτης, προωθώντας τα προϊοντα μας στους πελάτες σας"
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{99628C21-2F2D-4388-AC96-7077D1EBDF15}" />
+        <image mediaid="{87230EC6-ED5D-4193-8FDE-0745809FBD38}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

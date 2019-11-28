@@ -12,7 +12,7 @@ Languages:
     - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
       Hint: TeaserSummary
       Value: |
-        <b style="font-weight:normal;" id="docs-internal-guid-ec430d5d-7fff-fdba-a477-ada3043ae73a"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Στοιχεία επικοινωνίας για εκπροσώπους των Media.</span></b>
+        <strong style="font-weight:normal;" id="docs-internal-guid-ec430d5d-7fff-fdba-a477-ada3043ae73a"><span style="font-size: 11pt; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; font-family: Arial; color: #000000;">&Epsilon;&pi;&iota;&kappa;&omicron;&iota;&nu;&omega;&nu;ή&sigma;&tau;&epsilon; &mu;&alpha;&zeta;ί &mu;&alpha;&sigmaf; (&gamma;&iota;&alpha; &epsilon;&kappa;&pi;&rho;&omicron;&sigma;ώ&pi;&omicron;&upsilon;&sigmaf; media)</span></strong>
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
       Value: Media contact

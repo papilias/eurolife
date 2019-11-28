@@ -2,7 +2,7 @@
 ID: "1a457617-c901-4bb3-acde-19e74845262e"
 Parent: "25bcc0b2-b176-4483-8368-4ace4dddf0e4"
 Template: "0c0937bf-a95f-442c-82fd-4afddfe838a3"
-Path: "/sitecore/content/Eurolife/Home/gnoriste-mas/Our-story"
+Path: "/sitecore/content/Eurolife/Home/gnoriste-mas/our-story"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
@@ -47,48 +47,41 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{839005AC-C96F-40AA-8D17-EAD43AD0766B}"
+              uid="{5200D91E-857D-4D4F-BA07-1AA6BC5F0C12}"
               p:before="*"
               s:id="{0C50FD78-8252-4FC9-B779-8222677467FA}"
               s:ph="/page-layout/page-layout-top" />
             <r
-              uid="{221C1732-E321-40D7-BDF5-30014AFC745B}"
-              p:after="r[@uid='{839005AC-C96F-40AA-8D17-EAD43AD0766B}']"
+              uid="{8FD5AA8D-C28B-4ECA-9791-B04C30D38972}"
+              p:after="r[@uid='{5200D91E-857D-4D4F-BA07-1AA6BC5F0C12}']"
               s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
               s:ph="/page-layout/page-layout-top" />
             <r
               uid="{CA3A18F4-6204-4595-811A-6CA6F41CFEE9}"
-              p:after="r[@uid='{221C1732-E321-40D7-BDF5-30014AFC745B}']"
-              s:ds="{343A2D4A-4747-4663-807C-3C1B1EAA2DBE}"
+              p:after="r[@uid='{8FD5AA8D-C28B-4ECA-9791-B04C30D38972}']"
+              s:ds="{48710033-67A3-4E8F-AA5B-ECAA55A57F5C}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-3-{5F5E2956-71BF-410C-A56C-5AA802D29025}-0" />
             <r
               uid="{EE75ED8D-FC24-4FF6-9214-A9CC45F6C6D2}"
               p:after="r[@uid='{CA3A18F4-6204-4595-811A-6CA6F41CFEE9}']"
-              s:ds="{4C5D54A1-C8F5-46D0-A1EF-8887549BFE88}"
+              s:ds="{BAB8BA3E-34AC-4683-BC8A-72B50B7309AA}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-2-{5F5E2956-71BF-410C-A56C-5AA802D29025}-0" />
             <r
               uid="{5050E818-007F-4F02-BBF6-BD6D569B8C62}"
               p:after="r[@uid='{EE75ED8D-FC24-4FF6-9214-A9CC45F6C6D2}']"
-              s:ds="{56095E87-0F2C-4A6A-8CCD-7552918C4861}"
+              s:ds="{E2EE10E9-3F73-403D-BBE3-488687C2D508}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-1-{5F5E2956-71BF-410C-A56C-5AA802D29025}-0" />
             <r
-              uid="{61C669D2-BE6B-4838-95E6-E5A651BA7AFC}">
-              <p:d />
-            </r>
-            <r
-              uid="{249AD93B-9C1A-442B-B030-7CC841EA8545}"
-              p:after="r[@uid='{1E463C9D-B21F-4C56-842F-694C4E0C6C01}']"
+              uid="{61C669D2-BE6B-4838-95E6-E5A651BA7AFC}"
               s:ds=""
-              s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
-              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
-              s:ph="page-layout" />
+              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D" />
             <r
               uid="{5F5E2956-71BF-410C-A56C-5AA802D29025}"
               p:after="r[@uid='{8CA78EF5-A01F-4533-AD25-5FE747DD9A2A}']"
-              s:ds="{65F11D60-4B69-4500-B758-FE8BA8074D33}"
+              s:ds="{1D4BBD79-49C6-4B36-8941-67282B6CCFDD}"
               s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
               s:ph="page-layout" />
             <r
@@ -125,7 +118,7 @@ Languages:
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Our story
+      Value: Η ιστορία μας
 - Language: en
   Versions:
   - Version: 1

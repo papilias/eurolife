@@ -9,6 +9,13 @@ SharedFields:
   Hint: IncludeInSearchResults
   Type: Checkbox
   Value: 1
+- ID: "681982e8-5879-46f1-80cf-27f5201be782"
+  Hint: InheritAssets
+  Type: Checkbox
+  Value: 0
+- ID: "937ee756-c171-4a3f-8e74-05170fd315e7"
+  Hint: CssCode
+  Value: 
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 1300

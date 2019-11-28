@@ -34,7 +34,7 @@ Languages:
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
       Value: |
-        <link id="{E573F7B0-63C7-4E31-8C92-EC4EF7F97A74}" querystring="" text="ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ" linktype="internal" url="/Eurolife/Home/gnoriste-mas/Financial-Data" title="" class="" target="" />
+        <link id="{E573F7B0-63C7-4E31-8C92-EC4EF7F97A74}" querystring="" target="" text="ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ" url="/Eurolife/Home/gnoriste-mas/oikonomika-stoixeia" title="" class="" linktype="internal" />
 - Language: en
   Versions:
   - Version: 1

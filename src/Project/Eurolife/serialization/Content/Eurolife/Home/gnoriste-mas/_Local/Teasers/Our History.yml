@@ -25,11 +25,11 @@ Languages:
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
       Value: |
-        <link id="{1A457617-C901-4BB3-ACDE-19E74845262E}" querystring="" text="ΔΕΙΤΕ ΠΩΣ" linktype="internal" url="/Eurolife/Home/gnoriste-mas/Our-story" title="" class="" target="" />
+        <link id="{1A457617-C901-4BB3-ACDE-19E74845262E}" querystring="" text="ΔΕΙΤΕ ΠΩΣ" linktype="internal" url="/Eurolife/Home/gnoriste-mas/our-story" title="" class="" target="" />
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediaid="{962F7C13-EA16-4F9A-B606-B8C1B6A1FB4D}" />
+        <image mediaid="{B6C48544-8202-43FE-B963-1C5A64357EFC}" />
     - ID: "f51dd24c-64be-4832-9f98-e03f9e84fa63"
       Hint: TeaserDownloadCTA
       Value: 

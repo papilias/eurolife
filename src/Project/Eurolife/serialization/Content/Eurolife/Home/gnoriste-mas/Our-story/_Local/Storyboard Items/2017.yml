@@ -2,12 +2,12 @@
 ID: "8a3c5673-9d57-4b05-af22-dd05bed5c84a"
 Parent: "a2bb8e7b-3841-49b7-b028-29a09d6ddcd9"
 Template: "537eda0b-cad9-414a-a01f-33356d9305ab"
-Path: "/sitecore/content/Eurolife/Home/gnoriste-mas/Our-story/_Local/Storyboard Items/2017"
+Path: "/sitecore/content/Eurolife/Home/gnoriste-mas/our-story/_Local/Storyboard Items/2017"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: "-125"
+  Value: 688
 Languages:
 - Language: "el-GR"
   Versions:
@@ -25,7 +25,7 @@ Languages:
       Value: 2017
     - ID: "ea2d1d4e-972a-434c-b449-6329f2e7c3aa"
       Hint: StoryboardItemContent
-      Value: &Delta;&iota;&alpha;&tau;&eta;&rho;ή&sigma;&alpha;&mu;&epsilon; &tau;&eta;&nu; &eta;&gamma;&epsilon;&tau;&iota;&kappa;ή &mu;&alpha;&sigmaf; &theta;έ&sigma;&eta; &sigma;&tau;&eta;&nu; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή &alpha;&gamma;&omicron;&rho;ά, &tau;ό&sigma;&omicron; &sigma;&epsilon; &epsilon;&pi;ί&pi;&epsilon;&delta;&omicron; &epsilon;&tau;ή&sigma;&iota;&omega;&nu; &omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;&iota;&kappa;ώ&nu; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;&sigma;&mu;ά&tau;&omega;&nu;, ό&sigma;&omicron; &kappa;&alpha;&iota; &sigma;&epsilon; &alpha;&nu;&alpha;&pi;&tau;&upsilon;&xi;&iota;&alpha;&kappa;έ&sigmaf; &delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf;. &Pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&omicron;&pi;&omicron;&iota;ή&sigma;&alpha;&mu;&epsilon; &sigma;&upsilon;&sigma;&tau;&eta;&mu;&alpha;&tau;&iota;&kappa;ή &epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &sigma;&epsilon; &pi;&omicron;&lambda;&lambda;ά &kappa;&alpha;&iota; &delta;&iota;&alpha;&phi;&omicron;&rho;&epsilon;&tau;&iota;&kappa;ά &epsilon;&pi;ί&pi;&epsilon;&delta;&alpha;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;έ&sigmaf; &epsilon;&pi;&epsilon;&nu;&delta;ύ&sigma;&epsilon;&iota;&sigmaf; &sigma;&epsilon; έ&rho;&gamma;&alpha; &upsilon;&pi;&omicron;&delta;&omicron;&mu;ή&sigmaf; &pi;&omicron;&upsilon; &xi;&epsilon;&pi;έ&rho;&alpha;&sigma;&alpha;&nu; &tau;&omicron; 2017 &tau;&alpha; &euro;2 &epsilon;&kappa;&alpha;&tau;.&kappa;&alpha;&iota; &pi;&rho;&omicron;&epsilon;&tau;&omicron;&iota;&mu;ά&zeta;&omicron;&upsilon;&nu; &tau;&omicron;&nu; Ό&mu;&iota;&lambda;ό &mu;&alpha;&sigmaf; &gamma;&iota;&alpha; &tau;&eta;&nu; &epsilon;&pi;ό&mu;&epsilon;&nu;&eta; &eta;&mu;έ&rho;&alpha;.
+      Value: &Delta;&iota;&alpha;&tau;&eta;&rho;ή&sigma;&alpha;&mu;&epsilon; &tau;&eta;&nu; &eta;&gamma;&epsilon;&tau;&iota;&kappa;ή &mu;&alpha;&sigmaf; &theta;έ&sigma;&eta; &sigma;&tau;&eta;&nu; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή &alpha;&gamma;&omicron;&rho;ά, &tau;ό&sigma;&omicron; &sigma;&epsilon; &epsilon;&pi;ί&pi;&epsilon;&delta;&omicron; &omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;&iota;&kappa;ώ&nu; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;&sigma;&mu;ά&tau;&omega;&nu;, ό&sigma;&omicron; &kappa;&alpha;&iota; &sigma;&epsilon; &alpha;&nu;&alpha;&pi;&tau;&upsilon;&xi;&iota;&alpha;&kappa;έ&sigmaf; &delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf;. &Pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&omicron;&pi;&omicron;&iota;ή&sigma;&alpha;&mu;&epsilon; &sigma;&upsilon;&sigma;&tau;&eta;&mu;&alpha;&tau;&iota;&kappa;ή &epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &sigma;&epsilon; &pi;&omicron;&lambda;&lambda;ά &kappa;&alpha;&iota; &delta;&iota;&alpha;&phi;&omicron;&rho;&epsilon;&tau;&iota;&kappa;ά &epsilon;&pi;ί&pi;&epsilon;&delta;&alpha;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &sigma;&eta;&mu;&alpha;&nu;&tau;&iota;&kappa;έ&sigmaf; &epsilon;&pi;&epsilon;&nu;&delta;ύ&sigma;&epsilon;&iota;&sigmaf; &sigma;&epsilon; έ&rho;&gamma;&alpha; &upsilon;&pi;&omicron;&delta;&omicron;&mu;ή&sigmaf; &pi;&omicron;&upsilon; &xi;&epsilon;&pi;έ&rho;&alpha;&sigma;&alpha;&nu; &tau;&omicron; 2017 &tau;&alpha; &euro;2 &epsilon;&kappa;&alpha;&tau;.&kappa;&alpha;&iota; &pi;&rho;&omicron;&epsilon;&tau;&omicron;&iota;&mu;ά&zeta;&omicron;&upsilon;&nu; &tau;&omicron;&nu; Ό&mu;&iota;&lambda;ό &mu;&alpha;&sigmaf; &gamma;&iota;&alpha; &tau;&eta;&nu; &epsilon;&pi;ό&mu;&epsilon;&nu;&eta; &eta;&mu;έ&rho;&alpha;.
 - Language: en
   Versions:
   - Version: 1

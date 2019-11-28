@@ -2,7 +2,7 @@
 ID: "e84c8873-01d9-4f7d-bc71-6a9c50ac2d84"
 Parent: "3fda2c10-40e9-4a09-a600-c96a4792cfa3"
 Template: "8ebcbc5c-1d20-4406-8144-82afb185e659"
-Path: /sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Hotels/_Local/Health Panel/Programs Attributes/Geografical_Coverage
+Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Asfalisi-Touristikon-Monadon/_Local/Health Panel/Programs Attributes/Geografical_Coverage"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"

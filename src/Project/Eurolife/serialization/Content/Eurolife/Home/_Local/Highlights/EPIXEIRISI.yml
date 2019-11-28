@@ -32,7 +32,7 @@ Languages:
     - ID: "8999b235-ca9c-4c4e-8608-f6c96f3293d5"
       Hint: HighlightImage
       Value: |
-        <image mediapath="" alt="section-356x352" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{117FE963-41E4-4372-992B-E66CF37851B0}" />
+        <image mediapath="" alt="section-356x352" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{EEE733D8-CA8F-4C9A-B8AC-E96519AB33B2}" />
     - ID: "db34680e-d68f-40df-835d-41238824a281"
       Hint: HighlightClass
       Type: TreelistEx

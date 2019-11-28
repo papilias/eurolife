@@ -23,7 +23,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link id="{93065255-7C52-4E59-9B8C-ED0E47522791}" querystring="" linktype="internal" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/Savings" title="" class="" target="" />
+        <link id="{93065255-7C52-4E59-9B8C-ED0E47522791}" querystring="" target="" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/apotamieusi" title="" class="" linktype="internal" />
     - ID: "b8c12c18-dcef-4edf-a030-50a4a55bedac"
       Hint: DividerBefore
       Type: Checkbox

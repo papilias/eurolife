@@ -19,7 +19,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E573F7B0-63C7-4E31-8C92-EC4EF7F97A74}" />
+        <link id="{E573F7B0-63C7-4E31-8C92-EC4EF7F97A74}" querystring="" target="" text="" anchor="" title="" class="" url="/Eurolife/Home/gnoriste-mas/oikonomika-stoixeia" linktype="internal" />
     - ID: "b8c12c18-dcef-4edf-a030-50a4a55bedac"
       Hint: DividerBefore
       Type: Checkbox

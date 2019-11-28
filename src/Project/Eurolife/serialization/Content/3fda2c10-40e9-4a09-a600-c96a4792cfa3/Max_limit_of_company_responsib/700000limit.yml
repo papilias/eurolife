@@ -2,7 +2,7 @@
 ID: "93b54bba-5463-4e7b-83ca-9f62ae0223fa"
 Parent: "4e916023-3d9a-43ed-8f0d-08f7628fc145"
 Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
-Path: /sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Hotels/_Local/Health Panel/Programs Attributes/Max_limit_of_company_responsibility/700000limit
+Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Asfalisi-Touristikon-Monadon/_Local/Health Panel/Programs Attributes/Max_limit_of_company_responsibility/700000limit"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
