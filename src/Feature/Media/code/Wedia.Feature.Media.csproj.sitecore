@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <Site Server="eurolife.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
+    <Site Server="eurolifesite.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
   </PropertyGroup>
   <File Include="Views\MediaFeature\MediaFileToolkitAccordion.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{907DF28B-FE15-4286-AD29-109BC7C0B98A}</Item>
