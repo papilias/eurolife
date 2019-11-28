@@ -14,6 +14,8 @@ namespace Wedia.Feature.Panels.Models
     public string ApplyButton { get; set; }
     [JsonProperty("cancelButton")]
     public string CancelButton { get; set; }
+    [JsonProperty("clearButton")]
+    public string ClearButton { get; set; }
     [JsonProperty("items")]
     public IEnumerable<PanelRow> Items { get; set; }
   }

@@ -254,7 +254,7 @@
     });
 
     //submenu
-    $( ".nav-product__trigger" ).click(function() {
+    $(".nav-product__trigger").click(function() {
         //MOBILE OR NOT
         if($(window).width() <= 1024) {
             //IS OPEN OR NOT
@@ -273,8 +273,27 @@
                 }, 1000);
             }
         }
-        else
-            $('.menu-expanded').toggleClass('menu-expanded--yes');
+        else {
+          $(window).off("scroll");
+          $("body").off("click");
+          $('.menu-expanded').toggleClass('menu-expanded--yes');
+
+          setTimeout(() => {
+            $("body").one("click", function () {
+              $('.menu-expanded').removeClass("menu-expanded--yes");
+              $(window).off("scroll");
+            });
+
+            $(window).one("scroll", function () {
+              $('.menu-expanded').removeClass("menu-expanded--yes");
+              $("body").off("click");
+            });
+
+            $('.menu-expanded').click(function (e) {
+              e.stopPropagation();
+            });
+          }, 100);
+        }
     });
 
     //expand program START
@@ -448,8 +467,26 @@
     if (filterTrigger != null && filterResults != null) {
 
 
-        filterTrigger.addEventListener('click', _ => {
-            filterResults.classList.toggle("filter__results--active");
+        $(".filter__trigger").on('click', _ => {
+          $(".filter__results").toggleClass("filter__results--active");
+          $(window).off("scroll");
+          $("body").off("click");
+
+          setTimeout(() => {
+            $("body").one("click", function () {
+              $('.filter__results').removeClass("filter__results--active");
+              $(window).off("scroll");
+            });
+
+            $(window).one("scroll", function () {
+              $('.filter__results').removeClass("filter__results--active");
+              $("body").off("click");
+            });
+
+            $('.filter__results').click(function (e) {
+              e.stopPropagation();
+            });
+          }, 100);
         });
 
 

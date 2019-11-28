@@ -810,7 +810,19 @@ section.programs{
 
 .filter__cancel {
   margin-left: auto;
+  color: #383b38;
+  cursor: pointer;
   margin-right: 16px;
+}
+
+.filter__apply {
+  cursor: pointer;
+  color: #008094;
+}
+
+.filter__clear {
+  color: #ef3340;
+  cursor: pointer;
 }
 
 .program {
