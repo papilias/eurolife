@@ -119,23 +119,17 @@ namespace Wedia.Feature.Media.Repositories
       var folder = item.TargetItem(Templates.MediaFileFolderGroup.Fields.Group);
 
       if (folder == null)
-        return null;
+        return null;       
 
-      var query = new FileQuery
-      {
-        Facets = null,
-        QueryText = "*",
-        NoOfResults = pagingSettings.ResultsOnPage,
-        Page = pageNumber
-      };
-
-      
-      var searchService = _searchServiceRepository
-      .Get(new SearchSettingsBase { Templates = new[] { Templates.HasMedia.ID } });
-
+      var searchService = _searchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.HasMedia.ID } });
       searchService.Settings.Root = folder;
 
-      return searchService.Search(query);            
+      var results = searchService.FindAll(0,
+        0,
+        Templates.HasMedia.Fields.Media_FirstPublishDate,
+        true);    
+
+      return results;
     }
 
 

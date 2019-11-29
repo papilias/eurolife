@@ -22,7 +22,7 @@ namespace Wedia.Feature.Media
         public const string Thumbnail_FieldName = "MediaThumbnail";
         public static readonly ID Label = new ID("{2B8D567C-52B2-4D1B-A645-2021D33C24EE}");
         public static readonly ID FirstPublisdDate = new ID("{1EAC664F-71C3-4F5B-8D1D-22C4363720B1}");
-        public const string Media_FirstPublishDate = "MediaFirstPublishedDate";
+        public const string Media_FirstPublishDate = "MediaFirstPublishDate";
         public static readonly ID PublishSource = new ID("{502AB0B3-D1F6-4079-A6F4-C91EA0CCE9A1}");
         public const string Media_PublishSource = "MediaPublishSource";
       }
@@ -106,6 +106,7 @@ namespace Wedia.Feature.Media
       {
         public static readonly ID FirstPublishDate = new ID("{1EAC664F-71C3-4F5B-8D1D-22C4363720B1}");
         public static readonly ID PublishDate = new ID("{01D8867E-7244-41E9-9742-EE60972E6F12}");
+        public const string Media_PublishDate = "MediaPublishDate";
         public static readonly ID PublishSource = new ID("{502AB0B3-D1F6-4079-A6F4-C91EA0CCE9A1}");
       }
     }

@@ -33,7 +33,8 @@ namespace Wedia.Feature.Media.Indexing
       {
         Templates.HasMedia.Fields.Title_FieldName,
         Templates.HasMedia.Fields.Description_FieldName,
-        Templates.HasMedia.Fields.Thumbnail_FieldName
+        Templates.HasMedia.Fields.Thumbnail_FieldName,
+        Templates.HasMedia.Fields.Media_FirstPublishDate
       };
 
       return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);
