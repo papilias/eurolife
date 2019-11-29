@@ -71,7 +71,7 @@ namespace Wedia.Foundation.Indexing.Services
       return this.FindAll(0, 0);
     }
 
-    public virtual ISearchResults FindAll(int skip, int take, string orderBy = null)
+    public virtual ISearchResults FindAll(int skip, int take, string orderBy = null, bool reverse = false)
     {
       using (var context = ContentSearchManager.GetIndex(this.ContextItem).CreateSearchContext())
       {
@@ -88,7 +88,10 @@ namespace Wedia.Foundation.Indexing.Services
 
         if (!string.IsNullOrEmpty(orderBy))
         {
-          queryable = queryable.OrderBy(d => d[orderBy]);
+          if(reverse)
+            queryable = queryable.OrderByDescending(d => d[orderBy]);
+          else
+            queryable = queryable.OrderBy(d => d[orderBy]);
         }
 
         var results = queryable.GetResults();

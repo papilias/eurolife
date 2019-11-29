@@ -23,6 +23,7 @@ namespace Wedia.Feature.News
         public const string DesktopImage_MobileImage = "NewsMobileImage";
 
         public static readonly ID Date = new ID("{F426DCD4-A506-4A26-A7C1-E77AE6E22A1A}");
+        public const string Date_FieldName = "NewsDate";
 
         public static readonly ID Summary = new ID("{554286B4-E1F0-49D5-A706-9739F30830BF}");
         public const string Summary_FieldName = "NewsSummary";
