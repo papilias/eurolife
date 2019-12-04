@@ -96,6 +96,7 @@
     <Content Include="Views\PageContent\ColoredHeader.cshtml" />
     <Content Include="Views\PageContent\PageHeaderTitleImage.cshtml" />
     <Content Include="Views\PageContent\LandingHeaderImageVideo.cshtml" />
+    <Content Include="Views\PageContent\ErrorPage.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
