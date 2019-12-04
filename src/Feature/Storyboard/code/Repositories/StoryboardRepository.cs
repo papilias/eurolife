@@ -36,7 +36,7 @@ namespace Wedia.Feature.Storyboard.Repositories
             searchService.Settings.Root = contextItem;
         
             var results = searchService.FindAll();
-            return results.Results.Select(x => x.Item).Where(x => x != null).OrderByDescending(i => i[Templates.StoryboardItem.Fields.Year]);
+            return results.Results.Select(x => x.Item).Where(x => x != null).OrderBy(i => i[Templates.StoryboardItem.Fields.Year]);
         }
     }
 }

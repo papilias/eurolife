@@ -22,7 +22,8 @@ Languages:
       Type: Layout
       Value: |
         <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
@@ -44,109 +45,109 @@ Languages:
             <r
               uid="{F14F11FE-8FFA-4B3F-8FEF-B70D13B1595F}"
               p:after="r[@uid='{324B4B98-EAD6-4AC5-A7AA-4A31B8E0A725}']"
-              s:ds="{B74B6F0E-B89C-4752-90DC-B7A60FEB2B51}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-3-{378BA70F-A593-4F9C-B8D5-402995203210}-0" />
             <r
               uid="{A2C2B193-DA9E-4949-BCC5-4B3127048C08}"
               p:after="r[@uid='{F14F11FE-8FFA-4B3F-8FEF-B70D13B1595F}']"
-              s:ds="{43BED730-8783-4AD1-9F53-A73750E72DCE}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-4-{378BA70F-A593-4F9C-B8D5-402995203210}-0" />
             <r
               uid="{4321288F-F769-4B1C-BA68-3D7B1A82C9EB}"
               p:after="r[@uid='{A2C2B193-DA9E-4949-BCC5-4B3127048C08}']"
-              s:ds="{B54CB846-D6E7-4312-9A0F-413ABAD7D541}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-2-{378BA70F-A593-4F9C-B8D5-402995203210}-0" />
             <r
               uid="{04581A39-B12F-4441-8B43-55EF29B91863}"
               p:after="r[@uid='{4321288F-F769-4B1C-BA68-3D7B1A82C9EB}']"
-              s:ds="{D0AD9A09-DE20-4807-8C74-47DBD1CD6F7A}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-1-{378BA70F-A593-4F9C-B8D5-402995203210}-0" />
             <r
               uid="{55B66FE4-112E-4D15-9949-31A4CB38D177}"
               p:after="r[@uid='{04581A39-B12F-4441-8B43-55EF29B91863}']"
-              s:ds="{43BED730-8783-4AD1-9F53-A73750E72DCE}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-4-{F0FD14C0-C5D1-49FE-B2BE-65EF82119336}-0" />
             <r
               uid="{9EDE9352-EF8E-47D7-ABF4-6F2BEFF4C12A}"
               p:after="r[@uid='{55B66FE4-112E-4D15-9949-31A4CB38D177}']"
-              s:ds="{B74B6F0E-B89C-4752-90DC-B7A60FEB2B51}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-3-{F0FD14C0-C5D1-49FE-B2BE-65EF82119336}-0" />
             <r
               uid="{55CC0A35-CC2B-4F7C-8920-3035AABD5F6B}"
               p:after="r[@uid='{9EDE9352-EF8E-47D7-ABF4-6F2BEFF4C12A}']"
-              s:ds="{B54CB846-D6E7-4312-9A0F-413ABAD7D541}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-2-{F0FD14C0-C5D1-49FE-B2BE-65EF82119336}-0" />
             <r
               uid="{E420D171-E396-4E41-A9C9-04430DDA4744}"
               p:after="r[@uid='{55CC0A35-CC2B-4F7C-8920-3035AABD5F6B}']"
-              s:ds="{D0AD9A09-DE20-4807-8C74-47DBD1CD6F7A}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-1-{F0FD14C0-C5D1-49FE-B2BE-65EF82119336}-0" />
             <r
               uid="{025FDBE5-DFC9-4E15-89E9-1DC1F93884FD}"
               p:after="r[@uid='{E420D171-E396-4E41-A9C9-04430DDA4744}']"
-              s:ds="{D0AD9A09-DE20-4807-8C74-47DBD1CD6F7A}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-1-{BA41821C-3B95-4D9A-B565-688BE5546CEF}-0" />
             <r
               uid="{23354466-A26D-4A07-A0C2-521A66F34159}"
               p:after="r[@uid='{025FDBE5-DFC9-4E15-89E9-1DC1F93884FD}']"
-              s:ds="{B54CB846-D6E7-4312-9A0F-413ABAD7D541}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-1-{BA41821C-3B95-4D9A-B565-688BE5546CEF}-0" />
             <r
               uid="{2A8DD1F9-B584-4417-A288-1259CD2505F5}"
               p:after="r[@uid='{23354466-A26D-4A07-A0C2-521A66F34159}']"
-              s:ds="{B74B6F0E-B89C-4752-90DC-B7A60FEB2B51}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-1-{BA41821C-3B95-4D9A-B565-688BE5546CEF}-0" />
             <r
               uid="{9C79112B-F046-49D5-AEB9-21F753FBBBAE}"
               p:after="r[@uid='{2A8DD1F9-B584-4417-A288-1259CD2505F5}']"
-              s:ds="{D0AD9A09-DE20-4807-8C74-47DBD1CD6F7A}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-2-{BA41821C-3B95-4D9A-B565-688BE5546CEF}-0" />
             <r
               uid="{3024BFEC-1823-4932-89B2-7058FCE38A14}"
               p:after="r[@uid='{9C79112B-F046-49D5-AEB9-21F753FBBBAE}']"
-              s:ds="{D0AD9A09-DE20-4807-8C74-47DBD1CD6F7A}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-1-{BA41821C-3B95-4D9A-B565-688BE5546CEF}-0" />
             <r
               uid="{9D464954-2A5E-4505-9B95-756EF8A4E707}"
               p:after="r[@uid='{3024BFEC-1823-4932-89B2-7058FCE38A14}']"
-              s:ds="{B74B6F0E-B89C-4752-90DC-B7A60FEB2B51}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-4-{BA41821C-3B95-4D9A-B565-688BE5546CEF}-0" />
             <r
               uid="{CDCF14C6-320E-4794-91D0-C8EE9F9B3F78}"
               p:after="r[@uid='{9D464954-2A5E-4505-9B95-756EF8A4E707}']"
-              s:ds="{B74B6F0E-B89C-4752-90DC-B7A60FEB2B51}"
+              s:ds=""
               s:id="{61F4AA1C-809B-4271-AB37-84921D5006BC}"
               s:ph="/page-layout/teaser-placeholder-4-{BA41821C-3B95-4D9A-B565-688BE5546CEF}-0" />
             <r
               uid="{5093A3DE-CBC9-48A3-AB07-81ED4C79CA6F}"
               p:after="r[@uid='{CDCF14C6-320E-4794-91D0-C8EE9F9B3F78}']"
-              s:ds="{B74B6F0E-B89C-4752-90DC-B7A60FEB2B51}"
+              s:ds=""
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:ph="/page-layout/teaser-placeholder-3-{816290B9-040B-4B75-B23F-47ED3091477F}-0" />
             <r
               uid="{7AA67174-D4F3-4694-AF2A-B4E667743B0A}"
               p:after="r[@uid='{5093A3DE-CBC9-48A3-AB07-81ED4C79CA6F}']"
-              s:ds="{B54CB846-D6E7-4312-9A0F-413ABAD7D541}"
+              s:ds=""
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:ph="/page-layout/teaser-placeholder-2-{816290B9-040B-4B75-B23F-47ED3091477F}-0" />
             <r
               uid="{2BDBFC81-40E9-401B-A354-BB76B86CDDC6}"
               p:after="r[@uid='{7AA67174-D4F3-4694-AF2A-B4E667743B0A}']"
-              s:ds="{D0AD9A09-DE20-4807-8C74-47DBD1CD6F7A}"
+              s:ds=""
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:ph="/page-layout/teaser-placeholder-1-{816290B9-040B-4B75-B23F-47ED3091477F}-0" />
             <r
@@ -158,7 +159,7 @@ Languages:
               p:after="r[@uid='{910D84F1-7A4E-46C5-A0AA-39C463C70E0A}']"
               s:ds="{174D8C5A-1752-4BD7-9669-918F5835C6EE}"
               s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
-              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
+              s:par="Background=%7b7F898357-3B13-4BEC-802E-7EF58D50F030%7d"
               s:ph="page-layout" />
             <r
               uid="{38F9E908-43B0-496F-A297-C6604E4B07A4}">
@@ -168,6 +169,12 @@ Languages:
               uid="{88B91DF2-05C4-4CE5-A2AF-B1506006B971}">
               <p:d />
             </r>
+            <r
+              uid="{083E116C-8BA7-4469-94FA-902A32946F0E}"
+              p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
+              s:ds="{E208F0B5-2BC8-43C6-ABE8-141758C0A976}"
+              s:id="{FFB4450F-586B-47D1-9008-DA761EA95DE3}"
+              s:ph="page-layout" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
@@ -186,141 +193,10 @@ Languages:
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
-        <p>&Sigma;&tau;&eta; Eurolife ERB &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή, &pi;&iota;&sigma;&tau;&epsilon;ύ&omicron;&upsilon;&mu;&epsilon; ό&tau;&iota; &tau;&omicron; &nu;&alpha; &alpha;&kappa;&omicron;ύ&mu;&epsilon; &tau;&iota;&sigmaf; &alpha;&nu;ά&gamma;&kappa;&epsilon;&sigmaf; &tau;&omega;&nu; &sigma;&upsilon;&nu;&alpha;&delta;έ&lambda;&phi;&omega;&nu; &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &nu;&alpha; &alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;&iota;&nu;ό&mu;&alpha;&sigma;&tau;&epsilon; &sigma;&epsilon; &alpha;&upsilon;&tau;έ&sigmaf;, &mu;&alpha;&sigmaf; &delta;ί&nu;&epsilon;&iota; &mu;&iota;&alpha; ώ&theta;&eta;&sigma;&eta; &gamma;&iota;&alpha; &nu;&alpha; &alpha;&nu;&alpha;&pi;&tau;&upsilon;&sigma;&sigma;ό&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&pi;ό &kappa;&omicron;&iota;&nu;&omicron;ύ. &Gamma;&iota;&rsquo; &alpha;&upsilon;&tau;ό, &tau;&omicron; &tau;&rho;ί&pi;&tau;&upsilon;&chi;&omicron; &laquo;&Alpha;&phi;&omicron;&upsilon;&gamma;&kappa;&rho;&alpha;&zeta;ό&mu;&alpha;&sigma;&tau;&epsilon;, &Alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;&iota;&nu;ό&mu;&alpha;&sigma;&tau;&epsilon;, &Alpha;&nu;&alpha;&pi;&tau;&upsilon;&sigma;&sigma;ό&mu;&alpha;&sigma;&tau;&epsilon;&raquo; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;ί &tau;&omicron;&nu; &omicron;&delta;&eta;&gamma;ό &mu;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &upsilon;&lambda;&omicron;&pi;&omicron;ί&eta;&sigma;&eta; &kappa;ά&theta;&epsilon; &epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ή&sigmaf; &pi;&rho;&omega;&tau;&omicron;&beta;&omicron;&upsilon;&lambda;ί&alpha;&sigmaf;.
-        </p>
-        <p>&Phi;&rho;&omicron;&nu;&tau;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &omicron;&iota; &delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf; &pi;&omicron;&upsilon; &sigma;&chi;&epsilon;&delta;&iota;ά&zeta;&omicron;&upsilon;&mu;&epsilon; &nu;&alpha; &alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;ί&nu;&omicron;&nu;&tau;&alpha;&iota; &sigma;&tau;&alpha; &sigma;ύ&gamma;&chi;&rho;&omicron;&nu;&alpha; &pi;&rho;ό&tau;&upsilon;&pi;&alpha;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &nu;&alpha; &epsilon;&xi;&alpha;&sigma;&phi;&alpha;&lambda;ί&zeta;&omicron;&upsilon;&nu; &tau;&eta; &sigma;&upsilon;&nu;&epsilon;&chi;ό&mu;&epsilon;&nu;&eta; &kappa;&alpha;&iota; &pi;&omicron;&iota;&omicron;&tau;&iota;&kappa;ή &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta; &tau;&omega;&nu; &alpha;&nu;&theta;&rho;ώ&pi;&omega;&nu; &mu;&alpha;&sigmaf;. &Omicron;&iota; &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;&omicron;ί &Delta;&iota;&alpha;&mu;&epsilon;&sigma;&omicron;&lambda;&alpha;&beta;&eta;&tau;έ&sigmaf; &mu;&alpha;&sigmaf; &phi;&rho;&omicron;&nu;&tau;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &lambda;&omicron;&iota;&pi;ό&nu; &nu;&alpha; έ&chi;&omicron;&upsilon;&nu; &sigma;&tau;&alpha;&theta;&epsilon;&rho;ά &epsilon;&upsilon;&kappa;&alpha;&iota;&rho;ί&epsilon;&sigmaf; &kappa;&alpha;&iota; &gamma;&iota;&alpha; &pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;ή &kappa;&alpha;&iota; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &gamma;&iota;&alpha; &beta;&epsilon;&lambda;&tau;&iota;&sigma;&tau;&omicron;&pi;&omicron;ί&eta;&sigma;&eta; &tau;&eta;&sigmaf; &pi;&omicron;&iota;ό&tau;&eta;&tau;&alpha;&sigmaf; &tau;&omega;&nu; &upsilon;&pi;&eta;&rho;&epsilon;&sigma;&iota;ώ&nu; &pi;&rho;&omicron;&sigmaf; &tau;&omicron;&upsilon;&sigmaf; &pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf;.
-        </p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><strong>&nbsp;</strong></p>
-        <table class="telerik-reTable-1" align="center">
-            <tbody>
-                <tr class="telerik-reTableEvenRow-1">
-                    <td class="telerik-reTableEvenCol-1"><strong id="docs-internal-guid-59ea3680-7fff-b52d-bc38-b2fcc5405c91">&Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ά &pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha;, &eta;&mu;&epsilon;&rho;ί&delta;&epsilon;&sigmaf; &kappa;&alpha;&iota; &sigma;&epsilon;&mu;&iota;&nu;ά&rho;&iota;&alpha;</strong></td>
-                    <td class="telerik-reTableOddCol-1">
-                    <p><strong id="docs-internal-guid-c7a18482-7fff-d3f8-7cc6-a91112895217" style="font-weight: normal;"></strong>- &Pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;&iota;&eta;&mu;έ&nu;&omicron; &alpha;&pi;ό &tau;&eta;&nu; &Tau;&rho;ά&pi;&epsilon;&zeta;&alpha; &tau;&eta;&sigmaf; &Epsilon;&lambda;&lambda;ά&delta;&omicron;&sigmaf; &epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ό &pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha; &laquo;&Epsilon;&pi;&alpha;&nu;&epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta; &kappa;&alpha;&iota; &epsilon;&pi;&alpha;&nu;&alpha;&pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;ί&eta;&sigma;&eta; &gamma;&nu;ώ&sigma;&epsilon;&omega;&nu; &tau;&omega;&nu; (&alpha;&nu;&tau;)&alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ώ&nu; &delta;&iota;&alpha;&mu;&epsilon;&sigma;&omicron;&lambda;&alpha;&beta;&eta;&tau;ώ&nu;&raquo;</p>
-                    <p>- &Pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha; &Epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &Nu;έ&omega;&nu; &Sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&tau;ώ&nu;</p>
-                    <p>- &Epsilon;&tau;ή&sigma;&iota;&omicron; &Pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha; &Epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &Sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&tau;ώ&nu;</p>
-                    <p>- &Pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha; &pi;&rho;&omicron;&epsilon;&tau;&omicron;&iota;&mu;&alpha;&sigma;ί&alpha;&sigmaf; &epsilon;&xi;&epsilon;&tau;ά&sigma;&epsilon;&omega;&nu; &gamma;&iota;&alpha; &tau;&eta;&nu; &alpha;&pi;ό&kappa;&tau;&eta;&sigma;&eta; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ώ&nu; &pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;&iota;&eta;&tau;&iota;&kappa;ώ&nu; &alpha;&pi;ό &tau;&eta;&nu; &Tau;&rho;ά&pi;&epsilon;&zeta;&alpha; &tau;&eta;&sigmaf; &Epsilon;&lambda;&lambda;ά&delta;&omicron;&sigmaf;</p>
-                    <p>- &Alpha;&nu;&omicron;&iota;&chi;&tau;έ&sigmaf; &Eta;&mu;&epsilon;&rho;ί&delta;&epsilon;&sigmaf; &mu;&epsilon; &theta;έ&mu;&alpha;&tau;&alpha; &gamma;&epsilon;&nu;&iota;&kappa;ό&tau;&epsilon;&rho;&omicron;&upsilon; &epsilon;&nu;&delta;&iota;&alpha;&phi;έ&rho;&omicron;&nu;&tau;&omicron;&sigmaf; &tau;&eta;&sigmaf; &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ή&sigmaf; &Alpha;&gamma;&omicron;&rho;ά&sigmaf;</p>
-                    <p>- &Sigma;&epsilon;&mu;&iota;&nu;ά&rho;&iota;&alpha; &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&tau;ώ&nu; &sigma;&epsilon; &theta;&epsilon;&mu;&alpha;&tau;&omicron;&lambda;&omicron;&gamma;ί&alpha; &pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;&omicron;ύ &kappa;&alpha;&iota; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;&omicron;ύ &epsilon;&nu;&delta;&iota;&alpha;&phi;έ&rho;&omicron;&nu;&tau;&omicron;&sigmaf;</p>
-                    </td>
-                </tr>
-                <tr class="telerik-reTableOddRow-1">
-                    <td class="telerik-reTableEvenCol-1"><strong id="docs-internal-guid-475d736e-7fff-aebb-f3c3-9f00ee898a82">&Pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;&iota;&eta;&mu;έ&nu;&omicron; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ό &Kappa;έ&nu;&tau;&rho;&omicron;</strong></td>
-                    <td class="telerik-reTableOddCol-1"><span id="docs-internal-guid-5296f419-7fff-189c-2d48-ce22c949eff7">&Tau;&omicron; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ό &Kappa;έ&nu;&tau;&rho;&omicron; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;ί &alpha;&nu;&alpha;&pi;ό&sigma;&pi;&alpha;&sigma;&tau;&omicron; &tau;&mu;ή&mu;&alpha; &tau;&eta;&sigmaf; &Gamma;&epsilon;&nu;&iota;&kappa;ή&sigmaf; &Delta;&iota;&epsilon;ύ&theta;&upsilon;&nu;&sigma;&eta;&sigmaf; &Pi;&omega;&lambda;ή&sigma;&epsilon;&omega;&nu; &amp; &Epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &pi;&alpha;&rho;έ&chi;&epsilon;&iota; &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;&omega;&mu;έ&nu;&eta; &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta; &sigma;&epsilon; ό&lambda;&alpha; &tau;&alpha; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&zeta;ό&mu;&epsilon;&nu;&alpha; &delta;ί&kappa;&tau;&upsilon;&alpha; &pi;&omega;&lambda;ή&sigma;&epsilon;&omega;&nu; &tau;&eta;&sigmaf; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;ί&alpha;&sigmaf;. &Eta;&mu;&epsilon;&rho;ί&delta;&epsilon;&sigmaf;, &sigma;&epsilon;&mu;&iota;&nu;ά&rho;&iota;&alpha; &kappa;&alpha;&iota; &pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha; &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &pi;&rho;&alpha;&gamma;&mu;&alpha;&tau;&omicron;&pi;&omicron;&iota;&omicron;ύ&nu;&tau;&alpha;&iota; &sigma;&tau;&omicron; &Kappa;έ&nu;&tau;&rho;&omicron; &mu;&alpha;&sigmaf;, ό&pi;&omicron;&upsilon; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&nu;&tau;&alpha;&iota; &tau;&epsilon;&chi;&nu;&iota;&kappa;έ&sigmaf; &gamma;&nu;ώ&sigma;&epsilon;&iota;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ώ&nu; &kappa;&alpha;&iota; &chi;&rho;&eta;&mu;&alpha;&tau;&omicron;&omicron;&iota;&kappa;&omicron;&nu;&omicron;&mu;&iota;&kappa;ώ&nu; &pi;&rho;&omicron;ϊό&nu;&tau;&omega;&nu;, &gamma;&nu;ώ&sigma;&epsilon;&iota;&sigmaf; &gamma;&iota;&alpha; &mu;&epsilon;&theta;ό&delta;&omicron;&upsilon;&sigmaf; &pi;&omega;&lambda;ή&sigma;&epsilon;&omega;&nu;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &epsilon;&nu;&eta;&mu;έ&rho;&omega;&sigma;&eta; &sigma;&chi;&epsilon;&tau;&iota;&kappa;ά &mu;&epsilon; &theta;έ&mu;&alpha;&tau;&alpha; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;ή&sigmaf; &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta;&sigmaf;</span><br />
-                    </td>
-                </tr>
-                <tr class="telerik-reTableEvenRow-1">
-                    <td class="telerik-reTableEvenCol-1"><strong>&Sigma;ύ&gamma;&chi;&rho;&omicron;&nu;&eta; &Pi;&lambda;&alpha;&tau;&phi;ό&rho;&mu;&alpha; &Psi;&eta;&phi;&iota;&alpha;&kappa;ή&sigmaf; &Epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf;</strong></td>
-                    <td class="telerik-reTableOddCol-1"><strong id="docs-internal-guid-5d75878b-7fff-4519-e214-e2058f7edb6f" style="font-weight: normal;"></strong>
-                    <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;">&Eta; <a href="https://training.eurolife.gr/el/normal/home">&Pi;&lambda;&alpha;&tau;&phi;ό&rho;&mu;&alpha; &Psi;&eta;&phi;&iota;&alpha;&kappa;ή&sigmaf; &Epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; (e-learning)</a> &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&tau;ώ&nu; &tau;&eta;&sigmaf; Eurolife ERB &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;ί έ&nu;&alpha; &alpha;&pi;ό&lambda;&upsilon;&tau;&alpha; &sigma;ύ&gamma;&chi;&rho;&omicron;&nu;&omicron; &epsilon;&rho;&gamma;&alpha;&lambda;&epsilon;ί&omicron; &mu;ά&theta;&eta;&sigma;&eta;&sigmaf;, &pi;&omicron;&upsilon; &delta;&iota;&epsilon;&upsilon;&rho;ύ&nu;&epsilon;&iota; &tau;&iota;&sigmaf; &pi;&rho;&omega;&tau;&omicron;&beta;&omicron;&upsilon;&lambda;ί&epsilon;&sigmaf; &tau;&eta;&sigmaf; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;ί&alpha;&sigmaf; &mu;&alpha;&sigmaf; &gamma;&iota;&alpha; &delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;ί&alpha; &nu;έ&omega;&nu; &kappa;&alpha;&iota; &epsilon;&upsilon;έ&lambda;&iota;&kappa;&tau;&omega;&nu; &epsilon;&rho;&gamma;&alpha;&lambda;&epsilon;ί&omega;&nu; &delta;&omicron;&upsilon;&lambda;&epsilon;&iota;ά&sigmaf;. <br />
-                    <br />
-                    &Sigma;&tau;&eta;&nu; &pi;&lambda;&alpha;&tau;&phi;ό&rho;&mu;&alpha; &sigma;&upsilon;&gamma;&kappa;&epsilon;&nu;&tau;&rho;ώ&nu;&epsilon;&tau;&alpha;&iota; ό&lambda;&omicron; &tau;&omicron; &upsilon;&lambda;&iota;&kappa;ό &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta;&sigmaf; &alpha;&nu;ά &mu;ή&nu;&alpha; &kappa;&alpha;&iota; &alpha;&nu;ά &epsilon;&beta;&delta;&omicron;&mu;ά&delta;&alpha;, &epsilon;&nu;ώ &omicron;&iota; &epsilon;&nu;&delta;&iota;&alpha;&phi;&epsilon;&rho;ό&mu;&epsilon;&nu;&omicron;&iota; &mu;&pi;&omicron;&rho;&omicron;ύ&nu; &nu;&alpha; &sigma;&upsilon;&nu;&delta;&epsilon;&theta;&omicron;ύ&nu; &kappa;&alpha;&iota; &nu;&alpha; &delta;&eta;&lambda;ώ&sigma;&omicron;&upsilon;&nu; &sigma;&upsilon;&mu;&mu;&epsilon;&tau;&omicron;&chi;ή &mu;&epsilon; &tau;&omicron; &pi;ά&tau;&eta;&mu;&alpha; &epsilon;&nu;ό&sigmaf; &kappa;&omicron;&upsilon;&mu;&pi;&iota;&omicron;ύ, &gamma;&iota;&alpha; ό&pi;&omicron;&iota;&omicron; &pi;&rho;ό&gamma;&rho;&alpha;&mu;&mu;&alpha;, &sigma;&epsilon;&mu;&iota;&nu;ά&rho;&iota;&omicron; ή &kappa;&alpha;&iota; &eta;&mu;&epsilon;&rho;ί&delta;&alpha; &tau;&omicron;&upsilon;&sigmaf; &epsilon;&nu;&delta;&iota;&alpha;&phi;έ&rho;&epsilon;&iota;. &Delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;&omicron;ύ&mu;&epsilon; &nu;έ&epsilon;&sigmaf; &delta;&upsilon;&nu;&alpha;&tau;ό&tau;&eta;&tau;&epsilon;&sigmaf;, &mu;&epsilon; &chi;&rho;ή&sigma;&eta; &nu;έ&omega;&nu; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;ώ&nu; &epsilon;&rho;&gamma;&alpha;&lambda;&epsilon;ί&omega;&nu;.</p>
-                    <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"> </p>
-                    <br class="Apple-interchange-newline" />
-                    </td>
-                </tr>
-                <tr class="telerik-reTableOddRow-1">
-                    <td class="telerik-reTableEvenCol-1"><strong id="docs-internal-guid-b8155961-7fff-fe8b-0b73-41176c7ca22a"></strong><strong>&Sigma;&upsilon;&nu;έ&rho;&gamma;&epsilon;&iota;&epsilon;&sigmaf; &mu;&epsilon; &Alpha;&nu;ώ&tau;&alpha;&tau;&alpha; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ά &Iota;&delta;&rho;ύ&mu;&alpha;&tau;&alpha; &kappa;&alpha;&iota; &Phi;&omicron;&rho;&epsilon;ί&sigmaf; </strong></td>
-                    <td class="telerik-reTableOddCol-1">Ό&lambda;&alpha; &alpha;&upsilon;&tau;ά &tau;&alpha; &chi;&rho;ό&nu;&iota;&alpha;, έ&chi;&omicron;&upsilon;&mu;&epsilon; &alpha;&nu;&alpha;&pi;&tau;ύ&xi;&epsilon;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&epsilon; &Alpha;&nu;ώ&tau;&alpha;&tau;&alpha; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ά &iota;&delta;&rho;ύ&mu;&alpha;&tau;&alpha; &kappa;&alpha;&iota; &epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;&omicron;ύ&sigmaf; &phi;&omicron;&rho;&epsilon;ί&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon; &epsilon;&upsilon;&kappa;&alpha;&iota;&rho;ί&epsilon;&sigmaf; &gamma;&iota;&alpha; &Pi;&rho;&alpha;&kappa;&tau;&iota;&kappa;ή Ά&sigma;&kappa;&eta;&sigma;&eta; &sigma;&epsilon; &phi;&omicron;&iota;&tau;&eta;&tau;έ&sigmaf;, &epsilon;&xi;&epsilon;&iota;&delta;&iota;&kappa;&epsilon;&upsilon;&mu;έ&nu;&alpha; &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ά &Pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha;, &Alpha;&nu;&omicron;&iota;&chi;&tau;έ&sigmaf; &Eta;&mu;&epsilon;&rho;ί&delta;&epsilon;&sigmaf;, &Epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;έ&sigmaf; &Delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; Workshops, &Pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha; &Delta;&iota;&omicron;ί&kappa;&eta;&sigma;&eta;&sigmaf; &gamma;&iota;&alpha; &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ά &Sigma;&tau;&epsilon;&lambda;έ&chi;&eta;, &Pi;&rho;&omicron;&gamma;&rho;ά&mu;&mu;&alpha;&tau;&alpha; &Epsilon;&pi;&alpha;&nu;&alpha;&pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;ί&eta;&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &pi;&omicron;&lambda;&lambda;ά ά&lambda;&lambda;&alpha;.</td>
-                </tr>
-            </tbody>
-        </table>
-        <style type="text/css" id="telerik-reTable-1">
-            .telerik-reTable-1 {
-            border-width: 0px;
-            border-style: none;
-            border-collapse: collapse;
-            font-family:Ubuntu;
-            }
-            .telerik-reTable-1 tr.telerik-reTableHeaderRow-1 {
-            margin: 10px;
-            padding: 10px;
-            color: #3F4D6B;
-            background: #D6E8FF;
-            text-align: left;
-            font-size: 10pt;
-            font-style: normal;
-            font-family: Ubuntu;
-            text-transform: capitalize;
-            font-weight: bold;
-            border-spacing: 10px;
-            line-height: 14pt;
-            vertical-align: top;
-            }
-            .telerik-reTable-1 td.telerik-reTableHeaderFirstCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            color: #3a4663;
-            line-height: 14pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableHeaderLastCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            color: #3a4663;
-            line-height: 14pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableHeaderOddCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            color: #3a4663;
-            line-height: 14pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableHeaderEvenCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            color: #3a4663;
-            line-height: 14pt;
-            }
-            .telerik-reTable-1 tr.telerik-reTableOddRow-1 {
-            color: #666666;
-            background-color: #F2F3F4;
-            font-size: 10pt;
-            vertical-align: top;
-            }
-            .telerik-reTable-1 tr.telerik-reTableEvenRow-1 {
-            color: #666666;
-            background-color: #E7EBF7;
-            font-size: 10pt;
-            vertical-align: top;
-            }
-            .telerik-reTable-1 td.telerik-reTableFirstCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableLastCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableOddCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableEvenCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            }
-            .telerik-reTable-1 tr.telerik-reTableFooterRow-1 {
-            background-color: #D6E8FF;
-            color: #4A5A80;
-            font-weight: 500;
-            font-size: 10pt;
-            font-family: Ubuntu;
-            line-height: 11pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableFooterFirstCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            border-top: solid gray 1.0pt;
-            text-align: left;
-            }
-            .telerik-reTable-1 td.telerik-reTableFooterLastCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            border-top: solid gray 1.0pt;
-            text-align: left;
-            }
-            .telerik-reTable-1 td.telerik-reTableFooterOddCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            text-align: left;
-            border-top: solid gray 1.0pt;
-            }
-            .telerik-reTable-1 td.telerik-reTableFooterEvenCol-1 {
-            padding: 0in 5.4pt 0in 5.4pt;
-            text-align: left;
-            border-top: solid gray 1.0pt;
-            }
-        </style>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; font-size: 11pt; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; font-family: Ubuntu; color: #000000;"></span></p>
+        <p><strong>&Epsilon;&pi;&iota;&mu;ό&rho;&phi;&omega;&sigma;&eta; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ώ&nu; &delta;&iota;&alpha;&mu;&epsilon;&sigma;&omicron;&lambda;&alpha;&beta;&eta;&tau;ώ&nu;</strong></p>
+        <p>&Sigma;&tau;&eta; <strong>Eurolife ERB</strong>, &pi;&iota;&sigma;&tau;&epsilon;ύ&omicron;&upsilon;&mu;&epsilon; ό&tau;&iota; &tau;&omicron; &nu;&alpha; &alpha;&kappa;&omicron;ύ&mu;&epsilon; &tau;&iota;&sigmaf; &alpha;&nu;ά&gamma;&kappa;&epsilon;&sigmaf; &tau;&omega;&nu; &sigma;&upsilon;&nu;&alpha;&delta;έ&lambda;&phi;&omega;&nu; &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &nu;&alpha; &alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;&iota;&nu;ό&mu;&alpha;&sigma;&tau;&epsilon; &sigma;&epsilon; &alpha;&upsilon;&tau;έ&sigmaf;, &mu;&alpha;&sigmaf; &delta;ί&nu;&epsilon;&iota; &mu;&iota;&alpha; ώ&theta;&eta;&sigma;&eta; &gamma;&iota;&alpha; &nu;&alpha; &alpha;&nu;&alpha;&pi;&tau;&upsilon;&sigma;&sigma;ό&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&pi;ό &kappa;&omicron;&iota;&nu;&omicron;ύ. &Gamma;&iota;&rsquo; &alpha;&upsilon;&tau;ό, &tau;&omicron; &tau;&rho;ί&pi;&tau;&upsilon;&chi;&omicron; &laquo;&Alpha;&phi;&omicron;&upsilon;&gamma;&kappa;&rho;&alpha;&zeta;ό&mu;&alpha;&sigma;&tau;&epsilon;, &Alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;&iota;&nu;ό&mu;&alpha;&sigma;&tau;&epsilon;, &Alpha;&nu;&alpha;&pi;&tau;&upsilon;&sigma;&sigma;ό&mu;&alpha;&sigma;&tau;&epsilon;&raquo; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;ί &tau;&omicron;&nu; &omicron;&delta;&eta;&gamma;ό &mu;&alpha;&sigmaf; &sigma;&tau;&eta;&nu; &upsilon;&lambda;&omicron;&pi;&omicron;ί&eta;&sigma;&eta; &kappa;ά&theta;&epsilon; &epsilon;&kappa;&pi;&alpha;&iota;&delta;&epsilon;&upsilon;&tau;&iota;&kappa;ή&sigmaf; &pi;&rho;&omega;&tau;&omicron;&beta;&omicron;&upsilon;&lambda;ί&alpha;&sigmaf;.<br />
+        <br />
+        &Phi;&rho;&omicron;&nu;&tau;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &omicron;&iota; &delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf; &pi;&omicron;&upsilon; &sigma;&chi;&epsilon;&delta;&iota;ά&zeta;&omicron;&upsilon;&mu;&epsilon; &nu;&alpha; &alpha;&nu;&tau;&alpha;&pi;&omicron;&kappa;&rho;ί&nu;&omicron;&nu;&tau;&alpha;&iota; &sigma;&tau;&alpha; &sigma;ύ&gamma;&chi;&rho;&omicron;&nu;&alpha; &pi;&rho;ό&tau;&upsilon;&pi;&alpha;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &nu;&alpha; &epsilon;&xi;&alpha;&sigma;&phi;&alpha;&lambda;ί&zeta;&omicron;&upsilon;&nu; &tau;&eta; &sigma;&upsilon;&nu;&epsilon;&chi;ό&mu;&epsilon;&nu;&eta; &kappa;&alpha;&iota; &pi;&omicron;&iota;&omicron;&tau;&iota;&kappa;ή &epsilon;&kappa;&pi;&alpha;ί&delta;&epsilon;&upsilon;&sigma;&eta; &tau;&omega;&nu; &alpha;&nu;&theta;&rho;ώ&pi;&omega;&nu; &mu;&alpha;&sigmaf;. &Omicron;&iota; &Alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;&omicron;ί &Delta;&iota;&alpha;&mu;&epsilon;&sigma;&omicron;&lambda;&alpha;&beta;&eta;&tau;έ&sigmaf; &mu;&alpha;&sigmaf; &phi;&rho;&omicron;&nu;&tau;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &lambda;&omicron;&iota;&pi;ό&nu; &nu;&alpha; έ&chi;&omicron;&upsilon;&nu; &sigma;&tau;&alpha;&theta;&epsilon;&rho;ά &epsilon;&upsilon;&kappa;&alpha;&iota;&rho;ί&epsilon;&sigmaf; &kappa;&alpha;&iota; &gamma;&iota;&alpha; &pi;&rho;&omicron;&sigma;&omega;&pi;&iota;&kappa;ή &kappa;&alpha;&iota; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή &alpha;&nu;ά&pi;&tau;&upsilon;&xi;&eta;, &alpha;&lambda;&lambda;ά &kappa;&alpha;&iota; &gamma;&iota;&alpha; &beta;&epsilon;&lambda;&tau;&iota;&sigma;&tau;&omicron;&pi;&omicron;ί&eta;&sigma;&eta; &tau;&eta;&sigmaf; &pi;&omicron;&iota;ό&tau;&eta;&tau;&alpha;&sigmaf; &tau;&omega;&nu; &upsilon;&pi;&eta;&rho;&epsilon;&sigma;&iota;ώ&nu; &pi;&rho;&omicron;&sigmaf; &tau;&omicron;&upsilon;&sigmaf; &pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf;. </p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

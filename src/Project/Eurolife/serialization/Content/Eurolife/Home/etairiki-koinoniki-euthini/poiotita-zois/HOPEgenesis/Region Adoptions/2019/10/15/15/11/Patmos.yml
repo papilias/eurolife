@@ -17,7 +17,7 @@ Languages:
     - ID: "06da1c6e-a118-40bc-9c2a-c951364f98f7"
       Hint: NewsDesktopImage
       Value: |
-        <image mediaid="{8D4FF1C4-77C6-42C4-9B3B-AA34EF7B7DE2}" />
+        <image mediaid="{5512087C-BEC2-45A8-BBF9-A8F6AAE8B118}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191015T151126Z
@@ -26,13 +26,11 @@ Languages:
       Value: Πάτμος
     - ID: "4f14c1c9-29a8-4039-be45-351a340c4d54"
       Hint: NewsBody
-      Value: |
-        <strong> </strong>
-        <p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left;"><span style="color: black;">&Pi;&rho;ώ&tau;&omicron;&sigmaf; &kappa;&omicron;&iota;&nu;ό&sigmaf; &mu;&alpha;&sigmaf; &pi;&rho;&omicron;&omicron;&rho;&iota;&sigma;&mu;ό&sigmaf; &epsilon;ί&nu;&alpha;&iota; &eta; &Pi;ά&tau;&mu;&omicron;&sigmaf;. &Sigma;&tau;&eta;&rho;ί&zeta;&omicron;&upsilon;&mu;&epsilon; &tau;&iota;&sigmaf; &gamma;&upsilon;&nu;&alpha;ί&kappa;&epsilon;&sigmaf; &tau;&omicron;&upsilon; &nu;&eta;&sigma;&iota;&omicron;ύ &kappa;&alpha;&iota; &mu;&alpha;&zeta;ί &mu;&epsilon; &tau;&eta; </span><span style="color: black;">HOPEgenesis </span><span style="color: black;">&tau;&iota;&sigmaf; &phi;έ&rho;&nu;&omicron;&upsilon;&mu;&epsilon; &pi;&iota;&omicron; &kappa;&omicron;&nu;&tau;ά &sigma;&tau;&omicron; &nu;&alpha; &phi;&tau;&iota;ά&xi;&omicron;&upsilon;&nu; &tau;&eta; &delta;&iota;&kappa;ή &tau;&omicron;&upsilon;&sigmaf; &omicron;&iota;&kappa;&omicron;&gamma;έ&nu;&epsilon;&iota;&alpha;.</span></p>
+      Value: <strong> </strong>
     - ID: "554286b4-e1f0-49d5-a706-9739f30830bf"
       Hint: NewsSummary
       Value: |
-        Πρώτος κοινός μας προορισμός είναι η Πάτμος. Στηρίζουμε τις γυναίκες του νησιού και μαζί με τη HOPEgenesis τις φέρνουμε πιο κοντά στο να φτιάξουν τη δική τους οικογένεια.
+        Στηρίζουμε τις γυναίκες του νησιού και μαζί με τη HOPEgenesis τις φέρνουμε πιο κοντά στο να φτιάξουν τη δική τους οικογένεια.
         
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
@@ -45,7 +43,7 @@ Languages:
     - ID: "cc55c7f7-8274-465b-8a77-d65b2153bb00"
       Hint: NewsMobileImage
       Value: |
-        <image mediaid="{CF842D0B-DEB8-4AFB-A98D-74CD5BCE9F66}" />
+        <image mediaid="{1D9D3E29-4586-49B1-B28B-0C161D0543A4}" />
     - ID: "cd562337-58d1-4ac7-ae9c-cac9839368d3"
       Hint: NewsTitle
       Value: Πάτμος

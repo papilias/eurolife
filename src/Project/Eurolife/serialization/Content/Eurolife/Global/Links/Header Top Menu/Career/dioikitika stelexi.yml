@@ -4,6 +4,10 @@ Parent: "b556bf20-61fd-46cd-a20a-652bb0b9e514"
 Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
 Path: /sitecore/content/Eurolife/Global/Links/Header Top Menu/Career/dioikitika stelexi
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
 Languages:
 - Language: "el-GR"
   Versions:

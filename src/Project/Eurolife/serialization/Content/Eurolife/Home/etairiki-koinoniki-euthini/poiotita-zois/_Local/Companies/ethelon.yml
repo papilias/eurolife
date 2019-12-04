@@ -14,7 +14,7 @@ Languages:
       Value: &Eta; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&alpha;&sigmaf; &mu;&epsilon; &tau;&eta;&nu; ethelon έ&chi;&epsilon;&iota; &omega;&sigmaf; &sigma;&kappa;&omicron;&pi;ό &nu;&alpha; &beta;&epsilon;&lambda;&tau;&iota;ώ&sigma;&epsilon;&iota; &tau;&eta;&nu; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;ό&tau;&eta;&tau;&alpha; &gamma;&iota;&alpha; &tau;&omicron;&upsilon;&sigmaf; &sigma;&upsilon;&nu;&alpha;&nu;&theta;&rho;ώ&pi;&omicron;&upsilon;&sigmaf; &mu;&alpha;&sigmaf; &pi;&omicron;&upsilon; &zeta;&omicron;&upsilon;&nu; &kappa;ά&tau;&omega; &alpha;&pi;ό &delta;ύ&sigma;&kappa;&omicron;&lambda;&epsilon;&sigmaf; &sigma;&upsilon;&nu;&theta;ή&kappa;&epsilon;&sigmaf;.
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
-      Value: 
+      Value: ethelon
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191006T155549Z
@@ -29,4 +29,4 @@ Languages:
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediaid="{71B327C6-0238-401C-8445-B1C1BC3E46AD}" />
+        <image mediaid="{027BEEC0-446A-45FD-8F7D-100552BB1B83}" />

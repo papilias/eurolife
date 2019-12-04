@@ -39,18 +39,13 @@ namespace Wedia.Feature.News.Repositories
     {
       var pageNumber = page == null ? 0 : page < 0 ? 0 : page.Value;
 
-      var searchQuery = new SearchQuery
-      {
-        QueryText = "*",
-        Page = pageNumber,
-        NoOfResults = pagingSettings.ResultsOnPage
-      };
-
-      var searchService = _searchServiceRepository.Get(_searchBaseSettings);
-
+      var searchService = _searchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.NewsArticle.ID } });
       searchService.Settings.Root = contextItem;
 
-      var results = searchService.Search(searchQuery);
+      var results = searchService.FindAll(pageNumber * pagingSettings.ResultsOnPage, 
+        pagingSettings.ResultsOnPage,
+        Templates.NewsArticle.Fields.Date_FieldName,
+        true);       
 
       return new NewsPageResults
       {

@@ -23,7 +23,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{23D1A551-1B35-4933-B5D6-F431B1F8C387}" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{0C1844CF-7006-418E-8A41-F8BED0E40B55}" />
     - ID: "b8c12c18-dcef-4edf-a030-50a4a55bedac"
       Hint: DividerBefore
       Type: Checkbox
@@ -34,4 +34,4 @@ Languages:
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Μεσσαίες και Μεγάλες Επιχειρήσεις
+      Value: Μεσαίες και Μεγάλες Επιχειρήσεις

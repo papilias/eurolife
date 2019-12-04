@@ -14,7 +14,7 @@ Languages:
       Value: &Mu;&alpha;&zeta;ί &mu;&epsilon; &tau;&eta; HOPEgenesis &alpha;&nu;&alpha;&pi;&tau;ύ&sigma;&sigma;&omicron;&upsilon;&mu;&epsilon; &delta;&rho;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; &pi;&rho;&omega;&tau;&omicron;&beta;&omicron;&upsilon;&lambda;ί&epsilon;&sigmaf; &pi;&omicron;&upsilon; έ&chi;&omicron;&upsilon;&nu; &sigma;&tau;ό&chi;&omicron; &nu;&alpha; &alpha;&nu;&alpha;&tau;&rho;έ&psi;&omicron;&upsilon;&nu; &tau;&eta;&nu; &upsilon;&pi;&omicron;&gamma;&epsilon;&nu;&nu;&eta;&tau;&iota;&kappa;ό&tau;&eta;&tau;&alpha; &sigma;&tau;&eta;&nu; &Epsilon;&lambda;&lambda;ά&delta;&alpha;
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
-      Value: 
+      Value: HOPEgenesis
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190806T123848Z
@@ -29,7 +29,7 @@ Languages:
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediaid="{6D5E70B6-1B5F-475E-B169-AD743AF649F1}"></image>
+        <image mediaid="{33AC9157-59FB-4D09-8E58-EF5FA1B37682}"></image>
 - Language: en
   Versions:
   - Version: 1

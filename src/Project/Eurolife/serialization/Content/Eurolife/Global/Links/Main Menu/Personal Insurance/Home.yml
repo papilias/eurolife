@@ -61,7 +61,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link id="{5F1D3D87-C473-4CF0-86D1-1093CC0BC48A}" querystring="" linktype="internal" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/Life" title="" class="" target="" />
+        <link id="{5F1D3D87-C473-4CF0-86D1-1093CC0BC48A}" querystring="" target="" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/zoi" title="" class="" linktype="internal" />
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Σπίτι

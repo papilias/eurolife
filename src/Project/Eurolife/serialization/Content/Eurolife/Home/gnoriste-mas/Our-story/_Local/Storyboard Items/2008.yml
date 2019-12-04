@@ -2,12 +2,12 @@
 ID: "3950f143-8ee5-4605-8fb1-f50bd2782d04"
 Parent: "a2bb8e7b-3841-49b7-b028-29a09d6ddcd9"
 Template: "537eda0b-cad9-414a-a01f-33356d9305ab"
-Path: "/sitecore/content/Eurolife/Home/gnoriste-mas/Our-story/_Local/Storyboard Items/2008"
+Path: "/sitecore/content/Eurolife/Home/gnoriste-mas/our-story/_Local/Storyboard Items/2008"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 50
+  Value: 550
 Languages:
 - Language: "el-GR"
   Versions:

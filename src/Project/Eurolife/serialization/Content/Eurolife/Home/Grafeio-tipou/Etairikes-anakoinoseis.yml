@@ -12,6 +12,22 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 300
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1"
+      s:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{B7BDC9A4-96A5-4E86-B2DF-FAA89027DB4C}"
+          p:after="*[1=2]"
+          s:id="{95CB3818-2155-4219-8AAB-8EC3FD11012D}"
+          s:ph="page-layout" />
+      </d>
+    </r>
 Languages:
 - Language: "el-GR"
   Versions:

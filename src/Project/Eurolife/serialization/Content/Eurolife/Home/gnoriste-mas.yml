@@ -25,19 +25,19 @@ Languages:
             <r
               uid="{D6784CDF-8695-4305-A42D-074386ADB3B2}"
               p:before="*"
-              s:ds="{343A2D4A-4747-4663-807C-3C1B1EAA2DBE}"
+              s:ds="{48710033-67A3-4E8F-AA5B-ECAA55A57F5C}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-3-{B3068BD4-C611-4511-8EFB-BA7313635478}-0" />
             <r
               uid="{CD82854A-4429-47D7-B26B-174E2E8E8834}"
               p:after="r[@uid='{D6784CDF-8695-4305-A42D-074386ADB3B2}']"
-              s:ds="{4C5D54A1-C8F5-46D0-A1EF-8887549BFE88}"
+              s:ds="{BAB8BA3E-34AC-4683-BC8A-72B50B7309AA}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-2-{B3068BD4-C611-4511-8EFB-BA7313635478}-0" />
             <r
               uid="{42DE09BE-29CE-4324-8F0D-377CD89BB368}"
               p:after="r[@uid='{CD82854A-4429-47D7-B26B-174E2E8E8834}']"
-              s:ds="{56095E87-0F2C-4A6A-8CCD-7552918C4861}"
+              s:ds="{E2EE10E9-3F73-403D-BBE3-488687C2D508}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-1-{B3068BD4-C611-4511-8EFB-BA7313635478}-0" />
             <r
@@ -63,14 +63,21 @@ Languages:
             <r
               uid="{B3068BD4-C611-4511-8EFB-BA7313635478}"
               p:after="r[@uid='{267A75C4-ECE9-407A-B0EC-FA8A0D876E5B}']"
-              s:ds="{65F11D60-4B69-4500-B758-FE8BA8074D33}"
+              s:ds="{1D4BBD79-49C6-4B36-8941-67282B6CCFDD}"
               s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
+              s:ph="page-layout" />
+            <r
+              uid="{20111FD2-0DBF-4553-9B16-3C6FBB03BCBD}"
+              p:after="r[@uid='{B3068BD4-C611-4511-8EFB-BA7313635478}']"
+              s:ds="{B741E45B-2E50-48CA-8A09-A142A86A6600}"
+              s:id="{7F610AEE-95C2-4814-9E1D-1E619ABCDE99}"
+              s:par="Alignment=%7B1168A85D-15F2-4335-8D86-CED079708B5A%7D&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor"
               s:ph="page-layout" />
           </d>
         </r>
     - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
       Hint: PreTitle
-      Value: ΓΝΩΡΙΣΤΕ ΜΑΣ
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190723T090317Z
@@ -91,27 +98,25 @@ Languages:
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align:center;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Sigma;&epsilon; έ&nu;&alpha;&nu; &kappa;ό&sigma;&mu;&omicron; &pi;&omicron;&upsilon; &alpha;&lambda;&lambda;ά&zeta;&epsilon;&iota;, &mu;&epsilon;&tau;&alpha;&mu;&omicron;&rho;&phi;&omega;&nu;ό&mu;&alpha;&sigma;&tau;&epsilon; &kappa;&alpha;&iota; &epsilon;&mu;&epsilon;ί&sigmaf;, ώ&sigma;&tau;&epsilon; &nu;&alpha; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon; &kappa;ά&theta;&epsilon; &sigma;&tau;&iota;&gamma;&mu;ή &tau;&omicron;&nu; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&omicron; &epsilon;&alpha;&upsilon;&tau;ό &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &nu;&alpha; &epsilon;&mu;&pi;&nu;έ&omicron;&upsilon;&mu;&epsilon; &tau;&omicron;&upsilon;&sigmaf; &pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf;.</span></p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align:center;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Alpha;&upsilon;&tau;ό &mu;&alpha;&sigmaf; &kappa;ά&nu;&epsilon;&iota; &alpha;&kappa;ό&mu;&eta; &pi;&iota;&omicron; &delta;&upsilon;&nu;&alpha;&tau;&omicron;ύ&sigmaf; &kappa;&alpha;&iota; &sigma;ί&gamma;&omicron;&upsilon;&rho;&omicron;&upsilon;&sigmaf; &gamma;&iota;&alpha; &tau;&omicron; &alpha;ύ&rho;&iota;&omicron;.</span></p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align:center;">&nbsp;</p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align:center;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Pi;&rho;&omicron;&tau;&epsilon;&rho;&alpha;&iota;ό&tau;&eta;&tau;&alpha; &gamma;&iota;&alpha; ό&lambda;&omicron;&upsilon;&sigmaf; &epsilon;&mu;ά&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &delta;ί&pi;&lambda;&alpha; &sigma;&alpha;&sigmaf;, &sigma;&chi;&epsilon;&delta;&iota;ά&zeta;&omicron;&nu;&tau;&alpha;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ά &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &pi;&omicron;&upsilon; &alpha;&pi;&alpha;&nu;&tau;&omicron;ύ&nu; &sigma;&epsilon; &kappa;ά&theta;&epsilon; &sigma;&alpha;&sigmaf; &alpha;&nu;ά&gamma;&kappa;&eta;.&nbsp;</span></p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align:center;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Sigma;&alpha;&sigmaf; &epsilon;&nu;&delta;&upsilon;&nu;&alpha;&mu;ώ&nu;&omicron;&upsilon;&mu;&epsilon; &mu;&epsilon; &alpha;&upsilon;&tau;&omicron;&pi;&epsilon;&pi;&omicron;ί&theta;&eta;&sigma;&eta;, &alpha;&iota;&sigma;&iota;&omicron;&delta;&omicron;&xi;ί&alpha; &kappa;&alpha;&iota; &epsilon;&upsilon;&epsilon;&lambda;&iota;&xi;ί&alpha;, ώ&sigma;&tau;&epsilon; &nu;&alpha; &mu;&pi;&omicron;&rho;&epsilon;ί&tau;&epsilon; &nu;&alpha; &alpha;&pi;&omicron;&lambda;&alpha;&mu;&beta;ά&nu;&epsilon;&tau;&epsilon; ό,&tau;&iota; έ&chi;&epsilon;&iota; &sigma;&eta;&mu;&alpha;&sigma;ί&alpha; &kappa;&alpha;&iota; &alpha;&xi;ί&alpha; &sigma;&tau;&eta; &zeta;&omega;ή &sigma;&alpha;&sigmaf;.&nbsp;</span></p>
-        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt; text-align:center;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Kappa;&alpha;&tau;&alpha;&nu;&omicron;&omicron;ύ&mu;&epsilon; ό&lambda;&omicron;&upsilon;&sigmaf; &epsilon;&sigma;ά&sigmaf; &pi;&omicron;&upsilon; &theta;έ&lambda;&epsilon;&tau;&epsilon; &nu;&alpha; &omicron;&rho;ί&zeta;&epsilon;&tau;&epsilon; &omicron;&iota; ί&delta;&iota;&omicron;&iota; &tau;&eta;&nu; &kappa;ά&theta;&epsilon; &eta;&mu;έ&rho;&alpha; &kappa;&alpha;&iota; &epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&iota;&sigma;&iota;ό&delta;&omicron;&xi;&omicron;&iota; &gamma;&iota;&alpha; ό&lambda;&alpha; &alpha;&upsilon;&tau;ά &pi;&omicron;&upsilon; &mu;&pi;&omicron;&rho;&epsilon;ί&tau;&epsilon; &nu;&alpha; &kappa;&alpha;&tau;&alpha;&phi;έ&rho;&epsilon;&tau;&epsilon;.</span></p>
-        <p><strong id="docs-internal-guid-3a4fe998-7fff-6014-088f-1ada12023084"></strong><br class="Apple-interchange-newline" />
-        </p>
+        <p>&Sigma;&epsilon; έ&nu;&alpha;&nu; &kappa;ό&sigma;&mu;&omicron; &pi;&omicron;&upsilon; &alpha;&lambda;&lambda;ά&zeta;&epsilon;&iota;, &mu;&epsilon;&tau;&alpha;&mu;&omicron;&rho;&phi;&omega;&nu;ό&mu;&alpha;&sigma;&tau;&epsilon; &kappa;&alpha;&iota; &epsilon;&mu;&epsilon;ί&sigmaf;, ώ&sigma;&tau;&epsilon; &nu;&alpha; &pi;&rho;&omicron;&sigma;&phi;έ&rho;&omicron;&upsilon;&mu;&epsilon; &kappa;ά&theta;&epsilon; &sigma;&tau;&iota;&gamma;&mu;ή &tau;&omicron;&nu; &kappa;&alpha;&lambda;ύ&tau;&epsilon;&rho;&omicron; &epsilon;&alpha;&upsilon;&tau;ό &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &nu;&alpha; &epsilon;&mu;&pi;&nu;έ&omicron;&upsilon;&mu;&epsilon; &tau;&omicron;&upsilon;&sigmaf; &pi;&epsilon;&lambda;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf; &kappa;&alpha;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf;. &Alpha;&upsilon;&tau;ό &mu;&alpha;&sigmaf; &kappa;ά&nu;&epsilon;&iota; &alpha;&kappa;ό&mu;&eta; &pi;&iota;&omicron; &delta;&upsilon;&nu;&alpha;&tau;&omicron;ύ&sigmaf; &kappa;&alpha;&iota; &sigma;ί&gamma;&omicron;&upsilon;&rho;&omicron;&upsilon;&sigmaf; &gamma;&iota;&alpha; &tau;&omicron; &alpha;ύ&rho;&iota;&omicron;. </p>
+        <p>&Pi;&rho;&omicron;&tau;&epsilon;&rho;&alpha;&iota;ό&tau;&eta;&tau;&alpha; &gamma;&iota;&alpha; ό&lambda;&omicron;&upsilon;&sigmaf; &epsilon;&mu;ά&sigmaf; &epsilon;ί&nu;&alpha;&iota; &nu;&alpha; &epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &delta;ί&pi;&lambda;&alpha; &sigma;&alpha;&sigmaf;, &sigma;&chi;&epsilon;&delta;&iota;ά&zeta;&omicron;&nu;&tau;&alpha;&sigmaf; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ά &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &pi;&omicron;&upsilon; &alpha;&pi;&alpha;&nu;&tau;&omicron;ύ&nu; &sigma;&epsilon; &kappa;ά&theta;&epsilon; &sigma;&alpha;&sigmaf; &alpha;&nu;ά&gamma;&kappa;&eta;. </p>
+        <p>&Sigma;&alpha;&sigmaf; &epsilon;&nu;&delta;&upsilon;&nu;&alpha;&mu;ώ&nu;&omicron;&upsilon;&mu;&epsilon; &mu;&epsilon; &alpha;&upsilon;&tau;&omicron;&pi;&epsilon;&pi;&omicron;ί&theta;&eta;&sigma;&eta;, &alpha;&iota;&sigma;&iota;&omicron;&delta;&omicron;&xi;ί&alpha; &kappa;&alpha;&iota; &epsilon;&upsilon;&epsilon;&lambda;&iota;&xi;ί&alpha;, ώ&sigma;&tau;&epsilon; &nu;&alpha; &mu;&pi;&omicron;&rho;&epsilon;ί&tau;&epsilon; &nu;&alpha; &alpha;&pi;&omicron;&lambda;&alpha;&mu;&beta;ά&nu;&epsilon;&tau;&epsilon; ό,&tau;&iota; έ&chi;&epsilon;&iota; &sigma;&eta;&mu;&alpha;&sigma;ί&alpha; &kappa;&alpha;&iota; &alpha;&xi;ί&alpha; &sigma;&tau;&eta; &zeta;&omega;ή &sigma;&alpha;&sigmaf;. </p>
+        <p>&Kappa;&alpha;&tau;&alpha;&nu;&omicron;&omicron;ύ&mu;&epsilon; ό&lambda;&omicron;&upsilon;&sigmaf; &epsilon;&sigma;ά&sigmaf; &pi;&omicron;&upsilon; &theta;έ&lambda;&epsilon;&tau;&epsilon; &nu;&alpha; &omicron;&rho;ί&zeta;&epsilon;&tau;&epsilon; &omicron;&iota; ί&delta;&iota;&omicron;&iota; &tau;&eta;&nu; &kappa;ά&theta;&epsilon; &eta;&mu;έ&rho;&alpha; &kappa;&alpha;&iota; &epsilon;ί&mu;&alpha;&sigma;&tau;&epsilon; &alpha;&iota;&sigma;&iota;ό&delta;&omicron;&xi;&omicron;&iota; &gamma;&iota;&alpha; ό&lambda;&alpha; &alpha;&upsilon;&tau;ά &pi;&omicron;&upsilon; &mu;&pi;&omicron;&rho;&epsilon;ί&tau;&epsilon; &nu;&alpha; &kappa;&alpha;&tau;&alpha;&phi;έ&rho;&epsilon;&tau;&epsilon;. </p>
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: |
-        Υποστηρίζουμε εσάς 
-        που θέλετε να διεκδικείτε περισσότερα, κάθε ημέρα.
+      Value: Υποστηρίζουμε εσάς που θέλετε να διεκδικείτε περισσότερα, κάθε ημέρα.
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{DDD7C7C6-A602-43DE-B832-23331C9DE002}" />
+        <image mediaid="{845EE0B0-3983-4DF6-9600-F64E20641A2B}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

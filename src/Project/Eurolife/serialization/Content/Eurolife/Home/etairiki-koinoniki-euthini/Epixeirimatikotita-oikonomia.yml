@@ -80,8 +80,7 @@ Languages:
       Value: Επιχειρηματικότητα και Οικονομία
     - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
       Hint: MobileImage
-      Value: |
-        <image mediaid="{0CF2F912-F6E9-4FD8-9A83-7BB8825B538E}" />
+      Value: 
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
@@ -109,7 +108,7 @@ Languages:
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{7E8C572E-93E2-4635-A73D-362A932D2E94}" />
+        <image mediaid="{7ABCF259-9B26-4EBA-96BE-BAE9CA39BA3A}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

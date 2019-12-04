@@ -55,7 +55,7 @@ Languages:
       Value: Φόρμα Επικοινωνίας
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
-      Value: <strong>&Epsilon;ά&nu; &delta;&epsilon;&nu; &epsilon;ί&sigma;&tau;&epsilon; &pi;&epsilon;&lambda;ά&tau;&eta;&sigmaf; &sigma;&upsilon;&mu;&pi;&lambda;&eta;&rho;ώ&sigma;&tau;&epsilon; &tau;&eta; &phi;ό&rho;&mu;&alpha; &pi;&omicron;&upsilon; &alpha;&kappa;&omicron;&lambda;&omicron;&upsilon;&theta;&epsilon;ί &sigma;&eta;&mu;&epsilon;&iota;ώ&nu;&omicron;&nu;&tau;&alpha;&sigmaf; &tau;&omicron; &theta;έ&mu;&alpha; &kappa;&alpha;&iota; &tau;&omicron; &sigma;&chi;ό&lambda;&iota;ό &sigma;&alpha;&sigmaf; &kappa;&alpha;&iota; &theta;&alpha; έ&rho;&theta;&omicron;&upsilon;&mu;&epsilon; &sigma;ύ&nu;&tau;&omicron;&mu;&alpha; &sigma;&epsilon; &epsilon;&pi;&alpha;&phi;ή</strong>
+      Value: 
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -66,7 +66,7 @@ Languages:
       Value: 1
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Είμαστε πάντα πρόθυμοι να λάβουμε το αίτημά σας.
+      Value: Είμαστε πάντα πρόθυμοι να λάβουμε το αίτημά σας. Εάν δεν είστε πελάτης συμπληρώστε τη φόρμα που ακολουθεί σημειώνοντας το θέμα και το σχόλιό σας και θα έρθουμε σύντομα σε επαφή
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

@@ -1,9 +1,13 @@
 ﻿---
-ID: "78ffbd83-e189-4c06-8938-a48a146b29dd"
+ID: "fe6d3056-439d-4e89-acbd-342dd2fe8759"
 Parent: "cd586cc0-02f0-49e5-b173-b26c9e691573"
 Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
 Path: /sitecore/content/Eurolife/Global/Links/Footer Menu/Social/Twitter
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
 Languages:
 - Language: "el-GR"
   Versions:
@@ -19,7 +23,7 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link linktype="internal" />
+        <link linktype="external" url="https://twitter.com/eurolife_erb" anchor="" target="" />
     - ID: "d7bd8d43-de42-4bde-8e7e-ddfce607a9c6"
       Hint: Class
       Value: footer__social__tw

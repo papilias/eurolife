@@ -19,9 +19,7 @@ Languages:
     - ID: "92184ee7-4ee4-466b-85bc-ad334bb2beee"
       Hint: MediaFiles
       Type: Multilist with Search
-      Value: |
-        {17002CD1-743B-4749-83D5-203F620A4565}
-        {E2FE7BD8-35EC-466A-BB17-7B619C61B3DC}
+      Value: "{03B06CE1-7D92-42E7-980F-925EF5CCFE64}"
     - ID: "ff6fc789-f1f2-495e-8a94-efcbc528e1c6"
       Hint: MediaGroupTitle
       Value: Κατεβάστε τις έρευνες

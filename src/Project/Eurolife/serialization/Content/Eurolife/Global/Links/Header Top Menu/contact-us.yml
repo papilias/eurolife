@@ -19,7 +19,7 @@ Languages:
     - ID: "3b4322c4-9d93-498d-85cf-c29921147099"
       Hint: ShowChildren
       Type: Checkbox
-      Value: 1
+      Value: 0
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -34,4 +34,4 @@ Languages:
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Προτεραιότητα στην εξυπηρέτηση
+      Value: Εξυπηρέτηση

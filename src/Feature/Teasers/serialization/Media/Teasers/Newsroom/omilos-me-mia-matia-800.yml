@@ -1,0 +1,50 @@
+﻿---
+ID: "b9c1cd59-0fff-40bb-a786-e8b7fca1ced9"
+Parent: "32de4919-b3ca-4cf8-99f5-e8456795d100"
+Template: "daf085e8-602e-43a6-8299-038ff171349f"
+Path: "/sitecore/media library/Feature/Teasers/Newsroom/omilos-me-mia-matia-800"
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/B9C1CD590FFF40BBA786E8B7FCA1CED9.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 600
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "cc0d7336-40c1-427a-b523-f17e6989796e"
+  Value: 
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 423969
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/jpeg
+- ID: "90a6fe48-f3e0-42f3-a18a-edaa7db9ca57"
+  Hint: DateTime
+  Value: "2019-11-21T09:04:16+02:00"
+- ID: "b0145335-8735-414b-9169-a1d4e4dc9641"
+  Hint: Software
+  Value: Adobe Photoshop CC 2019 (Macintosh)
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: jpg
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 600 x 800
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 800
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191121T121642Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

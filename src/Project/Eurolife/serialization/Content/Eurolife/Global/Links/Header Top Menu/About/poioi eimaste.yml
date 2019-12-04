@@ -20,10 +20,14 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
+      Hint: Link
+      Value: |
+        <link id="{EC2AF234-49A5-48A1-87CE-7A660C5F4B18}" querystring="" target="" text="" anchor="" title="" class="" url="/Eurolife/Home/gnoriste-mas/poioi-eimaste" linktype="internal" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
-      Value: 0
+      Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: abou
+      Value: Ποιοι είμαστε

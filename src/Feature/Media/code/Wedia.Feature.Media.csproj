@@ -80,6 +80,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Feature.Media.Serialization.config" />
     <Content Include="Scripts\Media\media.js" />
+    <Content Include="Scripts\Media\pricingDocs.js" />
     <Content Include="Views\MediaFeature\MediaFileToolkitAccordion.cshtml" />
     <Content Include="Views\MediaFeature\MediaFileFoldersGroupedList.cshtml" />
     <Content Include="Views\MediaFeature\MediaCarousel.cshtml" />
@@ -90,6 +91,7 @@
     <Content Include="Views\MediaFeature\MediaFileGroup.cshtml" />
     <Content Include="Views\MediaFeature\MediaFeaturedFiles.cshtml" />
     <Content Include="Views\MediaFeature\MediaFancyBox.cshtml" />
+    <Content Include="Views\MediaFeature\MediaPricingDocs.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

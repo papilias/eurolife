@@ -27,6 +27,22 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{FF420249-13FD-46FF-B285-3EF8A125E968}"
+              s:ds=""
+              s:par="Background" />
+            <r
+              uid="{C06279F6-5D16-48D0-A037-08B342451BA0}"
+              p:after="r[@uid='{FF420249-13FD-46FF-B285-3EF8A125E968}']"
+              s:ds="{16479D57-6CC6-4382-BC51-F7934BF2ABA0}"
+              s:id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
+              s:ph="page-layout" />
+            <r
+              uid="{4AE99A1B-6728-41F2-8826-A80AFC112AFF}"
+              p:after="r[@uid='{6BAA0C24-D58B-46CA-84DD-B8603EC2411B}']"
+              s:ds="{16479D57-6CC6-4382-BC51-F7934BF2ABA0}"
+              s:id="{32F9A214-369B-44EC-B30F-09BBA8BA8058}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
               uid="{FC515B31-6D97-431D-8EDE-E43C9950A390}"
               s:ds="{827CC9F0-7875-4F82-9386-300DBA5BEA5F}"
               s:par="" />
@@ -53,6 +69,9 @@ Languages:
       Hint: CanIndex
       Type: Checkbox
       Value: 1
+    - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
+      Hint: Summary
+      Value: 
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
