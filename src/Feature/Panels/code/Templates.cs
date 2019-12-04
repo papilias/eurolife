@@ -43,7 +43,7 @@ namespace Wedia.Feature.Panels
         public static readonly ID Title = new ID("{1EF9B331-607C-48D3-BC12-C8B2D7CA1E40}");
         public static readonly ID Rows = new ID("{0FEDEF40-1ED0-422A-AEFB-B9ED2277043C}");
         public static readonly ID IsCheckbox = new ID("{1543892B-A690-4E90-A05F-C496FEE76C18}");
-        public static readonly ID PanelRowTooltip = new ID("{46A86135-502B-4015-82FB-A4D54AB61719}");
+        public static readonly ID PanelRowTooltip = new ID("{F2D1C581-2352-4F2F-B79D-A339C237AC87}");
       }
     }
 

@@ -23,3 +23,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "f2d1c581-2352-4f2f-b79d-a339c237ac87"
+      Hint: PanelRowTooltip
+      Value: τεστ

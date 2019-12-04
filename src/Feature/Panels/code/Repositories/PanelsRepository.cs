@@ -79,6 +79,7 @@ namespace Wedia.Feature.Panels.Repositories
         ID = item.ID,
         Title = item[Templates.PanelRow.Fields.Title],
         IsCheckbox = item[Templates.PanelRow.Fields.IsCheckbox],
+        PanelRowTooltip = item[Templates.PanelRow.Fields.PanelRowTooltip],
         Props = GetItemRowsFromChildren(item)
       };
     }
