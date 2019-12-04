@@ -48,7 +48,7 @@
   flex-basis: 100%;
   margin: 24px 0 0 0;
 
-  @include breakpoint(700) {
+  @include breakpoint(820) {
     flex-basis: 51%;
     margin: 0 3% 0 3%;
   }
@@ -115,7 +115,7 @@
   line-height: 1.7;
 }
 
-@include breakpoint-rev(1140){
+@include breakpoint-rev(820){
   .zigzag--light{
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +138,7 @@
 }
 
 
-@include breakpoint-rev(700) {
+@include breakpoint-rev(820) {
   .zigzag--light{
     .zigzag__item{
       flex-basis: 100%;
