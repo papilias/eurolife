@@ -31,7 +31,7 @@
 
   img {
     @include breakpoint(820) {
-      height: 600px;
+      height: 500px;
       width: auto;
       max-width: none;
     }

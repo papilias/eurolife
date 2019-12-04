@@ -29,8 +29,6 @@
           const scrolled = $(window).scrollTop();
           const windowHeight = $(window).height();
           const btt = $('#back-to-top');
-          const programTop = $('.program-grid').parent().offset().top;
-          const programBottom = $('.program-grid').parent().offset().top + $('.program-grid').parent().height();
 
           //SCROLL TO TOP
           if (scrolled > windowHeight)
@@ -39,10 +37,15 @@
             $(btt).removeClass('active');
 
           //PROGRAM CONTROLS FIXED
-          if (scrolled + windowHeight > programTop && scrolled + windowHeight < programBottom)
-            $('.program-controls').addClass('fixit');
-          else
-            $('.program-controls').removeClass('fixit');
+          if ($('.programs')) {
+            const programTop = $('.program-grid').parent().offset().top;
+            const programBottom = $('.program-grid').parent().offset().top + $('.program-grid').parent().height();
+
+            if (scrolled + windowHeight > programTop && scrolled + windowHeight < programBottom)
+              $('.program-controls').addClass('fixit');
+            else
+              $('.program-controls').removeClass('fixit');
+          }
         });
 
         $('#back-to-top').on('click', () => {
