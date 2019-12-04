@@ -13,6 +13,10 @@ namespace Wedia.Feature.Panels.Models
     public ID ID { get; set; }
     [JsonProperty("title")]
     public string Title { get; set; }
+
+    [JsonProperty("panelrowtooltip")]
+    public string PanelRowTooltip { get; set; }
+
     [JsonProperty("isCheckbox")]
     public string IsCheckbox { get; set; }
     [JsonProperty("props")]

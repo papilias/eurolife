@@ -302,7 +302,8 @@ section.programs{
 
   .grid-table-cell {
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 40px;
+    position: relative;
     align-items: center;
 
     @include breakpoint(540) {
@@ -494,6 +495,12 @@ section.programs{
   .nav-product {
     background-color: $color-health;
   }
+
+  .contentgroup__tick {
+    li:before {
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23ff303d' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+    }
+  }
 }
 
 .theme-motor {
@@ -580,6 +587,12 @@ section.programs{
   .nav-product {
     background-color: $color-home;
   }
+
+  .contentgroup__tick {
+    li:before {
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23ffb100' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+    }
+  }
 }
 
 .theme-life {
@@ -658,7 +671,19 @@ section.programs{
     display: none;
   }
 
-  + section{
+  &.fixit {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 70px;
+    padding: 16px 0 0;
+    background: white;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  + section {
     margin-top: 112px;
     padding-top: 0;
     margin-bottom: 112px;
@@ -697,8 +722,8 @@ section.programs{
     max-height: 35px;
     display: block;
 
-    &.hidden{
-      display:none;
+    &.hidden {
+      display: none;
     }
 
     @include breakpoint(540) {
@@ -1217,8 +1242,34 @@ main {
   }
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s opacity ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &:after {
+    transform: scale(0.6);
+    content: url('../images/icons/back-to-top.png');
+  }
+}
+
 .theme-default {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-health;
 
     path {
@@ -1233,11 +1284,15 @@ main {
   h2.colored {
     color: $color-health;
   }
+
+  #back-to-top {
+    background-color: $color-health;
+  }
 }
 
 
 .theme-health {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-health;
 
     path {
@@ -1258,10 +1313,14 @@ main {
       color: $color-health;
     }
   }
+
+  #back-to-top {
+    background-color: $color-health;
+  }
 }
 
 .theme-home {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-home;
 
     path {
@@ -1282,10 +1341,14 @@ main {
       color: $color-home;
     }
   }
+
+  #back-to-top {
+    background-color: $color-home;
+  }
 }
 
 .theme-small-business {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-small-business;
 
     path {
@@ -1306,10 +1369,14 @@ main {
       color: $color-small-business;
     }
   }
+
+  #back-to-top {
+    background-color: $color-small-business;
+  }
 }
 
 .theme-non-category {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-non-category;
 
     path {
@@ -1330,10 +1397,14 @@ main {
       color: $color-non-category;
     }
   }
+
+  #back-to-top {
+    background-color: $color-non-category;
+  }
 }
 
 .theme-motor {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-motor;
 
     path {
@@ -1354,10 +1425,14 @@ main {
       color: $color-motor;
     }
   }
+
+  #back-to-top {
+    background-color: $color-motor;
+  }
 }
 
 .theme-life {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-life-insurance;
 
     path {
@@ -1378,10 +1453,14 @@ main {
       color: $color-life-insurance;
     }
   }
+
+  #back-to-top {
+    background-color: $color-life-insurance;
+  }
 }
 
 .theme-finance {
-  .access__label {
+  .access__label, .contentgroup__title {
     color: $color-finance;
 
     path {
@@ -1401,5 +1480,9 @@ main {
     &:hover {
       color: $color-finance;
     }
+  }
+
+  #back-to-top {
+    background-color: $color-finance;
   }
 }

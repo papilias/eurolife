@@ -251,6 +251,7 @@
     <Content Include="fonts\Ubuntu-Regular.woff2" />
     <Content Include="assets\styles\scss\base\_fixes.scss" />
     <Content Include="assets\styles\scss\base-components\news.scss" />
+    <Content Include="assets\styles\scss\base-components\404.scss" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="assets\styles\scss\base-components\_accordion.scss" />

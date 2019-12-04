@@ -23,8 +23,33 @@
         });
     }
 
-
     $(document).ready(function () {
+
+        $(window).on('scroll', () => {
+          const scrolled = $(window).scrollTop();
+          const windowHeight = $(window).height();
+          const btt = $('#back-to-top');
+          const programTop = $('.program-grid').parent().offset().top;
+          const programBottom = $('.program-grid').parent().offset().top + $('.program-grid').parent().height();
+
+          //SCROLL TO TOP
+          if (scrolled > windowHeight)
+            $(btt).addClass('active');
+          else
+            $(btt).removeClass('active');
+
+          //PROGRAM CONTROLS FIXED
+          if (scrolled + windowHeight > programTop && scrolled + windowHeight < programBottom)
+            $('.program-controls').addClass('fixit');
+          else
+            $('.program-controls').removeClass('fixit');
+        });
+
+        $('#back-to-top').on('click', () => {
+          $('html, body').animate({
+            scrollTop: 0
+          }, 250);
+        });
 
         //MUTE LINKS WITH "#" HREF ATTRIBUTE
         if ($(window).width() <= 768) {
@@ -300,13 +325,19 @@
     $(".program-controls__more").click(function () {
       const t = $(this);
 
-      if (!t.parent().prev().find('.program-expander').hasClass('program-expander--visible'))
+      if (!t.parent().prev().find('.program-expander').hasClass('program-expander--visible')) {
         t.text('Δείτε λιγότερα');
+        $(".program-controls").addClass('fixit');
+      }
       else {
         t.text('Δείτε περισσότερα');
-        $('html, body').animate({
-          scrollTop: $("section.programs").offset().top
-        }, 250);
+        $(".program-controls").removeClass('fixit');
+
+        setTimeout(() => {
+          $('html, body').animate({
+            scrollTop: $("section.programs").offset().top
+          }, 250);
+        }, 500);
       }
 
         t.parent().prev().find('.program-expander').toggleClass('program-expander--visible');
