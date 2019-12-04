@@ -203,30 +203,17 @@
   }
 }
 
-.leader__photo{
-  flex-basis:50%;
+.leader__photo {
+  flex-basis: 50%;
   text-align: right;
+  margin-bottom: 112px;
 
-  @include breakpoint(820) {
+  @include breakpoint-rev(820) {
+    padding-top: 30px;
+    padding-bottom: 64px;
+    position: relative;
 
     &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #e6ddca;
-      width: 200%;
-      height: 100%;
-      z-index: -1;
-      margin-left: -150%;
-    }
-  }
-  @include breakpoint-rev(820){
-      padding-top: 30px;
-      padding-bottom: 30px;
-      position: relative;
-      &:after {
       content: "";
       background: #e6ddca;
       display: block;
@@ -236,9 +223,9 @@
       right: -50%;
       height: 100%;
       z-index: -1;
+      margin-bottom: 48px;
     }
   }
-  
 }
 
 .leader__info{
@@ -246,6 +233,7 @@
   @include breakpoint(820){
     padding-left: 90px;
     padding-bottom:20px;
+    padding-top:80px;
     flex-basis:50%;
   }
 }
