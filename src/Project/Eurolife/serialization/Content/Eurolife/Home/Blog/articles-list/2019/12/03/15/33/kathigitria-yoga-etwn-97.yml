@@ -1,0 +1,56 @@
+﻿---
+ID: "44cb6bc1-f56d-4107-a4cd-2f14c6981e4c"
+Parent: "67aede9f-7906-405c-83b0-05cc7e07a0f0"
+Template: "67f40fef-b3c7-4366-b026-183e80dcf4e6"
+Path: "/sitecore/content/Eurolife/Home/Blog/articles-list/2019/12/03/15/33/kathigitria-yoga-etwn-97"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0fefbac0-a5dd-4075-ba0d-12318fb4df04"
+      Hint: Category
+      Value: Inspiration
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191203T153333Z
+    - ID: "51bfdc05-70e5-4c54-a6fc-b42418fc1e15"
+      Hint: Gallery
+      Value: |
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma2; 
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma3; 
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma4; 
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma6; 
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma9; 
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma8; 
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma5; 
+        /sitecore/media library/Images/AsMilisoume/yoga_grandma7
+    - ID: "751cc2e2-f3d2-4896-94b5-ed8174395942"
+      Hint: Main content
+      Value: |
+        <p>Έχει υπάρξει μοντέλο, χορεύτρια και ηθοποιός… όλα αυτά πριν τελειώσει ο Β’ Παγκόσμιος Πόλεμος. Είναι Γαλλο-Ινδή και έχει ζήσει στη Μ. Βρετανία και τις ΗΠΑ. Διδάσκει γιόγκα και διαλογισμό εδώ και 45 χρόνια. Έχει γράψει σενάρια, έχει γυρίσει ντοκιμαντέρ και είναι κριτής σε διαγωνισμούς κρασιού (το 1967 μάλιστα ίδρυσε την Αμερικανική Κοινότητα Κρασιού - <a href="http://www.americanwinesociety.org/" target="_blank">American Wine Society</a>). Η Tao Porchon-Lynch είναι η γιαγιά που όλοι θα θέλαμε να έχουμε!</p>Γεννήθηκε στις 13 Αυγούστου 1918 και το όνομά της υπάρχει στον κατάλογο των ρεκόρ Γκίνες στην κατηγορία «η γηραιότερη εκπαιδεύτρια γιόγκα στον κόσμο» από το 2012 -ήταν τότε 93 ετών.&nbsp;<p>Σήμερα, ακόμα πιο ώριμη αλλά καθόλου πιο γερασμένη, η Tao εξακολουθεί να διδάσκει γιόγκα, να χορεύει και να απολαμβάνει τη ζωή –άλλωστε, όπως αποκαλύπτει η ίδια αυτό είναι και το μυστικό της για υγεία και ευεξία μέχρι τα βαθιά γεράματα. Πέρσι, κυκλοφόρησε ένα DVD με μαθήματα γιόγκα και ένα βιβλίο για το διαλογισμό.&nbsp;</p>Σαν να μην έφταναν αυτά για να μας κάνουν να νιώσουμε απαίσια για ό,τι δεν έχουμε κάνει μέχρι τώρα στη ζωή μας, η Tao εξακολουθεί να κάνει πεζοπορία –αλλά αρνείται να απαρνηθεί ακόμα κι εκεί τα αγαπημένα της τακούνια!- και συμμετέχει σε διαγωνισμούς αγωνιστικού χορού, με έναν κατά 63 χρόνια νεότερό της καβαλιέρο!<p>Σύνθημά της «δεν υπάρχει τίποτα που δεν μπορείς να κάνεις»! Και η ίδια της η ζωή είναι η ατράνταχτη απόδειξη πως έχει δίκιο!</p><p>Δείτε το video που ετοίμασε το πρακτορείο Reuters για την Tao Porchon-Lynch, καθώς και τις φωτογραφίες στο gallery, και θα καταλάβετε γιατί όλοι μας μπορούμε να κάνουμε ό,τι ονειρευτήκαμε στη ζωή –αρκεί να αφιερωθούμε σ’ αυτό με όλη την καρδιά μας! Αυτή ή super γιαγιά, είναι η προσωποποίηση της θετικής ενέργειας!</p><iframe width="560" height="315" src="//www.youtube.com/embed/1n1GtOaL7XU" frameborder="0"></iframe>
+    - ID: "78f61174-f047-439d-8749-b2dc33207596"
+      Hint: Image
+      Value: /Images/AsMilisoume/yoga_grandma1
+    - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
+      Hint: Teaser
+      Value: "Κανείς δεν έχει πια δικαιολογία να λέει ότι είναι πολύ μεγάλος για να είναι δραστήριος!"
+    - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
+      Hint: Title
+      Value: "Καθηγήτρια γιόγκα ετών 97!"
+    - ID: "b0652e4d-8891-4586-8be2-a4e73cc2c615"
+      Hint: Tag
+      Value: |
+        /AsMilisoume/Tags/skeftomai thetika; 
+        /AsMilisoume/Tags/empneomai
+    - ID: "dc21dbb1-629e-4c7c-8260-2048c1de036f"
+      Hint: Publicationdate
+      Value: 20150123T000000
+    - ID: "ec9a349d-4a40-4ffd-9b97-da84f8f3c691"
+      Hint: IsInsurance
+      Value: FALSE
+    - ID: "eca27318-9a00-40fc-a77b-02aa947518a3"
+      Hint: Image Raw HTML
+      Value: |
+        <image mediaid="{442DC29A-666A-489B-A865-28EF8E76756F}" mediapath="/Images/AsMilisoume/yoga_grandma1" src="~/media/Images/AsMilisoume/yoga_grandma1.jpg" />

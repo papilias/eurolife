@@ -1,0 +1,47 @@
+﻿---
+ID: "82c69a64-163c-40df-9216-9382ef0ebb24"
+Parent: "f42ca071-82e3-4ada-8127-fe462e638697"
+Template: "67f40fef-b3c7-4366-b026-183e80dcf4e6"
+Path: "/sitecore/content/Eurolife/Home/Blog/articles-list/2019/12/03/15/30/Varfhs-to-ithele"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0fefbac0-a5dd-4075-ba0d-12318fb4df04"
+      Hint: Category
+      Value: Inspiration
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191203T153058Z
+    - ID: "751cc2e2-f3d2-4896-94b5-ed8174395942"
+      Hint: Main content
+      Value: |
+        <p>Αψηφώντας την οικονομική κρίση, ή ίσως και με αφορμή την οικονομική κρίση, ο Ζάχος Βάρφης αποφάσισε να σχεδιάσει και να κατασκευάσει αυτό που του έλειπε, που γενικότερα θεωρούσε πως έλειπε από την πόλη του: ένα transition skateboarding park, έναν χώρο συνάντησης και συναναστροφής των φίλων του “σπορ” που είναι τελικά φιλοσοφίας ζωής. Το μοναδικό του κίνητρο ήταν η επιθυμία του! </p><p>Το Latraac στον Κεραμεικό είναι προορισμός για τους skateboarders: πρόκειται για έναν αστικό κήπο 300 τ.μ., που περικλείεται από πέτρινους τοίχους και φιλοξενεί μια «πίστα» για skateboard, κατασκευασμένη από ξύλο, και ένα μικρό café για τους θαμώνες. Η είσοδος είναι δωρεάν, ενώ το Latraac φιλοδοξεί να φιλοξενήσει και μουσικά ή καλλιτεχνικά δρώμενα.</p><p>Πρόσφατα&nbsp; παρουσιάστηκε στην ενότητα Design του βρετανικού Independent.co.uk.&nbsp; Εμπνευσμένος από αντίστοιχα skateboard parks στο εξωτερικό –στις ΗΠΑ, στην Ιταλία και&nbsp; στη Γερμανία-&nbsp; o Βάρφης άντλησε 3.380 ευρώ από crowd-funding, με την υποστήριξη του&nbsp; θρύλου του skate, Tony Hawk. Προσθέτοντας σε αυτά μια κρατική επιχορήγηση, νοίκιασε τον μεταβιομηχανικό χώρο στον Κεραμεικό και «έκτισε» με τα χέρια του το Latraac. Συνάντησε αρχικά κάποια αντίσταση από τη γειτονιά, αλλά τα ζητήματα λύθηκαν γρήγορα&nbsp; με αμοιβαία κατανόηση.</p><p>Το Latraac είναι μια όαση δημιουργικότητας σε μια υποβαθμισμένη, ακόμα, γειτονιά της Αθήνας. Κατά τον δημιουργό του «<em>Είναι ένα πάρκο, ένας χώρος πρασίνου στο ιστορικό κέντρο της πόλης, που περιλαμβάνει έναν, διεθνών προδιαγραφών, χώρο για </em><em>transition</em><em> skateboarding</em><em>. Ταυτόχρονα αποτελεί εναλλακτική πρόταση χρήσης αστικών χώρων, που συνδέει το παραδοσιακό με το σύγχρονο, με τρόπο όμως που έχει νόημα για τους πολίτες.»</em> </p><p class="Normal1">Το όραμα του Βάρφη εκτείνεται πέρα από τη δημιουργία ενός skatepark όπου θα μαζεύονται οι φίλοι του, χωρίς να ενοχλούν και χωρίς να ενοχλούνται: θεωρεί την αρχιτεκτονική ως όχημα για κοινωνική αλλαγή και πιστεύει πως το Latraac είναι ένα λιθαράκι προς αυτή την κατεύθυνση.</p><p class="Normal1"><a href="http://bit.ly/2kNUTFR"><em>Πηγή</em></a><a href="http://bit.ly/2kNUTFR"></a></p><p class="Normal1"><a href="http://latraac.tumblr.com/"><em>Photo</em></a><a href="http://latraac.tumblr.com/"></a></p>
+    - ID: "78f61174-f047-439d-8749-b2dc33207596"
+      Hint: Image
+      Value: "/Images/AsMilisoume/170214-Varfhs-to-ithele"
+    - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
+      Hint: Teaser
+      Value: <p>Ένας νέος Αθηναίος αρχιτέκτονας θεωρούσε πως από την Αθήνα έλειπε ο σωστός χώρος για να απολαμβάνει όπως ήθελε το αγαπημένο του skate… </p>
+    - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
+      Hint: Title
+      Value: "Το ήθελε, το πίστεψε και το έκανε! "
+    - ID: "b0652e4d-8891-4586-8be2-a4e73cc2c615"
+      Hint: Tag
+      Value: |
+        /AsMilisoume/Tags/empneomai; 
+        /AsMilisoume/Tags/drw; 
+        /AsMilisoume/Tags/moirazomai; 
+        /AsMilisoume/Tags/apolamvanw
+    - ID: "dc21dbb1-629e-4c7c-8260-2048c1de036f"
+      Hint: Publicationdate
+      Value: 20170214T000000
+    - ID: "ec9a349d-4a40-4ffd-9b97-da84f8f3c691"
+      Hint: IsInsurance
+      Value: FALSE
+    - ID: "eca27318-9a00-40fc-a77b-02aa947518a3"
+      Hint: Image Raw HTML
+      Value: |
+        <image mediaid="{E9F504F0-98B2-43F2-97B2-64A15D9CEB6D}" mediapath="/Images/AsMilisoume/170214-Varfhs-to-ithele" src="~/media/Images/AsMilisoume/170214-Varfhs-to-ithele.jpg" />
