@@ -11,6 +11,7 @@ namespace Wedia.Feature.Media
     public static void RegisterRoutes(RouteCollection routes)
     {
       routes.MapRoute("loadmore-files", "api/feature/media/ajax-files", new { controller = "MediaFeature", action = "AjaxMediaFileFolderGroupedList", id = UrlParameter.Optional });
+      routes.MapRoute("pricing-docs", "api/feature/media/pricing-docs", new { controller = "MediaFeature", action = "AjaxMediaPricingDocs", id = UrlParameter.Optional });
     }
   }
 }
