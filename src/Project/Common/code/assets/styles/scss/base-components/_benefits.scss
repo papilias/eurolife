@@ -41,12 +41,17 @@
   }
 }
 
-.benefits__icon{
-  width:120px;
-  height:120px;
+.benefits__icon {
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   margin: 0 auto 16px;
   border-radius: 50%;
-  background-color:$dusky-blue;
+  background-color: $dusky-blue;
+  align-items: center;
+
+  img {
+    height: 50px;
+  }
 }

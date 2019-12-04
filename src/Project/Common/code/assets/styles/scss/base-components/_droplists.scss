@@ -3,6 +3,7 @@
 \*------------------------------------*/
 .droplist {
   position: relative;
+  max-width:600px;
 }
 
 .droplist__options {
@@ -14,10 +15,6 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 300ms ease;
-
-  @include breakpoint(820) {
-    max-width: 60%;
-  }
 
   ul {
     max-height: 100vh;
