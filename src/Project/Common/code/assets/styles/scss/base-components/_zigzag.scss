@@ -25,7 +25,7 @@
   overflow: hidden;
   max-height: 500px;
 
-  @include breakpoint(700) {
+  @include breakpoint(820) {
     flex-basis: 43%;
   }
 
