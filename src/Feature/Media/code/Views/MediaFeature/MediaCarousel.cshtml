@@ -28,8 +28,12 @@
       var description = element.Item.Fields[Templates.HasMedia.Fields.Description];
       var title = element.Item.Fields[Templates.HasMedia.Fields.Title];
       var label = element.Item.Fields[Templates.HasMedia.Fields.Label];
-      var url = (element.Item.DescendsFrom(Templates.HasMediaUrl.ID) && element.Item.FieldHasValue(Templates.HasMediaUrl.Fields.Url))
-        ? Html.Sitecore().Field(Templates.HasMediaUrl.Fields.Url, element.Item, new { DisableWebEdit = true }).ToString() : "#";
+      var url = "#";
+
+      if (element.Item.DescendsFrom(Templates.HasMediaUrl.ID) && element.Item.FieldHasValue(Templates.HasMediaUrl.Fields.Url))
+      {         
+        url = element.Item.LinkFieldUrl(Templates.HasMediaUrl.Fields.Url);
+      }
 
       if (element.Item.DescendsFrom(Templates.HasMediaVideo.ID))
       {
@@ -37,7 +41,7 @@
       }
       else
       {
-        <a class="hero-slider__item" href="">
+        <a class="hero-slider__item" href="@url">
           <div class="hero-contents">
             <div class="center--760 center relator">
               <h3 class="h6">@label</h3>
