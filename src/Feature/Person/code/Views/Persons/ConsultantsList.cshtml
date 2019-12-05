@@ -72,13 +72,6 @@
                     }
                     </div>
                 <div class="list--partners__col-3">
-                  @if (@consultant.Item.Field(Templates.HasPersonContact.Fields.Fax) != null) { 
-                    <div class="list--partners__contact">
-                      <strong>
-                        @Html.Sitecore().Dictionary("/Person/Consultants List/Fax Leading Letter", "F."):
-                      </strong>@consultant.Item.Field(Templates.HasPersonContact.Fields.Fax)
-                    </div>
-                    }
                   @if (@consultant.Item.Field(Templates.HasPersonContact.Fields.Email) != null) {
                     <div class="list--partners__contact">
                       <strong>

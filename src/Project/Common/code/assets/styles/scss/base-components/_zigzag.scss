@@ -23,7 +23,7 @@
   flex-basis: 100%;
   object-fit: cover;
   overflow: hidden;
-  max-height: 500px;
+  max-height: 600px;
 
   @include breakpoint(820) {
     flex-basis: 43%;
@@ -31,7 +31,7 @@
 
   img {
     @include breakpoint(820) {
-      height: 500px;
+      height: 600px;
       width: auto;
       max-width: none;
     }
@@ -96,7 +96,7 @@
     width: 100%;
 
     @include breakpoint(820) {
-      height: 600px;
+      height: 500px;
       width: auto;
       max-width: none !important;
     }

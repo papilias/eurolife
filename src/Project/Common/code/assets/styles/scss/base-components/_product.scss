@@ -1277,6 +1277,10 @@ main {
     }
   }
 
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23ff303d' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+  }
+
   .access__list a:hover, .nav-main .sublist a:hover {
     background-color: $color-health-soft;
   }
@@ -1317,6 +1321,10 @@ main {
   #back-to-top {
     background-color: $color-health;
   }
+
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23ff303d' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+  }
 }
 
 .theme-home {
@@ -1344,6 +1352,10 @@ main {
 
   #back-to-top {
     background-color: $color-home;
+  }
+
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23ffb100' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
   }
 }
 
@@ -1373,6 +1385,10 @@ main {
   #back-to-top {
     background-color: $color-small-business;
   }
+
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23EB7D2E' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+  }
 }
 
 .theme-non-category {
@@ -1400,6 +1416,10 @@ main {
 
   #back-to-top {
     background-color: $color-non-category;
+  }
+
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%2321C4B5' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
   }
 }
 
@@ -1429,6 +1449,10 @@ main {
   #back-to-top {
     background-color: $color-motor;
   }
+
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%2300945f' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+  }
 }
 
 .theme-life {
@@ -1457,6 +1481,10 @@ main {
   #back-to-top {
     background-color: $color-life-insurance;
   }
+
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23485294' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
+  }
 }
 
 .theme-finance {
@@ -1484,5 +1512,9 @@ main {
 
   #back-to-top {
     background-color: $color-finance;
+  }
+
+  .contentgroup__tick li:before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path fill='%23008094' d='M21.33,57.82,0,36.53l5.87-5.87L21.33,46.09,58.13,9.36,64,15.23,21.33,57.82'/></svg>");
   }
 }

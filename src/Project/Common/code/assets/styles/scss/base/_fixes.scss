@@ -6,13 +6,13 @@
   }
 }
 
-section.hero--inner + div.scroll-items {
+/*section.hero--inner + div.scroll-items {
   margin-top: -48px;
 
   @include breakpoint(820) {
     margin-bottom: -112px;
   }
-}
+}*/
 
 main > section.leadership-container:last-child {
   margin-bottom: 168px;
@@ -118,10 +118,14 @@ h1.t-c {
   margin: 0;
 }
 
-main{
-  article{
-    .light, p{
+main {
+  article {
+    .light, p {
       font-weight: 400;
     }
+  }
+
+  a {
+    color: #485294;
   }
 }

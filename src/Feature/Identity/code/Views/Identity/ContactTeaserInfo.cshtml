@@ -19,10 +19,6 @@
       <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Phone", "Phone")</h4>
       <a href="tel:@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)">@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationPhone, identity)</a>
     </li>
-    <li class="fax">
-      <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Fax", "Fax")</h4>
-      @Html.Sitecore().Field(Templates.Identity.Fields.OrganizationFax, identity)
-    </li>
     <li class="email">
       <h4>@Html.Sitecore().Dictionary("/Identity/Contact Teaser/Email", "Email")</h4>
       <a href="mailto:@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationEmail, identity)">@Html.Sitecore().Field(Templates.Identity.Fields.OrganizationEmail, identity)</a>
