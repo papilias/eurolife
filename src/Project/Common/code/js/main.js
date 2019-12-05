@@ -37,7 +37,7 @@
             $(btt).removeClass('active');
 
           //PROGRAM CONTROLS FIXED
-          if ($('.programs')) {
+          if ($('.programs').length > 0) {
             const programTop = $('.program-grid').parent().offset().top;
             const programBottom = $('.program-grid').parent().offset().top + $('.program-grid').parent().height();
 
