@@ -31,13 +31,30 @@
       var url = "#";
 
       if (element.Item.DescendsFrom(Templates.HasMediaUrl.ID) && element.Item.FieldHasValue(Templates.HasMediaUrl.Fields.Url))
-      {         
+      {
         url = element.Item.LinkFieldUrl(Templates.HasMediaUrl.Fields.Url);
       }
 
       if (element.Item.DescendsFrom(Templates.HasMediaVideo.ID))
       {
         var videoUrl = element.Item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink);
+        var linkDescription = Model.Item.LinkFieldOptions(Templates.HasMediaVideo.Fields.VideoLink, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Text);
+
+        
+        <a class="hero-slider__item" data-fancybox="hero-video" href="@videoUrl">
+          <div class="hero-contents">
+            <div class="center--760 center relator">
+              <h3 class="h6">@label</h3>
+              <h2 class="h2 m-b-16 m-t-32">@title</h2>
+              <p>@description</p>
+            </div>
+          </div>
+          <picture>
+            <source media="(min-width: 900px)" srcset="@image">
+            <source srcset="@image">
+            <img src="@image" alt="@title" />
+          </picture>
+        </a>
       }
       else
       {
@@ -46,7 +63,7 @@
             <div class="center--760 center relator">
               <h3 class="h6">@label</h3>
               <h2 class="h2 m-b-16 m-t-32">@title</h2>
-              <p>@description</p>                
+              <p>@description</p>
             </div>
           </div>
           <picture>
