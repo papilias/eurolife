@@ -1,5 +1,6 @@
 ﻿@using Wedia.Feature.Navigation
 @using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Dictionary.Extensions
 @model Wedia.Feature.Navigation.Models.NavigationItems
 
 @{
@@ -54,15 +55,16 @@
       }
     }
   </ul>
-  <ul>
-    @foreach (var link in Model.NavItems.Where(x => string.IsNullOrEmpty(x.Item[Templates.LinkMenuItem.Fields.Class])))
-    {
-      <li>
-        <a href="@link.Url" class="footer__subscription"
-           target="@link.Target">
-          @link.Item[Templates.Navigable.Fields.NavigationTitle]
-        </a>
-      </li> 
-    }
+
+  <ul class="footer__list">
+    <li><span class="">@Html.Sitecore().Dictionary("/Identity/Footer Newsletter/Newsletter Title", "Email subscription")</span></li>
+    <li>
+      <form action="https://app.moosend.com/subscribe/123088bd-38cd-405a-82f9-fff9aadc4cb9" method="post" id="ms-sub-form" target="_blank">
+        <div>
+          <input type="email" name="ms-email" id="email" placeholder="Email" required />
+          <input type="submit" value="Subscribe" />
+        </div>
+      </form>
+    </li>
   </ul>
-  </div>
+</div>
