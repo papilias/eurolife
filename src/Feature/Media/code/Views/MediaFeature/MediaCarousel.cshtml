@@ -39,8 +39,8 @@
       {
         var videoUrl = element.Item.LinkFieldUrl(Templates.HasMediaVideo.Fields.VideoLink);
         var linkDescription = Model.Item.LinkFieldOptions(Templates.HasMediaVideo.Fields.VideoLink, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Text);
+        var target = Model.Item.LinkFieldOptions(Templates.HasMediaVideo.Fields.VideoLink, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Target);
 
-        
         <a class="hero-slider__item" data-fancybox="hero-video" href="@videoUrl">
           <div class="hero-contents">
             <div class="center--760 center relator">
