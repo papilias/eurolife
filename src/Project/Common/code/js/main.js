@@ -37,14 +37,18 @@
             $(btt).removeClass('active');
 
           //PROGRAM CONTROLS FIXED
-          if ($('.programs').length > 0) {
-            const programTop = $('.program-grid').parent().offset().top;
-            const programBottom = $('.program-grid').parent().offset().top + $('.program-grid').parent().height();
+          try {
+            if ($('.programs').length > 0) {
+              const programTop = $('.program-grid').parent().offset().top;
+              const programBottom = $('.program-grid').parent().offset().top + $('.program-grid').parent().height();
 
-            if (scrolled + windowHeight > programTop && scrolled + windowHeight < programBottom)
-              $('.program-controls').addClass('fixit');
-            else
-              $('.program-controls').removeClass('fixit');
+              if (scrolled + windowHeight > programTop && scrolled + windowHeight < programBottom)
+                $('.program-controls').addClass('fixit');
+              else
+                $('.program-controls').removeClass('fixit');
+            }
+          } catch (e) {
+            console.log(e);
           }
         });
 

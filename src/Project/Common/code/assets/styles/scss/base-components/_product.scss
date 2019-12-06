@@ -1243,28 +1243,30 @@ main {
 }
 
 #back-to-top {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  padding: 20px;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  z-index: 999;
-  cursor: pointer;
-  opacity: 0;
-  transition: 0.5s opacity ease-in-out;
+  @include breakpoint(540) {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    padding: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s opacity ease-in-out;
 
-  &.active {
-    opacity: 1;
-  }
+    &.active {
+      opacity: 1;
+    }
 
-  &:after {
-    transform: scale(0.6);
-    content: url('../images/icons/back-to-top.png');
+    &:after {
+      transform: scale(0.6);
+      content: url('../images/icons/back-to-top.png');
+    }
   }
 }
 
