@@ -5,6 +5,7 @@
 $(document).ready(function () {
   $("#datepickerFiles").datepicker({
     dateFormat: 'dd/mm/yy',
+    regional:'el',
     todayHighlight: true
   });
 
@@ -14,8 +15,7 @@ $(document).ready(function () {
 ;
 
 
-  downloadButton.click(function () {
-
+  downloadButton.click(function () {  
     loading = true;
     downloadButton.prop('disabled', loading);
     $("#lblWarning").hide();
@@ -23,23 +23,19 @@ $(document).ready(function () {
     var date = $('#datepickerFiles').val();
 
     if (date == null || date == "")
-       return false;
+       return false; 
 
-    console.log('date is: ' + $('#datepickerFiles').val());
     var dates = date.split("/");
 
-    var fileName = 'dat_' + dates[0] + "_" + dates[1] + "_" + dates[2] + ".pdf";// dat_05_12_2019            
+    var fileName = 'dat_' + dates[0] + "_" + dates[1] + "_" + dates[2] + ".pdf";      
 
       $.ajax({
         type: 'POST',
         url: "/api/feature/media/pricing-docs",
-        data: { fileName },
-       //contentType: 'application/json; charset=utf-8',
+        data: { fileName },        
         cache: false,
-        success: function (response) {
-          console.log(response);
+        success: function (response) {            
 
-          if (response.StatusCode == 200) {
             let blob = new Blob(['\ufeff' + response], { type: 'application/pdf;charset=utf-8;' });
             let dwldLink = document.createElement("a");
             let url = URL.createObjectURL(blob);
@@ -52,10 +48,7 @@ $(document).ready(function () {
             dwldLink.style.visibility = "hidden";
             document.body.appendChild(dwldLink);
             dwldLink.click();
-            document.body.removeChild(dwldLink);
-          } else {
-            $("#lblWarning").show();
-          }           
+            document.body.removeChild(dwldLink); 
 
             loading = false;       
             downloadButton.prop('disabled', loading);      
@@ -68,8 +61,6 @@ $(document).ready(function () {
           }
     });
 
-  });
-
-
+  });       
 
 });

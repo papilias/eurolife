@@ -9,6 +9,10 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "193f78b8-6160-4346-92c3-2954ce7026de"
+      Hint: MediaImage
+      Value: |
+        <image mediaid="{659D3633-0438-4BD3-BF7F-A84C39ECFE2B}" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191007T094033Z
@@ -25,7 +29,7 @@ Languages:
         <link linktype="external" url="http://www.youtube.com" anchor="" target="" />
     - ID: "8e77d56c-9ad2-4b70-bc1f-beb99de004e9"
       Hint: MediaTitle
-      Value: wfh2w3
+      Value: test
     - ID: "de984d10-9f28-4135-b53f-fe8b5de19c55"
       Hint: MediaThumbnail
       Value: |

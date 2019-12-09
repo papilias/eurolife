@@ -26,7 +26,7 @@ namespace Wedia.Feature.Media.Controllers
       _renderingPropertiesRepository = renderingPropertiesRepository;
     }
 
-    public ActionResult MediaFileFoldersGroupedList(MediaFileGroupDto mediafileGroupDto)
+    public ActionResult MediaFileFoldersGroupedListPricing(MediaFileGroupDto mediafileGroupDto)
     {
       var pagingSettings = _renderingPropertiesRepository.Get<PagingSettings>(RenderingContext.Current.Rendering);
       pagingSettings.CurrentGroupID = mediafileGroupDto.Group != null ? new ID(mediafileGroupDto.Group) : null;   
@@ -34,6 +34,16 @@ namespace Wedia.Feature.Media.Controllers
       var viewModel = _mediaRepository.GetFilesGroupedList(RenderingContext.Current.ContextItem, pagingSettings);
       return View(viewModel);
     }
+
+    public ActionResult MediaFileFoldersGroupedList(MediaFileGroupDto mediafileGroupDto)
+    {
+      var pagingSettings = _renderingPropertiesRepository.Get<PagingSettings>(RenderingContext.Current.Rendering);
+      pagingSettings.CurrentGroupID = mediafileGroupDto.Group != null ? new ID(mediafileGroupDto.Group) : null;
+
+      var viewModel = _mediaRepository.GetFilesGroupedList(RenderingContext.Current.ContextItem, pagingSettings);
+      return View(viewModel);
+    }
+
 
     [HttpGet]
     public ActionResult AjaxMediaFileFolderGroupedList(MediaFileGroupDto mediafileGroupDto, int page = 1)
@@ -50,54 +60,13 @@ namespace Wedia.Feature.Media.Controllers
     }
 
     [HttpPost]
-    public HttpResponseMessage AjaxMediaPricingDocs(string fileName)
+    public ActionResult AjaxMediaPricingDocs(string fileName)
     {
-      HttpResponseMessage result = new HttpResponseMessage(HttpStatusCode.Conflict);
+      string path = $"~/pricedocs/{fileName}";
+      string filePath = Server.MapPath(path);
+      byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
 
-      try
-      {            
-        string path = $"~/pricedocs/{fileName}";
-        string filePath = Server.MapPath(path);
-        if (System.IO.File.Exists(filePath))
-        {
-          Stream fileStream = System.IO.File.Open(filePath, FileMode.Open); 
-          result = new HttpResponseMessage(HttpStatusCode.OK) { Content = new StreamContent(fileStream) };
-          result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-          result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-          result.Content.Headers.ContentDisposition.FileName = fileName;  
-
-          //result = new HttpResponseMessage(HttpStatusCode.OK);
-          //result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/pdf");
-          //result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-          //result.Content.Headers.ContentDisposition.FileName = fileName;
-          //MemoryStream memoryStream = new MemoryStream();
-
-          // byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
-
-
-          //result.Content =//Response.WriteFile(filePath); //new ByteArrayContent(fileBytes);
-        }
-      }
-      catch
-      {
-        result = new HttpResponseMessage(HttpStatusCode.InternalServerError);
-      }
-
-      return result;
-
-
-
-      //if (!ModelState.IsValid)
-      //{
-      //  ControllerContext.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
-      //  return Json(new { message = DictionaryPhraseRepository.Current.Get("Identity/Newsletter/Invalid Email") });
-      //}
-
-      //var response = _newsletterService.Register(newsletterDto);
-
-      //ControllerContext.HttpContext.Response.StatusCode = response.StatusCode;
-
-      //return Json(response);
+      return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);      
     }
 
   }

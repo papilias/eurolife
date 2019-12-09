@@ -21,9 +21,7 @@
   <div class="js-hero-slider hero-slider">
     @foreach (var element in elements)
     {
-      var field = element.Item.DescendsFrom(Templates.HasMediaVideo.ID) ?
-        element.Item.Fields[Templates.HasMedia.Fields.Thumbnail].ID
-        : element.Item.Fields[Templates.HasMediaImage.Fields.Image].ID;
+      var field = element.Item.Fields[Templates.HasMediaImage.Fields.Image].ID;         
       var image = element.Item.ImageUrl(field);
       var description = element.Item.Fields[Templates.HasMedia.Fields.Description];
       var title = element.Item.Fields[Templates.HasMedia.Fields.Title];
@@ -58,7 +56,10 @@
       }
       else
       {
-        <a class="hero-slider__item" href="@url">
+
+        var target = Model.Item.LinkFieldOptions(Templates.HasMediaUrl.Fields.Url, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Target);
+
+        <a class="hero-slider__item" href="@url" target="@target">
           <div class="hero-contents">
             <div class="center--760 center relator">
               <h3 class="h6">@label</h3>

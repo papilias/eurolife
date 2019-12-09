@@ -15,19 +15,7 @@ SharedFields:
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
-  Value: |
-    <r xmlns:p="p" xmlns:s="s"
-      p:p="1"
-      s:xsd="http://www.w3.org/2001/XMLSchema">
-      <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-        <r
-          uid="{B7BDC9A4-96A5-4E86-B2DF-FAA89027DB4C}"
-          p:after="*[1=2]"
-          s:id="{95CB3818-2155-4219-8AAB-8EC3FD11012D}"
-          s:ph="page-layout" />
-      </d>
-    </r>
+  Value: 
 Languages:
 - Language: "el-GR"
   Versions:
@@ -46,20 +34,18 @@ Languages:
               uid="{59FE8152-6994-4B44-A707-F9D01D80685E}"
               s:ph="/page-layout/page-layout-top" />
             <r
-              uid="{0356612C-2AE2-42F0-AA20-58A9C9763E26}"
-              p:after="r[@uid='{D743758A-BC1A-41C9-928E-9838FCEFA758}']"
-              s:ds="{6207E956-8F15-4831-AAEC-BED74320C882}"
-              s:id="{7D095F33-73E4-40C7-8D62-367931538B49}"
-              s:par="ResultsOnPage=20&amp;PagesToShow=1"
-              s:ph="page-layout" />
-            <r
               uid="{B3B8F7F7-BC1C-4BB0-A4F5-768AD3AEF8EE}"
-              p:after="r[@uid='{0356612C-2AE2-42F0-AA20-58A9C9763E26}']"
+              p:after="r[@uid='{D743758A-BC1A-41C9-928E-9838FCEFA758}']"
               s:id="{3BA27AC4-C795-40E8-A4C3-34C7DEEDBB2A}"
               s:ph="page-layout" />
             <r
               uid="{84E2B112-98FC-4500-AE40-EC91CAA3A458}"
               p:after="r[@uid='{B3B8F7F7-BC1C-4BB0-A4F5-768AD3AEF8EE}']" />
+            <r
+              uid="{A6770633-C3DD-4924-80B9-0E0B985149BA}"
+              p:after="*[1=2]"
+              s:id="{9B8A9078-1069-41A1-AC21-BD526588EAC0}"
+              s:ph="page-layout" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
@@ -111,7 +97,7 @@ Languages:
               p:after="r[@uid='{D743758A-BC1A-41C9-928E-9838FCEFA758}']"
               s:ds=""
               s:id="{7D095F33-73E4-40C7-8D62-367931538B49}"
-              s:par="ResultsOnPage=2&amp;PagesToShow"
+              s:par="ResultsOnPage=2"
               s:ph="page-layout" />
             <r
               uid="{0048155A-EC1A-4151-BF83-4B140CC631CA}"
@@ -119,6 +105,10 @@ Languages:
               s:ds="{747DE9CF-AB22-4B23-8CA4-F2671D66A3AC}"
               s:id="{4A32BBC2-C586-4EAC-B63B-1019D496D8A9}"
               s:ph="page-layout" />
+            <r
+              uid="{B7BDC9A4-96A5-4E86-B2DF-FAA89027DB4C}">
+              <p:d />
+            </r>
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
