@@ -633,7 +633,7 @@
   }
 
   function customRadioButtons() {
-    $target = $("input[type=radio]");
+    $target = $("input[type=radio], input[type=checkbox]");
 
     $target.each(function () {
       $(this).after("<label></label>");
