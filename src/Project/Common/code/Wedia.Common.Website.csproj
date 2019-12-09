@@ -283,6 +283,7 @@
     <Content Include="assets\styles\scss\base-components\404.scss" />
     <Content Include="images\icons\health\.DS_Store" />
     <Content Include="images\icons\home\.DS_Store" />
+    <Content Include="assets\styles\scss\base-components\datepicker.scss" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="assets\styles\scss\base-components\_accordion.scss" />

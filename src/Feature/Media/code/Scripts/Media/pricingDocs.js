@@ -18,7 +18,7 @@ $(document).ready(function () {
   downloadButton.click(function () {  
     loading = true;
     downloadButton.prop('disabled', loading);
-    $("#lblWarning").hide();
+    $("#lblWarning").css('display', 'none');
 
     var date = $('#datepickerFiles').val();
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
           console.log(error);
             loading = false;
             downloadButton.prop('disabled', loading);
-            $("#lblWarning").show();
+            $("#lblWarning").css('display', 'block');
           }
     });
 
