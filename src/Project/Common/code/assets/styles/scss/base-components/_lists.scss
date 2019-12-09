@@ -16,6 +16,47 @@
   }
 }
 
+.list--list-two-columns {
+  display: block;
+
+  @include breakpoint(820) {
+    display: flex;
+  }
+
+  .list__items {
+    flex-basis: 70%;
+    order: 1;
+  }
+
+  .list__calendar {
+    flex-basis: 30%;
+    background-color: #eee;
+    padding: 24px;
+    border-radius: 5px;
+    order: 2;
+
+    @include breakpoint(820) {
+      margin-left: 24px;
+    }
+
+    input[type="date"] {
+      background-color: transparent;
+      max-width: 350px;
+    }
+
+    .list__download.flat {
+      text-align: left;
+      display: block;
+      margin: 48px 0 0;
+
+      .btn {
+        display: block;
+        padding: 24px;
+      }
+    }
+  }
+}
+
 .list--big {
   .list__item {
     @include breakpoint(700) {
