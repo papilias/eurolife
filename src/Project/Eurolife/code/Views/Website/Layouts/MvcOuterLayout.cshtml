@@ -10,6 +10,18 @@
 <!DOCTYPE html>
 <html lang="@Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName">
 <head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KQJ4XV');</script>
+  <!-- End Google Tag Manager -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @if (!Sitecore.Context.PageMode.IsExperienceEditor)
   {
@@ -22,8 +34,24 @@
   @RenderAssetsService.Current.RenderStyles()
 
   @Html.Sitecore().VisitorIdentification()
+
+  <script type="text/javascript">
+    var appoInit = document.createElement('script');
+    var appoS = document.getElementsByTagName('script')[0];
+    appoInit.type = 'text/javascript';
+    appoInit.src = 'https://www.appocalypsis.com/loader/init/80PFFP.js';
+    appoInit.async = true;
+    appoS.parentNode.insertBefore(appoInit, appoS);
+  </script>
 </head>
 <body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor()">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQJ4XV"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   @RenderBody()
 
   @if (!Sitecore.Context.PageMode.IsExperienceEditor)

@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Net;
 using System;
 using System.Net.Http.Headers;
+using System.IO;
 
 namespace Wedia.Feature.Media.Controllers
 {
@@ -59,12 +60,21 @@ namespace Wedia.Feature.Media.Controllers
         string filePath = Server.MapPath(path);
         if (System.IO.File.Exists(filePath))
         {
-          result = new HttpResponseMessage(HttpStatusCode.OK);
-          byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
-         
-          result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+          Stream fileStream = System.IO.File.Open(filePath, FileMode.Open); 
+          result = new HttpResponseMessage(HttpStatusCode.OK) { Content = new StreamContent(fileStream) };
           result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-          result.Content.Headers.ContentDisposition.FileName = fileName;
+          result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+          result.Content.Headers.ContentDisposition.FileName = fileName;  
+
+          //result = new HttpResponseMessage(HttpStatusCode.OK);
+          //result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/pdf");
+          //result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
+          //result.Content.Headers.ContentDisposition.FileName = fileName;
+          //MemoryStream memoryStream = new MemoryStream();
+
+          // byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+
+
           //result.Content =//Response.WriteFile(filePath); //new ByteArrayContent(fileBytes);
         }
       }
