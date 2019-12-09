@@ -15,9 +15,9 @@
   </p>
 
 
-  <p>Date: <input type="text" id="datepickerFiles"></p>
+  <p>Date: <input type="text" id="datepickerFiles" autocomplete="off"></p>
   <p>
-    <a href="javascript;" id="btnDownloadDoc">@Html.Sitecore().Dictionary("/Media/PricingDocs/Download", "Download")</a>     
+    <a href="javascript:;" id="btnDownloadDoc">@Html.Sitecore().Dictionary("/Media/PricingDocs/Download", "Download")</a>     
   </p>
   <p>
     <label id="lblWarning" style="display:none;"> @Html.Sitecore().Dictionary("/Media/PricingDocs/FileNotFound", "File not found")</label>

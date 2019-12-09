@@ -48,24 +48,24 @@ namespace Wedia.Feature.Media.Controllers
       return Json(new { exhausted = viewModel.TotalPagesCount == page + 1, data = partial }, JsonRequestBehavior.AllowGet);
     }
 
-    [HttpGet]
+    [HttpPost]
     public HttpResponseMessage AjaxMediaPricingDocs(string fileName)
     {
       HttpResponseMessage result = new HttpResponseMessage(HttpStatusCode.Conflict);
 
       try
-      {
-        //string fname = $"{fileName}.pdf"; //"dat_" + dt.ToString("dd_MM_yyyy") + ".pdf";
+      {            
         string path = $"~/pricedocs/{fileName}";
         string filePath = Server.MapPath(path);
-        if (System.IO.File.Exists(path))
+        if (System.IO.File.Exists(filePath))
         {
-          byte[] fileBytes = System.IO.File.ReadAllBytes(path);
-          result.Content = new ByteArrayContent(fileBytes);
-          result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/pdf");
+          result = new HttpResponseMessage(HttpStatusCode.OK);
+          byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+         
+          result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
           result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
           result.Content.Headers.ContentDisposition.FileName = fileName;
-          result = new HttpResponseMessage(HttpStatusCode.OK);
+          //result.Content =//Response.WriteFile(filePath); //new ByteArrayContent(fileBytes);
         }
       }
       catch
@@ -74,6 +74,20 @@ namespace Wedia.Feature.Media.Controllers
       }
 
       return result;
+
+
+
+      //if (!ModelState.IsValid)
+      //{
+      //  ControllerContext.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+      //  return Json(new { message = DictionaryPhraseRepository.Current.Get("Identity/Newsletter/Invalid Email") });
+      //}
+
+      //var response = _newsletterService.Register(newsletterDto);
+
+      //ControllerContext.HttpContext.Response.StatusCode = response.StatusCode;
+
+      //return Json(response);
     }
 
   }
