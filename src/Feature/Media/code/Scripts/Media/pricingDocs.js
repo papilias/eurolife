@@ -38,7 +38,9 @@ $(document).ready(function () {
         cache: false,
         success: function (response) {
           console.log(response);
-          let blob = new Blob(['\ufeff' + response], { type: 'application/pdf;charset=utf-8;' });
+
+          if (response.StatusCode == 200) {
+            let blob = new Blob(['\ufeff' + response], { type: 'application/pdf;charset=utf-8;' });
             let dwldLink = document.createElement("a");
             let url = URL.createObjectURL(blob);
             let isSafariBrowser = navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1;
@@ -51,6 +53,9 @@ $(document).ready(function () {
             document.body.appendChild(dwldLink);
             dwldLink.click();
             document.body.removeChild(dwldLink);
+          } else {
+            $("#lblWarning").show();
+          }           
 
             loading = false;       
             downloadButton.prop('disabled', loading);      
