@@ -773,6 +773,10 @@ a.btn--ghost-header{
     display: block;
     overflow-y: auto;
 
+    .access__list{
+      width: 100%;
+    }
+
     .nav-product__wrap {
       padding: 0;
 
@@ -788,13 +792,15 @@ a.btn--ghost-header{
 
       a.btn--white-header {
         font-size: 14px;
-        color: white;
-        background-color: #485294;
-        padding: 15px 30px;
+        color: #485294;
+        border: 1px #485294 solid;
+        background: white;
+        padding: 12px 30px;
         width: 100%;
         height: auto;
         margin: 0 20px 10px 20px;
         text-align: center;
+        order: 1;
       }
     }
 
@@ -829,14 +835,15 @@ a.btn--ghost-header{
 
     .access {
       width: 100%;
-      margin: 0 20px;
+      margin: 0 20px 10px;
+      order: 0;
 
       .access__label {
         padding: 15px 30px;
         font-size: 14px;
         height: auto;
-        color: #485294;
-        border: 1px #485294 solid;
+        color: white;
+        background-color: #485294;
         text-align: center;
 
         svg {
