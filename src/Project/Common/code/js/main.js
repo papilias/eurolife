@@ -4,7 +4,6 @@
         $('html').addClass('no-touch');
     }
 
-
     const droplists = document.querySelectorAll('.droplist');
     if(droplists != null) {
         for (const droplist of droplists) {
@@ -51,7 +50,6 @@
             console.log(e);
           }
         });
-
 
         $('#back-to-top').on('click', () => {
           $('html, body').animate({

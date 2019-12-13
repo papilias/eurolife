@@ -17,7 +17,7 @@
 }
 
 .list--list-two-columns {
-  display: block;
+  flex-wrap: wrap;
 
   @include breakpoint(820) {
     display: flex;
@@ -25,12 +25,16 @@
   }
 
   .list__items {
-    flex-basis: 70%;
+    flex-basis: 100%;
     order: 1;
+
+    @include breakpoint(820) {
+      flex-basis: 70%;
+    }
   }
 
   .list__calendar {
-    flex-basis: 30%;
+    flex-basis: 100%;
     background-color: #eee;
     padding: 24px;
     border-radius: 5px;
@@ -38,6 +42,7 @@
 
     @include breakpoint(820) {
       margin-left: 24px;
+      flex-basis: 30%;
     }
 
     input[type="date"] {
@@ -57,11 +62,11 @@
     }
   }
 
-  #datepickerFiles{
-    background:transparent;
+  #datepickerFiles {
+    background: transparent;
   }
 
-  #lblWarning{
+  #lblWarning {
     display: none;
     margin-top: 10px;
   }
