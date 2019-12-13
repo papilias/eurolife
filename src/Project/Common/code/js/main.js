@@ -635,6 +635,9 @@
   function customRadioButtons() {
     $target = $("input[type=radio], input[type=checkbox]");
 
+    if (!$target.parent('form.form'))
+      return;
+
     $target.each(function () {
       $(this).after("<label></label>");
       $(this).parent().addClass("cursor-pointer");
