@@ -39,8 +39,8 @@
           //PROGRAM CONTROLS FIXED
           try {
             if ($('.programs').length > 0) {
-              const programTop = $('.program-grid').parent().offset().top;
-              const programBottom = $('.program-grid').parent().offset().top + $('.program-grid').parent().height();
+              const programTop = $('.program-grid').parent('div:visible').offset().top;
+              const programBottom = $('.program-grid').parent('div:visible').offset().top + $('.program-grid').parent('div:visible').height();
 
               if (scrolled + windowHeight > programTop && scrolled + windowHeight < programBottom)
                 $('.program-controls').addClass('fixit');
@@ -51,6 +51,7 @@
             console.log(e);
           }
         });
+
 
         $('#back-to-top').on('click', () => {
           $('html, body').animate({
