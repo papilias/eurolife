@@ -638,7 +638,8 @@
       return;
 
     $target.each(function () {
-      $(this).after("<label></label>");
+      if (!$(this).parent().find('label'))
+        $(this).after("<label></label>");
       $(this).parent().addClass("cursor-pointer");
     });
   }
