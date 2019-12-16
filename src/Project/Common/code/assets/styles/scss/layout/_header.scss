@@ -68,24 +68,32 @@
 }
 
 
-.nav-product{
+.nav-product {
   position: relative;
-  z-index: 12;
+  z-index: 15;
+
+  @include breakpoint(540) {
+    z-index: 12;
+  }
+
   a {
     color: #fff;
   }
 
-  &--health{
-    background-color:$color-health;
+  &--health {
+    background-color: $color-health;
   }
-  &--life{
-    background-color:$color-life-insurance;
+
+  &--life {
+    background-color: $color-life-insurance;
   }
-  &--motor{
-    background-color:$color-motor;
+
+  &--motor {
+    background-color: $color-motor;
   }
-  &--home{
-    background-color:$color-home;
+
+  &--home {
+    background-color: $color-home;
   }
 }
 

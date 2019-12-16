@@ -19,6 +19,7 @@
     if(menuSwitch != null) {
         menuSwitch.addEventListener('click', _ => {
             body.classList.toggle('menu-open');
+            body.classList.remove('search-open');
         });
     }
 
