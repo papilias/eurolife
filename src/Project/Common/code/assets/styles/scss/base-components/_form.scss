@@ -102,8 +102,9 @@ input[type="radio"] {
   pointer-events: none;
 
   + label {
-    position: relative;
+    position: absolute;
     cursor: pointer;
+    top: 2px;
   }
 
   + label:before {
@@ -145,6 +146,7 @@ input[type="radio"] {
 label.cursor-pointer{
   padding-left: 10px;
   margin-top: 8px;
+  position: relative;
 }
 
 label.cursor-pointer, .push-me {
@@ -153,4 +155,16 @@ label.cursor-pointer, .push-me {
 
 label:not(.cursor-pointer) + label.cursor-pointer{
   margin-top: 15px;
+}
+
+form.form {
+  input[type="checkbox"], input[type="radio"] {
+    position: relative;
+
+    + label {
+      position: absolute;
+      top: 2px;
+      left: -8px;
+    }
+  }
 }

@@ -19,6 +19,7 @@
     if(menuSwitch != null) {
         menuSwitch.addEventListener('click', _ => {
             body.classList.toggle('menu-open');
+            body.classList.remove('search-open');
         });
     }
 
@@ -634,13 +635,11 @@
   function customRadioButtons() {
     $target = $("input[type=radio], input[type=checkbox]");
 
-    if (!$target.parent('form.form'))
-      return;
-
     $target.each(function () {
-      if (!$(this).parent().find('label'))
+      if (!$(this).parent().parent().hasClass('accordion')) {
         $(this).after("<label></label>");
-      $(this).parent().addClass("cursor-pointer");
+        $(this).parent().addClass("cursor-pointer");
+      }
     });
   }
 
