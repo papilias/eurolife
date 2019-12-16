@@ -634,14 +634,13 @@
   function customRadioButtons() {
     $target = $("input[type=radio], input[type=checkbox]");
 
-    if (!$target.parent('form.form'))
+    if (!$('form.form').length)
       return;
-
-    $target.each(function () {
-      if (!$(this).parent().find('label'))
+    else
+      $target.each(function () {
         $(this).after("<label></label>");
-      $(this).parent().addClass("cursor-pointer");
-    });
+        $(this).parent().addClass("cursor-pointer");
+      });
   }
 
     function highLightLabel(){
