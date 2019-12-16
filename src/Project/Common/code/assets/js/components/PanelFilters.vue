@@ -1,7 +1,7 @@
 ﻿<template>
   <div class="filter">
     <span class="filter__trigger" @click="show = true">{{ filters.title }}</span>
-    <div class="filter__results" v-show="show">
+    <div :class="['filter__results', 'filter__columns--' + columns_length]" v-show="show">
 
       <div class="filter__results__column" v-for="(filter,i) in propedFilters" :key="`proped-filter-${i}`">
         <div class="filter__results__heading">{{ filter.title }}</div>
@@ -42,6 +42,11 @@
       unPropedFilters: [],
       selectedFilters: []
     }),
+    computed: {
+      columns_length: function () {
+        return this.unPropedFilters.length + this.propedFilters.length;
+      }
+    },
     methods: {
       makeFilters() {         
         if (!this.filters.items)

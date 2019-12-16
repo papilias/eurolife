@@ -811,6 +811,16 @@ section.programs{
   }
 }
 
+.filter__columns--2{
+  .filter__results__column{
+    flex-basis: 100%;
+
+    @include breakpoint(820) {
+      flex-basis: 50%;
+    }
+  }
+}
+
 .filter__results__heading {
   min-height: 23px;
   margin-bottom: 12px;
