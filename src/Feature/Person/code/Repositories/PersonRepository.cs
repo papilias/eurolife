@@ -39,7 +39,7 @@ namespace Wedia.Feature.Person.Repositories
 
     public IEnumerable<ConsultantsGroup> GetConsultantsGroups(Item contextItem)
     {
-      return Get(contextItem, Templates.HasPersonGroupName.ID)
+      return Get(contextItem, Templates.HasPersonGroupName.ID, Templates.HasPersonGroupName.Fields.PersonGroupName_FieldName)
         .Select(d => new ConsultantsGroup
         {
           Item = d,
@@ -50,14 +50,14 @@ namespace Wedia.Feature.Person.Repositories
 
     private IEnumerable<Consultant> GetConsultants(Item contextItem)
     {
-      return Get(contextItem, Templates.Person.ID)
+      return Get(contextItem, Templates.Person.ID, Templates.Person.Fields.Name_FieldName)
         .Select(d => new Consultant
         {
           Item = d
         });
     }
 
-    private IEnumerable<Item> Get(Item contextItem, ID TemplateID)
+    private IEnumerable<Item> Get(Item contextItem, ID TemplateID, string orderby = "sortorder")
     {
       if (contextItem == null)
       {
@@ -69,10 +69,9 @@ namespace Wedia.Feature.Person.Repositories
 
       searchService.Settings.Root = contextItem;
 
-      var results = searchService.FindAll(0, 0, "sortorder");
-      //, Foundation.Indexing.Constants.IndexFields.SortOrder);
+      var results = searchService.FindAll(0, 0, orderby);   
 
-      return results.Results.Select(d => d.Item).Where(i => i != null); //.OrderBy(GetSortOrderValue);
+      return results.Results.Select(d => d.Item).Where(i => i != null); 
 
     }
   }

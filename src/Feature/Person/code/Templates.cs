@@ -75,7 +75,7 @@ namespace Wedia.Feature.Person
 
       public struct Fields
       {
-        public static readonly ID Persons = new ID("{C5270F95-33AA-4DA7-B3B7-0EEA5DD1B4B1}");
+        public static readonly ID Persons = new ID("{C5270F95-33AA-4DA7-B3B7-0EEA5DD1B4B1}");          
       }
     }
 
@@ -86,6 +86,7 @@ namespace Wedia.Feature.Person
       public struct Fields
       {
         public static readonly ID Name = new ID("{DAC83A8F-9622-442F-B594-964D5F01B1E3}");
+        public const string PersonGroupName_FieldName = "PersonGroupName";
       }
     }
 
