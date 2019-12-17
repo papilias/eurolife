@@ -7,6 +7,19 @@ namespace Wedia.Foundation.SitecoreExtensions.Extensions
 {
   public static class SiteExtensions
   {
+
+    private const string _enabledLanguagesAttributeName = "enabledLanguages";
+
+    public static string[] GetEnabledLanguages(this SiteContext siteContext)
+    {
+      if (siteContext == null ||
+      string.IsNullOrEmpty(siteContext.Properties[_enabledLanguagesAttributeName]))
+      {
+        return new string[0];
+      }
+      return siteContext.Properties[_enabledLanguagesAttributeName].Split('|');
+    }
+
     public static Item GetContextItem(this SiteContext site, ID derivedFromTemplateID)
     {
       if (site == null)

@@ -98,6 +98,7 @@
     <Compile Include="Extensions\FieldExtensions.cs" />
     <Compile Include="Extensions\HTMLHelperExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="Infrastructure\Pipelines\CountryLanguageEnforcer.cs" />
     <Compile Include="Utilitiles\Utilities.cs" />
     <Compile Include="Extensions\RenderingExtensions.cs" />
     <Compile Include="Extensions\RenderingParameterExtensions.cs" />
