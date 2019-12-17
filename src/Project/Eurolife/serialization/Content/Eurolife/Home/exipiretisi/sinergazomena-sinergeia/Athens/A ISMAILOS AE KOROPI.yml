@@ -16,6 +16,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "66daf897-2490-46a2-9cec-3523434273bb"
+      Hint: PersonName
+      Value: Α. ΙΣΜΑΗΛΟΣ ΑΕ, MERCEDES, SMART
+    - ID: "6c65bd46-bbcd-4af7-9419-04a1e6f8315c"
+      Hint: Telephone
+      Value: 2106022222
+    - ID: "75acc29f-3a37-4042-8e27-d2e8a92cf7eb"
+      Hint: Email
+      Value: "http://ismailos.gr/contact.html"
+    - ID: "dbdd034d-8648-4144-ab97-71ff82fe9c58"
+      Hint: Address
+      Value: Λ. Βάρης Κορωπίου 58, Κορωπί, Τ.Κ. 19400
 - Language: en
   Versions:
   - Version: 1

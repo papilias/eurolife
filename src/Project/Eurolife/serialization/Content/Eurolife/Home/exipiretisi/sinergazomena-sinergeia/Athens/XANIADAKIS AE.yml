@@ -16,6 +16,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "65fc9b13-4667-4c78-b222-428faf91b1a7"
+      Hint: Fax
+      Value: 
+    - ID: "66daf897-2490-46a2-9cec-3523434273bb"
+      Hint: PersonName
+      Value: ΧΑΝΙΑΔΑΚΗΣ ΑΕ
+    - ID: "6c65bd46-bbcd-4af7-9419-04a1e6f8315c"
+      Hint: Telephone
+      Value: 2103485555
+    - ID: "dbdd034d-8648-4144-ab97-71ff82fe9c58"
+      Hint: Address
+      Value: Ιερά Οδός 131 και Αγίας Άννης, 12241 Αιγάλεω
 - Language: en
   Versions:
   - Version: 1

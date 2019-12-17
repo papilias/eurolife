@@ -16,6 +16,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "66daf897-2490-46a2-9cec-3523434273bb"
+      Hint: PersonName
+      Value: EVO CAR
+    - ID: "6c65bd46-bbcd-4af7-9419-04a1e6f8315c"
+      Hint: Telephone
+      Value: 2310476166
+    - ID: "75acc29f-3a37-4042-8e27-d2e8a92cf7eb"
+      Hint: Email
+      Value: "http://www.evocar.gr/FF8ED60F.el.aspx"
+    - ID: "dbdd034d-8648-4144-ab97-71ff82fe9c58"
+      Hint: Address
+      Value: Λαέρτου 12, Θεσσαλονίκη (Θέρμη), Τ.Κ. 57001
 - Language: en
   Versions:
   - Version: 1
