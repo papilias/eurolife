@@ -135,4 +135,13 @@ main {
   padding: 0 40px 0 0;
   cursor: pointer;
   margin-left: -20px;
+  z-index: 1;
+
+  + label{
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    padding-left: 40px;
+    margin-left: -40px;
+  }
 }
