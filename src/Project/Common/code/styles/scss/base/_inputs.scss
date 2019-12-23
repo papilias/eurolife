@@ -140,7 +140,8 @@ input[type="submit"]{
     margin-right: 10px;
     padding:14px 17px;
     svg{
-        max-width: 22px;
+        max-height: 22px;
+        max-width: 22px;       
         margin: 0 10px -8px -2px;
     }
 }
@@ -148,6 +149,7 @@ input[type="submit"]{
     padding:15px 17px;
     svg{
         max-width: 28px;
+        max-height: 22px;
         margin: 0 10px -8px -2px;
     }
 }

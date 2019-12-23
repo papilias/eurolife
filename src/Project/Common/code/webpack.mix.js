@@ -10,6 +10,9 @@ let mix = require('laravel-mix');
  | file for your application, as well as bundling up your JS files.
  |
  */
+ 
+
+require('laravel-mix-polyfill');
 
 mix.js('assets/js/app.js', 'js')
   .sass('assets/styles/scss/style.scss', 'css')
@@ -20,6 +23,11 @@ mix.js('assets/js/app.js', 'js')
   .webpackConfig({
 	devtool: 'inline-source-map'
   })
+  .polyfill({
+      enabled: true,
+      useBuiltIns: "usage",
+      targets: {"firefox": "50", "ie": 11}
+   })
   .setPublicPath('./'); 
 
 // Full API
@@ -35,7 +43,7 @@ mix.js('assets/js/app.js', 'js')
 // mix.postCss(src, output, [require('postcss-some-plugin')()]);
 // mix.browserSync('my-site.test');
 // mix.combine(files, destination);
-// mix.babel(files, destination); <-- Identical to mix.combine(), but also includes Babel compilation.
+//mix.babel(files, destination); //<-- Identical to mix.combine(), but also includes Babel compilation.
 // mix.copy(from, to);
 // mix.copyDirectory(fromDir, toDir);
 // mix.minify(file);
