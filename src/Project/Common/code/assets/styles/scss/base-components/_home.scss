@@ -225,8 +225,9 @@
   font-size: 14px;
   font-weight: 500;
   margin-top:16px;
-}
+}         
 
+//ie 11
 
 .ie11 {
   overflow-x: hidden;
@@ -331,21 +332,55 @@
   }
 
 
-     
+
   .cross-object-fit {
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 20%;
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 
-    img{
-      opacity:0;
+    img {
+      opacity: 0;
     }
-  }     
+  }
+  //products
+  .grid-table-column {
+    float: left;
+    width: 230px;
+    display: block;
+  }
 
+  .grid-table-window {
+    float: left;
+    width: 70%;
+    max-width: 1000px;
+    overflow-x: scroll;
+  }
+
+  .program-grid {
+    display: block;
+    overflow: hidden;
+  }
+
+  .grid-table {
+    display: block;
+    min-width: 2000px;
+  }
+  //files
+  .grid-3 {
+    overflow: hidden;
+    display: block;
+  }
+
+  .file-item{
+    float:left;
+    width:48%;
+    min-height:120px;
+    margin: 0 1% 24px;
+  }
 }
 
