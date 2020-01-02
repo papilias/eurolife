@@ -1,0 +1,48 @@
+﻿---
+ID: "607c57d2-f73a-4bd6-8b8b-1eaae1cf8d8f"
+Parent: "c5fcc331-669b-420b-8fa5-e4b5acef2162"
+Template: "67f40fef-b3c7-4366-b026-183e80dcf4e6"
+Path: "/sitecore/content/Eurolife/Home/Blog/articles-list/2018/12/03/15/29/181111-giati-allazei-i-idiotiki-asfalisi"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0fefbac0-a5dd-4075-ba0d-12318fb4df04"
+      Hint: Category
+      Value: Inspiration
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191203T152937Z
+    - ID: "6bf5d477-0d14-46d2-a707-4a53655fd8ef"
+      Hint: ProductConnection
+      Value: None
+    - ID: "751cc2e2-f3d2-4896-94b5-ed8174395942"
+      Hint: Main content
+      Value: |
+        <p>Από τα πρώτα χρόνια της ενηλικίωσης έως τις υποχρεώσεις που ωριμάζουν και από την ανατροφή και την προστασία της οικογένειας έως τον προγραμματισμό για το μέλλον, κάθε στάδιο της ζωής μας χρειάζεται την ανάλογη φροντίδα.</p>Στο infographic που ακολουθεί, δείτε τα <a href="https://www.as-milisoume.gr/el/Articles/ta-ofelh-ths-idiwtikhs-asfalishs-shmera" style="text-decoration-line: none;">οφέλη της ιδιωτικής ασφάλισης</a>&nbsp;για κάθε στάδιο της ζωής και ξεκινήστε να κάνετε τον προγραμματισμό σας, ώστε να μπορείτε να αφοσιωθείτε χωρίς αναστολές στο παρόν.<p><img src="~/media/912A0BDB8803469A89A2EB6797C7C84F.jpg" height="6596" width="800" alt="infographic" /></p>
+    - ID: "78f61174-f047-439d-8749-b2dc33207596"
+      Hint: OldImage
+      Value: "/AAsmilisoume2018/new2018/image-post"
+    - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
+      Hint: Teaser
+      Value: <p></p><p>Με αφορμή την Παγκόσμια Ημέρα Ιδιωτικής Ασφάλισης, μάθετε γιατί αξίζει να επενδύσετε σε μια ιδιωτική ασφάλιση και να φροντίσετε για κάθε στάδιο της ζωής σας.</p>
+    - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
+      Hint: Title
+      Value: Γιατί αξίζει η ιδιωτική ασφάλιση;
+    - ID: "b0652e4d-8891-4586-8be2-a4e73cc2c615"
+      Hint: Tag
+      Value: |
+        /AsMilisoume/Tags/idiwtikh asfalish; 
+        /AsMilisoume/Tags/frontida
+    - ID: "dc21dbb1-629e-4c7c-8260-2048c1de036f"
+      Hint: Publicationdate
+      Value: 20181111T000000
+    - ID: "ec9a349d-4a40-4ffd-9b97-da84f8f3c691"
+      Hint: IsInsurance
+      Value: FALSE
+    - ID: "eca27318-9a00-40fc-a77b-02aa947518a3"
+      Hint: Image Raw HTML
+      Value: |
+        <image mediapath="/AAsmilisoume2018/new2018/image-post" mediaid="{5AF7E8C2-AC95-4C0B-9665-BF2D2EA3438B}" src="~/media/AAsmilisoume2018/new2018/image-post.jpg?20181111T1756276644" />

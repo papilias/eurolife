@@ -1,0 +1,50 @@
+﻿---
+ID: "f67b848a-78a8-4dc0-a9f5-3b5457fc9a00"
+Parent: "2f26f70d-12cb-44e0-bef6-62591f4b4be6"
+Template: "67f40fef-b3c7-4366-b026-183e80dcf4e6"
+Path: "/sitecore/content/Eurolife/Home/Blog/articles-list/2016/12/03/15/31/pote-apozimeionetai-i-monimi-oliki-anikanotita"
+DB: master
+Languages:
+- Language: "el-GR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0fefbac0-a5dd-4075-ba0d-12318fb4df04"
+      Hint: Category
+      Value: JustAsk
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191203T153130Z
+    - ID: "2aee3e92-929b-4229-8675-0bae568b9be5"
+      Hint: Article Banner
+      Value: |
+        <a href=""http://www.eurolife.gr/myfamilyfirstPage"" target=""_blank""><img alt="""" src=""~/media/4B7715A63ABD4F22A88A0A0221FDD4AC.png"" height=""155"" width=""677"" /></a>
+    - ID: "751cc2e2-f3d2-4896-94b5-ed8174395942"
+      Hint: Main content
+      Value: Από τον Κριαρά έως τον Μπαμπινιώτη, υπάρχει πληθώρα λεξικών, στη διάθεσή μας.Μερικές έννοιες, όμως, δεν έχουν μια και μόνη εξήγηση, δηλαδή δεν αρκεί το λεξικό. Μια από αυτές, που κατεξοχήν συναντούμε στα ασφαλιστήρια συμβόλαια ζωής, είναι η Μόνιμη Ολική Ανικανότητα του ασφαλισμένου.&nbsp;Τι ακριβώς σημαίνει Μόνιμη Ολική Ανικανότητα; Στο ερώτημα αυτό, κάθε Ασφαλιστική Εταιρεία θέτει στους όρους, τις δικές της προϋποθέσεις και παραμέτρους βάσει των οποίων καθορίζεται ο ορισμός της Μόνιμης Ολικής Ανικανότητας. Για παράδειγμα, στην Eurolife ERB Ασφαλιστική, ως Μόνιμη Ολική Ανικανότητα (ΜΟΑ) εννοείται η κατάσταση κατά την οποία ο ασφαλισμένος αδυνατεί να κάνει οποιαδήποτε εργασία.&nbsp;Εδώ, χρειάζεται προσοχή. Το κλειδί είναι η λέξη «οποιαδήποτε». Δηλαδή εάν ένας ασφαλισμένος είναι γιατρός χειρουργός και μετά από μια περιπέτεια υγείας αδυνατεί (για όλη του την υπόλοιπη ζωή του) να χειρουργεί, τότε δεν θεωρείται ότι είναι ΜΟΑ καθώς σε αυτήν την περίπτωση ο ασφαλισμένος είναι, μεν, ανίκανος να εργαστεί στο επάγγελμα που ως τώρα εξασκούσε, δηλαδή να χειρουργεί για εξασφάλιση του βιοπορισμού του, αλλά δεν είναι ανίκανος να κάνει ΟΠΟΙΑΔΗΠΟΤΕ άλλη εργασία.Συνεπώς, την ώρα που συνάπτουμε το ασφαλιστήριο μας, είναι απαραίτητο να διευκρινίζουμε, σε συνεργασία με τον ασφαλιστικό μας σύμβουλο, τι ακριβώς σημαίνουν οι βασικές αναφορές και οι περιγραφές που υπάρχουν στους όρους του ασφαλιστηρίου.
+    - ID: "78f61174-f047-439d-8749-b2dc33207596"
+      Hint: OldImage
+      Value: "/Images/AsMilisoume/pote-apozimeionetai-i-monimi-oliki-anikanotita"
+    - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
+      Hint: Teaser
+      Value: Όταν η σημασία μιας λέξης ή φράσης της πλούσιας ελληνικής γλώσσας, μοιάζει στα μάτια μας λίγο συγκεχυμένη, φροντίζουμε να πάρουμε τη βοήθεια του... λεξικού.
+    - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
+      Hint: Title
+      Value: Πότε αποζημιώνεται η Μόνιμη Ολική Ανικανότητα
+    - ID: "b0652e4d-8891-4586-8be2-a4e73cc2c615"
+      Hint: Tag
+      Value: |
+        /AsMilisoume/Tags/kathorizw; 
+        /AsMilisoume/Tags/prostateuw; 
+        /AsMilisoume/Tags/exasfalizw; 
+        /AsMilisoume/Tags/ma8ainw
+    - ID: "dc21dbb1-629e-4c7c-8260-2048c1de036f"
+      Hint: Publicationdate
+      Value: 20160226T000000
+    - ID: "ec9a349d-4a40-4ffd-9b97-da84f8f3c691"
+      Hint: IsInsurance
+      Value: FALSE
+    - ID: "eca27318-9a00-40fc-a77b-02aa947518a3"
+      Hint: Image Raw HTML
+      Value: |
+        <image mediaid="{24E4D305-6668-442B-9AAE-59E19AAA6DED}" mediapath="/Images/AsMilisoume/pote-apozimeionetai-i-monimi-oliki-anikanotita" src="~/media/Images/AsMilisoume/pote-apozimeionetai-i-monimi-oliki-anikanotita.jpg" />
