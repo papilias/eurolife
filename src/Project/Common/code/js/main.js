@@ -1,8 +1,25 @@
 (function($) {
-
+  
     if (!("ontouchstart" in document.documentElement)) {
         $('html').addClass('no-touch');
     }
+
+  var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+  if (isIE11) {
+    $('body').addClass('ie11');
+
+    $('.hero-plain picture').each(function () {
+      var $container = $(this),
+        imgUrl = $container.find('img').prop('src');
+      if (imgUrl) {
+        $container
+          .css('backgroundImage', 'url(' + imgUrl + ')')
+          .addClass('cross-object-fit');
+      }
+    });
+
+
+  }                                                                    
 
     const droplists = document.querySelectorAll('.droplist');
     if(droplists != null) {
@@ -182,7 +199,8 @@
         }
 
 
-        if ($('.js-hero-slider').length) {
+      if ($('.js-hero-slider').length) {
+        console.log('test')
             var $pager = $('.js-custom-dots span');
             $('.js-hero-slider').slick({
                 mobileFirst:true,
@@ -631,16 +649,19 @@
          //   console.log(walk);
         });
   }
-
+                                              
   function customRadioButtons() {
-    $target = $("input[type=radio], input[type=checkbox]");
+    if ($("input[type=radio]").length || $("input[type=checkbox]").length) {
 
-    $target.each(function () {
-      if (!$(this).parent().parent().hasClass('accordion')) {
-        $(this).after("<label></label>");
-        $(this).parent().addClass("cursor-pointer");
-      }
-    });
+      var $target = $("input[type=radio], input[type=checkbox]");
+
+      $target.each(function () {
+        if (!$(this).parent().parent().hasClass('accordion')) {
+          $(this).after("<label></label>");
+          $(this).parent().addClass("cursor-pointer");
+        }
+      });
+    }
   }
 
     function highLightLabel(){

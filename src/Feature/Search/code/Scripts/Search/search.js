@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: 'GET',
-      url: `${url}&resultsOnPage=${resultsOnPage}&page=${page}`,
+      url: '${url}&resultsOnPage=${resultsOnPage}&page=${page}',
       contentType: 'application/json; charset=utf-8',
       cache: false,
       success: function (response) {

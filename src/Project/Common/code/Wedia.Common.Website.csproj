@@ -348,6 +348,8 @@
     <Content Include="styles\scss\base-components\_home.scss" />
     <Content Include="styles\scss\base-components\_statistics.scss" />
     <Content Include="Views\Common\Sublayouts\Header.cshtml" />
+    <Content Include="styles\scss\base-components\_ie.scss" />
+    <Content Include="Views\Common\Sublayouts\BlogDummy.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
