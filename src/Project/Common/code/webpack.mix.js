@@ -30,6 +30,15 @@ mix.js('assets/js/app.js', 'js')
    })
   .setPublicPath('./'); 
 
+
+mix.js('assets/js/main.js', 'js') 
+  .polyfill({
+    enabled: true,
+    useBuiltIns: "usage",
+    targets: { "firefox": "50", "ie": 11 }
+  })
+  .setPublicPath('./');
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

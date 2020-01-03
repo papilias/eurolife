@@ -101,6 +101,7 @@
     <None Include="assets\js\components\PanelGrid.vue" />
     <None Include="assets\js\components\PanelFilters.vue" />
     <Content Include="assets\js\EventBus.js" />
+    <Content Include="assets\js\main.js" />
     <Content Include="css\fancybox.css" />
     <Content Include="css\style.css" />
     <Content Include="fonts\converted\Ubuntu-LightItalic\preview.html" />

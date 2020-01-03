@@ -22,7 +22,7 @@ SharedFields:
           uid="{E0E4EA32-DC81-4BF1-B0BA-77D702519488}" />
         <r
           id="{502C9052-CF77-4725-A8B9-9EE313511986}"
-          ph=""
+          ph="page-layout"
           uid="{21786B30-2FE9-4817-B5A1-293006C3E7B3}" />
       </d>
     </r>

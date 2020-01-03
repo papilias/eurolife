@@ -17,7 +17,7 @@ SharedFields:
     /js/vendor/slick.min.js
     /js/vendor/select2.full.min.js
     /js/vendor/jquery.fancybox.min.js
-    /js/app.js
+    /js/main.js
     
 Languages:
 - Language: en

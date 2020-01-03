@@ -3,7 +3,6 @@ import Panel from './components/Panel';
 import PanelGroup from './components/PanelGroup';
 import CoveragesAccordion from './components/CoveragesAccordion';
 import Fragment from 'vue-fragment';
-import '../../js/main';
 
 Vue.use(Fragment.Plugin);
 
