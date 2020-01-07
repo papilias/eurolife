@@ -4,10 +4,6 @@ Parent: "d2f150dd-b92f-41c3-9ca4-ede8930b4875"
 Template: "00d32287-3ed5-4d97-9b00-0f8ef05f6db8"
 Path: "/sitecore/content/Eurolife/Home/Proionta/Idiotes/Astiki-Efthini-Idioti/_Local/Internal Page Menu"
 DB: master
-SharedFields:
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 800
 Languages:
 - Language: en
   Versions:

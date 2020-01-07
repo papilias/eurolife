@@ -11,10 +11,13 @@ Languages:
     Fields:
     - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
       Hint: TeaserSummary
-      Value: &Phi;&rho;&omicron;&nu;&tau;ί&delta;&alpha;. &Epsilon;&nu;&delta;&iota;&alpha;&phi;έ&rho;&omicron;&nu;. &Sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha;.
+      Value: |
+        <p>We show concern for the others in their time of need. </p>
+        <p>We are a friendly voice when others need one.</p>
+        <p>We look for ways to help rather than deny or hinder.</p>
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
-      Value: Νοιαζόμαστε για κάθε έναν από εσάς
+      Value: We have big hearts
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190924T091206Z

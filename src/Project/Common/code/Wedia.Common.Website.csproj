@@ -155,6 +155,7 @@
     <Content Include="images\icons\check-blue.svg" />
     <Content Include="images\icons\check-green.svg" />
     <Content Include="images\icons\down.svg" />
+    <Content Include="images\icons\download.png" />
     <Content Include="images\icons\health\microscope.svg" />
     <Content Include="images\icons\health\program.svg" />
     <Content Include="images\icons\health\stithoscope.svg" />
@@ -285,6 +286,7 @@
     <Content Include="images\icons\health\.DS_Store" />
     <Content Include="images\icons\home\.DS_Store" />
     <Content Include="assets\styles\scss\base-components\datepicker.scss" />
+    <Content Include="assets\styles\scss\base\_ie.scss" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="assets\styles\scss\base-components\_accordion.scss" />

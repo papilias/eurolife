@@ -11,10 +11,12 @@ Languages:
     Fields:
     - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
       Hint: TeaserSummary
-      Value: &Epsilon;&upsilon;&epsilon;&lambda;&iota;&xi;ί&alpha;. &Delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;&iota;&kappa;ό&tau;&eta;&tau;&alpha;. &Pi;&rho;&omega;&tau;&omicron;&tau;&upsilon;&pi;ί&alpha;
+      Value: |
+        <p>We anticipate what's needed next to make things flow smoother and without hiccup.</p>
+        <p>We look for ways to grow our relationship and business, while solving problems for others.</p>
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
-      Value: Εξελισσόμαστε συνεχώς
+      Value: We never Stand Still
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190924T091141Z

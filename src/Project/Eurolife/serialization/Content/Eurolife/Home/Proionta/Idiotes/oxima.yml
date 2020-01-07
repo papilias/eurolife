@@ -33,35 +33,8 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{3E95363E-CC5D-40D6-A218-BF7FFA568309}"
-              p:before="*"
-              s:ds="{D69EBC48-B0DA-498C-AC9B-6FECB93B673E}"
-              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
-              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B84C9D386-DCAC-4792-816F-BE3A92FC6203%7D"
-              s:ph="/page-layout/teaser-placeholder-3-{E139F9AC-30E5-4B57-A1CD-C376C8778D80}-0" />
-            <r
-              uid="{C581EDE1-0E57-4B80-B5E1-CD361F435FFD}"
-              p:after="r[@uid='{3E95363E-CC5D-40D6-A218-BF7FFA568309}']"
-              s:ds="{1C6276A6-0E53-4876-915E-207926E4446C}"
-              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
-              s:par="Alignment=%7B1168A85D-15F2-4335-8D86-CED079708B5A%7D&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
-              s:ph="/page-layout/teaser-placeholder-3-{E139F9AC-30E5-4B57-A1CD-C376C8778D80}-0" />
-            <r
-              uid="{95B7C594-7E09-4C3B-97DF-C29B7DA89E9C}"
-              p:after="r[@uid='{C581EDE1-0E57-4B80-B5E1-CD361F435FFD}']"
-              s:ds="{A01CAA78-32AC-462E-B64D-303AF1C34953}"
-              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
-              s:ph="/page-layout/teaser-placeholder-2-{E139F9AC-30E5-4B57-A1CD-C376C8778D80}-0" />
-            <r
-              uid="{B0A5ED05-A0BF-4C6A-81CB-FB377228F69C}"
-              p:after="r[@uid='{95B7C594-7E09-4C3B-97DF-C29B7DA89E9C}']"
-              s:ds="{9C848318-F59E-4F5B-919E-8CFB007B23CF}"
-              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
-              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
-              s:ph="/page-layout/teaser-placeholder-1-{E139F9AC-30E5-4B57-A1CD-C376C8778D80}-0" />
-            <r
               uid="{0DA9FD2B-640A-46C3-A4B8-2E22179AB9A5}"
-              p:after="r[@uid='{B0A5ED05-A0BF-4C6A-81CB-FB377228F69C}']"
+              p:before="*"
               s:ds="{567EBE42-7DE8-43A0-9114-B7C868BD2C96}"
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:par="Alignment=%7B90C1EE80-932F-4C5F-9BAD-BCD954F6991D%7D&amp;Background&amp;ContainerIsNotFullWidth=1&amp;FontColor=%7B84C9D386-DCAC-4792-816F-BE3A92FC6203%7D"
@@ -84,8 +57,20 @@ Languages:
               s:id="{2FF3A175-2A41-4088-820A-749360BE65FA}"
               s:ph="/page-layout/toolkit-how-it-works" />
             <r
-              uid="{F78C98C6-1B25-4BCC-915A-3DF8F20F4129}"
+              uid="{ACE9C355-04F1-497B-ADB3-0C26A02113C5}"
               p:after="r[@uid='{EAE6A2F2-352C-4AFD-B0F5-C8B3E03AF512}']"
+              s:ds="{A85B04A0-6187-4941-9991-9228BD0D2D9C}"
+              s:id="{EEAE1258-7BE1-4922-A25E-767AA3A0BF8C}"
+              s:ph="/page-layout/toolkit-glossary" />
+            <r
+              uid="{7358C3D6-E5F4-432A-BC04-DE1620620EC4}"
+              p:after="r[@uid='{ACE9C355-04F1-497B-ADB3-0C26A02113C5}']"
+              s:ds="{915FBA8D-5E5A-4FF7-9D08-7C1433B43A93}"
+              s:id="{3C35F9B3-71E4-473C-B607-EB856E37E096}"
+              s:ph="/page-layout/toolkit-faq-group" />
+            <r
+              uid="{F78C98C6-1B25-4BCC-915A-3DF8F20F4129}"
+              p:after="r[@uid='{7358C3D6-E5F4-432A-BC04-DE1620620EC4}']"
               s:ds="{0201C4B6-F3E5-4651-812E-3B1DD7D6DF90}"
               s:id="{907DF28B-FE15-4286-AD29-109BC7C0B98A}"
               s:ph="/page-layout/toolkit-documents" />
@@ -139,21 +124,21 @@ Languages:
               s:id="{18EEA154-E01A-402A-9726-1D5B8A6E145D}"
               s:ph="page-layout" />
             <r
-              uid="{E139F9AC-30E5-4B57-A1CD-C376C8778D80}"
+              uid="{1EBB4C85-11BF-44AC-94E1-04562E8E994A}"
               p:after="r[@uid='{A9D12F44-CBA8-42CB-B796-1D34BC614933}']"
               s:ds="{52A182B7-C526-4B6F-A5E2-758452BB6F34}"
-              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
-              s:ph="page-layout" />
-            <r
-              uid="{4CAD35EA-2D9F-4C0F-AAC3-FBAC3482A7F6}"
-              p:after="r[@uid='{E139F9AC-30E5-4B57-A1CD-C376C8778D80}']"
-              s:id="{8BFF74BD-66FF-4A73-A3F7-0BBD54A410CA}"
+              s:id="{B2CA050A-DD2C-4AC1-94D7-0B31527BD67A}"
               s:ph="page-layout" />
             <r
               uid="{9DBBAC4D-2830-45A0-93BC-7A546949A66C}"
-              p:after="r[@uid='{4CAD35EA-2D9F-4C0F-AAC3-FBAC3482A7F6}']"
+              p:after="r[@uid='{1EBB4C85-11BF-44AC-94E1-04562E8E994A}']"
               s:ds="{9979784D-F454-48CC-AF20-7A024CB44D04}"
               s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
+              s:ph="page-layout" />
+            <r
+              uid="{4CAD35EA-2D9F-4C0F-AAC3-FBAC3482A7F6}"
+              p:after="r[@uid='{9DBBAC4D-2830-45A0-93BC-7A546949A66C}']"
+              s:id="{8BFF74BD-66FF-4A73-A3F7-0BBD54A410CA}"
               s:ph="page-layout" />
           </d>
         </r>
@@ -166,41 +151,16 @@ Languages:
     - ID: "328f77a3-08cc-4496-b8c9-184e3c194993"
       Hint: ToolkitHowItWorks
       Value: |
-        <table style="font-size: larger; text-align: center; vertical-align: middle; letter-spacing: normal; word-spacing: normal; line-height: normal; display: block;" align="center">
-            <tbody>
-                <tr>
-                    <td style="text-align: left; vertical-align: middle;"><img alt="" src="-/media/8689CC3F0B044B45ADEE5D85EDB77B9E.ashx" /></td>
-                    <td style="text-align: left; vertical-align: middle;">
-                    <p>&Beta;&eta;&mu;&alpha; 1.</p>
-                    <p>&Alpha;&nu;&alpha;&gamma;&gamma;&epsilon;&lambda;ί&alpha; &Pi;&epsilon;&rho;&iota;&sigma;&tau;&alpha;&tau;&iota;&kappa;&omicron;ύ</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left; vertical-align: middle;"><img alt="" src="-/media/2262D99E4C6C4DFE818171476E053F0E.ashx" />&nbsp;</td>
-                    <td style="text-align: left; vertical-align: middle;">
-                    <p>&Beta;ή&mu;&alpha; 2.</p>
-                    <p>&Alpha;&nu;ά&theta;&epsilon;&sigma;&eta; &sigma;&epsilon; &Epsilon;&iota;&delta;&iota;&kappa;ό </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left; vertical-align: middle;">&nbsp;<img alt="" src="-/media/5A02B1245FA74B0C94090664DEEABE21.ashx" /></td>
-                    <td style="text-align: left; vertical-align: middle;">
-                    <p>&Beta;ή&mu;&alpha; 3.</p>
-                    <p>&Alpha;&nu;&alpha;&kappa;&omicron;ί&nu;&omega;&sigma;&eta; &Alpha;&pi;ό&phi;&alpha;&sigma;&eta;&sigmaf; </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="text-align: left; vertical-align: middle;">&nbsp;<img alt="" src="-/media/969EC2F1D1CD4B14A011C20C55965860.ashx" /></td>
-                    <td style="text-align: left; vertical-align: middle;">
-                    <p>&Beta;ή&mu;&alpha; 4.</p>
-                    <p>Έ&kappa;&delta;&omicron;&sigma;&eta; &epsilon;&pi;&iota;&tau;&alpha;&gamma;ή&sigmaf; ή &kappa;&alpha;&tau;ά&theta;&epsilon;&sigma;&eta; &pi;&omicron;&sigma;&omicron;ύ </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br />
-        <h4 style="text-align:center;"><a href="~/link.aspx?_id=AD8846525702425FA31648FBCFA23FED&amp;_z=z">&Delta;&Epsilon;&Iota;&Tau;&Epsilon; &Tau;&Eta;&Nu; &Delta;&Iota;&Alpha;&Delta;&Iota;&Kappa;&Alpha;&Sigma;&Iota;&Alpha; &Alpha;&Nu;&Alpha;&Lambda;&Upsilon;&Tau;&Iota;&Kappa;&Alpha;<br />
-        </a></h4>
+        <h2 class="h2 m-b-24 moto-heading">&Beta;&Eta;&Mu;&Alpha; 1. </h2>
+        <h1>&Alpha;&nu;&alpha;&gamma;&gamma;&epsilon;&lambda;ί&alpha; &Pi;&epsilon;&rho;&iota;&sigma;&tau;&alpha;&tau;&iota;&kappa;&omicron;ύ</h1>
+        <h2 class="h2 m-b-24 moto-heading">&Beta;&Eta;&Mu;&Alpha; 2.</h2>
+        <h1>&Alpha;&nu;ά&theta;&epsilon;&sigma;&eta; &sigma;&epsilon; &Epsilon;&iota;&delta;&iota;&kappa;ό</h1>
+        <h2 class="h2 m-b-24 moto-heading">&Beta;&Eta;&Mu;&Alpha; 3.</h2>
+        <h1>&Alpha;&nu;&alpha;&kappa;&omicron;ί&nu;&omega;&sigma;&eta; &Alpha;&pi;ό&phi;&alpha;&sigma;&eta;&sigmaf;</h1>
+        <h2 class="h2 m-b-24 moto-heading">&Beta;&Eta;&Mu;&Alpha; 4.</h2>
+        <h1>Έ&kappa;&delta;&omicron;&sigma;&eta; &Epsilon;&pi;&iota;&tau;&alpha;&gamma;ή&sigmaf; ή &Kappa;&alpha;&tau;ά&theta;&epsilon;&sigma;&eta; &Pi;&omicron;&sigma;&omicron;ύ</h1>
+        <p>&nbsp;</p>
+        <h2 style="text-align:center;"><a href="~/link.aspx?_id=AD8846525702425FA31648FBCFA23FED&amp;_z=z">&Delta;&Epsilon;&Iota;&Tau;&Epsilon; &Pi;&Epsilon;&Rho;&Iota;&Sigma;&Sigma;&Omicron;&Tau;&Epsilon;&Rho;&Alpha; </a></h2>
     - ID: "4791fadd-9bb5-4efd-b542-4d2f8bb634e4"
       Hint: ToolkitSubhead
       Value: Στις ενότητες που ακολουθούν θα βρείτε όλες τις συμπληρωματικές πληροφορίες που χρειάζεστε.
@@ -209,11 +169,8 @@ Languages:
       Value: Προγράμματα‌ ‌Ασφάλισης‌ ‌Οχήματος‌
     - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
       Hint: MobileImage
-      Value: 
-    - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
-      Hint: CTA
       Value: |
-        <link text="ΕΚΔΗΛΩΣΗ ΕΝΔΙΑΦΕΡΟΝΤΟΣ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B13C37FC-7395-4322-9D78-2DA41051875D}" />
+        <image mediaid="{BCD9F6E2-035C-4FFF-9BD8-A1E1BCE0E9AA}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -231,7 +188,7 @@ Languages:
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{F7B912DF-DC26-43AC-A1AB-C0EBEEB59AE1}" />
+        <image mediaid="{1EDF0501-81C3-4813-BF1D-6A44F5F9FB9B}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

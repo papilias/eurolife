@@ -15,7 +15,7 @@ Languages:
     Fields:
     - ID: "1ef9b331-607c-48d3-bc12-c8b2d7ca1e40"
       Hint: PanelRowTitle
-      Value: Εκπιπτόμενο ποσό ανά περιστατικό νοσηλείας
+      Value: Εκπιπτόμενο ποσό
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190709T090357Z

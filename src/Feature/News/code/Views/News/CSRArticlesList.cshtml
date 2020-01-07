@@ -9,13 +9,15 @@
       <div class="list--article__image">
         @Html.Sitecore().Field(Templates.NewsArticle.Fields.DesktopImage, item)
       </div>
-      <h2 class="list--article__title h4">
-        <a href="@item.Url()">
-          @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, item)
-        </a>
-      </h2>
-      <div class="list--article__text">
-        @Html.Sitecore().Field(Templates.NewsArticle.Fields.Summary, item)
+      <div class="list--article__information">
+        <h2 class="list--article__title h4">
+          <a href="@item.Url()">
+            @Html.Sitecore().Field(Templates.NewsArticle.Fields.Title, item)
+          </a>
+        </h2>
+        <div class="list--article__text">
+          @Html.Sitecore().Field(Templates.NewsArticle.Fields.Summary, item)
+        </div>
       </div>
     </article>
   }

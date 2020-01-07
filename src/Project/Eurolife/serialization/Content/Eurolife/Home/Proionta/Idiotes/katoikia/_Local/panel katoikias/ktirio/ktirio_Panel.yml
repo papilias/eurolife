@@ -32,9 +32,10 @@ Languages:
       Hint: PanelCateogies
       Type: TreelistEx
       Value: |
-        {39A8E9DD-A6CB-4CA9-8F73-2864021E6623}
         {F6F4203E-72E0-4F30-889A-7E70E5457178}
         {104F19B2-A9F6-43A8-A629-05CD66C1340C}
+        {E6A71F3A-E1F7-4788-92F9-4C1DC297EFFC}
+        {FECE1F73-8844-4A0D-9D20-C9A21E5A2771}
     - ID: "eaefde6c-1755-4c47-bc40-237d17a8ebe8"
       Hint: PanelFilters
       Type: Multilist
@@ -65,3 +66,5 @@ Languages:
       Value: |
         {F6F4203E-72E0-4F30-889A-7E70E5457178}
         {104F19B2-A9F6-43A8-A629-05CD66C1340C}
+        {E6A71F3A-E1F7-4788-92F9-4C1DC297EFFC}
+        {FECE1F73-8844-4A0D-9D20-C9A21E5A2771}

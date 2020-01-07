@@ -29,11 +29,11 @@ Languages:
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
       Value: |
-        <link text="ΔΕΙΤΕ ΤΗΝ ΚΑΛΥΨΗ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{8D34CA36-52B7-458C-BC93-2BC1673C50D4}" />
+        <link text="ΔΕΙΤΕ ΤΗΝ ΚΑΛΥΨΗ" linktype="external" url="http://#" anchor="" target="" />
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediaid="{F8870881-6442-4A2E-B83A-981AFE4D2CBC}" />
+        <image mediapath="" alt="demo1" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{3B090C83-81C2-4283-A2A0-CA7352081AA1}" ></image>
     - ID: "f51dd24c-64be-4832-9f98-e03f9e84fa63"
       Hint: TeaserDownloadCTA
       Value: 

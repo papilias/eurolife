@@ -16,7 +16,10 @@ Languages:
     - ID: "1ac1cee8-850d-4779-a8d6-370771e20126"
       Hint: Accordions
       Type: Multilist with Search
-      Value: "{ECE11280-6F78-4556-BEF7-E483FD6C3D62}"
+      Value: |
+        {C89DE27B-E6E9-4D3B-831C-833841F71465}
+        {5090CE8D-A4FC-4D31-94AF-886A97A91E59}
+        {ECE11280-6F78-4556-BEF7-E483FD6C3D62}
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191029T080309Z

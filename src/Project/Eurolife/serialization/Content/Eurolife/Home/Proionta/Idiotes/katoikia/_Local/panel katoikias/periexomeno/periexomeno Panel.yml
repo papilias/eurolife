@@ -21,7 +21,9 @@ Languages:
     - ID: "3eedcf8a-848c-4beb-8513-b0577ee4acfe"
       Hint: PanelItems
       Type: TreelistEx
-      Value: "{33DC4B4D-20E7-4FD3-AE3A-7AE8F0C6A5EE}"
+      Value: |
+        {C332EA49-F2B1-48D7-A8C5-8FB0F3E8BA5B}
+        {46B58C37-3FAB-4156-83E1-12CA71DF1C7C}
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -30,9 +32,10 @@ Languages:
       Hint: PanelCateogies
       Type: TreelistEx
       Value: |
-        {33726179-F2EE-4C3F-A24A-D5A3BE6852E7}
-        {48F772EE-350D-4FC9-8EC6-370B4C06C81E}
-        {631ED076-790B-4A0C-BE94-25BEB3CA9E69}
+        {F6F4203E-72E0-4F30-889A-7E70E5457178}
+        {104F19B2-A9F6-43A8-A629-05CD66C1340C}
+        {E6A71F3A-E1F7-4788-92F9-4C1DC297EFFC}
+        {FECE1F73-8844-4A0D-9D20-C9A21E5A2771}
     - ID: "eaefde6c-1755-4c47-bc40-237d17a8ebe8"
       Hint: PanelFilters
       Type: Multilist
@@ -63,3 +66,5 @@ Languages:
       Value: |
         {F6F4203E-72E0-4F30-889A-7E70E5457178}
         {104F19B2-A9F6-43A8-A629-05CD66C1340C}
+        {E6A71F3A-E1F7-4788-92F9-4C1DC297EFFC}
+        {FECE1F73-8844-4A0D-9D20-C9A21E5A2771}

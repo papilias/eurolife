@@ -2,7 +2,7 @@
 ID: "bb836ed9-0596-457b-836b-11fefd5c9f67"
 Parent: "d1dd8df4-4164-49a3-9eda-bbf77012384f"
 Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
-Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Asfalisi-Touristikon-Monadon/_Local/Health Panel/Programs Attributes/Doctors_payment/Null"
+Path: /sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Hotels/_Local/Health Panel/Programs Attributes/Doctors_payment/Null
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"

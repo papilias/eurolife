@@ -13,10 +13,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "1543892b-a690-4e90-a05f-c496fee76c18"
-      Hint: PanelsIsCheckbox
-      Type: Checkbox
-      Value: 1
     - ID: "1ef9b331-607c-48d3-bc12-c8b2d7ca1e40"
       Hint: PanelRowTitle
       Value: Διαγνωστικές εξετάσεις

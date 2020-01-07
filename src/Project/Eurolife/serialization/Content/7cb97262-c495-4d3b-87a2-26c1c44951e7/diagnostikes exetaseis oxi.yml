@@ -2,7 +2,7 @@
 ID: "0bc5ea34-cadf-45de-b4a4-0f25d653ac29"
 Parent: "7cb97262-c495-4d3b-87a2-26c1c44951e7"
 Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
-Path: /sitecore/content/Eurolife/Home/Proionta/Idiotes/ygeia/_Local/Health Panel/Programs Attributes/exeidikeumenes Diagnostikes exetaseis/diagnostikes exetaseis oxi
+Path: /sitecore/content/Eurolife/Home/Proionta/Idiotes/ygeia/_Local/Health Panel/Programs Attributes/Diagnostikes exetaseis/diagnostikes exetaseis oxi
 DB: master
 Languages:
 - Language: "el-GR"
@@ -14,7 +14,7 @@ Languages:
       Value: 20190709T091109Z
     - ID: "46a86135-502b-4015-82fb-a4d54ab61719"
       Hint: PanelTooltip
-      Value: 
+      Value: Β' Θέση (δίκλινο δωμάτιο και διατροφή)
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -25,7 +25,7 @@ Languages:
       Value: 0
     - ID: "ae0c5505-9bcd-4218-9e66-e5be620bcc7c"
       Hint: Value
-      Value: 
+      Value: Όχι
 - Language: en
   Versions:
   - Version: 1

@@ -145,3 +145,7 @@ main {
     margin-left: -40px;
   }
 }
+
+#optanon input[type=checkbox] + label:before {
+  display: none;
+}

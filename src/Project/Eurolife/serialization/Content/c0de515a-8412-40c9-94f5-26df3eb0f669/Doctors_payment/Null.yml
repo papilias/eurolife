@@ -2,7 +2,7 @@
 ID: "40c6e171-428c-4ad7-99ac-f43a874c8d16"
 Parent: "5397e029-a489-4c3b-a9a0-f6ea45679e2c"
 Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
-Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Omadiki-Asfalisi-kai-Pronomia-Prosopikou/_Local/omadiki asfalisi Panel/Programs Attributes/Doctors_payment/Null"
+Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Group-Insurance/_Local/Health Panel/Programs Attributes/Doctors_payment/Null"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"

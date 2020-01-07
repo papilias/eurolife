@@ -14,7 +14,7 @@ Languages:
       Value: &Kappa;έ&rho;&delta;&iota;&sigma;&epsilon; &mu;έ&sigma;&alpha; &alpha;&pi;ό &tau;&alpha; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&iota;&kappa;ά &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &tau;&eta;&sigmaf; Eurolife ERB
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
-      Value: Πρόγραμμα Επιβράβευσης Πιστωτικών καρτών Eurobank
+      Value: Πρόγραμμα επιβράβευσης
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191105T110330Z
@@ -29,4 +29,4 @@ Languages:
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediaid="{D23F49C8-7071-4637-B18D-5134C91DDC26}"></image>
+        <image mediaid="{8AF5427C-58FE-49AA-9035-0CB27AFB810B}" />

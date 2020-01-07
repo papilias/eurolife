@@ -74,20 +74,6 @@ Languages:
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-1-{9DBBAC4D-2830-45A0-93BC-7A546949A66C}-0" />
             <r
-              uid="{F09055D9-E3E7-4E9C-BF09-2AD8A0D74453}">
-              <p:d />
-            </r>
-            <r
-              uid="{2C67361D-8F14-4698-8B1D-3360CAD2517F}"
-              p:after="r[@uid='{EFA94C32-712C-4F4D-849E-368C1719BBFB}']"
-              s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
-              s:ph="/page-layout/page-layout-top" />
-            <r
-              uid="{86AC15F6-B367-4991-898A-AC6CAA6894FC}"
-              p:after="r[@uid='{2C67361D-8F14-4698-8B1D-3360CAD2517F}']"
-              s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
-              s:ph="page-layout" />
-            <r
               uid="{5EF5D0A3-333E-4901-A5F1-31DA788A11EC}">
               <p:d />
             </r>
@@ -130,39 +116,49 @@ Languages:
     - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
       Hint: MobileImage
       Value: |
-        <image mediaid="{860134B8-5938-432D-8B15-4A7C4FAAA85E}" />
+        <image mediaid="{BCD9F6E2-035C-4FFF-9BD8-A1E1BCE0E9AA}" />
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
-        &Eta; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&alpha;&sigmaf; &mu;&epsilon; &epsilon;&xi;&epsilon;&iota;&delta;&iota;&kappa;&epsilon;&upsilon;&mu;έ&nu;&epsilon;&sigmaf; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;ί&epsilon;&sigmaf; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;ή&sigmaf; &kappa;&alpha;&iota; &alpha;&nu;&tau;&iota;&kappa;&alpha;&tau;ά&sigma;&tau;&alpha;&sigma;&eta;&sigmaf; &kappa;&rho;&upsilon;&sigma;&tau;ά&lambda;&lambda;&omega;&nu; &sigma;&alpha;&sigmaf; &epsilon;&xi;&alpha;&sigma;&phi;&alpha;&lambda;ί&zeta;&omicron;&upsilon;&nu;: <br />
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"></strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Eta; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&alpha;&sigmaf; &mu;&epsilon; &epsilon;&xi;&epsilon;&iota;&delta;&iota;&kappa;&epsilon;&upsilon;&mu;έ&nu;&epsilon;&sigmaf; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;ί&epsilon;&sigmaf; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;ή&sigmaf; &kappa;&alpha;&iota; &alpha;&nu;&tau;&iota;&kappa;&alpha;&tau;ά&sigma;&tau;&alpha;&sigma;&eta;&sigmaf; &kappa;&rho;&upsilon;&sigma;&tau;ά&lambda;&lambda;&omega;&nu; &sigma;&alpha;&sigmaf; &epsilon;&xi;&alpha;&sigma;&phi;&alpha;&lambda;ί&zeta;&omicron;&upsilon;&nu;:&nbsp;</span></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>&Tau;&alpha;&chi;ύ&tau;&eta;&tau;&alpha; &alpha;&pi;&omicron;&kappa;&alpha;&tau;ά&sigma;&tau;&alpha;&sigma;&eta;&sigmaf;</strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Chi;ά&rho;&eta; &sigma;&tau;&omicron; &delta;ί&kappa;&tau;&upsilon;ό &mu;&alpha;&sigmaf;, &eta; &alpha;&pi;&omicron;&kappa;&alpha;&tau;ά&sigma;&tau;&alpha;&sigma;&eta; &tau;&eta;&sigmaf; &zeta;&eta;&mu;&iota;ά&sigmaf; &gamma;ί&nu;&epsilon;&tau;&alpha;&iota; &gamma;&rho;ή&gamma;&omicron;&rho;&alpha; &kappa;&alpha;&iota; &alpha;&xi;&iota;ό&pi;&iota;&sigma;&tau;&alpha;.</span></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>&Pi;&lambda;&eta;&rho;ώ&nu;&omicron;&upsilon;&mu;&epsilon; &epsilon;&mu;&epsilon;ί&sigmaf;</strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Eta; &alpha;&pi;&omicron;&zeta;&eta;&mu;ί&omega;&sigma;&eta; &delta;&iota;&epsilon;&kappa;&pi;&epsilon;&rho;&alpha;&iota;ώ&nu;&epsilon;&tau;&alpha;&iota; &alpha;&pi;&epsilon;&upsilon;&theta;&epsilon;ί&alpha;&sigmaf; &alpha;&pi;ό &epsilon;&mu;ά&sigmaf;, &chi;&omega;&rho;ί&sigmaf; &nu;&alpha; &chi;&rho;&epsilon;&iota;&alpha;&sigma;&tau;&epsilon;ί &nu;&alpha; &epsilon;&kappa;&tau;&alpha;&mu;&iota;&epsilon;ύ&sigma;&epsilon;&tau;&epsilon; &chi;&rho;ή&mu;&alpha;&tau;&alpha;.</span></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>&Pi;&omicron;&iota;ό&tau;&eta;&tau;&alpha; &kappa;&rho;&upsilon;&sigma;&tau;ά&lambda;&lambda;&omega;&nu;</strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Omicron;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf; &phi;&rho;&omicron;&nu;&tau;ί&zeta;&omicron;&upsilon;&nu; &tau;&eta; &zeta;&eta;&mu;&iota;ά &mu;&epsilon; &kappa;&rho;ύ&sigma;&tau;&alpha;&lambda;&lambda;&alpha; &gamma;&nu;ή&sigma;&iota;&alpha; OEM (Original Equipment Manufacturer), &alpha;&pi;ό &kappa;&alpha;&tau;&alpha;&xi;&iota;&omega;&mu;έ&nu;&alpha; &epsilon;&rho;&gamma;&omicron;&sigma;&tau;ά&sigma;&iota;&alpha; &tau;&omicron;&upsilon; &epsilon;&xi;&omega;&tau;&epsilon;&rho;&iota;&kappa;&omicron;ύ.</span></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>&Pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;ί&eta;&sigma;&eta;</strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Mu;&epsilon; &tau;&eta;&nu; &epsilon;&pi;ί&sigma;&kappa;&epsilon;&psi;ή &sigma;&alpha;&sigmaf; &epsilon;ί&sigma;&tau;&epsilon; &sigma;ί&gamma;&omicron;&upsilon;&rho;&omicron;&iota; &gamma;&iota;&alpha; &tau;&eta;&nu; &pi;&omicron;&iota;ό&tau;&eta;&tau;&alpha;, &alpha;&phi;&omicron;ύ &sigma;&upsilon;&nu;&omicron;&delta;&epsilon;ύ&epsilon;&tau;&alpha;&iota; &alpha;&pi;ό &Pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;&iota;&eta;&tau;&iota;&kappa;ό &Gamma;&nu;&eta;&sigma;&iota;ό&tau;&eta;&tau;&alpha;&sigmaf; &Kappa;&rho;&upsilon;&sigma;&tau;ά&lambda;&lambda;&omega;&nu; &kappa;&alpha;&iota; &Gamma;&rho;&alpha;&pi;&tau;ή &Epsilon;&gamma;&gamma;ύ&eta;&sigma;&eta; &Epsilon;&rho;&gamma;&alpha;&sigma;&iota;ώ&nu;.</span></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
         <br />
-        <strong>&Tau;&alpha;&chi;ύ&tau;&eta;&tau;&alpha; &alpha;&pi;&omicron;&kappa;&alpha;&tau;ά&sigma;&tau;&alpha;&sigma;&eta;&sigmaf;</strong><br />
-        &Chi;ά&rho;&eta; &sigma;&tau;&omicron; &delta;ί&kappa;&tau;&upsilon;ό &mu;&alpha;&sigmaf;, &eta; &alpha;&pi;&omicron;&kappa;&alpha;&tau;ά&sigma;&tau;&alpha;&sigma;&eta; &tau;&eta;&sigmaf; &zeta;&eta;&mu;&iota;ά&sigmaf; &gamma;ί&nu;&epsilon;&tau;&alpha;&iota; &gamma;&rho;ή&gamma;&omicron;&rho;&alpha; &kappa;&alpha;&iota; &alpha;&xi;&iota;ό&pi;&iota;&sigma;&tau;&alpha;.<br />
-        <br />
-        <strong>&Pi;&lambda;&eta;&rho;ώ&nu;&omicron;&upsilon;&mu;&epsilon; &epsilon;&mu;&epsilon;ί&sigmaf;</strong><br />
-        &Eta; &alpha;&pi;&omicron;&zeta;&eta;&mu;ί&omega;&sigma;&eta; &delta;&iota;&epsilon;&kappa;&pi;&epsilon;&rho;&alpha;&iota;ώ&nu;&epsilon;&tau;&alpha;&iota; &alpha;&pi;&epsilon;&upsilon;&theta;&epsilon;ί&alpha;&sigmaf; &alpha;&pi;ό &epsilon;&mu;ά&sigmaf;, &chi;&omega;&rho;ί&sigmaf; &nu;&alpha; &chi;&rho;&epsilon;&iota;&alpha;&sigma;&tau;&epsilon;ί &nu;&alpha; &epsilon;&kappa;&tau;&alpha;&mu;&iota;&epsilon;ύ&sigma;&epsilon;&tau;&epsilon; &chi;&rho;ή&mu;&alpha;&tau;&alpha;.<br />
-        <br />
-        <strong>&Pi;&omicron;&iota;ό&tau;&eta;&tau;&alpha; &kappa;&rho;&upsilon;&sigma;&tau;ά&lambda;&lambda;&omega;&nu;</strong><br />
-        &Omicron;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;ά&tau;&epsilon;&sigmaf; &mu;&alpha;&sigmaf; &phi;&rho;&omicron;&nu;&tau;ί&zeta;&omicron;&upsilon;&nu; &tau;&eta; &zeta;&eta;&mu;&iota;ά &mu;&epsilon; &kappa;&rho;ύ&sigma;&tau;&alpha;&lambda;&lambda;&alpha; &gamma;&nu;ή&sigma;&iota;&alpha; OEM (Original Equipment Manufacturer), &alpha;&pi;ό &kappa;&alpha;&tau;&alpha;&xi;&iota;&omega;&mu;έ&nu;&alpha; &epsilon;&rho;&gamma;&omicron;&sigma;&tau;ά&sigma;&iota;&alpha; &tau;&omicron;&upsilon; &epsilon;&xi;&omega;&tau;&epsilon;&rho;&iota;&kappa;&omicron;ύ.<br />
-        <br />
-        <strong>&Pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;ί&eta;&sigma;&eta;</strong><br />
-        &Mu;&epsilon; &tau;&eta;&nu; &epsilon;&pi;ί&sigma;&kappa;&epsilon;&psi;ή &sigma;&alpha;&sigmaf; &epsilon;ί&sigma;&tau;&epsilon; &sigma;ί&gamma;&omicron;&upsilon;&rho;&omicron;&iota; &gamma;&iota;&alpha; &tau;&eta;&nu; &pi;&omicron;&iota;ό&tau;&eta;&tau;&alpha;, &alpha;&phi;&omicron;ύ &sigma;&upsilon;&nu;&omicron;&delta;&epsilon;ύ&epsilon;&tau;&alpha;&iota; &alpha;&pi;ό &Pi;&iota;&sigma;&tau;&omicron;&pi;&omicron;&iota;&eta;&tau;&iota;&kappa;ό &Gamma;&nu;&eta;&sigma;&iota;ό&tau;&eta;&tau;&alpha;&sigmaf; &Kappa;&rho;&upsilon;&sigma;&tau;ά&lambda;&lambda;&omega;&nu; &kappa;&alpha;&iota; &Gamma;&rho;&alpha;&pi;&tau;ή &Epsilon;&gamma;&gamma;ύ&eta;&sigma;&eta; &Epsilon;&rho;&gamma;&alpha;&sigma;&iota;ώ&nu;.<br />
-        <br />
-        <br />
-        <strong>&Sigma;&tau;&omicron;&iota;&chi;&epsilon;ί&alpha; &epsilon;&pi;&iota;&kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha;&sigmaf; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu;:</strong><br />
-        <br />
-        <strong>Glassfit </strong><br />
-        &Tau;&eta;&lambda;έ&phi;&omega;&nu;&omicron;: 800 11 800 20<br />
-        <a href="http://www.glassfit.gr/el/diktyo.html">&Delta;ί&kappa;&tau;&upsilon;&omicron; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu;</a><br />
-        <br />
-        <strong>Eurosos </strong><br />
-        &Tau;&eta;&lambda;έ&phi;&omega;&nu;&omicron;: 210 6504036<br />
-        <a href="-/media/5927DE4136B94A85A79B431E1B4109B5.ashx">&Delta;ί&kappa;&tau;&upsilon;&omicron; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu;</a><br />
-        <br />
-        <strong>Glassdrive </strong><br />
-        &Tau;&eta;&lambda;έ&phi;&omega;&nu;&omicron;: 800 11 777 999 <br />
-        <a href=" http://glassdrive.gr/store">&Delta;ί&kappa;&tau;&upsilon;&omicron; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu;</a><br />
-        <br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>&Sigma;&tau;&omicron;&iota;&chi;&epsilon;ί&alpha; &epsilon;&pi;&iota;&kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha;&sigmaf; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu;:</strong></span></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>Glassdrive</strong>&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Tau;&eta;&lambda;έ&phi;&omega;&nu;&omicron;: 800 11 777 999&nbsp;</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Delta;ί&kappa;&tau;&upsilon;&omicron; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu; </span><a href="http://glassdrive.gr/store" style="text-decoration: none;"><span style="background-color: transparent; text-decoration: underline; color: #1155cc;">http://glassdrive.gr/store</span></a><span style="background-color: transparent; text-decoration: none; color: #000000;"></span></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>Glassfit&nbsp;</strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Tau;&eta;&lambda;έ&phi;&omega;&nu;&omicron;: 800 11 800 20</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Delta;ί&kappa;&tau;&upsilon;&omicron; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu; </span><a href="http://www.glassfit.gr/el/diktyo.html" style="text-decoration: none;"><span style="background-color: transparent; text-decoration: underline; color: #1155cc;">http://www.glassfit.gr/el/diktyo.html</span></a></p>
+        <strong id="docs-internal-guid-66deecdb-7fff-d710-78b0-63eca7c80864"><br />
+        </strong>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;"><strong>Eurosos&nbsp;</strong></span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Tau;&eta;&lambda;έ&phi;&omega;&nu;&omicron;: 210 6504036</span></p>
+        <p dir="ltr" style="margin-top: 0pt; margin-bottom: 0pt;"><span style="background-color: transparent; text-decoration: none; color: #000000;">&Delta;ί&kappa;&tau;&upsilon;&omicron; &epsilon;&pi;&iota;&sigma;&kappa;&epsilon;&upsilon;&alpha;&sigma;&tau;ώ&nu; </span><a href="https://www.eurolife.gr/el/Products/Car/~/media/Files/Lista_Sinergaton_Eurosos_Glass.pdf" style="text-decoration: none;"><span style="background-color: transparent; text-decoration: underline; color: #1155cc;">https://www.eurolife.gr/el/Products/Car/~/media/Files/Lista_Sinergaton_Eurosos_Glass.pdf</span></a><span style="background-color: transparent; text-decoration: none; color: #000000;"> <br />
+        </span></p>
+        <br class="Apple-interchange-newline" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -180,7 +176,7 @@ Languages:
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{860134B8-5938-432D-8B15-4A7C4FAAA85E}" />
+        <image mediaid="{03636667-9679-4B36-8A22-A93B811FEC8B}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

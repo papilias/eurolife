@@ -22,10 +22,10 @@ Languages:
     - ID: "79f18c52-1570-4ecb-b32e-a55df2fb321d"
       Hint: Check
       Type: Checkbox
-      Value: 0
+      Value: 1
     - ID: "ae0c5505-9bcd-4218-9e66-e5be620bcc7c"
       Hint: Value
-      Value: 
+      Value: Όχι
 - Language: en
   Versions:
   - Version: 1

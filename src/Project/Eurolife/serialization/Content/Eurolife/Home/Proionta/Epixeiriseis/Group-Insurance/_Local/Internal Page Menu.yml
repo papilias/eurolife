@@ -1,0 +1,14 @@
+﻿---
+ID: "3e2d942b-c89f-453a-a8f5-69b0456783bd"
+Parent: "df62c364-0c48-4273-8a34-bbda10aa55e4"
+Template: "00d32287-3ed5-4d97-9b00-0f8ef05f6db8"
+Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Group-Insurance/_Local/Internal Page Menu"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190527T111341Z
