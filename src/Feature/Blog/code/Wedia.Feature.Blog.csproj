@@ -88,7 +88,10 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BlogFeatureController.cs" />
+    <Compile Include="Indexing\BlogIndexingProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\web.config" />
@@ -108,6 +111,14 @@
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Wedia.Foundation.DependencyInjection.csproj">
       <Project>{64188ACE-CC0B-4546-A5B0-2422931E3E05}</Project>
       <Name>Wedia.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
+      <Project>{71DE993F-50E5-4300-A003-F07F877830CD}</Project>
+      <Name>Wedia.Foundation.Dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Indexing\code\Wedia.Foundation.Indexing.csproj">
+      <Project>{AC7CFC4C-25CE-46D5-94AB-B2698BD39F7B}</Project>
+      <Name>Wedia.Foundation.Indexing</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>

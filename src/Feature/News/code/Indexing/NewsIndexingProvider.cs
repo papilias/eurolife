@@ -24,7 +24,7 @@ namespace Wedia.Feature.News.Indexing
         Templates.NewsArticle.Fields.Title_FieldName,
         Templates.NewsArticle.Fields.Summary_FieldName,
         Templates.NewsArticle.Fields.Body_FieldName,
-        Templates.NewsArticle.Fields.Date_FieldName
+        //Templates.NewsArticle.Fields.Date_FieldName
       };
 
       return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);

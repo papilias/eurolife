@@ -16,7 +16,10 @@ namespace Wedia.Feature.PageContent.Indexing
     {
         public Expression<Func<SearchResultItem, bool>> GetQueryPredicate(IQuery query)
         {
-            var fieldNames = new[] {Templates.HasPageContent.Fields.Title_FieldName, Templates.HasPageContent.Fields.Summary_FieldName, Templates.HasPageBodyContent.Fields.Body_FieldName};
+            var fieldNames = new[] {
+              Templates.HasPageContent.Fields.Title_FieldName,
+              Templates.HasPageContent.Fields.Summary_FieldName,
+              Templates.HasPageBodyContent.Fields.Body_FieldName};
             return GetFreeTextPredicateService.GetFreeTextPredicate(fieldNames, query);
         }
 

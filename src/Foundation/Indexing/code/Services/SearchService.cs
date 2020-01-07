@@ -101,7 +101,9 @@ namespace Wedia.Foundation.Indexing.Services
 
     private IQueryable<SearchResultItem> CreateAndInitializeQuery(IProviderSearchContext context)
     {
-      var queryable = context.GetQueryable<SearchResultItem>();
+      var lang = Context.Language.Name;
+      var queryable = context.GetQueryable<SearchResultItem>(new CultureExecutionContext(System.Globalization.CultureInfo.GetCultureInfo(lang)));//new CultureExecutionContext(System.Globalization.CultureInfo.GetCultureInfo("en"))
+      //var queryable = context.GetQueryable<SearchResultItem>();
       queryable = this.InitializeQuery(queryable);
       return queryable;
     }
