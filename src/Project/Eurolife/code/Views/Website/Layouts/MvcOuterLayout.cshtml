@@ -11,7 +11,7 @@
 <html lang="@Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName">
 <head>
   <!-- Google Tag Manager ccc-->
-  <script>
+  @*<script>
     (function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
@@ -19,7 +19,7 @@
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KQJ4XV');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-KQJ4XV');</script>*@
   <!-- End Google Tag Manager -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,16 +34,7 @@
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
   @RenderAssetsService.Current.RenderStyles()
 
-  @Html.Sitecore().VisitorIdentification()
-
-  <script type="text/javascript">
-    var appoInit = document.createElement('script');
-    var appoS = document.getElementsByTagName('script')[0];
-    appoInit.type = 'text/javascript';
-    appoInit.src = 'https://www.appocalypsis.com/loader/init/80PFFP.js';
-    appoInit.async = true;
-    appoS.parentNode.insertBefore(appoInit, appoS);
-  </script>
+  @Html.Sitecore().VisitorIdentification()               
 </head>
 <body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor()">
   <!-- Google Tag Manager (noscript) -->
