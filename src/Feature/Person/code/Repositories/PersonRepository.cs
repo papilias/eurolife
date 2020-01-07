@@ -50,11 +50,15 @@ namespace Wedia.Feature.Person.Repositories
 
     private IEnumerable<Consultant> GetConsultants(Item contextItem)
     {
-      return Get(contextItem, Templates.Person.ID, Templates.Person.Fields.Name_FieldName)
+      var data =  Get(contextItem, Templates.Person.ID, Templates.Person.Fields.Name_FieldName)
         .Select(d => new Consultant
         {
-          Item = d
+          Item = d ,
+          SortName = d.Fields[Templates.Person.Fields.Name_FieldName].ToString()
         });
+
+      data = data.OrderBy(x => x.SortName);
+      return data;
     }
 
     private IEnumerable<Item> Get(Item contextItem, ID TemplateID, string orderby = "sortorder")
