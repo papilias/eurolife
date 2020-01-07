@@ -28,8 +28,9 @@
 
 .ie11 .list__download {
   position: absolute;
-  top: 16px;
+  top: 50%;
   right: 32px;
+  -ms-transform: translateY(-50%);
 }
 
 .ie11 .triplette {
@@ -239,4 +240,15 @@
 
 .ie11 .droplist__options{
   z-index: 99;
+}
+
+.ie11 .hero-contents--plain{
+  position:relative;
+
+  > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+  }
 }
