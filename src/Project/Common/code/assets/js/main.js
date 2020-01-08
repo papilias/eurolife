@@ -302,11 +302,11 @@
     });
 
     $('.programs__tabs__title').click(function(){
-        $programid = $(this).attr('data-id');
+        const programid = $(this).attr('data-id');
         $('.programs__tabs__title').removeClass('programs__tabs__title--active');
         $('.program-wrap').removeClass('program-wrap--active');
         $(this).addClass('programs__tabs__title--active');
-        $('#'+$programid).addClass('program-wrap--active');
+        $('#'+ programid).addClass('program-wrap--active');
         tableHeightEqualizer();
     });
 
