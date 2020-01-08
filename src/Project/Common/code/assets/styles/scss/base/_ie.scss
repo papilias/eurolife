@@ -447,7 +447,11 @@
     border-radius: 0;
   }
 
-  .filter__results{
-    min-width:800px;
+  .filter__results {
+    min-width: 800px;
+  }
+
+  .tool:hover .tooltext {
+    transform: translateY(-60px);
   }
 }
