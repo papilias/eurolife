@@ -15,7 +15,7 @@
       var $container = $(this).find('picture'),
         imgUrl = $container.find('img').prop('src'),
         imgHeight = $container.find('img').height();
-
+    
       if (imgUrl) {
         $container
           .css('backgroundImage', 'url(' + imgUrl + ')')
