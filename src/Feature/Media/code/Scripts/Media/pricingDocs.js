@@ -32,7 +32,7 @@ $(document).ready(function () {
       $.ajax({
         type: 'POST',
         url: "/api/feature/media/pricing-docs",
-        data: { fileName },        
+        data: fileName,        
         cache: false,
         success: function (response) {            
 
