@@ -93,78 +93,19 @@
   }
 }
 
-/*radio buttons*/
-input[type="radio"] {
-  float: left;
-  margin-top: 7px;
-  opacity: 0;
-  display: block;
-  pointer-events: none;
+.form {
+  input[type=radio], input[type=checkbox] {
+    + label {
+      pointer-events: none;
+      margin-left: -30px;
+    }
+  }
 
-  + label {
-    position: absolute;
+  .js-custom-radio > label {
     cursor: pointer;
-    top: 2px;
-  }
-
-  + label:before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid $color-base;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: background-color 150ms ease;
-    pointer-events: none;
-  }
-
-  + label:after {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 3px;
-    width: 12px;
-    height: 12px;
-    background-color: transparent;
-    border-radius: 50%;
-    transition: background-color 150ms ease;
-    pointer-events: none;
-  }
-
-  &:hover + label:after {
-    background-color: $color-base;
-  }
-
-  &:checked + label:after {
-    background-color: $color-base;
-  }
-}
-
-label.cursor-pointer{
-  padding-left: 10px;
-  margin-top: 8px;
-  position: relative;
-}
-
-label.cursor-pointer, .push-me {
-  margin-left: 10px;
-}
-
-label:not(.cursor-pointer) + label.cursor-pointer{
-  margin-top: 15px;
-}
-
-form.form {
-  input[type="checkbox"], input[type="radio"] {
-    position: relative;
 
     + label {
-      position: absolute;
-      top: 2px;
-      left: -8px;
+      padding-left: 30px;
     }
   }
 }

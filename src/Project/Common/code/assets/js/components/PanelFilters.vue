@@ -17,7 +17,7 @@
       </div>
 
       <div class="filter__actions">
-        <span class="filter__clear js-clear-filters" @click="clear">Clear</span>
+        <span class="filter__clear js-clear-filters" @click="clear"> Καθαρισμός </span>
         <span class="filter__cancel js-cancel-filters" @click="cancel">{{ filters.cancelButton }}</span>
         <span class="filter__apply js-apply-filters" @click="apply">{{ filters.applyButton }}</span>
       </div>

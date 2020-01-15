@@ -663,43 +663,43 @@
   }
                                               
   function customRadioButtons() {
-    if ($("input[type=radio]").length || $("input[type=checkbox]").length) {
+    if ($(".js-custom-radio").length || $(".js-custom-checkbox").length) {
 
-      var $target = $("input[type=radio], input[type=checkbox]");
+      var $target = $(".js-custom-radio input[type=radio], .js-custom-checkbox input[type=checkbox]");
 
       $target.each(function () {
         if (!$(this).parent().parent().hasClass('accordion')) {
           $(this).after("<label></label>");
-          $(this).parent().addClass("cursor-pointer");
         }
       });
     }
   }
 
-    function highLightLabel(){
-        $target = $( ".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea" );
-        $target.each(function(){
-            var text_value=$(this).val();
-            if(text_value != '')
-            {
-              $(this).parents('.form__item').addClass('filled');
-              $(this).parents('.form__item-static').removeClass('filled');
-            }
+  function highLightLabel() {
+      if ($('.form').length > 0) {
+        var $target = $(".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea");
+        $target.each(function () {
+          var text_value = $(this).val();
+          if (text_value != '') {
+            $(this).parents('.form__item').addClass('filled');
+            $(this).parents('.form__item-static').removeClass('filled');
+          }
         });
 
-        $target.bind('blur', function(){
-            if( !$(this).val() || $(this).hasClass('error')) {
-                if (!$(this).val())
-                $(this).parents('.form__item').removeClass('filled');
-                $(this).parents('.form__item-static').removeClass('filled');
-            }
+        $target.bind('blur', function () {
+          if (!$(this).val() || $(this).hasClass('error')) {
+            if (!$(this).val())
+              $(this).parents('.form__item').removeClass('filled');
+            $(this).parents('.form__item-static').removeClass('filled');
+          }
         });
-        $target.bind('focus', function(){
-            if( !$(this).val() || $(this).hasClass('error')) {
-              $(this).parents('.form__item').addClass('filled');
-              $(this).parents('.form__item-static').removeClass('filled');
-            }
+        $target.bind('focus', function () {
+          if (!$(this).val() || $(this).hasClass('error')) {
+            $(this).parents('.form__item').addClass('filled');
+            $(this).parents('.form__item-static').removeClass('filled');
+          }
         });
+      }
     }
 
     //using an instersection observer for product START
