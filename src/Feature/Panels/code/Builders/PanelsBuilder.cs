@@ -25,6 +25,7 @@ namespace Wedia.Feature.Panels.Builders
       {
         Title = DictionaryPhraseRepository.Current.Get("/Panel/Product Panel/Filters Title", "FILTER RESULTS"),
         ApplyButton = DictionaryPhraseRepository.Current.Get("/Panel/Product Panel/Apply Button", "Apply"),
+        ClearButton = DictionaryPhraseRepository.Current.Get("/Panel/Product Panel/Clear Button", "Clear"),
         CancelButton = DictionaryPhraseRepository.Current.Get("/Panel/Product Panel/Cancel Button", "Cancel"),
         Items = _repository.GetFilters(panel)
       };
