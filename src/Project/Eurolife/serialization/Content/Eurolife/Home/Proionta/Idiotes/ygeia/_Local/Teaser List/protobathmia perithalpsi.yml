@@ -15,10 +15,10 @@ Languages:
     Fields:
     - ID: "015650f6-49a4-401c-b484-b9410a78c8ca"
       Hint: TeaserSummary
-      Value: &Delta;&iota;&alpha;&sigma;&phi;&alpha;&lambda;ί&sigma;&tau;&epsilon; &delta;&iota;&alpha;&gamma;&nu;&omega;&sigma;&tau;&iota;&kappa;έ&sigmaf; &epsilon;&xi;&epsilon;&tau;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; &iota;&alpha;&tau;&rho;&iota;&kappa;έ&sigmaf; &pi;&alpha;&rho;&omicron;&chi;έ&sigmaf; &sigma;&tau;&omicron; &delta;ί&kappa;&tau;&upsilon;&omicron; &tau;&omega;&nu; &Omicron;&mu;ί&lambda;&omega;&nu; &Beta;&iota;&omicron;ϊ&alpha;&tau;&rho;&iota;&kappa;ή&sigmaf;, &Alpha;ffidea &kappa;&alpha;&iota; &Upsilon;&gamma;&epsilon;ί&alpha;.
+      Value: &Delta;&iota;&alpha;&sigma;&phi;&alpha;&lambda;ί&sigma;&tau;&epsilon; &delta;&iota;&alpha;&gamma;&nu;&omega;&sigma;&tau;&iota;&kappa;έ&sigmaf; &epsilon;&xi;&epsilon;&tau;ά&sigma;&epsilon;&iota;&sigmaf; &kappa;&alpha;&iota; &iota;&alpha;&tau;&rho;&iota;&kappa;έ&sigmaf; &pi;&alpha;&rho;&omicron;&chi;έ&sigmaf; &sigma;&epsilon; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;ί&alpha; &mu;&epsilon; &tau;&alpha; &mu;&epsilon;&gamma;&alpha;&lambda;ύ&tau;&epsilon;&rho;&alpha; &delta;&iota;&alpha;&gamma;&nu;&omega;&sigma;&tau;&iota;&kappa;ά &kappa;έ&nu;&tau;&rho;&alpha; &kappa;&alpha;&iota; &nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;ί&alpha;.
     - ID: "1c2f6ebb-7eb9-47f8-af61-57f1174108fe"
       Hint: TeaserTitle
-      Value: Πρωτοβάθμια Περίθαλψη
+      Value: Εξωνοσοκομειακή Περίθαλψη
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190709T102606Z
@@ -29,11 +29,11 @@ Languages:
     - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
       Hint: TeaserCTA
       Value: |
-        <link text="ΔΕΙΤΕ ΤΑ ΠΡΟΓΡΑΜΜΑΤΑ" linktype="external" url="http://#" anchor="" target="" />
+        <link id="{32753ECE-EAD9-468B-8BDF-D2A9986DF31A}" querystring="" linktype="internal" text="ΔΕΙΤΕ ΤΑ ΠΡΟΓΡΑΜΜΑΤΑ" anchor="" url="/Eurolife/Home/Proionta/Idiotes/ygeia/exonosokomeiaki-perithalpsi" title="" class="" target="" />
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
       Value: |
-        <image mediapath="" alt="demo1" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{F535006A-811B-4560-AB26-BBD8D7BE1597}" />
+        <image mediaid="{7889C974-0666-41B1-AB82-45D57F6E3B51}" />
     - ID: "f51dd24c-64be-4832-9f98-e03f9e84fa63"
       Hint: TeaserDownloadCTA
       Value: 

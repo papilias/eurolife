@@ -1,8 +1,8 @@
 ﻿---
-ID: "bd5df004-84cd-4da4-b0a9-18cb01e277e8"
-Parent: "14583c76-4277-4338-8e93-6df15066600d"
+ID: "a6d29fa6-4ad3-41b2-a33f-99ba135c8103"
+Parent: "db8b62fc-980f-4f61-aa38-cfc1085d77cd"
 Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
-Path: "/sitecore/content/Eurolife/Home/Proionta/Idiotes/Astiki-Efthini-Diaxeiristi/_Local/Health Panel/Programs Attributes/Anotato orio gia somatikes blabes  ylikes zimies kata gegonos/Anotato orio gia somatikes blabes ylikes zimies kata gegonos 100000"
+Path: "/sitecore/content/Eurolife/Home/Proionta/Idiotes/Astiki-Efthini-Diaxeiristi/_Local/Health Panel/Programs Attributes/Anotato orio gia somatikes blabes ylikes zimies gia oli ti diarkeia tou symbolaiou/Anotato orio gia somatikes blabes ylikes zimies gia oli ti diarkeia tou symbolaiou 120000"
 DB: master
 Languages:
 - Language: "el-GR"
@@ -21,7 +21,7 @@ Languages:
         sitecore\admin
     - ID: "ae0c5505-9bcd-4218-9e66-e5be620bcc7c"
       Hint: Value
-      Value: €100.000
+      Value: €120.000
 - Language: en
   Versions:
   - Version: 1

@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "3da3fb00-31f6-432d-979a-57cee52b9d8a"
   Hint: Color
-  Value: "{FAB4637A-A59B-488E-8A85-3BA44B184F83}"
+  Value: "{C305322B-960C-4BEA-A221-AC7B5C46B339}"
 - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
   Hint: IncludeInSearchResults
   Type: Checkbox
@@ -55,21 +55,28 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{D87922C9-1757-4DFB-9FC2-951ECB50D313}"
+              uid="{F7319784-10F1-4D80-802B-B724A40E1244}"
               p:before="*"
-              s:ds="{1FFD22BF-FC75-459E-84A2-EF996589139A}"
+              s:ds="{C1999C05-EAEA-4E0D-A0C4-37CEAA340023}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor=%7B5531539B-B69C-4389-BB59-9AB4F431474A%7D"
+              s:ph="/page-layout/teaser-placeholder-1-{6455E43B-6FDD-488E-96C8-151BE6241C5A}-0" />
+            <r
+              uid="{D87922C9-1757-4DFB-9FC2-951ECB50D313}"
+              p:after="r[@uid='{F7319784-10F1-4D80-802B-B724A40E1244}']"
+              s:ds="{E2EE10E9-3F73-403D-BBE3-488687C2D508}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-3-{120F0787-10BE-47E2-A92F-AA2B580E6E45}-0" />
             <r
               uid="{029514AC-E036-4A1D-A40E-A3C44D077FB8}"
               p:after="r[@uid='{D87922C9-1757-4DFB-9FC2-951ECB50D313}']"
-              s:ds="{AF109DC0-1A70-4FD7-AB80-65D22CDA27B3}"
+              s:ds="{BAB8BA3E-34AC-4683-BC8A-72B50B7309AA}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-2-{120F0787-10BE-47E2-A92F-AA2B580E6E45}-0" />
             <r
               uid="{DEC17BA7-0D5F-43B5-A44D-F01814EA81DB}"
               p:after="r[@uid='{029514AC-E036-4A1D-A40E-A3C44D077FB8}']"
-              s:ds="{1ABBA438-D720-48C6-9593-855EA317C3A0}"
+              s:ds="{48710033-67A3-4E8F-AA5B-ECAA55A57F5C}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-1-{120F0787-10BE-47E2-A92F-AA2B580E6E45}-0" />
             <r
@@ -93,25 +100,8 @@ Languages:
               s:par=""
               s:ph="/page-layout/teaser-placeholder-1-{1DFE1820-3F8F-47CB-9742-33430374572D}-0" />
             <r
-              uid="{15558AE4-CB23-4E5E-AC91-29A998EB9B7E}"
-              p:after="r[@uid='{9B0818E0-9733-4665-BD06-4FD039BEFE3A}']"
-              s:ds="{180B46B9-9A37-4BF3-B1F3-481B20151096}"
-              s:id="{EEAE1258-7BE1-4922-A25E-767AA3A0BF8C}"
-              s:ph="/page-layout/toolkit-glossary" />
-            <r
-              uid="{375EC5F7-9953-4BEC-A794-869E5E21FFA8}"
-              p:after="r[@uid='{9DCAC3A5-FC4B-4B6F-87C6-4A0342390064}']"
-              s:ds="{B8F3515D-9C82-42F3-8608-F284C49AC9F6}"
-              s:id="{6434235F-FBC8-489B-8E8C-26D0CC1373F4}"
-              s:ph="page-layout" />
-            <r
-              uid="{33C0AD41-150A-4EED-90AA-296E9347788A}"
-              p:after="r[@uid='{375EC5F7-9953-4BEC-A794-869E5E21FFA8}']"
-              s:id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
-              s:ph="page-layout" />
-            <r
               uid="{53E91E88-C273-430A-A154-C3340D3A0493}"
-              p:after="r[@uid='{33C0AD41-150A-4EED-90AA-296E9347788A}']"
+              p:after="r[@uid='{9DCAC3A5-FC4B-4B6F-87C6-4A0342390064}']"
               s:ds="{3534F581-47D5-42E0-A19B-331961132AD3}"
               s:id="{BC33BB52-419D-4118-9D08-EE4009C50D3E}"
               s:ph="page-layout" />
@@ -128,9 +118,15 @@ Languages:
               s:id="{F3136503-1EEB-41D2-B47C-89FBC34BC540}"
               s:ph="page-layout" />
             <r
-              uid="{120F0787-10BE-47E2-A92F-AA2B580E6E45}"
+              uid="{6455E43B-6FDD-488E-96C8-151BE6241C5A}"
               p:after="r[@uid='{8079F290-F7FE-4FD5-972B-99D99EBAE0A9}']"
-              s:ds="{BD82A5F1-4392-4F27-A80A-464DFCFD4AAD}"
+              s:ds="{D5F2D1A8-1C2F-40ED-A9E0-17DFE4DB63C7}"
+              s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
+              s:ph="page-layout" />
+            <r
+              uid="{120F0787-10BE-47E2-A92F-AA2B580E6E45}"
+              p:after="r[@uid='{6455E43B-6FDD-488E-96C8-151BE6241C5A}']"
+              s:ds="{1D4BBD79-49C6-4B36-8941-67282B6CCFDD}"
               s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
               s:ph="page-layout" />
             <r
@@ -158,10 +154,14 @@ Languages:
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Προγράμματα Ασφάλισης Αστικής Ευθύνης Διαχειριστή
+    - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
+      Hint: MobileImage
+      Value: |
+        <image mediaid="{A9DC6316-85EF-4F7B-8E04-45901CF0065A}" />
     - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
       Hint: CTA
       Value: |
-        <link id="{9F486AFA-7F59-4D25-9456-3F88ECFEE18E}" querystring="" target="_blank" text="ΖΗΤΗΣΤΕ ΠΡΟΣΦΟΡΑ" url="/Eurolife/Home/exipiretisi" linktype="internal" />
+        <link text="ΕΚΔΗΛΩΣΗ ΕΝΔΙΑΦΕΡΟΝΤΟΣ" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{B13C37FC-7395-4322-9D78-2DA41051875D}" />
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
@@ -183,13 +183,14 @@ Languages:
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
       Value: |
-        Νιώστε προστατευμένοι από απρόβλεπτα γεγονότα που μπορεί να συμβούν στους κοινόχρηστους και κοινόκτητους χώρους της πολυκατοικίας σας,
-        τα οποία μπορεί να προκαλέσουν υλική ζημιά ή σωματική βλάβη σε τρίτους, και για τα οποία υπεύθυνος, σύμφωνα με τον νόμο, θεωρείστε εσείς ως διαχειριστής.
+        Νιώστε προστατευμένοι από απρόβλεπτα γεγονότα που μπορεί να συμβούν στους κοινόχρηστους και κοινόκτητους χώρους
+         της πολυκατοικίας σας, τα οποία μπορεί να προκαλέσουν υλική ζημιά ή σωματική βλάβη σε τρίτους
+        και για τα οποία υπεύθυνος, σύμφωνα με τον νόμο, θεωρείστε εσείς ως διαχειριστής.
         
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediapath="" src="" height="" mediaid="{2AC067AB-DBC3-4DCB-A7D1-AF99126594DB}" hspace="" usethumbnail="" showineditor="" width="" alt="Habitat-004-wide" vspace="" />
+        <image mediaid="{A9DC6316-85EF-4F7B-8E04-45901CF0065A}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

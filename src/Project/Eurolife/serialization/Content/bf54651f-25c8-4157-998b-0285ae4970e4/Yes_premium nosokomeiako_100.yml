@@ -2,7 +2,7 @@
 ID: "c6b3e286-bd81-4827-ade7-8436d98f2e2f"
 Parent: "bf54651f-25c8-4157-998b-0285ae4970e4"
 Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
-Path: /sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Hotels/_Local/Health Panel/Programs Attributes/eggiisi_parohon/Yes_premium nosokomeiako_100
+Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/Asfalisi-Touristikon-Monadon/_Local/Health Panel/Programs Attributes/eggiisi_parohon/Yes_premium nosokomeiako_100"
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"

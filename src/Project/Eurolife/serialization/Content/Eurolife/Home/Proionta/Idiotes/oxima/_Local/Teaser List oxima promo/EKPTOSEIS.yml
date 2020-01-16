@@ -28,7 +28,8 @@ Languages:
         <link text="ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{E6098BFB-FEF9-46E3-858A-AF3BF1B6C15A}" />
     - ID: "cfc640db-b9e4-41d6-abcd-5050d6b6d6fe"
       Hint: TeaserImage
-      Value: 
+      Value: |
+        <image mediaid="{A127DC15-6065-4FA7-B57D-21C362126D26}" />
 - Language: en
   Versions:
   - Version: 1

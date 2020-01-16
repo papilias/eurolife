@@ -55,8 +55,31 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{2CDC10E9-6C1F-4373-8333-C384BE9371F2}"
+              uid="{43E147ED-EE1B-45ED-9422-3B204AFE1BD5}"
               p:before="*"
+              s:id="{4DE00D68-7C8B-440A-A4D9-BB82355E20BD}"
+              s:ph="/page-layout/toolkit-contact-transfer" />
+            <r
+              uid="{4C169383-EB91-4CFC-A193-B35A3CD8E6B0}"
+              p:after="r[@uid='{43E147ED-EE1B-45ED-9422-3B204AFE1BD5}']"
+              s:ds="{F92EFC00-E8F1-4A6C-9147-412918D569B7}"
+              s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
+              s:ph="/page-layout/teaser-placeholder-3-{4F003FB8-2A2A-4CCB-A01A-254AAF64CEE1}-0" />
+            <r
+              uid="{0EDF2A13-5B6C-4C0C-B799-4619DB1C5E3C}"
+              p:after="r[@uid='{4C169383-EB91-4CFC-A193-B35A3CD8E6B0}']"
+              s:ds="{BCD1FB9C-795D-428A-BD3E-A7D53B02AA40}"
+              s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
+              s:ph="/page-layout/teaser-placeholder-2-{4F003FB8-2A2A-4CCB-A01A-254AAF64CEE1}-0" />
+            <r
+              uid="{35F904A4-0758-4C95-9DB0-D024738039F5}"
+              p:after="r[@uid='{0EDF2A13-5B6C-4C0C-B799-4619DB1C5E3C}']"
+              s:ds="{877E7442-A0D9-4A8B-80F9-C142DAE7B98F}"
+              s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
+              s:ph="/page-layout/teaser-placeholder-1-{4F003FB8-2A2A-4CCB-A01A-254AAF64CEE1}-0" />
+            <r
+              uid="{2CDC10E9-6C1F-4373-8333-C384BE9371F2}"
+              p:after="r[@uid='{35F904A4-0758-4C95-9DB0-D024738039F5}']"
               s:ds="{A9321ED2-2ED2-45D6-B93A-C0534DC37432}"
               s:id="{2FF3A175-2A41-4088-820A-749360BE65FA}"
               s:ph="/page-layout/toolkit-how-it-works" />
@@ -85,8 +108,15 @@ Languages:
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:ph="/page-layout/teaser-placeholder-3-{1DFE1820-3F8F-47CB-9742-33430374572D}-0" />
             <r
-              uid="{653DD4F9-4A8B-4771-A3D4-599528BD4941}"
+              uid="{A46E275E-83EE-438D-9ED2-9B5A1B620825}"
               p:after="r[@uid='{2D7BCC46-5754-4563-B12C-E2D057994867}']"
+              s:ds="{1C6276A6-0E53-4876-915E-207926E4446C}"
+              s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
+              s:par="Alignment=%7B1168A85D-15F2-4335-8D86-CED079708B5A%7D&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor"
+              s:ph="/page-layout/teaser-placeholder-3-{1DFE1820-3F8F-47CB-9742-33430374572D}-0" />
+            <r
+              uid="{653DD4F9-4A8B-4771-A3D4-599528BD4941}"
+              p:after="r[@uid='{A46E275E-83EE-438D-9ED2-9B5A1B620825}']"
               s:ds="{1E20AC3B-293A-47E2-A485-5E18779AE198}"
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:ph="/page-layout/teaser-placeholder-2-{1DFE1820-3F8F-47CB-9742-33430374572D}-0" />
@@ -97,24 +127,12 @@ Languages:
               s:id="{907DF28B-FE15-4286-AD29-109BC7C0B98A}"
               s:ph="/page-layout/toolkit-documents" />
             <r
-              uid="{048E8DA2-612E-4B3D-B002-6EE5A24E19D7}"
-              p:after="r[@uid='{7929F54A-F8E8-4B36-8D58-60E643602C45}']"
-              s:ds="{B8B686B4-FF26-40B2-9EEF-9033F35DA6C5}"
-              s:id="{3C35F9B3-71E4-473C-B607-EB856E37E096}"
-              s:ph="/page-layout/toolkit-faq-group" />
-            <r
               uid="{9B0818E0-9733-4665-BD06-4FD039BEFE3A}"
-              p:after="r[@uid='{048E8DA2-612E-4B3D-B002-6EE5A24E19D7}']"
+              p:after="r[@uid='{7929F54A-F8E8-4B36-8D58-60E643602C45}']"
               s:ds="{DF32891D-F145-4341-820F-6A4D64F8DCF2}"
               s:id="{794921F7-3FCA-48A3-9F5C-2823D0B59BA2}"
               s:par="FontColor"
               s:ph="/page-layout/teaser-placeholder-1-{1DFE1820-3F8F-47CB-9742-33430374572D}-0" />
-            <r
-              uid="{15558AE4-CB23-4E5E-AC91-29A998EB9B7E}"
-              p:after="r[@uid='{9B0818E0-9733-4665-BD06-4FD039BEFE3A}']"
-              s:ds="{F08A4BEA-41CA-4255-873D-572C0C305059}"
-              s:id="{EEAE1258-7BE1-4922-A25E-767AA3A0BF8C}"
-              s:ph="/page-layout/toolkit-glossary" />
             <r
               uid="{375EC5F7-9953-4BEC-A794-869E5E21FFA8}"
               p:after="r[@uid='{9DCAC3A5-FC4B-4B6F-87C6-4A0342390064}']"
@@ -151,22 +169,22 @@ Languages:
               s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
               s:ph="page-layout" />
             <r
-              uid="{4F003FB8-2A2A-4CCB-A01A-254AAF64CEE1}"
+              uid="{AA73FD0A-7FD0-4C1D-A57D-16782B0D0CA5}"
               p:after="r[@uid='{1DFE1820-3F8F-47CB-9742-33430374572D}']"
+              s:id="{8BFF74BD-66FF-4A73-A3F7-0BBD54A410CA}"
+              s:ph="page-layout" />
+            <r
+              uid="{4F003FB8-2A2A-4CCB-A01A-254AAF64CEE1}"
+              p:after="*[1=2]"
               s:ds="{E52A4706-6AA3-42D4-AA11-A533E50CC138}"
               s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
               s:par="Background&amp;ContainerIsNotFullWidth=1"
-              s:ph="page-layout" />
-            <r
-              uid="{AA73FD0A-7FD0-4C1D-A57D-16782B0D0CA5}"
-              p:after="*[1=2]"
-              s:id="{8BFF74BD-66FF-4A73-A3F7-0BBD54A410CA}"
               s:ph="page-layout" />
           </d>
         </r>
     - ID: "1d7f5999-9735-4c52-9e08-47bd7df3fb40"
       Hint: PreTitle
-      Value: Προγράμματα Ασφάλισης Υγείας
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190705T092610Z
@@ -175,19 +193,45 @@ Languages:
       Value: Προγράμματα Ασφάλισης Υγείας
     - ID: "328f77a3-08cc-4496-b8c9-184e3c194993"
       Hint: ToolkitHowItWorks
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: |
+        <table style="font-size: larger; text-align: center; vertical-align: middle; letter-spacing: normal; word-spacing: normal; line-height: normal; display: block;" align="center">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; vertical-align: middle;"><img alt="" src="-/media/8689CC3F0B044B45ADEE5D85EDB77B9E.ashx" /></td>
+                    <td style="text-align: left; vertical-align: middle;">
+                    <p>&Beta;&eta;&mu;&alpha; 1.</p>
+                    <p>&Alpha;&nu;&alpha;&gamma;&gamma;&epsilon;&lambda;ί&alpha; &Epsilon;&iota;&sigma;&alpha;&gamma;&omega;&gamma;ή&sigmaf;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; vertical-align: middle;"><img alt="" src="-/media/2262D99E4C6C4DFE818171476E053F0E.ashx" />&nbsp;</td>
+                    <td style="text-align: left; vertical-align: middle;">
+                    <p>&Beta;ή&mu;&alpha; 2.</p>
+                    <p>Έ&lambda;&epsilon;&gamma;&chi;&omicron;&sigmaf; &Pi;&epsilon;&rho;&iota;&sigma;&tau;&alpha;&tau;&iota;&kappa;&omicron;ύ</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; vertical-align: middle;">&nbsp;<img alt="" src="-/media/969EC2F1D1CD4B14A011C20C55965860.ashx" /></td>
+                    <td style="text-align: left; vertical-align: middle;">
+                    <p>&Beta;ή&mu;&alpha; 3.</p>
+                    <p>Έ&gamma;&kappa;&rho;&iota;&sigma;&eta; ή &alpha;&pi;ό&rho;&rho;&iota;&psi;&eta; &kappa;ά&lambda;&upsilon;&psi;&eta;&sigmaf; &delta;&alpha;&pi;&alpha;&nu;ώ&nu; &nu;&omicron;&sigma;&eta;&lambda;&epsilon;ί&alpha;&sigmaf;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <h4 style="text-align:center;"><a href="~/link.aspx?_id=5E4741677F0B41878F62703DA4804F50&amp;_z=z">&Delta;&Epsilon;&Iota;&Tau;&Epsilon; &Tau;&Eta; &Delta;&Iota;&Alpha;&Delta;&Iota;&Kappa;&Alpha;&Sigma;&Iota;&Alpha; &Alpha;&Nu;&Alpha;&Lambda;&Upsilon;&Tau;&Iota;&Kappa;&Alpha;<br />
+        </a></h4>
     - ID: "4791fadd-9bb5-4efd-b542-4d2f8bb634e4"
       Hint: ToolkitSubhead
-      Value: |
-        Στις ενότητες που ακολουθούν θα βρείτε όλες τις πληροφορίες που χρειάζεστε για να 
-        ενημερωθείτε πλήρως και να αποφασίσετε για την ασφάλισή σας.
+      Value: Στις ενότητες που ακολουθούν θα βρείτε όλες τις πληροφορίες που χρειάζεστε για να ενημερωθείτε πλήρως και να αποφασίσετε για την ασφάλισή σας.
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
       Value: Προγράμματα Ασφάλισης Υγείας
     - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
       Hint: CTA
       Value: |
-        <link id="{9F486AFA-7F59-4D25-9456-3F88ECFEE18E}" querystring="" target="_blank" text="ΖΗΤΗΣΤΕ ΠΡΟΣΦΟΡΑ" url="/Eurolife/Home/exipiretisi" linktype="internal" />
+        <link text="ΕΚΔΗΛΩΣΗ ΕΝΔΙΑΦΕΡΟΝΤΟΣ" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{B13C37FC-7395-4322-9D78-2DA41051875D}" />
     - ID: "5c95201b-69ed-40ae-abda-9eb83141d8e9"
       Hint: Body
       Value: |
@@ -198,24 +242,43 @@ Languages:
         sitecore\admin
     - ID: "6271f1c8-d91e-47ed-8f4a-99fe75d004a5"
       Hint: ToolkitContactTransfer
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate erat hendrerit tincidunt.
+      Value: |
+        <p>&Tau;&alpha; Έ&gamma;&gamma;&rho;&alpha;&phi;&alpha; &Beta;&alpha;&sigma;&iota;&kappa;ώ&nu; &Pi;&lambda;&eta;&rho;&omicron;&phi;&omicron;&rho;&iota;ώ&nu; &pi;&epsilon;&rho;&iota;έ&chi;&omicron;&upsilon;&nu; &tau;&eta; &pi;&epsilon;&rho;ί&lambda;&eta;&psi;&eta; &tau;&omicron;&upsilon; &alpha;&sigma;&phi;&alpha;&lambda;&iota;&sigma;&tau;&eta;&rho;ί&omicron;&upsilon; &sigma;&upsilon;&mu;&beta;&omicron;&lambda;&alpha;ί&omicron;&upsilon;, &pi;&rho;&omicron;&kappa;&epsilon;&iota;&mu;έ&nu;&omicron;&upsilon; &nu;&alpha; &epsilon;&nu;&eta;&mu;&epsilon;&rho;&omega;&theta;&epsilon;ί&tau;&epsilon; &gamma;&iota;&alpha; &tau;&iota;&sigmaf; &beta;&alpha;&sigma;&iota;&kappa;έ&sigmaf; &pi;&lambda;&eta;&rho;&omicron;&phi;&omicron;&rho;ί&epsilon;&sigmaf; &tau;&omicron;&upsilon; &pi;&rho;&omicron;ϊ&omicron;&nu;&tau;&omicron;&sigmaf;, &nu;&alpha; &sigma;&upsilon;&gamma;&kappa;&rho;ί&nu;&epsilon;&tau;&epsilon; &alpha;&nu;&tau;ί&sigma;&tau;&omicron;&iota;&chi;&alpha; &pi;&rho;&omicron;ϊό&nu;&tau;&alpha; &kappa;&alpha;&iota; &nu;&alpha; &sigma;&alpha;&sigmaf; &beta;&omicron;&eta;&theta;ή&sigma;&omicron;&upsilon;&nu; &nu;&alpha; &kappa;&alpha;&tau;&alpha;&lambda;ή&xi;&epsilon;&tau;&epsilon; &sigma;&tau;&eta; &beta;έ&lambda;&tau;&iota;&sigma;&tau;&eta; &alpha;&pi;ό&phi;&alpha;&sigma;&eta;.
+        </p>
+        <p><a href="-/media/BA576BEAEEF04C06BCE9421007BCB596.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό &Alpha;' 100%</a></p>
+        <p><a href="-/media/BA6943848CDE4A97A102F433F8C51ECA.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό &Beta;' 100%</a></p>
+        <p><a href="-/media/E85267D5168B4C4998432E565CD62467.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό &Alpha;' 100% - Economy</a><a href="-/media/BA576BEAEEF04C06BCE9421007BCB596.ashx"><br />
+        </a></p>
+        <p><a href="-/media/80E739BD65BD42DEAEB243EAB0C7A3D2.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό &Beta;' 100% - </a><a href="-/media/80E739BD65BD42DEAEB243EAB0C7A3D2.ashx" style="color: blue;">Economy</a></p>
+        <p><a href="-/media/982BFD2C3812487992BD5CA121A270D8.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό &Alpha;' 1500</a></p>
+        <p><a href="-/media/F8B32D7A900840FE8A5DEF17642448A4.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό &Beta;' 1500</a></p>
+        <p><a href="-/media/12DE79EB26954509A459E70EBBD2B436.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό &Alpha;' 1500 - Economy</a></p>
+        <p><a href="-/media/1D9B1002F1784EBA98EEE1D7D809E3C6.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό B' 1500 - Economy</a></p>
+        <p><a href="-/media/0619A880D14749E4B92F2B6DCE1A38A1.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό B' 1000 - Economy</a></p>
+        <p><a href="-/media/8738408A8F6747C8A59A242ACD4F2F40.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό B' 750 - Economy</a></p>
+        <p><a href="-/media/66A7C6DB317042B3B37BE61001CD46FF.ashx" style="color: blue;">Premium &Nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;&iota;&alpha;&kappa;ό B' 500 - &Pi;&alpha;&iota;&delta;&iota;&kappa;ό Economy</a></p>
+        <p>&nbsp;</p>
+    - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
+      Hint: CanIndex
+      Type: Checkbox
+      Value: 1
     - ID: "83b0e4e3-ab03-43e3-8083-3e7fd2946ad4"
       Hint: ToolkitTitle
       Value: Εργαλεία Ενημέρωσης
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Φροντίστε τον εαυτό σας και τους αγαπημένους σας.
+      Value: Φροντίστε τον εαυτό σας και τους αγαπημένους σας
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediapath="" src="" height="" mediaid="{2AC067AB-DBC3-4DCB-A7D1-AF99126594DB}" hspace="" usethumbnail="" showineditor="" width="" alt="Habitat-004-wide" vspace="" />
+        <image mediaid="{4E857123-889F-447E-9879-AABFB139FB5E}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Health
+      Value: Προγράμματα Ασφάλισης Υγείας
 - Language: en
   Fields:
   - ID: "eb2af3ca-2892-4044-b791-394344ab8456"

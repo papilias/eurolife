@@ -1,8 +1,8 @@
 ﻿---
-ID: "2d80eca6-d0e1-4f29-a519-445398509303"
-Parent: "6c284c2a-f5aa-406b-9ca4-e8b54fb93237"
+ID: "a8153f37-07a6-40d4-9f92-dd4be7fd0609"
+Parent: "faace7f6-7fe2-4546-9788-5802fdb2e29c"
 Template: "f5983a63-6d3f-4e6d-ac1e-c63877c15599"
-Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/mikres-epixeiriseis-kai-grafeia/omadiki-asfalisi-pronomia-prosopikou/_Local/panel mikres epixeiriseis astiki euthini/astiki efthini xoros katastimaton/Programs Attributes/Anotato orio gia somatikes blabes  ylikes zimies kata gegonos/Anotato orio gia somatikes blabes ylikes zimies kata gegonos 100000"
+Path: "/sitecore/content/Eurolife/Home/Proionta/Epixeiriseis/mikres-epixeiriseis-kai-grafeia/omadiki-asfalisi-pronomia-prosopikou/_Local/panel mikres epixeiriseis astiki euthini/astiki efthini xoros katastimaton/Programs Attributes/Anotato orio gia somatikes blabes ylikes zimies gia oli ti diarkeia tou symbolaiou/Anotato orio gia somatikes blabes ylikes zimies gia oli ti diarkeia tou symbolaiou 120000"
 DB: master
 Languages:
 - Language: "el-GR"
@@ -21,7 +21,7 @@ Languages:
         sitecore\admin
     - ID: "ae0c5505-9bcd-4218-9e66-e5be620bcc7c"
       Hint: Value
-      Value: €100.000
+      Value: €120.000
 - Language: en
   Versions:
   - Version: 1

@@ -1,6 +1,6 @@
 ﻿---
-ID: "794e2022-91cc-4a0a-a693-40ebabd154e8"
-Parent: "52bcef25-e002-4635-82e3-5b6465471fff"
+ID: "fe9af57c-d49a-4e4b-b2bc-2c9dd024e353"
+Parent: "f9c93dde-1e78-432d-8c1f-cff2b58dc964"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
 Path: "/sitecore/Forms/template-contact/Page/Section/SubSection/Form Item"
 DB: master
@@ -30,11 +30,11 @@ SharedFields:
   Value: 
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: A1086F6D2FDC499EA6A72D51EE197490
+  Value: EB5ADFCC3429480EAF2DA45A7150A00E
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
-  Value: 1
+  Value: 0
 - ID: "90c4f94c-ec2c-4ee4-b4c8-f3e29cbe630e"
   Hint: Allow Save
   Type: Checkbox
@@ -63,14 +63,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T095243Z
+      Value: 20190710T100241Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Όνομα
+      Value: Επώνυμο
     - ID: "a6972f08-cbb5-4830-a8c9-8a0ae34650d1"
       Hint: Placeholder Text
       Value: 

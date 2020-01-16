@@ -45,8 +45,8 @@ Languages:
       Type: TreelistEx
       Value: |
         {6DEEC115-2361-4FB5-BA71-D5F814415502}
-        {D99443FB-C85E-4523-9250-91FCBFE00E4F}
         {CA886D3E-37CF-407C-8DF9-F3EA5F45B91E}
+        {D99443FB-C85E-4523-9250-91FCBFE00E4F}
     - ID: "eaefde6c-1755-4c47-bc40-237d17a8ebe8"
       Hint: PanelFilters
       Type: Multilist

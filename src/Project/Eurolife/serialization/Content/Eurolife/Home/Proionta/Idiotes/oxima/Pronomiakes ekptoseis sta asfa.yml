@@ -74,14 +74,34 @@ Languages:
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-1-{9DBBAC4D-2830-45A0-93BC-7A546949A66C}-0" />
             <r
+              uid="{F09055D9-E3E7-4E9C-BF09-2AD8A0D74453}">
+              <p:d />
+            </r>
+            <r
+              uid="{0FE32730-22E4-4F13-AEB7-D24EB3234E10}">
+              <p:d />
+            </r>
+            <r
               uid="{5EF5D0A3-333E-4901-A5F1-31DA788A11EC}">
               <p:d />
             </r>
             <r
-              uid="{A9D12F44-CBA8-42CB-B796-1D34BC614933}"
-              p:after="r[@uid='{0FE32730-22E4-4F13-AEB7-D24EB3234E10}']"
-              s:ds="{0ABD0F14-BAD6-436A-A6C0-17264069D271}"
-              s:id="{18EEA154-E01A-402A-9726-1D5B8A6E145D}"
+              uid="{66F3C625-4AA0-4EFB-ABBB-1F35A17918F0}"
+              p:after="r[@uid='{EFA94C32-712C-4F4D-849E-368C1719BBFB}']"
+              s:id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+              s:ph="/page-layout/page-layout-top" />
+            <r
+              uid="{EF5FB94C-3E26-4018-86B8-BF83C2C830D1}"
+              p:after="r[@uid='{66F3C625-4AA0-4EFB-ABBB-1F35A17918F0}']"
+              s:ds=""
+              s:id="{364B0B6E-B331-43F7-A1A2-761D44053BA6}"
+              s:par="Background=%7B7F898357-3B13-4BEC-802E-7EF58D50F030%7D"
+              s:ph="page-layout" />
+            <r
+              uid="{1B75F35D-CBBD-4029-AAA8-8F47F5115C27}"
+              p:after="r[@uid='{EF5FB94C-3E26-4018-86B8-BF83C2C830D1}']"
+              s:ds="{37159AF1-B3FE-4C1A-910A-5A80B3FE416A}"
+              s:id="{FFB4450F-586B-47D1-9008-DA761EA95DE3}"
               s:ph="page-layout" />
             <r
               uid="{808DB0C9-D175-46EC-8A97-0F5B9601B93D}">
@@ -94,7 +114,7 @@ Languages:
       Value: 20191028T085234Z
     - ID: "2e232095-d195-4acc-bbae-0d26d4d5b27c"
       Hint: BrowserTitle
-      Value: Προγράμματα‌ ‌Ασφάλισης‌ ‌Οχήματος‌
+      Value: Προνομιακές εκπτώσεις στα ασφάλιστρα αυτοκινήτου
     - ID: "328f77a3-08cc-4496-b8c9-184e3c194993"
       Hint: ToolkitHowItWorks
       Value: |
@@ -113,11 +133,11 @@ Languages:
       Value: Στις ενότητες που ακολουθούν θα βρείτε όλες τις συμπληρωματικές πληροφορίες που χρειάζεστε.
     - ID: "48b984be-446e-40c9-b86b-2b93f35f015e"
       Hint: Title
-      Value: Προγράμματα‌ ‌Ασφάλισης‌ ‌Οχήματος‌
+      Value: Προνομιακές εκπτώσεις στα ασφάλιστρα αυτοκινήτου
     - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
       Hint: MobileImage
       Value: |
-        <image mediaid="{BCD9F6E2-035C-4FFF-9BD8-A1E1BCE0E9AA}" />
+        <image mediaid="{F037B0A1-2962-41C9-B66D-23E088A47EC2}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -135,14 +155,14 @@ Languages:
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{03636667-9679-4B36-8A22-A93B811FEC8B}" />
+        <image mediaid="{F037B0A1-2962-41C9-B66D-23E088A47EC2}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Προγράμματα‌ ‌Ασφάλισης‌ ‌Οχήματος‌
+      Value: Προνομιακές εκπτώσεις στα ασφάλιστρα αυτοκινήτου
 - Language: en
   Fields:
   - ID: "eb2af3ca-2892-4044-b791-394344ab8456"

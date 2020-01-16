@@ -22,6 +22,10 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "af8b8e9d-3fe1-4bff-9062-4a139d8f4975"
+      Hint: TeaserCTA
+      Value: |
+        <link id="{FA1AD068-E55F-4F35-91BE-0D38BF14F7FC}" querystring="" target="" text="ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ" anchor="" title="" class="" url="/Eurolife/Home/gnoriste-mas/giati-na-mas-epilexete" linktype="internal" />
 - Language: en
   Versions:
   - Version: 1

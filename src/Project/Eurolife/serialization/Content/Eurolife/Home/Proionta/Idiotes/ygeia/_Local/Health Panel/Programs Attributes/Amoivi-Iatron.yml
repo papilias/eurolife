@@ -13,9 +13,13 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "1543892b-a690-4e90-a05f-c496fee76c18"
+      Hint: PanelsIsCheckbox
+      Type: Checkbox
+      Value: 1
     - ID: "1ef9b331-607c-48d3-bc12-c8b2d7ca1e40"
       Hint: PanelRowTitle
-      Value:  Αμοιβή Ιατρών (Χειρουργών, Αναισθησιολόγων και λοιπών Ειδικοτήτων)
+      Value:  Αμοιβή Ιατρών, Χειρουργών, Αναισθησιολόγων και λοιπών Ειδικοτήτων. Στα μη συμβεβλημένα ιδιωτικά νοσοκομεία εφαρμόζεται ανώτατο όριο κάλυψης στις αμοιβές.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190709T091129Z

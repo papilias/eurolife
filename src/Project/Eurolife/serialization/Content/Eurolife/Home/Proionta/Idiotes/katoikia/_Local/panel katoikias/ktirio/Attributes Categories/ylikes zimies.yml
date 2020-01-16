@@ -16,7 +16,7 @@ Languages:
     - ID: "070ba0de-12b3-4559-9b33-46c028777bd4"
       Hint: IsMain
       Type: Checkbox
-      Value: 1
+      Value: 0
     - ID: "0fedef40-1ed0-422a-aefb-b9ed2277043c"
       Hint: Rows
       Type: Multilist

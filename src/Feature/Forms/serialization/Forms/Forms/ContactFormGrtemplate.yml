@@ -1,5 +1,5 @@
 ﻿---
-ID: "0568e847-de0e-4c50-9602-b70de42a0c67"
+ID: "26f975a7-00b1-49a9-b1dc-1f81fb3e8cc7"
 Parent: "b701850a-cb8a-4943-b2bc-dddb1238c103"
 Template: "6abee1f2-4ab4-47f0-ad8b-bdb36f37f64c"
 Path: /sitecore/Forms/ContactFormGrtemplate
@@ -11,7 +11,7 @@ SharedFields:
 - ID: "558f9307-ebaf-480d-88b5-dfe9e63a66de"
   Hint: Is Template
   Type: Checkbox
-  Value: 1
+  Value: 0
 - ID: "589a7ade-81d4-4a60-b9e2-7eaf6ae8a563"
   Hint: Field Type
   Value: "{3A4DF9C0-7C82-4415-90C3-25440257756D}"

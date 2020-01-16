@@ -7,11 +7,11 @@ DB: master
 SharedFields:
 - ID: "3da3fb00-31f6-432d-979a-57cee52b9d8a"
   Hint: Color
-  Value: "{3DBCCC4E-AA6B-4A5C-B599-27A48B9CFAE5}"
+  Value: "{9DA6F5F2-6BAD-448B-A50B-16AD57FBE0A4}"
 - ID: "491a0266-2073-41f5-add3-02b4f76a03cc"
   Hint: IncludeInSearchResults
   Type: Checkbox
-  Value: 1
+  Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: "-100"
@@ -59,19 +59,19 @@ Languages:
             <r
               uid="{63038218-9890-493A-82E2-B14543559A2C}"
               p:after="r[@uid='{11383B9F-7C38-4FD4-897E-792F87323D70}']"
-              s:ds="{4804B4BE-DAF2-4C58-99A6-FDD77E8F9324}"
+              s:ds="{BAB8BA3E-34AC-4683-BC8A-72B50B7309AA}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-2-{91396B48-882F-4086-81B1-22BC08B9A475}-0" />
             <r
               uid="{29E204BF-6FED-4180-AB9A-B4E3001A670F}"
               p:after="r[@uid='{63038218-9890-493A-82E2-B14543559A2C}']"
-              s:ds="{8BFE1823-2BCD-4C51-9815-7BA9D4192805}"
+              s:ds="{48710033-67A3-4E8F-AA5B-ECAA55A57F5C}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-1-{91396B48-882F-4086-81B1-22BC08B9A475}-0" />
             <r
               uid="{B82E0904-1D00-4C6E-B339-EE80B0CFA726}"
               p:after="r[@uid='{29E204BF-6FED-4180-AB9A-B4E3001A670F}']"
-              s:ds="{11E5A0ED-DC90-45DA-B25F-D0773D5866BC}"
+              s:ds="{E2EE10E9-3F73-403D-BBE3-488687C2D508}"
               s:id="{B88C4F62-C566-4B2C-8553-A621D20406EA}"
               s:ph="/page-layout/teaser-placeholder-3-{91396B48-882F-4086-81B1-22BC08B9A475}-0" />
             <r
@@ -137,11 +137,11 @@ Languages:
     - ID: "48c14f0a-157d-43e9-b294-261895506ae9"
       Hint: MobileImage
       Value: |
-        <image mediaid="{74C7E469-66A1-433F-B6B5-B96DC6A2CA4B}" />
+        <image mediaid="{EDD57EDB-5B85-4730-B429-D96C6279E3E2}" />
     - ID: "59b7d0be-39f3-4f45-b645-bde65fa07015"
       Hint: CTA
       Value: |
-        <link text="ΕΚΔΗΛΩΣΗ ΕΝΔΙΑΦΕΡΟΝΤΟΣ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7EE29A0B-3DB1-4893-9E14-1304004071E0}" />
+        <link text="ΕΚΔΗΛΩΣΗ ΕΝΔΙΑΦΕΡΟΝΤΟΣ" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{B13C37FC-7395-4322-9D78-2DA41051875D}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -149,21 +149,23 @@ Languages:
     - ID: "7c4aaadd-2ca5-488a-8fc1-5b5f01df6a9b"
       Hint: CanIndex
       Type: Checkbox
-      Value: 1
+      Value: 0
     - ID: "83b0e4e3-ab03-43e3-8083-3e7fd2946ad4"
       Hint: ToolkitTitle
       Value: Εργαλεία Ενημέρωσης
     - ID: "9580e8d5-430e-4746-b4c1-6b71c56df42e"
       Hint: Summary
-      Value: Τα προγράμματα για επαγγελματίες και επιχειρήσεις προστατεύουν τα περιουσιακά στοιχεία της επιχείρησής σας, τους ανθρώπους σας, τις περιπτώσεις ευθύνης αλλά και τα εμπορεύματά σας από τους πιο συχνούς κινδύνους.
+      Value: |
+        Τα προγράμματα για επαγγελματίες και επιχειρήσεις προστατεύουν τα περιουσιακά στοιχεία της επιχείρησής σας,
+        τους ανθρώπους σας, τις περιπτώσεις ευθύνης αλλά και τα εμπορεύματά σας από τους πιο συχνούς κινδύνους.
     - ID: "b55592b1-8771-4bc3-a3a7-a30a2761430f"
       Hint: DesktopImage
       Value: |
-        <image mediaid="{7384CE25-4F10-465C-A790-BD689A015114}" />
+        <image mediaid="{EDD57EDB-5B85-4730-B429-D96C6279E3E2}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
-      Value: 1
+      Value: 0
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
       Value: Πρόγραμμα Ασφάλισης Κατοικίας

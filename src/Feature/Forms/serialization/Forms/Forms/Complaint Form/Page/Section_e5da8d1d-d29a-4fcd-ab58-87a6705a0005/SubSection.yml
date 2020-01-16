@@ -1,5 +1,5 @@
 ﻿---
-ID: "3cfee1da-e5bf-44c9-b405-db01b5dbe0fa"
+ID: "47dd2633-b246-42dc-9023-b5e2d4258bd5"
 Parent: "e5da8d1d-d29a-4fcd-ab58-87a6705a0005"
 Template: "8cddb194-f456-4a75-89b7-346f8f39f95c"
 Path: /sitecore/Forms/Complaint Form/Page/Section/SubSection
@@ -11,16 +11,16 @@ SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
   Hint: Conditions
   Value: |
-    {"fieldConditions":[{"matchTypeId":"{365C94DA-C1CD-4783-A91D-0D17A16C7117}","conditions":[{"fieldId":"0F561660635248FA9A59BE0DE7C70436","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Ναι"}],"actions":[{"fieldId":"C58346A8AA114C1EBAF9EDB40756F27F","actionTypeId":"{AAE07A52-46A4-49EF-98B0-C2595BAC2382}","value":null}]},{"matchTypeId":"{365C94DA-C1CD-4783-A91D-0D17A16C7117}","conditions":[{"fieldId":"0F561660635248FA9A59BE0DE7C70436","operatorId":"{1D38B217-A2EE-4E7B-B6ED-13E751462FEB}","value":"Όχι"}],"actions":[{"fieldId":"C58346A8AA114C1EBAF9EDB40756F27F","actionTypeId":"{7F58C8DD-D7C0-4FB7-BB44-8EC6B5E1C3D9}","value":null}]}]}
+    {"fieldConditions":[]}
 - ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
   Hint: Css Class
-  Value: form__item
+  Value: "form__item-static"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: C58346A8AA114C1EBAF9EDB40756F27F
+  Value: B8856C77C67248D9852686F827ECD023
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 100
 Languages:
 - Language: "el-GR"
   Versions:
