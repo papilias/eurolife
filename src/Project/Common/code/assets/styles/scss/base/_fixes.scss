@@ -132,9 +132,7 @@ main {
 
 .filter input[type=checkbox] + label {
   position: relative;
-  padding: 0 40px 0 0;
   cursor: pointer;
-  margin-left: -20px;
   z-index: 1;
 
   + label{

@@ -663,43 +663,43 @@
   }
                                               
   function customRadioButtons() {
-    if ($("input[type=radio]").length || $("input[type=checkbox]").length) {
+    if ($(".js-custom-radio").length || $(".js-custom-checkbox").length) {
 
-      var $target = $("input[type=radio], input[type=checkbox]");
+      var $target = $(".js-custom-radio input[type=radio], .js-custom-checkbox input[type=checkbox]");
 
       $target.each(function () {
         if (!$(this).parent().parent().hasClass('accordion')) {
           $(this).after("<label></label>");
-          $(this).parent().addClass("cursor-pointer");
         }
       });
     }
   }
 
-    function highLightLabel(){
-        $target = $( ".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea" );
-        $target.each(function(){
-            var text_value=$(this).val();
-            if(text_value != '')
-            {
-              $(this).parents('.form__item').addClass('filled');
-              $(this).parents('.form__item-static').removeClass('filled');
-            }
+  function highLightLabel() {
+      if ($('.form').length > 0) {
+        var $target = $(".form input[type='text'], .form input[type='email'], .form input[type='tel'], .form textarea");
+        $target.each(function () {
+          var text_value = $(this).val();
+          if (text_value != '') {
+            $(this).parents('.form__item').addClass('filled');
+            $(this).parents('.form__item-static').removeClass('filled');
+          }
         });
 
-        $target.bind('blur', function(){
-            if( !$(this).val() || $(this).hasClass('error')) {
-                if (!$(this).val())
-                $(this).parents('.form__item').removeClass('filled');
-                $(this).parents('.form__item-static').removeClass('filled');
-            }
+        $target.bind('blur', function () {
+          if (!$(this).val() || $(this).hasClass('error')) {
+            if (!$(this).val())
+              $(this).parents('.form__item').removeClass('filled');
+            $(this).parents('.form__item-static').removeClass('filled');
+          }
         });
-        $target.bind('focus', function(){
-            if( !$(this).val() || $(this).hasClass('error')) {
-              $(this).parents('.form__item').addClass('filled');
-              $(this).parents('.form__item-static').removeClass('filled');
-            }
+        $target.bind('focus', function () {
+          if (!$(this).val() || $(this).hasClass('error')) {
+            $(this).parents('.form__item').addClass('filled');
+            $(this).parents('.form__item-static').removeClass('filled');
+          }
         });
+      }
     }
 
     //using an instersection observer for product START
@@ -747,32 +747,34 @@
     function tableHeightEqualizer() {
       $(".grid-table-cell").attr("style", "");
 
-      $(".program-grid").each(function () {
-        const grid = $(this);
-        const howmany = $(this).find(".program-attributes .grid-table-cell").length;
+      setTimeout(() => {
+        $(".program-grid").each(function () {
+          const grid = $(this);
+          const howmany = $(this).find(".program-attributes .grid-table-cell").length;
 
-        //CUT EXPANDED TABLE WIDTH IN CASE OF 2 COLUMNS
-        if ($(window).width() >= 1024)
-          if ($(grid).hasClass("program-grid-2"))
-            $(grid).parent().css({ "width" : "800px", "overflow" : "hidden" });
-        else
-          if ($(grid).hasClass("program-grid-1")) 
-            $(grid).parent().css({ "width": "520px", "overflow": "hidden" });
+          //CUT EXPANDED TABLE WIDTH IN CASE OF 2 COLUMNS
+          if ($(window).width() >= 1024)
+            if ($(grid).hasClass("program-grid-2"))
+              $(grid).parent().css({ "width": "800px", "overflow": "hidden" });
+            else
+              if ($(grid).hasClass("program-grid-1"))
+                $(grid).parent().css({ "width": "520px", "overflow": "hidden" });
 
-        for (let i = 0; i < howmany; i++) {
-          let max = 0;
+          for (let i = 0; i < howmany; i++) {
+            let max = 0;
 
-          //FIND THE MAX PER ROW
-          $(grid).find(".grid-table-column").each(function () {
-            $(this).find(".grid-table-cell").eq(i).each(function () {
-              if ($(this).height() > max)
-                max = $(this).outerHeight();
+            //FIND THE MAX PER ROW
+            $(grid).find(".grid-table-column").each(function () {
+              $(this).find(".grid-table-cell").eq(i).each(function () {
+                if ($(this).height() > max)
+                  max = $(this).outerHeight();
+              });
+
+              //SET FIXED HEIGHT
+              setTimeout(() => { $(this).find(".grid-table-cell").eq(i).height(max + "px"); }, 500);
             });
-
-            //SET FIXED HEIGHT
-            setTimeout(() => { $(this).find(".grid-table-cell").eq(i).height(max + "px"); }, 500);
-          });
-        }
-      });
+          }
+        });
+      }, 500);
     }
 })(jQuery);

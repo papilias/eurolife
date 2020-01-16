@@ -54,8 +54,12 @@ input[type="submit"]{
     transition: background-color 150ms linear;
 }
 
-.form *{
-    outline: none;
+footer input[type="submit"]{
+  margin-top:8px;
+}
+
+.form * {
+  outline: none;
 }
 
 /*btn classes*/
@@ -222,12 +226,12 @@ input[type="checkbox"] {
   float: left;
   margin-top: 7px;
   opacity: 0;
-  display: block;
+  display: none;
   pointer-events: none;
 
   + label {
     position: relative;
-    padding: 0 40px;
+    padding-left: 30px;
     cursor: pointer;
   }
 

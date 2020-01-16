@@ -361,7 +361,7 @@
       position: relative;
     }
 
-    @include breakpoint(540) {
+    /*@include breakpoint(540) {
       &:after {
         content: "";
         width: 0;
@@ -378,7 +378,7 @@
           width: 100%;
         }
       }
-    }
+    }*/
   }
 }
 
