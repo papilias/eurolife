@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using Wedia.Feature.Blog.Repositories;
 using Sitecore.Mvc.Presentation;
+using Sitecore.Data.Items;
+using Sitecore.Data.Fields;
+
 
 namespace Wedia.Feature.Blog.Controllers
 {
@@ -19,29 +22,109 @@ namespace Wedia.Feature.Blog.Controllers
 
     public ActionResult MigrationData(string year = "")
     {
-      if(!string.IsNullOrEmpty(year))
+#if DEBUG
+      List<string> errors = new List<string>();    
+
+      if (!string.IsNullOrEmpty(year))
       {
-        var item = RenderingContext.Current.Rendering.Item;
-        //Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
-        //string mediaPath = $"/sitecore/media library/Project/Eurolife/Blog/{year}";
-        //Sitecore.Data.Items.Item articlesList = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID("{57ABE6E8-9793-4FC0-85FB-10364B59DC05}"));
+        var page = RenderingContext.Current.Rendering.Item;         
 
-        var data = _blogRepository.GetArticlesForSpecificYear(item, year);
+        var data = _blogRepository.GetArticlesForSpecificYear(page, year);
+        Sitecore.Data.Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+        string mediaPath = $"/sitecore/media library/Project/Eurolife/Blog/{year}"; 
 
-        if(data != null && data.Any())
+        if (data != null && data.Any())
         {
-          foreach(var article in data)
+          foreach(var item in data)
           {
+            if(item.Fields["OldImage"].HasValue)
+            {                
+              string tmpImage = item.Fields["OldImage"].ToString().Split('/').Last();
+              string imgRaw = item.Fields["Image Raw HTML"].ToString();
+              if (imgRaw.Contains($"{tmpImage}.png"))
+                tmpImage = $"{tmpImage}.png";
+              else if (imgRaw.Contains($"{tmpImage}.jpg"))
+                tmpImage = $"{tmpImage}.jpg";
+              else if (imgRaw.Contains($"{tmpImage}.jpeg"))
+                tmpImage = $"{tmpImage}.jpeg";
+              else if (imgRaw.Contains($"{tmpImage}.gif"))
+                tmpImage = $"{tmpImage}.gif";
 
+              string sourcePath = Url.Content(string.Format("{0}/{1}", System.Web.HttpContext.Current.Server.MapPath("~/asm"), System.IO.Path.GetFileName(tmpImage)));
+
+              try
+              {
+
+                string proposedName = ItemUtil.ProposeValidItemName(item.Fields["OldImage"].ToString().Split('/').Last());
+                Item myItem = master.GetItem(mediaPath + "/" + proposedName);
+
+                if (myItem == null)
+                {                     
+
+                  if (!System.IO.File.Exists(sourcePath))
+                  {
+                    continue;
+                  }
+
+                  if (!string.IsNullOrEmpty(sourcePath))
+                  {
+                    Sitecore.Resources.Media.MediaCreatorOptions options = new Sitecore.Resources.Media.MediaCreatorOptions
+                    {
+                      // Store the file in the database, not as a file
+                      FileBased = false,
+                      // Remove file extension from item name
+                      IncludeExtensionInItemName = false,
+                      // Do not make a versioned template
+                      Versioned = false,
+                      // set the path
+                      Destination = mediaPath
+                    };
+                    options.Destination = options.Destination + "/" + proposedName;
+                    // Set the database
+                    options.Database = Sitecore.Configuration.Factory.GetDatabase("master");
+                    options.Language = Sitecore.Data.Managers.LanguageManager.GetLanguage("el-GR");
+
+                    // Now create the file
+                    Sitecore.Resources.Media.MediaCreator creator = new Sitecore.Resources.Media.MediaCreator();
+                    MediaItem mediaItem = creator.CreateFromFile(sourcePath, options);
+
+                    using (new Sitecore.SecurityModel.SecurityDisabler())
+                    {
+                      item.Editing.BeginEdit();
+
+                      var imageField = (ImageField)item.Fields["Image"];
+                      imageField.MediaID = mediaItem.ID;
+
+                      item.Editing.EndEdit();
+                    }   
+                  }
+                }
+                else
+                {
+                  using (new Sitecore.SecurityModel.SecurityDisabler())
+                  {
+                    item.Editing.BeginEdit();
+
+                    var imageField = (ImageField)item.Fields["Image"];
+                    imageField.MediaID = myItem.ID;
+
+                    item.Editing.EndEdit();
+                  }
+                }
+              }
+              catch (Exception ex)
+              {
+                errors.Add(item.Name);
+              }
+
+            }
           }
-        }
-        //get specific year under list
-        //foreach (Sitecore.Data.Items.Item item in articlesList.Children.Where(x => x.TemplateID == Templates.BlogPost.ID))
-        //{
-        //  var name = item.Name;
-        //}
+        }         
 
       }
+
+      return Content(String.Join(", ", errors.ToArray()));
+#endif
 
       return Content("OK");
     }

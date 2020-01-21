@@ -36,6 +36,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "Κανείς δεν έχει πια δικαιολογία να λέει ότι είναι πολύ μεγάλος για να είναι δραστήριος!"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{72970A08-CBFC-4F70-9A4F-6FDBDB195275}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Καθηγήτρια γιόγκα ετών 97!"

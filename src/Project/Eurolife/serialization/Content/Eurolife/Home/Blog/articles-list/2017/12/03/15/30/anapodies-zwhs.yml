@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "Σίγουρα όχι όποιος έχει προνοήσει γι’ αυτές!"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{7F95F69C-887D-451A-BAB1-F2294909A600}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Ποιος φοβάται τις αναποδιές;

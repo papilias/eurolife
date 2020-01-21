@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class="Normal1">Ελεύθερο δωρεάν WiFi, τι βολικό! Προσοχή όμως, γιατί η ελεύθερη πρόσβαση σε WiFi είναι και η πιο επικίνδυνη για την ασφάλεια των δεδομένων σου…</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{8AAF4477-1EB5-4BA4-B9C1-C36D11CABBBF}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Το ελεύθερο WiFi και οι κλέφτες δεδομένων

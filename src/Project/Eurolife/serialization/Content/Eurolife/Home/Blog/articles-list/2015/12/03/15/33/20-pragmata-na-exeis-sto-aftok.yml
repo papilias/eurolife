@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <div style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-image: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; word-wrap: break-word; width: 100%; height: 100%; font-family: helvetica, arial, sans-serif; text-align: left;">Για πολλούς από εμάς, το αυτοκίνητο είναι κάτι σαν δεύτερο σπίτι! Γι’ αυτό είναι σημαντικό να το εξοπλίσουμε κατάλληλα για… παν ενδεχόμενο!</div>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{F7EB025E-9401-46AB-9366-764C6BE32B39}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: 20 πράγματα που πρέπει να έχουμε πάντα μέσα στο αυτοκίνητο

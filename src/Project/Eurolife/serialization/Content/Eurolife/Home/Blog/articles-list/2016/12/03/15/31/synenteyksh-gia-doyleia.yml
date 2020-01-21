@@ -30,6 +30,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class="Normal1">Έχουμε που έχουμε το άγχος για τη συνέντευξη, έχουμε και άγχος για το τι θα φορέσουμε!</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{42838334-CE0C-4B82-9DBE-E2166D61774F}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Συνέντευξη για δουλειά: Τι φοράμε;"

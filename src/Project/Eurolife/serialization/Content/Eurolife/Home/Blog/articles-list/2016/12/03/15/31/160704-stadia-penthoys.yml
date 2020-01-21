@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: <p>Ενός κακού, μύρια έπονται..Είναι γνωστή η παροιμία και η περίπτωση θανάτου ενός αγαπημένου μας προσώπου δεν θα μπορούσε να αποτελεί εξαίρεση. </p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{DC93BD6F-AAD8-4364-B6B7-4997F6A5CFB1}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Στάδια πένθους

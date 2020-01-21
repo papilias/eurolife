@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p style="margin: 0in 0in 0.0001pt;">Το πάθος ενός και μόνο ανθρώπου για το διάβασμα και την ιστιοπλοΐα, οδήγησε σε μια λύση-μοντέλο για το πρόβλημα του αναλφαβητισμού. </p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{4D98DBC9-1F46-4D87-9BEC-8CF3BAEBE180}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Ιδέες που κάνουν τον κόσμο καλύτερο: Η πλωτή βιβλιοθήκη "

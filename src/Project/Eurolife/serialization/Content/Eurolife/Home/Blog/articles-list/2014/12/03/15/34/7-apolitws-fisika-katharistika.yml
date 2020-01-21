@@ -24,6 +24,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: Έχετε σκεφτεί με πόσα χημικά έρχεστε σε επαφή απλά καθαρίζοντας το σπίτι σας;
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{CB2EA060-7E4B-4625-BD60-19C7F6B04FAE}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: 7 απολύτως φυσικά και ακίνδυνα καθαριστικά για το σπίτι

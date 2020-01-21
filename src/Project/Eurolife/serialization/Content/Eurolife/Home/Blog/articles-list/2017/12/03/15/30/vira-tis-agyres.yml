@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class=""Normal1"">Ονειρεύεστε ανοιχτές θάλασσες και απέραντο μπλε μέχρι εκεί που φτάνει το μάτι σας; Φαντάζεστε ότι είστε «καπετάνιοι» και πάτε όπου επιθυμείτε;</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{DEC945D7-50DF-4B1C-8E72-CF98F3318333}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Βίρα τις άγκυρες!"

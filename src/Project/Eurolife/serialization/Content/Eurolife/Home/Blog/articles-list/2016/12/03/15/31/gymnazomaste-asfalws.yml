@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "<p>Η γυμναστική μας κάνει καλό! Πρέπει να κάνουμε γυμναστική! Πάμε να βρούμε ένα γυμναστήριο!</p>"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{196EC9A5-9EAB-4A14-9AD6-697647AA65CD}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Γυμναζόμαστε ασφαλώς…από όλες τις πλευρές!"

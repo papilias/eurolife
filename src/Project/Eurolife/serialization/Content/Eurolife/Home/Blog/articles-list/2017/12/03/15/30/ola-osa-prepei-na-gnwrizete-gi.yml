@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         Μετά τη <a href="http://www.as-milisoume.gr/el/Articles/ti-prepei-na-gnwrizoume-gia-ta-emvolia-kai-thn-ygeia-mas">συζήτηση περί εμβολίων</a> ακολουθεί και η συζήτηση για το κατά πόσο ένα παιδί χρειάζεται να επισκέπτεται το γιατρό ανά διαστήματα για κάποιες προληπτικές εξετάσεις, όπως και ένας ενήλικας.
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{9462A833-9A8B-4C9D-B6F3-DB9305A8F359}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Όλα όσα πρέπει να γνωρίζετε για το παιδικό check up

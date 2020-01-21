@@ -24,6 +24,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: Όσο λες «όταν βρω τον χρόνο…» τόσο δεν θα βρίσκεται. Ξεκίνα τώρα με τα πέντε λεπτά που διαθέτεις και κάνε τη σκέψη πράξη.
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{B2C6DBBA-B6D1-45C3-AF3E-BCC6CC4E50B5}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Ο εθελοντισμός δεν θέλει χρόνο, θέλει τρόπο

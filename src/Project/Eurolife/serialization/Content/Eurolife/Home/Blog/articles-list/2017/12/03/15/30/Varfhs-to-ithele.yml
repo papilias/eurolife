@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: <p>Ένας νέος Αθηναίος αρχιτέκτονας θεωρούσε πως από την Αθήνα έλειπε ο σωστός χώρος για να απολαμβάνει όπως ήθελε το αγαπημένο του skate… </p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{EC2D850A-24F5-4F54-BFDD-1542B9023A3C}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Το ήθελε, το πίστεψε και το έκανε! "

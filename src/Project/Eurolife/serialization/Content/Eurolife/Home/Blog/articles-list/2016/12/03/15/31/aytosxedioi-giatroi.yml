@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class=""1"">Ήταν και το δικό σας όνειρο άραγε να γίνετε γιατρός;&nbsp;&nbsp;</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{9BEB323A-4988-413A-B8A2-EFA0386B304E}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Κίνδυνος-θάνατος: Αυτοσχέδιοι γιατροί!"

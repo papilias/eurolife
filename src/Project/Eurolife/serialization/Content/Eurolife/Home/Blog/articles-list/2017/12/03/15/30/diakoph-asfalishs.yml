@@ -24,6 +24,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: Ανήκετε μήπως και εσείς στην κατηγορία των ανθρώπων που πλέον τρέμουν την ημέρα που ξέρουν ότι πρέπει να πληρωθεί το ασφάλιστρό τους;
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{ECCC2B4D-F659-4BFA-978E-5B9BCD4C6211}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Η διακοπή δεν είναι λύση...

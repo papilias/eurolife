@@ -29,6 +29,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p>Το <a href=""https://www.reuters.com/article/us-amers-reuters-ranking-innovative-univ/reuters-top-100-the-worlds-most-innovative-universities-2018-idUSKCN1ML0AZ"">Reuters κατέταξε τα Πανεπιστήμια</a> με κριτήριο τη σύνδεσή τους με την καινοτομία και εμείς σας παρουσιάζουμε τα 10 καλύτερα!</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{A02C5A7B-4D01-46D2-984B-7393916053D1}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Τα 10 πιο καινοτόμα Πανεπιστήμια στον κόσμο

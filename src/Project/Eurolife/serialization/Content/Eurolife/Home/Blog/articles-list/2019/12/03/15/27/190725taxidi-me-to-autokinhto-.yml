@@ -28,6 +28,10 @@ Languages:
     - ID: "78f61174-f047-439d-8749-b2dc33207596"
       Hint: OldImage
       Value: "/AAsmilisoume2019/July2019/190725taxidi-me-to-autokinhto-sumvoyles-gia-xegnoiastes-diakopes-hero-image"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{93F15EFD-326F-4761-B2A1-06AF09249967}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Ταξίδι με το Αυτοκίνητο: Συμβουλές για Ξέγνοιαστες Διακοπές"

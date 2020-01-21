@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "Γνωρίστε τον υπεραιωνόβιο Πορτογάλο σκηνοθέτη που εξακολουθεί να γυρίζει ταινίες!"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{D7D5AF1E-36E0-42BB-8730-CE5A49E5E133}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Manoel de Oliveira: Ετοιμάζει καινούρια ταινία στα 106 του!"

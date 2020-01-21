@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: Δεν είναι περίεργο που, αν και μιλάμε όλοι την ίδια γλώσσα, είναι μερικές φορές εξαιρετικά δύσκολο να συνεννοηθούμε;
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{34E6B4DA-1F5B-43E9-BFFF-74E5C6F947C9}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Τι θέλει να πει ο….ασφαλιστής;

@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "Η νέα viral πρόκληση (του στυλ «Ice Bucket Challenge») μας παροτρύνει να ζήσουμε μόνο με 4 λίτρα νερό την ημέρα –όσο δηλαδή διαθέτουν οι περισσότεροι άνθρωποι στην Αφρική!"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{769F81C5-DC96-43B1-B20B-8C673F551D02}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Εσύ θα μπορούσες να ζήσεις με 4 λίτρα νερό την ημέρα;

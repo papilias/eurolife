@@ -22,6 +22,10 @@ Languages:
     - ID: "78f61174-f047-439d-8749-b2dc33207596"
       Hint: OldImage
       Value: "/AAsmilisoume2018/180620-Tips-synthrhshs-gia-to-eksoxiko-sas-spiti"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{46DE8683-3CC0-4A22-90CA-7D6771D3ED43}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Tips συντήρησης για να προετοιμάσετε το εξοχικό σας σπίτι

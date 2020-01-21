@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: Οι άνθρωποι δεν είναι όλοι ίδιοι, άρα γιατί να είναι κι όλοι έξυπνοι με τον ίδιο τρόπο;
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{3060739C-4A67-425D-A353-9DFAD9939D08}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Πόσα είδη εξυπνάδας υπάρχουν;

@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p>Ξεχάστε τη Zumba και ξεκινήστε "Tumbao". Πρόκειται για μια διαφορετική οπτική στο fitness που υπόσχεται, όχι μόνο αδυνάτισμα και γράμμωση αλλά και, καλή διάθεση.</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{DB07B19B-C769-462C-A691-EA909031DFDE}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Τι είναι το Tumbao;

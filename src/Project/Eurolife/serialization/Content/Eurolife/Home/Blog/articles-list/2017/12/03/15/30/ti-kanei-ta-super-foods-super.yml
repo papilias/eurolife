@@ -25,6 +25,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "<p>Εσείς γνωρίζετε τις ευεργετικές ιδιότητες των πιο γνωστών superfoods και πώς να τις καταναλώνετε ώστε να αποκομίζετε τα μέγιστα οφέλη; Στο άρθρο που ακολουθεί θα βρείτε τις απαντήσεις που ψάχνετε!</p>"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{AADD5336-E0A3-4004-9D83-2F6EC4A3F519}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Τι κάνει τα superfoods… super;

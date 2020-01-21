@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class="Normal1">Το μπαλκόνι-δάσος δεν είναι πάντα η φανταστική ιδέα που φαίνεται, εκτός αν υπάρχουν οι προδιαγραφές που το υποστηρίζουν. </p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{DCECD0A8-0BF2-49EA-9E3A-7C12972526CE}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Το μπαλκόνι-μπαλκόνι και το δάσος-δάσος"

@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class=""Normal1"">Τι θα σκεφτόσασταν αν κάποιος σας έλεγε ότι έχει κάνει <a href=""http://www.eurolife.gr/el/Products/Life/Apallagh%20Plhrwmhs/MyFamilyFirst"">ασφάλεια ζωής</a>;</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{AFB5B6C1-EC35-4D4E-A4FE-B72A082B2CE5}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Οι δύο όψεις του ίδιου νομίσματος

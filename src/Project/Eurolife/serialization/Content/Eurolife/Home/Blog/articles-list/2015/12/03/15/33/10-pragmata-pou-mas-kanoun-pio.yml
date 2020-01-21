@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;">Αν νομίζετε πως επειδή κάνετε γυμναστική θα διατηρήσετε, εκτός από το σώμα σας, και το μυαλό σας σε φόρμα…ξανασκεφτείτε το! Το μυαλό μας χρειάζεται τη δική του άσκηση.</p><div></div>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{E5B8D718-FE26-453C-9242-D64EA12BF728}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: 10 πράγματα που μας κάνουν πιο έξυπνους καθώς μεγαλώνουμε

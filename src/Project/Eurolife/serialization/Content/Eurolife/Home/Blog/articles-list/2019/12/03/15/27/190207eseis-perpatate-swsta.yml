@@ -29,6 +29,10 @@ Languages:
       Hint: Teaser
       Value: |
         Το περπάτημα αποτελεί βασικό μέσο μεταφοράς των ανθρώπων. Όμως, αποδεδειγμένα, <a href="https://www.as-milisoume.gr/el/Articles/160808%20einai-to-20lepto-perpathma-kalh-gymanstikh">το 20λεπτο περπάτημα είναι και μια πολύ καλή γυμναστική</a>. Αρκεί να το κάνουμε σωστά.
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{0E2A261B-8820-4698-BE8B-1647D401266B}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Εσείς, περπατάτε σωστά;

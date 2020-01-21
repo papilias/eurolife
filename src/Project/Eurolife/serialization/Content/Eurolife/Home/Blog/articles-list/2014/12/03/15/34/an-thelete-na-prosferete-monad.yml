@@ -31,6 +31,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "Αν θέλετε να προσφέρετε ένα δώρο μοναδικό και με την υπογραφή σας, δεν θα βρείτε καλύτερη ιδέα!"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{81B45EE9-9A76-4D2A-AC06-D2473C1F8F66}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Σχεδιάστε τα δικά σας γυαλιά ηλίου!"

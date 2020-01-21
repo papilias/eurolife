@@ -24,6 +24,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "Νέα έρευνα αποκαλύπτει το &nbsp;«μυστικό της επιτυχίας» και είναι άλλο από αυτό που νομίζατε!"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{E395E93E-8EEC-41FD-AD0C-84F1CA568E5D}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Η επιτυχία κρίνεται από την προσωπικότητα κι όχι από την εξυπνάδα

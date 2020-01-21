@@ -29,6 +29,10 @@ Languages:
       Hint: Teaser
       Value: |
         Και όμως γίνεται! Το<a href=""https://www.as-milisoume.gr/el/Articles/180706-perpathma-ofelh-gia-thn-ygeia""> περπάτημα έχει σημαντικά οφέλη για την υγεία</a> και το σώμα μας. Κάντε το πρώτο βήμα σήμερα και δείτε το σώμα και το βάρος σας να αλλάζουν!
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{359332EC-2990-4491-A751-BB3D8BF530B4}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Χάστε έως 1 κιλό την εβδομάδα με περπάτημα!"

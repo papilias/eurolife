@@ -30,6 +30,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class="Normal1">Πάντα θυμόμαστε με μεγάλη αγάπη το πρώτο μας αυτοκίνητο. Αυτό που πήραμε μόνοι μας, με τα δικά μας λεφτά!</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{6D7494D1-B46F-48F1-8FF3-17C6B459B1BC}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Χρυσό...αμάξι! "

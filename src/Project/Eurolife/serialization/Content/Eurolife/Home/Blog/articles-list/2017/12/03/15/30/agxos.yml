@@ -28,6 +28,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: "Όλοι έχουμε άγχη, άλλοι περισσότερα, άλλοι λιγότερα, το συμπέρασμα είναι ένα: Ναι, το άγχος υπάρχει!"
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{57742197-C066-44CB-A2AE-E74CDA7C25B3}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Άγχος; Ποιο άγχος;

@@ -30,6 +30,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class="Normal1">Γραμματοσειρές: Κομμάτι της καθημερινότητάς μας αλλά, ταυτόχρονα, ιδιαίτερα υποτιμημένο!</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{BEA0F613-FACE-4DD4-899F-0ACAD4238AD9}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Κάθε περίπτωση και άλλη γραμματοσειρά

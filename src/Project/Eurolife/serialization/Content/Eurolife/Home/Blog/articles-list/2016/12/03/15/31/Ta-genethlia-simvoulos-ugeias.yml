@@ -32,6 +32,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: <p>Έχει κάποια σχέση ο μήνας που έχουμε γεννηθεί με την υγεία μας;</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{876D4F41-11D8-4C16-B877-761BFF607AED}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Τα γενέθλια σύμβουλος υγείας!"

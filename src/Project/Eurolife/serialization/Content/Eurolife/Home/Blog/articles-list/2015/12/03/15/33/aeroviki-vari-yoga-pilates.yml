@@ -24,6 +24,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: Ρωτήσαμε τον personal trainer Άγγελο Πάπαρη τι επιλογές έχουμε και ποια είναι τα αναμενόμενα οφέλη σε κάθε περίπτωση.
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{1ADAF76E-C33F-448E-9272-25E075930311}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Αεροβική, βάρη, γιόγκα, πιλάτες… Τι γυμναστική να επιλέξω;

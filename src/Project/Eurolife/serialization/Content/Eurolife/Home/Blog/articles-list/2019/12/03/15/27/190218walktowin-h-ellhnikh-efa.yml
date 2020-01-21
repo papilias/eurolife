@@ -29,6 +29,10 @@ Languages:
       Hint: Teaser
       Value: |
         Έχετε βάλει στόχο να χάσετε κιλά ενώ περπατάτε; Θέλετε να μάθετε <a href="https://www.as-milisoume.gr/el/Articles/190207eseis-perpatate-swsta">πώς να περπατάτε σωστά</a> ; Αποδέχεστε <a href="https://www.as-milisoume.gr/el/Articles/180706-perpathma-ofelh-gia-thn-ygeia">τα οφέλη του περπατήματος για την υγεία</a> και είστε έτοιμοι να κάνετε το επόμενο βήμα. Η <strong>ελληνική εφαρμογή Walk to Win </strong>σας βοηθά να πετύχετε τους στόχους σας, ενώ παράλληλα σας επιβραβεύει με έκπτωση στα ασφάλιστρα.
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{33C89D1E-EF13-4A33-9235-8DD1C5045A62}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Walk to win: H ελληνική εφαρμογή για το περπάτημα."

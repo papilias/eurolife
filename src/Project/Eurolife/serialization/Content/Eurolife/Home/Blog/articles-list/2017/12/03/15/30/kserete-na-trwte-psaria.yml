@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class=""Normal1"">Οι Έλληνες υπερηφανευόμαστε ότι ξέρουμε να τρώμε ψάρια! Και η αλήθεια είναι ότι τα ψάρια μας είναι πεντανόστιμα. </p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{1E215EF0-EAD4-4D0C-8CFA-BF55194F2AC5}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Ξέρετε να τρώτε ψάρια;

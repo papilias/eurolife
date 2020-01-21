@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p style="text-align: justify;">Θέατρο, ζωγραφική, λογοτεχνία: όποια μορφή τέχνης κι αν απολαμβάνετε, ως κοινό ή ως δημιουργός της, <strong>τα οφέλη για την ψυχολογία</strong> σας είναι πολλά -και καλά τεκμηριωμένα.</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{28A47D74-C834-46BF-9F46-6A10D66AA060}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Η επίδραση της τέχνης στην ψυχολογία

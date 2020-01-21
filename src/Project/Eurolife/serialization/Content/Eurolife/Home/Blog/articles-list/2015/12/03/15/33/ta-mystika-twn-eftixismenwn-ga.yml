@@ -24,6 +24,10 @@ Languages:
     - ID: "9fb7209f-e455-4463-91ba-1216d326dbfc"
       Hint: Teaser
       Value: Θέλετε ο γάμος σας να κρατήσει για πάντα; Έρευνα αποκαλύπτει τις προϋποθέσεις για να μη νιώσετε την ανάγκη να χωρίσετε.
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{DD6D6880-E47A-49B5-86B8-A5D2B96DC1EF}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Τα «μυστικά» των ευτυχισμένων γάμων

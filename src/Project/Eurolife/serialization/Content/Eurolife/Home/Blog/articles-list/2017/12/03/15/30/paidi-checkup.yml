@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class="Normal1">Αν δεν αρρωστήσει το παιδί μου, γιατί να το πάω στον γιατρό;</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{5238D215-7F42-41BF-8F2E-7B6D041D2412}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Και το παιδί θέλει το τσεκ απ του!"

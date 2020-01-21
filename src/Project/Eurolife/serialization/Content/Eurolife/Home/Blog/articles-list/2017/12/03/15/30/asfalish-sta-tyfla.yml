@@ -26,6 +26,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p class=""Normal1"">Εσείς πώς διαλέγετε ασφαλιστικά προϊόντα; Κλείνετε τα μάτια και όπου σταματήσει το δάχτυλό σας;</p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{70D67C02-E1A7-4637-9A6D-5FEE5A5AA1F5}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: "Ασφάλιση στα...τυφλά!"

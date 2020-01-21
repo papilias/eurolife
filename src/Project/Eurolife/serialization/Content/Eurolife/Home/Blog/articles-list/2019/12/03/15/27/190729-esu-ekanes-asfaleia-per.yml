@@ -39,6 +39,10 @@ Languages:
       Hint: Teaser
       Value: |
         <p style=""margin-bottom: 8pt; vertical-align: baseline;""><strong>Είσαι από εκείνους που προετοιμάζουν και την παραμικρή λεπτομέρεια για τις διακοπές τους; Μήπως όμως ξεχνάς κάτι; Την ασφάλεια περιεχομένου για το σπίτι σου!</strong></p>
+    - ID: "a766d447-508e-4fec-9033-f00e30361edc"
+      Hint: Image
+      Value: |
+        <image mediaid="{F5FB7A9D-5923-4913-9B8F-0C28205AC0BD}" />
     - ID: "abb06b40-3bda-4795-9e3f-c3203da27637"
       Hint: Title
       Value: Εσύ έκανες ασφάλεια περιεχομένου κατοικίας πριν τις διακοπές;
