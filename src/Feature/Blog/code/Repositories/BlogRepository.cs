@@ -24,7 +24,7 @@ namespace Wedia.Feature.Blog.Repositories
     {
         var data = Get(contextItem, Templates.BlogPost.ID, "sortorder", year);
 
-        return data;
+        return data.Where(x => x.Fields[Templates.HasBlogContent.Fields.Publicationdate].ToString().Contains(year));
     }
 
 
