@@ -7,18 +7,50 @@ using Wedia.Feature.Blog.Repositories;
 using Sitecore.Mvc.Presentation;
 using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
-
+using Wedia.Foundation.SitecoreExtensions.Extensions;
 
 namespace Wedia.Feature.Blog.Controllers
 {
-  public class BlogFeatureController : Controller
+  public class BlogController : Controller
   {
     private readonly IBlogRepository _blogRepository;
 
-    public BlogFeatureController(IBlogRepository blogRepository)
+    public BlogController(IBlogRepository blogRepository)
     {
       this._blogRepository = blogRepository;
     }      
+
+
+    public ActionResult LifeStages()
+    {
+      var item = RenderingContext.Current.Rendering.Item; 
+      return View("LifeStages", item.Children);
+    }
+
+
+    public ActionResult LatestArticles()
+    {  
+      var item = RenderingContext.Current.Rendering.Item;
+      var count = RenderingContext.Current.Rendering.GetIntegerParameter("count", Contants.LatestNews.NumberOfArticles);
+
+      return View("LatestArticles", _blogRepository.GetLatest(item, count));
+    }
+
+    public ActionResult RelatedArticles()
+    {
+      return Content("");
+    }
+
+    public ActionResult ProductArticles()
+    {
+      return Content("");
+    }
+
+    public ActionResult LifeStageArticles()
+    {
+      return Content("");
+    }
+
 
     public ActionResult MigrationData(string year = "")
     {

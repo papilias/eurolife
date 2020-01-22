@@ -1,0 +1,27 @@
+﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Foundation.Dictionary.Extensions  
+@using Wedia.Feature.Blog.Models
+
+@model IEnumerable<BlogPostItem>
+
+@if(Model != null && Model.Any())
+{
+  foreach(var item in Model)
+  {
+    <div>
+      <h1>
+        @item.Title
+      </h1>
+
+      @if(item.Tags != null && item.Tags.Any())
+      {
+        foreach(var tag in item.Tags)
+        {
+          <h3>
+            @tag.Title
+          </h3>
+        }
+      }      
+    </div>
+  }
+}
