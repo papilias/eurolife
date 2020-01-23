@@ -95,5 +95,26 @@ namespace Wedia.Feature.Blog
         public static readonly ID SelectedProducts = new ID("{710D9BE7-B5B4-4786-AF74-43FD2D763A3B}");
       }
     }
+
+    public struct HasColor
+    {
+      public static readonly ID ID = new ID("{ED2D2057-7FF2-437F-8010-B506D226B964}");
+
+      public struct Fields
+      {
+        public static readonly ID SelectedColor = new ID("{7370C8EF-7E8E-4ACB-9700-70114F1BA73D}");
+      }
+    }
+    
+    public struct Style
+    {
+      public static readonly ID ID = new ID("{CC84A3AC-CBE7-454E-8E28-929FCD7D8753}");
+
+      public struct Fields
+      {
+        public static readonly ID Style = new ID("{41D1E1AA-4552-4852-B717-ACD5D3E632C2}");
+      }
+    }
+
   }
 }

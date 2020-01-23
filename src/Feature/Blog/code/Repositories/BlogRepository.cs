@@ -8,6 +8,7 @@ using Wedia.Foundation.Indexing.Models;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
 using Sitecore.Data;
 using Wedia.Foundation.SitecoreExtensions.Utilities;
+using Wedia.Foundation.Theming.Extensions;
 
 namespace Wedia.Feature.Blog.Repositories
 {
@@ -54,6 +55,9 @@ namespace Wedia.Feature.Blog.Repositories
     {
       Models.BlogPostItem blogPostItem = new Models.BlogPostItem();
 
+      if (!item.DescendsFrom(Templates.BlogPost.ID))
+        return blogPostItem;
+
       var mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
       {
         Width = 600,
@@ -76,9 +80,21 @@ namespace Wedia.Feature.Blog.Repositories
           {
             var tags = new List<Models.Tag>();
 
-            foreach(var product in selectedProducts)
+            foreach(var product in selectedProducts)                                  
             {
-              tags.Add(new Models.Tag { Title = product.Fields[Templates.HasPageContent.Fields.Title]?.ToString() });
+              var color = string.Empty;
+              if (product.FieldHasValue(Templates.HasColor.Fields.SelectedColor))
+              {
+                var colorField = product.Fields[Templates.HasColor.Fields.SelectedColor];
+                var data =  Sitecore.Context.Database.GetItem(colorField.Value);
+                color = data.Fields[Templates.Style.Fields.Style].ToString();
+              }
+
+              tags.Add(new Models.Tag {
+                Title = product.Fields[Templates.HasPageContent.Fields.Title]?.ToString(),
+                Color = color,
+                URL = product.Url()
+              });
             }
 
             blogPostItem.Tags = tags;
