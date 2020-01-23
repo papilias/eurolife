@@ -116,5 +116,17 @@ namespace Wedia.Feature.Blog
       }
     }
 
+    public struct HasCTA
+    {
+      public static readonly ID ID = new ID("{74FFB94C-1BD7-4BFC-8292-DB9379745E3B}");
+
+      public struct Fields
+      {
+        public static readonly ID Title = new ID("{8B54C24C-E106-4715-9B85-954473010D46}");
+
+        public static readonly ID Link = new ID("{2814FC30-0147-4CCF-9F85-52AB3925D8F7}");
+      }
+    }
+
   }
 }

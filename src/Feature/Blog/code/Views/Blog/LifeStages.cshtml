@@ -22,15 +22,24 @@
     };
 
     bool showTitle = false;
-    if(Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item.ID == Templates.LifeStage.ID
-      || Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item.ID == Templates.Product.ID)
+    if(Sitecore.Mvc.Presentation.RenderingContext.Current.ContextItem.TemplateID == Templates.LifeStage.ID
+      || Sitecore.Mvc.Presentation.RenderingContext.Current.ContextItem.TemplateID == Templates.Product.ID)
     {
       showTitle = true;
     }    
 }   
 
-<section class="m-b-124 m-t-112">
-  <div class="high-grid center center--1100"> 
+<section class="m-b-124 m-t-112">   
+  @if (showTitle)
+  {
+    <h1 class="h4 t-c m-b-8">@Html.Sitecore().Dictionary("/Blog/LifeStages/Title")</h1>
+
+    <div class="m-b-48 center--650 center t-c">
+      @Html.Sitecore().Dictionary("/Blog/LifeStages/Subtitle")
+    </div>
+  }
+
+  <div class="high-grid center center--1100">
     @foreach (var item in Model.Select((value, i) => new { i, value }))
     {
       var desktopImage = string.Empty;
@@ -44,10 +53,10 @@
       if (item.value.FieldHasValue(Templates.HasPageImageContent.Fields.MobileImage))
       {
         mobileImage = item.value.ImageUrl(Templates.HasPageImageContent.Fields.MobileImage, mediaUrlOptionsDesktop);
-      }   
+      }
       <article class="grid__cell-@item.i card card--light">
         <div class="card__image">
-          <picture>  
+          <picture>
             @if (!string.IsNullOrEmpty(desktopImage))
             {
               <source media="(min-width: 900px)" srcset="@desktopImage">
@@ -61,7 +70,7 @@
             @if (!string.IsNullOrEmpty(desktopImage))
             {
               <img src="@desktopImage" alt="@item.value.Fields[Templates.HasPageContent.Fields.Title]" loading="lazy">
-            }  
+            }
           </picture>
         </div>
         <div class="card__overlay pad-24">
@@ -71,6 +80,6 @@
           <div class="card__text m-t-8">@item.value.Fields[Templates.HasPageContent.Fields.Summary]</div>
         </div>
       </article>
-    }             
+    }
   </div>
 </section>
