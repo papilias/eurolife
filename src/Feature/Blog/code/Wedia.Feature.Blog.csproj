@@ -82,8 +82,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Config\Include\Feature\Feature.Blog.config.zzz" />
-    <None Include="App_Config\Include\Feature\Feature.Blog.Serialization.config.zzz" />
+    <None Include="App_Config\Include\Feature\Feature.Blog.config" />
+    <None Include="App_Config\Include\Feature\Feature.Blog.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Blog\BlogMigration.cshtml" />
     <Content Include="Views\Blog\LifeStages.cshtml" />
