@@ -82,14 +82,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Config\Include\Feature\Feature.Blog.config.zzz" />
-    <None Include="App_Config\Include\Feature\Feature.Blog.Serialization.config.zzz" />
+    <None Include="App_Config\Include\Feature\Feature.Blog.config" />
+    <None Include="App_Config\Include\Feature\Feature.Blog.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Blog\BlogMigration.cshtml" />
     <Content Include="Views\Blog\LifeStages.cshtml" />
     <Content Include="Views\Blog\LatestArticles.cshtml" />
     <Content Include="Views\Blog\_ArticleItem.cshtml" />
     <Content Include="Views\Blog\_NewsletterItem.cshtml" />
+    <Content Include="Views\Blog\_HasCTA.cshtml" />
+    <Content Include="Views\Blog\ArticleContent.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
