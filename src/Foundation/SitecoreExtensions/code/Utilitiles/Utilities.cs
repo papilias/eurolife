@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Text.RegularExpressions;
 using System.Web.Mvc;
 
 namespace Wedia.Foundation.SitecoreExtensions.Utilities
@@ -16,6 +18,13 @@ namespace Wedia.Foundation.SitecoreExtensions.Utilities
         ViewResult.ViewEngine.ReleaseView(controllerContext, ViewResult.View);
         return sw.GetStringBuilder().ToString();
       }
+    }
+
+    public static string StripHTML(string input)
+    {
+      if (!string.IsNullOrEmpty(input))
+        return Regex.Replace(input, "<.*?>", string.Empty);
+      else return string.Empty;
     }
   }
 }

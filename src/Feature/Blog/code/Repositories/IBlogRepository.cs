@@ -10,5 +10,6 @@ namespace Wedia.Feature.Blog.Repositories
   public interface IBlogRepository
   {
     IEnumerable<Item> GetArticlesForSpecificYear(Item contextItem, string year);
+    IEnumerable<Models.BlogPostItem> GetLatest(Item contextItem, int count);
   }
 }
