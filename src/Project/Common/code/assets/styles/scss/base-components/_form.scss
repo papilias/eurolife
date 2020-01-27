@@ -108,4 +108,12 @@
       padding-left: 30px;
     }
   }
+
+  .js-custom-checkbox > label {
+    cursor: pointer;
+
+    + label {
+      padding-left: 30px;
+    }
+  }
 }
