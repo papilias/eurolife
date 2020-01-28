@@ -96,23 +96,26 @@ else
     <div class="list__filters m-b-48">
     </div>
 
-    <div class="list__calendar m-t-48">
-      <h3 class="color-life-insurance h5 m-b-24">@Html.Sitecore().Dictionary("/Media/PricingDocs/Title", "Pricing Docs")</h3>
-      <p class="m-b-24">@Html.Sitecore().Dictionary("/Media/PricingDocs/Description", "Pricing description")</p>        
+    @if (activeParent.Item.ID.ToString() == "{310D7DAA-35AB-4976-A0A9-46499E232CD6}")
+    {
+      <div class="list__calendar m-t-48">
+        <h3 class="color-life-insurance h5 m-b-24">@Html.Sitecore().Dictionary("/Media/PricingDocs/Title", "Pricing Docs")</h3>
+        <p class="m-b-24">@Html.Sitecore().Dictionary("/Media/PricingDocs/Description", "Pricing description")</p>
 
-      <input type="text" id="datepickerFiles" autocomplete="off" placeholder="@System.DateTime.Now.ToString("dd/MM/yyyy")">
+        <input type="text" id="datepickerFiles" autocomplete="off" placeholder="@System.DateTime.Now.ToString("dd/MM/yyyy")">
 
-      <div class="list__download flat">
-        <a href="javascript:;" id="btnDownloadDoc" aria-label="@Html.Sitecore().Dictionary("/Media/PricingDocs/Download", "Download")"
-           role="button" class="btn btn--dark btn--icon btn--icon-download"></a>
+        <div class="list__download flat">
+          <a href="javascript:;" id="btnDownloadDoc" aria-label="@Html.Sitecore().Dictionary("/Media/PricingDocs/Download", "Download")"
+             role="button" class="btn btn--dark btn--icon btn--icon-download"></a>
           <label id="lblWarning">@Html.Sitecore().Dictionary("/Media/PricingDocs/Not Found", "File Not Found")</label>
+        </div>
+      </div>
+    }
+
+      <div class="list__items m-t-48">
+        @Html.Partial("../MediaFeature/MediaFileGroup", activeSubgroup)
       </div>
     </div>
-
-    <div class="list__items m-t-48">
-      @Html.Partial("../MediaFeature/MediaFileGroup", activeSubgroup)
-    </div>         
-  </div>
 
   if (activeSubgroup.Files.TotalNumberOfResults > activeSubgroup.Files.Results.Count()
     && Sitecore.Mvc.Presentation.RenderingContext.Current.ContextItem.TemplateID != Templates.FinancialReports.ID)
