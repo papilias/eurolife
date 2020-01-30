@@ -69,13 +69,13 @@ namespace Wedia.Feature.Blog.Controllers
 
       if (item.TemplateID == Templates.Product.ID)
       {
-        showTags = true;
+        showTags = false;
         includedFields.Add(Templates.HasProducts.Fields.SelectedProducts_FieldName,
           item.ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
       }
       else if (item.TemplateID == Templates.LifeStage.ID)
       {
-        showTags = false;
+        showTags = true;
         includedFields.Add(Templates.HasLifeStages.Fields.SelectedLifeStages_FieldName,
           item.ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
       }
