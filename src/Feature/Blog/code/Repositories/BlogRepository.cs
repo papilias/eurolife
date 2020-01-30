@@ -54,6 +54,18 @@ namespace Wedia.Feature.Blog.Repositories
       return Get(contextItem, pagingSettings);
     }
 
+    public Models.ArticleViewModel GetArticleViewModel(Item contextItem)
+    {
+      var vm = new Models.ArticleViewModel
+      {
+        RenderingItem = contextItem,
+        Tags = GetProductTags(contextItem),
+        LifeStages = GetProductLifeStages(contextItem)
+      };
+
+      return vm;
+    }
+
     private Models.BlogPostItem MappingBlogPostItem(Item item, bool showTags = false)
     {
       Models.BlogPostItem blogPostItem = new Models.BlogPostItem();
@@ -76,36 +88,69 @@ namespace Wedia.Feature.Blog.Repositories
           ? item.ImageUrl(Templates.HasBlogContent.Fields.Image, mediaUrlOptions) 
           : string.Empty;
 
-        if (showTags && item.FieldHasValue(Templates.HasProducts.Fields.SelectedProducts))
+        if (showTags)
         {
-          var selectedProducts = item.GetMultiListValueItems(Templates.HasProducts.Fields.SelectedProducts);
-          if(selectedProducts != null && selectedProducts.Any())
-          {
-            var tags = new List<Models.Tag>();
-
-            foreach(var product in selectedProducts)                                  
-            {
-              var color = string.Empty;
-              if (product.FieldHasValue(Templates.HasColor.Fields.SelectedColor))
-              {
-                var colorField = product.Fields[Templates.HasColor.Fields.SelectedColor];
-                var data =  Sitecore.Context.Database.GetItem(colorField.Value);
-                color = data.Fields[Templates.Style.Fields.Style].ToString();
-              }
-
-              tags.Add(new Models.Tag {
-                Title = product.Fields[Templates.HasPageContent.Fields.Title]?.ToString(),
-                Color = color,
-                URL = product.Url()
-              });
-            }
-
-            blogPostItem.Tags = tags;
-          }            
+          blogPostItem.Tags = GetProductTags(item);
         } 
       }
 
       return blogPostItem;
+    }
+
+    private List<Models.LifeStage> GetProductLifeStages(Item item)
+    {
+      var lifeStages = new List<Models.LifeStage>();
+
+      if (item.FieldHasValue(Templates.HasLifeStages.Fields.SelectedLifeStages))
+      {
+        var selectedLifeStages = item.GetMultiListValueItems(Templates.HasLifeStages.Fields.SelectedLifeStages);
+        if (selectedLifeStages != null && selectedLifeStages.Any())
+        {
+          foreach (var lifeStage in selectedLifeStages)
+          {
+            lifeStages.Add(new Models.LifeStage
+            {
+              Title = lifeStage.Fields[Templates.HasPageContent.Fields.Title]?.ToString(),
+              Hashtag = lifeStage.Fields[Templates.HasTag.Fields.Title]?.ToString(),
+              URL = lifeStage.Url()
+            });
+          }
+        }
+      }
+
+      return lifeStages;
+    }
+
+    private List<Models.Tag> GetProductTags(Item item)
+    {
+      var tags = new List<Models.Tag>();
+
+      if (item.FieldHasValue(Templates.HasProducts.Fields.SelectedProducts))
+      {
+        var selectedProducts = item.GetMultiListValueItems(Templates.HasProducts.Fields.SelectedProducts);
+        if (selectedProducts != null && selectedProducts.Any())
+        {
+          foreach (var product in selectedProducts)
+          {
+            var color = string.Empty;
+            if (product.FieldHasValue(Templates.HasColor.Fields.SelectedColor))
+            {
+              var colorField = product.Fields[Templates.HasColor.Fields.SelectedColor];
+              var data = Sitecore.Context.Database.GetItem(colorField.Value);
+              color = data.Fields[Templates.Style.Fields.Style].ToString();
+            }
+
+            tags.Add(new Models.Tag
+            {
+              Title = product.Fields[Templates.HasPageContent.Fields.Title]?.ToString(),
+              Color = color,
+              URL = product.Url()
+            });
+          }
+        }
+      }
+
+      return tags;
     }
 
     private IEnumerable<Item> Get(Item contextItem)

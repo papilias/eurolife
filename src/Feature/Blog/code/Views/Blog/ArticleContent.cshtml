@@ -1,22 +1,23 @@
 ﻿@using Wedia.Feature.Blog
+@using Wedia.Feature.Blog.Models
 @using Wedia.Foundation.Alerts
 @using Wedia.Foundation.Alerts.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @using Wedia.Foundation.Dictionary.Extensions
 
-@model Sitecore.Mvc.Presentation.RenderingModel
+@model  ArticleViewModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.BlogPost.ID) ?? true)
+@if (!Model?.RenderingItem?.DescendsFrom(Templates.BlogPost.ID) ?? true)
 {
   @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.BlogPost.ID),
       AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-      Model.Item?.ID,
-      Model.Rendering.Item?.ID)
+      Model.RenderingItem?.ID,
+      Model.RenderingItem?.ID)
   return;
 }
 
 @{ 
-    var url = Request.Url + Sitecore.Links.LinkManager.GetItemUrl(Model.Item);
+    var url = Request.Url + Sitecore.Links.LinkManager.GetItemUrl(Model.RenderingItem);
     var title = Html.Sitecore().Field(Templates.HasBlogContent.Fields.Title);    
   }
 
@@ -39,7 +40,7 @@
 
     @if (Sitecore.Context.PageMode.IsExperienceEditor || Html.Sitecore().HasValue(Templates.HasBlogContent.Fields.Image.ToString()))
     {
-      @Html.Sitecore().ImageField(Templates.HasBlogContent.Fields.Image, Model.Item,
+      @Html.Sitecore().ImageField(Templates.HasBlogContent.Fields.Image, Model.RenderingItem,
         0,
         1460)
     }
@@ -63,13 +64,26 @@
     </div>*@
   <div class="article__low center center--1100 m-t-64 m-b-64">
 
-    @*<ul class="article__tags">
-      <li><a href="/" class="blog-tag color-health--fill color-health">Υγεία</a></li>
-      <li><a href="/">#Δημιουργώ_οικογένεια</a></li>
-      <li><a href="/">#Αντιμετωπιζω_το_απροβλεπτο</a></li>
-    </ul>*@
+    @if (Model.LifeStages != null || Model.Tags != null)
+    {
+    <ul class="article__tags">
+      @if (Model.Tags != null && Model.Tags.Any())
+      {
+        foreach (var tag in Model.Tags)
+        {
+          <li> <a href="@tag.URL" class="blog-tag @tag.Color--fill @tag.Color">@tag.Title</a></li>
+        }
+      } 
+      @if (Model.LifeStages != null && Model.LifeStages.Any())
+      {
+        foreach (var lifeStage in Model.LifeStages)
+        {
+          <li><a href="@lifeStage.URL">@lifeStage.Hashtag</a></li>
+        }
+      }
+    </ul>
+    }
 
-   
     <ul class="article__sharing">
       <li><b>@Html.Sitecore().Dictionary("/Blog/Article/Share")</b></li>
       <li>

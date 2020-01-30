@@ -22,16 +22,33 @@ namespace Wedia.Feature.Blog.Controllers
     public BlogController(IBlogRepository blogRepository)
     {
       this._blogRepository = blogRepository;
+    }    
+    
+    /// <summary>
+    /// main article page
+    /// </summary>
+    /// <returns></returns>
+    public ActionResult Article()
+    {
+      var item = RenderingContext.Current.Rendering.Item;  
+      var vm = _blogRepository.GetArticleViewModel(item);    
+      return View("ArticleContent", vm);
     }      
 
-
+    /// <summary>
+    /// Loaf life stages rendering
+    /// </summary>
+    /// <returns></returns>
     public ActionResult LifeStages()
     {
       var item = RenderingContext.Current.Rendering.Item; 
       return View("LifeStages", item.Children);
     }
 
-
+    /// <summary>
+    /// Latest articles for blog landing page
+    /// </summary>
+    /// <returns></returns>
     public ActionResult LatestArticles()
     {  
       var item = RenderingContext.Current.Rendering.Item;
@@ -40,7 +57,10 @@ namespace Wedia.Feature.Blog.Controllers
       return View("LatestArticles", _blogRepository.GetLatest(item, count));
     }
 
-    //load articles list for specific category (product or life stage)
+    /// <summary>
+    /// Load articles list for specific category (product or life stage)
+    /// </summary>
+    /// <returns></returns>
     public ActionResult ArticlesList()
     {
       var item = RenderingContext.Current.Rendering.Item;
@@ -51,6 +71,12 @@ namespace Wedia.Feature.Blog.Controllers
       return View("ArticlesList", data);
     }
 
+    /// <summary>
+    /// Ajax load more articles
+    /// </summary>
+    /// <param name="pagingSettings"></param>
+    /// <param name="page"></param>
+    /// <returns></returns>
     [HttpGet]
     public ActionResult AjaxPagedList(PagingSettings pagingSettings, int page = 0)
     {
@@ -96,22 +122,6 @@ namespace Wedia.Feature.Blog.Controllers
       var results = _blogRepository.GetPagedList(item, pagingSettings);
       return results;
     }
-
-    //public ActionResult RelatedArticles()
-    //{
-    //  return Content("");
-    //}
-
-    //public ActionResult ProductArticles()
-    //{
-    //  return Content("");
-    //}
-
-    //public ActionResult LifeStageArticles()
-    //{
-    //  return Content("");
-    //}
-
 
     public ActionResult MigrationData(string year = "")
     {
@@ -221,7 +231,6 @@ namespace Wedia.Feature.Blog.Controllers
 
       return Content("OK");
     }
-                   
-
+      
   }
 }

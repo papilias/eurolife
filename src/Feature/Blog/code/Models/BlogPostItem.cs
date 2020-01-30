@@ -21,4 +21,11 @@ namespace Wedia.Feature.Blog.Models
     public string URL { get; set; }
     public string Color { get; set; }
   }
+
+  public class LifeStage
+  {
+    public string Title { get; set; }
+    public string Hashtag { get; set; }
+    public string URL { get; set; }
+  }
 }

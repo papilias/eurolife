@@ -105,6 +105,7 @@
     <Compile Include="Indexing\BlogIndexingProvider.cs" />
     <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
     <Compile Include="Models\ArticlesList.cs" />
+    <Compile Include="Models\ArticleViewModel.cs" />
     <Compile Include="Models\BlogPostItem.cs" />
     <Compile Include="Models\PagingSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
