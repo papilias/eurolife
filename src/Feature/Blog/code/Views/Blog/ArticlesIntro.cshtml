@@ -5,16 +5,7 @@
 
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-
-@if (!Model?.Item?.DescendsFrom(Templates.Product.ID) ?? true)
-{
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.Product.ID),
-      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-      Model.Item?.ID,
-      Model.Rendering.Item?.ID)
-  return;
-}    
-
+  
 <section class="center center--1100 m-b-112 m-t-112">
   @if (Html.Sitecore().HasValue(Templates.HasArticleIntro.Fields.Title.ToString()))
   {
