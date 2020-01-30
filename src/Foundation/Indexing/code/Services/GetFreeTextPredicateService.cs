@@ -23,8 +23,7 @@ namespace Wedia.Foundation.Indexing.Infrastructure
             {
               predicate = predicate                                   
                                    .Or(i => i[name].Contains(query.QueryText))                          
-                                   .Or(i => i[name].Contains(RemoveDiacritics(query.QueryText)))
-                                   ;                
+                                   .Or(i => i[name].Contains(RemoveDiacritics(query.QueryText))); 
             }
             return predicate;
         }

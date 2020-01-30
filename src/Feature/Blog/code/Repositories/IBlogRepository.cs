@@ -11,5 +11,6 @@ namespace Wedia.Feature.Blog.Repositories
   {
     IEnumerable<Item> GetArticlesForSpecificYear(Item contextItem, string year);
     IEnumerable<Models.BlogPostItem> GetLatest(Item contextItem, int count);
+    Models.ArticlesList GetPagedList(Item contextItem, Models.PagingSettings pagingSettings);
   }
 }

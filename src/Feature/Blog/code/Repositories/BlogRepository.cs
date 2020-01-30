@@ -30,8 +30,7 @@ namespace Wedia.Feature.Blog.Repositories
         var data = Get(contextItem, Templates.BlogPost.ID, "sortorder", year);
 
         return data.Where(x => x.Fields[Templates.HasBlogContent.Fields.Publicationdate].ToString().Contains(year));
-    }
-
+    }  
 
     public IEnumerable<Models.BlogPostItem> GetLatest(Item contextItem, int count)
     {
@@ -50,6 +49,10 @@ namespace Wedia.Feature.Blog.Repositories
       return data;
     }
 
+    public Models.ArticlesList GetPagedList(Item contextItem, Models.PagingSettings pagingSettings)
+    {
+      return Get(contextItem, pagingSettings);
+    }
 
     private Models.BlogPostItem MappingBlogPostItem(Item item, bool showTags = false)
     {
@@ -141,7 +144,48 @@ namespace Wedia.Feature.Blog.Repositories
       return results.Results.Select(d => d.Item).Where(i => i != null);    
     }
 
+    /// <summary>
+    /// Get Paginated items for listing, filter by specific field
+    /// </summary>
+    /// <param name="contextItem"></param>
+    /// <param name="pagingSettings"></param>
+    /// <returns></returns>
+    private Models.ArticlesList Get(Item contextItem, Models.PagingSettings pagingSettings)
+    {
+      var searchService = _searchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.BlogPost.ID } });
+      searchService.Settings.Root = contextItem
+                                    .GetAncestorOrSelfOfTemplate(Templates.Blog.ID)
+                                    .Children.Where(x=> x.TemplateID == Templates.BlogList.ID)
+                                    .FirstOrDefault()?? throw new ArgumentNullException(nameof(contextItem));                  
 
-   
+      var results = searchService.FindAll(pagingSettings.CurrentPage * pagingSettings.ResultsOnPage,
+        pagingSettings.ResultsOnPage,
+        pagingSettings.OrderBy,
+        true, pagingSettings.IncludedFields, pagingSettings.ExcludedFields);
+
+      var items = results.Results.Select(d => d.Item).Where(i => i != null);
+      List<Models.BlogPostItem> data = new List<Models.BlogPostItem>();
+
+      if (items != null && items.Any())
+      {
+        foreach (var item in items)
+        {
+          data.Add(MappingBlogPostItem(item, pagingSettings.ShowTags));
+        }
+      }
+
+      Models.ArticlesList articlesList = new Models.ArticlesList
+      {
+        ResultsOnPage = pagingSettings.ResultsOnPage,
+        TotalResults = results.TotalNumberOfResults,
+        Page = pagingSettings.CurrentPage,
+        Articles = data
+      };
+                          
+      return articlesList; 
+    }
+
+
+
   }
 }

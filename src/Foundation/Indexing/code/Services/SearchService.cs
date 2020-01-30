@@ -71,11 +71,34 @@ namespace Wedia.Foundation.Indexing.Services
       return this.FindAll(0, 0);
     }
 
-    public virtual ISearchResults FindAll(int skip, int take, string orderBy = null, bool reverse = false)
+    public virtual ISearchResults FindAll(int skip, 
+      int take, 
+      string orderBy = null, 
+      bool reverse = false, 
+      Dictionary<string, string> includedFields = null,
+      Dictionary<string, string> excludedFields = null)
     {
       using (var context = ContentSearchManager.GetIndex(this.ContextItem).CreateSearchContext())
       {
         var queryable = this.CreateAndInitializeQuery(context);
+
+        if (!string.IsNullOrEmpty(orderBy))
+        {
+          if (reverse)
+            queryable = queryable.OrderByDescending(d => d[orderBy]);
+          else
+            queryable = queryable.OrderBy(d => d[orderBy]);
+        }
+
+        if(includedFields != null && includedFields.Any())
+        {
+          queryable = QueryField(queryable, includedFields, false);
+        }
+
+        if (excludedFields != null && excludedFields.Any())
+        {
+          queryable = QueryField(queryable, excludedFields, true);
+        }
 
         if (skip > 0)
         {
@@ -84,15 +107,7 @@ namespace Wedia.Foundation.Indexing.Services
         if (take > 0)
         {
           queryable = queryable.Take(take);
-        }
-
-        if (!string.IsNullOrEmpty(orderBy))
-        {
-          if(reverse)
-            queryable = queryable.OrderByDescending(d => d[orderBy]);
-          else
-            queryable = queryable.OrderBy(d => d[orderBy]);
-        }
+        }                 
 
         var results = queryable.GetResults();
         return this.SearchResultsFactory.Create(results, null);
@@ -200,6 +215,33 @@ namespace Wedia.Foundation.Indexing.Services
 
       return queryable;
     }
+
+    //include or exclude fields for query
+    private IQueryable<SearchResultItem> QueryField(IQueryable<SearchResultItem> queryable, Dictionary<string, string> fields, bool exclude = false)
+    {
+      var predicate = PredicateBuilder.False<SearchResultItem>();
+
+      if(!exclude)
+      {
+        foreach (var item in fields)
+        {
+          predicate = predicate
+                       .Or(i => i[item.Key].Contains(item.Value));
+        }
+      }
+      else
+      {
+        foreach (var item in fields)
+        {
+          predicate = predicate
+                       .And(i => !i[item.Key].Contains(item.Value));
+        }
+      }            
+
+      queryable = queryable.Where(predicate);               
+
+      return queryable;
+    }       
 
     private static IEnumerable<IQueryFacet> GetFacetsFromProviders()
     {

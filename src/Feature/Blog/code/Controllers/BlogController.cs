@@ -8,6 +8,7 @@ using Sitecore.Mvc.Presentation;
 using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
+using Wedia.Feature.Blog.Models;
 
 namespace Wedia.Feature.Blog.Controllers
 {
@@ -36,20 +37,64 @@ namespace Wedia.Feature.Blog.Controllers
       return View("LatestArticles", _blogRepository.GetLatest(item, count));
     }
 
-    public ActionResult RelatedArticles()
+    //load articles list for specific category (product or life stage)
+    public ActionResult ArticlesList()
+    {
+      var item = RenderingContext.Current.Rendering.Item;
+      var includedFields = new Dictionary<string, string>();
+      bool showTags = false; 
+
+      if (item.TemplateID == Templates.Product.ID)
+      {
+        showTags = true;
+        includedFields.Add(Templates.HasProducts.Fields.SelectedProducts_FieldName,
+          item.ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
+      }
+      else if(item.TemplateID == Templates.LifeStage.ID)
+      {
+        showTags = false;
+        includedFields.Add(Templates.HasLifeStages.Fields.SelectedLifeStages_FieldName,
+          item.ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
+      }
+
+      var pagingSettings = new PagingSettings
+      {
+        ShowTags = showTags,
+        CurrentPage = 0,
+        OrderBy = Templates.HasBlogContent.Fields.Publicationdate_FieldName,
+        IncludedFields = includedFields
+      };
+      var data = GetPagedResults(item, pagingSettings);
+
+      return View("ArticlesList", data);
+    }
+
+    [HttpGet]
+    public ActionResult AjaxPagedList()
     {
       return Content("");
     }
 
-    public ActionResult ProductArticles()
+    private ArticlesList GetPagedResults(Item item, PagingSettings pagingSettings)
     {
-      return Content("");
+      var results = _blogRepository.GetPagedList(item, pagingSettings);
+      return results;
     }
 
-    public ActionResult LifeStageArticles()
-    {
-      return Content("");
-    }
+    //public ActionResult RelatedArticles()
+    //{
+    //  return Content("");
+    //}
+
+    //public ActionResult ProductArticles()
+    //{
+    //  return Content("");
+    //}
+
+    //public ActionResult LifeStageArticles()
+    //{
+    //  return Content("");
+    //}
 
 
     public ActionResult MigrationData(string year = "")
@@ -160,13 +205,7 @@ namespace Wedia.Feature.Blog.Controllers
 
       return Content("OK");
     }
-
-
-
-    private void CreateImages()
-    {
-
-    }
+                   
 
   }
 }

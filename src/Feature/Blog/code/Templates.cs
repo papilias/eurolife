@@ -8,6 +8,17 @@ namespace Wedia.Feature.Blog
 {
   public struct Templates
   {
+
+    public struct Blog
+    {
+      public static readonly ID ID = new ID("{417DA68A-F3A5-4F0E-B96D-8FBFF6FF72E1}");
+    }
+
+    public struct BlogList
+    {
+      public static readonly ID ID = new ID("{559AD9DB-9BFE-40A2-9034-9E965E06A6FF}");
+    }
+
     public struct BlogPost
     {
         public static readonly ID ID = new ID("{67F40FEF-B3C7-4366-B026-183E80DCF4E6}");
@@ -83,6 +94,7 @@ namespace Wedia.Feature.Blog
       public struct Fields
       {
         public static readonly ID SelectedLifeStages = new ID("{DC55B7E8-4AEA-4E4F-82F3-4BEFD91D4375}");
+        public const string SelectedLifeStages_FieldName = "Selected Life Stages";
       }
     }
 
@@ -93,6 +105,7 @@ namespace Wedia.Feature.Blog
       public struct Fields
       {
         public static readonly ID SelectedProducts = new ID("{710D9BE7-B5B4-4786-AF74-43FD2D763A3B}");
+        public const string SelectedProducts_FieldName = "Selected Products";
       }
     }
 
@@ -125,6 +138,27 @@ namespace Wedia.Feature.Blog
         public static readonly ID Title = new ID("{8B54C24C-E106-4715-9B85-954473010D46}");
 
         public static readonly ID Link = new ID("{2814FC30-0147-4CCF-9F85-52AB3925D8F7}");
+      }
+    }
+
+    public struct HasTag
+    {
+      public static readonly ID ID = new ID("{6EA52919-2D4A-4347-B7C8-81C644BDF385}");
+
+      public struct Fields
+      {
+        public static readonly ID Title = new ID("{E22449AE-462C-4573-9018-6FE278161AAB}"); 
+      }
+    }
+
+    public struct HasArticleIntro
+    {
+      public static readonly ID ID = new ID("{963F5D1D-DD7B-4BD4-8D67-B16730BE4EE5}");
+
+      public struct Fields
+      {
+        public static readonly ID Title = new ID("{038889D7-D183-49DB-9087-92C16F9A22C9}");
+        public static readonly ID Subtitle = new ID("{4A13A0C8-178B-49F7-9540-F4F677E737C4}");
       }
     }
 

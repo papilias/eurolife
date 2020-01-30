@@ -1,0 +1,22 @@
+﻿@using Wedia.Feature.Blog
+@using Wedia.Feature.Blog.Models
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+
+@model ArticlesList    
+
+@{
+  var currentItem = Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.Item;
+}
+
+@if (Model.Articles != null && Model.Articles.Any())
+{
+  <section class="center center--1100 m-b-112 m-t-112"> 
+    <div class="list-grid">
+      @foreach (var item in Model.Articles)
+      {
+        @Html.Partial("_ArticleItem", item)
+      }       
+    </div>
+  </section>
+}

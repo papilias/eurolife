@@ -92,13 +92,17 @@
     <Content Include="Views\Blog\_NewsletterItem.cshtml" />
     <Content Include="Views\Blog\_HasCTA.cshtml" />
     <Content Include="Views\Blog\ArticleContent.cshtml" />
+    <Content Include="Views\Blog\ArticlesIntro.cshtml" />
+    <Content Include="Views\Blog\ArticlesList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contants.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Indexing\BlogIndexingProvider.cs" />
+    <Compile Include="Models\ArticlesList.cs" />
     <Compile Include="Models\BlogPostItem.cs" />
+    <Compile Include="Models\PagingSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BlogRepository.cs" />
     <Compile Include="Repositories\IBlogRepository.cs" />
