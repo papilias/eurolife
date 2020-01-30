@@ -10,9 +10,7 @@ namespace Wedia.Feature.Blog.Models
     private int resultsOnPage;
 
     public const int DefaultResultsOnPage = 6;    
-    public bool ShowTags { get; set; }
-    public string ProductId { get; set; }
-    public string LifeStageId { get; set; }
+    public bool ShowTags { get; set; }    
     public int CurrentPage { get; set; }
     public string OrderBy { get; set; }
     public Dictionary<string, string> IncludedFields { get; set; }
