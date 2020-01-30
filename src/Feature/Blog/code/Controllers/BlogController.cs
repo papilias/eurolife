@@ -9,6 +9,9 @@ using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
 using Wedia.Feature.Blog.Models;
+using Sitecore;
+using Sitecore.Data;
+using Wedia.Foundation.SitecoreExtensions.Utilities;
 
 namespace Wedia.Feature.Blog.Controllers
 {
@@ -41,8 +44,28 @@ namespace Wedia.Feature.Blog.Controllers
     public ActionResult ArticlesList()
     {
       var item = RenderingContext.Current.Rendering.Item;
+      var pagingSettings = FillSettings(item);
+
+      var data = GetPagedResults(item, pagingSettings);
+
+      return View("ArticlesList", data);
+    }
+
+    [HttpGet]
+    public ActionResult AjaxPagedList(PagingSettings pagingSettings, int page = 0)
+    {
+      var item = Context.Database.GetItem(new ID(pagingSettings.CurrentItemID));
+      pagingSettings = FillSettings(item, page);
+      var data = GetPagedResults(item, pagingSettings);
+
+      var partial = Utilities.RenderRazorViewToString(ControllerContext, "_PagedListArticles", data);
+      return Json(new { exhausted = !data.ShowLoadMore, data = partial }, JsonRequestBehavior.AllowGet);      
+    }
+
+    private PagingSettings FillSettings(Item item, int currentPage = 0)
+    {
       var includedFields = new Dictionary<string, string>();
-      bool showTags = false; 
+      bool showTags = false;
 
       if (item.TemplateID == Templates.Product.ID)
       {
@@ -50,7 +73,7 @@ namespace Wedia.Feature.Blog.Controllers
         includedFields.Add(Templates.HasProducts.Fields.SelectedProducts_FieldName,
           item.ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
       }
-      else if(item.TemplateID == Templates.LifeStage.ID)
+      else if (item.TemplateID == Templates.LifeStage.ID)
       {
         showTags = false;
         includedFields.Add(Templates.HasLifeStages.Fields.SelectedLifeStages_FieldName,
@@ -60,19 +83,12 @@ namespace Wedia.Feature.Blog.Controllers
       var pagingSettings = new PagingSettings
       {
         ShowTags = showTags,
-        CurrentPage = 0,
+        CurrentPage = currentPage,
         OrderBy = Templates.HasBlogContent.Fields.Publicationdate_FieldName,
         IncludedFields = includedFields
       };
-      var data = GetPagedResults(item, pagingSettings);
 
-      return View("ArticlesList", data);
-    }
-
-    [HttpGet]
-    public ActionResult AjaxPagedList()
-    {
-      return Content("");
+      return pagingSettings;
     }
 
     private ArticlesList GetPagedResults(Item item, PagingSettings pagingSettings)

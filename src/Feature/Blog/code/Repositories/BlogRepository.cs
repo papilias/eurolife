@@ -179,7 +179,8 @@ namespace Wedia.Feature.Blog.Repositories
         ResultsOnPage = pagingSettings.ResultsOnPage,
         TotalResults = results.TotalNumberOfResults,
         Page = pagingSettings.CurrentPage,
-        Articles = data
+        Articles = data,
+        ShowLoadMore = ((pagingSettings.CurrentPage + 1) * pagingSettings.ResultsOnPage < results.TotalNumberOfResults ? true : false)
       };
                           
       return articlesList; 

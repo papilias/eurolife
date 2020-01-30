@@ -7,8 +7,9 @@ namespace Wedia.Feature.Blog.Models
 {
   public class PagingSettings
   {
-    private int resultsOnPage;
+    private int resultsOnPage; 
 
+    public string CurrentItemID { get; set; }
     public const int DefaultResultsOnPage = 6;    
     public bool ShowTags { get; set; }    
     public int CurrentPage { get; set; }

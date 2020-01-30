@@ -10,6 +10,7 @@ namespace Wedia.Feature.Blog.Models
     public int Page { get; set; }
     public int TotalResults { get; set; }
     public int ResultsOnPage { get; set; }
+    public bool ShowLoadMore { get; set; }
     public virtual int TotalPagesCount
     {
       get

@@ -85,6 +85,7 @@
     <None Include="App_Config\Include\Feature\Feature.Blog.config" />
     <None Include="App_Config\Include\Feature\Feature.Blog.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
+    <Content Include="Scripts\Blog\articles.js" />
     <Content Include="Views\Blog\BlogMigration.cshtml" />
     <Content Include="Views\Blog\LifeStages.cshtml" />
     <Content Include="Views\Blog\LatestArticles.cshtml" />
@@ -94,12 +95,15 @@
     <Content Include="Views\Blog\ArticleContent.cshtml" />
     <Content Include="Views\Blog\ArticlesIntro.cshtml" />
     <Content Include="Views\Blog\ArticlesList.cshtml" />
+    <Content Include="Views\Blog\_PagedListArticles.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contants.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Indexing\BlogIndexingProvider.cs" />
+    <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
     <Compile Include="Models\ArticlesList.cs" />
     <Compile Include="Models\BlogPostItem.cs" />
     <Compile Include="Models\PagingSettings.cs" />
