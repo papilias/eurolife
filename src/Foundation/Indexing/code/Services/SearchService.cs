@@ -221,7 +221,10 @@ namespace Wedia.Foundation.Indexing.Services
     {
       var predicate = PredicateBuilder.False<SearchResultItem>();
 
-      if(!exclude)
+      //if (exclude)
+      //  predicate = PredicateBuilder.True<SearchResultItem>();
+
+      if (!exclude)
       {
         foreach (var item in fields)
         {
@@ -234,7 +237,7 @@ namespace Wedia.Foundation.Indexing.Services
         foreach (var item in fields)
         {
           predicate = predicate
-                       .And(i => !i[item.Key].Contains(item.Value));
+                       .Or(i => i[item.Key] != item.Value);
         }
       }            
 

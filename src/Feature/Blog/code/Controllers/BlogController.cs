@@ -68,6 +68,16 @@ namespace Wedia.Feature.Blog.Controllers
       return View("LatestArticles", _blogRepository.GetLatest(item, count));
     }
 
+    public ActionResult RelatedArticles()
+    {
+      var item = RenderingContext.Current.Rendering.Item;
+      var pagingSettings = FillSettings(item);
+
+      var data = GetPagedResults(item, pagingSettings);
+
+      return View("RelatedArticles", data);
+    }
+
     /// <summary>
     /// Load articles list for specific category (product or life stage)
     /// </summary>
@@ -102,7 +112,9 @@ namespace Wedia.Feature.Blog.Controllers
     private PagingSettings FillSettings(Item item, int currentPage = 0)
     {
       var includedFields = new Dictionary<string, string>();
+      var excludedFields = new Dictionary<string, string>();
       bool showTags = false;
+      var itemsOnPage = 6;
 
       if (item.TemplateID == Templates.Product.ID)
       {
@@ -116,13 +128,45 @@ namespace Wedia.Feature.Blog.Controllers
         includedFields.Add(Templates.HasLifeStages.Fields.SelectedLifeStages_FieldName,
           item.ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
       }
+      else if (item.TemplateID == Templates.BlogPost.ID)
+      {
+        showTags = true;
+
+        if(item.FieldHasValue(Templates.HasProducts.Fields.SelectedProducts))
+        {
+          var selectedProducts = item.GetMultiListValueItems(Templates.HasProducts.Fields.SelectedProducts);
+          if (selectedProducts != null && selectedProducts.Any())
+          {           
+            includedFields.Add(Templates.HasProducts.Fields.SelectedProducts_FieldName,
+               selectedProducts.FirstOrDefault().ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
+          }
+        }
+
+        if (item.FieldHasValue(Templates.HasLifeStages.Fields.SelectedLifeStages))
+        {
+          var selectedLifeStages = item.GetMultiListValueItems(Templates.HasLifeStages.Fields.SelectedLifeStages);
+         
+          if (selectedLifeStages != null && selectedLifeStages.Any())
+          {           
+            includedFields.Add(Templates.HasLifeStages.Fields.SelectedLifeStages_FieldName,
+               selectedLifeStages.FirstOrDefault().ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
+          }
+        }
+
+        //custom property for item id
+        excludedFields.Add("_itemid_s", item.ID.ToString().ToLower().Replace("-", "").TrimStart('{').TrimEnd('}'));
+
+        itemsOnPage = 3;
+      }
 
       var pagingSettings = new PagingSettings
       {
         ShowTags = showTags,
         CurrentPage = currentPage,
         OrderBy = Templates.HasBlogContent.Fields.Publicationdate_FieldName,
-        IncludedFields = includedFields
+        IncludedFields = includedFields,
+        ExcludedFields = excludedFields,
+        ResultsOnPage = itemsOnPage
       };
 
       return pagingSettings;

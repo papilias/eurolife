@@ -97,6 +97,7 @@
     <Content Include="Views\Blog\ArticlesList.cshtml" />
     <Content Include="Views\Blog\_PagedListArticles.cshtml" />
     <Content Include="Views\Blog\PromoSection.cshtml" />
+    <Content Include="Views\Blog\RelatedArticles.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

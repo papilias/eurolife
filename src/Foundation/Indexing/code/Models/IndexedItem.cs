@@ -26,5 +26,8 @@ namespace Wedia.Foundation.Indexing.Models
 
     [IndexField(Constants.IndexFields.SortOrder)]
     public bool SortOrder { get; set; }
+
+    [IndexField(Constants.IndexFields.ItemID)]
+    public string ItemID { get; set; }
   }
 }

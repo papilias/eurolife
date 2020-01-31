@@ -78,6 +78,10 @@ SharedFields:
           ph="promo-section"
           uid="{64D41118-10BC-4650-A9B3-961C2E0CEC21}" />
         <r
+          id="{237FCAEE-440B-4C16-A313-D54D60B9771C}"
+          ph="page-layout"
+          uid="{024AB389-2D42-4133-AC38-42781F467E15}" />
+        <r
           id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
           ph="footer"
           uid="{ECDEB399-65F9-4113-B6D6-0BD4073327B9}" />
