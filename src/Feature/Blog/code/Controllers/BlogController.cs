@@ -22,7 +22,18 @@ namespace Wedia.Feature.Blog.Controllers
     public BlogController(IBlogRepository blogRepository)
     {
       this._blogRepository = blogRepository;
-    }    
+    }   
+    
+    /// <summary>
+    /// promo section for products and article page
+    /// </summary>
+    /// <returns></returns>
+    public ActionResult PromoSection()
+    {
+      var item = RenderingContext.Current.Rendering.Item;
+      var vm = _blogRepository.GetPromoSectionViewModel(item);
+      return View("PromoSection", vm);
+    }
     
     /// <summary>
     /// main article page

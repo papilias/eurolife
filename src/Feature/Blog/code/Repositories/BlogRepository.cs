@@ -25,6 +25,13 @@ namespace Wedia.Feature.Blog.Repositories
       _searchBaseSettings = new SearchSettingsBase { Templates = new[] { Templates.BlogPost.ID } };
     }
 
+    /// <summary>
+    /// this is used for migration
+    /// </summary>
+    /// <param name="contextItem"></param>
+    /// <param name="year"></param>
+    /// <returns></returns>
+
     public IEnumerable<Item> GetArticlesForSpecificYear(Item contextItem, string year)
     {
         var data = Get(contextItem, Templates.BlogPost.ID, "sortorder", year);
@@ -54,6 +61,23 @@ namespace Wedia.Feature.Blog.Repositories
       return Get(contextItem, pagingSettings);
     }
 
+
+    public Models.PromoSectionViewModel GetPromoSectionViewModel(Item contextItem)
+    {
+      var vm = new Models.PromoSectionViewModel
+      {
+        RenderingItem = contextItem,
+        PromoColor = GetPromoColor(contextItem)
+      };
+
+      return vm;
+    }
+
+    /// <summary>
+    /// view model for article page
+    /// </summary>
+    /// <param name="contextItem"></param>
+    /// <returns></returns>
     public Models.ArticleViewModel GetArticleViewModel(Item contextItem)
     {
       var vm = new Models.ArticleViewModel
@@ -152,6 +176,22 @@ namespace Wedia.Feature.Blog.Repositories
 
       return tags;
     }
+
+
+    private string GetPromoColor(Item item)
+    {
+      var color = string.Empty;
+      if (item.FieldHasValue(Templates.HasPromo.Fields.Color))
+      {
+        var colorField = item.Fields[Templates.HasPromo.Fields.Color];
+        var data = Sitecore.Context.Database.GetItem(colorField.Value);
+        color = data.Fields[Templates.Style.Fields.Style].ToString();
+      }
+
+      return color;
+    }
+
+
 
     private IEnumerable<Item> Get(Item contextItem)
     {

@@ -13,5 +13,6 @@ namespace Wedia.Feature.Blog.Repositories
     IEnumerable<Models.BlogPostItem> GetLatest(Item contextItem, int count);
     Models.ArticlesList GetPagedList(Item contextItem, Models.PagingSettings pagingSettings);
     Models.ArticleViewModel GetArticleViewModel(Item contextItem);
+    Models.PromoSectionViewModel GetPromoSectionViewModel(Item contextItem);
   }
 }

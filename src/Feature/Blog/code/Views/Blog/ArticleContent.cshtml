@@ -16,10 +16,10 @@
   return;
 }
 
-@{ 
-    var url = Request.Url + Sitecore.Links.LinkManager.GetItemUrl(Model.RenderingItem);
-    var title = Html.Sitecore().Field(Templates.HasBlogContent.Fields.Title);    
-  }
+@{
+  var url = Request.Url + Sitecore.Links.LinkManager.GetItemUrl(Model.RenderingItem);
+  var title = Html.Sitecore().Field(Templates.HasBlogContent.Fields.Title);
+}
 
 <article>
   <div class="center center--760 m-b-64 m-t-64 t-c">
@@ -28,7 +28,7 @@
       <h1 class="h2 m-b-16">@Html.Sitecore().Field(Templates.HasBlogContent.Fields.Title)</h1>
     }
 
-      @if (Html.Sitecore().HasValue(Templates.HasBlogContent.Fields.Teaser.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
+    @if (Html.Sitecore().HasValue(Templates.HasBlogContent.Fields.Teaser.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
     {
       <div class="light">
         @Html.Sitecore().Field(Templates.HasBlogContent.Fields.Teaser)
@@ -51,37 +51,28 @@
     </div>
   </div>
 
+  @Html.Sitecore().Placeholder("promo-section")
 
-  @*<div class="blog-banner blog-banner--health center center--760 m-t-48 m-b-64">
-      <img src="images/health-with-bg.svg" alt="προγραμματα κατοικίας" />
-      <a href="">Υπολόγισε τα ασφαλιστρά υγείας σας <b>σε 3 απλά βήματα</b></a>
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blog-banner__arrow" width="60" height="60" viewBox="0 0 60 60">
-        <defs>
-          <path id="a" d="M41.118 32.08L23.029 50.137a2.948 2.948 0 0 1-4.166 0 2.938 2.938 0 0 1 0-4.159l16.005-15.98-16.005-15.978a2.938 2.938 0 0 1 0-4.16 2.95 2.95 0 0 1 4.166 0l18.09 18.06c.574.574.862 1.326.862 2.079a2.93 2.93 0 0 1-.863 2.08z"></path>
-        </defs>
-        <use fill="#003B4D" fill-rule="nonzero" xlink:href="#a"></use>
-      </svg>
-    </div>*@
   <div class="article__low center center--1100 m-t-64 m-b-64">
 
     @if (Model.LifeStages != null || Model.Tags != null)
     {
-    <ul class="article__tags">
-      @if (Model.Tags != null && Model.Tags.Any())
-      {
-        foreach (var tag in Model.Tags)
+      <ul class="article__tags">
+        @if (Model.Tags != null && Model.Tags.Any())
         {
-          <li> <a href="@tag.URL" class="blog-tag @tag.Color--fill @tag.Color">@tag.Title</a></li>
+          foreach (var tag in Model.Tags)
+          {
+            <li> <a href="@tag.URL" class="blog-tag @tag.Color--fill @tag.Color">@tag.Title</a></li>
+          }
         }
-      } 
-      @if (Model.LifeStages != null && Model.LifeStages.Any())
-      {
-        foreach (var lifeStage in Model.LifeStages)
+        @if (Model.LifeStages != null && Model.LifeStages.Any())
         {
-          <li><a href="@lifeStage.URL">@lifeStage.Hashtag</a></li>
+          foreach (var lifeStage in Model.LifeStages)
+          {
+            <li><a href="@lifeStage.URL">@lifeStage.Hashtag</a></li>
+          }
         }
-      }
-    </ul>
+      </ul>
     }
 
     <ul class="article__sharing">

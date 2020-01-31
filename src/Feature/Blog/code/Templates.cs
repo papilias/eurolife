@@ -129,17 +129,17 @@ namespace Wedia.Feature.Blog
       }
     }
 
-    public struct HasCTA
-    {
-      public static readonly ID ID = new ID("{74FFB94C-1BD7-4BFC-8292-DB9379745E3B}");
+    //public struct HasCTA
+    //{
+    //  public static readonly ID ID = new ID("{74FFB94C-1BD7-4BFC-8292-DB9379745E3B}");
 
-      public struct Fields
-      {
-        public static readonly ID Title = new ID("{8B54C24C-E106-4715-9B85-954473010D46}");
+    //  public struct Fields
+    //  {
+    //    public static readonly ID Title = new ID("{8B54C24C-E106-4715-9B85-954473010D46}");
 
-        public static readonly ID Link = new ID("{2814FC30-0147-4CCF-9F85-52AB3925D8F7}");
-      }
-    }
+    //    public static readonly ID Link = new ID("{2814FC30-0147-4CCF-9F85-52AB3925D8F7}");
+    //  }
+    //}
 
     public struct HasTag
     {
@@ -159,6 +159,19 @@ namespace Wedia.Feature.Blog
       {
         public static readonly ID Title = new ID("{038889D7-D183-49DB-9087-92C16F9A22C9}");
         public static readonly ID Subtitle = new ID("{4A13A0C8-178B-49F7-9540-F4F677E737C4}");
+      }
+    }
+
+    public struct HasPromo
+    {
+      public static readonly ID ID = new ID("{20F5520E-D561-4DED-8926-8A973145909C}");
+
+      public struct Fields
+      {
+        public static readonly ID Icon = new ID("{846EA033-54E2-48AB-BD8E-5CA53D177000}");
+        public static readonly ID Title = new ID("{DDFE8A5B-F9FD-45C9-B096-9CFA4B68BFC2}");
+        public static readonly ID CTA = new ID("{7D7BC053-7804-4B84-A8EF-415610C803FF}");
+        public static readonly ID Color = new ID("{F6530655-A2E7-4874-9DA1-AB4852E9A0DB}");
       }
     }
 

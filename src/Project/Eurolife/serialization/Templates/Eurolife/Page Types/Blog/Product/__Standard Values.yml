@@ -87,6 +87,10 @@ SharedFields:
           ph="page-layout"
           uid="{BB18AF01-343B-49A8-BB14-EE6F792F2855}" />
         <r
+          id="{6BDF2BD4-19C3-4FFA-A3A4-40E536A3E0A5}"
+          ph="page-layout"
+          uid="{1C30F923-44DC-4974-B690-480AF8B2EFE3}" />
+        <r
           id="{A1270D8D-3E10-4CCF-9542-21D78B0AE4D0}"
           ph="footer"
           uid="{BE6890E0-EEC3-4C17-9198-6B3BAA203B84}" />
