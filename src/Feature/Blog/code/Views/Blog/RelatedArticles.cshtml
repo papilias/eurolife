@@ -12,10 +12,12 @@
 @if (Model.Articles != null && Model.Articles.Any())
 {
 <section class="center center--1100 m-b-112 m-t-112">
-  <h1 class="h4 t-c m-b-8">Διάβασε για ό,τι σε απασχολεί</h1>
+  <h1 class="h4 t-c m-b-8">
+    @Html.Sitecore().Dictionary("/Blog/Article/Related Title")
+  </h1>
 
   <div class="m-b-48 center--650 center t-c">
-    Άρθρα από κάθε στάδιο της ζωής
+    @Html.Sitecore().Dictionary("/Blog/Article/Related Subtitle")
   </div>
 
   <div id="articles-list" class="list-grid">
