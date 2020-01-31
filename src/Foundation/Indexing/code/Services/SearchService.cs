@@ -68,15 +68,40 @@ namespace Wedia.Foundation.Indexing.Services
 
     public virtual ISearchResults FindAll()
     {
-      return this.FindAll(0, 0);
+      return this.FindAll(0, 0, null, false, null, null);
+    }
+
+    public virtual ISearchResults FindAll(int skip)
+    {
+      return this.FindAll(skip, 0, null, false, null, null);
+    }
+
+    public virtual ISearchResults FindAll(int skip, int take)
+    {
+      return this.FindAll(skip, take, null, false, null, null);
+    }
+
+    public virtual ISearchResults FindAll(int skip,
+     int take,
+     string orderBy)
+    {
+      return this.FindAll(skip, take, orderBy, false, null, null);
+    }
+
+    public virtual ISearchResults FindAll(int skip,
+      int take,
+      string orderBy,
+      bool reverse)
+    {
+      return this.FindAll(skip, take, orderBy, reverse, null, null);
     }
 
     public virtual ISearchResults FindAll(int skip, 
       int take, 
-      string orderBy = null, 
-      bool reverse = false, 
-      Dictionary<string, string> includedFields = null,
-      Dictionary<string, string> excludedFields = null)
+      string orderBy, 
+      bool reverse, 
+      Dictionary<string, string> includedFields,
+      Dictionary<string, string> excludedFields)
     {
       using (var context = ContentSearchManager.GetIndex(this.ContextItem).CreateSearchContext())
       {
