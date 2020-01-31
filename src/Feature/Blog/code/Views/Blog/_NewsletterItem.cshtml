@@ -17,12 +17,19 @@
     <p>@Html.Sitecore().Dictionary("/Blog/Newsletter/Subtitle")</p>
     <form action="https://app.moosend.com/subscribe/123088bd-38cd-405a-82f9-fff9aadc4cb9" method="post" id="ms-sub-form" target="_blank">
       <div>
-        <input type="email" name="ms-email" id="email" placeholder="Email" required="">
+        <input type="email" name="ms-email" id="email" required /> 
         <div class="field m-t-16">
-          <input type="checkbox" id="newsletter-consent">
-          <label for="newsletter-consent">Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων</label>
+          <input type="checkbox" name="ms-Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων."
+                 id="Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." value="true"
+                 onchange="document.getElementById('h_Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων.').name=(this.checked ? '' : this.name)" required />
+
+          <label for="Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων.">
+            Ενημερώθηκα σχετικά με την επεξεργασία των
+            <a href="https://www.eurolife.gr/el-gr/prosopika-dedomena" style="color:#0645AD;">προσωπικών μου δεδομένων</a>
+          </label>
         </div>
-        <input type="submit" value="ΕΓΓΡΑΦΗ">
+        <input id="h_Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." name="ms-Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." type="hidden" value="false" required />
+        <input type="submit" value="ΕΓΓΡΑΦΗ" />
       </div>
     </form>
   </div>
