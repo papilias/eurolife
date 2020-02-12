@@ -14,7 +14,7 @@
 
 @if (Model != null && Model.RenderingItem.FieldHasValue(Templates.HasPromo.Fields.Title))
 {
-  <section class="blog-banner blog-banner--@Model.PromoColor center center--760 m-b-112">           
+  <section class="blog-banner blog-banner--@Model.PromoColor center center--760">           
       @Html.Sitecore().ImageField(Templates.HasPromo.Fields.Icon, Model.RenderingItem)
 
     <a href="@linkURL">
