@@ -27,12 +27,12 @@ $(document).ready(function () {
 
     var dates = date.split("/");
 
-    var fileName = 'dat_' + dates[0] + "_" + dates[1] + "_" + dates[2] + ".pdf";      
+    var fileName = 'dat_' + dates[0] + "_" + dates[1] + "_" + dates[2] + ".pdf";  
 
       $.ajax({
         type: 'POST',
-        url: "/api/feature/media/pricing-docs",
-        data: fileName,        
+        url: "/api/feature/media/pricing-docs",         
+        data: { fileName: fileName},        
         cache: false,
         success: function (response) {            
 
