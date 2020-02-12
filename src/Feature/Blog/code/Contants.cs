@@ -9,7 +9,7 @@ namespace Wedia.Feature.Blog
   {
     public struct LatestNews
     {
-      public const int NumberOfArticles = 8;
+      public const int NumberOfArticles = 5;
     }
   }
 }
