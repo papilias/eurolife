@@ -125,6 +125,27 @@ namespace Wedia.Feature.Media
     {
       public static readonly ID ID = new ID("{7FC965FC-B67A-40A0-8428-2CDF16C71B68}");
     }
+     
+    public struct PricingDocs
+    {
+      public static readonly ID ID = new ID("{FD330C65-B44A-4441-9988-5C6BFECEA0D8}");
+    }
 
+    public struct PricingDoc
+    {
+      public static readonly ID ID = new ID("{D222549D-036E-4BB3-A381-0F5E710F995C}");
+    }   
+
+    public struct HasPricingDoc
+    {
+      public static readonly ID ID = new ID("{AD6E4DE0-6A1B-4947-8029-DBC95A83C84F}");
+
+      public struct Fields
+      {          
+        public static readonly ID File = new ID("{E9C6743E-53C9-428F-8536-F9F3C3DC64AF}");     
+        public const string Name_Key = "_name";
+        public static readonly ID PricingRoot = new ID("{2C711436-CDC3-4065-838F-AC0DFB71FC14}");
+      }
+    }
   }
 }

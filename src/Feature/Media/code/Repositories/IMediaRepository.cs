@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Sitecore;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -10,5 +11,6 @@ namespace Wedia.Feature.Media.Repositories
   {
     FileGroups GetFilesGroupedList([NotNull] Item item, PagingSettings pagingSettings);
     FileGroup GetNextPage(PagingSettings pagingSettings, int page);
+    string GetPricingDoc(string itemName);
   }
 }

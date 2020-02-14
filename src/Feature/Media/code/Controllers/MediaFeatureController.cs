@@ -11,6 +11,7 @@ using System.Net;
 using System;
 using System.Net.Http.Headers;
 using System.IO;
+using Sitecore.Diagnostics;
 
 namespace Wedia.Feature.Media.Controllers
 {
@@ -61,12 +62,64 @@ namespace Wedia.Feature.Media.Controllers
 
     [HttpPost]
     public ActionResult AjaxMediaPricingDocs(string fileName)
-    {
-      string path = $"~/pricedocs/{fileName}";
-      string filePath = Server.MapPath(path);
-      byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+    {     
+      try
+      {
+        string path = $"~/pricedocs/{fileName}";
+        string filePath = Server.MapPath(path);
 
-      return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);      
+        //first check for server files
+        if (System.IO.File.Exists(filePath))
+        {            
+          byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+          return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+        }
+        else //check for indexed items
+        {
+          string file = _mediaRepository.GetPricingDoc(fileName.Split('.')[0]);
+          if(!string.IsNullOrEmpty(file))
+          {
+            HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create($"{GetSiteRoot()}{file}");
+            myRequest.Method = "GET";
+            WebResponse myResponse = myRequest.GetResponse();
+            MemoryStream ms = new MemoryStream();
+            myResponse.GetResponseStream().CopyTo(ms);
+            byte[] data = ms.ToArray();     
+
+            return File(data, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+          }
+        }
+      }
+      catch(Exception ex)
+      {
+        Log.Error($"AjaxMediaPricingDocs {fileName}", ex, this);
+      }
+
+      throw new Exception();
+    }
+
+    private string GetSiteRoot()
+    {
+      string port = System.Web.HttpContext.Current.Request.ServerVariables["SERVER_PORT"];
+      if (port == null || port == "80" || port == "443")
+        port = "";
+      else
+        port = ":" + port;
+
+      string protocol = System.Web.HttpContext.Current.Request.ServerVariables["SERVER_PORT_SECURE"];
+      if (protocol == null || protocol == "0")
+        protocol = "http://";
+      else
+        protocol = "https://";
+
+      string sOut = protocol + System.Web.HttpContext.Current.Request.ServerVariables["SERVER_NAME"] + port + System.Web.HttpContext.Current.Request.ApplicationPath;
+
+      if (sOut.EndsWith("/"))
+      {
+        sOut = sOut.Substring(0, sOut.Length - 1);
+      }
+
+      return sOut;
     }
 
   }

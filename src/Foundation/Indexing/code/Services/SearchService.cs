@@ -66,6 +66,24 @@ namespace Wedia.Foundation.Indexing.Services
       return queryable.Page(query.Page < 0 ? 0 : query.Page, query.NoOfResults <= 0 ? 10 : query.NoOfResults);
     }
 
+    public virtual ISearchResults FindByField(string itemKey, string itemValue)
+    {
+      using (var context = ContentSearchManager.GetIndex(this.ContextItem).CreateSearchContext())
+      {
+        var queryable = this.CreateAndInitializeQuery(context);
+
+        var predicate = PredicateBuilder.True<SearchResultItem>();
+
+        predicate = predicate
+                       .Or(i => i[itemKey] == itemValue);
+
+        queryable = queryable.Where(predicate);
+       
+        var results = queryable.GetResults();
+        return this.SearchResultsFactory.Create(results, null);
+      }
+    }
+
     public virtual ISearchResults FindAll()
     {
       return this.FindAll(0, 0, null, false, null, null);

@@ -73,6 +73,27 @@ namespace Wedia.Feature.Media.Repositories
       return FileGroupFactory(group, pagingSettings, 1, page);
     }
 
+    public string GetPricingDoc(string itemName)
+    {
+      var file = string.Empty;
+
+      var results = GetPricingDocs(itemName);
+
+      if(results.Results.Any())
+      {
+        var item = results.Results.Select(d => d.Item).Where(i => i != null).FirstOrDefault();
+        Sitecore.Data.Fields.FileField fileField = item.Fields[Templates.HasPricingDoc.Fields.File];         
+
+        if (fileField != null)
+        {
+          Item mediaItem = Context.Database.GetItem(fileField.MediaID);
+          file = Sitecore.Resources.Media.MediaManager.GetMediaUrl(mediaItem);
+        }
+      }
+
+      return file;
+    }
+
     private ID CurrentFileGroup(IEnumerable<Item> groups, ID currentGroupID = null)
     {
       return !ID.IsNullOrEmpty(currentGroupID) ?
@@ -131,7 +152,17 @@ namespace Wedia.Feature.Media.Repositories
 
       return results;
     }
+    
+    private ISearchResults GetPricingDocs(string itemName)
+    {
+      var root = Context.Database.GetItem(Templates.HasPricingDoc.Fields.PricingRoot);
+      var searchService = _searchServiceRepository.Get(new SearchSettingsBase { Templates = new[] { Templates.PricingDoc.ID } });
+      searchService.Settings.Root = root;      
 
+      var results = searchService.FindByField(Templates.HasPricingDoc.Fields.Name_Key, itemName);
+
+      return results;
+    }
 
     private static IEnumerable<Item> GetMediaFromMultiList(Item item, ID fieldID, ID descendanTemplate)
     {
