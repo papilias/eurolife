@@ -470,3 +470,9 @@ article time{
     object-position: 0 0;
   }
 }
+
+@include breakpoint(700){
+  .list--double__info{
+    padding-right:32px;
+  }
+}

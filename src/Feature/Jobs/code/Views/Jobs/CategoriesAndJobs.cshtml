@@ -10,8 +10,8 @@
   {
     if (category.Item.FieldHasValue(Templates.HasJobCategory.Fields.JobCategoryTitle))
     {
-      <section class="center center--1100 m-b-48 section-header-summary">
-        <h1 class="h4 t-c">@category.Item.Field(Templates.HasJobCategory.Fields.JobCategoryTitle)</h1>
+      <section class="center center--1100 m-b-8 m-t-32 section-header-summary">
+        <h2 class="h4 t-c m-b-16">@category.Item.Field(Templates.HasJobCategory.Fields.JobCategoryTitle)</h2>
       </section>
     }   
     if (category.Jobs != null && category.Jobs.Any())
