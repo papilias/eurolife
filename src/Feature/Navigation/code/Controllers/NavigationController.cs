@@ -39,6 +39,7 @@ namespace Wedia.Feature.Navigation.Controllers
         RenderingContext.Current.Rendering.GetBoolParameter(Constants.NavigationParameters.Descending),
         RenderingContext.Current.Rendering.GetIntegerParameter(Constants.NavigationParameters.Limit) + 1);
 
+    public ActionResult BlogSocialLinks() => GetMenu("BlogSocialMenu");
     public ActionResult SocialLinks() => GetMenu("SocialMenu");
 
     public ActionResult LinksList() => GetMenu("UnderlinedLinkMenu");

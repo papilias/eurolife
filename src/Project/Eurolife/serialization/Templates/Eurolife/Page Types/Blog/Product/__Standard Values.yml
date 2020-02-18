@@ -95,24 +95,10 @@ SharedFields:
           ph="footer"
           uid="{BE6890E0-EEC3-4C17-9198-6B3BAA203B84}" />
         <r
-          ds="{F35D4075-8868-4BFE-8012-E98C840A8546}"
-          id="{1A432A16-E24C-4755-9545-A90CBF0A92E6}"
-          ph="footer-lists"
-          uid="{DBF25695-E26D-48A5-9EB1-4F5E7B87B6E7}" />
-        <r
-          id="{D7CBA708-89EB-46BB-85C1-201BCE491C4C}"
-          ph="footer-lists"
-          uid="{91A94C2E-CA77-4286-9505-A5849E2007F8}" />
-        <r
-          ds="{525D0B06-A114-4E28-BACB-5F882243B7E1}"
-          id="{1A432A16-E24C-4755-9545-A90CBF0A92E6}"
-          ph="footer-lists"
-          uid="{92C658F3-105B-440B-8A1F-85E2811A89ED}" />
-        <r
           ds="{CD586CC0-02F0-49E5-B173-B26C9E691573}"
-          id="{D07F45C9-1D5F-4C48-9BF7-40EB6EB7FCA9}"
+          id="{32D4C6A5-EAA6-4126-A8E8-EE0327F4685A}"
           ph="footer-lists"
-          uid="{4AAFC253-E20E-4A6C-A8D8-743148F39095}" />
+          uid="{6020B6C6-C891-4880-AD01-4D62B55E2150}" />
         <r
           id="{42FB3DFF-05D2-45D4-B920-3D771DBB813D}"
           ph="footer-bottom"

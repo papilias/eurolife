@@ -91,6 +91,7 @@
     <Content Include="Views\Navigation\TopNavbar.cshtml" />
     <Content Include="Views\Navigation\NavigationLinksList.cshtml" />
     <Content Include="Views\Navigation\LoginRegisterLinks.cshtml" />
+    <Content Include="Views\Navigation\BlogSocialMenu.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
