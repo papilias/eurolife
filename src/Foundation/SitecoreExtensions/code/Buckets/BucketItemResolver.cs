@@ -10,7 +10,7 @@ using Sitecore.Diagnostics;
 using Sitecore.Buckets.Extensions;
 using Sitecore.Data.Items;
 
-namespace Wedia.Foundation.Indexing.Buckets
+namespace Wedia.Foundation.SitecoreExtensions.Buckets
 {
   public class BucketItemResolver : HttpRequestProcessor
   {   

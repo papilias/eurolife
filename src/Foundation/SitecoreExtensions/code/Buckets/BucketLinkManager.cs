@@ -4,7 +4,7 @@ using Sitecore.IO;
 using Sitecore.Links;
 using System;
 
-namespace Wedia.Foundation.Indexing.Buckets
+namespace Wedia.Foundation.SitecoreExtensions.Buckets
 {
   public class BucketLinkManager : LinkProvider
   {
