@@ -4,6 +4,11 @@ Parent: "f2be096d-911f-4409-8a98-9ee16cb8b283"
 Template: "5b62e4d9-7aed-47c0-aad1-ceb525263407"
 Path: "/sitecore/content/Eurolife/Home/oroi-xrisis"
 DB: master
+SharedFields:
+- ID: "9135200a-5626-4dd8-ab9d-d665b8c11748"
+  Hint: __Never publish
+  Type: checkbox
+  Value: 1
 Languages:
 - Language: "el-GR"
   Versions:

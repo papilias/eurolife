@@ -27,11 +27,6 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{92428DAB-9040-4453-A5E4-6F1BFFD9B7EF}"
-              p:before="*"
-              s:id="{FFE84079-A9DA-410E-A281-0ED31C52FE96}"
-              s:ph="page-layout" />
-            <r
               uid="{CBFFD0E6-1024-41F9-92F3-185ECDD785AB}"
               s:ds="{3F79105A-4BCC-433D-A62C-DCBA7319A7CB}" />
           </d>
