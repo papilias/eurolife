@@ -97,12 +97,20 @@
   }
 }
 
-.nav-product__wrap{
+.nav-product__wrap {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  .nav-blog {
+    margin-left: 52px;
+    margin-right: 26px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 .nav-product__list{

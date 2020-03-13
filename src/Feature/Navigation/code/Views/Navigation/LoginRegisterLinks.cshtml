@@ -3,15 +3,22 @@
 @model Wedia.Feature.Navigation.Models.NavigationItems
 
 @{
-  if (Model?.NavItems == null)
-  {
-    return;
-  }
+    if (Model?.NavItems == null)
+    {
+      return;
+    }
+
+    bool linksVisible = true;
+
+    if(Sitecore.Mvc.Presentation.RenderingContext.Current.PageContext.Item.Paths.Path.ToLower().Contains("blog"))
+    {
+      linksVisible = false;
+    }
 }
 
 
-@if (Model.NavItems != null && Model.NavItems.Any())
-{
+@if (Model.NavItems != null && Model.NavItems.Any() && linksVisible)
+{    
   <div class="access">
     <div class="access__label">
       @Model.Title

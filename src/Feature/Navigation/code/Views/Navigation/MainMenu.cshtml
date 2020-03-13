@@ -1,6 +1,11 @@
 ﻿@using Wedia.Foundation.SitecoreExtensions.Extensions
 @using Wedia.Feature.Navigation
+@using Wedia.Foundation.Dictionary.Extensions
 @model Wedia.Feature.Navigation.Models.NavigationItems
+
+@{
+  var blog = Sitecore.Context.Site.GetStartItem().Children.Where(x => x.TemplateID == Constants.BlogTemplateID).FirstOrDefault();
+}
 
 <nav class="nav-product nav-product--health" role="navigation">
 
@@ -14,6 +19,14 @@
         <use fill="#FFF" fill-rule="nonzero" transform="rotate(90 29.99 30)" xlink:href="#a" />
       </svg>
     </div>
+    @if (blog != null)
+    {
+      <div class="nav-blog">
+        <a href="@blog.Url()">
+          @Html.Sitecore().Dictionary("/Navigation/Main Menu/Blog")           
+        </a>
+      </div>
+    }
 
     @Html.Sitecore().Placeholder("login-register-link")
   </div>

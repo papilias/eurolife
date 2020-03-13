@@ -5,14 +5,21 @@
 @model Sitecore.Mvc.Presentation.RenderingModel
 
 @{
-  /**/
+    /**/
 
-  var identity = IdentityRepository.Get(Model.Item);
+    var identity = IdentityRepository.Get(Model.Item);
 
-  if (identity == null)
-  {
-    return;
-  }
+    if (identity == null)
+    {
+      return;
+    }
+
+    bool linksVisible = true;
+
+    if (Sitecore.Mvc.Presentation.RenderingContext.Current.PageContext.Item.Paths.Path.ToLower().Contains("blog"))
+    {
+      linksVisible = false;
+    }
 }
 
 @if (identity.FieldHasValue(Templates.Identity.Fields.OrganizationPhone))
@@ -28,7 +35,7 @@
   </div>
 }
 
-@if (identity.FieldHasValue(Templates.Identity.Fields.OnlinePayment))
+@if (identity.FieldHasValue(Templates.Identity.Fields.OnlinePayment) && linksVisible)
 {
   @Html.Sitecore().Field(Templates.Identity.Fields.OnlinePayment, identity, new { @class = "btn--white-header" })
 }
