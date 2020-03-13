@@ -175,3 +175,31 @@
       display: flex;
     }
   }
+
+.timeline--inited {
+  .timeline__date {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 900ms ease-in-out 0s, opacity 1600ms ease-in-out 0s;
+  }
+
+  .timeline__events {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 900ms ease-in-out 0s, opacity 1600ms ease-in-out 0s;
+  }
+
+
+
+  .year-item--active {
+    .timeline__date {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .timeline__events {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
