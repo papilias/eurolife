@@ -28,13 +28,14 @@
     @Html.Sitecore().Placeholder("head")
   }
   @Html.RenderFormStyles()
+  <link rel="stylesheet" media="print" href="/css/print.css" />
   <script type="text/javascript" src="/js/vendor/jquery-3.4.1.min.js"></script>
-  
+
   @Html.RenderFormScripts()
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
   @RenderAssetsService.Current.RenderStyles()
 
-  @Html.Sitecore().VisitorIdentification()               
+  @Html.Sitecore().VisitorIdentification()
 </head>
 <body class="@Sitecore.Sites.SiteContext.Current.GetThemeColor()">
   <!-- Google Tag Manager (noscript) -->

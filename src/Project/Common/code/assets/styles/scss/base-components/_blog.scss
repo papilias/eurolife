@@ -356,7 +356,7 @@
   }
 }
 
-.blog-banner--bg-health {
+/*.blog-banner--bg-health {
   background-color: $color-health-soft;
   border: 1px solid $color-health;
 
@@ -414,6 +414,116 @@
   .blog-banner__arrow {
     use {
       fill: $color-motor;
+    }
+  }
+}*/
+
+.blog-banner--bg-health {
+  background-color: $color-health-soft;
+  border: 1px solid $color-health;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-health;
+    }
+  }
+}
+
+.blog-banner--bg-finance {
+  background-color: $color-finance-soft;
+  border: 1px solid $color-finance;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-finance;
+    }
+  }
+}
+
+.blog-banner--bg-civil {
+  background-color: $color-civil-soft;
+  border: 1px solid $color-civil;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-civil;
+    }
+  }
+}
+
+.blog-banner--bg-home {
+  background-color: $color-home-soft;
+  border: 1px solid $color-home;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-home;
+    }
+  }
+}
+
+.blog-banner--bg-life-insurance {
+  background-color: $color-life-insurance-soft;
+  border: 1px solid $color-life-insurance;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-life-insurance;
+    }
+  }
+}
+
+.blog-banner--bg-motor {
+  background-color: $color-motor-soft;
+  border: 1px solid $color-motor;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-motor;
+    }
+  }
+}
+
+.blog-banner--bg-ultra-light-aqua {
+  background-color: $color-ultra-light-aqua;
+  border: 1px solid $color-non-category;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-non-category;
+    }
+  }
+}
+
+.blog-banner--bg-ultra-light-blue {
+  background-color: $color-ultra-light-blue;
+  border: 1px solid $color-life-insurance;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-life-insurance;
+    }
+  }
+}
+
+.blog-banner--bg-ultra-light-purple {
+  background-color: $color-ultra-light-purple;
+  border: 1px solid $color-life-insurance;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-life-insurance;
+    }
+  }
+}
+
+.blog-banner--bg-ultra-light-red {
+  background-color: $color-ultra-light-red;
+  border: 1px solid $color-health;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-health;
     }
   }
 }

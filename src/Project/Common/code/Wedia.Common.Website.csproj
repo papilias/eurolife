@@ -103,6 +103,7 @@
     <Content Include="assets\js\EventBus.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="css\fancybox.css" />
+    <Content Include="css\print.css" />
     <Content Include="css\style.css" />
     <Content Include="fonts\converted\Ubuntu-LightItalic\preview.html" />
     <Content Include="fonts\converted\Ubuntu-LightItalic\styles.css" />
@@ -186,6 +187,7 @@
     <Content Include="images\leading-team-5.jpg" />
     <Content Include="images\left-simple.svg" />
     <Content Include="images\our-people-1.jpg" />
+    <Content Include="images\partner-icon.svg" />
     <Content Include="images\quote-big.svg" />
     <Content Include="images\right-simple.svg" />
     <Content Include="images\section-1.jpg" />
