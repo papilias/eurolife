@@ -2,6 +2,20 @@
   #HEADER
 \*------------------------------------*/
 
+@include breakpoint-rev(920) {
+  .nav-product__wrap {
+    .nav-blog {
+      margin-left: 21px;
+      margin-bottom: 20px;
+
+      a {
+        color: #030000;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 .logo{
   color: $color-base;
   font-weight: 800;
