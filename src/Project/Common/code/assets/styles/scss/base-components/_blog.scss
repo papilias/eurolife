@@ -537,6 +537,17 @@
   }
 }
 
+.blog-banner--bg-business {
+  background-color: $color-business-soft;
+  border: 1px solid $color-business;
+
+  .blog-banner__arrow {
+    use {
+      fill: $color-business;
+    }
+  }
+}
+
 //blog article
 .blog-content{
   img{
