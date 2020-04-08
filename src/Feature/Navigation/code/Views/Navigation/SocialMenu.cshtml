@@ -70,27 +70,30 @@
       }
     }
   </ul>
+  @if (Sitecore.Context.Language.Name.ToLower() == "el-gr")
+  {
+    <ul class="footer__list">
+      <li><span class="">@Html.Sitecore().Dictionary("/Identity/Footer Newsletter/Newsletter Title", "Email subscription")</span></li>
+      <li>
+        <form action="https://app.moosend.com/subscribe/123088bd-38cd-405a-82f9-fff9aadc4cb9" method="post" id="ms-sub-form" target="_blank">
+          <div>
+            <label for="email">email:</label><input type="email" name="ms-email" id="email" required />
 
-  <ul class="footer__list">
-    <li><span class="">@Html.Sitecore().Dictionary("/Identity/Footer Newsletter/Newsletter Title", "Email subscription")</span></li>
-    <li>
-      <form action="https://app.moosend.com/subscribe/123088bd-38cd-405a-82f9-fff9aadc4cb9" method="post" id="ms-sub-form" target="_blank">
-        <div>
-          <label for="email">email:</label><input type="email" name="ms-email" id="email" required />
+            <input type="checkbox" name="ms-Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων."
+                   id="Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." value="true"
+                   onchange="document.getElementById('h_Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων.').name=(this.checked ? '' : this.name)" required />
 
-          <input type="checkbox" name="ms-Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων."
-                 id="Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." value="true"
-                 onchange="document.getElementById('h_Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων.').name=(this.checked ? '' : this.name)" required />
-          
-          <label for="Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων.">
-            Ενημερώθηκα σχετικά με την επεξεργασία των
-            <a href="https://www.eurolife.gr/el-gr/prosopika-dedomena" style="color:#0645AD;">προσωπικών μου δεδομένων</a>
-          </label>
+            <label for="Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων.">
+              Ενημερώθηκα σχετικά με την επεξεργασία των
+              <a href="https://www.eurolife.gr/el-gr/prosopika-dedomena" style="color:#0645AD;">προσωπικών μου δεδομένων</a>
+            </label>
 
-          <input id="h_Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." name="ms-Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." type="hidden" value="false" required />
-          <input type="submit" value="ΕΓΓΡΑΦΗ" />
-        </div>
-      </form>      
-    </li>
-  </ul>
+            <input id="h_Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." name="ms-Ενημερώθηκα σχετικά με την επεξεργασία των προσωπικών μου δεδομένων." type="hidden" value="false" required />
+            <input type="submit" value="ΕΓΓΡΑΦΗ" />
+          </div>
+        </form>
+      </li>
+    </ul> 
+  }
 </div>
+  
