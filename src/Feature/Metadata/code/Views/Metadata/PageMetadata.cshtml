@@ -38,9 +38,9 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="@Request.Url" />
 
-@if (currentItem.Fields["Image"] != null || currentItem.Fields["DesktopImage"] != null)
+@if (!string.IsNullOrEmpty(currentItem.Fields["Image"]?.ToString()) || !string.IsNullOrEmpty(currentItem.Fields["DesktopImage"]?.ToString()))
 {
-  Sitecore.Data.Fields.ImageField imageField = currentItem.Fields["Image"] != null? currentItem.Fields["Image"] : currentItem.Fields["DesktopImage"];
+  Sitecore.Data.Fields.ImageField imageField = !string.IsNullOrEmpty(currentItem.Fields["Image"]?.ToString()) ? currentItem.Fields["Image"] : currentItem.Fields["DesktopImage"];
   Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
   src = Request.Url.GetComponents(UriComponents.SchemeAndServer, UriFormat.Unescaped) + Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
 }     
