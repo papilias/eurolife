@@ -14,7 +14,6 @@
 @if (!string.IsNullOrEmpty(Model.Title))
 {
   <title>@Model.Title</title>
-  <meta property="og:title" content="@Model.Title" />
 }
 
 @if (Model.KeywordsList.Any())
@@ -35,6 +34,11 @@
   <meta name="@custom.Key" content="@custom.Value" />
 }
 
+@if (currentItem.FieldHasValue(Wedia.Feature.Metadata.Templates.PageMetadata.Fields.BrowserTitle))
+{
+  <meta property="og:title" content="@currentItem.Fields[Wedia.Feature.Metadata.Templates.PageMetadata.Fields.BrowserTitle]" />
+}                                                                                                                         
+
 <meta property="og:type" content="website" />
 <meta property="og:url" content="@Request.Url" />
 
@@ -43,7 +47,7 @@
   Sitecore.Data.Fields.ImageField imageField = !string.IsNullOrEmpty(currentItem.Fields["Image"]?.ToString()) ? currentItem.Fields["Image"] : currentItem.Fields["DesktopImage"];
   Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
   src = Request.Url.GetComponents(UriComponents.SchemeAndServer, UriFormat.Unescaped) + Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
-}     
+}
 
 @if (!string.IsNullOrEmpty(src))
 {
