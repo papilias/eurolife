@@ -55,6 +55,29 @@
 
     $(document).ready(function () {
 
+        //using an instersection observer for storyline effects
+        if (document.getElementById('timeline')) {
+          const years = document.querySelectorAll('.year-item');
+          if (years != null) {
+
+            const timeline = document.getElementById('timeline');
+            timeline.classList.add('timeline--inited');
+
+            observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                  entry.target.classList.add('year-item--active')
+                }
+              });
+            });
+
+            years.forEach(anchor => {
+              observer.observe(anchor);
+            });
+            //using an instersection observer for storyline effects END
+          }
+        }
+
         $(window).on('scroll', () => {
           const scrolled = $(window).scrollTop();
           const windowHeight = $(window).height();
