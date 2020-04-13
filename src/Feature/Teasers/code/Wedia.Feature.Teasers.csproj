@@ -102,6 +102,7 @@
     <Content Include="Views\Teasers\TeaserWithLabelAndIcon.cshtml" />
     <Content Include="Views\Teasers\BasicGreyCTATeaser.cshtml" />
     <Content Include="Views\Teasers\GreyCTAList.cshtml" />
+    <Content Include="Views\Teasers\ColoredCTAIcon.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
