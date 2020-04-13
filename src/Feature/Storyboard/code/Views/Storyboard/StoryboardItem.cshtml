@@ -3,7 +3,7 @@
 @model Sitecore.Data.Items.Item
 
 
-<li>
+<li class="year-item">
   <div class="timeline__date">@Html.Sitecore().Field(Templates.StoryboardItem.Fields.Year, Model)</div>
   <div class="timeline__events timeline__events--plain timeline__text">
     @Html.Sitecore().Field(Templates.StoryboardItem.Fields.Content, Model)

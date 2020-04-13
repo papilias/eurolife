@@ -7,7 +7,7 @@
     var bgClass = Model.GetBackgroundClass(Templates.StoryboardItem.Fields.BackgroundClass);
 }
 
-<li>
+<li class="year-item">
   <div class="timeline__date @bgClass">@Html.Sitecore().Field(Templates.StoryboardItem.Fields.Year, Model)</div>
   <div class="timeline__events timeline__events--hightlighted @bgClass">
     <div class="p-48 timeline__text">
