@@ -115,13 +115,6 @@ Languages:
               s:ds="{EFE3CA13-F948-499F-90C3-0276EF151DEF}"
               s:id="{35B143BC-F015-4DA6-81BA-36BCC2F6351A}"
               s:ph="page-layout" />
-            <r
-              uid="{AAF5E3F8-5969-426E-A31E-806BC91F42FC}"
-              p:after="r[@uid='{6CC0860B-843A-4625-9F24-FE6A1FACB19D}']"
-              s:ds="{57F1128F-D547-42DE-9934-E72D35E7B5AF}"
-              s:id="{7F610AEE-95C2-4814-9E1D-1E619ABCDE99}"
-              s:par="Alignment=%7B1168A85D-15F2-4335-8D86-CED079708B5A%7D&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor"
-              s:ph="page-layout" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
