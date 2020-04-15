@@ -12,6 +12,7 @@ using Wedia.Feature.Blog.Models;
 using Sitecore;
 using Sitecore.Data;
 using Wedia.Foundation.SitecoreExtensions.Utilities;
+using Sitecore.Diagnostics;
 
 namespace Wedia.Feature.Blog.Controllers
 {
@@ -65,7 +66,18 @@ namespace Wedia.Feature.Blog.Controllers
       var item = RenderingContext.Current.Rendering.Item;
       var count = RenderingContext.Current.Rendering.GetIntegerParameter("count", Contants.LatestNews.NumberOfArticles);
 
-      return View("LatestArticles", _blogRepository.GetLatest(item, count));
+      IEnumerable<BlogPostItem> data = new List<BlogPostItem>();
+
+      try
+      {
+        data = _blogRepository.GetLatest(item, count);
+      }
+      catch (Exception ex)
+      {
+        Log.Error("LatestArticles exception", ex, this);
+      }
+
+      return View("LatestArticles", data);
     }
 
     public ActionResult RelatedArticles()
