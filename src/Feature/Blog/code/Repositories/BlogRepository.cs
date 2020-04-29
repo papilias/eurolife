@@ -39,7 +39,7 @@ namespace Wedia.Feature.Blog.Repositories
         return data.Where(x => x.Fields[Templates.HasBlogContent.Fields.Publicationdate].ToString().Contains(year));
     }  
 
-    public IEnumerable<Models.BlogPostItem> GetLatest(Item contextItem, int count)
+    public IEnumerable<Models.BlogPostItem> GetLatest(Item contextItem, int count, bool showTags = true,  bool includeHostName = false)
     {
       var items = Get(contextItem).OrderByDescending(i => i[Templates.HasBlogContent.Fields.Publicationdate]).Take(count);
 
@@ -49,7 +49,7 @@ namespace Wedia.Feature.Blog.Repositories
       {
         foreach(var item in items)
         {
-          data.Add(MappingBlogPostItem(item, true));
+          data.Add(MappingBlogPostItem(item, showTags, includeHostName));
         }
       }                                       
 
@@ -90,7 +90,7 @@ namespace Wedia.Feature.Blog.Repositories
       return vm;
     }
 
-    private Models.BlogPostItem MappingBlogPostItem(Item item, bool showTags = false)
+    private Models.BlogPostItem MappingBlogPostItem(Item item, bool showTags = false, bool includeHostName = false)
     {
       Models.BlogPostItem blogPostItem = new Models.BlogPostItem();
 
@@ -100,13 +100,14 @@ namespace Wedia.Feature.Blog.Repositories
       var mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
       {
         Width = 600,
-        Height = 0
+        Height = 0    ,
+        AlwaysIncludeServerUrl = includeHostName
       };
 
       if (item != null)
       {
         blogPostItem.Title = item.Fields[Templates.HasBlogContent.Fields.Title].ToString();
-        blogPostItem.URL = item.Url();
+        blogPostItem.URL = item.Url(new Sitecore.Links.UrlOptions { AlwaysIncludeServerUrl = includeHostName});
         blogPostItem.Summary = Utilities.StripHTML(item.Fields[Templates.HasBlogContent.Fields.Teaser].ToString());
         blogPostItem.Image = item.FieldHasValue(Templates.HasBlogContent.Fields.Image) 
           ? item.ImageUrl(Templates.HasBlogContent.Fields.Image, mediaUrlOptions) 
@@ -114,7 +115,7 @@ namespace Wedia.Feature.Blog.Repositories
 
         if (showTags)
         {
-          blogPostItem.Tags = GetProductTags(item);
+          blogPostItem.Tags = GetProductTags(item, includeHostName);
         } 
       }
 
@@ -145,7 +146,7 @@ namespace Wedia.Feature.Blog.Repositories
       return lifeStages;
     }
 
-    private List<Models.Tag> GetProductTags(Item item)
+    private List<Models.Tag> GetProductTags(Item item, bool includeHostName = false)
     {
       var tags = new List<Models.Tag>();
 
@@ -168,7 +169,7 @@ namespace Wedia.Feature.Blog.Repositories
             {
               Title = product.Fields[Templates.HasPageContent.Fields.Title]?.ToString(),
               Color = color,
-              URL = product.Url()
+              URL = product.Url(new Sitecore.Links.UrlOptions { AlwaysIncludeServerUrl = includeHostName})
             });
           }
         }

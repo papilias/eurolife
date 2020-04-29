@@ -13,6 +13,9 @@ namespace Wedia.Feature.Blog
     {
       routes.MapRoute("loadmore-articles", "api/feature/blog/ajax-articles",
         new { controller = "Blog", action = "AjaxPagedList", id = UrlParameter.Optional });
+
+      routes.MapRoute("latest-articles-feed", "api/feature/blog/latest-articles",
+       new { controller = "Blog", action = "LatestArticlesFeed", numberOfArticles = UrlParameter.Optional });
     }
   }
 }

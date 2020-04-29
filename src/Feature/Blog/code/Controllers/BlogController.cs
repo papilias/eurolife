@@ -121,6 +121,34 @@ namespace Wedia.Feature.Blog.Controllers
       return Json(new { exhausted = !data.ShowLoadMore, data = partial }, JsonRequestBehavior.AllowGet);      
     }
 
+
+    [HttpGet]
+    public ActionResult LatestArticlesFeed(int numberOfArticles = 3)
+    {
+      IEnumerable<BlogPostItem> data = new List<BlogPostItem>();
+
+      try
+      {
+        if (numberOfArticles > 100)
+          numberOfArticles = 100;
+
+        var rootItem = Context.Database.GetRootItem();
+
+        var blogList = rootItem.Axes.GetDescendants()
+                                    .Where(x => x.TemplateID == Templates.BlogList.ID)
+                                    .FirstOrDefault() ?? throw new ArgumentNullException("blogList not found");
+
+        data = _blogRepository.GetLatest(rootItem, numberOfArticles, true, true);
+      }
+      catch (Exception ex)
+      {
+        Log.Error("LatestArticlesFeed exception", ex, this);
+      }
+
+      return Json(data, JsonRequestBehavior.AllowGet);
+    }
+
+
     private PagingSettings FillSettings(Item item, int currentPage = 0)
     {
       var includedFields = new Dictionary<string, string>();
