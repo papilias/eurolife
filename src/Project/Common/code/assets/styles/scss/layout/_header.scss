@@ -406,7 +406,7 @@
 
 .search-switch{
   width: 22px;
-  height:22px;
+  height:23px;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -762,6 +762,14 @@ a.btn--ghost-header{
   }
 
   .header-mobile {
+
+    .language-switch {
+      vertical-align: top;
+      margin-top: 3px;
+      opacity:0;
+      display:inline-block;
+    }
+
     .search-switch {
       display: inline-block;
       opacity: 0;
@@ -781,6 +789,11 @@ a.btn--ghost-header{
     overflow: hidden;
 
     .header-mobile {
+
+      .language-switch{
+        opacity:1;
+      }
+
       .search-switch {
         opacity: 1;
         pointer-events: auto;
@@ -788,7 +801,7 @@ a.btn--ghost-header{
     }
   }
 
-  .search-switch {
+  .search-switch, .language-switch {
     display: none;
   }
 
@@ -805,7 +818,7 @@ a.btn--ghost-header{
     display: block;
     overflow-y: auto;
 
-    .access__list{
+    .access__list {
       width: 100%;
     }
 
@@ -1028,4 +1041,11 @@ a.btn--ghost-header{
       text-align: center;
     }
   }
+}
+
+.language-switch {
+  color: #ef3340;
+  font-weight: 500;
+  margin-left:48px;
+  margin-right:6px;
 }
