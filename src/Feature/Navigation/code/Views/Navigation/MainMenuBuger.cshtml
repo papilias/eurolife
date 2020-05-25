@@ -1,7 +1,16 @@
 ﻿@using Sitecore.Mvc 
 @using Wedia.Foundation.SitecoreExtensions.Extensions    
 @{
-  var homeUrl = Sitecore.Context.Site?.GetStartItem()?.Url() ?? "/";
+    var homeUrl = Sitecore.Context.Site?.GetStartItem()?.Url() ?? "/";
+
+    var root = "/en";
+    var lang = "EN";
+
+    if (Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName.ToLower() == "en")
+    {
+      lang = "EL";
+      root = "/el-GR";
+    }
 }
 <div class="header-mobile" aria-hidden="true">
   
@@ -9,7 +18,7 @@
 
   <div>
 
-    <a class="language-switch" href="/">EN</a>
+    <a class="language-switch" href="@root">@lang</a>
 
     <div class="search-switch js-search-switch">
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">

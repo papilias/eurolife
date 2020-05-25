@@ -1,7 +1,17 @@
 ﻿@using Wedia.Foundation.Dictionary.Repositories
 @model Wedia.Feature.Search.Models.SearchContext
+  @{ 
+      var root = "/en";   
+      var lang = "EN";
 
-<a class="language-switch" href="/">EN</a>
+      if(Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName.ToLower() == "en")
+      {
+        lang = "EL";
+        root = "/el-GR";
+      }
+  }
+
+<a class="language-switch" href="@root">@lang</a>
 
 <div class="search-switch js-search-switch">
   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
