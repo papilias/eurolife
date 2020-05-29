@@ -103,6 +103,8 @@
     <Compile Include="Extensions\FieldExtensions.cs" />
     <Compile Include="Extensions\HTMLHelperExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
+    <Compile Include="FormActions\LogSubmit.cs" />
+    <Compile Include="FormActions\SendFormValues.cs" />
     <Compile Include="Infrastructure\Pipelines\CountryLanguageEnforcer.cs" />
     <Compile Include="Sitemap\Sitemap.cs" />
     <Compile Include="Sitemap\UrlSet.cs" />
