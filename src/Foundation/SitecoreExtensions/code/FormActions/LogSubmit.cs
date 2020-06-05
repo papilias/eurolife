@@ -3,11 +3,11 @@ using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
-using Sitecore.Data.Items;
 using static System.FormattableString;
-using Sitecore.Links;
-
-
+using Sitecore.Mvc.Extensions;
+using System.Collections.Generic;
+using System.Net;
+using System.Text;
 
 namespace Wedia.Foundation.SitecoreExtensions.FormActions
 {
@@ -52,14 +52,9 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
       {
         Logger.Info(Invariant($"Form {formSubmitContext.FormId} submitted successfully."), this);
 
-  
+        //we need to add to values to a string dictionary 
+
         
-        Item formItem = Sitecore.Context.Database.GetItem(Sitecore.Data.ID.Parse(formSubmitContext.FormId));
-        //var pathInfo = LinkManager.GetItemUrl(formItem, UrlOptions.DefaultOptions);
-        //return RedirectToRoute(MvcSettings.SitecoreRouteName, new { pathInfo = pathInfo.TrimStart(new char[] { '/' }), param1 = actionParam });
-
-
-
       }
       else
       {
