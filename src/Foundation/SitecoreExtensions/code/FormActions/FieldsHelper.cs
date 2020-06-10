@@ -16,7 +16,8 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
 
       if (field is InputViewModel<List<string>> listStringInputViewModel)
       {
-        val = listStringInputViewModel.Value.Aggregate("", (current, value) => current + ", " + value).Remove(0, 2);
+        if(listStringInputViewModel.Value.Any())
+          val = listStringInputViewModel.Value.Aggregate("", (current, value) => current + ", " + value).Remove(0, 2);
       }
       else if (field is InputViewModel<bool> booleanInputViewModel)
       {
