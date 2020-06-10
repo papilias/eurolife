@@ -8,6 +8,9 @@ using Sitecore.Mvc.Extensions;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
+using Sitecore.ExperienceForms.Mvc.Models.Fields;
+using System;
+using System.Globalization;
 
 namespace Wedia.Foundation.SitecoreExtensions.FormActions
 {
@@ -48,7 +51,20 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
     {
       Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
 
-      if (!formSubmitContext.HasErrors)
+
+      Dictionary<string, string> fieldsDictionary = new Dictionary<string, string>();
+
+      foreach (var field in formSubmitContext.Fields)
+      {
+       
+        string fieldName = field.Name;
+        string fieldValue = FieldsHelper.GetFieldValue(field);
+
+        fieldsDictionary.Add(fieldName, fieldValue);
+      }
+
+
+        if (!formSubmitContext.HasErrors)
       {
         Logger.Info(Invariant($"Form {formSubmitContext.FormId} submitted successfully."), this);
 
@@ -63,5 +79,7 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
 
       return true;
     }
+
+    
   }
 }

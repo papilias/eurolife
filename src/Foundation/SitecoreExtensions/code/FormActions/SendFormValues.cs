@@ -50,58 +50,35 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
       Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
 
       if (!formSubmitContext.HasErrors)
-      {
-        
+      {          
         try
         {
 
           //we need to add to values to a string dictionary 
           Dictionary<string, string> fieldsDictionary = new Dictionary<string, string>();
 
-          
           foreach (var field in formSubmitContext.Fields)
           {
 
-            string fieldValue = string.Empty;
-            string fieldName = string.Empty;
-
-
-            if (field != null)
-            {
-
-              //get Value
-              var propertyValue = field.GetType().GetProperty("Value");
-              var postedValue = propertyValue.GetValue(field);
-              fieldValue = postedValue.ToStringOrEmpty();
-
-              //get Name
-              var propertyName = field.GetType().GetProperty("Name");
-              var postedName = propertyName.GetValue(field);
-              fieldName = postedName.ToStringOrEmpty();
-
-            }
+            string fieldName = field.Name;
+            string fieldValue = FieldsHelper.GetFieldValue(field);
 
             fieldsDictionary.Add(fieldName, fieldValue);
-
-          }
-
+          }   
 
           using (WebClient client = new WebClient())
           {
             var reqparm = new System.Collections.Specialized.NameValueCollection();
 
-
             foreach (var item in fieldsDictionary)
             {
               reqparm.Add(item.Key, item.Value);
-            }
+            }    
 
-
-            byte[] responsebytes = client.UploadValues("https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", "POST", reqparm);
+            byte[] responsebytes = client.UploadValues(Sitecore.Configuration.Settings.GetSetting("FormActions.SalesforceApiUrl"), "POST", reqparm);
             string responsebody = Encoding.UTF8.GetString(responsebytes);
             string testreponsebody = responsebody;
-          }
-
+          } 
         }
         catch (Exception ex)
         {
