@@ -1,19 +1,18 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
 using Sitecore.ExperienceForms.Processing.Actions;
-using Sitecore.Data.Items;
 using static System.FormattableString;
-using Sitecore.Links;
-using Sitecore.ExperienceForms.Processing.Actions.Models;
-using System;
-using Sitecore.Data;
 using Sitecore.Mvc.Extensions;
+using System.Collections.Generic;
+using System.Net;
+using System.Text;
 
 namespace Wedia.Foundation.SitecoreExtensions.FormActions
 {
-  public class SendFormValues : SubmitActionBase<RedirectActionData>
+  public class SendFormValues : SubmitActionBase<string>
   {
 
     /// <summary>
@@ -24,7 +23,19 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
     {
     }
 
-
+    /// <summary>
+    /// Tries to convert the specified <paramref name="value" /> to an instance of the specified target type.
+    /// </summary>
+    /// <param name="value">The value.</param>
+    /// <param name="target">The target object.</param>
+    /// <returns>
+    /// true if <paramref name="value" /> was converted successfully; otherwise, false.
+    /// </returns>
+    protected override bool TryParse(string value, out string target)
+    {
+      target = string.Empty;
+      return true;
+    }
 
     /// <summary>
     /// Executes the action with the specified <paramref name="data" />.
@@ -34,26 +45,75 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
     /// <returns>
     ///   <c>true</c> if the action is executed correctly; otherwise <c>false</c>
     /// </returns>
-    protected override bool Execute(RedirectActionData data, FormSubmitContext formSubmitContext)
+    protected override bool Execute(string data, FormSubmitContext formSubmitContext)
     {
-      Assert.ArgumentNotNull(formSubmitContext, "formSubmitContext");
-      if (data == null || !(data.ReferenceId != Guid.Empty))
-        return false;
-      var item = Sitecore.Context.Database.GetItem(new ID(data.ReferenceId));
-      if (item == null)
-        return false;
+      Assert.ArgumentNotNull(formSubmitContext, nameof(formSubmitContext));
 
-      var email = string.Empty;
-
-      var field = formSubmitContext.Fields.FirstOrDefault(f => f.Name.Equals("Email"));
-      if (field != null)
+      if (!formSubmitContext.HasErrors)
       {
-        var property = field.GetType().GetProperty("Value");
-        var postedEmail = property.GetValue(field);
-        email = postedEmail.ToStringOrEmpty();
+        
+        try
+        {
+
+          //we need to add to values to a string dictionary 
+          Dictionary<string, string> fieldsDictionary = new Dictionary<string, string>();
+
+          
+          foreach (var field in formSubmitContext.Fields)
+          {
+
+            string fieldValue = string.Empty;
+            string fieldName = string.Empty;
+
+
+            if (field != null)
+            {
+
+              //get Value
+              var propertyValue = field.GetType().GetProperty("Value");
+              var postedValue = propertyValue.GetValue(field);
+              fieldValue = postedValue.ToStringOrEmpty();
+
+              //get Name
+              var propertyName = field.GetType().GetProperty("Name");
+              var postedName = propertyName.GetValue(field);
+              fieldName = postedName.ToStringOrEmpty();
+
+            }
+
+            fieldsDictionary.Add(fieldName, fieldValue);
+
+          }
+
+
+          using (WebClient client = new WebClient())
+          {
+            var reqparm = new System.Collections.Specialized.NameValueCollection();
+
+
+            foreach (var item in fieldsDictionary)
+            {
+              reqparm.Add(item.Key, item.Value);
+            }
+
+
+            byte[] responsebytes = client.UploadValues("https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", "POST", reqparm);
+            string responsebody = Encoding.UTF8.GetString(responsebytes);
+            string testreponsebody = responsebody;
+          }
+
+        }
+        catch (Exception ex)
+        {
+          Log.Error("SendValues form with id " + formSubmitContext.FormId + " error exception", ex, this);
+        }       
+
+      }
+      else
+      {
+        Logger.Warn(Invariant($"Form {formSubmitContext.FormId} submitted with errors: {string.Join(", ", formSubmitContext.Errors.Select(t => t.ErrorMessage))}."), this);
       }
 
-      Logger.Info(Invariant($"Email was submitted and value is: {email}"), this);
       return true;
     }
   }
