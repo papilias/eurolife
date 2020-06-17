@@ -9,6 +9,7 @@ using Sitecore.Mvc.Extensions;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
+using System.Net.Http;
 
 namespace Wedia.Foundation.SitecoreExtensions.FormActions
 {
@@ -52,8 +53,7 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
       if (!formSubmitContext.HasErrors)
       {          
         try
-        {
-
+        {   
           //we need to add to values to a string dictionary 
           Dictionary<string, string> fieldsDictionary = new Dictionary<string, string>();
 
@@ -64,21 +64,16 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
             string fieldValue = FieldsHelper.GetFieldValue(field);
 
             fieldsDictionary.Add(fieldName, fieldValue);
-          }   
-
-          using (WebClient client = new WebClient())
-          {
-            var reqparm = new System.Collections.Specialized.NameValueCollection();
-
-            foreach (var item in fieldsDictionary)
-            {
-              reqparm.Add(item.Key, item.Value);
-            }    
-
-            byte[] responsebytes = client.UploadValues(Sitecore.Configuration.Settings.GetSetting("FormActions.SalesforceApiUrl"), "POST", reqparm);
-            string responsebody = Encoding.UTF8.GetString(responsebytes);
-            string testreponsebody = responsebody;
           } 
+
+          var client = new HttpClient();
+          FormUrlEncodedContent content = new FormUrlEncodedContent(fieldsDictionary);
+          var response = client.PostAsync(Sitecore.Configuration.Settings.GetSetting("FormActions.SalesforceApiUrl"), content).Result;
+
+         if(!response.IsSuccessStatusCode)
+          {
+            Log.Error($"SendValues form with id: {formSubmitContext.FormId},response error: {response.StatusCode}", this);
+          }              
         }
         catch (Exception ex)
         {
