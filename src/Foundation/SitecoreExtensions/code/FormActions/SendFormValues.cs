@@ -57,18 +57,34 @@ namespace Wedia.Foundation.SitecoreExtensions.FormActions
           //we need to add to values to a string dictionary 
           Dictionary<string, string> fieldsDictionary = new Dictionary<string, string>();
 
+          
+          string postUrl = "";
+
           foreach (var field in formSubmitContext.Fields)
           {
 
             string fieldName = field.Name;
             string fieldValue = FieldsHelper.GetFieldValue(field);
 
+            //checking if post Url field is present and filled. if not we will grab the post url from sitecore coniguration. no need to send this
+            if (fieldName == "postUrl")
+            {
+              postUrl = FieldsHelper.GetFieldValue(field);
+              continue;
+            }
+
             fieldsDictionary.Add(fieldName, fieldValue);
-          } 
+          }
+
+          string apiPostUrl = "";
+          if (!string.IsNullOrEmpty(postUrl))
+            apiPostUrl = postUrl;
+          else
+            apiPostUrl = Sitecore.Configuration.Settings.GetSetting("FormActions.SalesforceApiUrl");
 
           var client = new HttpClient();
           FormUrlEncodedContent content = new FormUrlEncodedContent(fieldsDictionary);
-          var response = client.PostAsync(Sitecore.Configuration.Settings.GetSetting("FormActions.SalesforceApiUrl"), content).Result;
+          var response = client.PostAsync(apiPostUrl, content).Result;
 
          if(!response.IsSuccessStatusCode)
           {
