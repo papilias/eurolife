@@ -2597,7 +2597,7 @@ for (var collections = getKeys(DOMIterables), i = 0; i < collections.length; i++
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\projects\Eurolife\src\Project\Common\code\assets\js\main.js */"./assets/js/main.js");
+module.exports = __webpack_require__(/*! D:\Source\Repos\Eurolife\src\Project\Common\code\assets\js\main.js */"./assets/js/main.js");
 
 
 /***/ })
