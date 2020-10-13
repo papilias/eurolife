@@ -1,10 +1,10 @@
 module.exports = function () {
-  var instanceRoot = "d:\\websites\\eurolifeSite.local";
+  var instanceRoot = "C:\\websites\\sc910.local";
   var config = {
     websiteRoot: instanceRoot + "\\",
     sitecoreLibraries: instanceRoot + "\\bin",
     licensePath: instanceRoot + "\\App_Data\\license.xml",
-    packageXmlBasePath: "D:\\Source\\Repos\\Eurolife\\code\\App_Data\\packages\\eurolife.xml",
+    packageXmlBasePath: ".\\src\\Project\\Eurolife\\code\\App_Data\\packages\\eurolife.xml",
     packagePath: instanceRoot + "\\App_Data\\packages",
     solutionName: "Eurolife",
     buildConfiguration: "Debug",
