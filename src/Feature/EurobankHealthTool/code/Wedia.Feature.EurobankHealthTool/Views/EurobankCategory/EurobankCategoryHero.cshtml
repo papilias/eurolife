@@ -1,0 +1,19 @@
+﻿@using Sitecore.Mvc.Presentation
+@model RenderingModel
+<section class="hero-simple m-b-112 relator">
+
+  <div class="hero-simple__contents">
+    <div class="center--760 center relator">
+      <h1 class="h2 m-b-16">@Html.Sitecore().Field("Title")</h1>
+      <p class=" m-b-64">@Html.Sitecore().Field("Summary")</p>
+      <a class="btn btn--ghost btn--default" href="">ΔΙΑΒΑΣΤΕ ΤΟ</a>
+    </div>
+  </div>
+
+  <picture>
+    <source media="(min-width: 900px)" srcset="https://www.eurolife.gr/-/media/Feature/PageContent/CSR/hero-images/simpratoume.png?w=1920&amp;hash=D7DF9F23F83D383D023B690E5F4BEB80">
+    <source srcset="https://www.eurolife.gr/-/media/simpratoumemob.png?w=500&amp;hash=CB8071A85ABB82B3198BFD4BF5181B05">
+    <img src="https://www.eurolife.gr/-/media/Feature/PageContent/CSR/hero-images/simpratoume.png?w=1920&amp;hash=D7DF9F23F83D383D023B690E5F4BEB80" alt="+πράττουμε">
+  </picture>
+
+</section>

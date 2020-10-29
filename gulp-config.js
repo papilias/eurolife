@@ -1,5 +1,5 @@
 module.exports = function () {
-  var instanceRoot = "C:\\websites\\eurolifeSite.local";
+  var instanceRoot = "D:\\websites\\eurolifeSite.local";
   var config = {
     websiteRoot: instanceRoot + "\\",
     sitecoreLibraries: instanceRoot + "\\bin",

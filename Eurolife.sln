@@ -152,6 +152,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blog", "Blog", "{C4278863-F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.Blog", "src\Feature\Blog\code\Wedia.Feature.Blog.csproj", "{4234ABAF-ED13-4128-9E42-B4A3B1A63E4A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EurobankHealthTool", "EurobankHealthTool", "{491574B2-9131-41CA-9E06-9E2E372BCB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wedia.Feature.EurobankHealthTool", "src\Feature\EurobankHealthTool\code\Wedia.Feature.EurobankHealthTool\Wedia.Feature.EurobankHealthTool.csproj", "{EC24B839-3E1A-4168-A97E-0A070B784317}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -294,6 +298,10 @@ Global
 		{4234ABAF-ED13-4128-9E42-B4A3B1A63E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4234ABAF-ED13-4128-9E42-B4A3B1A63E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4234ABAF-ED13-4128-9E42-B4A3B1A63E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC24B839-3E1A-4168-A97E-0A070B784317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC24B839-3E1A-4168-A97E-0A070B784317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC24B839-3E1A-4168-A97E-0A070B784317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC24B839-3E1A-4168-A97E-0A070B784317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -366,9 +374,11 @@ Global
 		{839F290D-CE38-4EB1-A9DB-6E1DAE33FF53} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 		{C4278863-F63E-487A-AA29-8403D108F403} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
 		{4234ABAF-ED13-4128-9E42-B4A3B1A63E4A} = {C4278863-F63E-487A-AA29-8403D108F403}
+		{491574B2-9131-41CA-9E06-9E2E372BCB37} = {86BFDC11-94DF-4B61-B8E7-A53B22C415BD}
+		{EC24B839-3E1A-4168-A97E-0A070B784317} = {491574B2-9131-41CA-9E06-9E2E372BCB37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {EA9EC89E-591F-450E-9CBA-F4CA561165C2}
 	EndGlobalSection
 EndGlobal

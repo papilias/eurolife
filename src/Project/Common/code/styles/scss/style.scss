@@ -44,6 +44,13 @@
 @import "base-components/search.scss";
 @import "base-components/ie.scss";   //corre
 
+@import "tools/_health-breadcrumb.scss";
+@import "tools/_tool-utility.scss";
+@import "tools/_suggestions.scss";
+@import "tools/_extra-suggestions.scss";
+@import "tools/_range";
+
+
 @import "layout/header.scss";
 @import "layout/footer.scss";
 

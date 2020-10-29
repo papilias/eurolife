@@ -320,6 +320,13 @@
     <Content Include="assets\styles\scss\base-components\_well.scss" />
     <Content Include="assets\styles\scss\base\_fonts.scss" />
     <Content Include="assets\styles\scss\base-components\_new-cta.scss" />
+    <Content Include="assets\styles\scss\tools\_extra-suggestions.scss" />
+    <Content Include="assets\styles\scss\tools\_health-breadcrumb.scss" />
+    <Content Include="assets\styles\scss\tools\_radio-slider.scss" />
+    <Content Include="assets\styles\scss\tools\_range.scss" />
+    <Content Include="assets\styles\scss\tools\_suggestions.scss" />
+    <Content Include="assets\styles\scss\tools\_tool-utility.scss" />
+    <Content Include="assets\styles\scss\base-components\_eurolist.scss" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="Views\Common\Sublayouts\Footer.cshtml" />
@@ -372,6 +379,12 @@
     <Content Include="Views\Common\Sublayouts\Header.cshtml" />
     <Content Include="styles\scss\base-components\_ie.scss" />
     <Content Include="Views\Common\Sublayouts\BlogDummy.cshtml" />
+    <Content Include="styles\scss\tools\_extra-suggestions.scss" />
+    <Content Include="styles\scss\tools\_health-breadcrumb.scss" />
+    <Content Include="styles\scss\tools\_radio-slider.scss" />
+    <Content Include="styles\scss\tools\_range.scss" />
+    <Content Include="styles\scss\tools\_suggestions.scss" />
+    <Content Include="styles\scss\tools\_tool-utility.scss" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
