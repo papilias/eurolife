@@ -190,6 +190,7 @@
     <Content Include="Views\EurobankHealthTool\EurobankCategory\EurobankQuadListing.cshtml" />
     <Content Include="Views\EurobankHealthTool\EurobankNavigation\EurobankHeader.cshtml" />
     <Content Include="Views\EurobankHealthTool\EurobankNavigation\EurobankFooter.cshtml" />
+    <Content Include="Views\EurobankHealthTool\EurobankLanding\EurobankLandingHero.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -224,6 +225,10 @@
     <ProjectReference Include="..\..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
       <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
       <Name>Wedia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PageContent\code\Wedia.Feature.PageContent.csproj">
+      <Project>{e5da506c-a085-4f0a-9201-f83c763d06cb}</Project>
+      <Name>Wedia.Feature.PageContent</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
