@@ -188,8 +188,8 @@
     <Content Include="Views\EurobankArticle\EurobankArticleContent.cshtml" />
     <Content Include="Views\EurobankCategory\EurobankCategoryHero.cshtml" />
     <Content Include="Views\EurobankCategory\EurobankQuadListing.cshtml" />
-    <Content Include="Views\Navigation\EurobankHeader.cshtml" />
-    <Content Include="Views\Navigation\EurobankFooter.cshtml" />
+    <Content Include="Views\EurobankNavigation\EurobankHeader.cshtml" />
+    <Content Include="Views\EurobankNavigation\EurobankFooter.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -211,6 +211,20 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Foundation\Alerts\code\Wedia.Foundation.Alerts.csproj">
+      <Project>{85863230-7954-48f3-b895-35c3f4b4c2f3}</Project>
+      <Name>Wedia.Foundation.Alerts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
+      <Project>{71de993f-50e5-4300-a003-f07f877830cd}</Project>
+      <Name>Wedia.Foundation.Dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Foundation\SitecoreExtensions\code\Wedia.Foundation.SitecoreExtensions.csproj">
+      <Project>{08c1bfa2-583c-4102-a545-8c0e97bae265}</Project>
+      <Name>Wedia.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
