@@ -185,11 +185,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\EurobankArticle\EurobankArticleContent.cshtml" />
-    <Content Include="Views\EurobankCategory\EurobankCategoryHero.cshtml" />
-    <Content Include="Views\EurobankCategory\EurobankQuadListing.cshtml" />
-    <Content Include="Views\EurobankNavigation\EurobankHeader.cshtml" />
-    <Content Include="Views\EurobankNavigation\EurobankFooter.cshtml" />
+    <Content Include="Views\EurobankHealthTool\EurobankArticle\EurobankArticleContent.cshtml" />
+    <Content Include="Views\EurobankHealthTool\EurobankCategory\EurobankCategoryHero.cshtml" />
+    <Content Include="Views\EurobankHealthTool\EurobankCategory\EurobankQuadListing.cshtml" />
+    <Content Include="Views\EurobankHealthTool\EurobankNavigation\EurobankHeader.cshtml" />
+    <Content Include="Views\EurobankHealthTool\EurobankNavigation\EurobankFooter.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
