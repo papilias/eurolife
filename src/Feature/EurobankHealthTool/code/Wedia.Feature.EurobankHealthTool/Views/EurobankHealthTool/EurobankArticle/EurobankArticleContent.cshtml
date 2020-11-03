@@ -10,7 +10,7 @@
 @{
     Item cur = Sitecore.Context.Item;
 
-    var url = Sitecore.Links.LinkManager.GetItemUrl(cur);
+    var url = Request.Url + Sitecore.Links.LinkManager.GetItemUrl(cur);
     var title = Html.Sitecore().Field(Templates.EBArticleContent.Fields.Title);
 }
 
