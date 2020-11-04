@@ -1,0 +1,29 @@
+﻿@using Wedia.Feature.EurobankHealthTool.Models
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.EurobankHealthTool
+
+@model CalculationToolViewModel
+
+<code>
+  @Model.JsonExcelData
+</code>
+
+
+@if (Model.Products != null && Model.Products.Any())
+{
+  foreach (var item in Model.Products)
+  {
+<p>
+  @item.Field(Templates.HasProductContent.Fields.Code)
+  <br />
+  @item.Field(Templates.HasProductContent.Fields.Title)
+  <br />
+  @item.Field(Templates.HasProductContent.Fields.Summary)
+  <br />
+  @item.Field(Templates.HasProductContent.Fields.FullDescription)
+</p>
+  }
+}

@@ -47,6 +47,9 @@
     <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus, Version=4.5.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\EPPlus.4.5.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
@@ -96,6 +99,7 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\RazorGenerator.Mvc.2.4.9\lib\net40\RazorGenerator.Mvc.dll</HintPath>
     </Reference>
@@ -121,6 +125,9 @@
       <HintPath>..\..\..\..\..\packages\Sitecore.Zip.9.1.0\lib\net471\Sitecore.Zip.dll</HintPath>
     </Reference>
     <Reference Include="sysglobl" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO.Compression.FileSystem" />
@@ -133,6 +140,7 @@
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Threading.Tasks" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -191,12 +199,18 @@
     <Content Include="Views\EurobankHealthTool\EurobankNavigation\EurobankHeader.cshtml" />
     <Content Include="Views\EurobankHealthTool\EurobankNavigation\EurobankFooter.cshtml" />
     <Content Include="Views\EurobankHealthTool\EurobankLanding\EurobankLandingHero.cshtml" />
+    <Content Include="Views\EurobankHealthTool\CalculationTool\CalculationToolPage.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Controllers\EurobankHealthToolController.cs" />
+    <Compile Include="Models\CalculationToolViewModel.cs" />
+    <Compile Include="Models\ProgramsData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ExcelService.cs" />
+    <Compile Include="Services\IExcelService.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -209,14 +223,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Foundation\Alerts\code\Wedia.Foundation.Alerts.csproj">
       <Project>{85863230-7954-48f3-b895-35c3f4b4c2f3}</Project>
       <Name>Wedia.Foundation.Alerts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Foundation\DependencyInjection\code\Wedia.Foundation.DependencyInjection.csproj">
+      <Project>{64188ACE-CC0B-4546-A5B0-2422931E3E05}</Project>
+      <Name>Wedia.Foundation.DependencyInjection</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Foundation\Dictionary\code\Wedia.Foundation.Dictionary.csproj">
       <Project>{71de993f-50e5-4300-a003-f07f877830cd}</Project>

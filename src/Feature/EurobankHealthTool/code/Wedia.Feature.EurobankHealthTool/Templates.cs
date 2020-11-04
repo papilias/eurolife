@@ -67,5 +67,38 @@ namespace Wedia.Feature.EurobankHealthTool
       }
     }
 
+    public struct HasExcelTemplate
+    {
+      public static readonly ID ID = new ID("{4347EDEC-CAE9-4C1A-847B-FCB6DA3F92AE}");
+
+      public struct Fields
+      {
+        public static readonly ID ExcelFile = new ID("{45E01379-E7EC-46FF-ACDD-0BE5462F3E5F}");
+      }
+    }
+
+    public struct ProductsList
+    {
+      public static readonly ID ID = new ID("{AECD2696-8934-4C05-9ACB-A6F72644E86C}");
+    }
+
+    public struct Product
+    {
+      public static readonly ID ID = new ID("{47707496-BE60-48C4-9A9A-2BB9DE6B56D2}");
+    }
+
+    public struct HasProductContent
+    {
+      public static readonly ID ID = new ID("{9F20F8C2-702D-4AE1-B2C9-F3BA068615B9}");
+
+      public struct Fields
+      {
+        public static readonly ID Code = new ID("{7CF02413-6700-4F33-8180-4D511BD8DA30}");
+        public static readonly ID Title = new ID("{6643DE71-10B8-4AA6-86F3-B3D4A63288E4}");
+        public static readonly ID Summary = new ID("{22DA33A1-E5AC-4E48-AA4E-C82D41D33A7D}");
+        public static readonly ID FullDescription = new ID("{EEC5187D-E5C9-4E44-AD9D-9FEEA629858B}");
+      }
+    }
+
   }
 }
