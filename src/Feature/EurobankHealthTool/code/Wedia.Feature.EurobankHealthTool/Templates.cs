@@ -97,6 +97,15 @@ namespace Wedia.Feature.EurobankHealthTool
         public static readonly ID Title = new ID("{6643DE71-10B8-4AA6-86F3-B3D4A63288E4}");
         public static readonly ID Summary = new ID("{22DA33A1-E5AC-4E48-AA4E-C82D41D33A7D}");
         public static readonly ID FullDescription = new ID("{EEC5187D-E5C9-4E44-AD9D-9FEEA629858B}");
+        public static readonly ID HospitalPosition = new ID("{759E6466-0C1B-4B96-B465-6E0C24A2C564}");
+        public static readonly ID ExemptionAmount = new ID("{9BCDED88-3317-4058-95B4-83301DD83985}");
+        public static readonly ID PromoCTATitle = new ID("{3C37000C-2807-4CF8-BAB3-5AD6A8841F8A}");
+        public static readonly ID PromoCTALink = new ID("{5C09AE1D-5D01-4F12-AC56-4F5302581B9E}");
+        public static readonly ID PromoCTAText = new ID("{189B06CF-CA5B-4587-8766-45B0B3EEB05B}");
+        public static readonly ID PromoFirstTitle = new ID("{5DA991B0-0806-487C-AF18-33C3A4A46AEC}");
+        public static readonly ID PromoSecondTitle = new ID("{415E0128-C0E5-4B50-999E-E5C47C395E9E}");
+        public static readonly ID ToolCTATitle = new ID("{A43E4F81-BBEE-4F21-AB41-40F69371EBB1}");
+        public static readonly ID ToolCTALink = new ID("{51C5B69A-80AE-48A4-BF1C-EB9074CD14B1}");
       }
     }
 

@@ -186,6 +186,8 @@
 
 .pick__body{
   padding: 24px;
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 0 0 8px 8px;
 
   h3, h4{
     margin:8px 0 4px;
@@ -219,6 +221,11 @@
     margin-top: 4px;
     font-weight: 500;
     color: $color-black;
+
+    .current-age{
+      display: block;
+      font-weight: 600;
+    }
   }
 
 
@@ -228,6 +235,11 @@
     padding:3px;
     width: 56px;
     height: 56px;
+  }
+  &--red{
+    img {
+      background-color: #ef3340;
+    }
   }
 }
 

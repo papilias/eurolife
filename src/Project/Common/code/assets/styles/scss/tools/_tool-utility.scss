@@ -23,7 +23,7 @@
 .target-group{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 46px;
 }
 
@@ -31,12 +31,15 @@
   position: relative;
   padding:38px 20px 32px;
   flex-basis: 100%;
+
   @include breakpoint(700){
     flex-basis: 48%;
+    margin: 0 1%;
   }
   @include breakpoint(1140){
     flex-basis: 24%;
     min-width: 260px;
+    margin: 0 0.5%;
   }
 
   @include breakpoint-rev(1140){
@@ -261,16 +264,16 @@
   }
 
   & input:focus {
-    border-bottom: 2px solid #448AFF;
+    border-bottom: 1px solid #448AFF;
   }
 
   & input:focus + label {
-    transform: translate(0, -25px);
+    transform: translate(0, -20px);
     color: black;
   }
 
   & input:valid + label {
-    transform: translate(0, -25px);
+    transform: translate(0, -20px);
     color: black;
   }
 
@@ -396,5 +399,15 @@ input.person-number{
   }
   input[type="radio"]:checked + label {
     border-color: $color-black;
+  }
+}
+
+.btn--inactive{
+  opacity: 0.4;
+  cursor: not-allowed;
+  transition: none;
+
+  &:hover{
+    background-color: #485294 !important;
   }
 }

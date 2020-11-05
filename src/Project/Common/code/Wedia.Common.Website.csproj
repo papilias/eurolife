@@ -156,6 +156,18 @@
     <Content Include="images\car-shape.svg" />
     <Content Include="images\csr-next-desktop.jpg" />
     <Content Include="images\demo1.png" />
+    <Content Include="images\EurobankHealthTool\icon-child-white.svg" />
+    <Content Include="images\EurobankHealthTool\icon-couple-white.svg" />
+    <Content Include="images\EurobankHealthTool\icon-daughter.svg" />
+    <Content Include="images\EurobankHealthTool\icon-house-white.svg" />
+    <Content Include="images\EurobankHealthTool\icon-info.svg" />
+    <Content Include="images\EurobankHealthTool\icon-man-old.svg" />
+    <Content Include="images\EurobankHealthTool\icon-man-with-glasses.svg" />
+    <Content Include="images\EurobankHealthTool\icon-man-with-stache.svg" />
+    <Content Include="images\EurobankHealthTool\icon-man.svg" />
+    <Content Include="images\EurobankHealthTool\icon-person-white.svg" />
+    <Content Include="images\EurobankHealthTool\icon-son.svg" />
+    <Content Include="images\EurobankHealthTool\icon-woman.svg" />
     <Content Include="images\eurolife-product-mobile.jpg" />
     <Content Include="images\eurolife-product.jpg" />
     <Content Include="images\facebook.svg" />
@@ -327,6 +339,7 @@
     <Content Include="assets\styles\scss\tools\_suggestions.scss" />
     <Content Include="assets\styles\scss\tools\_tool-utility.scss" />
     <Content Include="assets\styles\scss\base-components\_eurolist.scss" />
+    <Content Include="assets\styles\scss\tools\_eurobanktool.scss" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="Views\Common\Sublayouts\Footer.cshtml" />
