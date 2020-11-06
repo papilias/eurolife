@@ -302,7 +302,6 @@
     <Content Include="fonts\Ubuntu-Medium.woff2" />
     <Content Include="fonts\Ubuntu-MediumItalic.woff2" />
     <Content Include="fonts\Ubuntu-Regular.woff2" />
-    <Content Include="images\icons\health\.DS_Store" />
     <Content Include="images\icons\home\.DS_Store" />
     <Content Include="assets\styles\scss\base-components\career.scss" />
     <Content Include="assets\styles\scss\base-components\_anchorlist.scss" />
