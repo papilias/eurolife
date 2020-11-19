@@ -247,6 +247,8 @@
                 fade: true,
                 ease : 'Pow4.easeIn',
                 lazyLoad: 'ondemand',
+                autoplay: true,
+                autoplaySpeed: 5000,
                 appendDots: $('.grouping-dots'),
                 customPaging: function (slider, i) {
                     var item = $pager[i].innerHTML;
