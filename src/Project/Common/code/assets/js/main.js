@@ -438,54 +438,96 @@
     }
 
 
+  var header = document.getElementById("fix-1");
 
-    var header = document.getElementById("fix-1");
-    var menu = document.getElementById("fix-2");
-    if(header != null && menu != null){
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function () {
-            stickyFirst();
-            stickySecond();
-        };
+  //blog article header sticky
+  if ($('.article_content').length > 0 && header != null) {
+    //make sticky only if header has intro or cta
 
-        // Get the header
-        var headerHeight = 0;
-        if (window.innerWidth > 780)
-            headerHeight = document.getElementById('fix-1').clientHeight;
+    var makeSticky = false;
 
-
-        //header.style.setProperty('--h1', headerHeight + "px");
-        var stick1 = document.getElementById("after-sticky-1");
-        stick1.style.setProperty('--p1', headerHeight + "px");
-
-        var menuHeight = document.getElementById('fix-2').clientHeight;
-        var stick2 = document.getElementById("after-sticky-2");
-        menu.style.setProperty('--h2', menuHeight + "px");
-        menu.style.setProperty('--top', (headerHeight - $("#fix-1 .intro__text").height() -38) + "px");
-        stick2.style.setProperty('--p2', menuHeight + "px");
-
-        // Get the offset position of the navbar
-        var elementFirstFromTop = header.offsetTop;
-        var elementSecondFromTop = menu.offsetTop;
-
-        function stickyFirst() {
-            if ((window.pageYOffset > elementFirstFromTop)) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-
-            }
-        }
-
-        function stickySecond() {
-
-            if (window.pageYOffset > (elementSecondFromTop - headerHeight)) {
-              menu.classList.add("sticky-second");
-            } else {
-              menu.classList.remove("sticky-second");
-            }
-        }
+    if ($('.intro-text').children().length > 0 || $('.intro-cta').length > 0) {
+      makeSticky = true;
     }
+
+    if (makeSticky) {
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        stickyFirst();
+      };
+
+      // Get the header
+      var headerHeight = 0;
+      if (window.innerWidth > 780)
+        headerHeight = document.getElementById('fix-1').clientHeight;
+
+      var stick1 = document.getElementById("after-sticky-1");
+      stick1.style.setProperty('--p1', headerHeight + "px");
+
+      // Get the offset position of the navbar
+      var elementFirstFromTop = header.offsetTop; 
+
+
+      function stickyFirst() {
+        if ((window.pageYOffset > elementFirstFromTop)) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+
+        }
+      }  
+
+    } 
+  }
+
+
+  var menu = document.getElementById("fix-2");
+  //product sticky
+  if (header != null && menu != null) {
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      stickyFirst();
+      stickySecond();
+    };
+
+    // Get the header
+    var headerHeight = 0;
+    if (window.innerWidth > 780)
+      headerHeight = document.getElementById('fix-1').clientHeight;
+   
+    var stick1 = document.getElementById("after-sticky-1");
+    stick1.style.setProperty('--p1', headerHeight + "px");
+
+    var menuHeight = document.getElementById('fix-2').clientHeight;
+    var stick2 = document.getElementById("after-sticky-2");
+    menu.style.setProperty('--h2', menuHeight + "px");
+    menu.style.setProperty('--top', (headerHeight - $("#fix-1 .intro__text").height() - 38) + "px");
+    stick2.style.setProperty('--p2', menuHeight + "px");
+
+    // Get the offset position of the navbar
+    var elementFirstFromTop = header.offsetTop;
+    var elementSecondFromTop = menu.offsetTop;
+
+    function stickyFirst() {
+      if ((window.pageYOffset > elementFirstFromTop)) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+
+      }
+    }
+
+    function stickySecond() {
+
+      if (window.pageYOffset > (elementSecondFromTop - headerHeight)) {
+        menu.classList.add("sticky-second");
+      } else {
+        menu.classList.remove("sticky-second");
+      }
+    }
+  }
+
+   
 
     //grid carousel start
     const carousels = document.querySelectorAll(".js-grid-table");
