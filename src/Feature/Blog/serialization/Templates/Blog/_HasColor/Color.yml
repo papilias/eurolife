@@ -1,8 +1,8 @@
 ﻿---
-ID: "1a523df4-de5d-42fa-9496-e89f8f1113f4"
-Parent: "8f343079-3cc5-4ef7-bc27-32addb46f45e"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/Feature/Blog
+ID: "fc596d36-f097-44ed-a06d-a38f41b0e49f"
+Parent: "ed2d2057-7ff2-437f-8010-b506d226b964"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Blog/_HasColor/Color
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191203T142728Z
+      Value: 20200123T105016Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
