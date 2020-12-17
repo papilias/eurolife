@@ -1,0 +1,72 @@
+﻿@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+
+  <section class="center center--650 m-b-32 t-c">
+    <h1 class="m-b-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Title", "Title")</h1>
+  </section>
+
+  <div class="target-group radio-targeted">
+    <div class="target-group__item">
+      <input type="radio" id="me" name="target" value="me" data-title="@Html.Sitecore().Dictionary("EurolifeCalculatorTool/Step1/Options/Me/Title", "Me")">
+      <label for="me"></label>
+
+      <div class="target-group__icon">
+        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-person-white.svg")" />
+      </div>
+
+      <h2 class="target-group__title t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Me/Title", "Me")
+      </h2>
+
+      <div class="target-group__desc t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Me/Description", "Description")
+      </div>
+    </div>
+
+    <div class="target-group__item">
+      <input type="radio" id="family" name="target" value="family" data-title="@Html.Sitecore().Dictionary("EurolifeCalculatorTool/Step1/Options/Family/Title", "Family")">
+      <label for="family"></label>
+      <div class="target-group__icon">
+        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-house-white.svg")" />
+      </div>
+
+      <h2 class="target-group__title t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Family/Title", "Family")
+      </h2>
+
+      <div class="target-group__desc t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Family/Description", "Description")
+      </div>
+    </div>
+    <div class="target-group__item">
+      <input type="radio" id="us" name="target" value="us" data-title="@Html.Sitecore().Dictionary("EurolifeCalculatorTool/Step1/Options/Both/Title", "Both")">
+      <label for="us"></label>
+      <div class="target-group__icon">
+        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-couple-white.svg")" />
+      </div>
+
+      <h2 class="target-group__title t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Both/Title", "Family")
+      </h2>
+
+      <div class="target-group__desc t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Both/Description", "Description")
+      </div>
+    </div>
+    <div class="target-group__item">
+      <input type="radio" id="child" name="target" value="child" data-title="@Html.Sitecore().Dictionary("EurolifeCalculatorTool/Step1/Options/Child/Title", "Child")">
+      <label for="child"></label>
+
+      <div class="target-group__icon">
+        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-child-white.svg")" />
+      </div>
+
+      <h2 class="target-group__title t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Child/Title", "Child")
+      </h2>
+
+      <div class="target-group__desc t-c">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Child/Description", "Description")
+      </div>
+    </div>
+  </div>

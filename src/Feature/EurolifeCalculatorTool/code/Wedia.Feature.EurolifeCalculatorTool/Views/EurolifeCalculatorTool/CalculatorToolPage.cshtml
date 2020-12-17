@@ -1,0 +1,35 @@
+﻿@using Wedia.Feature.EurolifeCalculatorTool
+@using Wedia.Foundation.Dictionary.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@model Sitecore.Data.Items.Item
+
+
+@Html.Partial("~/Views/EurolifeCalculatorTool/Common/Breadcrumb.cshtml")
+
+<section class="m-b-46 center--1100 center">
+  <div id="step-content">
+    @Html.Partial("~/Views/EurolifeCalculatorTool/Steps/Step1.cshtml")
+  </div><!-- End step content-->
+
+  <div class="t-r m-b-48">
+    <a class="btn btn--default btn--dark btn--inactive" id="go-to-next-step"
+       data-itemid="@Model.ID"
+       data-nextstep="step-2" 
+       onclick="showNextStep(this, arguments);">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Next", "Next Button")</a>
+    </div>
+
+  </section>
+
+
+  <section class="center center--920 m-b-112">
+    <div class=" tool-cta">
+      <div class="tool-cta__text color-faded">
+        @if (Model.FieldHasValue(Templates.HasInfoBox.Fields.Description))
+        {
+          @Model.Fields[Templates.HasInfoBox.Fields.Description]
+        }
+      </div>
+
+      @*<a class="tool-cta__tel  color-faded" href="tel:+302109304800">Tηλέφωνο υποστήριξης: 210 9304800</a>*@
+    </div>
+  </section>
