@@ -1,13 +1,11 @@
 ﻿@using Wedia.Feature.EurolifeCalculatorTool
+@using Wedia.Feature.EurolifeCalculatorTool
 @using Wedia.Feature.EurolifeCalculatorTool.Models
 @using Wedia.Foundation.Dictionary.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 
 @model CalculatorToolPageViewModel
 
-
-
-@Model.UserSelection.ItemId
 <section class="center center--650 m-b-32 t-c">
   <h1 class="m-b-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Title", "Title")</h1>
   <p class="color-faded">
@@ -15,68 +13,131 @@
   </p>
 </section>
 
-@*<div class="target-group radio-targeted">
-    <div class="target-group__item">
-      <input type="radio" id="me" name="target" value="me">
-      <label for="me"></label>
+<section class="m-b-46 center--1100 center">
+  <div class="target-group item-targeted">
 
-      <div class="target-group__icon">
-        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-person-white.svg")" />
+    @if (Model.UserSelection.TargetGroup.Key == Constants.Family_Target_Me)
+    {
+      <div class="target-group__item js-parent-target parent-target">
+        <div class="target-group__avatar">
+          <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-man-with-glasses.svg")" />
+        </div>
+
+        <h2 class="target-group__title t-c">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Options/Me", "Me")
+        </h2>
+
+        <div class="target-group__birth">
+          <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
+          <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
+        </div>
+      </div>
+    }
+
+    @if (Model.UserSelection.TargetGroup.Key == Constants.Family_Target_Child)
+    {
+      <div class="target-group__item js-parent-target parent-target">
+        <div class="target-group__avatar">
+          <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-son.svg")" />
+        </div>
+
+        <h2 class="target-group__title t-c">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Options/Child", "Child")
+        </h2>
+
+        <div class="target-group__birth">
+          <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
+          <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
+        </div>
+      </div>
+    }
+
+    @if (Model.UserSelection.TargetGroup.Key == Constants.Family_Target_Us || Model.UserSelection.TargetGroup.Key == Constants.Family_Target_Family)
+    {
+      <div class="target-group__item js-parent-target parent-target target-group--deactive">
+        <div class="target-group__avatar">
+          <span class="symbol symbol--minus js-remove-parent">-</span>
+          <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-man.svg")" />
+          <span class="symbol symbol--plus js-add-parent">+</span>
+        </div>
+
+        <h2 class="target-group__title t-c">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Options/Father", "Father")
+        </h2>
+
+        <div class="relator m-b-32 flexify color-faded target-group__choice">
+          <input type="radio" class="js-radio-choice" id="man-is-primary" name="primary-insured" value="man-is-primary">
+          <label for="man-is-primary">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/PrimaryInsured", "PrimaryInsured")</label>
+        </div>
+
+        <div class="target-group__birth">
+          <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
+          <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
+        </div>
       </div>
 
-      <h2 class="target-group__title t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Me/Title", "Me")
-      </h2>
+      <div class="target-group__item js-parent-target parent-target target-group--deactive">
+        <div class="target-group__avatar">
+          <span class="symbol symbol--minus js-remove-parent">-</span>
+          <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-woman.svg")" />
+          <span class="symbol symbol--plus js-add-parent">+</span>
+        </div>
 
-      <div class="target-group__desc t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Me/Description", "Description")
+        <h2 class="target-group__title t-c">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Options/Mother", "Mother")
+        </h2>
+
+        <div class="relator m-b-32 flexify color-faded target-group__choice">
+          <input type="radio" class="js-radio-choice" id="woman-is-primary" name="primary-insured" value="woman-is-primary">
+          <label for="woman-is-primary">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/PrimaryInsured", "PrimaryInsured")</label>
+        </div>
+
+        <div class="target-group__birth">
+          <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
+          <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
+        </div>
       </div>
-    </div>
+    }
 
-    <div class="target-group__item">
-      <input type="radio" id="family" name="target" value="family">
-      <label for="family"></label>
-      <div class="target-group__icon">
-        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-house-white.svg")" />
-      </div>
 
-      <h2 class="target-group__title t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Family/Title", "Family")
-      </h2>
+    @if (Model.UserSelection.TargetGroup.Key == Constants.Family_Target_Family)
+    {
+      <div class="target-group__item js-target target-group--deactive">
+        <div class="target-group__avatar">
+          <span class="symbol js-symbol symbol--minus">-</span>
+          <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-son.svg")" />
+          <span class="symbol symbol--plus">+</span>
+        </div>
 
-      <div class="target-group__desc t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Family/Description", "Description")
-      </div>
-    </div>
-    <div class="target-group__item">
-      <input type="radio" id="us" name="target" value="us">
-      <label for="us"></label>
-      <div class="target-group__icon">
-        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-couple-white.svg")" />
-      </div>
+        <h2 class="target-group__title t-c">
+          <input type="tel" name="sons-number" class="person-number" id="sons-number" value="0">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Options/Son", "Son")
+        </h2>
 
-      <h2 class="target-group__title t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Both/Title", "Family")
-      </h2>
-
-      <div class="target-group__desc t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Both/Description", "Description")
-      </div>
-    </div>
-    <div class="target-group__item">
-      <input type="radio" id="child" name="target" value="child">
-      <label for="child"></label>
-
-      <div class="target-group__icon">
-        <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-child-white.svg")" />
+        <div class="target-group__birth">
+          <input type="text" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
+          <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
+        </div>
       </div>
 
-      <h2 class="target-group__title t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Child/Title", "Child")
-      </h2>
+      <div class="target-group__item js-target target-group--deactive">
+        <div class="target-group__avatar">
+          <span class="symbol js-symbol symbol--minus">-</span>
+          <img src="@Url.Content("~/images/EurolifeCalculatorTool/icon-daughter.svg")" />
+          <span class="symbol symbol--plus">+</span>
+        </div>
 
-      <div class="target-group__desc t-c">
-        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step1/Options/Child/Description", "Description")
+        <h2 class="target-group__title t-c">
+          <input type="text" name="daughters-number" class="person-number" id="daughters-number" value="0">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Options/Daughter", "Daughter")
+        </h2>
+
+        <div class="target-group__birth">
+          <input type="text" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
+          <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
+        </div>
       </div>
-    </div>
-  </div>*@
+    }
+
+  </div>
+</section>

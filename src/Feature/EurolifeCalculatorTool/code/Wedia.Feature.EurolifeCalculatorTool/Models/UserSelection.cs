@@ -29,7 +29,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
 
   public class FamilyMember : BaseSelection
   {
-    public bool IsPrimary { get; set; }
+    public bool IsPrimaryInsured { get; set; }
     public DateTime BirthDate { get; set; }
   }
 
