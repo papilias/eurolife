@@ -8,6 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Wedia.Feature.EurolifeCalculatorTool.Models;
+using Wedia.Feature.EurolifeCalculatorTool.Repositories;
 using Wedia.Foundation.SitecoreExtensions.Utilities;
 
 namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
@@ -15,7 +16,12 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
   public class EurolifeCalculatorToolController : Controller
   {
     protected readonly Dictionary<string, string> mappings;
+    private readonly IEurolifeCalulatorToolRepository _eurolifeCalulatorToolRepository;
 
+    public EurolifeCalculatorToolController(IEurolifeCalulatorToolRepository eurolifeCalulatorToolRepository)
+    {
+      this._eurolifeCalulatorToolRepository = eurolifeCalulatorToolRepository;
+    }
 
     public EurolifeCalculatorToolController()
     {
@@ -26,8 +32,22 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
 
     public ActionResult CalculatorToolPage()
     {
-      var item = RenderingContext.Current.Rendering.Item;     
-      return View("CalculatorToolPage", item);
+      try
+      {
+        var item = RenderingContext.Current.Rendering.Item;
+        var targetGroups = _eurolifeCalulatorToolRepository.GetTargetGroups(item);
+        var viewModel = new CalculatorToolPageViewModel
+        {
+          RenderingItem = item,
+          AvailableTargetGroups = targetGroups
+        };
+        return View("CalculatorToolPage", viewModel);
+      }
+      catch (Exception ex)
+      {
+        Log.Error("CalculatorToolPage exception", ex, this);
+        throw ex;
+      }
     }
 
     [HttpPost]

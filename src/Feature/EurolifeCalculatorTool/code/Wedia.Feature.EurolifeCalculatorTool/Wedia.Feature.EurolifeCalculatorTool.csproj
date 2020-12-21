@@ -206,9 +206,13 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\EurolifeCalculatorToolController.cs" />
     <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\CalculatorToolPageViewModel.cs" />
+    <Compile Include="Models\TargetGroup.cs" />
     <Compile Include="Models\UserSelection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EurolifeCalulatorToolRepository.cs" />
+    <Compile Include="Repositories\IEurolifeCalulatorToolRepository.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
