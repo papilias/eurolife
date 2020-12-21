@@ -11,6 +11,8 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
     public Item RenderingItem { get; set; }
     public IEnumerable<TargetGroup> AvailableTargetGroups { get; set; }
     public IEnumerable<FamilyMember> AvailableFamilyMembers { get; set; }
+    public IEnumerable<BaseEntity> AvailableAmounts { get; set; }
+    public IEnumerable<BaseEntity> AvailableHospitalizations { get; set; }
     public UserSelection UserSelection { get; set; }
   }
 }

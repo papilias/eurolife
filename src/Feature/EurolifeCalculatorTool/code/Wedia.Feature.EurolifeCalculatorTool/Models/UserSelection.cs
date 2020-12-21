@@ -16,16 +16,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
     //public Bundle Bundle { get; set; }
   }
 
-  //public class BaseSelection
-  //{
-  //  public string Key { get; set; }
-  //  public string Value { get; set; }
-  //}
-
-  //public class TargetGroup : BaseSelection
-  //{
-
-  //}
 
   //public class FamilyMember : BaseSelection
   //{

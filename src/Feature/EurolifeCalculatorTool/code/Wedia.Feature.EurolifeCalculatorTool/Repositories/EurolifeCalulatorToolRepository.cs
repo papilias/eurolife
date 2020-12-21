@@ -84,6 +84,51 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       return list;
     }
 
+    public IEnumerable<BaseEntity> GetAvailableAmounts(Item contextItem)
+    {
+      var amountsList = contextItem
+                            .Children.Where(x => x.TemplateID == Templates.AmountsList.ID)
+                            .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var amountItems = amountsList
+                             .Children.Where(x => x.TemplateID == Templates.Amount.ID)
+                             .ToList() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var list = new List<BaseEntity>();
+
+      foreach (var item in amountItems)
+        list.Add(MappingBaseEntityItem(item));
+
+      return list;
+    }
+
+    public IEnumerable<BaseEntity> GetAvailableHospitalizations(Item contextItem)
+    {
+      var hospitalizationList = contextItem
+                            .Children.Where(x => x.TemplateID == Templates.HospitalizationList.ID)
+                            .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var hospitalizationItems = hospitalizationList
+                             .Children.Where(x => x.TemplateID == Templates.Hospitalization.ID)
+                             .ToList() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var list = new List<BaseEntity>();
+
+      foreach (var item in hospitalizationItems)
+        list.Add(MappingBaseEntityItem(item));
+
+      return list;
+    }
+
+    private BaseEntity MappingBaseEntityItem(Item item)
+    {
+      return new BaseEntity
+      {
+        Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),
+        Key = item.Fields[Templates.HasKey.Fields.Key].ToString()       
+      };
+    }
+
     private TargetGroup MappingTargetGroupItem(Item item)
     {
       return new TargetGroup 

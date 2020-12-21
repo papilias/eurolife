@@ -53,11 +53,15 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
         var item = Context.Database.GetItem(new ID(userSelection.ItemId));
         var stepView = mappings[userSelection.Step];
         var availableFamilyMembers = _eurolifeCalulatorToolRepository.GetAvailableFamilyMembers(item, userSelection.TargetGroup.Key);
+        var availableAmounts= _eurolifeCalulatorToolRepository.GetAvailableAmounts(item);
+        var availableHospitalizations = _eurolifeCalulatorToolRepository.GetAvailableHospitalizations(item);
 
         var viewModel = new CalculatorToolPageViewModel
         {
           RenderingItem = item,
           AvailableFamilyMembers = availableFamilyMembers,
+          AvailableAmounts = availableAmounts,
+          AvailableHospitalizations = availableHospitalizations,
           UserSelection = userSelection
         };
 
