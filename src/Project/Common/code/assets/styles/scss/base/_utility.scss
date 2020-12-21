@@ -401,19 +401,5 @@
     display: block;
     color: #ff0000;
     font-weight: 800;
-
-    &:after {
-      content: "";
-      width: 22px;
-      background-image: url("../images/arrow-right.svg");
-      margin-left: 15px;
-      color: #ffab03;
-      vertical-align: middle;
-      height: 16px;
-      display: inline-block;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position:50%;
-    }
   }
 } 
