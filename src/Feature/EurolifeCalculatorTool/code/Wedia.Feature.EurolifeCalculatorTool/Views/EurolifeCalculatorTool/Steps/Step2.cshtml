@@ -17,14 +17,19 @@
   <div class="target-group item-targeted">
     @foreach (var familyMember in Model.AvailableFamilyMembers)
     {
-      <div class="target-group__item js-parent-target parent-target" data-key="@familyMember.Key">
+      <div class="target-group__item @RenderTargetGroupClasses(Model.UserSelection.TargetGroup, familyMember)" data-key="@familyMember.Key">
         <div class="target-group__avatar">
+          @renderMinus(Model.UserSelection.TargetGroup, familyMember)
           <img src="@familyMember.Image" />
+          @renderPlus(Model.UserSelection.TargetGroup, familyMember)
         </div>
 
         <h2 class="target-group__title t-c">
-         @familyMember.Title
+          @renderPersonNumber(Model.UserSelection.TargetGroup, familyMember)
+          @familyMember.Title
         </h2>
+
+        @renderPrimaryInsurance(Model.UserSelection.TargetGroup, familyMember)
 
         <div class="target-group__birth">
           <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
@@ -34,3 +39,105 @@
     }
   </div>
 </section>
+
+@helper renderMinus(TargetGroup targetGroup, FamilyMember familyMember)
+{
+  if (targetGroup.Key == Constants.Family_Target_Family)
+  {
+    if (familyMember.Key == Constants.Family_Member_Father
+    || familyMember.Key == Constants.Family_Member_Mother)
+    {
+      <span class="symbol symbol--minus js-remove-parent">-</span>
+    }
+
+    if (familyMember.Key == Constants.Family_Member_Son
+    || familyMember.Key == Constants.Family_Member_Daughter)
+    {
+      <span class="symbol js-symbol symbol--minus">-</span>
+    }
+  }
+}
+
+@helper renderPlus(TargetGroup targetGroup, FamilyMember familyMember)
+{
+  if (targetGroup.Key == Constants.Family_Target_Family)
+  {
+    if (familyMember.Key == Constants.Family_Member_Father
+    || familyMember.Key == Constants.Family_Member_Mother)
+    {
+      <span class="symbol symbol--plus js-add-parent">+</span>
+    }
+
+    if (familyMember.Key == Constants.Family_Member_Son
+    || familyMember.Key == Constants.Family_Member_Daughter)
+    {
+      <span class="symbol symbol--plus">+</span>
+    }
+  }
+}
+
+@helper renderPersonNumber(TargetGroup targetGroup, FamilyMember familyMember)
+{
+  if (targetGroup.Key == Constants.Family_Target_Family)
+  {
+
+    if (familyMember.Key == Constants.Family_Member_Son)
+    {
+      <input type="tel" name="sons-number" class="person-number" id="sons-number" value="0">
+
+    }
+    else if (familyMember.Key == Constants.Family_Member_Daughter)
+    {
+      <input type="text" name="daughters-number" class="person-number" id="daughters-number" value="0">
+
+    }
+  }
+}
+
+@helper renderPrimaryInsurance(TargetGroup targetGroup, FamilyMember familyMember)
+{
+  if (targetGroup.Key == Constants.Family_Target_Family || targetGroup.Key == Constants.Family_Target_Us)
+  {
+
+    if (familyMember.Key == Constants.Family_Member_Father)
+    {
+      <div class="relator m-b-32 flexify color-faded target-group__choice">
+        <input type="radio" class="js-radio-choice" id="man-is-primary" name="primary-insured" value="man-is-primary" checked>
+        <label for="man-is-primary">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/PrimaryInsured", "PrimaryInsured")</label>
+      </div>
+
+    }
+    else if (familyMember.Key == Constants.Family_Member_Mother)
+    {
+      <div class="relator m-b-32 flexify color-faded target-group__choice">
+        <input type="radio" class="js-radio-choice" id="woman-is-primary" name="primary-insured" value="woman-is-primary">
+        <label for="woman-is-primary">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/PrimaryInsured", "PrimaryInsured")</label>
+      </div>
+
+    }
+  }
+}
+
+
+@functions {
+
+  public static string RenderTargetGroupClasses(TargetGroup targetGroup, FamilyMember familyMember)
+  {
+    string classes = string.Empty;
+    if (targetGroup.Key == Constants.Family_Target_Family)
+    {
+      if (familyMember.Key == Constants.Family_Member_Father
+      || familyMember.Key == Constants.Family_Member_Mother)
+      {
+        classes += "js-parent-target parent-target target-group--deactive";
+      }
+
+      if (familyMember.Key == Constants.Family_Member_Son
+      || familyMember.Key == Constants.Family_Member_Daughter)
+      {
+        classes += "js-target target-group--deactive";
+      }
+    }
+    return classes;
+  }
+}

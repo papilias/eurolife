@@ -59,26 +59,26 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       //filter list based on targetGroupKey
       if(targetGroupKey == Constants.Family_Target_Me)
       {
-        list.RemoveAll(x => x.Key != Constants.Family_Target_Me);
+        list.RemoveAll(x => x.Key != Constants.Family_Member_Me);
       }
 
       if (targetGroupKey == Constants.Family_Target_Child)
       {
-        list.RemoveAll(x => x.Key != Constants.Family_Target_Child);
+        list.RemoveAll(x => x.Key != Constants.Family_Member_Child);
       }
 
       if (targetGroupKey == Constants.Family_Target_Us)
       {
-        list.RemoveAll(x => x.Key != Constants.Family_Target_Father 
-                         && x.Key != Constants.Family_Target_Mother);
+        list.RemoveAll(x => x.Key != Constants.Family_Member_Father 
+                         && x.Key != Constants.Family_Member_Mother);
       }
 
       if (targetGroupKey == Constants.Family_Target_Family)
       {
-        list.RemoveAll(x => x.Key != Constants.Family_Target_Father
-                         && x.Key != Constants.Family_Target_Mother
-                         && x.Key != Constants.Family_Target_Son
-                         && x.Key != Constants.Family_Target_Daughter);
+        list.RemoveAll(x => x.Key != Constants.Family_Member_Father
+                         && x.Key != Constants.Family_Member_Mother
+                         && x.Key != Constants.Family_Member_Son
+                         && x.Key != Constants.Family_Member_Daughter);
       }
 
       return list;

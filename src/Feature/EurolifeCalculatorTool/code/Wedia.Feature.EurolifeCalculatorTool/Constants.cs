@@ -11,9 +11,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool
     public const string Family_Target_Family = "family";
     public const string Family_Target_Us = "us";
     public const string Family_Target_Child = "child";
-    public const string Family_Target_Mother = "mother";
-    public const string Family_Target_Father = "father";
-    public const string Family_Target_Son = "son";
-    public const string Family_Target_Daughter = "daughter";
+    public const string Family_Member_Mother = "mother";
+    public const string Family_Member_Father = "father";
+    public const string Family_Member_Son = "son";
+    public const string Family_Member_Daughter = "daughter";
+    public const string Family_Member_Me = "me";
+    public const string Family_Member_Child = "child";
   }
 }
