@@ -9,6 +9,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 {
   public interface IEurolifeCalulatorToolRepository
   {
-    IEnumerable<Models.TargetGroup> GetTargetGroups(Item contextItem);
+    IEnumerable<Models.TargetGroup> GetAvailableTargetGroups(Item contextItem);
+    IEnumerable<Models.FamilyMember> GetAvailableFamilyMembers(Item contextItem, string targetGroupKey);
   }
 }

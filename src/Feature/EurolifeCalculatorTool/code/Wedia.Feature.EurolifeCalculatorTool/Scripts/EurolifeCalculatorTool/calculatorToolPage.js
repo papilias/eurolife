@@ -11,7 +11,7 @@ var userSelection = [];
   //step1 - select target
 $('[name="target"]').change(function (e) { 
   //save selection to an object
-  let targetGroup = { key: $(this).val(), value: $(this).data('title') };
+  let targetGroup = { key: $(this).val(), title: $(this).data('title') };
   userSelection = { targetGroup : targetGroup};
 
   console.log({ userSelection });

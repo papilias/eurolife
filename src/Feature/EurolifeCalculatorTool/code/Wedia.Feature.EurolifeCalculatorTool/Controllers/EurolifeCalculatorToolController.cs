@@ -21,25 +21,20 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
     public EurolifeCalculatorToolController(IEurolifeCalulatorToolRepository eurolifeCalulatorToolRepository)
     {
       this._eurolifeCalulatorToolRepository = eurolifeCalulatorToolRepository;
-    }
-
-    public EurolifeCalculatorToolController()
-    {
       mappings = new Dictionary<string, string>();
       StepsViewMappings();
     }
-
 
     public ActionResult CalculatorToolPage()
     {
       try
       {
         var item = RenderingContext.Current.Rendering.Item;
-        var targetGroups = _eurolifeCalulatorToolRepository.GetTargetGroups(item);
+        var availableTargetGroups = _eurolifeCalulatorToolRepository.GetAvailableTargetGroups(item);
         var viewModel = new CalculatorToolPageViewModel
         {
           RenderingItem = item,
-          AvailableTargetGroups = targetGroups
+          AvailableTargetGroups = availableTargetGroups
         };
         return View("CalculatorToolPage", viewModel);
       }
@@ -51,15 +46,24 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
     }
 
     [HttpPost]
-    public ActionResult LoadNextStep(UserSelection userSelection/*, string itemID, string step*/)
+    public ActionResult LoadNextStep(UserSelection userSelection)
     {
       try
       {
         var item = Context.Database.GetItem(new ID(userSelection.ItemId));
         var stepView = mappings[userSelection.Step];
+        var availableFamilyMembers = _eurolifeCalulatorToolRepository.GetAvailableFamilyMembers(item, userSelection.TargetGroup.Key);
+
+        var viewModel = new CalculatorToolPageViewModel
+        {
+          RenderingItem = item,
+          AvailableFamilyMembers = availableFamilyMembers,
+          UserSelection = userSelection
+        };
+
         var partial = Utilities.RenderRazorViewToString(ControllerContext, 
           stepView,
-          new CalculatorToolPageViewModel { RenderingItem = item, UserSelection = userSelection });
+          viewModel);
         return Json(partial, JsonRequestBehavior.AllowGet);
       }
       catch (Exception ex)

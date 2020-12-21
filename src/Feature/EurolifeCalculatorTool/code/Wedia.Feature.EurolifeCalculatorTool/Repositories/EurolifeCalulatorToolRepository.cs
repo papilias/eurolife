@@ -21,9 +21,9 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       {       
         AlwaysIncludeServerUrl = false
       };
-    }
+    }    
 
-    public IEnumerable<TargetGroup> GetTargetGroups(Item contextItem)
+    public IEnumerable<TargetGroup> GetAvailableTargetGroups(Item contextItem)
     {
       var targetGroupList = contextItem
                             .Children.Where(x => x.TemplateID == Templates.TargetGroupList.ID)
@@ -41,6 +41,48 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       return list;
     }
 
+    public IEnumerable<FamilyMember> GetAvailableFamilyMembers(Item contextItem, string targetGroupKey)
+    {
+      var familyMembersList = contextItem
+                            .Children.Where(x => x.TemplateID == Templates.FamilyMembersList.ID)
+                            .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var familyMemberItems = familyMembersList
+                             .Children.Where(x => x.TemplateID == Templates.FamilyMember.ID)
+                             .ToList() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var list = new List<FamilyMember>();
+
+      foreach (var item in familyMemberItems)
+        list.Add(MappingFamilyMemberItem(item));
+
+      //filter list based on targetGroupKey
+      if(targetGroupKey == Constants.Family_Target_Me)
+      {
+        list.RemoveAll(x => x.Key != Constants.Family_Target_Me);
+      }
+
+      if (targetGroupKey == Constants.Family_Target_Child)
+      {
+        list.RemoveAll(x => x.Key != Constants.Family_Target_Child);
+      }
+
+      if (targetGroupKey == Constants.Family_Target_Us)
+      {
+        list.RemoveAll(x => x.Key != Constants.Family_Target_Father 
+                         && x.Key != Constants.Family_Target_Mother);
+      }
+
+      if (targetGroupKey == Constants.Family_Target_Family)
+      {
+        list.RemoveAll(x => x.Key != Constants.Family_Target_Father
+                         && x.Key != Constants.Family_Target_Mother
+                         && x.Key != Constants.Family_Target_Son
+                         && x.Key != Constants.Family_Target_Daughter);
+      }
+
+      return list;
+    }
 
     private TargetGroup MappingTargetGroupItem(Item item)
     {
@@ -49,6 +91,18 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
         Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),
         Key = item.Fields[Templates.HasKey.Fields.Key].ToString(),
         Description = item.Fields[Templates.HasDescription.Fields.Description].ToString(),
+        Image = item.FieldHasValue(Templates.HasImage.Fields.Image)
+          ? item.ImageUrl(Templates.HasImage.Fields.Image, _mediaUrlOptions)
+          : string.Empty
+      };
+    }
+
+    private FamilyMember MappingFamilyMemberItem(Item item)
+    {
+      return new FamilyMember
+      {
+        Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),
+        Key = item.Fields[Templates.HasKey.Fields.Key].ToString(),       
         Image = item.FieldHasValue(Templates.HasImage.Fields.Image)
           ? item.ImageUrl(Templates.HasImage.Fields.Image, _mediaUrlOptions)
           : string.Empty

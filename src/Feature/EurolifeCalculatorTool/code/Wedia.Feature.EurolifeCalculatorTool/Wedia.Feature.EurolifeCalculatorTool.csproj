@@ -208,6 +208,7 @@
     <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\CalculatorToolPageViewModel.cs" />
+    <Compile Include="Models\FamilyMember.cs" />
     <Compile Include="Models\TargetGroup.cs" />
     <Compile Include="Models\UserSelection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
