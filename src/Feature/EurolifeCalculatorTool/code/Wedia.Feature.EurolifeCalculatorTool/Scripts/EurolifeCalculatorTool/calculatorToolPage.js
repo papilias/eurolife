@@ -168,4 +168,50 @@ function step2Validity() {
 function initializeStep3() {
   //clear common button wrapper
   $('#common-button-wrapper').html('');
+
+
+  //range
+  var sheet = document.createElement('style'),
+    $rangeInput = $('.range input'),
+    prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+
+  document.body.appendChild(sheet);
+
+  var getTrackStyle = function (el) {
+    console.log(el.getAttribute('data-index'))
+    var curVal = el.value,
+      val = (el.getAttribute('data-index') - 1) * 25,
+      style = '';
+
+    // Set active label
+    $('.range-labels li').removeClass('active selected');
+    console.log(curVal)
+    var curLabel = $('.range-labels').find('[data-value="' + curVal + '"]');
+
+    curLabel.addClass('active selected');
+    curLabel.prevAll().addClass('selected');
+
+    // Change background gradient
+    for (var i = 0; i < prefs.length; i++) {
+      style += '.range {background: linear-gradient(to right, #383B38 0%, #37adbf ' + val + '%, #fff ' + val + '%, #fff 100%)}';
+      style += '.range input::-' + prefs[i] + '{background: linear-gradient(to right, #383B38 0%, #383B38 ' + val + '%, #b2b2b2 ' + val + '%, #b2b2b2 100%)}';
+    }
+
+    return style;
+  }
+
+  $rangeInput.on('input', function () {
+    sheet.textContent = getTrackStyle(this);
+  });
+
+  // Change input value on label click
+  $('.range-labels li').on('click', function () {
+    var index = $(this).index();
+    // console.log($(this).attr('data-value'))
+    $rangeInput.attr('data-index', $(this).attr('data-liindex'));
+    $rangeInput.val($(this).attr('data-value')).trigger('input');
+
+
+  });
+
 }

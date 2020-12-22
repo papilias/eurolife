@@ -1,6 +1,7 @@
 ﻿@using Wedia.Feature.EurolifeCalculatorTool.Models
 @using Wedia.Foundation.Dictionary.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
+@using System.Linq
 
 @model CalculatorToolPageViewModel
 
@@ -26,43 +27,31 @@
     </div>
 
     <ul class="range-labels">
-      @foreach (var amount in Model.AvailableAmounts)
+      @foreach (var item in Model.AvailableAmounts.Select((value,i) => new { i, value}))
       {
-        <li data-value="@amount.Key" data-liindex="">@amount.Title</li>
-      }
-      @*<li class="active selected" data-value="10000" data-liindex="0">10.000€</li>
-    <li data-value="6000" data-liindex="2">6.000€</li>
-    <li data-value="1500" data-liindex="3">1.500€</li>
-    <li data-value="750" data-liindex="4">750€</li>
-    <li data-value="0" data-liindex="5">0</li>*@
+        <li class="@(item.i == 0 ? "active selected" : null)" data-value="@item.value.Key" data-liindex="@item.i">@item.value.Title</li>
+      }    
     </ul>
 
     <div class="note color-faded">
       @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step3/ParticipationInfo", "Participation info")
     </div>
-    </div>
+  </div>
 
   <h2 class="h5 m-b-16">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step3/HospitalizationTitle", "Hospitalization Title")</h2>
 
-    <div class="radio-bordered flexify m-b-64">
-      @foreach (var hospitalization in Model.AvailableHospitalizations)
-      {
-        <div class="radio-bordered__wrap">
-          <input type="radio" id="@hospitalization.Key" name="room-offer">
-          <label for="room-radio-1">@hospitalization.Title</label>
-        </div>
-      }
-      @*<div class="radio-bordered__wrap">
-        <input type="radio" id="room-radio-1" name="room-offer" checked="checked">
-        <label for="room-radio-1">Μονόκλινο</label>
-      </div>
+  <div class="radio-bordered flexify m-b-64">
+    @foreach (var hospitalization in Model.AvailableHospitalizations)
+    {
       <div class="radio-bordered__wrap">
-        <input type="radio" id="room-radio-2" name="room-offer" checked="checked">
-        <label for="room-radio-2">Δίκλινο</label>
-      </div>*@
-    </div>
-    <div class="actions__links-t-l m-b-64 t-r">
-      <a class="btn btn--dark btn--default">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Calculation", "Calculation")</a>
-    </div>
+        <input type="radio" id="@hospitalization.Key" name="room-offer" checked="checked">
+        <label for="@hospitalization.Key">@hospitalization.Title</label>
+      </div>
+    }
+   
+  </div>
+  <div class="actions__links-t-l m-b-64 t-r">
+    <a class="btn btn--dark btn--default">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Calculation", "Calculation")</a>
+  </div>
 
-  </section>
+</section>
