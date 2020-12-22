@@ -1,4 +1,5 @@
 ﻿const loadNextStepURL = 'api/feature/eurolifecalculatortool/load-next-step';
+const getProductsURL = 'api/feature/eurolifecalculatortool/get-products';
 const nextButton = $('#go-to-next-step'); 
 const stepContent = $('#step-content');
 const step1 = 'step-1';
@@ -63,6 +64,30 @@ function showNextStep(e) {
     }
   });
 }
+
+function getProducts(e) {
+  console.log('dataset');
+  console.log(e.dataset);
+ 
+  console.log({ userSelection });
+
+
+  $.ajax({
+    type: 'POST',
+    url: `${getProductsURL}`,
+    contentType: 'application/json; charset=utf-8',
+    cache: false,
+    data: JSON.stringify(userSelection),
+    success: function (response) {
+      console.log(response);
+    },
+    error: function (error) {
+      console.log(error);
+    }
+  });
+}
+
+
 
 function nextButtonActive() {
   nextButton.removeClass('btn--inactive');

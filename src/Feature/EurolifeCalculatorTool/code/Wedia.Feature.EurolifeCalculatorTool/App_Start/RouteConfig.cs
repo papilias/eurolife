@@ -13,6 +13,9 @@ namespace Wedia.Feature.EurolifeCalculatorTool
     {    
       routes.MapRoute("eurolifecalculatortool-next-step", "api/feature/eurolifecalculatortool/load-next-step",
         new {controller = "EurolifeCalculatorTool", action = "LoadNextStep"});
+
+      routes.MapRoute("eurolifecalculatortool-get-products", "api/feature/eurolifecalculatortool/get-products",
+       new { controller = "EurolifeCalculatorTool", action = "GetProducts" });
     }
   }
 }
