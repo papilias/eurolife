@@ -1,10 +1,12 @@
 ﻿const loadNextStepURL = 'api/feature/eurolifecalculatortool/load-next-step';
 const getProductsURL = 'api/feature/eurolifecalculatortool/get-products';
 const nextButton = $('#go-to-next-step'); 
+const calculationButton = $('#get-product'); 
 const stepContent = $('#step-content');
 const step1 = 'step-1';
 const step2 = 'step-2';
 const step3 = 'step-3';
+const step4 = 'step-4';
 var loading = false;
 
 var userSelection = [];
@@ -66,11 +68,23 @@ function showNextStep(e) {
 }
 
 function getProducts(e) {
-  console.log('dataset');
-  console.log(e.dataset);
+  var selectedAmount = $('ul.range-labels li[class="active selected"]');
+  let amount = { key: $(selectedAmount).data('value'), title: $(selectedAmount).text(), guiid: $(selectedAmount).data('guiid') };
+
+  userSelection.amount = amount;
+
+  var roomoffer = $("input[name=room-offer]");
+  var checkedRoom = roomoffer.filter(":checked");
+  let hospitalization = { key: $(checkedRoom).attr('id'), title: $(checkedRoom).data('title'), guiid: $(checkedRoom).data('guiid') };
+
+  userSelection.hospitalization = hospitalization;  
+  userSelection.step = step4;
  
   console.log({ userSelection });
 
+  loading = true;
+  calculationButton.prop('disabled', loading);
+  calculationButton.addClass('btn--inactive');
 
   $.ajax({
     type: 'POST',
@@ -79,10 +93,17 @@ function getProducts(e) {
     cache: false,
     data: JSON.stringify(userSelection),
     success: function (response) {
-      console.log(response);
+      stepContent.html(response);
+      loading = false;
+      breadcrumbStepActive(step4);
+      calculationButton.prop('disabled', loading);
+      calculationButton.removeClass('btn--inactive');
     },
     error: function (error) {
       console.log(error);
+      loading = false;     
+      calculationButton.prop('disabled', loading);
+      calculationButton.removeClass('btn--inactive');
     }
   });
 }
@@ -239,4 +260,40 @@ function initializeStep3() {
 
   });
 
+}
+
+function SelectProgram(e) {
+  //leave one program selected
+  const items = document.querySelectorAll(".pick__item");
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    item.classList.remove("pick__item--selected");
+  }
+
+  e.closest('.pick__item').classList.add('pick__item--selected');
+}
+
+function ExpandProgram(e) {
+  //expand program
+  e.parentElement.parentElement.classList.toggle('pick-on');
+}
+
+function ActivateExtras(e) {
+  //activate extras
+  const items = document.querySelectorAll(".product-extra-radio");
+  const extras = document.getElementsByClassName("pick--extras");
+  //console.log(extras)
+  if (extras.length > 0) extras[0].classList.toggle('pick--extras__deactive');
+
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+
+    if (e.checked == true) {
+      item.removeAttribute("disabled");
+    }
+    else {
+      item.setAttribute("disabled", "disabled");
+      item.checked = false;
+    }
+  }
 }

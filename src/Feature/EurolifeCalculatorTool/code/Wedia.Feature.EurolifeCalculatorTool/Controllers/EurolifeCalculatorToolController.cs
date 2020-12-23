@@ -86,30 +86,29 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
     {
       try
       {
-        //var item = Context.Database.GetItem(new ID(userSelection.ItemId));
-        //var stepView = mappings[userSelection.Step];      
+        var item = Context.Database.GetItem(new ID(userSelection.ItemId));
+        var stepView = mappings[userSelection.Step];
 
-        //var viewModel = new CalculatorToolPageViewModel
-        //{
-        //  RenderingItem = item,         
-        //  UserSelection = userSelection
-        //};
+        var product = _eurolifeCalulatorToolRepository.GetProductWithPrices(item, userSelection);
 
-        //var partial = Utilities.RenderRazorViewToString(ControllerContext,
-        //  stepView,
-        //  viewModel);
+        var viewModel = new OfferViewModel { Product = product };      
 
-        var completeUrl = "https://esbtestna.eurolife.gr/LifeWebApi/api/HospitalApi/GetMainInsuredHealthCoversOptions";
+       
+        //var completeUrl = "https://esbtestna.eurolife.gr/LifeWebApi/api/HospitalApi/GetMainInsuredHealthCoversOptions";
 
-        var jsondata = "{'Header':{'ServicesVersion':'1','CultureName':'GR','TimeDiff':null},'MainInsured':{'Lastname':null,'FirstName':null,'FatherName':null,'Age':40,'BirthDate':'1980-12-12','Profession':1000,'ProfessionCategory':1,'ProfessionDescription':'','MinBirthDate':null,'MaxBirthDate':null,'Sex':0,'Email':null,'Relationship':null,'Addresses':null,'Afm':null,'Adt':null,'Doy':0,'ID':0,'Amka':null,'Height':null,'Weight':null,'Mobile':null,'Nationality':null,'ADTCOUNTRY':null,'BRCOUNTRY':null,'ConsentSensitiveData':null,'consentsERB':null,'consentsThirdParty':null,'IsCustomer':true,'LegalPerson':false,'LegalType':0,'LegalRep':null,'DisplayedAge':null},'ProductCode':1,'CovCode':30276}";
+        //var jsondata = "{'Header':{'ServicesVersion':'1','CultureName':'GR','TimeDiff':null},'MainInsured':{'Lastname':null,'FirstName':null,'FatherName':null,'Age':40,'BirthDate':'1980-12-12','Profession':1000,'ProfessionCategory':1,'ProfessionDescription':'','MinBirthDate':null,'MaxBirthDate':null,'Sex':0,'Email':null,'Relationship':null,'Addresses':null,'Afm':null,'Adt':null,'Doy':0,'ID':0,'Amka':null,'Height':null,'Weight':null,'Mobile':null,'Nationality':null,'ADTCOUNTRY':null,'BRCOUNTRY':null,'ConsentSensitiveData':null,'consentsERB':null,'consentsThirdParty':null,'IsCustomer':true,'LegalPerson':false,'LegalType':0,'LegalRep':null,'DisplayedAge':null},'ProductCode':1,'CovCode':30276}";
 
-        var model = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Api.MainInsuredHealthCovers>(jsondata);
+        //var model = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Api.MainInsuredHealthCovers>(jsondata);
 
 
-        var result = await _requestService.PostAsync(completeUrl, model);
+        //var result = await _requestService.PostAsync(completeUrl, model);
 
 
-        return Json("OK", JsonRequestBehavior.AllowGet);
+        var partial = Utilities.RenderRazorViewToString(ControllerContext,
+          stepView,
+          viewModel);
+
+        return Json(partial, JsonRequestBehavior.AllowGet);
       }
       catch (Exception ex)
       {
@@ -123,6 +122,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
       mappings.Add("step-1", "~/Views/EurolifeCalculatorTool/Steps/Step1.cshtml");
       mappings.Add("step-2", "~/Views/EurolifeCalculatorTool/Steps/Step2.cshtml");
       mappings.Add("step-3", "~/Views/EurolifeCalculatorTool/Steps/Step3.cshtml");     
+      mappings.Add("step-4", "~/Views/EurolifeCalculatorTool/Steps/Step4.cshtml");     
     }
 
   }

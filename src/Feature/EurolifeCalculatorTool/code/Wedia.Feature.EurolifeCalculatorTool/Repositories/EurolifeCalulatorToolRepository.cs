@@ -84,7 +84,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       return list;
     }
 
-    public IEnumerable<BaseEntity> GetAvailableAmounts(Item contextItem)
+    public IEnumerable<Amount> GetAvailableAmounts(Item contextItem)
     {
       var amountsList = contextItem
                             .Children.Where(x => x.TemplateID == Templates.AmountsList.ID)
@@ -94,15 +94,15 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
                              .Children.Where(x => x.TemplateID == Templates.Amount.ID)
                              .ToList() ?? throw new ArgumentNullException(nameof(contextItem));
 
-      var list = new List<BaseEntity>();
+      var list = new List<Amount>();
 
       foreach (var item in amountItems)
-        list.Add(MappingBaseEntityItem(item));
+        list.Add(MappingAmountEntityItem(item));
 
       return list;
     }
 
-    public IEnumerable<BaseEntity> GetAvailableHospitalizations(Item contextItem)
+    public IEnumerable<Hospitalization> GetAvailableHospitalizations(Item contextItem)
     {
       var hospitalizationList = contextItem
                             .Children.Where(x => x.TemplateID == Templates.HospitalizationList.ID)
@@ -112,20 +112,69 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
                              .Children.Where(x => x.TemplateID == Templates.Hospitalization.ID)
                              .ToList() ?? throw new ArgumentNullException(nameof(contextItem));
 
-      var list = new List<BaseEntity>();
+      var list = new List<Hospitalization>();
 
       foreach (var item in hospitalizationItems)
-        list.Add(MappingBaseEntityItem(item));
+        list.Add(MappingHospitalizationEntityItem(item));
 
       return list;
     }
 
-    private BaseEntity MappingBaseEntityItem(Item item)
+    public Product GetProductWithPrices(Item contextItem, UserSelection userSelection)
     {
-      return new BaseEntity
+      var product = new Product();
+
+      var productsList = contextItem
+                            .Children.Where(x => x.TemplateID == Templates.ProductsList.ID)
+                            .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var availableProduct = productsList.Children.Where(x => x.TemplateID == Templates.Product.ID
+      && x.Fields[Templates.HasProductContent.Fields.Amount].ToString() == userSelection.Amount.GuiId
+      && x.Fields[Templates.HasProductContent.Fields.Hospitalization].ToString() == userSelection.Hospitalization.GuiId)
+      .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      product = MappingProductEntityItem(availableProduct);
+
+      return product;
+    }
+
+    private Product MappingProductEntityItem(Item item)
+    {
+      var amountField = item.Fields[Templates.HasProductContent.Fields.Amount];
+      var amountItem = Sitecore.Context.Database.GetItem(amountField.Value);
+
+      var hospitalizationField = item.Fields[Templates.HasProductContent.Fields.Hospitalization];
+      var hospitalizationItem = Sitecore.Context.Database.GetItem(hospitalizationField.Value);
+
+      return new Product
       {
         Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),
-        Key = item.Fields[Templates.HasKey.Fields.Key].ToString()       
+        Key = item.Fields[Templates.HasKey.Fields.Key].ToString(),
+        RTE = item.Field(Templates.HasProductContent.Fields.RTE),
+        Amount = amountItem.Fields[Templates.HasTitle.Fields.Title].ToString(),
+        Hospitalization = hospitalizationItem.Fields[Templates.HasTitle.Fields.Title].ToString(),
+        DependentMembersProductKey = item.Fields[Templates.HasProductContent.Fields.DependentMembersProductKey].ToString(),
+        AdditonalProductKey = item.Fields[Templates.HasProductContent.Fields.AdditonalProductKey].ToString()
+      };
+    }
+
+    private Amount MappingAmountEntityItem(Item item)
+    {
+      return new Amount
+      {
+        Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),
+        Key = item.Fields[Templates.HasKey.Fields.Key].ToString(),
+        GuiId = item.ID.ToString()
+      };
+    }
+
+    private Hospitalization MappingHospitalizationEntityItem(Item item)
+    {
+      return new Hospitalization
+      {
+        Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),
+        Key = item.Fields[Templates.HasKey.Fields.Key].ToString(),
+        GuiId = item.ID.ToString()
       };
     }
 

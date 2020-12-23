@@ -29,7 +29,7 @@
     <ul class="range-labels">
       @foreach (var item in Model.AvailableAmounts.Select((value,i) => new { i, value}))
       {
-        <li class="@(item.i == 0 ? "active selected" : null)" data-value="@item.value.Key" data-liindex="@item.i">@item.value.Title</li>
+        <li class="@(item.i == 0 ? "active selected" : null)" data-value="@item.value.Key" data-liindex="@item.i" data-guiid="@item.value.GuiId">@item.value.Title</li>
       }    
     </ul>
 
@@ -44,14 +44,14 @@
     @foreach (var hospitalization in Model.AvailableHospitalizations)
     {
       <div class="radio-bordered__wrap">
-        <input type="radio" id="@hospitalization.Key" name="room-offer" checked="checked">
+        <input type="radio" id="@hospitalization.Key" name="room-offer" checked="checked" data-guiid="@hospitalization.GuiId" data-title="@hospitalization.Title">
         <label for="@hospitalization.Key">@hospitalization.Title</label>
       </div>
     }
    
   </div>
   <div class="actions__links-t-l m-b-64 t-r">
-    <a class="btn btn--dark btn--default"  onclick="getProducts(this, arguments);">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Calculation", "Calculation")</a>
+    <a class="btn btn--dark btn--default" id="get-product"  onclick="getProducts(this, arguments);">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Calculation", "Calculation")</a>
   </div>
 
 </section>

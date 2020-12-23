@@ -132,5 +132,18 @@ namespace Wedia.Feature.EurolifeCalculatorTool
       }
     }
 
+    public struct HasProductContent
+    {
+      public static readonly ID ID = new ID("{F0F7662D-7CC6-4613-B4B7-8BEC9F3F6BA9}");
+      public struct Fields
+      {
+        public static readonly ID Amount = new ID("{408DF9E1-54D8-49FA-ABE1-D5B248A58339}");
+        public static readonly ID Hospitalization = new ID("{A3E59159-D02D-47B0-BCE6-864F5E4BA62C}");
+        public static readonly ID RTE = new ID("{3EBCEC27-05BF-43CF-A278-F853827DC7DA}");       
+        public static readonly ID DependentMembersProductKey = new ID("{FBD28DD6-53B1-4362-8EC5-5389128283F2}");
+        public static readonly ID AdditonalProductKey = new ID("{F0F82592-9E76-4738-A37E-D511BB7514FB}");
+      }
+    }
+
   }
 }

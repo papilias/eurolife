@@ -11,28 +11,13 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
     public string Step { get; set; }
     public TargetGroup TargetGroup { get; set; }
     public IEnumerable<FamilyMember> FamilyMembers { get; set; }
-    //public InsuranceProfile InsuranceProfile { get; set; }
+    public Amount Amount { get; set; }
+    public Hospitalization Hospitalization { get; set; }
+    
     //public Product Product { get; set; }
     //public Bundle Bundle { get; set; }
-  }
-
-
-  //public class FamilyMember : BaseSelection
-  //{
-  //  public bool IsPrimaryInsured { get; set; }
-  //  public DateTime BirthDate { get; set; }
-  //}
-
-  //public class InsuranceProfile
-  //{
-  //  public double Price { get; set; }
-  //  public RoomOffer RoomOffer { get; set; }
-  //}
-
-  //public class RoomOffer : BaseSelection
-  //{
-
-  //}
+  }  
+   
 
   //public class Product : BaseSelection
   //{

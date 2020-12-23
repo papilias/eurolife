@@ -197,6 +197,7 @@
     <Content Include="App_Config\Include\Feature\Feature.EurolifeCalculatorTool.config" />
     <Content Include="App_Config\Include\Feature\Feature.EurolifeCalculatorTool.Serialization.config" />
     <Content Include="Views\EurolifeCalculatorTool\Steps\Step2.cshtml" />
+    <Content Include="Views\EurolifeCalculatorTool\Steps\Step4.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -206,10 +207,14 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\EurolifeCalculatorToolController.cs" />
     <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
+    <Compile Include="Models\Amount.cs" />
     <Compile Include="Models\Api\MainInsuredHealthCovers.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\CalculatorToolPageViewModel.cs" />
     <Compile Include="Models\FamilyMember.cs" />
+    <Compile Include="Models\Hospitalization.cs" />
+    <Compile Include="Models\OfferViewModel.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\TargetGroup.cs" />
     <Compile Include="Models\UserSelection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
