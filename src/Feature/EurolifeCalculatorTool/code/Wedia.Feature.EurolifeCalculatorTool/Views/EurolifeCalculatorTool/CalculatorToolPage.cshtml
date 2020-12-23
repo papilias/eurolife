@@ -18,9 +18,7 @@
        data-nextstep="step-2"
        onclick="showNextStep(this, arguments);">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Next", "Next Button")</a>
     </div>
-
   </section>
-
 
   <section class="center center--920 m-b-112">
     <div class=" tool-cta">
@@ -31,6 +29,11 @@
         }
       </div>
 
-      @*<a class="tool-cta__tel  color-faded" href="tel:+302109304800">Tηλέφωνο υποστήριξης: 210 9304800</a>*@
+      @if (Model.RenderingItem.FieldHasValue(Templates.HasInfoBox.Fields.CTA))
+      {
+        var linkURL = Model.RenderingItem.LinkFieldUrl(Templates.HasInfoBox.Fields.CTA);
+        var linkDescription = Model.RenderingItem.LinkFieldOptions(Templates.HasInfoBox.Fields.CTA, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Text);
+        <a class="tool-cta__tel  color-faded" href="@linkURL">@linkDescription</a>
+      }
     </div>
   </section>
