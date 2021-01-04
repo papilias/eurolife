@@ -35,7 +35,7 @@ namespace Wedia.Foundation.SitecoreExtensions.Services.Request
 
     public async Task<TResult> GetAsync<TResult>(string uri, string token = "")
     {
-      var httpClient = CreateHttpClient(token);
+      var httpClient = CreateHttpClient(token);      
       var response = await httpClient.GetAsync(uri);
 
       await HandleResponse(response);
@@ -64,7 +64,16 @@ namespace Wedia.Foundation.SitecoreExtensions.Services.Request
 
     HttpClient CreateHttpClient(string token = "", Dictionary<string, string> headers = null)
     {
-      var httpClient = new HttpClient();
+      //ntlm auth
+      HttpClientHandler handler = new HttpClientHandler()
+      {
+        UseDefaultCredentials = false,
+        Credentials = new NetworkCredential(Constants.LifeWebApi.User,
+                                            Constants.LifeWebApi.Password, Constants.LifeWebApi.Domain),
+        PreAuthenticate = true
+      };
+
+      var httpClient = new HttpClient(handler);     
 
       httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -77,14 +86,7 @@ namespace Wedia.Foundation.SitecoreExtensions.Services.Request
       if (!string.IsNullOrEmpty(token))
       {
         httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-      }
-
-      //add basic auth for test lab
-      httpClient.DefaultRequestHeaders.Authorization =
-      new AuthenticationHeaderValue(
-          "Basic", Convert.ToBase64String(
-              Encoding.ASCII.GetBytes(
-                 $"EUROLIFEWEB\aggregators.tpl:erb77test!")));
+      }     
 
       return httpClient;
     }
