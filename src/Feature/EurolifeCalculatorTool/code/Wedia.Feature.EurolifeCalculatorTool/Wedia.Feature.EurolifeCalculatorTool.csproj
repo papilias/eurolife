@@ -210,10 +210,10 @@
     <Compile Include="Models\Amount.cs" />
     <Compile Include="Models\Api\MainInsuredHealthCovers.cs" />
     <Compile Include="Models\BaseEntity.cs" />
-    <Compile Include="Models\CalculatorToolPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\CalculatorToolPageViewModel.cs" />
     <Compile Include="Models\FamilyMember.cs" />
     <Compile Include="Models\Hospitalization.cs" />
-    <Compile Include="Models\OfferViewModel.cs" />
+    <Compile Include="Models\ViewModels\OfferViewModel.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\TargetGroup.cs" />
     <Compile Include="Models\UserSelection.cs" />
