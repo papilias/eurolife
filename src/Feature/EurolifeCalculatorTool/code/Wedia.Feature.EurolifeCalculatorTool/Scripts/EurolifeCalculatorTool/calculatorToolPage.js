@@ -8,6 +8,7 @@ const step2 = 'step-2';
 const step3 = 'step-3';
 const step4 = 'step-4';
 var loading = false;
+var step_2_valid = false;
 
 var userSelection = [];
 
@@ -35,8 +36,12 @@ function showNextStep(e) {
 
   userSelection.itemId = itemId
   userSelection.step = nextStep
-  console.log({ userSelection });
 
+  if (nextStep == step3) {//we are on step 2
+    fillFamilyMembers();
+  }
+
+  console.log({ userSelection });
 
   $.ajax({
     type: 'POST',
@@ -50,7 +55,6 @@ function showNextStep(e) {
       breadcrumbStepActive(nextStep);
       nextButton.prop('disabled', loading);
       nextButtonInactive();
-
 
       if (nextStep === step2) {
         initializeStep2();
@@ -131,17 +135,15 @@ function breadcrumbStepActive(step) {
 }
 
 function validateYear(e) {
-
   if (e.validity.valid == true) {
-    console.log('valid');
-    console.log(e.value);
-
+    console.log('valid');    
+    e.dataset.isvalid = 'true';   
     step2Validity();
+  } else {
+    e.dataset.isvalid = 'false';
+    step_2_valid = false;
+    nextButtonInactive();
   }
-  //if (e.validity.valid == true)
-  //  document.getElementById('go-to-step-2').classList.remove('btn--inactive');
-  //else
-  //  document.getElementById('go-to-step-2').classList.add('btn--inactive');
 }
 
 
@@ -205,9 +207,67 @@ function initializeStep2() {
 }
 
 function step2Validity() {
-  //logic here...
+  console.log('step2Validity');
 
-  nextButtonActive();
+  $(".target-group.item-targeted").children().each(function (item) {    
+    if ($(this).hasClass('target-group--deactive')) {
+      console.log('deactive');     
+    } else {
+      console.log('active');    
+      var invalidElements = $(this).find('[data-isvalid="false"]');    
+      if (invalidElements.length > 0) {
+        step_2_valid = false;
+        return false;
+      } else {
+        step_2_valid = true; 
+      }     
+    }
+  });
+
+  if (step_2_valid) {
+    nextButtonActive();
+  }
+   
+}
+
+function fillFamilyMembers() {
+  let familyMembers = [];
+  $(".target-group.item-targeted").children().each(function (item) {
+    if (!$(this).hasClass('target-group--deactive')) {
+      var image = $(this).find("img");
+      var birthDate = $(this).find('.js-birth-year');
+      var isPrimaryInsured = false;
+      var inputPrimary = $(this).find("input[name=primary-insured]");
+
+      if (inputPrimary.length > 0) {
+        var isChecked = inputPrimary.filter(":checked");
+        if (isChecked.length > 0) {
+          console.log("is Checked");
+          isPrimaryInsured = true;
+        }
+      }
+
+      var title = $(this).find('[data-title]').first().data('title');
+
+      var childNumberInput = $(this).find('.person-number');
+
+      if (childNumberInput.length > 0) {
+        var childVal = $(childNumberInput).val();
+        title = `${childVal} ${title}`;
+      }
+
+      let familyMember = {
+        image: image.first().attr("src"),
+        birthDate: birthDate.first().val(),
+        title: title,
+        isPrimaryInsured: isPrimaryInsured
+      };
+      console.log(familyMember);
+      familyMembers.push(familyMember);
+    }
+  });
+
+  userSelection.familyMembers = familyMembers;
 }
 
 

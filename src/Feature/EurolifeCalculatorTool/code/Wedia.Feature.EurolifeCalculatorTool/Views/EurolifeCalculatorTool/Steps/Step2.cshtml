@@ -24,7 +24,7 @@
           @renderPlus(Model.UserSelection.TargetGroup, familyMember)
         </div>
 
-        <h2 class="target-group__title t-c">
+        <h2 class="target-group__title t-c" data-title="@familyMember.Title">
           @renderPersonNumber(Model.UserSelection.TargetGroup, familyMember)
           @familyMember.Title
         </h2>
@@ -32,7 +32,7 @@
         @renderPrimaryInsurance(Model.UserSelection.TargetGroup, familyMember)
 
         <div class="target-group__birth">
-          <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$">
+          <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
           <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
         </div>
       </div>
