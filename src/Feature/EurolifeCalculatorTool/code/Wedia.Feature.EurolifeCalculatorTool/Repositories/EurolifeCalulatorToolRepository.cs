@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
+using Wedia.Feature.EurolifeCalculatorTool.Managers;
 using Wedia.Feature.EurolifeCalculatorTool.Models;
 using Wedia.Foundation.DependencyInjection;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
@@ -13,10 +15,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
   public class EurolifeCalulatorToolRepository : IEurolifeCalulatorToolRepository
   {
     Sitecore.Resources.Media.MediaUrlOptions _mediaUrlOptions;
+    IQuotationManager _quotationManager;
 
-
-    public EurolifeCalulatorToolRepository()
+    public EurolifeCalulatorToolRepository(IQuotationManager quotationManager)
     {
+      this._quotationManager = quotationManager;
       _mediaUrlOptions = new Sitecore.Resources.Media.MediaUrlOptions
       {       
         AlwaysIncludeServerUrl = false
@@ -120,7 +123,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       return list;
     }
 
-    public OfferViewModel GetProductAndBundles(Item contextItem, UserSelection userSelection)
+    public async Task<OfferViewModel> GetProductAndBundles(Item contextItem, UserSelection userSelection)
     {
       var product = new Product();
 
@@ -137,15 +140,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
       product.InsuredPeople = userSelection.FamilyMembers.Select(x => new InsuredPerson { Title = x.Title, Image = x.Image });
 
+      var quotation = await _quotationManager.GetQuotation(userSelection, product);
+
+
       return new OfferViewModel { Product = product };
-    }
-
-    private double CalculateCost()
-    {
-      double cost = 0;
-
-      return cost;
-    }
+    }       
 
     private Product MappingProductEntityItem(Item item)
     {

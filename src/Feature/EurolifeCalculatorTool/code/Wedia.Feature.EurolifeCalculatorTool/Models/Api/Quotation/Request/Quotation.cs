@@ -7,17 +7,17 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models.Api.Quotation.Request
 {
   public class Quotation
   {
-    public Dictionary<string, long?> BasicCover { get; set; }
+    public BasicCover BasicCover { get; set; }
     public object DependentCovCode { get; set; }
-    public Cover[] Covers { get; set; }
+    public List<Cover> Covers { get; set; }
     public object ContractedCovers { get; set; }
-    public object[] BundleCovers { get; set; }
+    public List<object> BundleCovers { get; set; }
     public Customer Insured { get; set; }
     public Customer Customer { get; set; }
     public bool? InsuredSameWithCustomer { get; set; }
     public object Moa { get; set; }
     public object DeathMoa { get; set; }
-    public Customer[] Dependents { get; set; }
+    public List<Customer> Dependents { get; set; }
     public object MailInfo { get; set; }
     public object TotalPremium { get; set; }
     public object TotalLoadPremium { get; set; }

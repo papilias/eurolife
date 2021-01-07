@@ -14,6 +14,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
     IEnumerable<FamilyMember> GetAvailableFamilyMembers(Item contextItem, string targetGroupKey);
     IEnumerable<Amount> GetAvailableAmounts(Item contextItem);
     IEnumerable<Hospitalization> GetAvailableHospitalizations(Item contextItem);
-    OfferViewModel GetProductAndBundles(Item contextItem, UserSelection userSelection);
+    Task<OfferViewModel> GetProductAndBundles(Item contextItem, UserSelection userSelection);
   }
 }

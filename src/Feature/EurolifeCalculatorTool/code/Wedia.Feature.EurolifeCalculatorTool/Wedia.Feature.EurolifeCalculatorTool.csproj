@@ -207,8 +207,11 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\EurolifeCalculatorToolController.cs" />
     <Compile Include="Infrastructure\Pipelines\InitializeRoutes.cs" />
+    <Compile Include="Managers\IQuotationManager.cs" />
+    <Compile Include="Managers\QuotationManager.cs" />
     <Compile Include="Models\Amount.cs" />
     <Compile Include="Models\Api\Common\Header.cs" />
+    <Compile Include="Models\Api\Quotation\Request\BasicCover.cs" />
     <Compile Include="Models\Api\Quotation\Request\Cover.cs" />
     <Compile Include="Models\Api\Quotation\Request\Customer.cs" />
     <Compile Include="Models\Api\Quotation\Request\Quotation.cs" />

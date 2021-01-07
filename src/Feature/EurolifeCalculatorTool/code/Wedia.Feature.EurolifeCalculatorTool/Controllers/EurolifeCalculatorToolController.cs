@@ -21,13 +21,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
   {
     protected readonly Dictionary<string, string> mappings;
     private readonly IEurolifeCalulatorToolRepository _eurolifeCalulatorToolRepository;
-    private readonly IRequestService _requestService;
+    
 
-    public EurolifeCalculatorToolController(IEurolifeCalulatorToolRepository eurolifeCalulatorToolRepository,
-      IRequestService requestService)
+    public EurolifeCalculatorToolController(IEurolifeCalulatorToolRepository eurolifeCalulatorToolRepository)
     {
-      this._eurolifeCalulatorToolRepository = eurolifeCalulatorToolRepository;
-      this._requestService = requestService;
+      this._eurolifeCalulatorToolRepository = eurolifeCalulatorToolRepository;     
       mappings = new Dictionary<string, string>();
       StepsViewMappings();
     }
@@ -91,7 +89,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
         var item = Context.Database.GetItem(new ID(userSelection.ItemId));
         var stepView = mappings[userSelection.Step];
 
-        var viewModel = _eurolifeCalulatorToolRepository.GetProductAndBundles(item, userSelection);        
+        var viewModel = await _eurolifeCalulatorToolRepository.GetProductAndBundles(item, userSelection);        
 
         var partial = Utilities.RenderRazorViewToString(ControllerContext,
           stepView,

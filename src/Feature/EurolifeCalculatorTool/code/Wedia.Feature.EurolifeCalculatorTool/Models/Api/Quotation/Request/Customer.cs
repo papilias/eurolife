@@ -41,7 +41,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models.Api.Quotation.Request
     public object LegalRep { get; set; }
     public object DisplayedAge { get; set; }
     public object Trader { get; set; }
-    public Cover[] DependCovers { get; set; }
+    public List<Cover> DependCovers { get; set; }
     public object MemberDescription { get; set; }
     public long? MemberRelationship { get; set; }
     public object MemberStudent { get; set; }
