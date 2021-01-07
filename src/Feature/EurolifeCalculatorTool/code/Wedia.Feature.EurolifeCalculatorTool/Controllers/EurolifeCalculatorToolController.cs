@@ -84,16 +84,14 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
       }
     }
 
-    public async Task<ActionResult> GetProducts(UserSelection userSelection)
+    public async Task<ActionResult> GetOffer(UserSelection userSelection)
     {
       try
       {
         var item = Context.Database.GetItem(new ID(userSelection.ItemId));
         var stepView = mappings[userSelection.Step];
 
-        var product = _eurolifeCalulatorToolRepository.GetProductWithPrices(item, userSelection);
-
-        var viewModel = new OfferViewModel { Product = product };
+        var viewModel = _eurolifeCalulatorToolRepository.GetProductAndBundles(item, userSelection);        
 
         var partial = Utilities.RenderRazorViewToString(ControllerContext,
           stepView,

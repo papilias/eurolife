@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Wedia.Feature.EurolifeCalculatorTool.Models
 {
-  public class OfferViewModel
+  public class Bundle : BaseEntity
   {
-    public Product Product { get; set; }
-    public IEnumerable<Bundle> Bundles { get; set; }
+    public Price Price { get; set; }
+    public HtmlString RTE { get; set; }
   }
 }

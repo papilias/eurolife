@@ -120,7 +120,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       return list;
     }
 
-    public Product GetProductWithPrices(Item contextItem, UserSelection userSelection)
+    public OfferViewModel GetProductAndBundles(Item contextItem, UserSelection userSelection)
     {
       var product = new Product();
 
@@ -137,7 +137,14 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
       product.InsuredPeople = userSelection.FamilyMembers.Select(x => new InsuredPerson { Title = x.Title, Image = x.Image });
 
-      return product;
+      return new OfferViewModel { Product = product };
+    }
+
+    private double CalculateCost()
+    {
+      double cost = 0;
+
+      return cost;
     }
 
     private Product MappingProductEntityItem(Item item)

@@ -9,7 +9,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
   {
     public string Amount { get; set; }
     public string Hospitalization { get; set; }
-    public double Cost { get; set; }
+    public Price Price { get; set; }
     public HtmlString RTE { get; set; }
     public string DependentMembersProductKey { get; set; }
     public string AdditonalProductKey { get; set; }
@@ -20,5 +20,5 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
   {
     public string Title { get; set; }
     public string Image { get; set; }
-  }
+  } 
 }

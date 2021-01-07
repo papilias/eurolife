@@ -1,5 +1,5 @@
 ﻿const loadNextStepURL = 'api/feature/eurolifecalculatortool/load-next-step';
-const getProductsURL = 'api/feature/eurolifecalculatortool/get-products';
+const getProductsURL = 'api/feature/eurolifecalculatortool/get-offer';
 const nextButton = $('#go-to-next-step'); 
 const calculationButton = $('#get-product'); 
 const stepContent = $('#step-content');
@@ -71,7 +71,7 @@ function showNextStep(e) {
   });
 }
 
-function getProducts(e) {
+function getOffer(e) {
   var selectedAmount = $('ul.range-labels li[class="active selected"]');
   let amount = { key: $(selectedAmount).data('value'), title: $(selectedAmount).text(), guiid: $(selectedAmount).data('guiid') };
 
