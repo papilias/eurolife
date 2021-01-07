@@ -5,6 +5,8 @@ using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -91,18 +93,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
 
         var product = _eurolifeCalulatorToolRepository.GetProductWithPrices(item, userSelection);
 
-        var viewModel = new OfferViewModel { Product = product };      
-
-       
-        //var completeUrl = "https://esbtestna.eurolife.gr/LifeWebApi/api/HospitalApi/GetMainInsuredHealthCoversOptions";
-
-        //var jsondata = "{'Header':{'ServicesVersion':'1','CultureName':'GR','TimeDiff':null},'MainInsured':{'Lastname':null,'FirstName':null,'FatherName':null,'Age':40,'BirthDate':'1980-12-12','Profession':1000,'ProfessionCategory':1,'ProfessionDescription':'','MinBirthDate':null,'MaxBirthDate':null,'Sex':0,'Email':null,'Relationship':null,'Addresses':null,'Afm':null,'Adt':null,'Doy':0,'ID':0,'Amka':null,'Height':null,'Weight':null,'Mobile':null,'Nationality':null,'ADTCOUNTRY':null,'BRCOUNTRY':null,'ConsentSensitiveData':null,'consentsERB':null,'consentsThirdParty':null,'IsCustomer':true,'LegalPerson':false,'LegalType':0,'LegalRep':null,'DisplayedAge':null},'ProductCode':1,'CovCode':30276}";
-
-        //var model = Newtonsoft.Json.JsonConvert.DeserializeObject<Models.Api.MainInsuredHealthCovers>(jsondata);
-
-
-        //var result = await _requestService.PostAsync(completeUrl, model);
-
+        var viewModel = new OfferViewModel { Product = product };
 
         var partial = Utilities.RenderRazorViewToString(ControllerContext,
           stepView,

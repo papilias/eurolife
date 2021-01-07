@@ -17,5 +17,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool
     public const string Family_Member_Daughter = "daughter";
     public const string Family_Member_Me = "me";
     public const string Family_Member_Child = "child";
+
+    public static readonly string LifeWebApiURL = Sitecore.Configuration.Settings.GetSetting("EurolifeCalculatorTool.LifeWebApi.URL").ToString();
   }
 }
