@@ -135,6 +135,8 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
       product = MappingProductEntityItem(availableProduct);
 
+      product.InsuredPeople = userSelection.FamilyMembers.Select(x => new InsuredPerson { Title = x.Title, Image = x.Image });
+
       return product;
     }
 

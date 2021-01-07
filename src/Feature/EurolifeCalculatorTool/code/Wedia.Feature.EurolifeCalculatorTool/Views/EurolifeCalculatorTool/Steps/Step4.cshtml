@@ -68,24 +68,14 @@
       <div class="pick__body">
         <h3 class="h4">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/InsuredPeople", "InsuredPeople")</h3>
         <div class="pick__insured m-b-32">
-          @*<figure>
-            <img src="images/tools/health/icon-man.svg">
-            <figcaption>Πατερας</figcaption>
-          </figure>
-          <figure>
-            <img src="images/tools/health/icon-woman.svg">
-            <figcaption>Μητερα</figcaption>
-          </figure>
-          <figure>
-            <img src="images/tools/health/icon-son.svg">
-            <figcaption>4 Γιοι</figcaption>
-          </figure>
-          <figure>
-            <img src="images/tools/health/icon-daughter.svg">
-            <figcaption>4 κόρες</figcaption>
-          </figure>*@
+          @foreach (var familyMemnber in Model.Product.InsuredPeople)
+          {
+            <figure>
+              <img src="@familyMemnber.Image">
+              <figcaption>@familyMemnber.Title</figcaption>
+            </figure>
+          }       
         </div>
-
         <h3 class="h4">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/ProductDescription", "ProductDescription")</h3>
 
          @Model.Product.RTE
