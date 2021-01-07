@@ -8,7 +8,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
   public class FamilyMember : BaseEntity
   {
     public bool IsPrimaryInsured { get; set; }
-    public DateTime BirthDate { get; set; }
+    public string BirthDate { get; set; }
     public string Image { get; set; }
   }
 }
