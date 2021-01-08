@@ -7,7 +7,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models.Api.Quotation.Response
 {
   public class Dependent
   {
-    public Cover[] DependCovers { get; set; }
+    public List<Cover> DependCovers { get; set; }
     public long? MemberRelationship { get; set; }
     public bool? MemberStudent { get; set; }
     public long? Id { get; set; }

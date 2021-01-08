@@ -112,11 +112,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
 
       if(familyMembers.Count() > 1)
       {
-        foreach(var familyMember in familyMembers.Where(x => !x.IsPrimaryInsured))
+        foreach(var familyMember in familyMembers.Where(x => !x.IsPrimaryInsured).Select((value, index) => new { value, index}))
         {
           dependents.Add(new Models.Api.Quotation.Request.Customer 
           {
-            BirthDate = $"{familyMember.BirthDate}-01-01",
+            BirthDate = $"{familyMember.value.BirthDate}-01-01",
             Profession = 1000,
             ProfessionCategory = 1,
             Sex = 0,
@@ -128,7 +128,9 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
                 IsSelected = true,
                 IsDepend = true
               }
-            }
+            },
+            MemberRelationship = 0,
+            Id = familyMember.index
           });
         }
       }

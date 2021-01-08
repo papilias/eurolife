@@ -8,8 +8,8 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models.Api.Quotation.Response
   public class Quotation
   {
     public BasicCover BasicCover { get; set; }
-    public Cover[] Covers { get; set; }
-    public object[] BundleCovers { get; set; }
+    public List<Cover> Covers { get; set; }
+    public List<object> BundleCovers { get; set; }
     public Customer Insured { get; set; }
     public Customer Customer { get; set; }
     public bool? InsuredSameWithCustomer { get; set; }
@@ -22,15 +22,15 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models.Api.Quotation.Response
     public long? AdditionalPensions { get; set; }
     public bool? Moa { get; set; }
     public bool? DeathMoa { get; set; }
-    public Dependent[] Dependents { get; set; }
+    public List<Dependent> Dependents { get; set; }
     public long? TotalPremium { get; set; }
     public double? TotalLoadPremium { get; set; }
     public double? Prem01 { get; set; }
     public double? Prem02 { get; set; }
     public double? Prem04 { get; set; }
     public double? Prem12 { get; set; }
-    public object[] Exagores { get; set; }
-    public object[] DecreasedBsa { get; set; }
+    public List<object> Exagores { get; set; }
+    public List<object> DecreasedBsa { get; set; }
     public long? FinalAmount { get; set; }
     public bool? IsTeleUw { get; set; }
     public long? SendCard { get; set; }
@@ -41,7 +41,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models.Api.Quotation.Response
     public string FlowId { get; set; }
     public long? Channel { get; set; }
     public bool? EnableElectronicSignature { get; set; }
-    public object[] Warnings { get; set; }
+    public List<object> Warnings { get; set; }
     public long? PaymentFrequency { get; set; }
     public long? AppPaymentType { get; set; }
   }

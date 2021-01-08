@@ -68,10 +68,11 @@ namespace Wedia.Foundation.SitecoreExtensions.Services.Request
       HttpClientHandler handler = new HttpClientHandler()
       {
         UseDefaultCredentials = false,
-        Credentials = new NetworkCredential("aggregators.tpl",
-                                            "erb77test!", "EUROLIFEWEB"),
+        Credentials = new NetworkCredential(Constants.LifeWebApi.User,
+                                            Constants.LifeWebApi.Password, Constants.LifeWebApi.Domain),
         PreAuthenticate = true
       };
+                  
 
       var httpClient = new HttpClient(handler);     
 
