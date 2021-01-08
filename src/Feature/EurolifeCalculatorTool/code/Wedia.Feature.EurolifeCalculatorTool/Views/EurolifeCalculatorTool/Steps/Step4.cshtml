@@ -43,7 +43,7 @@
           @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/HospitalizationTitle", "HospitalizationTitle")
         </h3>
         <h4 class="pick__title pick__sec-title">
-         @Model.Product.Hospitalization
+          @Model.Product.Hospitalization
         </h4>
       </div>
 
@@ -52,7 +52,7 @@
           @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/CostTitle", "CostTitle")
         </h3>
         <h4 class="pick__title pick__big-title">
-         -
+          -
         </h4>
       </div>
 
@@ -74,13 +74,66 @@
               <img src="@familyMemnber.Image">
               <figcaption>@familyMemnber.Title</figcaption>
             </figure>
-          }       
+          }
         </div>
         <h3 class="h4">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/ProductDescription", "ProductDescription")</h3>
 
-         @Model.Product.RTE
+        @Model.Product.RTE
       </div>
     </div>
   </div>
-   
+</section>
+
+<!-- bundles  -->
+<section class="m-b-46 center--1100 center">
+  <div class="flexify m-t-32 m-b-24">
+    <h1 class="m-b-8 m-t-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesTitle", "BundlesTitle")</h1>
+    <label class="switch switch--pick">
+      <input type="checkbox" id="activate-extras" value="activate-extras" onclick="ActivateExtras(this, arguments);">
+      <span class="switch__slider"></span>
+    </label>
+  </div>
+
+  <div class="pick pick--extras pick--extras__deactive">
+    <div class="pick__item">
+      <div class="pick__titles">
+        <h2 class="pick__title pick__main-title">
+          Group extra καλύψεων 1
+        </h2>
+        <div class="pick__radio">
+          <input type="radio" id="product-extra-1" name="insurance-product-extra" value="" class="product-extra-radio" onclick="SelectProgram(this, arguments);">
+          <label for="product-extra-1"></label>
+        </div>
+      </div>
+      <div class="pick--extras__more">
+        <h3 class="pick__title pick__sup-title">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/ProductTitle", "ProductTitle")
+        </h3>
+        <h4 class="pick__title pick__big-title">
+          1.178,54 €
+        </h4>
+        <h3 class="pick__title pick__sup-title">
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/IncludeLabel", "IncludeLabel")
+        </h3>
+        <ul class="pick--extras__list">
+          <li>Extra Hospital Care</li>
+          <li>Accident Care 1</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class=" center--1100 center pick-actions m-b-64 m-t-64">
+  <div class="actions__links m-b-24 m-t-24">  
+    <a class="btn btn--ghost-rev btn--default">ΣΥΜΒΟΥΛΕΥΤΕΙΤΕ ΜΑΣ</a>   
+  </div>
+  <div class="actions__results">
+    <div class="actions__results__sum">
+      <h3 class="h6">ΣΥΝΟΛΟ ΑΣΦΑΛΙΣΤΡΩΝ</h3>
+      <h2 class="pick__title pick__big-title">1.178,54 €</h2>
+    </div>
+    <a class="btn btn--ghost-rev btn--default actions__duration">Ετήσια διάρκεια</a>
+  </div>
 </section>

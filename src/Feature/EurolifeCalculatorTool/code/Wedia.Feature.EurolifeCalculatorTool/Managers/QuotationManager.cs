@@ -18,20 +18,22 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
       this._requestService = requestService;
     }
 
-    public async Task<Models.Api.Quotation.Response.QuotationResponse> GetQuotation(Models.UserSelection userSelection, Models.Product product)
-    {     
-      var quotationRequest = new Models.Api.Quotation.Request.QuotationRequest();
-      quotationRequest.Header = GetHeader();
-      quotationRequest.Quotation = new Models.Api.Quotation.Request.Quotation 
+    public async Task<Models.Api.Quotation.Response.QuotationResponse> GetQuotation(Models.UserSelection userSelection, Models.Product product, List<Models.Bundle> bundles)
+    {
+      var quotationRequest = new Models.Api.Quotation.Request.QuotationRequest
       {
-        BasicCover = GetBasicCover(product),
-        Covers = GetCovers(product),//need to pass bundles
-        Insured = GetInsured(userSelection.FamilyMembers),
-        Customer = GetCustomer(userSelection.FamilyMembers),
-        InsuredSameWithCustomer = true,
-        Dependents = GetDependents(userSelection.FamilyMembers, product),
-        FlowId = "0203-01-12e9e77f-8756-4a45-a53c-852538afe25d",
-        Channel = 1
+        Header = GetHeader(),
+        Quotation = new Models.Api.Quotation.Request.Quotation
+        {
+          BasicCover = GetBasicCover(product),
+          Covers = GetCovers(product, bundles),
+          Insured = GetInsured(userSelection.FamilyMembers),
+          Customer = GetCustomer(userSelection.FamilyMembers),
+          InsuredSameWithCustomer = true,
+          Dependents = GetDependents(userSelection.FamilyMembers, product, bundles),
+          FlowId = "0203-01-12e9e77f-8756-4a45-a53c-852538afe25d",
+          Channel = 1
+        }
       };
 
       var uri = $"{Constants.LifeWebApiURL}{GetQuotationPathName}";
@@ -63,7 +65,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
       return basicCover;
     }
 
-    private List<Models.Api.Quotation.Request.Cover> GetCovers(Models.Product product)//aad bundles here
+    private List<Models.Api.Quotation.Request.Cover> GetCovers(Models.Product product, List<Models.Bundle> bundles)
     {
       var covers = new List<Models.Api.Quotation.Request.Cover>();
 
@@ -76,6 +78,20 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
           IsSelected = true,
           IsDepend = true
         });
+      }
+
+      if(bundles!= null && bundles.Any())
+      {
+        foreach(var bundle in bundles)
+        {
+          covers.Add(new Models.Api.Quotation.Request.Cover
+          {
+            CovCode = bundle.CovCode,
+            CoverCapital = bundle.CoverCapital,
+            IsSelected = true,
+            IsDepend = true
+          });
+        }
       }
 
       return covers;
@@ -106,7 +122,8 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
       };
     }
 
-    private List<Models.Api.Quotation.Request.Customer> GetDependents(IEnumerable<Models.FamilyMember> familyMembers, Models.Product product)//need bundles here
+    //we do not send bundles for dependents
+    private List<Models.Api.Quotation.Request.Customer> GetDependents(IEnumerable<Models.FamilyMember> familyMembers, Models.Product product, List<Models.Bundle> bundles)
     {
       var dependents = new List<Models.Api.Quotation.Request.Customer>();
 

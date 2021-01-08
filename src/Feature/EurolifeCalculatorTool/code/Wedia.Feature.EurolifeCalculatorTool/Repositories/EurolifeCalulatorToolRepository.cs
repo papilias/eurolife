@@ -125,11 +125,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
     public async Task<OfferViewModel> GetProductAndBundles(Item contextItem, UserSelection userSelection)
     {
-      var product = new Product();
+      var product = new Product();      
 
       var productsList = contextItem
                             .Children.Where(x => x.TemplateID == Templates.ProductsList.ID)
-                            .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
+                            .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));      
 
       var availableProduct = productsList.Children.Where(x => x.TemplateID == Templates.Product.ID
       && x.Fields[Templates.HasProductContent.Fields.Amount].ToString() == userSelection.Amount.GuiId
@@ -137,14 +137,128 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
 
       product = MappingProductEntityItem(availableProduct);
-
       product.InsuredPeople = userSelection.FamilyMembers.Select(x => new InsuredPerson { Title = x.Title, Image = x.Image });
 
-      var quotation = await _quotationManager.GetQuotation(userSelection, product);
+      var bundlesList = contextItem
+                            .Children.Where(x => x.TemplateID == Templates.BundlesList.ID)
+                            .FirstOrDefault() ?? throw new ArgumentNullException(nameof(contextItem));
+
+      var bundles = new List<Bundle>();
+
+      var availableBundles = bundlesList.Children.Where(x => x.TemplateID == Templates.Bundle.ID);
+      foreach (var item in availableBundles)
+        bundles.Add(MappingBundleEntityItem(item));
+
+      //remove from bundles code with 30292, when the amount is more than 6000
+      var amount = double.Parse(userSelection.Amount.Key);
+      if(amount > 6000 && bundles.Select(x => x.CovCode == "30292").Any())
+      {
+        bundles.RemoveAll(x => x.CovCode == "30292");
+      }
+
+      var quotationResponse = await _quotationManager.GetQuotation(userSelection, product, bundles);
+
+      var availableProducts = new List<Product>();
+
+      foreach (var item in productsList.Children.Where(x => x.TemplateID == Templates.Product.ID))
+        availableProducts.Add(MappingProductEntityItem(item));
+
+      product.Price = GetProductPricing(quotationResponse, availableProducts);
+
+      return new OfferViewModel 
+      { 
+        Product = product        
+      };
+    }
+
+    private Price GetProductPricing(Models.Api.Quotation.Response.QuotationResponse quotationResponse,
+      List<Product> products)
+    {
+      var price = new Price
+      {
+        CoverPremium = quotationResponse.Quotation.BasicCover?.CoverPremium,
+        CoverPremium2 = quotationResponse.Quotation.BasicCover?.CoverPremium2,
+        CoverPremium4 = quotationResponse.Quotation.BasicCover?.CoverPremium4,
+        CoverPremium12 = quotationResponse.Quotation.BasicCover?.CoverPremium12
+      };
+
+      if (quotationResponse.Quotation.Covers != null && quotationResponse.Quotation.Covers.Any())
+      {
+        foreach(var cover in quotationResponse.Quotation?.Covers)
+        {
+          if(products.Where(x=> x.Key == cover.CovCode.ToString()).Any())//is product
+          {
+            price.CoverPremium += cover.CoverPremium;
+            price.CoverPremium2 += cover.CoverPremium2;
+            price.CoverPremium4 += cover.CoverPremium4;
+            price.CoverPremium12 += cover.CoverPremium12;
+          }
+        }
+      }
+      
+      foreach (var dependent in quotationResponse.Quotation?.Dependents)
+      {
+        foreach(var dependentCover in dependent?.DependCovers)
+        {
+          if (products.Where(x => x.DependentMembersProductKey == dependentCover.CovCode.ToString()).Any())//is product for dependent member
+          {
+            price.CoverPremium += dependentCover.CoverPremium;
+            price.CoverPremium2 += dependentCover.CoverPremium2;
+            price.CoverPremium4 += dependentCover.CoverPremium4;
+            price.CoverPremium12 += dependentCover.CoverPremium12;
+          }
+        }
+      }  
+
+      return price;
+    }
+
+    private List<GroupOfBundle> GetGroupOfBundles(Models.Api.Quotation.Response.QuotationResponse quotationResponse,
+     List<Bundle> bundles)
+    {
+      var groupOfBundles = new List<GroupOfBundle>();
+
+      if (quotationResponse.Quotation.Covers != null && quotationResponse.Quotation.Covers.Any())
+      {
+        foreach (var cover in quotationResponse.Quotation?.Covers)
+        {
+          if (bundles.Where(x => x.CovCode == cover.CovCode.ToString()).Any())//is bundle
+          {
+            //price.CoverPremium += cover.CoverPremium;
+            //price.CoverPremium2 += cover.CoverPremium2;
+            //price.CoverPremium4 += cover.CoverPremium4;
+            //price.CoverPremium12 += cover.CoverPremium12;
+          }
+        }
+      }
 
 
-      return new OfferViewModel { Product = product };
-    }       
+
+      //var price = new Price
+      //{
+      //  CoverPremium = quotationResponse.Quotation.BasicCover?.CoverPremium,
+      //  CoverPremium2 = quotationResponse.Quotation.BasicCover?.CoverPremium2,
+      //  CoverPremium4 = quotationResponse.Quotation.BasicCover?.CoverPremium4,
+      //  CoverPremium12 = quotationResponse.Quotation.BasicCover?.CoverPremium12
+      //};
+
+    
+
+ 
+
+      return groupOfBundles;
+    }
+
+    private Bundle MappingBundleEntityItem(Item item)
+    {
+      return new Bundle
+      {
+        Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),
+        Key = item.Fields[Templates.HasKey.Fields.Key].ToString(),
+        CoverCapital = item.Fields[Templates.HasCoverCapital.Fields.CoverCapital].ToString(),
+        CovCode = item.Fields[Templates.HasCovCode.Fields.CovCode].ToString()
+      };
+    }
 
     private Product MappingProductEntityItem(Item item)
     {

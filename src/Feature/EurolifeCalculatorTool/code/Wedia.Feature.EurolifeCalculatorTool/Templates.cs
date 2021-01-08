@@ -145,5 +145,26 @@ namespace Wedia.Feature.EurolifeCalculatorTool
       }
     }
 
+    public struct HasCoverCapital
+    {
+       public static readonly ID ID = new ID("{84C60B51-39D9-450F-8F9D-7F7E0B248EF7}");
+
+      public struct Fields
+      {
+        public static readonly ID CoverCapital = new ID("{809E605B-1A30-4ECF-8F2B-159463FD796D}");
+
+      }
+    }
+
+    public struct HasCovCode
+    {
+      public static readonly ID ID = new ID("{71B7D363-17C3-4DC8-99DC-CD8622A622A0}");
+
+      public struct Fields
+      {
+        public static readonly ID CovCode = new ID("{2133ACF1-8828-490A-B909-0168A152F452}");
+
+      }
+    }
   }
 }

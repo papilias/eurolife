@@ -8,6 +8,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
   public class OfferViewModel
   {
     public Product Product { get; set; }
-    public IEnumerable<Bundle> Bundles { get; set; }
+    public IEnumerable<GroupOfBundle> GroupOfBundles { get; set; }
   }
 }
