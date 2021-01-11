@@ -8,7 +8,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
   public class GroupOfBundle : BaseEntity
   {
     public Price Price { get; set; }
-    public HtmlString Description { get; set; }
-    public string Label { get; set; }
+    public List<Bundle> Bundles { get; set; }
   }
 }

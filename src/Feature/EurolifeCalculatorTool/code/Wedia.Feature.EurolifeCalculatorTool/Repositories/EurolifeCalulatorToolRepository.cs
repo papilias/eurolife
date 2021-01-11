@@ -7,6 +7,7 @@ using System.Web;
 using Wedia.Feature.EurolifeCalculatorTool.Managers;
 using Wedia.Feature.EurolifeCalculatorTool.Models;
 using Wedia.Foundation.DependencyInjection;
+using Wedia.Foundation.Dictionary.Repositories;
 using Wedia.Foundation.SitecoreExtensions.Extensions;
 
 namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
@@ -145,6 +146,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
       var bundles = new List<Bundle>();
 
+      //we have the bundles in specific order from cms. This orders should not change for accidnent care group package 
       var availableBundles = bundlesList.Children.Where(x => x.TemplateID == Templates.Bundle.ID);
       foreach (var item in availableBundles)
         bundles.Add(MappingBundleEntityItem(item));
@@ -164,10 +166,12 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
         availableProducts.Add(MappingProductEntityItem(item));
 
       product.Price = GetProductPricing(quotationResponse, availableProducts);
+      var groupOfBundles = GetGroupOfBundles(quotationResponse, bundles);
 
       return new OfferViewModel 
       { 
-        Product = product        
+        Product = product  ,
+        GroupOfBundles = groupOfBundles
       };
     }
 
@@ -220,31 +224,75 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
       if (quotationResponse.Quotation.Covers != null && quotationResponse.Quotation.Covers.Any())
       {
-        foreach (var cover in quotationResponse.Quotation?.Covers)
+        foreach (var cover in quotationResponse.Quotation?.Covers.Where(x => x.CovCode != Constants.ExtraHospitalCareCode))//this is special bundle product, we need group here
         {
           if (bundles.Where(x => x.CovCode == cover.CovCode.ToString()).Any())//is bundle
           {
-            //price.CoverPremium += cover.CoverPremium;
-            //price.CoverPremium2 += cover.CoverPremium2;
-            //price.CoverPremium4 += cover.CoverPremium4;
-            //price.CoverPremium12 += cover.CoverPremium12;
+            var bundle = bundles.Where(x => x.CovCode == cover.CovCode.ToString()).FirstOrDefault();
+            groupOfBundles.Add(new GroupOfBundle
+            {
+              Price = new Price
+              {
+                CoverPremium = cover.CoverPremium,
+                CoverPremium2 = cover.CoverPremium2,
+                CoverPremium4 = cover.CoverPremium4,
+                CoverPremium12 = cover.CoverPremium12
+              },
+              Bundles = new List<Bundle> { bundle },
+              Title = bundle.Title
+            });         
           }
         }
+
+        if(quotationResponse.Quotation.Covers.Where(x => x.CovCode == Constants.ExtraHospitalCareCode).Any())
+        {
+          //first item is Extra Hospital Care and the others are 1 group for ACCIDENT CARE 1         
+          var bundle = bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()).FirstOrDefault();//get this by key - unique, some bundles have same covcode
+          var quotationCover = quotationResponse.Quotation.Covers.Where(x => x.CovCode == Constants.ExtraHospitalCareCode).FirstOrDefault();
+          groupOfBundles.Add(new GroupOfBundle
+          {
+            Price = new Price
+            {
+              CoverPremium = quotationCover.CoverPremium,
+              CoverPremium2 = quotationCover.CoverPremium2,
+              CoverPremium4 = quotationCover.CoverPremium4,
+              CoverPremium12 = quotationCover.CoverPremium12
+            },
+            Bundles = new List<Bundle> { bundle },
+            Title = bundle.Title
+          });                  
+
+          var quotationCoversAccidentCare = quotationResponse.Quotation.Covers.Where(x => x.CovCode == Constants.ExtraHospitalCareCode)?.Skip(1)?.ToList();
+          if(quotationCoversAccidentCare != null && quotationCoversAccidentCare.Any())
+          {
+            var accidentCareBundles = bundles.Where(x => x.CovCode == Constants.ExtraHospitalCareCode.ToString()
+                                          && x.Key != Constants.ExtraHospitalCareCode.ToString())?.ToList();
+
+            var groupAccidentCare = new GroupOfBundle 
+            {
+              Price = new Price 
+              {
+                CoverPremium = 0,
+                CoverPremium2 = 0,
+                CoverPremium4 = 0,
+                CoverPremium12 = 0
+              },
+              Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/AccidentCare1", "AccidentCare1"),
+              Bundles = accidentCareBundles
+            };
+
+            foreach (var item in quotationCoversAccidentCare)
+            {
+              groupAccidentCare.Price.CoverPremium += item.CoverPremium;
+              groupAccidentCare.Price.CoverPremium2 += item.CoverPremium2;
+              groupAccidentCare.Price.CoverPremium4 += item.CoverPremium4;
+              groupAccidentCare.Price.CoverPremium12 += item.CoverPremium12;
+            }
+
+            groupOfBundles.Add(groupAccidentCare);
+          }         
+        }
       }
-
-
-
-      //var price = new Price
-      //{
-      //  CoverPremium = quotationResponse.Quotation.BasicCover?.CoverPremium,
-      //  CoverPremium2 = quotationResponse.Quotation.BasicCover?.CoverPremium2,
-      //  CoverPremium4 = quotationResponse.Quotation.BasicCover?.CoverPremium4,
-      //  CoverPremium12 = quotationResponse.Quotation.BasicCover?.CoverPremium12
-      //};
-
-    
-
- 
 
       return groupOfBundles;
     }

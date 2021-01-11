@@ -52,7 +52,7 @@
           @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/CostTitle", "CostTitle")
         </h3>
         <h4 class="pick__title pick__big-title">
-          -
+          @Model.Product.Price.CoverPremium
         </h4>
       </div>
 
@@ -84,7 +84,10 @@
   </div>
 </section>
 
-<!-- bundles  -->
+
+@if (Model.GroupOfBundles != null && Model.GroupOfBundles.Any())
+{
+  <!-- bundles  -->
 <section class="m-b-46 center--1100 center">
   <div class="flexify m-t-32 m-b-24">
     <h1 class="m-b-8 m-t-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesTitle", "BundlesTitle")</h1>
@@ -95,39 +98,49 @@
   </div>
 
   <div class="pick pick--extras pick--extras__deactive">
-    <div class="pick__item">
-      <div class="pick__titles">
-        <h2 class="pick__title pick__main-title">
-          Group extra καλύψεων 1
-        </h2>
-        <div class="pick__radio">
-          <input type="radio" id="product-extra-1" name="insurance-product-extra" value="" class="product-extra-radio" onclick="SelectProgram(this, arguments);">
-          <label for="product-extra-1"></label>
+    @foreach (var item in Model.GroupOfBundles.Select((value, index) => new { value, index }))
+    {
+      <div class="pick__item">
+        <div class="pick__titles">
+          <h2 class="pick__title pick__main-title">
+            @item.value.Title
+          </h2>
+          <div class="pick__radio">
+            <input type="radio" id="bundle_@item.index" name="insurance-product-extra" value="" class="product-extra-radio" onclick="SelectProgram(this, arguments);">
+            <label for="bundle_@item.index"></label>
+          </div>
+        </div>
+        <div class="pick--extras__more">
+          <h3 class="pick__title pick__sup-title">
+            @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/ProductTitle", "ProductTitle")
+          </h3>
+          <h4 class="pick__title pick__big-title">
+            @item.value.Price.CoverPremium €
+          </h4>
+          <h3 class="pick__title pick__sup-title">
+            @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/IncludeLabel", "IncludeLabel")
+          </h3>
+          <ul class="pick--extras__list">
+            @foreach (var subItem in item.value.Bundles)
+            {
+              <li>@subItem.Title</li>
+            }
+          </ul>
         </div>
       </div>
-      <div class="pick--extras__more">
-        <h3 class="pick__title pick__sup-title">
-          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/ProductTitle", "ProductTitle")
-        </h3>
-        <h4 class="pick__title pick__big-title">
-          1.178,54 €
-        </h4>
-        <h3 class="pick__title pick__sup-title">
-          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/IncludeLabel", "IncludeLabel")
-        </h3>
-        <ul class="pick--extras__list">
-          <li>Extra Hospital Care</li>
-          <li>Accident Care 1</li>
-        </ul>
-      </div>
-    </div>
+    }
   </div>
 
-</section>
+
+
+  </section>
+}
+
+
 
 <section class=" center--1100 center pick-actions m-b-64 m-t-64">
-  <div class="actions__links m-b-24 m-t-24">  
-    <a class="btn btn--ghost-rev btn--default">ΣΥΜΒΟΥΛΕΥΤΕΙΤΕ ΜΑΣ</a>   
+  <div class="actions__links m-b-24 m-t-24">
+    <a class="btn btn--ghost-rev btn--default">ΣΥΜΒΟΥΛΕΥΤΕΙΤΕ ΜΑΣ</a>
   </div>
   <div class="actions__results">
     <div class="actions__results__sum">
