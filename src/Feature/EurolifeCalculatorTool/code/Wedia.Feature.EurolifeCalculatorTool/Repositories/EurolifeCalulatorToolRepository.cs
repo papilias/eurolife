@@ -151,16 +151,13 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
                                                                     bundleCovers,
                                                                     groupOfBundleCovers);
 
-
-      
-
-      //product.Price = GetProductPricing(quotationResponse, availableProducts);
-     // var groupOfBundles = GetGroupOfBundles(quotationResponse, bundles);
+      product.Price = GetProductPricing(quotationResponse, availableProducts);
+      var groupOfBundles = GetViewModelBundlesWithPricing(quotationResponse, bundleCovers, groupOfBundleCovers);
 
       return new OfferViewModel 
       { 
         Product = product  ,
-       // GroupOfBundles = groupOfBundles
+        GroupOfBundles = groupOfBundles
       };
     }
 
@@ -288,85 +285,133 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       return price;
     }
 
-    //private List<GroupOfBundle> GetGroupOfBundles(Models.Api.Quotation.Response.QuotationResponse quotationResponse,
-    // List<Bundle> bundles)
-    //{
-    //  var groupOfBundles = new List<GroupOfBundle>();
+    private List<GroupOfBundle> GetViewModelBundlesWithPricing(Models.Api.Quotation.Response.QuotationResponse quotationResponse,
+     List<Bundle> bundleCovers,
+     List<GroupOfBundle> groupOfBundlesCovers)
+    {
+      var viewModelGroupOfBundles = new List<GroupOfBundle>();
+      var responseBundles = new List<Bundle>();
 
-    //  if (quotationResponse.Quotation.Covers != null && quotationResponse.Quotation.Covers.Any())
-    //  {
-    //    foreach (var cover in quotationResponse.Quotation?.Covers.Where(x => x.CovCode != Constants.ExtraHospitalCareCode))//this is special bundle product, we need group here
-    //    {
-    //      if (bundles.Where(x => x.CovCode == cover.CovCode.ToString()).Any())//is bundle
-    //      {
-    //        var bundle = bundles.Where(x => x.CovCode == cover.CovCode.ToString()).FirstOrDefault();
-    //        groupOfBundles.Add(new GroupOfBundle
-    //        {
-    //          Price = new Price
-    //          {
-    //            CoverPremium = cover.CoverPremium,
-    //            CoverPremium2 = cover.CoverPremium2,
-    //            CoverPremium4 = cover.CoverPremium4,
-    //            CoverPremium12 = cover.CoverPremium12
-    //          },
-    //          Bundles = new List<Bundle> { bundle },
-    //          Title = bundle.Title
-    //        });         
-    //      }
-    //    }
+      if (quotationResponse.Quotation.Covers != null && quotationResponse.Quotation.Covers.Any())
+      {
+        foreach (var cover in quotationResponse.Quotation?.Covers)
+        {
+          if (bundleCovers.Where(x => x.Key == cover.CovCode.ToString()).Any())//is bundle
+          {          
+            var bundle = bundleCovers.Where(x => x.Key == cover.CovCode.ToString()).FirstOrDefault();
+            responseBundles.Add(new Bundle
+            {
+              Price = new Price
+              {
+                CoverPremium = cover.CoverPremium,
+                CoverPremium2 = cover.CoverPremium2,
+                CoverPremium4 = cover.CoverPremium4,
+                CoverPremium12 = cover.CoverPremium12
+              },             
+              Title = bundle.Title,
+              Key = bundle.Key
+            });
+          }
+        }
+      }
 
-    //    if(quotationResponse.Quotation.Covers.Where(x => x.CovCode == Constants.ExtraHospitalCareCode).Any())
-    //    {
-    //      //first item is Extra Hospital Care and the others are 1 group for ACCIDENT CARE 1         
-    //      var bundle = bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()).FirstOrDefault();//get this by key - unique, some bundles have same covcode
-    //      var quotationCover = quotationResponse.Quotation.Covers.Where(x => x.CovCode == Constants.ExtraHospitalCareCode).FirstOrDefault();
-    //      groupOfBundles.Add(new GroupOfBundle
-    //      {
-    //        Price = new Price
-    //        {
-    //          CoverPremium = quotationCover.CoverPremium,
-    //          CoverPremium2 = quotationCover.CoverPremium2,
-    //          CoverPremium4 = quotationCover.CoverPremium4,
-    //          CoverPremium12 = quotationCover.CoverPremium12
-    //        },
-    //        Bundles = new List<Bundle> { bundle },
-    //        Title = bundle.Title
-    //      });                  
+      if (quotationResponse.Quotation.BundleCovers != null && quotationResponse.Quotation.BundleCovers.Any())
+      {
+        foreach(var group in quotationResponse.Quotation.BundleCovers)
+        {
+          var groupBundle = groupOfBundlesCovers.Where(x => x.Key == group.Code.ToString()).FirstOrDefault();
+          responseBundles.Add(new Bundle
+          {
+            Price = new Price
+            {
+              CoverPremium = group.CoverPremium,
+              CoverPremium2 = group.CoverPremium2,
+              CoverPremium4 = group.CoverPremium4,
+              CoverPremium12 = group.CoverPremium12
+            },
+            Title = groupBundle.Title,
+            Key = groupBundle.Key
+          });
+        }
+      }
 
-    //      var quotationCoversAccidentCare = quotationResponse.Quotation.Covers.Where(x => x.CovCode == Constants.ExtraHospitalCareCode)?.Skip(1)?.ToList();
-    //      if(quotationCoversAccidentCare != null && quotationCoversAccidentCare.Any())
-    //      {
-    //        var accidentCareBundles = bundles.Where(x => x.CovCode == Constants.ExtraHospitalCareCode.ToString()
-    //                                      && x.Key != Constants.ExtraHospitalCareCode.ToString())?.ToList();
+      //create the custom desired group of bundles
+      if(GetBasicBundle(responseBundles) != null)
+        viewModelGroupOfBundles.Add(GetBasicBundle(responseBundles));
 
-    //        var groupAccidentCare = new GroupOfBundle 
-    //        {
-    //          Price = new Price 
-    //          {
-    //            CoverPremium = 0,
-    //            CoverPremium2 = 0,
-    //            CoverPremium4 = 0,
-    //            CoverPremium12 = 0
-    //          },
-    //          Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/AccidentCare1", "AccidentCare1"),
-    //          Bundles = accidentCareBundles
-    //        };
+      //create medium bundle   
+      if (GetMediumBundle(responseBundles) != null)
+        viewModelGroupOfBundles.Add(GetMediumBundle(responseBundles));
 
-    //        foreach (var item in quotationCoversAccidentCare)
-    //        {
-    //          groupAccidentCare.Price.CoverPremium += item.CoverPremium;
-    //          groupAccidentCare.Price.CoverPremium2 += item.CoverPremium2;
-    //          groupAccidentCare.Price.CoverPremium4 += item.CoverPremium4;
-    //          groupAccidentCare.Price.CoverPremium12 += item.CoverPremium12;
-    //        }
+      //create full bundle    
+      if (GetFullBundle(responseBundles) != null)
+        viewModelGroupOfBundles.Add(GetFullBundle(responseBundles));
 
-    //        groupOfBundles.Add(groupAccidentCare);
-    //      }         
-    //    }
-    //  }
+      return viewModelGroupOfBundles;
+    }
 
-    //  return groupOfBundles;
-    //}
+    private GroupOfBundle GetFullBundle(List<Bundle> bundles)
+    {
+      var fullBundle = new GroupOfBundle
+      {
+        Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Full", "Full"),
+        Bundles = bundles
+      };
+
+      fullBundle.Price = new Price
+      {
+        CoverPremium = fullBundle.Bundles.Sum(x => x.Price.CoverPremium),
+        CoverPremium2 = fullBundle.Bundles.Sum(x => x.Price.CoverPremium2),
+        CoverPremium4 = fullBundle.Bundles.Sum(x => x.Price.CoverPremium4),
+        CoverPremium12 = fullBundle.Bundles.Sum(x => x.Price.CoverPremium12),
+      };
+
+      return fullBundle;
+    }
+
+    private GroupOfBundle GetMediumBundle(List<Bundle> bundles)
+    {
+      var mediumBundle = new GroupOfBundle
+      {
+        Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Medium", "Medium"),
+        Bundles = bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
+        || x.Key == Constants.AccidentCare1Code.ToString()
+        || x.Key == Constants.SeriusInjuriesCode.ToString()).ToList()
+      };
+
+      mediumBundle.Price = new Price
+      {
+        CoverPremium = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium),
+        CoverPremium2 = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium2),
+        CoverPremium4 = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium4),
+        CoverPremium12 = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium12),
+      };
+
+      return mediumBundle;
+    }
+
+    private GroupOfBundle GetBasicBundle(List<Bundle> bundles)
+    {
+      if (bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()).Any())//we have amount <=6000
+      {
+        var basicBundle = new GroupOfBundle
+        {
+          Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Basic", "Basic"),
+          Bundles = bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
+          || x.Key == Constants.AccidentCare1Code.ToString()).ToList()
+        };
+
+        basicBundle.Price = new Price
+        {
+          CoverPremium = basicBundle.Bundles.Sum(x => x.Price.CoverPremium),
+          CoverPremium2 = basicBundle.Bundles.Sum(x => x.Price.CoverPremium2),
+          CoverPremium4 = basicBundle.Bundles.Sum(x => x.Price.CoverPremium4),
+          CoverPremium12 = basicBundle.Bundles.Sum(x => x.Price.CoverPremium12),
+        };
+        return basicBundle;        
+      }
+      else return null;
+    }
 
     private Bundle MappingBundleEntityItem(Item item)
     {

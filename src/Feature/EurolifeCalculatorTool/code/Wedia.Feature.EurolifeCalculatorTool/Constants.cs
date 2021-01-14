@@ -22,5 +22,8 @@ namespace Wedia.Feature.EurolifeCalculatorTool
 
     public const long ExtraHospitalCareCode = 30292;
     public const long AccidentCare1Code = 17;
+    public const long SeriusInjuriesCode = 30003;
+    public const long PremiumSurgerysCode = 30113;
+    public const long PremiumDiagnosticsCode = 30415;
   }
 }
