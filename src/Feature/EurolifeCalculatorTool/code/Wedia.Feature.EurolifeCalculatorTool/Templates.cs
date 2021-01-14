@@ -53,6 +53,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool
       public static readonly ID ID = new ID("{96FE92AA-7E2D-4601-ADD7-4317621898F2}");
     }
 
+    public struct BundleGroup
+    {
+      public static readonly ID ID = new ID("{E1EBFAF1-D607-4EE2-A8A6-FCFB2D6475E1}");
+    }
+
     public struct Bundle
     {
       public static readonly ID ID = new ID("{E4518440-EB6E-4EF0-8889-FC9E92DAC933}");

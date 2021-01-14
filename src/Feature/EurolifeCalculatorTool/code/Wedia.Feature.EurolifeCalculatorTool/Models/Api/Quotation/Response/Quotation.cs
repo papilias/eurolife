@@ -9,7 +9,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models.Api.Quotation.Response
   {
     public BasicCover BasicCover { get; set; }
     public List<Cover> Covers { get; set; }
-    public List<object> BundleCovers { get; set; }
+    public List<BundleCover> BundleCovers { get; set; }
     public Customer Insured { get; set; }
     public Customer Customer { get; set; }
     public bool? InsuredSameWithCustomer { get; set; }

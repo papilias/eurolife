@@ -100,6 +100,7 @@ function getOffer(e) {
       stepContent.html(response);
       loading = false;
       breadcrumbStepActive(step4);
+      initializeStep4();
       calculationButton.prop('disabled', loading);
       calculationButton.removeClass('btn--inactive');
     },
@@ -356,4 +357,12 @@ function ActivateExtras(e) {
       item.checked = false;
     }
   }
+}
+
+function initializeStep4() {
+  $("#covers_duration").change(function () {
+    console.log('covers duration');
+    var selected = this.value;
+    const items = document.querySelectorAll(`[data-${selected}]`);
+  });
 }

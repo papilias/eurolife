@@ -8,7 +8,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
   public class Bundle : BaseEntity
   {
     public Price Price { get; set; }
-    public string CoverCapital { get; set; }   
-    public string CovCode { get; set; }
+    public string CoverCapital { get; set; }       
   }
 }

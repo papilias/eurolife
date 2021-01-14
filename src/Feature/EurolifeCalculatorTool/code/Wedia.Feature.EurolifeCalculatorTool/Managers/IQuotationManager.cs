@@ -8,6 +8,9 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
 {
   public interface IQuotationManager
   {
-    Task<Models.Api.Quotation.Response.QuotationResponse> GetQuotation(Models.UserSelection userSelection, Models.Product product, List<Models.Bundle> bundles);
+    Task<Models.Api.Quotation.Response.QuotationResponse> GetQuotation(Models.UserSelection userSelection, 
+      Models.Product product, 
+      List<Models.Bundle> bundles,
+      List<Models.GroupOfBundle> groupOfBundles);
   }
 }

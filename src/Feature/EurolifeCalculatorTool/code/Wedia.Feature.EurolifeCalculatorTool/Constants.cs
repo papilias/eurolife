@@ -21,5 +21,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool
     public static readonly string LifeWebApiURL = Sitecore.Configuration.Settings.GetSetting("EurolifeCalculatorTool.LifeWebApi.URL").ToString();
 
     public const long ExtraHospitalCareCode = 30292;
+    public const long AccidentCare1Code = 17;
   }
 }

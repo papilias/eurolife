@@ -212,11 +212,13 @@
     <Compile Include="Models\Amount.cs" />
     <Compile Include="Models\Api\Common\Header.cs" />
     <Compile Include="Models\Api\Quotation\Request\BasicCover.cs" />
+    <Compile Include="Models\Api\Quotation\Request\BundleCover.cs" />
     <Compile Include="Models\Api\Quotation\Request\Cover.cs" />
     <Compile Include="Models\Api\Quotation\Request\Customer.cs" />
     <Compile Include="Models\Api\Quotation\Request\Quotation.cs" />
     <Compile Include="Models\Api\Quotation\Request\QuotationRequest.cs" />
     <Compile Include="Models\Api\Quotation\Response\BasicCover.cs" />
+    <Compile Include="Models\Api\Quotation\Response\BundleCover.cs" />
     <Compile Include="Models\Api\Quotation\Response\Cover.cs" />
     <Compile Include="Models\Api\Quotation\Response\Customer.cs" />
     <Compile Include="Models\Api\Quotation\Response\Dependent.cs" />

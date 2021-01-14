@@ -18,7 +18,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
       this._requestService = requestService;
     }
 
-    public async Task<Models.Api.Quotation.Response.QuotationResponse> GetQuotation(Models.UserSelection userSelection, Models.Product product, List<Models.Bundle> bundles)
+    public async Task<Models.Api.Quotation.Response.QuotationResponse> GetQuotation(Models.UserSelection userSelection, Models.Product product, List<Models.Bundle> bundles, List<Models.GroupOfBundle> groupOfBundles )
     {
       var quotationRequest = new Models.Api.Quotation.Request.QuotationRequest
       {
@@ -27,6 +27,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
         {
           BasicCover = GetBasicCover(product),
           Covers = GetCovers(product, bundles),
+          BundleCovers = GetBundlesCovers(groupOfBundles), 
           Insured = GetInsured(userSelection.FamilyMembers),
           Customer = GetCustomer(userSelection.FamilyMembers),
           InsuredSameWithCustomer = true,
@@ -86,7 +87,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
         {
           covers.Add(new Models.Api.Quotation.Request.Cover
           {
-            CovCode = bundle.CovCode,
+            CovCode = bundle.Key,
             CoverCapital = bundle.CoverCapital,
             IsSelected = true,
             IsDepend = true
@@ -95,6 +96,56 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
       }
 
       return covers;
+    }
+
+    private List<Models.Api.Quotation.Request.BundleCover> GetBundlesCovers(List<Models.GroupOfBundle> groupOfBundles)
+    {
+      var bundleCovers = new List<Models.Api.Quotation.Request.BundleCover>();
+
+      if(groupOfBundles != null && groupOfBundles.Any())
+      {
+        foreach (var group in groupOfBundles)
+        {
+          var bundleCover = new Models.Api.Quotation.Request.BundleCover
+          {
+            Code = long.Parse(group.Key),
+            Descr = group.Title,
+            IsSelected = true,
+            Covers = new List<Models.Api.Quotation.Request.Cover>()
+          };
+
+          if (group.Bundles != null && groupOfBundles.Any())
+          {
+            foreach (var bundle in group.Bundles)
+            {
+              bundleCover.Covers.Add(new Models.Api.Quotation.Request.Cover 
+              {
+                CoverDescription = bundle.Title,
+                CovCode = bundle.Key,
+                CoverCapital = bundle.CoverCapital,
+                CoverPremium = 0,
+                CoverPremium2 = 0,
+                CoverPremium4 = 0,
+                CoverPremium12 = 0,
+                IsSelected = false,
+                IsDepend = false,
+                IsFixedBsa = false,
+                CovType = 0,
+                ProductCode = 0,
+                NotInsurable = false,
+                SpecialTerm = false,
+                LoadPerCentOnPremium = 0,
+                LoadPerThousandOnSumInsured = 0,
+                CategoryCode = 0
+              });
+            }
+          }
+
+          bundleCovers.Add(bundleCover);
+        }
+      }
+
+      return bundleCovers;
     }
 
     private Models.Api.Quotation.Request.Customer GetInsured(IEnumerable<Models.FamilyMember> familyMembers)
