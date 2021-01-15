@@ -171,5 +171,14 @@ namespace Wedia.Feature.EurolifeCalculatorTool
 
       }
     }
+
+    public struct HasCTA
+    {
+      public static readonly ID ID = new ID("{5E71F233-C446-4B67-982D-A7CC229B4E69}");
+      public struct Fields
+      {        
+        public static readonly ID Link = new ID("{31AB8CDE-F32C-4A92-8A57-294A965B0E14}");
+      }
+    }
   }
 }

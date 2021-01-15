@@ -25,6 +25,9 @@ $('[name="target"]').change(function (e) {
 })
 
 function showNextStep(e) {
+  if (loading || !isButtonActive(nextButton))
+    return false;
+
   console.log('dataset');
   console.log(e.dataset);
   let nextStep = e.dataset.nextstep;
@@ -72,6 +75,9 @@ function showNextStep(e) {
 }
 
 function getOffer(e) {
+  if (loading)
+    return false;
+
   var selectedAmount = $('ul.range-labels li[class="active selected"]');
   let amount = { key: $(selectedAmount).data('value'), title: $(selectedAmount).text(), guiid: $(selectedAmount).data('guiid') };
 
@@ -113,7 +119,12 @@ function getOffer(e) {
   });
 }
 
-
+function isButtonActive(button){
+  if ($(button).hasClass('btn--inactive'))
+    return false;
+  else
+    return true;
+}
 
 function nextButtonActive() {
   nextButton.removeClass('btn--inactive');
@@ -332,6 +343,14 @@ function SelectProgram(e) {
   }
 
   e.closest('.pick__item').classList.add('pick__item--selected');
+
+  var selectedDuration = $("#covers_duration").val();
+  var selectedCovers = e.closest('.pick__item').querySelectorAll(`[data-${selectedDuration}]`);
+  if (selectedCovers.length > 0) {
+    var cover = selectedCovers[0];
+    var price = $(cover).attr(`data-${selectedDuration}`);   
+    recalculateTotalCost(parseFloat(price));
+  }
 }
 
 function ExpandProgram(e) {
@@ -355,6 +374,7 @@ function ActivateExtras(e) {
     else {
       item.setAttribute("disabled", "disabled");
       item.checked = false;
+      resetTotalCostToDefault();
     }
   }
 }
@@ -363,6 +383,69 @@ function initializeStep4() {
   $("#covers_duration").change(function () {
     console.log('covers duration');
     var selected = this.value;
+    var bundleDurationTitle = $(this).find(':selected').attr('data-bundlesduration');
+    console.log(selected);
     const items = document.querySelectorAll(`[data-${selected}]`);
+    var totalCost = 0;
+
+    if (items.length > 0) {
+      $(items).each(function (index, item) {
+        console.log(item);
+        var price = $(item).attr(`data-${selected}`);
+        console.log(price);
+        $(item).text(numberToGreekFormat(price));       
+       
+        if (index == 0 || (index > 0 && $(item).parent().parent().hasClass('pick__item--selected')))
+          totalCost += parseFloat(price);
+      });
+
+       //update label in bundle    
+      const bundles = document.querySelectorAll('.cover_duration');
+
+      if (bundles.length > 0) {
+        $(bundles).each(function (index, item) {
+          console.log(item);
+          console.log(bundleDurationTitle);
+          $(this).text(bundleDurationTitle);
+        });
+      }
+
+      console.log('totalCost: ', { totalCost });
+      setTotalCost(totalCost);  
+    }
   });
+}
+
+function getProductPrice() {
+  var selected = $("#covers_duration").val();
+  var floatPrice = 0;
+
+  const items = document.querySelectorAll(`[data-${selected}]`);
+  if (items.length > 0) {
+    var product = items[0];
+    var price = $(product).attr(`data-${selected}`);
+    floatPrice =  parseFloat(price);
+  } 
+  return floatPrice;
+}
+
+function resetTotalCostToDefault() {
+  var productCost = getProductPrice();
+  setTotalCost(productCost);
+}
+
+function recalculateTotalCost(extraCost) {
+  var totalCost = getProductPrice();
+  totalCost += parseFloat(extraCost);
+  setTotalCost(totalCost);
+}
+
+function setTotalCost(totalCost) {
+  $('#totalCost').text(numberToGreekFormat(totalCost));
+}
+
+function numberToGreekFormat(number) {
+  const elFormatter = new Intl.NumberFormat("el-GR");
+  var round = (Math.round(number * 100) / 100).toFixed(2);
+  return elFormatter.format(round).toString() + " €";
 }

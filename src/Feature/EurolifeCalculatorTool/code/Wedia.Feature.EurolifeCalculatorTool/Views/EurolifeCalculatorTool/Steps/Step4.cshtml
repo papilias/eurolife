@@ -2,6 +2,7 @@
 @using Wedia.Foundation.Dictionary.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @using System.Linq
+@using Wedia.Feature.EurolifeCalculatorTool
 
 @model  OfferViewModel
 
@@ -51,12 +52,12 @@
         <h3 class="pick__title pick__sup-title">
           @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/CostTitle", "CostTitle")
         </h3>
-        <h4 class="pick__title pick__big-title" 
+        <h4 class="pick__title pick__big-title"
             data-CoverPremium="@Model.Product.Price.CoverPremium"
             data-CoverPremium2="@Model.Product.Price.CoverPremium2"
             data-CoverPremium4="@Model.Product.Price.CoverPremium4"
             data-CoverPremium12="@Model.Product.Price.CoverPremium12">
-          @Model.Product.Price.CoverPremium
+          @Model.Product.Price.CoverPremium.ToGreekFormat() €
         </h4>
       </div>
 
@@ -90,71 +91,87 @@
 @if (Model.GroupOfBundles != null && Model.GroupOfBundles.Any())
 {
   <!-- bundles  -->
-<section class="m-b-46 center--1100 center">
-  <div class="flexify m-t-32 m-b-24">
-    <h1 class="m-b-8 m-t-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesTitle", "BundlesTitle")</h1>
-    <label class="switch switch--pick">
-      <input type="checkbox" id="activate-extras" value="activate-extras" onclick="ActivateExtras(this, arguments);">
-      <span class="switch__slider"></span>
-    </label>
-  </div>
+  <section class="m-b-46 center--1100 center">
+    <div class="flexify m-t-32 m-b-24">
+      <h1 class="m-b-8 m-t-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesTitle", "BundlesTitle")</h1>
+      <label class="switch switch--pick">
+        <input type="checkbox" id="activate-extras" value="activate-extras" onclick="ActivateExtras(this, arguments);">
+        <span class="switch__slider"></span>
+      </label>
+    </div>
 
-  <div class="pick pick--extras pick--extras__deactive">
-    @foreach (var item in Model.GroupOfBundles.Select((value, index) => new { value, index }))
-    {
-      <div class="pick__item">
-        <div class="pick__titles">
-          <h2 class="pick__title pick__main-title">
-            @item.value.Title
-          </h2>
-          <div class="pick__radio">
-            <input type="radio" id="bundle_@item.index" name="insurance-product-extra" value="" class="product-extra-radio" onclick="SelectProgram(this, arguments);">
-            <label for="bundle_@item.index"></label>
+    <div class="pick pick--extras pick--extras__deactive">
+      @foreach (var item in Model.GroupOfBundles.Select((value, index) => new { value, index }))
+      {
+        <div class="pick__item">
+          <div class="pick__titles">
+            <h2 class="pick__title pick__main-title">
+              @item.value.Title
+            </h2>
+            <div class="pick__radio">
+              <input type="radio" id="bundle_@item.index" name="insurance-product-extra" value="" class="product-extra-radio" onclick="SelectProgram(this, arguments);">
+              <label for="bundle_@item.index"></label>
+            </div>
+          </div>
+          <div class="pick--extras__more">
+            <h3 class="pick__title pick__sup-title cover_duration">
+              @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesDuration/12-Months", "12-Months")
+            </h3>
+            <h4 class="pick__title pick__big-title"
+                data-CoverPremium="@item.value.Price.CoverPremium"
+                data-CoverPremium2="@item.value.Price.CoverPremium2"
+                data-CoverPremium4="@item.value.Price.CoverPremium4"
+                data-CoverPremium12="@item.value.Price.CoverPremium12">
+              @item.value.Price.CoverPremium.ToGreekFormat() €
+            </h4>
+            <h3 class="pick__title pick__sup-title">
+              @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/IncludeLabel", "IncludeLabel")
+            </h3>
+            <ul class="pick--extras__list">
+              @foreach (var subItem in item.value.Bundles)
+              {
+                <li>@subItem.Title</li>
+              }
+            </ul>
           </div>
         </div>
-        <div class="pick--extras__more">
-          <h3 class="pick__title pick__sup-title">
-            @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/ProductTitle", "ProductTitle")
-          </h3>
-          <h4 class="pick__title pick__big-title">
-            @item.value.Price.CoverPremium €
-          </h4>
-          <h3 class="pick__title pick__sup-title">
-            @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/IncludeLabel", "IncludeLabel")
-          </h3>
-          <ul class="pick--extras__list">
-            @foreach (var subItem in item.value.Bundles)
-            {
-              <li>@subItem.Title</li>
-            }
-          </ul>
-        </div>
-      </div>
-    }
-  </div>
-
-
-
+      }
+    </div>
   </section>
 }
 
-
-
 <section class=" center--1100 center pick-actions m-b-64 m-t-64">
-  <div class="actions__links m-b-24 m-t-24">
-    <a class="btn btn--ghost-rev btn--default">ΣΥΜΒΟΥΛΕΥΤΕΙΤΕ ΜΑΣ</a>
-  </div>
+  @if (Model.RenderingItem.FieldHasValue(Templates.HasCTA.Fields.Link))
+  {
+    var linkURL = Model.RenderingItem.LinkFieldUrl(Templates.HasCTA.Fields.Link);
+    var linkDescription = Model.RenderingItem.LinkFieldOptions(Templates.HasCTA.Fields.Link, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Text);  
+    <div class="actions__links m-b-24 m-t-24">
+      <a class="btn btn--ghost-rev btn--default" href="@linkURL">@linkDescription</a>
+    </div>
+  }
+
   <div class="actions__results">
     <div class="actions__results__sum">
-      <h3 class="h6">ΣΥΝΟΛΟ ΑΣΦΑΛΙΣΤΡΩΝ</h3>
-      <h2 class="pick__title pick__big-title" id="totalCost">@Model.Product.Price.CoverPremium €</h2>
+      <h3 class="h6">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/TotalCost", "TotalCost")</h3>
+      <h2 class="pick__title pick__big-title" id="totalCost">@Model.Product.Price.CoverPremium.ToGreekFormat() €</h2>
     </div>
-    @*<a class="btn btn--ghost-rev btn--default actions__duration">Ετήσια διάρκεια</a>*@
     <select name="covers_duration" id="covers_duration">
-      <option value="CoverPremium" selected>Ετήσια διάρκεια</option>
-      <option value="CoverPremium2">Εξάμηνη διάρκεια</option>
-      <option value="CoverPremium4">Τριμηνιαία διάρκεια</option>
-      <option value="CoverPremium12">Μηνιαία διάρκεια</option>
+      <option value="coverPremium" selected
+              data-bundlesduration="@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesDuration/12-Months", "12-Months")">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/DropDownDuration/12-Months", "12-Months")
+      </option>
+      <option value="coverPremium2"
+              data-bundlesduration="@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesDuration/6-Months", "6-Months")">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/DropDownDuration/6-Months", "6-Months")
+      </option>
+      <option value="coverPremium4"
+              data-bundlesduration="@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesDuration/3-Months", "3-Months")">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/DropDownDuration/3-Months", "3-Months")
+      </option>
+      <option value="coverPremium12"
+              data-bundlesduration="@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesDuration/1-Month", "1-Month")">
+        @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/DropDownDuration/1-Month", "1-Month")
+      </option>
     </select>
   </div>
 </section>

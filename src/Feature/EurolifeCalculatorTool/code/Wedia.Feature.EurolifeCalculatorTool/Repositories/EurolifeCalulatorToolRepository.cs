@@ -156,7 +156,8 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
       return new OfferViewModel 
       { 
-        Product = product  ,
+        RenderingItem = contextItem,
+        Product = product,
         GroupOfBundles = groupOfBundles
       };
     }

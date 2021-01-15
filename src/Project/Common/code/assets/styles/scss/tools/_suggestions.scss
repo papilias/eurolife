@@ -157,6 +157,7 @@
     margin: 0 auto;
     padding: 0;
     top: 0;
+    position:absolute;
 
     @include breakpoint(700) {
       top: 31px;
