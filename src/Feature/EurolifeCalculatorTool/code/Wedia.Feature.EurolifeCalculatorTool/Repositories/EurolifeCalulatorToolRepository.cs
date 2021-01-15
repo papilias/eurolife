@@ -161,7 +161,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       };
     }
 
-
     private Product GetProductByUserSelection(Item contextItem, UserSelection userSelection)
     {
       var productsList = contextItem
@@ -336,81 +335,61 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       }
 
       //create the custom desired group of bundles
-      if(GetBasicBundle(responseBundles) != null)
-        viewModelGroupOfBundles.Add(GetBasicBundle(responseBundles));
+      var basicBundle = GetBasicBundle(responseBundles);
+      if (basicBundle != null)
+        viewModelGroupOfBundles.Add(basicBundle);
 
-      //create medium bundle   
-      if (GetMediumBundle(responseBundles) != null)
-        viewModelGroupOfBundles.Add(GetMediumBundle(responseBundles));
+      //create medium bundle 
+      var mediumBundle = GetMediumBundle(responseBundles);
+      if (mediumBundle != null)
+        viewModelGroupOfBundles.Add(mediumBundle);
 
-      //create full bundle    
-      if (GetFullBundle(responseBundles) != null)
-        viewModelGroupOfBundles.Add(GetFullBundle(responseBundles));
+      //create full bundle 
+      var fullBundle = GetFullBundle(responseBundles);
+      if (fullBundle != null)
+        viewModelGroupOfBundles.Add(fullBundle);
 
       return viewModelGroupOfBundles;
-    }
-
-    private GroupOfBundle GetFullBundle(List<Bundle> bundles)
-    {
-      var fullBundle = new GroupOfBundle
-      {
-        Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Full", "Full"),
-        Bundles = bundles
-      };
-
-      fullBundle.Price = new Price
-      {
-        CoverPremium = fullBundle.Bundles.Sum(x => x.Price.CoverPremium),
-        CoverPremium2 = fullBundle.Bundles.Sum(x => x.Price.CoverPremium2),
-        CoverPremium4 = fullBundle.Bundles.Sum(x => x.Price.CoverPremium4),
-        CoverPremium12 = fullBundle.Bundles.Sum(x => x.Price.CoverPremium12),
-      };
-
-      return fullBundle;
-    }
-
-    private GroupOfBundle GetMediumBundle(List<Bundle> bundles)
-    {
-      var mediumBundle = new GroupOfBundle
-      {
-        Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Medium", "Medium"),
-        Bundles = bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
-        || x.Key == Constants.AccidentCare1Code.ToString()
-        || x.Key == Constants.SeriusInjuriesCode.ToString()).ToList()
-      };
-
-      mediumBundle.Price = new Price
-      {
-        CoverPremium = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium),
-        CoverPremium2 = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium2),
-        CoverPremium4 = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium4),
-        CoverPremium12 = mediumBundle.Bundles.Sum(x => x.Price.CoverPremium12),
-      };
-
-      return mediumBundle;
-    }
+    }    
 
     private GroupOfBundle GetBasicBundle(List<Bundle> bundles)
     {
       if (bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()).Any())//we have amount <=6000
-      {
-        var basicBundle = new GroupOfBundle
-        {
-          Title = DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Basic", "Basic"),
-          Bundles = bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
-          || x.Key == Constants.AccidentCare1Code.ToString()).ToList()
-        };
-
-        basicBundle.Price = new Price
-        {
-          CoverPremium = basicBundle.Bundles.Sum(x => x.Price.CoverPremium),
-          CoverPremium2 = basicBundle.Bundles.Sum(x => x.Price.CoverPremium2),
-          CoverPremium4 = basicBundle.Bundles.Sum(x => x.Price.CoverPremium4),
-          CoverPremium12 = basicBundle.Bundles.Sum(x => x.Price.CoverPremium12),
-        };
-        return basicBundle;        
+      {   
+        return SetGroupOfBundle(bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
+          || x.Key == Constants.AccidentCare1Code.ToString()).ToList(),
+          DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Basic", "Basic"));
       }
       else return null;
+    }
+
+    private GroupOfBundle GetMediumBundle(List<Bundle> bundles)
+    {
+      return SetGroupOfBundle(bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
+       || x.Key == Constants.AccidentCare1Code.ToString()
+       || x.Key == Constants.SeriusInjuriesCode.ToString()).ToList(),
+           DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Medium", "Medium"));
+    }
+
+    private GroupOfBundle GetFullBundle(List<Bundle> bundles)
+    {
+      return SetGroupOfBundle(bundles, DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Full", "Full"));
+    }
+
+    private GroupOfBundle SetGroupOfBundle(List<Bundle> bundles, string title)
+    {
+      return new GroupOfBundle
+      {
+         Title = title,
+         Bundles = bundles,
+         Price = new Price
+         {
+           CoverPremium = bundles.Sum(x => x.Price.CoverPremium),
+           CoverPremium2 = bundles.Sum(x => x.Price.CoverPremium2),
+           CoverPremium4 = bundles.Sum(x => x.Price.CoverPremium4),
+           CoverPremium12 = bundles.Sum(x => x.Price.CoverPremium12),
+         }
+      };
     }
 
     private Bundle MappingBundleEntityItem(Item item)
