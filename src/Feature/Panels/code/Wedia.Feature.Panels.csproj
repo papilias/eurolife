@@ -69,7 +69,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.PageContent.Serialization.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Panels.Serialization.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Panels\ProductPanel.cshtml" />
     <Content Include="Views\Panels\PanelControls.cshtml" />
