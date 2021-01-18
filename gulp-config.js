@@ -1,14 +1,14 @@
 module.exports = function () {
-  var instanceRoot = "D:\\websites\\eurolifeSite.local";
+  var instanceRoot = "C:\\websites\\eurolifeSite.local";
   var config = {
     websiteRoot: instanceRoot + "\\",
     sitecoreLibraries: instanceRoot + "\\bin",
     licensePath: instanceRoot + "\\App_Data\\license.xml",
-    packageXmlBasePath: "D:\\Source\\Repos\\Eurolife\\code\\App_Data\\packages\\eurolife.xml",
+    packageXmlBasePath: "C:\\Users\\Wedia\\source\\repos\\EurolifeSitecore91\\code\\App_Data\\packages\\eurolife.xml",
     packagePath: instanceRoot + "\\App_Data\\packages",
     solutionName: "Eurolife",
     buildConfiguration: "Debug",
-    buildToolsVersion: 15.0,
+    buildToolsVersion: "auto",
     buildMaxCpuCount: 0,
     buildVerbosity: "minimal",
     buildPlatform: "Any CPU",
