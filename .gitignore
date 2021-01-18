@@ -246,6 +246,3 @@ npm-debug.log
 
 /BuildConfiguration.csproj
 /gulpfile.js.bck
-/src/Feature/Forms/serialization/Forms
-/src/Project/Eurolife/serialization/Content
-/src/Feature/Panels/serialization
