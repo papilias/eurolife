@@ -247,3 +247,5 @@ npm-debug.log
 /BuildConfiguration.csproj
 /gulpfile.js.bck
 gulp-config.js
+.gulp-config.js
+/gulp-config.js
