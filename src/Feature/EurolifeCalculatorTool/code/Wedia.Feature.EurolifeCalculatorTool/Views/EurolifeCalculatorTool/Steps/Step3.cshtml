@@ -23,13 +23,16 @@
 
   <div class="range-wrapper m-b-24">
     <div class="range">
-      <input id="range" type="range" min="0" value="20" max="20000" data-index="20">
+      <input id="range" type="range" min="0" value="20" max="10000" data-index="20">
     </div>
 
     <ul class="range-labels">
       @foreach (var item in Model.AvailableAmounts.Select((value,i) => new { i, value}))
       {
-        <li class="@(item.i == 0 ? "active selected" : null)" data-value="@item.value.Key" data-liindex="@item.i" data-guiid="@item.value.GuiId">@item.value.Title</li>
+
+        int liIndex = item.i + 1;
+
+        <li class="@(item.i == 0 ? "active selected" : null)" data-value="@item.value.Key" data-liindex="@liIndex" data-guiid="@item.value.GuiId">@item.value.Title</li>
       }    
     </ul>
 
