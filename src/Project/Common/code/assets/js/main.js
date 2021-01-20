@@ -240,7 +240,7 @@
             $('.js-hero-slider').slick({
                 mobileFirst:true,
                 dots: true,
-                arrows: false,
+                arrows: true,
                 infinite: false,
                 speed: 500,
                 slidesToShow: 1,
@@ -249,6 +249,8 @@
                 lazyLoad: 'ondemand',
                 autoplay: true,
                 autoplaySpeed: 5000,
+                prevArrow: $('.wprev'),
+                nextArrow: $('.wnext'),
                 appendDots: $('.grouping-dots'),
                 customPaging: function (slider, i) {
                     var item = $pager[i].innerHTML;
