@@ -147,21 +147,77 @@ function breadcrumbStepActive(step) {
 }
 
 function validateYear(e) {
-  if (e.validity.valid == true) {
-    console.log('valid');    
-    e.dataset.isvalid = 'true';   
-    step2Validity();
-  } else {
-    e.dataset.isvalid = 'false';
-    step_2_valid = false;
-    nextButtonInactive();
+  
+  var today = new Date();
+  var year = today.getFullYear();
+
+  var birthYear = e.value;
+  var age = year - birthYear;
+
+
+  if (e.classList.contains('js-validate-father') || e.classList.contains('js-validate-mother'))
+  {   
+    if (age > 18 && age < 63) {
+      e.dataset.isvalid = 'true';
+      let mother = document.getElementById('target-is-mother');
+      if (mother.classList.contains('family-validation') && isOneParentActive()) step2Validity();
+       else step2Validity();
+      
+    }
+    else
+    {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
   }
+
+  if (e.classList.contains('js-validate-me')) {
+    if (age > 18 && age < 63) {
+      e.dataset.isvalid = 'true';
+      step2Validity(); 
+    }
+    else {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
+  }
+
+  if (e.classList.contains('js-validate-son') || e.classList.contains('js-validate-daughter'))
+  {
+    if (age >= 0 && age < 18) {
+      e.dataset.isvalid = 'true';
+      if (isOneParentActive()) step2Validity();
+    }
+    else {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
+  }
+
+  if (e.classList.contains('js-validate-child')) {
+    if (age >= 0 && age < 18) {
+      e.dataset.isvalid = 'true';
+      step2Validity();
+    }
+    else {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
+  }
+
 }
 
 
 function initializeStep2() {
 
   nextButtonStep(step3);
+
+  let father = document.getElementById('target-is-father');
+  let mother = document.getElementById('target-is-mother');
 
   const targetsRemove = document.querySelectorAll('.js-remove-parent');
   if (targetsRemove != null) {
@@ -172,6 +228,13 @@ function initializeStep2() {
         year[0].setAttribute("disabled", "disabled");
         const choice = target.parentElement.parentElement.getElementsByClassName('js-radio-choice');
         choice[0].setAttribute("disabled", "disabled");
+
+        //transering primary person
+        if (mother.classList.contains('target-group--deactive')) document.getElementById('man-is-primary').click();
+        if (father.classList.contains('target-group--deactive')) document.getElementById('woman-is-primary').click();
+
+        if (isOneParentActive() == false) nextButtonInactive();
+
       });
     }
   }
@@ -180,14 +243,76 @@ function initializeStep2() {
   if (targetsAdd != null) {
     for (const target of targetsAdd) {
       target.addEventListener('click', _ => {
+
+        //if birthyear is invalid, deactivate next button
+        let targetInput = target.parentElement.parentElement.getElementsByClassName('js-birth-year');
+        console.log(targetInput[0].dataset.isvalid)
+        if (targetInput[0].dataset.isvalid == "false") nextButtonInactive();
+
         target.parentElement.parentElement.classList.remove('target-group--deactive');
         const year = target.parentElement.parentElement.getElementsByClassName('js-birth-year');
         const choice = target.parentElement.parentElement.getElementsByClassName('js-radio-choice');
         year[0].removeAttribute("disabled");
         choice[0].removeAttribute("disabled");
+
+        if (father.classList.contains('target-group--deactive')) document.getElementById('woman-is-primary').click();
+        if (mother.classList.contains('target-group--deactive')) document.getElementById('man-is-primary').click();
       });
     }
   }
+
+
+  let count;
+  let daughterPlaceholder = document.getElementById('daughter-placeholder');
+  if (daughterPlaceholder) count = parseInt(daughterPlaceholder.dataset.daughtercounter);
+
+
+  const daughtersAdd = document.querySelectorAll('.js-add-daughter');
+  if (daughtersAdd != null) {
+
+    let newChild = 
+        `<div class="target-group__birth target-group__added-birth">
+          <input type="text" class="js-birth-year js-validate-daughter" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
+          <label>Έτος γέννησης</label>
+        </div>`;
+
+    for (const daughter of daughtersAdd) {
+      daughter.addEventListener('click', _ => {
+        nextButtonInactive();
+        if (count < 4) {
+          count = count + 1;
+          daughterPlaceholder.dataset.daughtercounter = count;
+        
+          if (count > 1) daughterPlaceholder.insertAdjacentHTML('beforeend', newChild);
+        }
+
+        
+      });
+    }
+
+  }
+
+
+  const daughtersRemove = document.querySelectorAll('.js-remove-daughter');
+  if (daughtersRemove != null) {
+
+    for (const daughter of daughtersRemove) {
+      daughter.addEventListener('click', _ => {
+        if (count > 1) {
+          count = count - 1;
+          daughterPlaceholder.dataset.daughtercounter = count;
+
+
+          const nodesToRemove = document.querySelectorAll('.target-group__added-birth');
+          daughterPlaceholder.removeChild(nodesToRemove[0]);
+        }
+      
+      });
+    }
+  }
+
+
+
 
   Array.prototype.slice.call(document.querySelectorAll('.js-target'))
     .map(function (container) {
@@ -209,7 +334,7 @@ function initializeStep2() {
         }
       });
       item.increase.addEventListener('click', function () {
-        if (item.value < 10) item.value += 1;
+        if (item.value < 3) item.value += 1;
         if (item.value == 1) {
           item.yearinput.removeAttribute("disabled");
           this.parentElement.parentElement.classList.remove('target-group--deactive');
@@ -218,8 +343,24 @@ function initializeStep2() {
     });
 }
 
+
+function isOneParentActive() {
+
+  let father = document.getElementById('target-is-father');
+  let mother = document.getElementById('target-is-mother');
+
+  if (mother.classList.contains('target-group--deactive') && father.classList.contains('target-group--deactive'))
+  {
+
+    return false;
+  }
+    
+  else
+    return true;
+
+}
+
 function step2Validity() {
-  console.log('step2Validity');
 
   $(".target-group.item-targeted").children().each(function (item) {    
     if ($(this).hasClass('target-group--deactive')) {
