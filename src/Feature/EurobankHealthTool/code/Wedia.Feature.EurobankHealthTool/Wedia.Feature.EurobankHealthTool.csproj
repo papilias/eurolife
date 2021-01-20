@@ -201,6 +201,7 @@
     <Content Include="Views\EurobankHealthTool\EurobankNavigation\EurobankFooter.cshtml" />
     <Content Include="Views\EurobankHealthTool\EurobankLanding\EurobankLandingHero.cshtml" />
     <Content Include="Views\EurobankHealthTool\CalculationTool\CalculationToolPage.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature..EurobankHealthTool.Serialization.config" />
     <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
