@@ -398,6 +398,11 @@ input.person-number{
   input[type="radio"]:checked + label {
     border-color: $color-black;
   }
+
+  .disabled + label{
+      opacity:0.5;
+  }
+
 }
 
 .btn--inactive{
@@ -411,6 +416,17 @@ input.person-number{
 }
 
 
-.target-group__added-birth {
+.target-group__added-son,
+.target-group__added-daughter {
   margin-top: 24px !important;
+}
+
+.validation-error {
+  font-size: 14px;
+  color: red;
+  border-radius: 6px;
+}
+
+.actions__results__sum{
+    margin-bottom:16px;
 }
