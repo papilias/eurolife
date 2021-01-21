@@ -12,6 +12,9 @@
     @Html.Partial("~/Views/EurolifeCalculatorTool/Steps/Step1.cshtml", Model)
   </div><!-- End step content-->
 
+  <div class="hidden validation-error t-r m-b-48" id="calculator-custom-validation"></div>
+
+
   <div class="t-r m-b-48" id="common-button-wrapper">
     <a class="btn btn--default btn--dark btn--inactive" id="go-to-next-step"
        data-itemid="@Model.RenderingItem.ID"

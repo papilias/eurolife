@@ -56,7 +56,7 @@ function ShowNextToolStep(e) {
     
   }
 }
-
+/*
 function validateYear(e) {
 
   if (e.validity.valid == true)
@@ -64,6 +64,37 @@ function validateYear(e) {
   else
     document.getElementById('go-to-step-2').classList.add('btn--inactive');
 }
+*/
+
+
+function validateYear(e) {
+
+  var today = new Date();
+  var year = today.getFullYear();
+
+  var birthYear = e.value;
+  var age = year - birthYear;
+
+  //validate me: ages: 18-64
+  if (e.classList.contains('target-me')) {
+    if (age > 18 && age < 63) {
+      document.getElementById('go-to-step-2').classList.remove('btn--inactive');
+    }
+    else {
+      document.getElementById('go-to-step-2').classList.add('btn--inactive');
+    }
+  }
+  //validate child - ages: 0- 17
+  if (e.classList.contains('target-child')) {
+    if (age >= 0 && age < 18) {
+      document.getElementById('go-to-step-2').classList.remove('btn--inactive');
+    }
+    else {
+      document.getElementById('go-to-step-2').classList.add('btn--inactive');
+    }
+  }
+}
+
 
 function validateRadio(e) {
   if (e.checked)
@@ -130,13 +161,19 @@ function CalculatePrices() {
       let PremiumPerYear = agefound[j].PremiumFinalPrice;
       let PremiumPerMonth = (PremiumPerYear / 12).toFixed(2);
 
-      document.getElementById('pick-premium-' + agefound[j].PremiumCode).innerHTML = PremiumPerMonth;
-      document.getElementById('selected-premium-' + agefound[j].PremiumCode).innerHTML = PremiumPerYear;
+      document.getElementById('pick-premium-' + agefound[j].PremiumCode).innerHTML = numberToGreekFormat(PremiumPerMonth);
+      document.getElementById('selected-premium-' + agefound[j].PremiumCode).innerHTML = numberToGreekFormat(PremiumPerYear);
 
     }
   }
 }
 
+
+function numberToGreekFormat(number) {
+  const elFormatter = new Intl.NumberFormat("el-GR");
+  var round = (Math.round(number * 100) / 100).toFixed(2);
+  return elFormatter.format(round).toString() + " €";
+}
 
 function makeProgramSelection(e) {
   if (e.checked) {
