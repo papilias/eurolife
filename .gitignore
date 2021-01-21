@@ -247,4 +247,4 @@ npm-debug.log
 /BuildConfiguration.csproj
 
 gulp-config.js
-/src/Project/Eurolife/code/App_Config/Environment/Project/Eurolife.Dev.config
+src/Project/Eurolife/code/App_Config/Environment/Project/Eurolife.Dev.config
