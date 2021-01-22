@@ -41,7 +41,7 @@ function showNextStep(e) {
   userSelection.step = nextStep
 
   if (nextStep == step3) {//we are on step 2
-    fillFamilyMembers();
+    fillFamilyMembers();      
   }
 
   console.log({ userSelection });
@@ -584,14 +584,16 @@ function fillFamilyMembers() {
         title = `${childVal} ${title}`;
       }
 
-      let familyMember = {
-        image: image.first().attr("src"),
-        birthDate: birthDate.first().val(),
-        title: title,
-        isPrimaryInsured: isPrimaryInsured
-      };
-      console.log(familyMember);
-      familyMembers.push(familyMember);
+      birthDate.each(function (b) {
+        let familyMember = {
+          image: image.first().attr("src"),
+          birthDate: $(this).val(),
+          title: title,
+          isPrimaryInsured: isPrimaryInsured
+        };
+        console.log(familyMember);
+        familyMembers.push(familyMember);
+      });     
     }
   });
 

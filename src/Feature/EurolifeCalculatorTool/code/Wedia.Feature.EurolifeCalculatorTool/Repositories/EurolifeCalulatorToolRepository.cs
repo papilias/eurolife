@@ -174,7 +174,10 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
         .FirstOrDefault();//?? throw new ArgumentNullException(nameof(contextItem))
 
       var product = MappingProductEntityItem(availableProduct);
-      product.InsuredPeople = userSelection.FamilyMembers.Select(x => new InsuredPerson { Title = x.Title, Image = x.Image });
+      List<IGrouping<string, FamilyMember>> insuredPeople = userSelection.FamilyMembers.GroupBy(x => x.Title).ToList();
+
+      product.InsuredPeople = insuredPeople
+                              .Select(x => new InsuredPerson { Title = x.FirstOrDefault().Title, Image = x.FirstOrDefault().Image });
 
       return product;
     }
