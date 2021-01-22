@@ -152,7 +152,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
                                                                     groupOfBundleCovers);
 
       product.Price = GetProductPricing(quotationResponse, availableProducts);
-      var groupOfBundles = GetViewModelBundlesWithPricing(quotationResponse, bundleCovers, groupOfBundleCovers);
+      var groupOfBundles = userSelection.TargetGroup.Key != Constants.Family_Target_Child ? GetViewModelBundlesWithPricing(quotationResponse, bundleCovers, groupOfBundleCovers) : null;
 
       return new OfferViewModel 
       { 

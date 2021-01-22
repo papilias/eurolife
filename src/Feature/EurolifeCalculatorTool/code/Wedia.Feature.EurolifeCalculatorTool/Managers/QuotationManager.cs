@@ -26,11 +26,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
         Quotation = new Models.Api.Quotation.Request.Quotation
         {
           BasicCover = GetBasicCover(product),
-          Covers = GetCovers(product, bundles),
-          BundleCovers = GetBundlesCovers(groupOfBundles), 
+          Covers = GetCovers(userSelection.TargetGroup, product, bundles),
+          BundleCovers = userSelection.TargetGroup.Key == Constants.Family_Target_Child? null : GetBundlesCovers(groupOfBundles), 
           Insured = GetInsured(userSelection.FamilyMembers),
-          Customer = GetCustomer(userSelection.FamilyMembers),
-          InsuredSameWithCustomer = true,
+          Customer = GetCustomer(userSelection.TargetGroup, userSelection.FamilyMembers),
+          InsuredSameWithCustomer = userSelection.TargetGroup.Key == Constants.Family_Target_Child ? false : true,
           Dependents = GetDependents(userSelection.FamilyMembers, product, bundles),
           FlowId = "0203-01-12e9e77f-8756-4a45-a53c-852538afe25d",
           Channel = 1
@@ -66,7 +66,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
       return basicCover;
     }
 
-    private List<Models.Api.Quotation.Request.Cover> GetCovers(Models.Product product, List<Models.Bundle> bundles)
+    private List<Models.Api.Quotation.Request.Cover> GetCovers(Models.TargetGroup targetGroup, Models.Product product, List<Models.Bundle> bundles)
     {
       var covers = new List<Models.Api.Quotation.Request.Cover>();
 
@@ -81,7 +81,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
         });
       }
 
-      if(bundles!= null && bundles.Any())
+      if(bundles!= null && bundles.Any() && targetGroup.Key != Constants.Family_Target_Child)
       {
         foreach(var bundle in bundles)
         {
@@ -161,13 +161,20 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
       };
     }
 
-    private Models.Api.Quotation.Request.Customer GetCustomer(IEnumerable<Models.FamilyMember> familyMembers)
+    private Models.Api.Quotation.Request.Customer GetCustomer(Models.TargetGroup targetGroup, IEnumerable<Models.FamilyMember> familyMembers)
     {
       var mainInsured = familyMembers.Count() > 1 ? familyMembers.Where(x => x.IsPrimaryInsured).FirstOrDefault() : familyMembers.FirstOrDefault();
+      string birthDate = string.Empty;
+
+      if (targetGroup.Key == Constants.Family_Target_Child)      
+        birthDate = $"{DateTime.Now.AddYears(-30).Year}-01-01";
+     
+      else
+        birthDate = $"{mainInsured.BirthDate}-01-01";
 
       return new Models.Api.Quotation.Request.Customer
       {
-        BirthDate = $"{mainInsured.BirthDate}-01-01",
+        BirthDate = birthDate,
         Profession = 1000,
         ProfessionCategory = 1       
       };
