@@ -355,7 +355,7 @@ function initializeStep2() {
           }, 100);
 
           const nodesToRemove = document.querySelectorAll('.target-group__added-daughter');
-          if (nodesToRemove != null) daughterPlaceholder.removeChild(nodesToRemove[0]);
+          if (nodesToRemove.length > 0) daughterPlaceholder.removeChild(nodesToRemove[0]);
 
           var messenegerDiv = document.getElementById('calculator-custom-validation');
           if (messenegerDiv.classList.contains('max-persons')) {
@@ -428,7 +428,8 @@ function initializeStep2() {
           }, 100);
 
           const nodesToRemove = document.querySelectorAll('.target-group__added-son');
-          if (nodesToRemove) sonPlaceholder.removeChild(nodesToRemove[0]);
+          
+          if (nodesToRemove.length > 0) sonPlaceholder.removeChild(nodesToRemove[0]);
 
           var messenegerDiv = document.getElementById('calculator-custom-validation');
           if (messenegerDiv.classList.contains('max-persons')) {
