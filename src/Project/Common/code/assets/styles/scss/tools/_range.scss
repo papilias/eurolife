@@ -118,7 +118,6 @@
 
 }
 
-
 .range-wrapper{
   padding: 40px 48px 24px;
   border:1px solid #DEDEDE;
@@ -131,3 +130,16 @@
     margin-right: -24px;
   }
 }
+
+.range-labels li:after {
+  margin: 0 auto;
+  position: absolute;
+  top: -33px;
+  left: 0;
+  right: 0;
+  background: transparent;
+  width: 99%;
+  height: 30px;
+  content:'';
+}
+
