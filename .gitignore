@@ -245,7 +245,6 @@ npm-debug.log
 .DS_Store
 
 /BuildConfiguration.csproj
-/gulpfile.js.bck
+
 gulp-config.js
-.gulp-config.js
-/gulp-config.js
+src/Project/Eurolife/code/App_Config/Environment/Project/Eurolife.Dev.config
