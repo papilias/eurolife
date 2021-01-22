@@ -53,8 +53,7 @@
         });
     }
 
-    $(document).ready(function () {
-
+  $(document).ready(function () {
         //using an instersection observer for storyline effects
         if (document.getElementById('timeline')) {
           const years = document.querySelectorAll('.year-item');
@@ -258,7 +257,46 @@
                 }
 
             });
-        }
+    }
+
+    if ($('.js-blog-slider').length && $(window).width() >= 540) {
+      $('.js-blog-slider').slick({
+        mobileFirst: true,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        fade: false,
+        ease: 'Pow4.easeIn',
+        lazyLoad: 'ondemand',
+        autoplay: false,
+        autoplaySpeed: 5000,
+        prevArrow: $('.bprev'),
+        nextArrow: $('.bnext'),
+        responsive: [
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 540,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 920,
+            settings: {
+              slidesToShow: 3
+            }
+          }
+        ]
+      });
+    }
 
 
 
@@ -982,3 +1020,38 @@ function ActivateExtras(e) {
     }
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  //NEW HOME PAGE ELEMENT INTERACTIONS
+  const items = document.querySelectorAll('.dropmenu__item.has-submenu');
+  const panels = document.querySelectorAll(".dropmenu__panel");
+
+  items.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      const which = item.getAttribute("data-menu");
+
+      items.forEach((i) => {
+        if (i == item) {
+          if (i.classList.contains("active"))
+            i.classList.remove("active");
+          else
+            i.classList.add("active");
+        }
+        else
+          i.classList.remove("active");
+      });
+
+      panels.forEach((panel) => {
+        if (panel.getAttribute("data-menu") == which) {
+          if (panel.classList.contains('active'))
+            panel.classList.remove("active");
+          else
+            panel.classList.add("active");
+        }
+        else
+          panel.classList.remove("active");
+      });
+    });
+  });
+});
