@@ -1281,7 +1281,7 @@ main {
 }
 
 .theme-default {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-health;
 
     path {
@@ -1297,6 +1297,14 @@ main {
     background-color: $color-health-soft;
   }
 
+  .access:hover .access__label {
+    color: $color-health;
+  }
+
+  .access:hover .access__label svg path, a.btn--white-header.phone-icon:hover svg path {
+    fill: $color-health;
+  }
+
   h2.colored {
     color: $color-health;
   }
@@ -1308,7 +1316,7 @@ main {
 
 
 .theme-health {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-health;
 
     path {
@@ -1322,6 +1330,14 @@ main {
 
   h2.colored {
     color: $color-health;
+  }
+
+  .access:hover .access__label {
+    color: $color-health;
+  }
+
+  .access:hover .access__label svg path, a.btn--white-header.phone-icon:hover svg path {
+    fill: $color-health;
   }
 
   a.btn--white-header {
@@ -1340,7 +1356,7 @@ main {
 }
 
 .theme-home {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-home;
 
     path {
@@ -1354,6 +1370,14 @@ main {
 
   h2.colored {
     color: $color-home;
+  }
+
+  .access:hover .access__label {
+    color: $color-home;
+  }
+
+  .access:hover .access__label svg path, a.btn--white-header.phone-icon:hover svg path {
+    fill: $color-home;
   }
 
   a.btn--white-header {
@@ -1372,7 +1396,7 @@ main {
 }
 
 .theme-small-business {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-small-business;
 
     path {
@@ -1386,6 +1410,14 @@ main {
 
   h2.colored {
     color: $color-small-business;
+  }
+
+  .access:hover .access__label, a.btn--white-header.phone-icon:hover svg path {
+    color: $color-small-business;
+  }
+
+  .access:hover .access__label svg path {
+    fill: $color-small-business;
   }
 
   a.btn--white-header {
@@ -1404,7 +1436,7 @@ main {
 }
 
 .theme-non-category {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-non-category;
 
     path {
@@ -1418,6 +1450,14 @@ main {
 
   h2.colored {
     color: $color-non-category;
+  }
+
+  .access:hover .access__label {
+    color: $color-non-category;
+  }
+
+  .access:hover .access__label svg path, a.btn--white-header.phone-icon:hover svg path {
+    fill: $color-non-category;
   }
 
   a.btn--white-header {
@@ -1436,7 +1476,7 @@ main {
 }
 
 .theme-motor {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-motor;
 
     path {
@@ -1450,6 +1490,14 @@ main {
 
   h2.colored {
     color: $color-motor;
+  }
+
+  .access:hover .access__label {
+    color: $color-motor;
+  }
+
+  .access:hover .access__label svg path, a.btn--white-header.phone-icon:hover svg path {
+    fill: $color-motor;
   }
 
   a.btn--white-header {
@@ -1468,7 +1516,7 @@ main {
 }
 
 .theme-life {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-life-insurance;
 
     path {
@@ -1482,6 +1530,14 @@ main {
 
   h2.colored {
     color: $color-life-insurance;
+  }
+
+  .access:hover .access__label {
+    color: $color-life-insurance;
+  }
+
+  .access:hover .access__label svg path, a.btn--white-header.phone-icon:hover svg path {
+    fill: $color-life-insurance;
   }
 
   a.btn--white-header {
@@ -1500,7 +1556,7 @@ main {
 }
 
 .theme-finance {
-  .access__label, .contentgroup__title {
+  .contentgroup__title {
     color: $color-finance;
 
     path {
@@ -1514,6 +1570,14 @@ main {
 
   h2.colored {
     color: $color-finance;
+  }
+
+  .access:hover .access__label {
+    color: $color-finance;
+  }
+
+  .access:hover .access__label svg path, a.btn--white-header.phone-icon:hover svg path {
+    fill: $color-finance;
   }
 
   a.btn--white-header {
