@@ -17,7 +17,7 @@
   <div class="target-group item-targeted">
     @foreach (var familyMember in Model.AvailableFamilyMembers)
     {
-      <div class="target-group__item @RenderTargetGroupClasses(Model.UserSelection.TargetGroup, familyMember)" data-key="@familyMember.Key">
+      <div class="target-group__item @RenderTargetGroupClasses(Model.UserSelection.TargetGroup, familyMember)" id="target-is-@familyMember.Key" data-key="@familyMember.Key">
         <div class="target-group__avatar">
           @renderMinus(Model.UserSelection.TargetGroup, familyMember)
           <img src="@familyMember.Image" />
@@ -31,10 +31,28 @@
 
         @renderPrimaryInsurance(Model.UserSelection.TargetGroup, familyMember)
 
+        @{
+            var target = Model.UserSelection.TargetGroup;
+            var extraclass = "js-validate-" + target.Key + "-" + familyMember.Key;
+        }
+
         <div class="target-group__birth">
-          <input type="text" class="js-birth-year" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
+          <input type="text" class="js-birth-year @extraclass" onformchange="validateYear(this,arguments)" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
           <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
         </div>
+
+        @if (familyMember.Key == Constants.Family_Member_Daughter)
+        {
+          <span id="daughter-placeholder" class="js-daughter-birth-placeholder" data-daughtercounter="0"></span>
+        }
+
+        @if (familyMember.Key == Constants.Family_Member_Son)
+        {
+          <span id="son-placeholder" class="js-son-birth-placeholder" data-soncounter="0"></span>
+        }
+
+
+
       </div>
     }
   </div>
@@ -50,11 +68,16 @@
       <span class="symbol symbol--minus js-remove-parent">-</span>
     }
 
-    if (familyMember.Key == Constants.Family_Member_Son
-    || familyMember.Key == Constants.Family_Member_Daughter)
+    if (familyMember.Key == Constants.Family_Member_Daughter)
     {
-      <span class="symbol js-symbol symbol--minus">-</span>
+      <span class="symbol js-symbol js-remove-daughter symbol--minus">-</span>
     }
+
+    if (familyMember.Key == Constants.Family_Member_Son)
+    {
+      <span class="symbol js-symbol js-remove-son symbol--minus">-</span>
+    }
+
   }
 }
 
@@ -62,16 +85,19 @@
 {
   if (targetGroup.Key == Constants.Family_Target_Family)
   {
-    if (familyMember.Key == Constants.Family_Member_Father
-    || familyMember.Key == Constants.Family_Member_Mother)
+    if (familyMember.Key == Constants.Family_Member_Father || familyMember.Key == Constants.Family_Member_Mother)
     {
       <span class="symbol symbol--plus js-add-parent">+</span>
     }
 
-    if (familyMember.Key == Constants.Family_Member_Son
-    || familyMember.Key == Constants.Family_Member_Daughter)
+    if (familyMember.Key == Constants.Family_Member_Daughter)
     {
-      <span class="symbol symbol--plus">+</span>
+      <span class="symbol js-add-daughter symbol--plus">+</span>
+    }
+
+    if (familyMember.Key == Constants.Family_Member_Son)
+    {
+      <span class="symbol js-add-son symbol--plus">+</span>
     }
   }
 }
@@ -129,13 +155,13 @@
       if (familyMember.Key == Constants.Family_Member_Father
       || familyMember.Key == Constants.Family_Member_Mother)
       {
-        classes += "js-parent-target parent-target target-group--deactive";
+        classes += "js-parent-target parent-target family-validation target-group--deactive";
       }
 
       if (familyMember.Key == Constants.Family_Member_Son
       || familyMember.Key == Constants.Family_Member_Daughter)
       {
-        classes += "js-target target-group--deactive";
+        classes += "js-target family-validation target-group--deactive";
       }
     }
     return classes;

@@ -41,7 +41,7 @@ function showNextStep(e) {
   userSelection.step = nextStep
 
   if (nextStep == step3) {//we are on step 2
-    fillFamilyMembers();
+    fillFamilyMembers();      
   }
 
   console.log({ userSelection });
@@ -147,21 +147,90 @@ function breadcrumbStepActive(step) {
 }
 
 function validateYear(e) {
-  if (e.validity.valid == true) {
-    console.log('valid');    
-    e.dataset.isvalid = 'true';   
-    step2Validity();
-  } else {
-    e.dataset.isvalid = 'false';
-    step_2_valid = false;
-    nextButtonInactive();
+  
+  var today = new Date();
+  var year = today.getFullYear();
+
+  var birthYear = e.value;
+  var age = year - birthYear;
+
+
+  if (e.classList.contains('js-validate-us-father') || e.classList.contains('js-validate-us-mother')) {
+    if (age > 18 && age < 63) {
+      e.dataset.isvalid = 'true';
+      step2Validity();
+
+    }
+    else {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
   }
+
+  if (e.classList.contains('js-validate-family-father') || e.classList.contains('js-validate-family-mother'))
+  {   
+    if (age > 18 && age < 63) {
+      e.dataset.isvalid = 'true';
+      let mother = document.getElementById('target-is-mother');
+      if (mother.classList.contains('family-validation') && isOneParentActive() && isOneChildActive()) step2Validity();
+      // else step2Validity();
+      
+    }
+    else
+    {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
+  }
+
+  if (e.classList.contains('js-validate-me-me')) {
+    if (age > 18 && age < 63) {
+      e.dataset.isvalid = 'true';
+      step2Validity(); 
+    }
+    else {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
+  }
+
+  if (e.classList.contains('js-validate-family-son') || e.classList.contains('js-validate-family-daughter'))
+  {
+    if (age >= 0 && age < 18) {
+      e.dataset.isvalid = 'true';
+      if (isOneParentActive() && isOneChildActive()) step2Validity();
+    }
+    else {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
+  }
+
+  if (e.classList.contains('js-validate-child-child')) {
+    if (age >= 0 && age < 18) {
+      e.dataset.isvalid = 'true';
+      step2Validity();
+    }
+    else {
+      e.dataset.isvalid = 'false';
+      step_2_valid = false;
+      nextButtonInactive();
+    }
+  }
+
 }
 
 
 function initializeStep2() {
 
   nextButtonStep(step3);
+
+  let father = document.getElementById('target-is-father');
+  let mother = document.getElementById('target-is-mother');
 
   const targetsRemove = document.querySelectorAll('.js-remove-parent');
   if (targetsRemove != null) {
@@ -172,6 +241,21 @@ function initializeStep2() {
         year[0].setAttribute("disabled", "disabled");
         const choice = target.parentElement.parentElement.getElementsByClassName('js-radio-choice');
         choice[0].setAttribute("disabled", "disabled");
+
+        //transfering primary person
+        if (mother.classList.contains('target-group--deactive')) document.getElementById('man-is-primary').click();
+        if (father.classList.contains('target-group--deactive')) document.getElementById('woman-is-primary').click();
+
+        if (isOneParentActive() == false) nextButtonInactive();
+
+        var messenegerDiv = document.getElementById('calculator-custom-validation');
+        if (messenegerDiv.classList.contains('max-persons')) {
+
+          messenegerDiv.innerHTML = '';
+          messenegerDiv.classList.add('hidden');
+          messenegerDiv.classList.remove('max-persons');
+        }
+
       });
     }
   }
@@ -180,14 +264,188 @@ function initializeStep2() {
   if (targetsAdd != null) {
     for (const target of targetsAdd) {
       target.addEventListener('click', _ => {
-        target.parentElement.parentElement.classList.remove('target-group--deactive');
-        const year = target.parentElement.parentElement.getElementsByClassName('js-birth-year');
-        const choice = target.parentElement.parentElement.getElementsByClassName('js-radio-choice');
-        year[0].removeAttribute("disabled");
-        choice[0].removeAttribute("disabled");
+
+        
+        if (allowMorePeople()) {
+          //if birthyear is invalid, deactivate next button
+          let targetInput = target.parentElement.parentElement.getElementsByClassName('js-birth-year');
+          console.log(targetInput[0].dataset.isvalid)
+          if (targetInput[0].dataset.isvalid == "false") nextButtonInactive();
+
+          target.parentElement.parentElement.classList.remove('target-group--deactive');
+          const year = target.parentElement.parentElement.getElementsByClassName('js-birth-year');
+          const choice = target.parentElement.parentElement.getElementsByClassName('js-radio-choice');
+          year[0].removeAttribute("disabled");
+          choice[0].removeAttribute("disabled");
+
+          if (father.classList.contains('target-group--deactive')) document.getElementById('woman-is-primary').click();
+          if (mother.classList.contains('target-group--deactive')) document.getElementById('man-is-primary').click();
+        }
+        else {
+          console.log('no more people allowed max 6')
+          var messenegerDiv = document.getElementById('calculator-custom-validation');
+          messenegerDiv.innerHTML = 'Ο μέγιστος αριθμός ατόμων που μπορούν να ασφαλιστούν είναι 6.';
+          messenegerDiv.classList.add('max-persons');
+          messenegerDiv.classList.remove('hidden');
+        }
+
       });
     }
   }
+
+  //add pr remove daughters
+  var count;
+  let daughterPlaceholder = document.getElementById('daughter-placeholder');
+  if (daughterPlaceholder) count = parseInt(daughterPlaceholder.dataset.daughtercounter);
+
+
+  const daughtersAdd = document.querySelectorAll('.js-add-daughter');
+  if (daughtersAdd != null) {
+
+    let newChild = 
+        `<div class="target-group__birth target-group__added-daughter">
+          <input type="text" class="js-birth-year js-validate-family-daughter" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
+          <label>Έτος γέννησης</label>
+        </div>`;
+
+    for (const daughter of daughtersAdd) {
+      daughter.addEventListener('click', _ => {
+
+        if (allowMorePeople()) {
+
+          nextButtonInactive();
+          if (count < 3) {
+            count = count + 1;
+            daughterPlaceholder.dataset.daughtercounter = count;
+
+            if (count > 1) daughterPlaceholder.insertAdjacentHTML('beforeend', newChild);
+          }
+
+        }
+        else {
+          console.log('no more people allowed max 6')
+          var messenegerDiv = document.getElementById('calculator-custom-validation');
+          messenegerDiv.innerHTML = 'Ο μέγιστος αριθμός ατόμων που μπορούν να ασφαλιστούν είναι 6.';
+          messenegerDiv.classList.add('max-persons');
+          messenegerDiv.classList.remove('hidden');
+        }
+
+
+
+      });
+    }
+  }
+
+  const daughtersRemove = document.querySelectorAll('.js-remove-daughter');
+  if (daughtersRemove != null) {
+
+    for (const daughter of daughtersRemove) {
+      daughter.addEventListener('click', _ => {
+        
+        if (count > 0) {
+        
+          count = count - 1;
+          daughterPlaceholder.dataset.daughtercounter = count;
+
+          setTimeout(function () {
+            if ((isOneChildActive() == false || isOneParentActive() == false)) {
+              nextButtonInactive();
+            }
+
+          }, 100);
+
+          const nodesToRemove = document.querySelectorAll('.target-group__added-daughter');
+          if (nodesToRemove.length > 0) daughterPlaceholder.removeChild(nodesToRemove[0]);
+
+          var messenegerDiv = document.getElementById('calculator-custom-validation');
+          if (messenegerDiv.classList.contains('max-persons')) {
+
+            messenegerDiv.innerHTML = '';
+            messenegerDiv.classList.add('hidden');
+            messenegerDiv.classList.remove('max-persons');
+          }       
+        }
+      
+      });
+    }
+  }
+  //add or remove daughters ends
+
+
+  //add or remove sons
+  var sonscount;
+  let sonPlaceholder = document.getElementById('son-placeholder');
+  if (sonPlaceholder) sonscount = parseInt(sonPlaceholder.dataset.soncounter);
+
+
+  const sonsAdd = document.querySelectorAll('.js-add-son');
+  if (sonsAdd != null) {
+
+    let newChild =
+      `<div class="target-group__birth target-group__added-son">
+          <input type="text" class="js-birth-year js-validate-family-son" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
+          <label>Έτος γέννησης</label>
+        </div>`;
+
+    for (const son of sonsAdd) {
+      son.addEventListener('click', _ => {
+
+        if (allowMorePeople()) {
+          nextButtonInactive();
+          if (sonscount < 3) {
+            sonscount = sonscount + 1;
+            sonPlaceholder.dataset.soncounter = sonscount;
+
+            if (sonscount > 1) sonPlaceholder.insertAdjacentHTML('beforeend', newChild);
+          }
+        }
+        else {
+          console.log('no more people allowed max 6')
+          var messenegerDiv = document.getElementById('calculator-custom-validation');
+          messenegerDiv.innerHTML = 'Ο μέγιστος αριθμός ατόμων που μπορούν να ασφαλιστούν είναι 6.';
+          messenegerDiv.classList.add('max-persons');
+          messenegerDiv.classList.remove('hidden');
+        }
+
+      });
+    }
+  }
+
+  const sonsRemove = document.querySelectorAll('.js-remove-son');
+  if (sonsRemove != null) {
+
+    for (const son of sonsRemove) {
+      son.addEventListener('click', _ => {
+        if (sonscount > 0) {
+          sonscount = sonscount - 1;
+          sonPlaceholder.dataset.soncounter = sonscount;
+
+          setTimeout(function () {
+            if ((isOneChildActive() == false || isOneParentActive() == false)) {
+              nextButtonInactive();
+            }
+
+          }, 100);
+
+          const nodesToRemove = document.querySelectorAll('.target-group__added-son');
+          
+          if (nodesToRemove.length > 0) sonPlaceholder.removeChild(nodesToRemove[0]);
+
+          var messenegerDiv = document.getElementById('calculator-custom-validation');
+          if (messenegerDiv.classList.contains('max-persons')) {
+                        
+            messenegerDiv.innerHTML = '';
+            messenegerDiv.classList.add('hidden');
+            messenegerDiv.classList.remove('max-persons');
+          }
+
+        }
+
+      });
+    }
+  }
+  //add or remove sons ends
+
 
   Array.prototype.slice.call(document.querySelectorAll('.js-target'))
     .map(function (container) {
@@ -205,11 +463,12 @@ function initializeStep2() {
         if (item.value > 0) item.value -= 1;
         if (item.value == 0) {
           item.yearinput.setAttribute("disabled", "disabled");
+          item.yearinput.value = '';
           this.parentElement.parentElement.classList.add('target-group--deactive');
         }
       });
       item.increase.addEventListener('click', function () {
-        if (item.value < 10) item.value += 1;
+        if (item.value < 3) item.value += 1;
         if (item.value == 1) {
           item.yearinput.removeAttribute("disabled");
           this.parentElement.parentElement.classList.remove('target-group--deactive');
@@ -218,14 +477,55 @@ function initializeStep2() {
     });
 }
 
+
+function allowMorePeople() {
+  var howManyPeople = document.querySelectorAll("[data-isvalid='true']");
+  console.log('TOTAL PEOPLE VALIDATION' + howManyPeople.length);
+  if (howManyPeople.length < 6)
+    return true;
+  else
+    return false;
+
+}
+
+function isOneParentActive() {
+
+  let father = document.getElementById('target-is-father');
+  let mother = document.getElementById('target-is-mother');
+
+  if (mother.classList.contains('target-group--deactive') && father.classList.contains('target-group--deactive'))
+  {
+    console.log('no parent')
+    return false;
+  }
+    
+  else
+    return true;
+
+}
+
+function isOneChildActive() {
+
+  let son = document.getElementById('target-is-son');
+  let daughter = document.getElementById('target-is-daughter');
+
+  if (son.classList.contains('target-group--deactive') && daughter.classList.contains('target-group--deactive')) {
+    console.log('no child')
+    return false;
+  }
+
+  else
+    return true;
+
+}
+
+
 function step2Validity() {
-  console.log('step2Validity');
 
   $(".target-group.item-targeted").children().each(function (item) {    
     if ($(this).hasClass('target-group--deactive')) {
-      console.log('deactive');     
+     // console.log('deactive');     
     } else {
-      console.log('active');    
       var invalidElements = $(this).find('[data-isvalid="false"]');    
       if (invalidElements.length > 0) {
         step_2_valid = false;
@@ -235,6 +535,23 @@ function step2Validity() {
       }     
     }
   });
+
+  let sonscount;
+  let daughterscount;
+  let sonPlaceholder = document.getElementById('son-placeholder');
+  let daughterPlaceholder = document.getElementById('daughter-placeholder');
+  if (sonPlaceholder && daughterPlaceholder) {
+    sonscount = parseInt(sonPlaceholder.dataset.soncounter);
+    daughterscount = parseInt(daughterPlaceholder.dataset.daughtercounter);
+
+    let childrenSum = sonscount + daughterscount;
+    console.log("SUM: " + childrenSum);
+
+    if (childrenSum > 4) step_2_valid = false;
+  }
+
+
+
 
   if (step_2_valid) {
     nextButtonActive();
@@ -268,14 +585,16 @@ function fillFamilyMembers() {
         title = `${childVal} ${title}`;
       }
 
-      let familyMember = {
-        image: image.first().attr("src"),
-        birthDate: birthDate.first().val(),
-        title: title,
-        isPrimaryInsured: isPrimaryInsured
-      };
-      console.log(familyMember);
-      familyMembers.push(familyMember);
+      birthDate.each(function (b) {
+        let familyMember = {
+          image: image.first().attr("src"),
+          birthDate: $(this).val(),
+          title: title,
+          isPrimaryInsured: isPrimaryInsured
+        };
+        console.log(familyMember);
+        familyMembers.push(familyMember);
+      });     
     }
   });
 
@@ -329,7 +648,15 @@ function initializeStep3() {
     $rangeInput.attr('data-index', $(this).attr('data-liindex'));
     $rangeInput.val($(this).attr('data-value')).trigger('input');
 
-
+    if ($(this).attr('data-value') == "750") {
+      document.getElementById("B").click();
+      document.getElementById("A").classList.add("disabled");
+      document.getElementById("A").disabled = true;
+    }
+    else {
+      document.getElementById("A").disabled = false;
+      document.getElementById("A").classList.remove("disabled");
+    }
   });
 
 }

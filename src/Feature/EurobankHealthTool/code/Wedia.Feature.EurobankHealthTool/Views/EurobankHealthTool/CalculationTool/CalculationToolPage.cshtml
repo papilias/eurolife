@@ -5,6 +5,7 @@
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @using Wedia.Feature.EurobankHealthTool
 
+
 @model CalculationToolViewModel
 
 
@@ -133,11 +134,12 @@
             </div>
 
             <div class="pick--extras__more">
-              <h3 class="pick__title pick__sup-title">
-                @Html.Sitecore().Dictionary("/EurobankHealthTool/Step2/Product Subtitle", "Product Subtitle")
-              </h3>
+
               <h4 class="pick__title pick__big-title">
-                <span id="pick-premium-@item.Field(Templates.HasProductContent.Fields.Code)"></span> €
+                <span id="pick-premium-@item.Field(Templates.HasProductContent.Fields.Code)"></span>
+                <span class="pick__next-to-price">
+                  @Html.Sitecore().Dictionary("/EurobankHealthTool/Step2/Product Subtitle", "Product Subtitle")
+                </span>
               </h4>
               <h3 class="pick__title pick__sup-title">
                 @Html.Sitecore().Dictionary("/EurobankHealthTool/Step2/Product Includes", "Product Includes")
@@ -153,7 +155,9 @@
     </div>
 
     <div class="t-r m-b-48">
-      <a class="btn btn--default btn--dark btn--inactive" id="go-to-step-3" data-nextstep="step-3" onclick="ShowNextToolStep(this, arguments);">ΟΛΟΚΛΗΡΩΣΗ</a>
+      <a class="btn btn--default btn--dark btn--inactive" id="go-to-step-3" data-nextstep="step-3" onclick="ShowNextToolStep(this, arguments);">
+        @Html.Sitecore().Dictionary("/EurobankHealthTool/Step2/Next Button", "Next Button")
+      </a>
     </div>
   </div>
 
@@ -169,25 +173,16 @@
       {
         <div class="hidden js-picked-program" id="program-@item.Field(Templates.HasProductContent.Fields.Code)">
 
-          <div class="pick__item pick__item--selected m-b-48">
+          <div class="pick__item pick__item--selected m-b-24">
             <div class="pick__head pick-on">
               <div class="pick__titles">
                 <h3 class="pick__title pick__sup-title">
                   @Html.Sitecore().Dictionary("/EurobankHealthTool/Step3/Product Title", "Product Title")
                 </h3>
-                <h2 class="pick__title pick__main-title">
+                <h2 class="pick__title pick__main-title p-r-50">
                   @item.Field(Templates.HasProductContent.Fields.Title)
                 </h2>
                 <span class="js-pick-expander pick__expander" onclick="ExpandProgram(this, arguments);"><svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><path d="M82.6074,62.1072,52.6057,26.1052a6.2028,6.2028,0,0,0-9.2114,0L13.3926,62.1072a5.999,5.999,0,1,0,9.2114,7.6879L48,39.3246,73.396,69.7951a5.999,5.999,0,1,0,9.2114-7.6879Z" /></svg></span>
-              </div>
-
-              <div class="pick__exemption">
-                <h3 class="pick__title pick__sup-title">
-                  @Html.Sitecore().Dictionary("/EurobankHealthTool/Step3/Exemption", "Exemption")
-                </h3>
-                <h4 class="pick__title pick__sec-title">
-                  @item.Field(Templates.HasProductContent.Fields.ExemptionAmount)
-                </h4>
               </div>
 
               <div class="pick__seat">
@@ -199,12 +194,21 @@
                 </h4>
               </div>
 
+              <div class="pick__exemption">
+                <h3 class="pick__title pick__sup-title">
+                  @Html.Sitecore().Dictionary("/EurobankHealthTool/Step3/Exemption", "Exemption")
+                </h3>
+                <h4 class="pick__title pick__sec-title">
+                  @item.Field(Templates.HasProductContent.Fields.ExemptionAmount)
+                </h4>
+              </div>
+
               <div class="pick__premium">
                 <h3 class="pick__title pick__sup-title">
                   @Html.Sitecore().Dictionary("/EurobankHealthTool/Step3/Total Amount", "Total Amount")
                 </h3>
                 <h4 class="pick__title pick__big-title">
-                  <span id="selected-premium-@item.Field(Templates.HasProductContent.Fields.Code)"></span> €
+                  <span id="selected-premium-@item.Field(Templates.HasProductContent.Fields.Code)"></span>
                 </h4>
               </div>
 
@@ -231,6 +235,10 @@
             </div>
           </div>
 
+          <div class="pick-disclaimer m-b-48">
+            @Html.Sitecore().Dictionary("/EurobankHealthTool/Step3/Disclaimer", "Disclaimer")
+          </div>
+
           <div class="t-r m-b-64">
             @Html.Sitecore().Field(Templates.HasProductContent.Fields.ToolCTALink, item, new { @class = "btn btn--default btn--dark", text = @Html.Sitecore().Field(Templates.HasProductContent.Fields.ToolCTATitle, item) })
           </div>
@@ -242,7 +250,7 @@
               <h3 class="h5 m-b-16">@item.Field(Templates.HasProductContent.Fields.PromoSecondTitle)</h3>
               <div class="eurobank-banner__text">@item.Field(Templates.HasProductContent.Fields.PromoCTAText)</div>
             </div>
-            
+
             @Html.Sitecore().Field(Templates.HasProductContent.Fields.PromoCTALink, item, new { @class = "btn btn--default btn--dark", text = @Html.Sitecore().Field(Templates.HasProductContent.Fields.PromoCTATitle, item) })
 
           </div>
@@ -265,8 +273,8 @@
     <div class="tool-cta__text color-faded">
       @Html.Sitecore().Field("CTA Text", cur)
     </div>
-       
-    @Html.Sitecore().Field("CTA Link", cur, new { @class = "btn btn--default btn--light btn-no-split", text = @Html.Sitecore().Field("CTA Title", cur )})
+
+    @Html.Sitecore().Field("CTA Link", cur, new { @class = "btn btn--default btn--light btn-no-split", text = @Html.Sitecore().Field("CTA Title", cur) })
   </div>
 </section>
 

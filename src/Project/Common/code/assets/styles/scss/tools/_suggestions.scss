@@ -11,6 +11,11 @@
 }
 
 .pick__head{
+
+    > div{
+        height: 100px;
+    }
+
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -66,13 +71,15 @@
 }
 
 .pick__sup-title{
+ 
   margin-bottom:4px;
   font-size: 16px;
   color: $color-black-faded;
 }
 
-.pick__main-title{
-  font-size: 32px;
+.pick__main-title {
+  
+  font-size: 26px;
   color: $color-health;
 }
 
@@ -106,7 +113,6 @@
   flex-basis: 100%;
   @include breakpoint(700){
     flex-basis: 28%;
-    height: 100px;
   }
   @include breakpoint(920){
     flex-basis: 29%;
@@ -271,4 +277,22 @@
       fill: $color-health;
     }
   }
+}
+
+.pick__next-to-price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #888a88;
+  position: relative;
+  top: -2px;
+}
+
+.pick-disclaimer {
+  font-size: 13px;
+  padding: 0 24px;
+  color: #858785;
+}
+
+.p-r-50{
+    padding-right:50px;
 }
