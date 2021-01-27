@@ -49,12 +49,7 @@ namespace Wedia.Feature.Navigation.Controllers
     public ActionResult HeaderTopNavigation() => GetHeaderNavigationMenu("HeaderTopNavigation");
 
     public ActionResult MainMenu()
-    {
-      if (HasError())
-      {
-        return ErrorResponse();
-      }
-
+    {     
       var item = RenderingContext.Current.Rendering.Item;
       var items = _navigationRepository.GetPrimaryMenu(item);
 
