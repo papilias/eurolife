@@ -51,5 +51,10 @@ namespace Wedia.Feature.Navigation
         public static readonly ID Class = new ID("{D7BD8D43-DE42-4BDE-8E7E-DDFCE607A9C6}");
       }
     }
+
+    public struct LinkMenu
+    {
+      public static readonly ID ID = new ID("{00D32287-3ED5-4D97-9B00-0F8EF05F6DB8}");
+    }
   }
 }
