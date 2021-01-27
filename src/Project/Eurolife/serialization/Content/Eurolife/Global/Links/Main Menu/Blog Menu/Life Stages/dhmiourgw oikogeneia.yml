@@ -1,9 +1,13 @@
 ﻿---
-ID: "6acf694a-c800-4e34-91d0-3419763dbac7"
-Parent: "401f1e3c-91c6-4fd7-96b0-a0e3d4d34f21"
+ID: "02ce5846-a99f-4f2e-a957-1221a34ff99f"
+Parent: "8eb9363c-a0fe-4e85-b7ce-d1059a636c82"
 Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
-Path: /sitecore/content/Eurolife/Global/Links/Main Menu/Personal Insurance/Savings
+Path: /sitecore/content/Eurolife/Global/Links/Main Menu/Blog Menu/Life Stages/dhmiourgw oikogeneia
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
 Languages:
 - Language: "el-GR"
   Versions:
@@ -11,19 +15,15 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191016T084235Z
-    - ID: "48dd8f9d-3a6e-46de-b185-4b1b53bff3fd"
-      Hint: Icon
-      Value: |
-        <image mediaid="{0FD8DB1C-135F-4162-B735-DF7A06AB2317}" />
+      Value: 20190820T131452Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\Admin
+        sitecore\admin
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link id="{93065255-7C52-4E59-9B8C-ED0E47522791}" querystring="" target="" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/apotamieusi" title="" class="" linktype="internal" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{0C149C26-4890-4254-9E2D-8A38A5A8295A}" />
     - ID: "b8c12c18-dcef-4edf-a030-50a4a55bedac"
       Hint: DividerBefore
       Type: Checkbox
@@ -34,4 +34,4 @@ Languages:
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Αποταμίευση
+      Value: Δημιουργώ οικογένεια

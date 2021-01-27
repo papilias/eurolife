@@ -1,8 +1,8 @@
 ﻿---
-ID: "d6495fe5-4b74-4db2-abd1-0b8a9bbb409c"
-Parent: "a2e4f410-0a46-4618-bd99-258b8713bd55"
+ID: "36557dcd-eee8-40b1-a701-48eb9ca90730"
+Parent: "8eb9363c-a0fe-4e85-b7ce-d1059a636c82"
 Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
-Path: /sitecore/content/Eurolife/Global/Links/Main Menu/Professional Insurance/touristikes ipodomes
+Path: /sitecore/content/Eurolife/Global/Links/Main Menu/Blog Menu/Life Stages/antimetopizw to aproopto
 DB: master
 Languages:
 - Language: "el-GR"
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191107T212744Z
+      Value: 20191107T212835Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -19,11 +19,11 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{2E031899-1EF3-4CB5-B0F6-52894C5958F8}" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{FBBB1BFF-0332-4A65-B8E9-5A935F3E5136}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Ασφάλιση Τουριστικών Μονάδων 
+      Value: Αντιμετωπίζω το απρόοπτο

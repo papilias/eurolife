@@ -1,13 +1,13 @@
 ﻿---
-ID: "2d9fbf79-97a2-4515-98da-d7ffb70fa374"
-Parent: "a2e4f410-0a46-4618-bd99-258b8713bd55"
+ID: "2e0cf2cc-e582-4566-ad36-a5d9efa2d7eb"
+Parent: "e9f06985-1613-412c-85a5-6f55d6af5543"
 Template: "d3d187f8-cef5-4dbb-b634-e56cbf866512"
-Path: /sitecore/content/Eurolife/Global/Links/Main Menu/Professional Insurance/fotovoltaika
+Path: /sitecore/content/Eurolife/Global/Links/Main Menu/Blog Menu/Categories/ygeia
 DB: master
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 300
 Languages:
 - Language: "el-GR"
   Versions:
@@ -15,7 +15,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191107T212744Z
+      Value: 20191107T212835Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -23,11 +23,11 @@ Languages:
     - ID: "6d1acb3f-339c-4760-8419-dc7d47272005"
       Hint: Link
       Value: |
-        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{BDE6B3FD-DBE0-49BC-A933-4942F7D3E65F}" />
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{F5595893-93CA-43C1-A382-A5CEA55D9393}" />
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
       Value: 1
     - ID: "f8086e11-481d-46aa-b2e5-b0a6f142ef10"
       Hint: NavigationTitle
-      Value: Φωτοβολταϊκά 
+      Value: Υγεία
