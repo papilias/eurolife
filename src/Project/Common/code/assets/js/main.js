@@ -233,6 +233,30 @@
             });
         }
 
+      if ($('.js-double-slider').length) {
+        $('.js-double-slider').slick({
+          mobileFirst: true,
+          dots: false,
+          arrows: true,
+          infinite: false,
+          speed: 500,
+          adaptiveHeight: false,
+          slidesToShow: 1,
+          fade: false,
+          prevArrow: $('.slick-prev'),
+          nextArrow: $('.slick-next'),
+          responsive: [
+            {
+              breakpoint: 850,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+          ]
+
+        });
+      }
+
 
       if ($('.js-hero-slider').length) {
             var $pager = $('.js-custom-dots span');
