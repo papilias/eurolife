@@ -6,11 +6,266 @@
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @*@model Sitecore.Mvc.Presentation.RenderingModel
 
-@if (!Model?.Item?.DescendsFrom(Templates.HasPageBodyContent.ID) ?? true)
-{
-  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageBodyContent.ID),
-      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
-      Model.Item?.ID,
-      Model.Rendering.Item?.ID)
-  return;
-}*@
+  @if (!Model?.Item?.DescendsFrom(Templates.HasPageBodyContent.ID) ?? true)
+  {
+    @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.HasPageBodyContent.ID),
+        AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+        Model.Item?.ID,
+        Model.Rendering.Item?.ID)
+    return;
+  }*@
+
+
+
+<h2 class="h2 m-b-112">Temp placement for product component</h2>
+
+<section class="m-b-112">
+  <div class="center--1100 center">
+
+    <h1 class="h4 t-c m-b-8">My Investment Plan</h1>
+    <div class="m-b-32 center--650 center t-c">
+      Αυτός είναι ένας υπότιτλος με μεγάλη σημασία περιεχομένου. Αυτός είναι ένας υπότιτλος με μεγάλη σημασία περιεχομένου. Αυτός είναι ένας υπότιτλος με μεγάλη σημασία περιεχομένου.
+    </div>
+
+    <div class="equal-heights-slick relator">
+      <div class="js-double-slider">
+
+        <div class="chart-card">
+          <h2 class="h6 heading-color">Επενδυτική στρατηγική</h2>
+          <h3 class="chart-card__heading heading-color">Μετριοπαθής</h3>
+          <p>Απευθύνεται σε άτομα που θέλουν να διαφοροποιήσουν τις οικονομίες τους από τις παραδοσιακές τραπεζικές καταθέσεις, αλλά είναι διατεθειμένα να αποδεχτούν μόνο οριακές απώλειες στο επενδυόμενο κεφάλαιο τους. Έχουν συνήθως βραχυπρόθεσμο επενδυτικό ορίζοντα</p>
+
+          <h3 class="chart-card__subheading relator">
+            Κατανομή επενδύσεων
+            <span class="tool tool--no-serif">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="#448AFF" fill-rule="nonzero" d="M30 57C15.088 57 3 44.912 3 30S15.088 3 30 3s27 12.088 27 27-12.088 27-27 27zm0-4.91c12.2 0 22.09-9.89 22.09-22.09S42.2 7.91 30 7.91 7.91 17.8 7.91 30 17.8 52.09 30 52.09zm4.295-33.74c0 1.016-.349 1.884-1.051 2.598-.7.717-1.545 1.075-2.532 1.075-.99 0-1.836-.358-2.545-1.075-.707-.714-1.061-1.582-1.061-2.599 0-1.015.354-1.885 1.061-2.608.707-.722 1.555-1.082 2.545-1.082.987 0 1.832.361 2.532 1.082.702.723 1.051 1.593 1.051 2.608zm-.35 24.209a61.187 61.187 0 0 1-2.525 1.157c-.628.266-1.358.398-2.19.398-1.276 0-2.27-.38-2.978-1.137-.708-.758-1.063-1.72-1.063-2.886 0-.452.027-.916.08-1.389.054-.473.139-1.008.256-1.604l1.319-5.674c.117-.543.216-1.058.296-1.546.08-.483.12-.928.12-1.33 0-.724-.123-1.23-.369-1.515-.246-.285-.714-.43-1.41-.43-.34 0-.69.068-1.048.196-.358.128-.57-1.38-.57-1.38a29.59 29.59 0 0 1 2.479-1.098c.79-.304 1.535-.457 2.24-.457 1.269 0 2.248.372 2.935 1.118.686.746 1.03 1.713 1.03 2.906 0 .246-.023.68-.07 1.301a10.427 10.427 0 0 1-.265 1.711l-1.313 5.653c-.107.454-.204.972-.288 1.556-.086.58-.128 1.024-.128 1.321 0 .751.137 1.263.413 1.536.278.272.756.408 1.436.408.32 0 .682-.07 1.086-.204.403-.136.526 1.389.526 1.389z"></path></svg>
+              <span class="tooltext">
+                <svg class="m-b-24 inner-svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="#448AFF" fill-rule="nonzero" d="M30 57C15.088 57 3 44.912 3 30S15.088 3 30 3s27 12.088 27 27-12.088 27-27 27zm0-4.91c12.2 0 22.09-9.89 22.09-22.09S42.2 7.91 30 7.91 7.91 17.8 7.91 30 17.8 52.09 30 52.09zm4.295-33.74c0 1.016-.349 1.884-1.051 2.598-.7.717-1.545 1.075-2.532 1.075-.99 0-1.836-.358-2.545-1.075-.707-.714-1.061-1.582-1.061-2.599 0-1.015.354-1.885 1.061-2.608.707-.722 1.555-1.082 2.545-1.082.987 0 1.832.361 2.532 1.082.702.723 1.051 1.593 1.051 2.608zm-.35 24.209a61.187 61.187 0 0 1-2.525 1.157c-.628.266-1.358.398-2.19.398-1.276 0-2.27-.38-2.978-1.137-.708-.758-1.063-1.72-1.063-2.886 0-.452.027-.916.08-1.389.054-.473.139-1.008.256-1.604l1.319-5.674c.117-.543.216-1.058.296-1.546.08-.483.12-.928.12-1.33 0-.724-.123-1.23-.369-1.515-.246-.285-.714-.43-1.41-.43-.34 0-.69.068-1.048.196-.358.128-.57-1.38-.57-1.38a29.59 29.59 0 0 1 2.479-1.098c.79-.304 1.535-.457 2.24-.457 1.269 0 2.248.372 2.935 1.118.686.746 1.03 1.713 1.03 2.906 0 .246-.023.68-.07 1.301a10.427 10.427 0 0 1-.265 1.711l-1.313 5.653c-.107.454-.204.972-.288 1.556-.086.58-.128 1.024-.128 1.321 0 .751.137 1.263.413 1.536.278.272.756.408 1.436.408.32 0 .682-.07 1.086-.204.403-.136.526 1.389.526 1.389z"></path></svg>
+                <h2>Ταμειακά διαθεσιμα</h2>
+                <p>Καλύπτουμε την αστική ευθύνη του ασφαλισμένου για υλικές ζημιές σε περιουσία τρίτων λόγω πυρκαγιάς ή έκρηξης που θα εκδηλωθεί μέσα στο ασφαλισμένο κτίριο ή σε αυτό που βρίσκεται το ασφαλισμένο περιεχόμενο.</p>
+                <h2>Ταμειακά διαθεσιμα</h2>
+                <p>Καλύπτουμε την αστική ευθύνη του ασφαλισμένου για υλικές ζημιές σε περιουσία τρίτων λόγω πυρκαγιάς ή έκρηξης που θα εκδηλωθεί μέσα στο ασφαλισμένο κτίριο ή σε αυτό που βρίσκεται το ασφαλισμένο περιεχόμενο.</p>
+              </span>
+            </span>
+          </h3>
+
+          <div class="chart-card__pie-wrap m-b-16">
+            <div class="chart-card__pie">
+              <canvas class="pie-chart" width="110" height="110" data-labels='["Availables0", "Bonds", "Stocks"]' data-colors='["#008094", "#7CA6B5", "#CEDAE0"]' data-data='[43, 35, 22]'></canvas>
+            </div>
+            <div id="legend-0" class="chart-legend"></div>
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Global Low</span>
+                <span class="chart-card__bar-value">22%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#E16136"]' data-value='[22]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+
+          <div class="m-b-16 chart-card__bar-wrap">
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Global Medium</span>
+                <span class="chart-card__bar-value">56%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#E2190B"]' data-value='[56]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Equity Blend</span>
+                <span class="chart-card__bar-value">46%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#0CA2B1"]' data-value='[46]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+
+        </div>
+
+        <div class="chart-card">
+          <h2 class="h6 heading-color">Επενδυτική στρατηγική</h2>
+          <h3 class="chart-card__heading heading-color">Μετριοπαθής</h3>
+          <p>Απευθύνεται σε άτομα που θέλουν να διαφοροποιήσουν τις οικονομίες τους από τις παραδοσιακές τραπεζικές καταθέσεις, αλλά είναι διατεθειμένα να αποδεχτούν μόνο οριακές απώλειες στο επενδυόμενο κεφάλαιο τους. Έχουν συνήθως βραχυπρόθεσμο επενδυτικό ορίζοντα</p>
+
+          <h3 class="chart-card__subheading">Κατανομή επενδύσεων</h3>
+
+          <div class="chart-card__pie-wrap m-b-16">
+            <div class="chart-card__pie">
+              <canvas class="pie-chart" width="110" height="110" data-labels='["Availables1", "Bonds", "Stocks"]' data-colors='["#008094", "#7CA6B5", "#CEDAE0"]' data-data='[33, 45, 22]'></canvas>
+            </div>
+            <div id="legend-1" class="chart-legend"></div>
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Global Medium</span>
+                <span class="chart-card__bar-value">56%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#E2190B"]' data-value='[56]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Equity Blend</span>
+                <span class="chart-card__bar-value">46%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#0CA2B1"]' data-value='[46]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+
+        </div>
+
+        <div class="chart-card">
+          <h2 class="h6 heading-color">Επενδυτική στρατηγική</h2>
+          <h3 class="chart-card__heading heading-color">Μετριοπαθής</h3>
+          <p>Απευθύνεται σε άτομα που θέλουν να διαφοροποιήσουν τις οικονομίες τους από τις παραδοσιακές τραπεζικές καταθέσεις, αλλά είναι διατεθειμένα να αποδεχτούν μόνο οριακές απώλειες στο επενδυόμενο κεφάλαιο τους. Έχουν συνήθως βραχυπρόθεσμο επενδυτικό ορίζοντα</p>
+
+          <h3 class="chart-card__subheading">Κατανομή επενδύσεων</h3>
+
+          <div class="chart-card__pie-wrap m-b-16">
+            <div class="chart-card__pie">
+              <canvas class="pie-chart" width="110" height="110" data-labels='["Availables1", "Bonds", "Stocks"]' data-colors='["#008094", "#7CA6B5", "#CEDAE0"]' data-data='[33, 45, 22]'></canvas>
+            </div>
+            <div id="legend-2" class="chart-legend"></div>
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Global Low</span>
+                <span class="chart-card__bar-value">22%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#E16136"]' data-value='[22]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+
+          <div class="m-b-16 chart-card__bar-wrap">
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Global Medium</span>
+                <span class="chart-card__bar-value">56%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#E2190B"]' data-value='[56]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Equity Blend</span>
+                <span class="chart-card__bar-value">46%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#0CA2B1"]' data-value='[46]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+
+        </div>
+
+        <div class="chart-card">
+          <h2 class="h6 heading-color">Επενδυτική στρατηγική</h2>
+          <h3 class="chart-card__heading heading-color">Μετριοπαθής</h3>
+          <p>Απευθύνεται σε άτομα που θέλουν να διαφοροποιήσουν τις οικονομίες τους από τις παραδοσιακές τραπεζικές καταθέσεις, αλλά είναι διατεθειμένα να αποδεχτούν μόνο οριακές απώλειες στο επενδυόμενο κεφάλαιο τους. Έχουν συνήθως βραχυπρόθεσμο επενδυτικό ορίζοντα</p>
+
+          <h3 class="chart-card__subheading">Κατανομή επενδύσεων</h3>
+
+          <div class="chart-card__pie-wrap m-b-16">
+            <div class="chart-card__pie">
+              <canvas class="pie-chart" width="110" height="110" data-labels='["Availables1", "Bonds", "Stocks"]' data-colors='["#008094", "#7CA6B5", "#CEDAE0"]' data-data='[33, 45, 22]'></canvas>
+            </div>
+            <div id="legend-3" class="chart-legend"></div>
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Global Medium</span>
+                <span class="chart-card__bar-value">56%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#E2190B"]' data-value='[56]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+          <div class="m-b-16 chart-card__bar-wrap">
+
+            <div class="chart-card__bar m-b-8">
+              <div class="chart-card__bar-labels">
+                <span class="chart-card__bar-title">Equity Blend</span>
+                <span class="chart-card__bar-value">46%</span>
+              </div>
+              <canvas class="bar-chart" height="12" data-color='["#0CA2B1"]' data-value='[46]'></canvas>
+            </div>
+
+            <p>Το αμοιβαίο κεφάλαιο (LF) Fund of Funds Global Low επενδύει σε μερίδια αμοιβαίων κεφαλαίων κορυφαίων διεθνών διαχειριστών. Έχει διαφοροποιημένο χαρτοφυλάκιο που περιλαμβάνει πολλές επενδυτικές κατηγορίες και αγορές με μεγάλη διασπορά. Επενδύει με μακροπρόθεσμο ορίζοντα. Έχει έδρα στο Λουξεμβούργο.</p>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+      <span class="slick-prev">
+        <svg enable-background="new 0 0 15 26" height="26px" version="1.1" viewBox="0 0 15 26" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon fill="#008094" points="12.885,0.58 14.969,2.664 4.133,13.5 14.969,24.336 12.885,26.42 2.049,15.584 -0.035,13.5 " /></svg>
+      </span>
+      <span class="slick-next">
+        <svg enable-background="new 0 0 15 26" height="26px" version="1.1" viewBox="0 0 15 26" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon fill="#008094" points="2.019,0.58 -0.035,2.634 10.646,13.316 -0.035,23.997 2.019,26.052 14.755,13.316 " /></svg>
+      </span>
+
+    </div>
+
+    <div class="t-c">
+      <a href="#" class="btn btn--default btn--light charts-toggle" id="charts-toggle">
+        <span id="charts-toggle__off" class="hidden">ΔΕΙΤΕ ΛΙΓΟΤΕΡΑ</span>
+        <span id="charts-toggle__on">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ </span>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
