@@ -93,11 +93,19 @@
 }
 
 .chart-card__bar-wrap {
+    display:none;
   font-size: 12px;
   color: rgba(56, 59, 56, 0.6);
+  &.visible{
+      display:block;
+  }
 }
 
-
+.charts-toggle {
+  background-color: #fff;
+  padding-left: 8%;
+  padding-right: 8%;
+}
 
 
 
