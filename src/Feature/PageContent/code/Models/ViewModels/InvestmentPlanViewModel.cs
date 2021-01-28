@@ -9,6 +9,6 @@ namespace Wedia.Feature.PageContent.Models.ViewModels
   public class InvestmentPlanViewModel
   {
     public Item InvestmentPlan { get; set; }
-    public IList<CardViewModel> CardViewModel { get; set; }
+    public IList<CardViewModel> CardViewModels { get; set; }
   }
 }

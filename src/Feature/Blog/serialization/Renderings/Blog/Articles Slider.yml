@@ -10,7 +10,7 @@ SharedFields:
   Value: /sitecore/templates/Project/Common/Content Types/Blog/Blog Articles Slider
 - ID: "94069f66-609c-48b0-8281-521c30fb269d"
   Hint: Open Properties after Add
-  Value: 0
+  Value: 1
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |

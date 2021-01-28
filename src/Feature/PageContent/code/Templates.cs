@@ -144,6 +144,7 @@ namespace Wedia.Feature.PageContent
       public struct Fields
       {
         public static readonly ID Value = new ID("{F42C66DE-4456-48DC-8C69-27C996ED7E74}");
+        public static readonly ID HexColor = new ID("{7748887A-80CC-48FB-BCF8-B4951B76C86D}");
       }
     }
   }

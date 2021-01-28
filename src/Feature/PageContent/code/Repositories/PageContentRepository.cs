@@ -34,7 +34,9 @@ namespace Wedia.Feature.PageContent.Repositories
           };
 
           cardViewModelsList.Add(cardViewModel);
-        }          
+        }
+
+        investmentPlanViewModel.CardViewModels = cardViewModelsList;
       }
 
       return investmentPlanViewModel;

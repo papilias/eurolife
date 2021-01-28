@@ -26,6 +26,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "7748887a-80cc-48fb-bcf8-b4951b76c86d"
+      Hint: HexColor
+      Value: #0CA2B1
     - ID: "d255187d-6894-46a2-b8b8-878b5e2b920b"
       Hint: Title
       Value: Equity Blend (0BA2B1)
