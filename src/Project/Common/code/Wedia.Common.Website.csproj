@@ -339,6 +339,7 @@
     <Content Include="assets\styles\scss\tools\_tool-utility.scss" />
     <Content Include="assets\styles\scss\base-components\_eurolist.scss" />
     <Content Include="assets\styles\scss\tools\_eurobanktool.scss" />
+    <Content Include="assets\styles\scss\base-components\chartsComponent.scss" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="Views\Common\Sublayouts\Footer.cshtml" />

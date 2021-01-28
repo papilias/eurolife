@@ -13,11 +13,12 @@
   top: 50%;
   transform: translateY(-50%);
 
-  svg {
-    opacity: 0.5;
-    transition:0.5s opacity ease-in-out;
+  &:not(.tool--no-serif){
+    svg {
+      opacity: 0.5;
+      transition:0.5s opacity ease-in-out;
+    }
   }
-
   &:hover {
     svg {
       opacity: 1;
@@ -28,6 +29,37 @@
       z-index: 1;
       transform: translateY(0);
     }
+  }
+}
+
+.tool--no-serif {
+  .inner-svg {
+    max-width: 20px;
+  }
+
+  .tooltext {
+    min-width: 300px;
+    margin-top: 24px;
+    padding: 32px 32px 24px;
+    bottom: auto;
+    left: -28px;
+
+    @include breakpoint-rev(1140) {
+      left: -130px;
+    }
+
+    font-size: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
+
+    &:after {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 600;
   }
 }
 

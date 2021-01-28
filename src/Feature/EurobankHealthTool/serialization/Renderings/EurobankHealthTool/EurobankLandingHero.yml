@@ -8,6 +8,11 @@ SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
   Value: /Views/EurobankHealthTool/EurobankLanding/EurobankLandingHero.cshtml
+- ID: "d7e7d647-0d97-4df7-a1ae-01253761a71b"
+  Hint: JavaScript assets
+  Value: |
+    /scripts/EurobankHealthTool/Chart.min.js
+    /scripts/EurobankHealthTool/charts-custom.js
 Languages:
 - Language: en
   Versions:
