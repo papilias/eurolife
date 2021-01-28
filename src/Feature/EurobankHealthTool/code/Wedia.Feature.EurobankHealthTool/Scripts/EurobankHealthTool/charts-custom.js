@@ -49,8 +49,6 @@ if (items) {
 
 
 
-
-
 //toggle less/more
 let toggler = document.getElementById('charts-toggle');
 if (toggler) {
@@ -65,7 +63,7 @@ if (toggler) {
         barToToggle.classList.toggle('visible');
       }
 
-      init();
+      initBars();
     }
 
     document.getElementById('charts-toggle__off').classList.toggle('hidden');
@@ -76,7 +74,7 @@ if (toggler) {
 }
 
 
-function init() {
+function initBars() {
   //single bar charts
   const baritems = document.querySelectorAll(".bar-chart");
   if (baritems) {
