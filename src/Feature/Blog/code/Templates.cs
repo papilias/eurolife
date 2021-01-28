@@ -41,6 +41,11 @@ namespace Wedia.Feature.Blog
       }
     }
 
+    public struct ArticlesSlider
+    {
+      public static readonly ID ID = new ID("{2A9F943D-6A09-43DC-9917-FC5552AAC173}");     
+    }
+
     public struct HasBlogContent
     {
       public static readonly ID ID = new ID("{6976D16D-9044-4615-8C3C-4ED3BF7E60A4}");
@@ -175,5 +180,32 @@ namespace Wedia.Feature.Blog
       }
     }
 
+    public struct HasTitle
+    {
+      public static readonly ID ID = new ID("{CC95603C-E0CF-48B9-A352-3C5A8BB1E6A2}");
+
+      public struct Fields
+      {
+        public static readonly ID Title = new ID("{BEA35F1D-57FB-4B62-8771-0FCA5E26DE39}");
+      }
+    }
+
+    public struct HasSubTitle
+    {
+      public static readonly ID ID = new ID("{6936692B-6199-47E6-B4E8-C5E17662F7C3}");
+      public struct Fields
+      {
+        public static readonly ID SubTitle = new ID("{EF564F63-AC66-4AC2-985F-CF03483E18FE}");
+      }      
+    }
+
+    public struct HasArticles
+    {
+      public static readonly ID ID = new ID("{6936692B-6199-47E6-B4E8-C5E17662F7C3}");
+      public struct Fields
+      {
+        public static readonly ID Articles = new ID("{0DCE0B72-AE72-4430-939B-61236DF4A2B1}");
+      }
+    }
   }
 }

@@ -4,6 +4,11 @@ Parent: "a096d891-6565-4505-8ad8-d497fd1b8776"
 Template: "a096d891-6565-4505-8ad8-d497fd1b8776"
 Path: /sitecore/templates/Foundation/LocalDatasource/Local Datasource Folder/__Standard Values
 DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{2A9F943D-6A09-43DC-9917-FC5552AAC173}"
 Languages:
 - Language: en
   Versions:

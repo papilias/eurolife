@@ -14,5 +14,6 @@ namespace Wedia.Feature.Blog.Repositories
     Models.ArticlesList GetPagedList(Item contextItem, Models.PagingSettings pagingSettings);
     Models.ArticleViewModel GetArticleViewModel(Item contextItem);
     Models.PromoSectionViewModel GetPromoSectionViewModel(Item contextItem);
+    Models.ArticleSliderViewModel GetSliderData(Item contextItem);
   }
 }

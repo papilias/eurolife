@@ -67,11 +67,18 @@ Languages:
               s:id="{885784F0-9175-4BFB-AF11-8184E69ABB14}"
               s:ph="page-layout" />
             <r
-              uid="{20111FD2-0DBF-4553-9B16-3C6FBB03BCBD}"
+              uid="{F3D8E3D7-5DA2-4696-98BB-A765BB5202F0}"
               p:after="r[@uid='{B3068BD4-C611-4511-8EFB-BA7313635478}']"
+              s:ds="{592F9693-6107-4652-9C3B-51129322516A}"
+              s:id="{26AFE290-6A71-4BAB-BE2B-8F1C317CD0DC}"
+              s:par=""
+              s:ph="page-layout" />
+            <r
+              uid="{20111FD2-0DBF-4553-9B16-3C6FBB03BCBD}"
+              p:after="r[@uid='{F3D8E3D7-5DA2-4696-98BB-A765BB5202F0}']"
               s:ds="{B741E45B-2E50-48CA-8A09-A142A86A6600}"
               s:id="{7F610AEE-95C2-4814-9E1D-1E619ABCDE99}"
-              s:par="Alignment=%7B1168A85D-15F2-4335-8D86-CED079708B5A%7D&amp;Background&amp;ContainerIsNotFullWidth&amp;FontColor"
+              s:par="Alignment=%7b1168A85D-15F2-4335-8D86-CED079708B5A%7d"
               s:ph="page-layout" />
           </d>
         </r>
