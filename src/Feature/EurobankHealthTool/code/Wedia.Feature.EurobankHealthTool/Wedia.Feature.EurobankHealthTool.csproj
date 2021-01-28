@@ -194,8 +194,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\EurobankHealthTool\calculation.js" />
-    <Content Include="Scripts\EurobankHealthTool\Chart.min.js" />
-    <Content Include="Scripts\EurobankHealthTool\charts-custom.js" />
     <Content Include="Views\EurobankHealthTool\EurobankArticle\EurobankArticleContent.cshtml" />
     <Content Include="Views\EurobankHealthTool\EurobankCategory\EurobankCategoryHero.cshtml" />
     <Content Include="Views\EurobankHealthTool\EurobankCategory\EurobankQuadListing.cshtml" />
