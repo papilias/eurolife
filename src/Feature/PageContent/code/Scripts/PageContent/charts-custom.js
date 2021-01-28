@@ -1,0 +1,100 @@
+﻿const items = document.querySelectorAll(".pie-chart");
+for (let i = 0; i < items.length; i++) {
+
+
+
+  const item = items[i];
+  console.log(items);
+
+
+ 
+  var labelsFromAttribute = JSON.parse(item.dataset.labels);
+  var colorsFromAttribute = JSON.parse(item.dataset.colors);
+  var dataFromAttribute = JSON.parse(item.dataset.data);
+
+  var myPieChart = new Chart(item, {
+    type: 'pie',
+    data: {
+      labels: labelsFromAttribute,
+      datasets: [{
+        backgroundColor: colorsFromAttribute,
+        data: dataFromAttribute        
+      }]
+    },
+    options: {
+      elements: {
+        arc: {
+          borderWidth: 0
+        }
+      },
+      legend: {
+        display: false,
+        position: 'right'
+      },
+      legendCallback: function (chart) {
+        var text = [];
+        text.push('<ul class="' + i + '-legend">');
+        var ds = chart.data.datasets[0];
+   
+        for (var i = 0; i < ds.data.length; i++) {
+          text.push('<li>');
+          text.push('<span class="chart-legend__color" style="background-color:' + ds.backgroundColor[i] + '">' + '</span>' + ds.data[i] + '%' + '<span class="chart-legend__label">' + chart.data.labels[i] + '</span>');
+          text.push('</li>');
+        }
+        text.push('</ul>');
+        return text.join("");
+      }
+    }
+  });
+  document.getElementById("legend-" + i).innerHTML = myPieChart.generateLegend();
+}
+
+
+
+
+
+//single bar charts
+
+const baritems = document.querySelectorAll(".bar-chart");
+for (let j = 0; j < baritems.length; j++) {
+  const baritem = baritems[j];
+
+
+  var colorFromAttribute = JSON.parse(baritem.dataset.color);
+  var valueFromAttribute = JSON.parse(baritem.dataset.value);
+
+
+  var max = 100;
+
+  var bar_chart = new Chart(baritem, {
+    type: 'horizontalBar',
+    data: {
+      labels: [],
+      datasets: [{
+        data: valueFromAttribute,
+        backgroundColor: colorFromAttribute
+      }, {
+          data: [max - valueFromAttribute],
+          backgroundColor: "#EEEEEE",
+      },]
+    },
+    options: {
+      legend: {
+        display: false
+      },
+      tooltips: {
+        enabled: false
+      },
+      scales: {
+        xAxes: [{
+          display: false,
+          stacked: true
+        }],
+        yAxes: [{
+          display: false,
+          stacked: true
+        }],
+      }
+    } 
+  });
+}
