@@ -126,3 +126,16 @@ function initBars() {
 
 
 }
+
+
+//tooltip on click
+
+const toolHandler = document.querySelectorAll('.js-tool');
+if (toolHandler != null) {
+  for (const tool of toolHandler) {
+    tool.addEventListener('click', _ => {
+      tool.classList.toggle('tool--active');
+
+    });
+  }
+}
