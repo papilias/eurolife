@@ -99,6 +99,7 @@
     <Content Include="Views\PageContent\LandingHeaderImageVideo.cshtml" />
     <Content Include="Views\PageContent\ErrorPage.cshtml" />
     <Content Include="Views\PageContent\InvestmentPlan.cshtml" />
+    <Content Include="Views\PageContent\SocialWall.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

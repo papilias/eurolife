@@ -1,0 +1,93 @@
+﻿@using Sitecore.Mvc
+@using Wedia.Foundation.Alerts
+@using Wedia.Foundation.Alerts.Extensions
+@using Wedia.Foundation.SitecoreExtensions.Extensions
+@using Wedia.Feature.PageContent
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (!Model?.Item?.DescendsFrom(Templates.SocialWall.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.SocialWall.ID),
+      AlertTexts.InvalidDataSourceTemplateFriendlyMessage,
+      Model.Item?.ID,
+      Model.Rendering.Item?.ID)
+  return;
+}
+
+<!-- SOCIAL WALL -->
+<section class="social-wall m-b-112">
+  <div class="center center--1100">
+    <div class="social-wall__grid">
+      <!-- TEXT -->
+      <div class="item text">
+        @if (Html.Sitecore().HasValue(Templates.HasTitle.Fields.Title.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          <h1 class="h4">@Html.Sitecore().Field(Templates.HasTitle.Fields.Title)</h1>
+        }
+
+        @if (Html.Sitecore().HasValue(Templates.HasSubTitle.Fields.SubTitle.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          <h5>@Html.Sitecore().Field(Templates.HasSubTitle.Fields.SubTitle)</h5>
+        }
+
+        @if (Html.Sitecore().HasValue(Templates.HasDescription.Fields.Description.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          <div class="m-b-48">
+            @Html.Sitecore().Field(Templates.HasDescription.Fields.Description)
+          </div>
+        }
+
+        <!-- SOCIALS -->
+      <div class="social-grid">
+        @if (Sitecore.Context.PageMode.IsExperienceEditor)
+        {
+          @Html.Sitecore().Field(Templates.HasSocialLinks.Fields.Facebook, new { @class = "item" })
+          @Html.Sitecore().Field(Templates.HasSocialLinks.Fields.LinkedIn, new { @class = "item" })
+          @Html.Sitecore().Field(Templates.HasSocialLinks.Fields.YouTube, new { @class = "item" })
+        }
+        else
+        {
+          @if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.Facebook.ToString()))
+          {
+            var linkURL = Model.Rendering.Item.LinkFieldUrl(Templates.HasSocialLinks.Fields.Facebook);
+            <a class="item" href="@linkURL" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                <path fill="#485294" fill-rule="nonzero" d="M55 14.733a19.996 19.996 0 0 1-5.772 1.59 10.135 10.135 0 0 0 4.419-5.585 20.204 20.204 0 0 1-6.388 2.453A10 10 0 0 0 39.923 10c-5.551 0-10.052 4.523-10.052 10.1 0 .79.088 1.562.26 2.301-8.353-.422-15.76-4.443-20.717-10.555a10.063 10.063 0 0 0-1.36 5.078 10.11 10.11 0 0 0 4.47 8.406 10.015 10.015 0 0 1-4.552-1.267v.126c0 4.892 3.466 8.976 8.062 9.905-.842.228-1.73.354-2.649.354-.649 0-1.276-.065-1.892-.188 1.28 4.016 4.991 6.936 9.388 7.016a20.104 20.104 0 0 1-12.484 4.317c-.81 0-1.61-.049-2.397-.138A28.311 28.311 0 0 0 21.408 50c18.49 0 28.598-15.392 28.598-28.74l-.034-1.308A20.128 20.128 0 0 0 55 14.732z"></path>
+              </svg>
+            </a>
+          }
+          @if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.LinkedIn.ToString()))
+          {
+            var linkURL = Model.Rendering.Item.LinkFieldUrl(Templates.HasSocialLinks.Fields.LinkedIn);
+            <a class="item" href="@linkURL" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                <path fill="#485294" fill-rule="nonzero" d="M54.895 14.348C52.946 11.97 49.347 11 42.475 11h-24.95c-7.03 0-10.69 1.033-12.632 3.564C3 17.033 3 20.67 3 25.704v9.593C3 45.05 5.246 50 17.525 50h24.95c5.96 0 9.262-.856 11.399-2.954C56.065 44.894 57 41.38 57 35.297v-9.594c0-5.308-.146-8.967-2.105-11.355zM37.668 31.825L26.34 37.9a1.705 1.705 0 0 1-1.71-.055 1.798 1.798 0 0 1-.839-1.53V24.204c0-.624.318-1.204.838-1.528a1.703 1.703 0 0 1 1.707-.058l11.33 6.037c.576.307.938.918.938 1.584.001.667-.36 1.278-.935 1.587z"></path>
+              </svg>
+            </a>
+          }
+          @if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.YouTube.ToString()))
+          {
+            var linkURL = Model.Rendering.Item.LinkFieldUrl(Templates.HasSocialLinks.Fields.YouTube);
+            <a class="item" href="@linkURL" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                <path fill="#485294" fill-rule="nonzero" d="M55 14.733a19.996 19.996 0 0 1-5.772 1.59 10.135 10.135 0 0 0 4.419-5.585 20.204 20.204 0 0 1-6.388 2.453A10 10 0 0 0 39.923 10c-5.551 0-10.052 4.523-10.052 10.1 0 .79.088 1.562.26 2.301-8.353-.422-15.76-4.443-20.717-10.555a10.063 10.063 0 0 0-1.36 5.078 10.11 10.11 0 0 0 4.47 8.406 10.015 10.015 0 0 1-4.552-1.267v.126c0 4.892 3.466 8.976 8.062 9.905-.842.228-1.73.354-2.649.354-.649 0-1.276-.065-1.892-.188 1.28 4.016 4.991 6.936 9.388 7.016a20.104 20.104 0 0 1-12.484 4.317c-.81 0-1.61-.049-2.397-.138A28.311 28.311 0 0 0 21.408 50c18.49 0 28.598-15.392 28.598-28.74l-.034-1.308A20.128 20.128 0 0 0 55 14.732z"></path>
+              </svg>
+            </a>
+          }
+        }
+      </div>
+        <!-- SOCIALS -->
+
+      </div>
+      <!-- TEXT -->
+      <!-- IMAGES -->
+      <div class="item images">
+        @Html.Sitecore().ImageField(Templates.HasSocialImages.Fields.Image_1, Model.Item,0,500)
+        @Html.Sitecore().ImageField(Templates.HasSocialImages.Fields.Image_2, Model.Item,0,500)
+        @Html.Sitecore().ImageField(Templates.HasSocialImages.Fields.Image_3, Model.Item,0,500)      
+      </div>
+      <!-- IMAGES -->
+    </div>
+  </div>
+</section>
+<!-- SOCIAL WALL -->
