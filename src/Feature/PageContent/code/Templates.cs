@@ -22,7 +22,12 @@ namespace Wedia.Feature.PageContent
     public struct BarChart
     {
       public static readonly ID ID = new ID("{94962BE4-3EF6-41A7-834C-A4127DDEB95C}");     
-    }    
+    }
+
+    public struct SocialWall
+    {
+      public static readonly ID ID = new ID("{B7EF6502-9906-4AAE-9E44-DCCCD740FB32}");
+    }
 
     public struct HasPageIconContent
     {
@@ -145,6 +150,28 @@ namespace Wedia.Feature.PageContent
       {
         public static readonly ID Value = new ID("{F42C66DE-4456-48DC-8C69-27C996ED7E74}");
         public static readonly ID HexColor = new ID("{7748887A-80CC-48FB-BCF8-B4951B76C86D}");
+      }
+    }
+
+    public struct HasSocialLinks
+    {
+      public static readonly ID ID = new ID("{CE354BF8-6B6F-4921-93E1-CB1A280ABB8F}");
+      public struct Fields
+      {
+        public static readonly ID Facebook = new ID("{05F53E1E-8C6D-466F-8E7B-C0148583D3D6}");
+        public static readonly ID LinkedIn = new ID("{9AD55576-3C4F-42E7-B617-B9FFE003E969}");
+        public static readonly ID YouTube = new ID("{DC058A43-5B55-42FC-939C-1DAC80020E1D}");
+      }
+    }
+
+    public struct HasSocialImages
+    {
+      public static readonly ID ID = new ID("{448E4675-4B0E-4E74-8870-C03F548B1309}");
+      public struct Fields
+      {
+        public static readonly ID Image_1 = new ID("{DDD6B4AD-0CFA-4784-BC19-934CCDA7048B}");
+        public static readonly ID Image_2 = new ID("{EFD6A708-E194-4557-9670-C9498BBF065A}");
+        public static readonly ID Image_3 = new ID("{9563181D-8778-4C64-A61F-B4803DEE187D}");
       }
     }
   }
