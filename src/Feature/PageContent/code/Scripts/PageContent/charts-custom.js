@@ -49,7 +49,6 @@ if (items) {
 }
 
 
-
 //toggle less/more
 let toggler = document.getElementById('charts-toggle');
 if (toggler) {

@@ -4,6 +4,25 @@ namespace Wedia.Feature.PageContent
 {
   public struct Templates
   {
+    public struct InvestmentPlan
+    {
+      public static readonly ID ID = new ID("{296D6535-40DA-4099-9C0F-C21724A22A2C}");
+    }
+
+    public struct Card
+    {
+      public static readonly ID ID = new ID("{7EE9A785-E169-474E-A73E-7833892BE2A9}");
+    }
+
+    public struct PieChart
+    {
+      public static readonly ID ID = new ID("{5515C419-66CB-4E45-B3C1-8501562A105A}");
+    }
+
+    public struct BarChart
+    {
+      public static readonly ID ID = new ID("{94962BE4-3EF6-41A7-834C-A4127DDEB95C}");     
+    }    
 
     public struct HasPageIconContent
     {
@@ -73,6 +92,59 @@ namespace Wedia.Feature.PageContent
       public struct Fields
       {
         public static readonly ID CTA = new ID("{59B7D0BE-39F3-4F45-B645-BDE65FA07015}");
+      }
+    }
+
+    public struct HasTitle
+    {
+      public static readonly ID ID = new ID("{1BA5F547-B119-44CB-BE3E-177AFA5517F0}");
+
+      public struct Fields
+      {
+        public static readonly ID Title = new ID("{D255187D-6894-46A2-B8B8-878B5E2B920B}");
+      }
+    }
+
+    public struct HasSubTitle
+    {
+      public static readonly ID ID = new ID("{F33EF93B-3514-4011-AEE9-2357C7DCB3C4}");
+      public struct Fields
+      {
+        public static readonly ID SubTitle = new ID("{AB009181-46A0-4FB0-8D89-218FE421D122}");
+      }
+    }
+
+    public struct HasDescription
+    {
+      public static readonly ID ID = new ID("{F727CC0F-D809-41DF-9338-68C5D264075F}");
+      public struct Fields
+      {
+        public static readonly ID Description = new ID("{49F97460-3F80-4654-A453-A9C2069C45D9}");
+      }
+    }
+
+    public struct HasPieChartContent
+    {
+      public static readonly ID ID = new ID("{BEAF6171-25BD-4BB3-BE08-DB4F62A697C2}");
+      public struct Fields
+      {
+        public static readonly ID Tooltip = new ID("{40ED1BA9-13AE-40DF-AE34-21C181B6AD38}");
+        public static readonly ID Title_1 = new ID("{54EFD029-2983-4A72-B95D-1CDCEB991189}");
+        public static readonly ID Value_1 = new ID("{1772D62B-16CF-4F15-8824-0FF83DDB723C}");
+        public static readonly ID Title_2 = new ID("{B19F2B4D-C2CE-4684-9DF8-21BF0F4B0762}");
+        public static readonly ID Value_2 = new ID("{4AC3A72C-37B8-46FC-AD6B-F3AB48378BBC}");
+        public static readonly ID Title_3 = new ID("{A47B8FD6-EDB0-41D9-A324-2ED86DD7BAF3}");
+        public static readonly ID Value_3 = new ID("{4DD8B5B6-98A8-4C1B-A59E-45B343C939EA}");
+      }
+    }
+
+    public struct HasBarChartContent
+    {
+      public static readonly ID ID = new ID("{7678D65D-4EC6-4784-A8B1-234A58304BDF}");
+      public struct Fields
+      {
+        public static readonly ID Value = new ID("{F42C66DE-4456-48DC-8C69-27C996ED7E74}");
+        public static readonly ID HexColor = new ID("{7748887A-80CC-48FB-BCF8-B4951B76C86D}");
       }
     }
   }
