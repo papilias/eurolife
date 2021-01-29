@@ -48,7 +48,7 @@
               </h3>
               <div class="chart-card__pie-wrap m-b-16">
                 <div class="chart-card__pie">
-                  <canvas class="pie-chart" width="110" height="110"
+                  <canvas class="pie-chart" width="110" height="110" data-legendID="legend-@card.index-@pieChart.index"
                           data-labels='["@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Title_1.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Title_2.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Title_3.ToString(), pieChart.value)"]' data-colors='["#008094", "#7CA6B5", "#CEDAE0"]' data-data='["@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Value_1.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Value_2.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Value_3.ToString(), pieChart.value)"]'>
                   </canvas>
                 </div>
