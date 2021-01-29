@@ -47,7 +47,7 @@
         }
         else
         {
-          @if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.Facebook.ToString()))
+          if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.Facebook.ToString()))
           {
             var linkURL = Model.Rendering.Item.LinkFieldUrl(Templates.HasSocialLinks.Fields.Facebook);
             <a class="item" href="@linkURL" target="_blank">
@@ -56,7 +56,7 @@
               </svg>
             </a>
           }
-          @if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.LinkedIn.ToString()))
+          if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.LinkedIn.ToString()))
           {
             var linkURL = Model.Rendering.Item.LinkFieldUrl(Templates.HasSocialLinks.Fields.LinkedIn);
             <a class="item" href="@linkURL" target="_blank">
@@ -65,7 +65,7 @@
               </svg>
             </a>
           }
-          @if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.YouTube.ToString()))
+          if (Html.Sitecore().HasValue(Templates.HasSocialLinks.Fields.YouTube.ToString()))
           {
             var linkURL = Model.Rendering.Item.LinkFieldUrl(Templates.HasSocialLinks.Fields.YouTube);
             <a class="item" href="@linkURL" target="_blank">
