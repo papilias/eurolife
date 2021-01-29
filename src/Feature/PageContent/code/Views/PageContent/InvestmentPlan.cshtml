@@ -52,7 +52,7 @@
                           data-labels='["@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Title_1.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Title_2.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Title_3.ToString(), pieChart.value)"]' data-colors='["#008094", "#7CA6B5", "#CEDAE0"]' data-data='["@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Value_1.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Value_2.ToString(), pieChart.value)", "@Html.Sitecore().Field(Templates.HasPieChartContent.Fields.Value_3.ToString(), pieChart.value)"]'>
                   </canvas>
                 </div>
-                <div id="legend-@card.index" class="chart-legend"></div><!-- more pies issue-->
+                <div id="legend-@card.index-@pieChart.index" class="chart-legend"></div>
               </div>
             }
 
