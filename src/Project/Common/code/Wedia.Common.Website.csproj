@@ -222,6 +222,9 @@
     <Content Include="images\section-356x424.jpg" />
     <Content Include="images\section-356x483.jpg" />
     <Content Include="images\service-demo.jpg" />
+    <Content Include="images\social-wall\facebook.svg" />
+    <Content Include="images\social-wall\linkedin.svg" />
+    <Content Include="images\social-wall\youtube.svg" />
     <Content Include="images\teaser-demo.jpg" />
     <Content Include="images\tholos.jpeg" />
     <Content Include="images\tick.svg" />
