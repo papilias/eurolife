@@ -4,6 +4,7 @@ if (items) {
   for (let i = 0; i < items.length; i++) {
 
     const item = items[i];
+    var legendID = item.dataset.legendid;
 
     var labelsFromAttribute = JSON.parse(item.dataset.labels);
     var colorsFromAttribute = JSON.parse(item.dataset.colors);
@@ -30,7 +31,7 @@ if (items) {
         },
         legendCallback: function (chart) {
           var text = [];
-          text.push('<ul class="' + i + '-legend">');
+          text.push('<ul>');
           var ds = chart.data.datasets[0];
 
           for (var i = 0; i < ds.data.length; i++) {
@@ -43,7 +44,7 @@ if (items) {
         }
       }
     });
-    document.getElementById("legend-" + i).innerHTML = myPieChart.generateLegend();
+    document.getElementById(legendID).innerHTML = myPieChart.generateLegend();
   }
 }
 
@@ -125,4 +126,17 @@ function initBars() {
   }
 
 
+}
+
+
+//tooltip on click
+
+const toolHandler = document.querySelectorAll('.js-tool');
+if (toolHandler != null) {
+  for (const tool of toolHandler) {
+    tool.addEventListener('click', _ => {
+      tool.classList.toggle('tool--active');
+
+    });
+  }
 }
