@@ -17,7 +17,7 @@ SharedFields:
     <image mediaid="{299601DA-7A74-4F5E-AE81-43B350E2B13F}" />
 - ID: "ef7c5528-7307-4e19-863b-da19eed6a9ed"
   Hint: Open Properties after Add
-  Value: 0
+  Value: 1
 Languages:
 - Language: en
   Versions:

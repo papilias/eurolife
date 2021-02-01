@@ -243,8 +243,8 @@
           adaptiveHeight: false,
           slidesToShow: 1,
           fade: false,
-          prevArrow: $('.slick-prev'),
-          nextArrow: $('.slick-next'),
+          prevArrow: $('.slick-prv'),
+          nextArrow: $('.slick-nxt'),
           responsive: [
             {
               breakpoint: 850,
