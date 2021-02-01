@@ -32,6 +32,9 @@ Languages:
       Hint: Link
       Value: |
         <link id="{58E9AE0F-8D5C-4BFA-AF3F-B534D837F51E}" querystring="" target="" text="" anchor="" url="/Eurolife/Home/Proionta/Idiotes/katoikia" title="" class="" linktype="internal" />
+    - ID: "d7bd8d43-de42-4bde-8e7e-ddfce607a9c6"
+      Hint: Class
+      Value: 
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox

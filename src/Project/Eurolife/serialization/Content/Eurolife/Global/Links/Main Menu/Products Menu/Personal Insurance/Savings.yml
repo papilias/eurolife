@@ -28,6 +28,9 @@ Languages:
       Hint: DividerBefore
       Type: Checkbox
       Value: 1
+    - ID: "d7bd8d43-de42-4bde-8e7e-ddfce607a9c6"
+      Hint: Class
+      Value: teal
     - ID: "ec41fcd4-6086-4e51-a230-366fa15b648d"
       Hint: ShowInNavigation
       Type: Checkbox
