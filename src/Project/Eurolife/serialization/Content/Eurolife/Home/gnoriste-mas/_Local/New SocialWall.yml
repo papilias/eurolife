@@ -29,8 +29,7 @@ Languages:
         <image mediaid="{BAAC716C-3750-491F-93BE-DA4DA71662A4}" ></image>
     - ID: "9ad55576-3c4f-42e7-b617-b9ffe003e969"
       Hint: LinkedIn
-      Value: |
-        <link linktype="internal" />
+      Value: 
     - ID: "ab009181-46a0-4fb0-8d89-218fe421d122"
       Hint: SubTitle
       Value: sub here...
@@ -39,8 +38,7 @@ Languages:
       Value: Social Wall
     - ID: "dc058a43-5b55-42fc-939c-1dac80020e1d"
       Hint: YouTube
-      Value: |
-        <link linktype="internal" />
+      Value: 
     - ID: "ddd6b4ad-0cfa-4784-bc19-934ccda7048b"
       Hint: "Image-1"
       Value: |
