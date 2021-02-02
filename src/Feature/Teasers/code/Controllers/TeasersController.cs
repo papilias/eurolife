@@ -31,5 +31,6 @@ namespace Wedia.Feature.Teasers.Controllers
     public ActionResult ThreeColumnsTeaser() => GetDynamicContent("ThreeColumnsTeaser");
 
     public ActionResult ColoredTeaserList() => GetDynamicContent("ColoredTeaserList");
+    public ActionResult BoardList() => GetDynamicContent("BoardList");
   }
 }
