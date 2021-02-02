@@ -471,13 +471,28 @@ input.person-number{
   transition: 0.5s ease-in-out transform, 0.5s ease-in-out opacity;
 
   > svg, > img{
-      margin-right: 12px;
+      margin-right: 24px;
       display: inline-block;
   }
 
   &.active {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.disclaimer {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #2D6BD1;
+  background-color: #DAE8FF;
+  border-radius: 6px;
+  padding: 12px 24px;
+
+  > svg, > img {
+    margin-right: 24px;
+    display: inline-block;
   }
 }
 
