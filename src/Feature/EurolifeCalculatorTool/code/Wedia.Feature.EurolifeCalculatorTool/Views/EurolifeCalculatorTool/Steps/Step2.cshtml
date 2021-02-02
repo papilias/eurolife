@@ -39,6 +39,7 @@
         <div class="target-group__birth">
           <input type="text" class="js-birth-year @extraclass" onformchange="validateYear(this,arguments)" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
           <label>@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/BirthDate", "BirthDate")</label>
+          <span class="error js-error">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Error/DateError", "Wrong birth date")</span>
         </div>
 
         @if (familyMember.Key == Constants.Family_Member_Daughter)

@@ -239,10 +239,9 @@
 
   & label {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     transition: all .20s ease-in-out;
-    transform: translate(0, -20px);
     font-size: 14px;
     color: $color-black-faded;
   }
@@ -254,6 +253,7 @@
     background: transparent;
     position: relative;
     z-index: 2;
+    transition: 0.5s ease-in-out border-color, 0.5s ease-in-out border-width;
   }
 
   & input:valid {
@@ -262,7 +262,7 @@
   }
 
   & input:focus {
-    border-bottom: 1px solid #448AFF;
+    border-bottom: 2px solid #2D6BD1;
   }
 
   & input:focus + label {
@@ -270,14 +270,43 @@
     color: black;
   }
 
-  & input:valid + label {
+  & input[data-isvalid=true] + label {
     transform: translate(0, -20px);
     color: black;
+  }
+
+  & .filled + label {
+    transform: translate(0, -20px);
   }
 
   input {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  & input[data-isvalid=true].filled {
+    border-bottom: 2px solid #008758;
+  }
+
+  & input[data-isvalid=false].filled {
+    border-bottom: 2px solid #C90300;
+  }
+
+  & span.error {
+    font-size: 14px;
+    line-height: 1;
+    color: #C90300;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out opacity, 0.5s ease-in-out margin, 0.5s ease-in-out max-height;
+    display: block;
+  }
+
+  & input[data-isvalid=false].filled + label + span.error {
+    opacity: 1;
+    margin-top: 12px;
+    max-height: 100px;
   }
 }
 
@@ -418,15 +447,66 @@ input.person-number{
 
 .target-group__added-son,
 .target-group__added-daughter {
-  margin-top: 24px !important;
+  margin-top: 32px !important;
 }
 
 .validation-error {
   font-size: 14px;
-  color: red;
+  color: #C90300;
+  background-color: #FCDDDC;
   border-radius: 6px;
+  padding: 12px 24px;
+}
+
+.validation-success {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #008758;
+  background-color: #D0F3E6;
+  border-radius: 6px;
+  padding: 12px 24px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.5s ease-in-out transform, 0.5s ease-in-out opacity;
+
+  > svg, > img{
+      margin-right: 12px;
+      display: inline-block;
+  }
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .actions__results__sum{
-    margin-bottom:16px;
+    margin-bottom: 16px;
+}
+
+.loading {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255 ,0.5);
+    backdrop-filter: blur(5px);
+    transition: 0.5s ease-in-out opacity;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  &.active {
+    &::before {
+        pointer-events: auto;
+        opacity: 1;
+    }
+  }
 }
