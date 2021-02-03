@@ -100,6 +100,7 @@
     <Content Include="Views\PageContent\ErrorPage.cshtml" />
     <Content Include="Views\PageContent\InvestmentPlan.cshtml" />
     <Content Include="Views\PageContent\SocialWall.cshtml" />
+    <Content Include="Views\PageContent\NewsletterSubscription.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

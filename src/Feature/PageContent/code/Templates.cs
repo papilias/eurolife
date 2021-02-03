@@ -29,6 +29,11 @@ namespace Wedia.Feature.PageContent
       public static readonly ID ID = new ID("{B7EF6502-9906-4AAE-9E44-DCCCD740FB32}");
     }
 
+    public struct NewsletterSubscription
+    {
+      public static readonly ID ID = new ID("{3590DA26-6390-442A-A776-657A9EAB38E5}");
+    }
+
     public struct HasPageIconContent
     {
       public static readonly ID ID = new ID("{A5A87E16-7A80-47F8-AD2B-C27DCA24EB46}");
