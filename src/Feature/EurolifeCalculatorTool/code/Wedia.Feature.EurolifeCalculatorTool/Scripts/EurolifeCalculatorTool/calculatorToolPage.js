@@ -125,6 +125,7 @@ function getOffer(e) {
         loading = false;
         breadcrumbStepActive(step4);
         initializeStep4();
+        enableTabs();
         calculationButton.prop('disabled', loading);
         calculationButton.removeClass('btn--inactive');
         document.querySelector('.js-loading').classList.remove('active');
@@ -667,6 +668,8 @@ function fillFamilyMembers() {
 
 
 function initializeStep3() {
+  console.log("step 3");
+
   //clear common button wrapper
   $('#common-button-wrapper').html('');
 
@@ -770,6 +773,8 @@ function ActivateExtras(e) {
 }
 
 function initializeStep4() {
+  console.log("step 4");
+
   $("#covers_duration").change(function () {
     console.log('covers duration');
     var selected = this.value;
@@ -803,6 +808,14 @@ function initializeStep4() {
       console.log('totalCost: ', { totalCost });
       setTotalCost(totalCost);  
     }
+  });
+
+  //MODAL ENABLE
+  document.querySelectorAll(".js-toggle-modal").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      toggleExplanationModal();
+    });
   });
 }
 
@@ -841,13 +854,39 @@ function numberToGreekFormat(number) {
 }
 
 const showSuccessMessage = () => {
-  successDiv.classList.add('active');
+  successDiv.classList.remove('hidden');
 };
 
 const hideSuccessMessage = () => {
-  successDiv.classList.remove('active');
+  successDiv.classList.add('hidden');
 };
 
 const successMessageStatus = () => {
-  return successDiv.classList.contains("active");
+  return successDiv.classList.contains("hidden");
+};
+
+const toggleExplanationModal = () => {
+  document.querySelector('.js-tool-modal').classList.toggle("active");
+};
+
+const enableTabs = () => {
+  document.querySelectorAll(".js-tab").forEach((tab, tab_index) => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      document.querySelectorAll(".js-tab").forEach((item, index) => {
+        if (index === tab_index)
+          item.classList.add("active");
+        else
+          item.classList.remove("active");
+      });
+
+      document.querySelectorAll(".js-tabs .innertab").forEach((t, tindex) => {
+        if (tindex === tab_index)
+          t.classList.add("active");
+        else
+          t.classList.remove("active");
+      });
+    });
+  });
 };

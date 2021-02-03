@@ -93,12 +93,24 @@
 {
   <!-- bundles  -->
   <section class="m-b-46 center--1100 center">
-    <div class="flexify m-t-32 m-b-24">
-      <h1 class="m-b-8 m-t-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesTitle", "BundlesTitle")</h1>
-      <label class="switch switch--pick">
-        <input type="checkbox" id="activate-extras" value="activate-extras" onclick="ActivateExtras(this, arguments);">
-        <span class="switch__slider"></span>
-      </label>
+    <div class="flex-spread flex-align-center m-t-32 m-b-24">
+      <div class="flexify">
+        <h1 class="m-b-8 m-t-8 tool-title">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step4/BundlesTitle", "BundlesTitle")</h1>
+        <label class="switch switch--pick">
+          <input type="checkbox" id="activate-extras" value="activate-extras" onclick="ActivateExtras(this, arguments);">
+          <span class="switch__slider"></span>
+        </label>
+      </div>
+
+      <!-- SVG BUTTON -->
+      <a href="#" class="js-toggle-modal explanation">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px" height="24px">
+          <g id="surface10490669">
+            <path style=" stroke:none;fill-rule:nonzero;fill:#383b38;fill-opacity:1;" d="M 12 2 C 6.488281 2 2 6.488281 2 12 C 2 17.511719 6.488281 22 12 22 C 17.511719 22 22 17.511719 22 12 C 22 6.488281 17.511719 2 12 2 Z M 12 4 C 16.429688 4 20 7.570312 20 12 C 20 16.429688 16.429688 20 12 20 C 7.570312 20 4 16.429688 4 12 C 4 7.570312 7.570312 4 12 4 Z M 11 7 L 11 9 L 13 9 L 13 7 Z M 11 11 L 11 17 L 13 17 L 13 11 Z M 11 11 " />
+          </g>
+        </svg>
+      </a>
+      <!-- SVG BUTTON -->
     </div>
 
     <div class="pick pick--extras pick--extras__deactive">
@@ -190,3 +202,96 @@
     </select>
   </div>
 </section>
+
+
+<!-- MODAL -->
+<div class="tool-modal js-tool-modal">
+  <div class="tool-modal__inner">
+    <!-- CLOSE BUTTON -->
+    <div class="tool-modal__close js-toggle-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+        <defs>
+          <path id="search" d="M47.979 12.021a2.859 2.859 0 0 0-4.043 0L30 25.957 16.064 12.021a2.859 2.859 0 1 0-4.043 4.043L25.957 30 12.021 43.936a2.859 2.859 0 1 0 4.043 4.043L30 34.043l13.936 13.936a2.859 2.859 0 1 0 4.043-4.043L34.043 30l13.936-13.936a2.859 2.859 0 0 0 0-4.043z"></path>
+        </defs>
+        <use fill="#383b38" fill-rule="nonzero" xlink:href="#search"></use>
+      </svg>
+    </div>
+    <!-- CLOSE BUTTON -->
+
+    <!-- CONTENT -->
+    <div class="tool__content tabs">
+      <!-- TAB HEADERS -->
+      <div class="tabs__headers">
+        <h3 class="js-tab active">Accident Care 1</h3>
+        <h3 class="js-tab">Accident Care 2</h3>
+        <h3 class="js-tab">Accident Care 3</h3>
+      </div>
+      <!-- TAB HEADERS -->
+
+      <!-- TAB CONTENT -->
+      <div class="tabs__tabs js-tabs">
+        <article class="innertab active">
+          <!-- RTE CONTENT -->
+          <p>
+            <span style="background-color: transparent; text-decoration: none; color: #000000;">
+              <strong>Στη Eurolife ERB πιστεύουμε στο παρόν και στο μέλλον της ασφαλιστικής αγοράς.</strong><br>
+              Ενός δυναμικού κλάδου της οικονομίας που παίζει καθοριστικό ρόλο στην ανάπτυξή της, όχι μόνο μέσω των σημαντικών του επενδύσεων σε αυτή, αλλά περισσότερο διότι μέσα από την καθημερινή μας δουλειά αντιμετωπίζουμε τις οικονομικές συνέπειες σημαντικών/ πραγματικών κινδύνων, διαμορφώνοντας έτσι συνθήκες ασφάλειας σε νοικοκυριά και επιχειρήσεις.<br>
+              &nbsp;<br>
+              Η ένταξη νέων ανθρώπων στην ασφαλιστική αγορά και ειδικότερα στον νευραλγικό τομέα της προώθησης των ασφαλιστικών υπηρεσιών, σε ιδιώτες και επιχειρήσεις, αναμφίβολα αποτελεί προτεραιότητά μας. Το Δίκτυο Εξειδικευμένων Πωλήσεων της Eurolife ERB, το οποίο διαμορφώθηκε προκειμένου να προσφέρει τη δυνατότητα σε ανθρώπους που επιδιώκουν την ένταξή τους στο επάγγελμα του Ασφαλιστικού Διαμεσολαβητή, να το κάνουν με τις καλύτερες δυνατές προϋποθέσεις.
+            </span>
+          </p>
+          <p>
+            <span style="background-color: transparent; text-decoration: none; color: #000000;">
+              <strong>Σε ποιούς απευθύνεται</strong>
+            </span>
+          </p>
+          <p><span style="background-color: transparent; text-decoration: none; color: #000000;">Σε εσάς που επιδιώκετε μια νέα επαγγελματική σταδιοδρομία:</span></p>
+          <ul>
+            <li>
+              <span style="background-color: transparent; text-decoration: none; color: #000000;">
+                <strong>Με&nbsp; οικονομική ασφάλεια &amp; προοπτική</strong>: Δίνοντάς σας τη δυνατότητα να&nbsp; δραστηριοποιηθείτε επιχειρηματικά&nbsp; χωρίς την ανάληψη ανάλογου ρίσκου.<br>
+              </span>
+            </li>
+            <li>
+              <span style="background-color: transparent; text-decoration: none; color: #000000;">
+                <strong>Με&nbsp; σταθερότητα</strong>: Ένα οδικό χάρτη για να υλοποιήσετε τους προσωπικούς ή και οικογενειακούς στόχους σας, διαχρονικά.<br>
+              </span><span style="background-color: transparent; text-decoration: none; color: #000000;"></span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span style="background-color: transparent; text-decoration: none; color: #000000;">
+                <strong>Με εταιρική ταυτότητα</strong>: Η επαγγελματική σας πορεία συνδέεται άρρηκτα με μια Εταιρεία Κορυφαίου Επιπέδου όπως η Eurolife, που πρωταγωνιστεί στον Κλάδο της.Και μάλιστα <strong><span style="text-decoration: underline;">χωρίς</span></strong> να απαιτείται προηγούμενη εμπειρία στον Ασφαλιστικό Κλάδο, εφόσον η Εταιρία παρέχει όλη την αναγκαία υποστήριξη &amp; υποδομή.<br>
+              </span>
+            </li>
+          </ul>
+          <!-- RTE CONTENT -->
+        </article>
+
+        <article class="innertab">
+          <!-- RTE CONTENT -->
+          <h2>This is a title 2</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          </p>
+          <!-- RTE CONTENT -->
+        </article>
+
+        <article class="innertab">
+          <!-- RTE CONTENT -->
+          <h2>This is a title 3</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          </p>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          </p>
+          <!-- RTE CONTENT -->
+        </article>
+      </div>
+      <!-- TAB CONTENT -->
+    </div>
+    <!-- CONTENT -->
+  </div>
+</div>
+<!-- MODAL -->
