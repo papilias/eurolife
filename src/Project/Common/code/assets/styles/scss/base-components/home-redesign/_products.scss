@@ -6,20 +6,20 @@
     padding: 64px 0;
   }
 
-  .list-axis article:before{
-      opacity: 0.1 !important;
+  .list-axis article:before {
+    opacity: 0.1 !important;
   }
 
   .list-axis article {
     max-height: none;
     margin-bottom: 16px;
 
-    .btn{
-        padding: 12px 32px;
+    .btn {
+      padding: 12px 32px;
     }
 
-    @include breakpoint(920){
-        margin: 0;
+    @include breakpoint(920) {
+      margin: 0;
     }
   }
 
@@ -38,6 +38,14 @@
 
       .h4 {
         line-height: 1.2;
+      }
+
+      .product-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        color: #383B38;
+        margin: 4px 0 -4px 0;
+        opacity: 0.6;
       }
 
       .icon {
@@ -137,7 +145,7 @@
         }
       }
 
-      &:nth-child(3) {
+      &:nth-child(2) {
         .item--inner {
           > img {
             order: 3;
