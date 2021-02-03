@@ -51,6 +51,13 @@
         </h2>
       }
 
+      @if (Model.Item.FieldHasValue(Templates.HasTeaserSubTitle.Fields.SubTitle) || Sitecore.Context.PageMode.IsExperienceEditor)
+      {
+        <h4 class="h4 product-subtitle">
+          @Html.Sitecore().Field(Templates.HasTeaserSubTitle.Fields.SubTitle)
+        </h4>
+      }
+
       @if (Model.Item.FieldHasValue(Templates.HasTeaserDescription.Fields.Description) || Sitecore.Context.PageMode.IsExperienceEditor)
       {
         <p class="m-t-16">
@@ -58,7 +65,7 @@
         </p>
       }
 
-      @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--default btn--dark  m-t-24" }) 
+      @Html.Sitecore().Field(Templates.HasTeaserCTA.Fields.CTA, new { @class = "btn btn--default btn--dark  m-t-24" })
     </div>
     <div class="item">
       @if (Model.Item.FieldHasValue(Templates.HasTeaserTitle_2.Fields.Title_2) || Sitecore.Context.PageMode.IsExperienceEditor)
