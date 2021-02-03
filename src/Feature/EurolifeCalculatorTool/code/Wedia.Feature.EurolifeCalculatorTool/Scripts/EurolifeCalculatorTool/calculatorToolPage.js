@@ -7,8 +7,12 @@ const step1 = 'step-1';
 const step2 = 'step-2';
 const step3 = 'step-3';
 const step4 = 'step-4';
+const delay = 1000;
 var loading = false;
 var step_2_valid = false;
+const errorMessage = (document.querySelector('.js-error')) ? document.querySelector('.js-error').innerHTML : "Error";
+const successDiv = document.getElementById('calculator-success');
+
 
 var userSelection = [];
 
@@ -52,24 +56,34 @@ function showNextStep(e) {
     contentType: 'application/json; charset=utf-8',
     cache: false,
     data: JSON.stringify(userSelection),
+    beforeSend: function () {
+      document.querySelector('.js-loading').classList.add('active');
+    },
     success: function (response) {
-      stepContent.html(response);
-      loading = false;
-      breadcrumbStepActive(nextStep);
-      nextButton.prop('disabled', loading);
-      nextButtonInactive();
+      setTimeout(() => {
+        stepContent.html(response);
+        loading = false;
+        document.querySelector('.js-loading').classList.remove('active');
+        breadcrumbStepActive(nextStep);
+        nextButton.prop('disabled', loading);
+        nextButtonInactive();
 
-      if (nextStep === step2) {
-        initializeStep2();
-      }
+        if (nextStep === step2) {
+          initializeStep2();
+        }
 
-      if (nextStep === step3) {
-        initializeStep3();
-      }      
+        if (nextStep === step3) {
+          hideSuccessMessage();
+          initializeStep3();
+        }
+      }, delay);      
     },
     error: function (error) {
-      loading = false;
-      nextButton.prop('disabled', loading);
+      setTimeout(() => {
+        loading = false;
+        nextButton.prop('disabled', loading);
+        document.querySelector('.js-loading').classList.remove('active');
+      }, delay);
     }
   });
 }
@@ -102,19 +116,29 @@ function getOffer(e) {
     contentType: 'application/json; charset=utf-8',
     cache: false,
     data: JSON.stringify(userSelection),
+    beforeSend: function () {
+      document.querySelector('.js-loading').classList.add('active');
+    },
     success: function (response) {
-      stepContent.html(response);
-      loading = false;
-      breadcrumbStepActive(step4);
-      initializeStep4();
-      calculationButton.prop('disabled', loading);
-      calculationButton.removeClass('btn--inactive');
+      setTimeout(() => {
+        stepContent.html(response);
+        loading = false;
+        breadcrumbStepActive(step4);
+        initializeStep4();
+        enableTabs();
+        calculationButton.prop('disabled', loading);
+        calculationButton.removeClass('btn--inactive');
+        document.querySelector('.js-loading').classList.remove('active');
+      }, delay);
     },
     error: function (error) {
-      console.log(error);
-      loading = false;     
-      calculationButton.prop('disabled', loading);
-      calculationButton.removeClass('btn--inactive');
+      setTimeout(() => {
+        console.log(error);
+        loading = false;
+        calculationButton.prop('disabled', loading);
+        calculationButton.removeClass('btn--inactive');
+        document.querySelector('.js-loading').classList.remove('active');
+      }, delay);
     }
   });
 }
@@ -132,6 +156,9 @@ function nextButtonActive() {
 
 function nextButtonInactive() {
   nextButton.addClass('btn--inactive');
+
+  if (successMessageStatus())
+    hideSuccessMessage();
 }
 
 function nextButtonStep(nextStep) {
@@ -265,7 +292,7 @@ function initializeStep2() {
     for (const target of targetsAdd) {
       target.addEventListener('click', _ => {
 
-        
+
         if (allowMorePeople()) {
           //if birthyear is invalid, deactivate next button
           let targetInput = target.parentElement.parentElement.getElementsByClassName('js-birth-year');
@@ -302,10 +329,11 @@ function initializeStep2() {
   const daughtersAdd = document.querySelectorAll('.js-add-daughter');
   if (daughtersAdd != null) {
 
-    let newChild = 
-        `<div class="target-group__birth target-group__added-daughter">
+    let newChild =
+      `<div class="target-group__birth target-group__added-daughter">
           <input type="text" class="js-birth-year js-validate-family-daughter" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
           <label>Έτος γέννησης</label>
+          <span class="error">` + errorMessage + `</span>
         </div>`;
 
     for (const daughter of daughtersAdd) {
@@ -341,9 +369,9 @@ function initializeStep2() {
 
     for (const daughter of daughtersRemove) {
       daughter.addEventListener('click', _ => {
-        
+
         if (count > 0) {
-        
+
           count = count - 1;
           daughterPlaceholder.dataset.daughtercounter = count;
 
@@ -363,9 +391,9 @@ function initializeStep2() {
             messenegerDiv.innerHTML = '';
             messenegerDiv.classList.add('hidden');
             messenegerDiv.classList.remove('max-persons');
-          }       
+          }
         }
-      
+
       });
     }
   }
@@ -385,6 +413,7 @@ function initializeStep2() {
       `<div class="target-group__birth target-group__added-son">
           <input type="text" class="js-birth-year js-validate-family-son" onkeyup="validateYear(this,arguments)" maxlength="4" pattern="^(19|20)\d{2}$" data-isvalid="false">
           <label>Έτος γέννησης</label>
+          <span class="error">` + errorMessage + `</span>
         </div>`;
 
     for (const son of sonsAdd) {
@@ -428,12 +457,12 @@ function initializeStep2() {
           }, 100);
 
           const nodesToRemove = document.querySelectorAll('.target-group__added-son');
-          
+
           if (nodesToRemove.length > 0) sonPlaceholder.removeChild(nodesToRemove[0]);
 
           var messenegerDiv = document.getElementById('calculator-custom-validation');
           if (messenegerDiv.classList.contains('max-persons')) {
-                        
+
             messenegerDiv.innerHTML = '';
             messenegerDiv.classList.add('hidden');
             messenegerDiv.classList.remove('max-persons');
@@ -475,6 +504,42 @@ function initializeStep2() {
         }
       });
     });
+
+  const init = () => {
+    //INITIAL STATE - ALL CLICKED
+    Array.prototype.slice.call(document.querySelectorAll('.js-add-parent, .js-add-son, .js-add-daughter')).map((item) => {
+      item.click();
+    });
+
+    //SELECT MOTHER AND FOCUS HER
+    Array.prototype.slice.call(document.querySelectorAll('.target-group__item')).map((item) => {
+      if (item.getAttribute('data-key') == "mother") {
+        item.querySelector('.js-radio-choice').click();
+        item.querySelector('.js-birth-year').focus();
+      }
+    });
+  };
+
+  //ADD CLASS ON BLUR AND VALUE
+  const blurAndValue = () => {
+    $(document).on("change", ".js-birth-year", (e) => {
+      const item = e.target;
+
+      item.addEventListener("blur", () => {
+        if (item.value.length > 0)
+          item.classList.add("filled");
+        else
+          item.classList.remove("filled");
+      });
+    });
+  };
+
+  //MORE THAN 2 PERSONS
+  if (Array.prototype.slice.call(document.querySelectorAll('.target-group__item').length >= 2))
+    setTimeout(() => {
+      init();
+      blurAndValue();
+    }, 10);
 }
 
 
@@ -550,12 +615,12 @@ function step2Validity() {
     if (childrenSum > 4) step_2_valid = false;
   }
 
-
-
-
   if (step_2_valid) {
+    showSuccessMessage();
     nextButtonActive();
-  }
+  } else
+    hideSuccessMessage();
+  
    
 }
 
@@ -603,9 +668,10 @@ function fillFamilyMembers() {
 
 
 function initializeStep3() {
+  console.log("step 3");
+
   //clear common button wrapper
   $('#common-button-wrapper').html('');
-
 
   //range
   var sheet = document.createElement('style'),
@@ -707,6 +773,8 @@ function ActivateExtras(e) {
 }
 
 function initializeStep4() {
+  console.log("step 4");
+
   $("#covers_duration").change(function () {
     console.log('covers duration');
     var selected = this.value;
@@ -740,6 +808,14 @@ function initializeStep4() {
       console.log('totalCost: ', { totalCost });
       setTotalCost(totalCost);  
     }
+  });
+
+  //MODAL ENABLE
+  document.querySelectorAll(".js-toggle-modal").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      toggleExplanationModal();
+    });
   });
 }
 
@@ -776,3 +852,41 @@ function numberToGreekFormat(number) {
   var round = (Math.round(number * 100) / 100).toFixed(2);
   return elFormatter.format(round).toString() + " €";
 }
+
+const showSuccessMessage = () => {
+  successDiv.classList.remove('hidden');
+};
+
+const hideSuccessMessage = () => {
+  successDiv.classList.add('hidden');
+};
+
+const successMessageStatus = () => {
+  return successDiv.classList.contains("hidden");
+};
+
+const toggleExplanationModal = () => {
+  document.querySelector('.js-tool-modal').classList.toggle("active");
+};
+
+const enableTabs = () => {
+  document.querySelectorAll(".js-tab").forEach((tab, tab_index) => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      document.querySelectorAll(".js-tab").forEach((item, index) => {
+        if (index === tab_index)
+          item.classList.add("active");
+        else
+          item.classList.remove("active");
+      });
+
+      document.querySelectorAll(".js-tabs .innertab").forEach((t, tindex) => {
+        if (tindex === tab_index)
+          t.classList.add("active");
+        else
+          t.classList.remove("active");
+      });
+    });
+  });
+};
