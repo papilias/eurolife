@@ -154,13 +154,42 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       product.Price = GetProductPricing(quotationResponse, availableProducts);
       var groupOfBundles = userSelection.TargetGroup.Key != Constants.Family_Target_Child ? GetViewModelBundlesWithPricing(quotationResponse, bundleCovers, groupOfBundleCovers) : null;
 
+      var infoTabs = GetAvailableInfoTabs(contextItem);
+
+
       return new OfferViewModel 
       { 
         RenderingItem = contextItem,
         Product = product,
         GroupOfBundles = groupOfBundles,
-        UserSelection = userSelection
+        UserSelection = userSelection,
+        InfoTabs = infoTabs
       };
+    }
+
+    private IEnumerable<InfoTab> GetAvailableInfoTabs(Item contextItem)
+    {
+      var list = new List<InfoTab>();
+
+      var infoTabsList = contextItem
+                           .Children.Where(x => x.TemplateID == Templates.InfoTabsList.ID)
+                           .FirstOrDefault();
+
+      if(infoTabsList != null)
+      {
+        var infoTabs = infoTabsList.Children.Where(x => x.TemplateID == Templates.InfoTabsItem.ID)?.ToList();
+
+        foreach(var item in infoTabs)
+        {
+          list.Add(new InfoTab 
+          {
+            Title = item.Fields[Templates.HasTitle.Fields.Title].ToString(),           
+            RTE = item.Field(Templates.HasProductContent.Fields.RTE)
+          });
+        }
+      }
+
+      return list;
     }
 
     private Product GetProductByUserSelection(Item contextItem, UserSelection userSelection)

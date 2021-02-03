@@ -73,6 +73,16 @@ namespace Wedia.Feature.EurolifeCalculatorTool
       public static readonly ID ID = new ID("{636714D5-1E6D-4CDC-9A1A-9DB4E41C199F}");
     }
 
+    public struct InfoTabsList
+    {
+      public static readonly ID ID = new ID("{C11604CC-E0A8-4E3E-A667-FA6BC3CC7355}");
+    }
+
+    public struct InfoTabsItem
+    {
+      public static readonly ID ID = new ID("{BAA98B57-D925-4057-BD64-42580826722A}");
+    }
+
     public struct HasInfoBox
     {
       public static readonly ID ID = new ID("{A4E88BF2-6719-4DAB-B33C-E9B077C58D5E}");
@@ -180,5 +190,15 @@ namespace Wedia.Feature.EurolifeCalculatorTool
         public static readonly ID Link = new ID("{31AB8CDE-F32C-4A92-8A57-294A965B0E14}");
       }
     }
+
+    public struct HasRTE
+    {
+      public static readonly ID ID = new ID("{EE227249-EDF4-4779-A79F-234338DFF294}");
+      public struct Fields
+      {
+        public static readonly ID Link = new ID("{B207D76C-94EF-449A-B596-A91C0C8571FF}");
+      }
+    }
+
   }
 }

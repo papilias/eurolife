@@ -227,6 +227,7 @@
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Bundle.cs" />
     <Compile Include="Models\GroupOfBundle.cs" />
+    <Compile Include="Models\InfoTab.cs" />
     <Compile Include="Models\Price.cs" />
     <Compile Include="Models\ViewModels\CalculatorToolPageViewModel.cs" />
     <Compile Include="Models\FamilyMember.cs" />
