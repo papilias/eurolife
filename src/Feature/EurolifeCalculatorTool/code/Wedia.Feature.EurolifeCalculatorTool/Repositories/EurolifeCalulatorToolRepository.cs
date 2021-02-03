@@ -264,10 +264,10 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
         {
           if(products.Where(x=> x.Key == cover.CovCode.ToString()).Any())//is product
           {
-            price.CoverPremium += cover.CoverPremium;
-            price.CoverPremium2 += cover.CoverPremium2;
-            price.CoverPremium4 += cover.CoverPremium4;
-            price.CoverPremium12 += cover.CoverPremium12;
+            price.CoverPremium += GetPriceWithTax(cover.CoverPremium);
+            price.CoverPremium2 += GetPriceWithTax(cover.CoverPremium2);
+            price.CoverPremium4 += GetPriceWithTax(cover.CoverPremium4);
+            price.CoverPremium12 += GetPriceWithTax(cover.CoverPremium12);
           }
         }
       }
@@ -278,15 +278,24 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
         {
           if (products.Where(x => x.DependentMembersProductKey == dependentCover.CovCode.ToString()).Any())//is product for dependent member
           {
-            price.CoverPremium += dependentCover.CoverPremium;
-            price.CoverPremium2 += dependentCover.CoverPremium2;
-            price.CoverPremium4 += dependentCover.CoverPremium4;
-            price.CoverPremium12 += dependentCover.CoverPremium12;
+            price.CoverPremium += GetPriceWithTax(dependentCover.CoverPremium);
+            price.CoverPremium2 += GetPriceWithTax(dependentCover.CoverPremium2);
+            price.CoverPremium4 += GetPriceWithTax(dependentCover.CoverPremium4);
+            price.CoverPremium12 += GetPriceWithTax(dependentCover.CoverPremium12);
           }
         }
       }  
 
       return price;
+    }
+
+    //tax for products
+    private double GetPriceWithTax(double? price)
+    {
+      if (price.HasValue)
+        return price.Value * 1.15;
+      else
+        return 0;
     }
 
     private List<GroupOfBundle> GetViewModelBundlesWithPricing(Models.Api.Quotation.Response.QuotationResponse quotationResponse,
