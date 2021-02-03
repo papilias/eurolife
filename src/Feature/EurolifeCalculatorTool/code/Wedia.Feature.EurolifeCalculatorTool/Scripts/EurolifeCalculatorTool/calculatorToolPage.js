@@ -1,5 +1,5 @@
-﻿const loadNextStepURL = 'api/feature/eurolifecalculatortool/load-next-step';
-const getProductsURL = 'api/feature/eurolifecalculatortool/get-offer';
+﻿const loadNextStepURL = '/api/feature/eurolifecalculatortool/load-next-step';
+const getProductsURL = '/api/feature/eurolifecalculatortool/get-offer';
 const nextButton = $('#go-to-next-step'); 
 const calculationButton = $('#get-product'); 
 const stepContent = $('#step-content');
