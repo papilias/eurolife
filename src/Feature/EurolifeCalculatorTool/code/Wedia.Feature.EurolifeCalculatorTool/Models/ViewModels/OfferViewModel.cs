@@ -11,5 +11,6 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Models
     public Item RenderingItem { get; set; }
     public Product Product { get; set; }
     public IEnumerable<GroupOfBundle> GroupOfBundles { get; set; }
+    public UserSelection UserSelection { get; set; }
   }
 }

@@ -28,8 +28,14 @@ $('[name="target"]').change(function (e) {
   nextButtonActive();
 })
 
-function showNextStep(e) {
-  if (loading || !isButtonActive(nextButton))
+function showNextStep(e) { 
+  if (loading)
+    return false;
+
+  let loadFromBreadCrumb = (e.dataset.loadfrombreadcrumb === 'true');
+  console.log(e);
+
+  if (!loadFromBreadCrumb && !isButtonActive(nextButton))
     return false;
 
   console.log('dataset');
@@ -44,7 +50,7 @@ function showNextStep(e) {
   userSelection.itemId = itemId
   userSelection.step = nextStep
 
-  if (nextStep == step3) {//we are on step 2
+  if (!loadFromBreadCrumb && nextStep == step3) {//we are on step 2
     fillFamilyMembers();      
   }
 
@@ -67,6 +73,11 @@ function showNextStep(e) {
         breadcrumbStepActive(nextStep);
         nextButton.prop('disabled', loading);
         nextButtonInactive();
+
+        if (nextStep === step1) {
+          initializeStep1();
+        }
+
 
         if (nextStep === step2) {
           initializeStep2();
@@ -91,6 +102,9 @@ function showNextStep(e) {
 function getOffer(e) {
   if (loading)
     return false;
+
+  console.log('getOffer');
+  console.log({ userSelection });
 
   var selectedAmount = $('ul.range-labels li[class="active selected"]');
   let amount = { key: $(selectedAmount).data('value'), title: $(selectedAmount).text(), guiid: $(selectedAmount).data('guiid') };
@@ -252,7 +266,26 @@ function validateYear(e) {
 }
 
 
+function initializeStep1() {
+  $('#common-button-wrapper').show();
+  nextButtonStep(step2);
+
+  $('[name="target"]').change(function (e) {
+    //save selection to an object
+    let targetGroup = { key: $(this).val(), title: $(this).data('title') };
+    userSelection = { targetGroup: targetGroup };
+
+    console.log({ userSelection });
+
+    //update button
+    nextButtonActive();
+  })
+}
+
+
 function initializeStep2() {
+
+  $('#common-button-wrapper').show();
 
   nextButtonStep(step3);
 
@@ -671,7 +704,7 @@ function initializeStep3() {
   console.log("step 3");
 
   //clear common button wrapper
-  $('#common-button-wrapper').html('');
+  $('#common-button-wrapper').hide();
 
   //range
   var sheet = document.createElement('style'),

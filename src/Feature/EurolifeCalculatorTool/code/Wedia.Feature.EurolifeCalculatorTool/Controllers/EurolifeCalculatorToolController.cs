@@ -57,6 +57,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
       {
         var item = Context.Database.GetItem(new ID(userSelection.ItemId));
         var stepView = mappings[userSelection.Step];
+        var availableTargetGroups = _eurolifeCalulatorToolRepository.GetAvailableTargetGroups(item);
         var availableFamilyMembers = _eurolifeCalulatorToolRepository.GetAvailableFamilyMembers(item, userSelection.TargetGroup.Key);
         var availableAmounts= _eurolifeCalulatorToolRepository.GetAvailableAmounts(item);
         var availableHospitalizations = _eurolifeCalulatorToolRepository.GetAvailableHospitalizations(item);
@@ -64,6 +65,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
         var viewModel = new CalculatorToolPageViewModel
         {
           RenderingItem = item,
+          AvailableTargetGroups = availableTargetGroups,
           AvailableFamilyMembers = availableFamilyMembers,
           AvailableAmounts = availableAmounts,
           AvailableHospitalizations = availableHospitalizations,
@@ -89,7 +91,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Controllers
         var item = Context.Database.GetItem(new ID(userSelection.ItemId));
         var stepView = mappings[userSelection.Step];
 
-        var viewModel = await _eurolifeCalulatorToolRepository.GetProductAndBundles(item, userSelection);        
+        OfferViewModel viewModel = await _eurolifeCalulatorToolRepository.GetProductAndBundles(item, userSelection);        
 
         var partial = Utilities.RenderRazorViewToString(ControllerContext,
           stepView,

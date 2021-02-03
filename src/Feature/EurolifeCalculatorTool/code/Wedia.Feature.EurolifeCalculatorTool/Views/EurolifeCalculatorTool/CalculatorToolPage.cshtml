@@ -5,7 +5,7 @@
 @model CalculatorToolPageViewModel
 
 
-@Html.Partial("~/Views/EurolifeCalculatorTool/Common/Breadcrumb.cshtml")
+@Html.Partial("~/Views/EurolifeCalculatorTool/Common/Breadcrumb.cshtml", Model.RenderingItem)
 
 <section class="m-b-46 center--1100 center loading js-loading">
   <div id="step-content">
@@ -29,6 +29,7 @@
     <a class="btn btn--default btn--dark btn--inactive" id="go-to-next-step"
        data-itemid="@Model.RenderingItem.ID"
        data-nextstep="step-2"
+       data-loadfrombreadcrumb="false"
        onclick="showNextStep(this, arguments);">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Next", "Next Button")</a>
     </div>
   </section>

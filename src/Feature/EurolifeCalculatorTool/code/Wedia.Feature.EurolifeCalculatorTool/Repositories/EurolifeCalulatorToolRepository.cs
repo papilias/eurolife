@@ -158,7 +158,8 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       { 
         RenderingItem = contextItem,
         Product = product,
-        GroupOfBundles = groupOfBundles
+        GroupOfBundles = groupOfBundles,
+        UserSelection = userSelection
       };
     }
 
