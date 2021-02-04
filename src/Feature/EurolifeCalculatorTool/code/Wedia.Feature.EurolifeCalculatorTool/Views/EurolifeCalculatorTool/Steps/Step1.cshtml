@@ -12,7 +12,8 @@
   @foreach (var targetItem in Model.AvailableTargetGroups)
   {
     <div class="target-group__item">
-      <input type="radio" id="@targetItem.Key" name="target" value="@targetItem.Key" data-title="@targetItem.Title">
+      <input type="radio" id="@targetItem.Key" name="target" value="@targetItem.Key" data-title="@targetItem.Title"
+             data-image="@targetItem.Image">
       <label for="@targetItem.Key"></label>
 
       <div class="target-group__icon">
