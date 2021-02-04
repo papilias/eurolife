@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Wedia.Feature.Navigation.Repositories;
+using Wedia.Foundation.Alerts;
 using Wedia.Foundation.Alerts.Extensions;
 using Wedia.Foundation.Alerts.Models;
 using Wedia.Foundation.Dictionary.Repositories;
@@ -22,8 +23,24 @@ namespace Wedia.Feature.Navigation.Controllers
       _navigationRepository = navigationRepository;
     }
 
+    //Get drop menu
+    public ActionResult DropMenu()
+    {
+      var item = RenderingContext.Current.Rendering.Item;
+
+      if (!item?.DescendsFrom(Templates.DropMenuList.ID) ?? true)
+      {
+        return Context.PageMode.IsExperienceEditor ?
+            this.InfoMessage(new InfoMessage(AlertTexts.InvalidDataSourceTemplateFriendlyMessage, InfoMessage.MessageType.Error)) :
+            null;
+      }
+
+      var vm = _navigationRepository.GetDropMenuCategories(item);
+      return View(vm);
+     }
+
     // GET: Breadcrumb
-    public ActionResult Breadcrumb()
+      public ActionResult Breadcrumb()
     {
       var items = _navigationRepository.GetBreadcrumb();
       return View(items);

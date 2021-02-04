@@ -14,5 +14,6 @@ namespace Wedia.Feature.Navigation.Repositories
         List<NavigationItems> GetPrimaryMenu(Item menuItem, bool descending = false, int limit = 20);
         NavigationItems GetLinkMenuItems(Item menuItem, bool descending = false, int limit = 20);        
         NavigationItems GetHeaderNavigationItems(Item menuItem, bool descending = false, int limit = 20);
+        List<DropMenuCategory> GetDropMenuCategories(Item contextItem);
   }
 }

@@ -57,6 +57,9 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Sitecore.Mvc">
+      <Version>9.1.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -89,11 +92,13 @@
     <Content Include="Views\Navigation\NavigationLinksList.cshtml" />
     <Content Include="Views\Navigation\LoginRegisterLinks.cshtml" />
     <Content Include="Views\Navigation\BlogSocialMenu.cshtml" />
+    <Content Include="Views\Navigation\DropMenu.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Models\DropMenuCategory.cs" />
     <Compile Include="Models\NavigationItem.cs" />
     <Compile Include="Models\NavigationItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -84,6 +84,30 @@ namespace Wedia.Feature.Navigation.Repositories
       return GetChildNavigationItems(menuRoot, 0, 0, descending, limit);
     }
 
+    public List<DropMenuCategory> GetDropMenuCategories(Item contextItem)
+    {
+      var list = new List<DropMenuCategory>();
+
+      var categories = contextItem
+                            .Children.Where(x => x.TemplateID == Templates.DropMenuCategory.ID);
+
+      if(categories != null && categories.Any())
+      {
+        foreach (var category in categories)
+        {
+          var subItems = category.Children.Where(x => x.TemplateID == Templates.DropMenuItem.ID)?.ToList();
+
+          list.Add(new DropMenuCategory 
+          {
+            Category = category,
+            SubItems = subItems
+          });
+        }
+      }
+
+      return list;
+    }
+
     private NavigationItems InfoMessage(InfoMessage infoMessage)
     {
       throw new NotImplementedException();
@@ -164,5 +188,7 @@ namespace Wedia.Feature.Navigation.Repositories
       return navItems;
 
     }
+
+  
   }
 }
