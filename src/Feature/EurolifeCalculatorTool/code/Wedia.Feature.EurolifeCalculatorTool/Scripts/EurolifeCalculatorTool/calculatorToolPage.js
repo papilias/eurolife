@@ -748,6 +748,14 @@ function initializeStep3() {
     sheet.textContent = getTrackStyle(this);
   });
 
+  //MODAL ENABLE
+  document.querySelectorAll(".js-toggle-modal").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      toggleExplanationModal();
+    });
+  });
+
   // Change input value on label click
   $('.range-labels li').on('click', function () {
     var index = $(this).index();
@@ -766,6 +774,10 @@ function initializeStep3() {
     }
   });
 
+  //MANUALLY CLICK THE FIRST ELEMENT
+  setTimeout(() => {
+    $('.range-wrapper ul li:nth-child(1)').trigger("click");
+  }, 100);
 }
 
 function SelectProgram(e) {
@@ -895,11 +907,17 @@ function numberToGreekFormat(number) {
 }
 
 const showSuccessMessage = () => {
+  hideDisclaimer();
   successDiv.classList.remove('hidden');
 };
 
 const hideSuccessMessage = () => {
   successDiv.classList.add('hidden');
+};
+
+const hideDisclaimer = () => {
+  if (document.querySelector('.disclaimer'))
+    document.querySelector('.disclaimer').classList.add('hidden');
 };
 
 const successMessageStatus = () => {

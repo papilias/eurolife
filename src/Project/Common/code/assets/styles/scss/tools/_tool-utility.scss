@@ -492,6 +492,10 @@ input.person-number{
     margin-right: 24px;
     display: inline-block;
   }
+
+  &.hidden{
+      display: none;
+  }
 }
 
 .actions__results__sum{
@@ -526,6 +530,13 @@ input.person-number{
 
 .explanation {
   display: block;
+
+  &--nomargin {
+    margin-right: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
 
   @include breakpoint-rev(540) {
     position: absolute;
