@@ -13,12 +13,18 @@
 </section>
 
 <section class="center center--650 m-b-32 ">
-  <div class="flexify relator">
+  <div class="flex-spread flex-align-center relator">
     <h2 class="h5 m-b-16">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step3/ParticipationAmount", "Participation Amount")</h2>
-    <span class="tool">
-      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="#003B4D" fill-rule="nonzero" d="M30 57C15.088 57 3 44.912 3 30S15.088 3 30 3s27 12.088 27 27-12.088 27-27 27zm0-4.91c12.2 0 22.09-9.89 22.09-22.09S42.2 7.91 30 7.91 7.91 17.8 7.91 30 17.8 52.09 30 52.09zm4.295-33.74c0 1.016-.349 1.884-1.051 2.598-.7.717-1.545 1.075-2.532 1.075-.99 0-1.836-.358-2.545-1.075-.707-.714-1.061-1.582-1.061-2.599 0-1.015.354-1.885 1.061-2.608.707-.722 1.555-1.082 2.545-1.082.987 0 1.832.361 2.532 1.082.702.723 1.051 1.593 1.051 2.608zm-.35 24.209a61.187 61.187 0 0 1-2.525 1.157c-.628.266-1.358.398-2.19.398-1.276 0-2.27-.38-2.978-1.137-.708-.758-1.063-1.72-1.063-2.886 0-.452.027-.916.08-1.389.054-.473.139-1.008.256-1.604l1.319-5.674c.117-.543.216-1.058.296-1.546.08-.483.12-.928.12-1.33 0-.724-.123-1.23-.369-1.515-.246-.285-.714-.43-1.41-.43-.34 0-.69.068-1.048.196-.358.128-.57-1.38-.57-1.38a29.59 29.59 0 0 1 2.479-1.098c.79-.304 1.535-.457 2.24-.457 1.269 0 2.248.372 2.935 1.118.686.746 1.03 1.713 1.03 2.906 0 .246-.023.68-.07 1.301a10.427 10.427 0 0 1-.265 1.711l-1.313 5.653c-.107.454-.204.972-.288 1.556-.086.58-.128 1.024-.128 1.321 0 .751.137 1.263.413 1.536.278.272.756.408 1.436.408.32 0 .682-.07 1.086-.204.403-.136.526 1.389.526 1.389z"></path></svg>
-      <span class="tooltext">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step3/ParticipationTooltip", "Participation Tooltip")</span>
-    </span>
+
+    <!-- SVG BUTTON -->
+    <a href="#" class="js-toggle-modal explanation explanation--nomargin">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px" height="24px">
+        <g id="surface10490669">
+          <path style=" stroke:none;fill-rule:nonzero;fill:#383b38;fill-opacity:1;" d="M 12 2 C 6.488281 2 2 6.488281 2 12 C 2 17.511719 6.488281 22 12 22 C 17.511719 22 22 17.511719 22 12 C 22 6.488281 17.511719 2 12 2 Z M 12 4 C 16.429688 4 20 7.570312 20 12 C 20 16.429688 16.429688 20 12 20 C 7.570312 20 4 16.429688 4 12 C 4 7.570312 7.570312 4 12 4 Z M 11 7 L 11 9 L 13 9 L 13 7 Z M 11 11 L 11 17 L 13 17 L 13 11 Z M 11 11 " />
+        </g>
+      </svg>
+    </a>
+    <!-- SVG BUTTON -->
   </div>
 
   <div class="range-wrapper m-b-24">
@@ -27,13 +33,13 @@
     </div>
 
     <ul class="range-labels">
-      @foreach (var item in Model.AvailableAmounts.Select((value,i) => new { i, value}))
+      @foreach (var item in Model.AvailableAmounts.Select((value, i) => new { i, value }))
       {
 
         int liIndex = item.i + 1;
 
         <li class="@(item.i == 0 ? "active selected" : null)" data-value="@item.value.Key" data-liindex="@liIndex" data-guiid="@item.value.GuiId">@item.value.Title</li>
-      }    
+      }
     </ul>
 
     <div class="note color-faded">
@@ -51,10 +57,45 @@
         <label for="@hospitalization.Key">@hospitalization.Title</label>
       </div>
     }
-   
+
   </div>
   <div class="actions__links-t-l m-b-64 t-r">
-    <a class="btn btn--dark btn--default" id="get-product"  onclick="getOffer(this, arguments);">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Calculation", "Calculation")</a>
+    <a class="btn btn--dark btn--default" id="get-product" onclick="getOffer(this, arguments);">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Common/Buttons/Calculation", "Calculation")</a>
   </div>
 
 </section>
+
+<!-- MODAL -->
+<div class="tool-modal js-tool-modal">
+  <div class="tool-modal__inner">
+    <!-- CLOSE BUTTON -->
+    <div class="tool-modal__close js-toggle-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+        <defs>
+          <path id="search" d="M47.979 12.021a2.859 2.859 0 0 0-4.043 0L30 25.957 16.064 12.021a2.859 2.859 0 1 0-4.043 4.043L25.957 30 12.021 43.936a2.859 2.859 0 1 0 4.043 4.043L30 34.043l13.936 13.936a2.859 2.859 0 1 0 4.043-4.043L34.043 30l13.936-13.936a2.859 2.859 0 0 0 0-4.043z"></path>
+        </defs>
+        <use fill="#383b38" fill-rule="nonzero" xlink:href="#search"></use>
+      </svg>
+    </div>
+    <!-- CLOSE BUTTON -->
+    <!-- CONTENT -->
+    <div class="tool__content tabs">
+      <!-- TAB HEADERS -->
+      <div class="tabs__headers">
+        <h3 class="js-tab active">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step3/ParticipationAmount", "Participation Amount")</h3>
+      </div>
+      <!-- TAB HEADERS -->
+      <!-- TAB CONTENT -->
+      <div class="tabs__tabs js-tabs">
+        <article class="innertab active">
+          <!-- RTE CONTENT -->
+          @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step3/ParticipationTooltip", "Participation Tooltip")
+          <!-- RTE CONTENT -->
+        </article>
+      </div>
+      <!-- TAB CONTENT -->
+    </div>
+    <!-- CONTENT -->
+  </div>
+</div>
+<!-- MODAL -->

@@ -748,6 +748,14 @@ function initializeStep3() {
     sheet.textContent = getTrackStyle(this);
   });
 
+  //MODAL ENABLE
+  document.querySelectorAll(".js-toggle-modal").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      toggleExplanationModal();
+    });
+  });
+
   // Change input value on label click
   $('.range-labels li').on('click', function () {
     var index = $(this).index();
