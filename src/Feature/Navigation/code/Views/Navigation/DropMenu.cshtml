@@ -31,10 +31,9 @@
       }
 
       <div class="dropmenu__item @(hasSubMenu ? "has-submenu" : null)" @(hasSubMenu ? $"data-menu=menu_{vm.index}" : string.Empty)>
+        <a href="@categoryLinkUrl" @categoryLinkTarget></a>
         <div class="icon">
-          <a href="@categoryLinkUrl" @categoryLinkTarget>
-            @Html.Sitecore().ImageField(Templates.LinkMenuItem.Fields.Icon, vm.value.Category, 0, 100)
-          </a>
+          @Html.Sitecore().ImageField(Templates.LinkMenuItem.Fields.Icon, vm.value.Category, 0, 100)
         </div>
         <h4 class="title">@Html.Sitecore().Field(Templates.HasDropMenuCategory.Fields.Title.ToString(), vm.value.Category)</h4>
       </div>
