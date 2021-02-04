@@ -1,5 +1,5 @@
-﻿const loadNextStepURL = 'api/feature/eurolifecalculatortool/load-next-step';
-const getProductsURL = 'api/feature/eurolifecalculatortool/get-offer';
+﻿const loadNextStepURL = '/api/feature/eurolifecalculatortool/load-next-step';
+const getProductsURL = '/api/feature/eurolifecalculatortool/get-offer';
 const nextButton = $('#go-to-next-step'); 
 const calculationButton = $('#get-product'); 
 const stepContent = $('#step-content');
@@ -19,7 +19,11 @@ var userSelection = [];
   //step1 - select target
 $('[name="target"]').change(function (e) { 
   //save selection to an object
-  let targetGroup = { key: $(this).val(), title: $(this).data('title') };
+  let targetGroup = {
+    key: $(this).val(),
+    title: $(this).data('title'),
+    image: $(this).data('image')
+  };
   userSelection = { targetGroup : targetGroup};
 
   console.log({ userSelection });
@@ -272,7 +276,11 @@ function initializeStep1() {
 
   $('[name="target"]').change(function (e) {
     //save selection to an object
-    let targetGroup = { key: $(this).val(), title: $(this).data('title') };
+    let targetGroup = {
+      key: $(this).val(),
+      title: $(this).data('title'),
+      image: $(this).data('image')
+    };
     userSelection = { targetGroup: targetGroup };
 
     console.log({ userSelection });
