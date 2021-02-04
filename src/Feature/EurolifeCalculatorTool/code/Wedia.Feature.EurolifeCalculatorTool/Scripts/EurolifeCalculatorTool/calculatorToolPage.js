@@ -774,6 +774,10 @@ function initializeStep3() {
     }
   });
 
+  //MANUALLY CLICK THE FIRST ELEMENT
+  setTimeout(() => {
+    $('.range-wrapper ul li:nth-child(1)').trigger("click");
+  }, 100);
 }
 
 function SelectProgram(e) {
