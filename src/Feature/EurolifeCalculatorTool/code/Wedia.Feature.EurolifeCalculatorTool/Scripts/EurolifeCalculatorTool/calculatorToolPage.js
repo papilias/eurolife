@@ -26,7 +26,7 @@ $('[name="target"]').change(function (e) {
   };
   userSelection = { targetGroup : targetGroup};
 
-  console.log({ userSelection });
+  //console.log({ userSelection });
 
   //update button
   nextButtonActive();
@@ -37,13 +37,13 @@ function showNextStep(e) {
     return false;
 
   let loadFromBreadCrumb = (e.dataset.loadfrombreadcrumb === 'true');
-  console.log(e);
+  //console.log(e);
 
   if (!loadFromBreadCrumb && !isButtonActive(nextButton))
     return false;
 
-  console.log('dataset');
-  console.log(e.dataset);
+  //console.log('dataset');
+  //console.log(e.dataset);
   let nextStep = e.dataset.nextstep;
   let itemId = e.dataset.itemid;
 
@@ -58,7 +58,7 @@ function showNextStep(e) {
     fillFamilyMembers();      
   }
 
-  console.log({ userSelection });
+  //console.log({ userSelection });
 
   $.ajax({
     type: 'POST',
@@ -107,8 +107,8 @@ function getOffer(e) {
   if (loading)
     return false;
 
-  console.log('getOffer');
-  console.log({ userSelection });
+  //console.log('getOffer');
+  //console.log({ userSelection });
 
   var selectedAmount = $('ul.range-labels li[class="active selected"]');
   let amount = { key: $(selectedAmount).data('value'), title: $(selectedAmount).text(), guiid: $(selectedAmount).data('guiid') };
@@ -122,7 +122,7 @@ function getOffer(e) {
   userSelection.hospitalization = hospitalization;  
   userSelection.step = step4;
  
-  console.log({ userSelection });
+  //console.log({ userSelection });
 
   loading = true;
   calculationButton.prop('disabled', loading);
@@ -180,13 +180,13 @@ function nextButtonInactive() {
 }
 
 function nextButtonStep(nextStep) {
-  console.log('update button data');
-  console.log(nextStep);
+  //console.log('update button data');
+  //console.log(nextStep);
   nextButton.attr({ 'data-nextstep': nextStep });
 }
 
 function breadcrumbStepActive(step) {
-  console.log(step);
+  //console.log(step);
   $(".bread-in-tool ul li span").removeClass("current");
   $('#bread-' + step).addClass('current'); 
 }
@@ -283,7 +283,7 @@ function initializeStep1() {
     };
     userSelection = { targetGroup: targetGroup };
 
-    console.log({ userSelection });
+    //console.log({ userSelection });
 
     //update button
     nextButtonActive();
@@ -586,7 +586,7 @@ function initializeStep2() {
 
 function allowMorePeople() {
   var howManyPeople = document.querySelectorAll("[data-isvalid='true']");
-  console.log('TOTAL PEOPLE VALIDATION' + howManyPeople.length);
+  //console.log('TOTAL PEOPLE VALIDATION' + howManyPeople.length);
   if (howManyPeople.length < 6)
     return true;
   else
@@ -601,7 +601,7 @@ function isOneParentActive() {
 
   if (mother.classList.contains('target-group--deactive') && father.classList.contains('target-group--deactive'))
   {
-    console.log('no parent')
+    //console.log('no parent')
     return false;
   }
     
@@ -616,7 +616,7 @@ function isOneChildActive() {
   let daughter = document.getElementById('target-is-daughter');
 
   if (son.classList.contains('target-group--deactive') && daughter.classList.contains('target-group--deactive')) {
-    console.log('no child')
+    //console.log('no child')
     return false;
   }
 
@@ -651,7 +651,7 @@ function step2Validity() {
     daughterscount = parseInt(daughterPlaceholder.dataset.daughtercounter);
 
     let childrenSum = sonscount + daughterscount;
-    console.log("SUM: " + childrenSum);
+    //console.log("SUM: " + childrenSum);
 
     if (childrenSum > 4) step_2_valid = false;
   }
@@ -677,7 +677,7 @@ function fillFamilyMembers() {
       if (inputPrimary.length > 0) {
         var isChecked = inputPrimary.filter(":checked");
         if (isChecked.length > 0) {
-          console.log("is Checked");
+          //console.log("is Checked");
           isPrimaryInsured = true;
         }
       }
@@ -698,7 +698,7 @@ function fillFamilyMembers() {
           title: title,
           isPrimaryInsured: isPrimaryInsured
         };
-        console.log(familyMember);
+        //console.log(familyMember);
         familyMembers.push(familyMember);
       });     
     }
@@ -709,7 +709,7 @@ function fillFamilyMembers() {
 
 
 function initializeStep3() {
-  console.log("step 3");
+  //console.log("step 3");
 
   //clear common button wrapper
   $('#common-button-wrapper').hide();
@@ -722,14 +722,14 @@ function initializeStep3() {
   document.body.appendChild(sheet);
 
   var getTrackStyle = function (el) {
-    console.log(el.getAttribute('data-index'))
+    //console.log(el.getAttribute('data-index'))
     var curVal = el.value,
       val = (el.getAttribute('data-index') - 1) * 25,
       style = '';
 
     // Set active label
     $('.range-labels li').removeClass('active selected');
-    console.log(curVal)
+    //console.log(curVal)
     var curLabel = $('.range-labels').find('[data-value="' + curVal + '"]');
 
     curLabel.addClass('active selected');
@@ -822,21 +822,21 @@ function ActivateExtras(e) {
 }
 
 function initializeStep4() {
-  console.log("step 4");
+  //console.log("step 4");
 
   $("#covers_duration").change(function () {
-    console.log('covers duration');
+    //console.log('covers duration');
     var selected = this.value;
     var bundleDurationTitle = $(this).find(':selected').attr('data-bundlesduration');
-    console.log(selected);
+    //console.log(selected);
     const items = document.querySelectorAll(`[data-${selected}]`);
     var totalCost = 0;
 
     if (items.length > 0) {
       $(items).each(function (index, item) {
-        console.log(item);
+        //console.log(item);
         var price = $(item).attr(`data-${selected}`);
-        console.log(price);
+        //console.log(price);
         $(item).text(numberToGreekFormat(price));       
        
         if (index == 0 || (index > 0 && $(item).parent().parent().hasClass('pick__item--selected')))
@@ -848,13 +848,13 @@ function initializeStep4() {
 
       if (bundles.length > 0) {
         $(bundles).each(function (index, item) {
-          console.log(item);
-          console.log(bundleDurationTitle);
+          //console.log(item);
+          //console.log(bundleDurationTitle);
           $(this).text(bundleDurationTitle);
         });
       }
 
-      console.log('totalCost: ', { totalCost });
+      //console.log('totalCost: ', { totalCost });
       setTotalCost(totalCost);  
     }
   });

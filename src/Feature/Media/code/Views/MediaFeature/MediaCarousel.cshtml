@@ -63,6 +63,12 @@
         {
 
           var target = Model.Item.LinkFieldOptions(Templates.HasMediaUrl.Fields.Url, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Target);
+          var linkDescription = Model.Item.LinkFieldOptions(Templates.HasMediaUrl.Fields.Url, Wedia.Foundation.SitecoreExtensions.Extensions.LinkFieldOption.Text);
+
+          if(string.IsNullOrEmpty(linkDescription))
+          {
+            linkDescription = @Html.Sitecore().Dictionary("/Media/Carousel/CTA", "CTA TEXT");
+          }
 
           <a class="hero-slider__item" href="@url" target="@target">
             <div class="hero-contents">
@@ -70,7 +76,7 @@
                 <h3 class="h6">@label</h3>
                 <h2 class="h2 m-b-16 m-t-16">@title</h2>
                 <p>@description</p>
-                <span class="btn--dark btn btn--default m-t-24" href="@url">@Html.Sitecore().Dictionary("/Media/Carousel/CTA")</span>
+                <span class="btn--dark btn btn--default m-t-24" href="@url">@linkDescription</span>
               </div>
             </div>
             <picture>
