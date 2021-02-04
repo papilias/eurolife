@@ -907,11 +907,17 @@ function numberToGreekFormat(number) {
 }
 
 const showSuccessMessage = () => {
+  hideDisclaimer();
   successDiv.classList.remove('hidden');
 };
 
 const hideSuccessMessage = () => {
   successDiv.classList.add('hidden');
+};
+
+const hideDisclaimer = () => {
+  if (document.querySelector('.disclaimer'))
+    document.querySelector('.disclaimer').classList.add('hidden');
 };
 
 const successMessageStatus = () => {

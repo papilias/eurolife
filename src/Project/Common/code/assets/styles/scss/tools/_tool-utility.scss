@@ -492,6 +492,10 @@ input.person-number{
     margin-right: 24px;
     display: inline-block;
   }
+
+  &.hidden{
+      display: none;
+  }
 }
 
 .actions__results__sum{
