@@ -1,6 +1,14 @@
 ﻿.home-blog {
   position: relative;
 
+  & + .home-blog {
+    margin-top: -44px;
+
+    @include breakpoint(820) {
+      margin-top: -82px;
+    }
+  }
+
   .slick-slide {
     margin: 0 8px;
 
