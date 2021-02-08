@@ -191,6 +191,7 @@
     <Content Include="images\icons\home\Group 20.svg" />
     <Content Include="images\icons\home\pickup.svg" />
     <Content Include="images\icons\home\support.svg" />
+    <Content Include="images\icons\icon-loading.svg" />
     <Content Include="images\icons\info.svg" />
     <Content Include="images\icons\left.svg" />
     <Content Include="images\icons\Life\Combined Shape Copy 3.svg" />

@@ -14,7 +14,7 @@
 </section>
 
 <section class="m-b-46 center--1100 center">
-  <div class="target-group item-targeted">
+  <div class="target-group item-targeted step2">
     @foreach (var familyMember in Model.AvailableFamilyMembers)
     {
       <div class="target-group__item @RenderTargetGroupClasses(Model.UserSelection.TargetGroup, familyMember)" id="target-is-@familyMember.Key" data-key="@familyMember.Key">
@@ -149,7 +149,7 @@
     if (familyMember.Key == Constants.Family_Member_Father)
     {
       <div class="relator m-b-32 flexify color-faded target-group__choice">
-        <input type="radio" class="js-radio-choice" id="man-is-primary" name="primary-insured" value="man-is-primary" checked>
+        <input type="radio" class="js-radio-choice" id="man-is-primary" name="primary-insured" value="man-is-primary">
         <label for="man-is-primary">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/PrimaryInsured", "PrimaryInsured")</label>
       </div>
 
@@ -157,7 +157,7 @@
     else if (familyMember.Key == Constants.Family_Member_Mother)
     {
       <div class="relator m-b-32 flexify color-faded target-group__choice">
-        <input type="radio" class="js-radio-choice" id="woman-is-primary" name="primary-insured" value="woman-is-primary">
+        <input type="radio" class="js-radio-choice" id="woman-is-primary" name="primary-insured" value="woman-is-primary" checked>
         <label for="woman-is-primary">@Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/PrimaryInsured", "PrimaryInsured")</label>
       </div>
 
