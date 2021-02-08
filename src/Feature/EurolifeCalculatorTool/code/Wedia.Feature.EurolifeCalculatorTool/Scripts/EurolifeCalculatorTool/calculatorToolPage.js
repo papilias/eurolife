@@ -201,7 +201,7 @@ function validateYear(e) {
 
 
   if (e.classList.contains('js-validate-us-father') || e.classList.contains('js-validate-us-mother')) {
-    if (age > 18 && age < 63) {
+    if (age > 24 && age < 63) {
       e.dataset.isvalid = 'true';
       step2Validity();
 
@@ -215,7 +215,7 @@ function validateYear(e) {
 
   if (e.classList.contains('js-validate-family-father') || e.classList.contains('js-validate-family-mother'))
   {   
-    if (age > 18 && age < 63) {
+    if (age > 24 && age < 63) {
       e.dataset.isvalid = 'true';
       let mother = document.getElementById('target-is-mother');
       if (mother.classList.contains('family-validation') && isOneParentActive() && isOneChildActive()) step2Validity();
@@ -231,7 +231,7 @@ function validateYear(e) {
   }
 
   if (e.classList.contains('js-validate-me-me')) {
-    if (age > 18 && age < 63) {
+    if (age > 24 && age < 63) {
       e.dataset.isvalid = 'true';
       step2Validity(); 
     }
@@ -244,7 +244,7 @@ function validateYear(e) {
 
   if (e.classList.contains('js-validate-family-son') || e.classList.contains('js-validate-family-daughter'))
   {
-    if (age >= 0 && age < 18) {
+    if (age >= 0 && age < 24) {
       e.dataset.isvalid = 'true';
       if (isOneParentActive() && isOneChildActive()) step2Validity();
     }
@@ -256,7 +256,7 @@ function validateYear(e) {
   }
 
   if (e.classList.contains('js-validate-child-child')) {
-    if (age >= 0 && age < 18) {
+    if (age >= 0 && age < 24) {
       e.dataset.isvalid = 'true';
       step2Validity();
     }
@@ -555,7 +555,8 @@ function initializeStep2() {
     //SELECT MOTHER AND FOCUS HER
     Array.prototype.slice.call(document.querySelectorAll('.target-group__item')).map((item) => {
       if (item.getAttribute('data-key') == "mother") {
-        item.querySelector('.js-radio-choice').click();
+        item.click();
+        item.querySelector('.js-add-parent').click();
         item.querySelector('.js-birth-year').focus();
       }
     });
@@ -578,7 +579,7 @@ function initializeStep2() {
   //MORE THAN 2 PERSONS
   if (Array.prototype.slice.call(document.querySelectorAll('.target-group__item').length >= 2))
     setTimeout(() => {
-      init();
+      //init();
       blurAndValue();
     }, 10);
 }
@@ -801,7 +802,7 @@ function SelectProgram(e) {
 
 function ExpandProgram(e) {
   //expand program
-  e.parentElement.parentElement.classList.toggle('pick-on');
+  e.querySelector('.pick__head').classList.toggle('pick-on');
 }
 
 function ActivateExtras(e) {
