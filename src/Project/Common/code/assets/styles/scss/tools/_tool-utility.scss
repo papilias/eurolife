@@ -53,6 +53,11 @@
 
 
 .radio-targeted {
+  .target-group__item:hover {
+    .target-group__desc {
+      opacity: 1;
+    }
+  }
 
   input[type="radio"] + label {
     position: absolute;
