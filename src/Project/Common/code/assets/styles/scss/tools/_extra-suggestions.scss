@@ -4,6 +4,10 @@
   display: inline-block;
   width: 40px;
   height: 14px;
+  
+  @include breakpoint-rev(540){
+      margin-top: 12px;
+  }
 
   &--pick {
     align-self: center;
@@ -51,7 +55,8 @@
 .pick--extras {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
 
   .pick__sup-title {
     margin-bottom: 8px;
@@ -71,11 +76,10 @@
 
   .pick__item {
     flex-basis: 100%;
-    margin-bottom: 16px;
 
     @include breakpoint(700) {
       flex-basis: 48%;
-      margin: 0 1%;
+      margin: 0 1% 12px;
     }
 
     @include breakpoint(920) {

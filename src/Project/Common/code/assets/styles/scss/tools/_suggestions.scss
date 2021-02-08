@@ -5,6 +5,11 @@
   border-radius: 8px;
   box-shadow: 0;
   cursor: pointer;
+  margin-bottom: 12px;
+
+  @include breakpoint(820){
+      margin: 0;
+  }
 
   &--selected{
     border:1px solid $color-black;
@@ -80,9 +85,12 @@
 }
 
 .pick__main-title {
-  
   font-size: 26px;
   color: $color-health;
+
+  @include breakpoint-rev(540) {
+    font-size: 20px;
+  }
 }
 
 .pick__big-title{
@@ -95,8 +103,15 @@
 .pick__expander {
   position: absolute;
   top: 32px;
-  left: 42px;
+  left: 50%;
   cursor: pointer;
+  width: 30px;
+  transform: translateX(-50%);
+
+  @include breakpoint-rev(540) {
+    right: 0;
+    left: unset;
+  }
 
   svg {
     width: 28px;
@@ -188,7 +203,8 @@
   @include breakpoint-rev(700) {
     position: absolute;
     right: 16px;
-    bottom: 24px;
+    top: 0;
+    bottom: unset;
     height: 40px;
     width: 40px;
   }
@@ -316,14 +332,18 @@
   border-radius: 4px;
   font-size: 14px;
   font-size: 1.4rem;
-  padding: 10px 16px 11px;
-  color: #485294;
+  order: 3;
+  padding-right: 16px;
+  overflow: hidden;
+  height: 46px;
 
-  @include breakpoint(700) {
-    padding: 14px 16px 15px;
-  }
+  select {
+    color: #485294;
+    border: none;
+    padding: 14px 0 15px 16px;
 
-  select{
-      border: none;
+    option {
+      background: transparent;
+    }
   }
 }

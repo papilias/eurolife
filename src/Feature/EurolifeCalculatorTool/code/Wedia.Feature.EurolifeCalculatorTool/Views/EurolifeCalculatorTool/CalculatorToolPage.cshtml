@@ -20,13 +20,15 @@
       </g>
     </svg>
 
-    @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Proceed", "Success")
+    <span>
+      @Html.Sitecore().Dictionary("/EurolifeCalculatorTool/Step2/Proceed", "Success")
+    </span>
   </div>
   <div class="hidden validation-error m-t-24 m-b-48" id="calculator-custom-validation"></div>
 
 
   <div class="t-r m-b-48" id="common-button-wrapper">
-    <a class="btn btn--default btn--dark btn--inactive" id="go-to-next-step"
+    <a href="#app" class="btn btn--default btn--dark btn--inactive" id="go-to-next-step"
        data-itemid="@Model.RenderingItem.ID"
        data-nextstep="step-2"
        data-loadfrombreadcrumb="false"
