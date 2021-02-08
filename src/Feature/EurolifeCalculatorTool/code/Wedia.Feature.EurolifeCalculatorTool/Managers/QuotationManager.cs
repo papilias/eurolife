@@ -205,7 +205,7 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
               }
             },
             MemberRelationship = 0,
-            Id = familyMember.index
+            Id = familyMember.index + 1 //start from 1 - service issue
           });
         }
       }
