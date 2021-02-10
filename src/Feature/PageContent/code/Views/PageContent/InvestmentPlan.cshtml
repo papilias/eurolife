@@ -46,6 +46,10 @@
                   </span>
                 }
               </h3>
+
+               <p>
+                 @Html.Sitecore().Field(Templates.HasDescription.Fields.Description.ToString(), pieChart.value)
+              </p>
               <div class="chart-card__pie-wrap m-b-16">
                 <div class="chart-card__pie">
                   <canvas class="pie-chart" width="110" height="110" data-legendID="legend-@card.index-@pieChart.index"
