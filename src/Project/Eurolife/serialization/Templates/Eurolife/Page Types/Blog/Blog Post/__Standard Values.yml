@@ -70,6 +70,14 @@ SharedFields:
           ph="login-register-link"
           uid="{EF332AC8-CA96-4DAE-90AB-6FFF7709BE36}" />
         <r
+          id="{00C6C1FB-EB91-43A5-84EF-1F8B207496CC}"
+          ph="page-layout"
+          uid="{B5BC1ACA-F367-4D32-A9FB-E99E3A4EE3CD}" />
+        <r
+          id="{14B060D9-30B9-4B83-A5E9-DD74C86D253B}"
+          ph="page-layout"
+          uid="{2BE34703-5936-4C87-9577-AA4820E86B61}" />
+        <r
           id="{BA83ACB9-154D-44E9-BA27-3A5CE9C45B60}"
           ph="page-layout"
           uid="{E8734698-3B4C-45DB-897A-DDD6280F4785}" />

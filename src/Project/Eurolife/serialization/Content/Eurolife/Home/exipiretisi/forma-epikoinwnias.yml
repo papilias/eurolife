@@ -39,8 +39,9 @@ Languages:
             <r
               uid="{F24352FB-42A9-4765-8AC0-D562927F8AD2}"
               p:after="r[@uid='{832CD083-2620-47BB-9F2B-63084D865567}']"
-              s:ds="{0E7E66E8-DCC6-425C-B101-FC5494801269}"
+              s:ds="{B2C8BE76-EE89-4A43-B365-1D6AFABBA7CE}"
               s:id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+              s:par=""
               s:ph="page-layout" />
           </d>
         </r>

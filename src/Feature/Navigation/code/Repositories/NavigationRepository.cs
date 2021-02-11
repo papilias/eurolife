@@ -45,16 +45,21 @@ namespace Wedia.Feature.Navigation.Repositories
       return items;
     }
 
-    public NavigationItems GetPrimaryMenu(Item menuRoot, bool descending = false, int limit = 20)
+    public List<NavigationItems> GetPrimaryMenu(Item menuRoot, bool descending = false, int limit = 20)
     {
-
       if (menuRoot == null)
       {
         throw new ArgumentNullException(nameof(menuRoot));
       }
 
-      return GetChildNavigationItems(menuRoot, 0, 2, descending, limit);
-  
+      List<NavigationItems> primaryMenu = new List<NavigationItems>();
+
+      foreach(var item in menuRoot.Children.Where(x=> x.TemplateID == Templates.LinkMenu.ID))
+      {
+        primaryMenu.Add(GetChildNavigationItems(item, 0, 2, descending, limit));
+      }
+
+      return primaryMenu; //GetChildNavigationItems(menuRoot, 0, 2, descending, limit);
     }
 
     public NavigationItems GetHeaderNavigationItems(Item menuRoot, bool descending = false, int limit = 20)
@@ -77,6 +82,30 @@ namespace Wedia.Feature.Navigation.Repositories
       }
 
       return GetChildNavigationItems(menuRoot, 0, 0, descending, limit);
+    }
+
+    public List<DropMenuCategory> GetDropMenuCategories(Item contextItem)
+    {
+      var list = new List<DropMenuCategory>();
+
+      var categories = contextItem
+                            .Children.Where(x => x.TemplateID == Templates.DropMenuCategory.ID);
+
+      if(categories != null && categories.Any())
+      {
+        foreach (var category in categories)
+        {
+          var subItems = category.Children.Where(x => x.TemplateID == Templates.DropMenuItem.ID)?.ToList();
+
+          list.Add(new DropMenuCategory 
+          {
+            Category = category,
+            SubItems = subItems
+          });
+        }
+      }
+
+      return list;
     }
 
     private NavigationItems InfoMessage(InfoMessage infoMessage)
@@ -159,5 +188,7 @@ namespace Wedia.Feature.Navigation.Repositories
       return navItems;
 
     }
+
+  
   }
 }

@@ -4,6 +4,7 @@
 @using Wedia.Foundation.Alerts.Extensions
 @using Wedia.Foundation.SitecoreExtensions.Extensions
 @using Wedia.Foundation.Dictionary.Extensions
+@using System.Linq
 
 @model  ArticleViewModel
 
@@ -21,7 +22,7 @@
   var title = Html.Sitecore().Field(Templates.HasBlogContent.Fields.Title);
 }
 
-<article>
+<article class="article_content">
   <div class="center center--760 m-b-64 m-t-64 t-c">
     @if (Html.Sitecore().HasValue(Templates.HasBlogContent.Fields.Title.ToString()) || Sitecore.Context.PageMode.IsExperienceEditor)
     {

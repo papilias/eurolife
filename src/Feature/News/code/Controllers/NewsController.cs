@@ -26,6 +26,10 @@ namespace Wedia.Feature.News.Controllers
       _renderingPropertiesRepository = renderingPropertiesRepository;
     }
 
+    public ActionResult LatestNewsGrid() => GetLatestArticles("LatestNewsGrid", DictionaryPhraseRepository
+         .Current
+         .Get("/News/Latest News/Missing Rendering Item", "Invalid or Missing Datasource"));
+
     public ActionResult CSRNewsList()
     {
       var item = RenderingContext.Current.Rendering.Item;

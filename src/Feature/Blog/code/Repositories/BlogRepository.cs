@@ -25,6 +25,18 @@ namespace Wedia.Feature.Blog.Repositories
       _searchBaseSettings = new SearchSettingsBase { Templates = new[] { Templates.BlogPost.ID } };
     }
 
+    public Models.ArticleSliderViewModel GetSliderData(Item contextItem)
+    {     
+      var vm = new Models.ArticleSliderViewModel 
+      {        
+        RenderingItem = contextItem,
+        LifeStages = GetProductLifeStages(contextItem),
+        Articles = GetSelectedArticles(contextItem)
+      };
+
+      return vm;
+    } 
+
     /// <summary>
     /// this is used for migration
     /// </summary>
@@ -120,6 +132,26 @@ namespace Wedia.Feature.Blog.Repositories
       }
 
       return blogPostItem;
+    }
+
+    private List<Models.BlogPostItem> GetSelectedArticles(Item item)
+    {
+      var list = new List<Models.BlogPostItem>();
+
+      if (item.FieldHasValue(Templates.HasArticles.Fields.Articles))
+      {
+        var selectedArticles = item.GetMultiListValueItems(Templates.HasArticles.Fields.Articles);
+
+        if (selectedArticles != null && selectedArticles.Any())
+        {
+          foreach (var article in selectedArticles)
+          {
+            list.Add(MappingBlogPostItem(article, true));
+          }
+        }
+      }
+      
+      return list;
     }
 
     private List<Models.LifeStage> GetProductLifeStages(Item item)

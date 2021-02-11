@@ -5,6 +5,9 @@ Template: "e4578522-04a6-4ee4-8d58-2776b57d2d1c"
 Path: /sitecore/system/Settings/Project/Themes/Common/Eurolife
 DB: master
 SharedFields:
+- ID: "3c4efd07-b7a6-459d-977a-10efc2754ba5"
+  Hint: JavaScript inline
+  Value: 
 - ID: "bae63ba4-2087-4625-b625-eea9bcd46075"
   Hint: Css assets
   Value: |
@@ -18,7 +21,6 @@ SharedFields:
     /js/vendor/select2.full.min.js
     /js/vendor/jquery.fancybox.min.js
     /js/main.js
-    
 Languages:
 - Language: en
   Versions:

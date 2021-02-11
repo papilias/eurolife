@@ -52,7 +52,7 @@
       <Version>5.2.6</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
-    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.1" />
     <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0.0" />
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.2</Version>
@@ -100,6 +100,7 @@
     <Compile Include="Buckets\BucketLinkManager.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Controls\EditFrameRendering.cs" />
+    <Compile Include="Exceptions\AuthorizationException.cs" />
     <Compile Include="Extensions\FieldExtensions.cs" />
     <Compile Include="Extensions\HTMLHelperExtensions.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
@@ -107,6 +108,8 @@
     <Compile Include="FormActions\LogSubmit.cs" />
     <Compile Include="FormActions\SendFormValues.cs" />
     <Compile Include="Infrastructure\Pipelines\CountryLanguageEnforcer.cs" />
+    <Compile Include="Services\Request\IRequestService.cs" />
+    <Compile Include="Services\Request\RequestService.cs" />
     <Compile Include="Sitemap\Sitemap.cs" />
     <Compile Include="Sitemap\UrlSet.cs" />
     <Compile Include="Utilitiles\Utilities.cs" />

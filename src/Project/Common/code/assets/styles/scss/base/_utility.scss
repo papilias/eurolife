@@ -385,3 +385,25 @@
       }
     }
   }
+
+.body-cta {
+  display: block;
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  padding: 16px 16px 14px;
+  border-top: 1px solid #FFB3AB;
+  border-bottom: 1px solid #FFB3AB;
+  line-height: 1.4;
+
+  a {
+    display: block;
+    color: #ff0000;
+    font-weight: 800;
+  }
+} 
+
+.flex-align-center{
+    align-items: center;
+}

@@ -13,6 +13,9 @@ using Sitecore;
 using Sitecore.Data;
 using Wedia.Foundation.SitecoreExtensions.Utilities;
 using Sitecore.Diagnostics;
+using Wedia.Foundation.Alerts.Extensions;
+using Wedia.Foundation.Alerts.Models;
+using Wedia.Foundation.Alerts;
 
 namespace Wedia.Feature.Blog.Controllers
 {
@@ -23,8 +26,32 @@ namespace Wedia.Feature.Blog.Controllers
     public BlogController(IBlogRepository blogRepository)
     {
       this._blogRepository = blogRepository;
-    }   
-    
+    }
+
+    /// <summary>
+    /// Articles Slider   
+    /// Insert Title
+    /// Insert Subtitle
+    /// Select desired life stages
+    /// Select desired articles
+    /// </summary>
+    /// <returns></returns>
+    public ActionResult ArticlesSlider()
+    {
+      var item = RenderingContext.Current.Rendering.Item;
+
+      if (!item?.DescendsFrom(Templates.ArticlesSlider.ID) ?? true)
+      {
+        return Context.PageMode.IsExperienceEditor ?
+            this.InfoMessage(new InfoMessage(AlertTexts.InvalidDataSourceTemplateFriendlyMessage, InfoMessage.MessageType.Error)) :
+            null;
+      }
+
+      var vm = _blogRepository.GetSliderData(item);
+
+      return View(vm);
+    }
+
     /// <summary>
     /// promo section for products and article page
     /// </summary>

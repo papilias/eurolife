@@ -46,7 +46,7 @@
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.4" />
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.4" />
-    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.1" />
     <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0.0" />
     <PackageReference Include="Sitecore.Buckets">
       <Version>9.1.0</Version>
@@ -85,6 +85,7 @@
     <Content Include="Views\News\PagedListItems.cshtml" />
     <Content Include="Views\News\LatestNewsListImageless.cshtml" />
     <Content Include="Views\News\NewsSearchResult.cshtml" />
+    <Content Include="Views\News\LatestNewsGrid.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

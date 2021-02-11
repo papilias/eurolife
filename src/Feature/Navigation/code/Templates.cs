@@ -8,6 +8,21 @@ namespace Wedia.Feature.Navigation
 {
   public struct Templates
   {
+    public struct DropMenuList
+    {
+      public static readonly ID ID = new ID("{F7DEA883-2547-44B0-BBE5-FFC4E901CE4A}");
+    }
+
+    public struct DropMenuCategory
+    {
+      public static readonly ID ID = new ID("{340A7CE1-04EA-4572-BC4A-6D8E9A448BE7}");
+    }
+
+    public struct DropMenuItem
+    {
+      public static readonly ID ID = new ID("{7D36D3D3-F756-40C0-9245-9A2104401189}");
+    }
+
     public struct NavigationRoot
     {
       public static readonly ID ID = new ID("{4752B630-7956-4AB6-A3EF-4003178E6111}");
@@ -51,5 +66,23 @@ namespace Wedia.Feature.Navigation
         public static readonly ID Class = new ID("{D7BD8D43-DE42-4BDE-8E7E-DDFCE607A9C6}");
       }
     }
+
+    public struct LinkMenu
+    {
+      public static readonly ID ID = new ID("{00D32287-3ED5-4D97-9B00-0F8EF05F6DB8}");
+    }
+
+    public struct HasDropMenuCategory
+    {
+      public static readonly ID ID = new ID("{99132090-A113-472B-8BC6-27CD6571FCE4}");
+
+      public struct Fields
+      {
+        public static readonly ID Title = new ID("{BB0D84E8-DEA5-4BCD-9FB9-191C50D652E6}");
+        public static readonly ID MenuTitle = new ID("{C87054EF-9E94-4E34-B8B9-5250B6D3F1EC}");
+        public static readonly ID MenuDescription = new ID("{75AB4B88-E708-484F-80EB-8EF979966779}");
+      }
+    }
+
   }
 }

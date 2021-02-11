@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <Site Server="eurolife.local" UserName="sitecore\admin" IsRemoteSitecore="False" />
+    <Site Server="eurolifesite.local" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
   <File Include="js\app.js" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0" />
 </Project>

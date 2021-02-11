@@ -21,5 +21,12 @@ namespace Wedia.Foundation.SitecoreExtensions
       }
     
     }
+
+    public struct LifeWebApi
+    {
+      public static readonly string User = Sitecore.Configuration.Settings.GetSetting("LifeWebApi.User").ToString();
+      public static readonly string Password = Sitecore.Configuration.Settings.GetSetting("LifeWebApi.Password").ToString();
+      public static readonly string Domain = Sitecore.Configuration.Settings.GetSetting("LifeWebApi.Domain").ToString();
+    }
   }
 }

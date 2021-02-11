@@ -49,6 +49,7 @@
 @import "base-components/news.scss";
 @import "base-components/blog.scss";
 @import "base-components/eurolist.scss";
+@import "base-components/chartsComponent.scss";
 @import "base/_fixes.scss";
 @import "base/_ie.scss";
 
@@ -62,3 +63,8 @@
 @import "layout/header.scss";
 @import "layout/footer.scss";
 
+@import "base-components/home-redesign/dropmenu.scss";
+@import "base-components/home-redesign/products.scss";
+@import "base-components/home-redesign/blog.scss";
+@import "base-components/home-redesign/news.scss";
+@import "base-components/home-redesign/social-wall.scss";

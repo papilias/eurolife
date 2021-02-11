@@ -191,6 +191,7 @@
     <Content Include="images\icons\home\Group 20.svg" />
     <Content Include="images\icons\home\pickup.svg" />
     <Content Include="images\icons\home\support.svg" />
+    <Content Include="images\icons\icon-loading.svg" />
     <Content Include="images\icons\info.svg" />
     <Content Include="images\icons\left.svg" />
     <Content Include="images\icons\Life\Combined Shape Copy 3.svg" />
@@ -222,6 +223,9 @@
     <Content Include="images\section-356x424.jpg" />
     <Content Include="images\section-356x483.jpg" />
     <Content Include="images\service-demo.jpg" />
+    <Content Include="images\social-wall\facebook.svg" />
+    <Content Include="images\social-wall\linkedin.svg" />
+    <Content Include="images\social-wall\youtube.svg" />
     <Content Include="images\teaser-demo.jpg" />
     <Content Include="images\tholos.jpeg" />
     <Content Include="images\tick.svg" />
@@ -339,6 +343,12 @@
     <Content Include="assets\styles\scss\tools\_tool-utility.scss" />
     <Content Include="assets\styles\scss\base-components\_eurolist.scss" />
     <Content Include="assets\styles\scss\tools\_eurobanktool.scss" />
+    <Content Include="assets\styles\scss\base-components\chartsComponent.scss" />
+    <Content Include="assets\styles\scss\base-components\home-redesign\_blog.scss" />
+    <Content Include="assets\styles\scss\base-components\home-redesign\_dropmenu.scss" />
+    <Content Include="assets\styles\scss\base-components\home-redesign\_news.scss" />
+    <Content Include="assets\styles\scss\base-components\home-redesign\_products.scss" />
+    <Content Include="assets\styles\scss\base-components\home-redesign\_social-wall.scss" />
     <None Include="Properties\PublishProfiles\Eurolife.pubxml" />
     <Content Include="Views\Common\Sublayouts\ThreeColumn.cshtml" />
     <Content Include="Views\Common\Sublayouts\Footer.cshtml" />
