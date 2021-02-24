@@ -10,8 +10,8 @@
 <!DOCTYPE html>
 <html lang="@Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName">
 <head>
-  <!-- Google Tag Manager ccc-->
-  @*<script>
+  <!-- Google Tag Manager -->
+  <script>
     (function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
@@ -19,7 +19,7 @@
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KQJ4XV');</script>*@
+    })(window, document, 'script', 'dataLayer', 'GTM-KQJ4XV');</script>
   <!-- End Google Tag Manager -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,9 +28,7 @@
     @Html.Sitecore().Placeholder("head")
   }
   @Html.RenderFormStyles()
-  <link rel="stylesheet" media="print" href="/css/print.css" />
   <script type="text/javascript" src="/js/vendor/jquery-3.4.1.min.js"></script>
-
   @Html.RenderFormScripts()
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
   @RenderAssetsService.Current.RenderStyles()
@@ -51,6 +49,6 @@
   {
     @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
   }
-
+  <script data-account="TnIfsihjhh" src="https://cdn.userway.org/widget.js"></script>
 </body>
 </html>
