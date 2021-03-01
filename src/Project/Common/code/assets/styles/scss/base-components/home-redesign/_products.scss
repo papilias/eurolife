@@ -110,7 +110,11 @@
         padding: 0;
 
         .item {
-          padding: 32px;
+          padding: 24px;
+
+          @include breakpoint(920) {
+            padding: 32px;
+          }
 
           & + .item {
             a.btn {
@@ -153,10 +157,15 @@
               content: '';
               position: absolute;
               top: 12px;
-              left: 32px;
-              width: calc(100% - 64px);
+              left: 24px;
+              width: calc(100% - 48px);
               height: 1px;
               background-color: $color-border;
+
+              @include breakpoint(920) {
+                left: 32px;
+                width: calc(100% - 64px);
+              }
             }
           }
         }
@@ -175,6 +184,13 @@
           .item {
             @include breakpoint(920) {
               flex: 30% 1;
+              display: flex;
+              flex-flow: column wrap;
+              justify-content: space-between;
+              align-content: flex-start;
+              align-items: flex-start;
+              padding: 32px 16px 32px 32px;
+              margin-left: -16px;
             }
 
             & + .item {
@@ -187,16 +203,20 @@
                   content: '';
                   position: absolute;
                   top: 12px;
-                  left: 32px;
-                  width: calc(100% - 64px);
+                  left: 24px;
+                  width: calc(100% - 48px);
                   height: 1px;
                   background-color: $color-border;
+
+                  @include breakpoint(920) {
+                    left: 32px;
+                    width: calc(100% - 64px);
+                  }
                 }
               }
 
               @include breakpoint(920) {
                 padding-top: 80px;
-                padding-left: 0;
               }
             }
           }
