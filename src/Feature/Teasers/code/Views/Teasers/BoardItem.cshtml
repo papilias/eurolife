@@ -25,8 +25,10 @@
   <div class="item--inner">    
 
     @if (Model.Item.FieldHasValue(Templates.HasTeaserImage.Fields.Image) || Sitecore.Context.PageMode.IsExperienceEditor)
-    {     
-       @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image, 0, 500)     
+    {
+      <div class="item-image">
+        @Html.Sitecore().ImageField(Templates.HasTeaserImage.Fields.Image, 0, 500)
+      </div>
     }
 
     <div class="item">
@@ -46,7 +48,7 @@
 
       @if (Model.Item.FieldHasValue(Templates.HasTeaserTitle.Fields.Title) || Sitecore.Context.PageMode.IsExperienceEditor)
       {
-        <h2 class="h4 m-t-24">
+        <h2 class="m-t-24">
           @Html.Sitecore().Field(Templates.HasTeaserTitle.Fields.Title)
         </h2>
       }
@@ -60,7 +62,7 @@
 
       @if (Model.Item.FieldHasValue(Templates.HasTeaserDescription.Fields.Description) || Sitecore.Context.PageMode.IsExperienceEditor)
       {
-        <p class="m-t-16">
+        <p class="m-t-16 product-paragraph">
           @Html.Sitecore().Field(Templates.HasTeaserDescription.Fields.Description)
         </p>
       }
@@ -70,19 +72,19 @@
     <div class="item">
       @if (Model.Item.FieldHasValue(Templates.HasTeaserTitle_2.Fields.Title_2) || Sitecore.Context.PageMode.IsExperienceEditor)
       {
-        <h2 class="h4 m-t-24">
+        <h2 class="m-t-24">
           @Html.Sitecore().Field(Templates.HasTeaserTitle_2.Fields.Title_2)
         </h2>
       }
 
       @if (Model.Item.FieldHasValue(Templates.HasTeaserDescription_2.Fields.Description_2) || Sitecore.Context.PageMode.IsExperienceEditor)
       {
-        <p class="m-t-16">
+        <p class="m-t-16 product-paragraph">
           @Html.Sitecore().Field(Templates.HasTeaserDescription_2.Fields.Description_2)
         </p>
       }
 
-      @Html.Sitecore().Field(Templates.HasTeaserCTA_2.Fields.CTA_2, new { @class = "btn btn--default btn--dark  m-t-24" })
+      @Html.Sitecore().Field(Templates.HasTeaserCTA_2.Fields.CTA_2, new { @class = "btn btn--default btn--dark product-button" })
     </div>
   </div>
 </article>
