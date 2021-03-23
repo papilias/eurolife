@@ -41,6 +41,9 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Managers
 
       var response = await _requestService.PostAsync<Models.Api.Quotation.Request.QuotationRequest, Models.Api.Quotation.Response.QuotationResponse>(uri, quotationRequest);
 
+      //var req = Newtonsoft.Json.JsonConvert.SerializeObject(quotationRequest);
+      //var res = Newtonsoft.Json.JsonConvert.SerializeObject(response);
+
       return response;
     }
 
