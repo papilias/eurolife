@@ -23,15 +23,21 @@
       }
 
       <div class="home-products__grid list-axis">
-        @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
-        {
+        <div class="flex-item item-1">
+          @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-1")
+        </div>
 
-          for (var i = 0; i < elements.Count; i++)
+        <div class="flex-wrapper">
+          @using (Html.BeginEditFrame(Model.Item.ID.ToString(), ""))
           {
-
-            @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
+            for (var i = 1; i < elements.Count; i++)
+            {
+              <div class="flex-item item-@(i+1)">
+                @Html.Sitecore().DynamicPlaceholder($"teaser-placeholder-{i + 1}")
+              </div>
+            }
           }
-        }
+        </div>
       </div>
     }
   </div>  

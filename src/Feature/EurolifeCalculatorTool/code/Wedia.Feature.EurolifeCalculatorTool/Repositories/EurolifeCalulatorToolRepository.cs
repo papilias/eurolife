@@ -135,15 +135,11 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
       var groupOfBundleCovers = GetAvailableGroupOfBundleCovers(contextItem);
      
       var amount = double.Parse(userSelection.Amount.Key);
-      if (amount > 6000)
+      if (amount >= 6000)
       {
         //remove from bundles code with 30292, when the amount is more than 6000
         if(bundleCovers.Select(x => x.Key == Constants.ExtraHospitalCareCode.ToString()).Any())
            bundleCovers.RemoveAll(x => x.Key == Constants.ExtraHospitalCareCode.ToString());
-
-        //remove from group of bundles code with 17, when the amount is more than 6000
-        if (groupOfBundleCovers.Select(x => x.Key == Constants.AccidentCare1Code.ToString()).Any())
-          groupOfBundleCovers.RemoveAll(x => x.Key == Constants.AccidentCare1Code.ToString());
       }
 
       var quotationResponse = await _quotationManager.GetQuotation(userSelection, 
@@ -397,13 +393,9 @@ namespace Wedia.Feature.EurolifeCalculatorTool.Repositories
 
     private GroupOfBundle GetBasicBundle(List<Bundle> bundles)
     {
-      if (bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()).Any())//we have amount <=6000
-      {   
-        return SetGroupOfBundle(bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
-          || x.Key == Constants.AccidentCare1Code.ToString()).ToList(),
-          DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Basic", "Basic"));
-      }
-      else return null;
+      return SetGroupOfBundle(bundles.Where(x => x.Key == Constants.ExtraHospitalCareCode.ToString()
+        || x.Key == Constants.AccidentCare1Code.ToString()).ToList(),
+        DictionaryPhraseRepository.Current.Get("/EurolifeCalculatorTool/Step4/GroupCovers/Basic", "Basic"));
     }
 
     private GroupOfBundle GetMediumBundle(List<Bundle> bundles)
