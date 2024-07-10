@@ -1,7 +1,5 @@
 trigger:
-  branches:
-    include:
-      - '*'
+ - "*"
 
 variables:
   url: github.com/ipDevOps/eurolife.git
