@@ -6,7 +6,7 @@ trigger:
 variables:
   url: github.com/ipDevOps/eurolife.git
   username: ipDevOps
-  variable_token: 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
+  variable_token: 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
   version: $(Build.BuildNumber)
   branch: $(Build.SourceBranchName)
 
@@ -29,5 +29,5 @@ steps:
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push New Release $(version)"
-      git push -f https://ipDevOps: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@github.com/ipDevOps/eurolife.git $(branch)
-      #git push -f https://$(username):$(variable_token)@$(url) $(branch)
+      #git push -f https://ipDevOps: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@github.com/ipDevOps/eurolife.git $(branch)
+      git push -f https://$(username):$(variable_token)@$(url) $(branch)
