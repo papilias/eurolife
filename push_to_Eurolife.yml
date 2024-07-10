@@ -9,12 +9,12 @@ variables:
   variable_token: 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
   version: $(Build.BuildNumber)
 
-pool:
-  vmImage: windows-latest
 # pool:
-#   name: 'DevOps'
-#   demands:
-#       - agent.name -equals InternalIT-Agent
+#   vmImage: windows-latest
+pool:
+  name: 'DevOps'
+  demands:
+      - agent.name -equals InternalIT-Agent
 
 steps:
 - task: PowerShell@2
