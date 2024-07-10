@@ -8,6 +8,7 @@ variables:
   username: ipDevOps
   variable_token: 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
   version: $(Build.BuildNumber)
+  branch: $(Build.SourceBranchName)
 
 pool:
   vmImage: ubuntu-latest
@@ -23,9 +24,9 @@ steps:
     script: |
       rm -r .git
       git init
-      git checkout -b master #$(Build.SourceBranchName)
+      git checkout -b master $(Build.SourceBranchName)
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push New Release $(version)"
-      git push -f https://$(username):$(variable_token)@$(url) --all #$(Build.SourceBranchName)
+      git push -f https://$(username):$(variable_token)@$(url) --all
