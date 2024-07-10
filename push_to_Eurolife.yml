@@ -23,7 +23,7 @@ steps:
     script: |
       rm -r .git
       git init
-      git checkout DevOps #$(Build.SourceBranchName)
+      git checkout -b master #$(Build.SourceBranchName)
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
