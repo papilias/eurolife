@@ -1,5 +1,8 @@
-trigger:
- - "*"
+trigger: 
+  branches:
+    include: 
+    - releases/*
+    - master
 
 variables:
   url: github.com/ipDevOps/eurolife.git
