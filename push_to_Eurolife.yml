@@ -10,14 +10,14 @@ variables:
   version: $(Build.BuildNumber)
 
 pool:
-  vmImage: windows-latest
+  vmImage: ubuntu-latest
 # pool:
 #   name: 'DevOps'
 #   demands:
 #       - agent.name -equals InternalIT-Agent
 
 steps:
-- task: PowerShell@2
+- task: bash@3
   inputs:
     targetType: 'inline'
     script: |
