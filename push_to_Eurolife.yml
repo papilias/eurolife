@@ -24,10 +24,9 @@ steps:
     script: |
       rm -r .git
       git init
-      git branch -m master DevOps
+      git branch -m master $(branch)
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push New Release $(version)"
-      git push -f https://ipDevOps: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@github.com/ipDevOps/eurolife.git DevOps
-      #git push -f https://$(username):$(variable_token)@$(url) --all
+      git push -f https://$(username):$(variable_token)@$(url) $(branch)
