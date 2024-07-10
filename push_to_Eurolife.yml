@@ -24,7 +24,7 @@ steps:
     script: |
       rm -r .git
       git init
-      git checkout -b master DevOps
+      git branch -m master DevOps
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
