@@ -29,4 +29,4 @@ steps:
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push New Release $(version)"
-      git push -f https://$(username):$(variable_token)@$(url) $(branch) DevOps
+      git push -f https://$(username):$(variable_token)@$(url) DevOps
