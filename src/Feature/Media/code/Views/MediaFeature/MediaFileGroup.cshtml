@@ -1,7 +1,0 @@
-﻿@using Wedia.Feature.Media.Models
-@model FileGroup
-
-@foreach (var file in Model.Files.Results)
-{
-  @Html.Partial("../MediaFeature/FileListItem", file.Item)
-}

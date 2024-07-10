@@ -1,5 +1,0 @@
-﻿<Project>
-  <PropertyGroup>
-    <Site Server="eurolife.local" UserName="sitecore\admin" IsRemoteSitecore="True" />
-  </PropertyGroup>
-</Project>
