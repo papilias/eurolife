@@ -17,15 +17,15 @@ pool:
 #       - agent.name -equals InternalIT-Agent
 
 steps:
-- task: bash@3
+- task: Bash@3
   inputs:
     targetType: 'inline'
     script: |
       rm -r .git
       git init
-      git checkout -b $(Build.SourceBranchName)
+      git checkout DevOps #$(Build.SourceBranchName)
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push New Release $(version)"
-      git push -f https://$(username):$(variable_token)@$(url) $(Build.SourceBranchName)
+      git push -f https://$(username):$(variable_token)@$(url) DevOps #$(Build.SourceBranchName)
