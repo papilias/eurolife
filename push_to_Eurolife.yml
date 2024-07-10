@@ -10,7 +10,7 @@ variables:
   version: $(Build.BuildNumber)
 
 pool:
-  vmName: 'windows-latest'
+  vmImage: windows-latest
 # pool:
 #   name: 'DevOps'
 #   demands:
