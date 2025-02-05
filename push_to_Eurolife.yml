@@ -4,11 +4,12 @@ trigger:
     - '*'
 
 variables:
-  url: github.com/ipDevOps/eurolife.git
+  url: github.com/papilias/eurolife.git
   username: ipDevOps
-  variable_token: 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
+  variable_token: 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
   version: $(Build.BuildNumber)
   branch: $(Build.SourceBranchName)
+  repoFolder: PWS_Sitecore
 
 pool:
   vmImage: ubuntu-latest
@@ -18,16 +19,16 @@ pool:
 #       - agent.name -equals InternalIT-Agent
 
 steps:
+- checkout: none
 - task: Bash@3
   inputs:
     targetType: 'inline'
     script: |
-      rm -r .git
-      git init
-      git branch -m master $(branch)
+      git clone --branch $(branch) $(url) --single-branch
+      cd $(repoFolder)
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
-      git commit -m "Push New Release $(version)"
-      #git push -f https://ipDevOps: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@github.com/ipDevOps/eurolife.git $(branch)
-      git push -f https://$(username):$(variable_token)@$(url) $(branch)
+      git commit -m "Push version $(version)"
+      git remote set-url origin https://$(username):$(variable_token)@$(url)
+      git push -u origin $(branch)
