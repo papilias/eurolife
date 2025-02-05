@@ -4,7 +4,7 @@ trigger:
     - '*'
 
 variables:
-  gitUrl: https://$(username):$(gitToken)@$(github.com/papilias/eurolife.git)
+  gitUrl: https://$(username):$(gitToken)@github.com/papilias/eurolife.git
   azureUrl: https://$(username):$(azureToken)@dev.azure.com/LinakisDigitalTeam/Eurolife/_git/$(repoFolder)
   username: ipDevOps
   gitToken: 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
