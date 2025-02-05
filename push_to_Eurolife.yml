@@ -33,4 +33,4 @@ steps:
       git add .
       git commit -m "Push version $(version)"
       git remote add eurolife https://$(username):$(gitToken)@github.com/papilias/eurolife.git
-      git push -f eurolife $(branch)
+      git push -u eurolife $(branch)
