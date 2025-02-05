@@ -7,7 +7,6 @@ variables:
   gitUrl: https://$(username):$(gitToken)@github.com/papilias/eurolife.git
   azureUrl: https://$(username):$(azureToken)@dev.azure.com/LinakisDigitalTeam/Eurolife/_git/$(repoFolder)
   username: ipDevOps
-  gitToken: $(gitToken)
   azureToken: D6dVqY6yt4jcs8MqsB4rGiuBsTKPIaGAxrTG7yKd5xPlsIWXcvrqJQQJ99BBACAAAAAa2GlcAAASAZDOSs1G
   version: $(Build.BuildNumber)
   branch: $(Build.SourceBranchName)
