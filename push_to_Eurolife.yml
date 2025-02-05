@@ -26,11 +26,11 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      git clone --branch $(branch) $(azureUrl) --single-branch
+      git clone --branch $(branch) https://$(username):$(azureToken)@dev.azure.com/LinakisDigitalTeam/Eurolife/_git/$(repoFolder) --single-branch
       cd $(repoFolder)
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push version $(version)"
-      git remote add eurolife $(giturl)
+      git remote add eurolife https://$(username):$(gitToken)@github.com/papilias/eurolife.git
       git push -u eurolife $(branch)
