@@ -4,7 +4,7 @@ trigger:
     - '*'
 
 variables:
-  gitUrl: https://$(username):$(gitToken)@github.com/papilias/eurolife.git
+  gitUrl: https://$(username):$(GITTOKEN1)@github.com/papilias/eurolife.git
   azureUrl: https://$(username):$(azureToken)@dev.azure.com/LinakisDigitalTeam/Eurolife/_git/$(repoFolder)
   username: ipDevOps
   azureToken: D6dVqY6yt4jcs8MqsB4rGiuBsTKPIaGAxrTG7yKd5xPlsIWXcvrqJQQJ99BBACAAAAAa2GlcAAASAZDOSs1G
@@ -14,10 +14,6 @@ variables:
 
 pool:
   vmImage: ubuntu-latest
-# pool:
-#   name: 'DevOps'
-#   demands:
-#       - agent.name -equals InternalIT-Agent
 
 steps:
 - checkout: none
@@ -25,11 +21,11 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      git clone --branch $(branch) https://$(username):$(azureToken)@dev.azure.com/LinakisDigitalTeam/Eurolife/_git/$(repoFolder) --single-branch
+      git clone --branch $(branch) $(azureUrl) --single-branch
       cd $(repoFolder)
       git config --global user.email "i.papadodimas@linakis.com"
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push version $(version)"
-      git remote add eurolife https://$(username):$(GITTOKEN1)@github.com/papilias/eurolife.git
+      git remote add eurolife $(gitUrl)
       git push -u eurolife $(branch)
