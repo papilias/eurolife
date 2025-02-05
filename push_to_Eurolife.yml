@@ -7,8 +7,8 @@ variables:
   gitUrl: https://$(username):$(gitToken)@github.com/papilias/eurolife.git
   azureUrl: https://$(username):$(azureToken)@dev.azure.com/LinakisDigitalTeam/Eurolife/_git/$(repoFolder)
   username: ipDevOps
-  gitToken: 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
-  azureToken: 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
+  gitToken: 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
+  azureToken: D6dVqY6yt4jcs8MqsB4rGiuBsTKPIaGAxrTG7yKd5xPlsIWXcvrqJQQJ99BBACAAAAAa2GlcAAASAZDOSs1G
   version: $(Build.BuildNumber)
   branch: $(Build.SourceBranchName)
   repoFolder: Sitecore
