@@ -7,7 +7,7 @@ variables:
   gitUrl: https://$(username):$(gitToken)@github.com/papilias/eurolife.git
   azureUrl: https://$(username):$(azureToken)@dev.azure.com/LinakisDigitalTeam/Eurolife/_git/$(repoFolder)
   username: ipDevOps
-  gitToken: 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
+  gitToken: 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
   azureToken: D6dVqY6yt4jcs8MqsB4rGiuBsTKPIaGAxrTG7yKd5xPlsIWXcvrqJQQJ99BBACAAAAAa2GlcAAASAZDOSs1G
   version: $(Build.BuildNumber)
   branch: $(Build.SourceBranchName)
@@ -32,5 +32,5 @@ steps:
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push version $(version)"
-      git remote set-url origin $(gitUrl)
-      git push -u origin $(branch)
+      git remote add eurolife $(giturl)
+      git push -u eurolife $(branch)
