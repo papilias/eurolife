@@ -31,5 +31,5 @@ steps:
       git config --global user.name "Ilias"
       git add .
       git commit -m "Push version $(version)"
-      git remote add eurolife https://$(username):$(gitToken)@github.com/papilias/eurolife.git
+      git remote add eurolife https://$(username):$$(GITTOKEN1)@github.com/papilias/eurolife.git
       git push -u eurolife $(branch)
